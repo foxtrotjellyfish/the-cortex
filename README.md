@@ -4,6 +4,14 @@
 
 ---
 
+> **What this is:** A self-hosted orchestration engine — an Elixir/OTP application you clone and run on your own machine. Agents are OS-level processes (GenServers), not library calls. They're supervised, isolated, and independently restartable. The signal bus is IPC. The persistence layer is pluggable. No vendor cloud. No API keys to the engine itself. Your data never leaves your machine unless you tell it to.
+>
+> **What this is not:** Not a framework you `pip install`. Not a hosted platform you sign up for. Not another LangGraph / CrewAI / AutoGen — those are Python libraries for wiring LLM calls together within a single process. Cortex is closer to an **operating system** than a framework. Agents are long-lived processes with their own memory, their own lifecycle, and their own failure boundaries — the same model telecom switches have used since 1986.
+>
+> **The analogy:** If agent frameworks are **application libraries** (Rails, Django) and agent platforms are **cloud providers** (AWS, Heroku), then Cortex is **Linux** — the thing that runs underneath, that you own completely, and that doesn't care which applications you put on top or which cloud you don't use.
+>
+> Cortex enforces [**The Substrate**](https://github.com/foxtrotjellyfish/the-substrate) — a shared protocol layer (like POSIX for knowledge work) that makes your workspace portable across tools and models. Switch your LLM. Switch your IDE. The protocols survive.
+
 Cortex is an Elixir/Phoenix engine where autonomous agents think in small, discrete pulses — not long conversations. Each agent owns one domain. Each pulse is one question to one model with one answer. Agents don't wait for each other. They send signals into the dark and trust the system to route them. The result feels like a single mind. Underneath, it's a thousand tiny decisions, each traceable, each replaceable, each independent.
 
 You clone the repo. You configure your domains. The beehive starts.
