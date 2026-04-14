@@ -1,6 +1,68 @@
 # Cortex V1 — Implementation Plan
 
-**Status:** Pre-build. Challenger pass complete (2026-04-08). Architecture decisions locked in `DECISIONS.md`.
+**Status:** In progress. Challenger pass complete (2026-04-08). Architecture decisions locked in `DECISIONS.md`.
+ElixirConf demo phases 1 and 2 complete and validated (2026-04-13/14).
+
+---
+
+## Build Progress (ElixirConf Talk Demo)
+
+This section tracks the incremental demo build sequence, which cuts across V1 plan phases.
+Each demo phase is validated with a script in `scripts/` before the next begins.
+
+### Demo Phase 1 — Scaffold + LLM Adapter + Planner ✓
+
+**Maps to plan phases:** 1 (Scaffold), 4 (LLM Adapter Layer), partial 3 (Signal Bus)
+
+Built:
+- Full supervision tree boots (`Cortex.Application`)
+- `Cortex.Signal` struct + `Cortex.Router` (keyword routing)
+- `Cortex.LLM.Adapters.Ollama` — HTTP adapter for local Ollama
+- `Cortex.Trace` + `Cortex.Trace.Collector` (ETS-backed) — traces from day one
+- `Cortex.Domain.Supervisor` (DynamicSupervisor) + `Cortex.Domain.Agent` GenServer
+- Structured output validation (`phase1_structured_output_test.exs`)
+- Natural-language plan parsing (`phase1b_natural_language_test.exs`)
+
+**Validation scripts:** `scripts/phase1_structured_output_test.exs`, `scripts/phase1b_natural_language_test.exs`
+
+---
+
+### Demo Phase 2 — Cortex.Graph Fan-Out / Fan-In ✓
+
+**Maps to plan phases:** 2 (Domain Agent GenServer), 3 (Signal Bus + Router), 6 (Trace Collector)
+
+Built:
+- `Cortex.Graph` — named GenServer, subscribes to `"graph"` PubSub topic, parses numbered/bulleted plans into sub-tasks, fans out to N workers under `Domain.Supervisor`, tracks completion in state, fires synthesizer signal when all workers report done
+- `Cortex.Graph.Worker` — ephemeral, `restart: :transient`, unregistered (multiple can run concurrently), self-terminates after one LLM call, reports back via `Cortex.Graph.worker_done/3`
+
+**Validation — 2026-04-14 (run via `mix run --eval`):**
+
+| Metric | Result |
+|---|---|
+| Workers spawned | 4 / 4 |
+| Workers completed | 4 / 4 |
+| Plan complete event | ✓ |
+| Synthesizer signal | ✓ (5604 chars) |
+| Wall time | **8.1s** (budget: 120s) |
+| Trace count | 4 |
+| Crashes / hangs | 0 |
+
+Worker timing: w2 +2.2s → w1 +4.8s → w3 +7.6s → w0 +8.1s. Workers ran in parallel — wall time equals slowest worker, not sum.
+
+**Notes:**
+- `iex -S mix -e` flag order in the test script header comment is wrong (`-e` must precede `-S`); headless invocation is `mix run --eval`.
+- One bug fixed in `phase2_graph_test.exs` line 159: `all_complete` used Elixir's strict `and` against map/struct values; fixed to `not is_nil(...)`.
+- tinydolphin outputs are hallucinated (wrong BEAM release date, wrong acronym expansion) — expected for a 636MB model, irrelevant to architecture validation.
+
+---
+
+### Demo Phase 3 — LiveView Dashboard
+
+**Maps to plan phase:** 9 (LiveView Dashboard)
+
+Scope: Real-time visualization of the cognition tree. The talk's "watchable" moment — audience sees workers light up concurrently in the browser as the Graph fans out.
+
+Not started.
 
 ---
 

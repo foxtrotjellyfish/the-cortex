@@ -103,3 +103,77 @@
 [data-phx-session], [data-phx-teleported-src] { display: contents }
 
 /* This file is for your main application CSS */
+
+/* === Cortex Hive Visualization === */
+
+.domain-node {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.domain-node.processing circle {
+  animation: cortex-pulse 1.2s ease-in-out infinite;
+}
+
+.domain-node.completed circle:first-child {
+  animation: cortex-flash-green 1.2s ease-out;
+}
+
+.domain-node.crashed circle {
+  animation: cortex-crash 0.4s ease-out;
+}
+
+.domain-node.crashed circle:first-child {
+  stroke: #ef4444 !important;
+  fill: rgba(239, 68, 68, 0.15) !important;
+}
+
+.domain-node.restarted circle:first-child {
+  animation: cortex-flash-green 1.5s ease-out;
+}
+
+@keyframes cortex-pulse {
+  0%, 100% {
+    opacity: 1;
+    filter: url(#glow);
+  }
+  50% {
+    opacity: 0.6;
+    filter: url(#glow-strong);
+  }
+}
+
+@keyframes cortex-flash-green {
+  0% {
+    stroke: #4ade80;
+    fill: rgba(74, 222, 128, 0.25);
+    filter: url(#glow-strong);
+  }
+  100% {
+    filter: url(#glow);
+  }
+}
+
+@keyframes cortex-crash {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-3px, 2px); }
+  40% { transform: translate(3px, -2px); }
+  60% { transform: translate(-2px, -1px); }
+  80% { transform: translate(2px, 1px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Chat message fade-in */
+.animate-fade-in {
+  animation: cortex-fade-in 0.3s ease-out;
+}
+
+@keyframes cortex-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

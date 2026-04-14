@@ -84,3 +84,10 @@ config :phoenix_live_view,
   debug_attributes: true,
   # Enable helpful, but potentially expensive runtime checks
   enable_expensive_runtime_checks: true
+
+# Instance-specific config (seed domains, topic keywords, adapter settings).
+# This file is gitignored — each deployment provides its own.
+# See config/instance.exs.example for the format.
+if File.exists?(Path.expand("instance.exs", __DIR__)) do
+  import_config "instance.exs"
+end

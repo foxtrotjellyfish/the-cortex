@@ -39,3 +39,6 @@ npm-debug.log
 *.db
 *.db-*
 
+# Instance-specific config (seed domains, topic keywords, adapter settings)
+/config/instance.exs
+

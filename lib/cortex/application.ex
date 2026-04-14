@@ -16,6 +16,8 @@ defmodule Cortex.Application do
       Cortex.Trace.Collector,
       Cortex.Router,
       Cortex.Domain.Supervisor,
+      Cortex.Graph,
+      Cortex.Domains.BootLoader,
       CortexWeb.Endpoint
     ]
 

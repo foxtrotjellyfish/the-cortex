@@ -17,7 +17,7 @@ defmodule CortexWeb.Router do
   scope "/", CortexWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", HiveLive, :index
   end
 
   # Other scopes may use custom stacks.

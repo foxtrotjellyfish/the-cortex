@@ -1,0 +1,41 @@
+# Instance configuration for Cortex Engine.
+#
+# Copy this file to config/instance.exs and customize for your deployment.
+# instance.exs is gitignored — it contains domain-specific configuration
+# that belongs to your instance, not the engine.
+#
+# See CONTRIBUTING.md for the boundary: the engine is generic,
+# your instance is specific.
+
+import Config
+
+# Topic keywords — the Router uses these for keyword-based classification.
+# Each key is a topic atom, each value is a list of trigger words.
+# Messages matching multiple topics get fanned out to all of them.
+config :cortex, :topic_keywords, %{
+  general: ~w(help question ask explain what how why),
+  example_domain: ~w(keyword1 keyword2 keyword3)
+}
+
+# Seed domains — spawned on first boot if not already in the database.
+# Each domain becomes a GenServer with its own system prompt and topic
+# subscriptions. Domains persist across restarts via SQLite.
+config :cortex, :seed_domains, [
+  %{
+    name: :example_domain,
+    system_prompt: """
+    You are the Example domain agent in a Cortex Engine instance.
+    Replace this with a prompt that defines your domain's expertise.
+    Keep responses to 2-4 sentences.
+    """,
+    topics: ["example_domain"],
+    adapter: Cortex.LLM.Adapters.Auto,
+    adapter_config: %{model: "claude-3-5-haiku-20241022"}
+  }
+]
+
+# LLM adapter defaults — override if needed
+# config :cortex,
+#   default_adapter: Cortex.LLM.Adapters.Anthropic,
+#   default_adapter_config: %{model: "claude-3-5-haiku-20241022"},
+#   anthropic_api_key: System.get_env("ANTHROPIC_API_KEY")

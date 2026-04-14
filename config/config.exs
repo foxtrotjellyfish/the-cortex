@@ -11,6 +11,15 @@ config :cortex,
   ecto_repos: [Cortex.Repo],
   generators: [timestamp_type: :utc_datetime]
 
+# LLM adapter defaults — override in config/instance.exs
+config :cortex,
+  default_adapter: Cortex.LLM.Adapters.Auto,
+  default_adapter_config: %{},
+  anthropic_api_key: System.get_env("ANTHROPIC_API_KEY")
+
+# Seed domains, topic keywords, and other instance-specific config
+# go in config/instance.exs (gitignored). See config/instance.exs.example.
+
 # Configure the endpoint
 config :cortex, CortexWeb.Endpoint,
   url: [host: "localhost"],
