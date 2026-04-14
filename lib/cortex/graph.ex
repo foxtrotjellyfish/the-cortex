@@ -6,8 +6,6 @@ defmodule Cortex.Graph do
   spawns one Worker per sub-task under the DynamicSupervisor, tracks completion
   in GenServer state, and fires a :synthesizer signal when all workers report done.
 
-  This is the OTP pattern the ElixirConf talk demonstrates:
-
     Planner signal → Graph.parse/1 → N × Worker GenServers (DynamicSupervisor)
        ↓ each worker calls worker_done/3 when its LLM call completes
     Graph sees all done → accumulates memo → broadcasts to "synthesizer" topic
@@ -184,22 +182,20 @@ defmodule Cortex.Graph do
   end
 
   defp looks_like_step?(line) do
-    String.match?(String.trim(line), ~r/^(\d+[\.\)]|[-*])\s/)
+    String.match?(String.trim(line), ~r/^(\d+[\.\)]+|[-*])\s/)
   end
 
   defp strip_prefix(line) do
-    Regex.replace(~r/^\s*(\d+[\.\)]\s+|[-*]\s+)/, String.trim(line), "")
+    Regex.replace(~r/^\s*(\d+[\.\)]+\s+|[-*]\s+)/, String.trim(line), "")
   end
 
   defp trigger_synthesizer(plan_id, plan) do
-    # Accumulate worker outputs into a memo for the Synthesizer.
-    # Format: each worker's subtask + its answer, separated by blank lines.
+    # Read from the persistent Memo store — the SQLite record is the source
+    # of truth for the Synthesizer, not the in-memory worker state.
     memo =
-      plan.workers
-      |> Map.values()
-      |> Enum.map_join("\n\n", fn w ->
-        "[#{w.subtask}]\n#{w.output || "(no output)"}"
-      end)
+      plan_id
+      |> Cortex.Memos.list_by_plan()
+      |> Cortex.Memos.to_synthesis_input()
 
     signal =
       Cortex.Signal.new(

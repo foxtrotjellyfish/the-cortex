@@ -17,6 +17,16 @@ defmodule Cortex.Application do
       Cortex.Router,
       Cortex.Domain.Supervisor,
       Cortex.Graph,
+      {Cortex.Domains.Planner,
+       [
+         adapter: Cortex.LLM.Adapters.Ollama,
+         adapter_config: %{model: "llama3.2:3b", temperature: 0.3}
+       ]},
+      {Cortex.Domains.Synthesizer,
+       [
+         adapter: Cortex.LLM.Adapters.Ollama,
+         adapter_config: %{model: "llama3.2:3b", temperature: 0.3}
+       ]},
       Cortex.Domains.BootLoader,
       CortexWeb.Endpoint
     ]

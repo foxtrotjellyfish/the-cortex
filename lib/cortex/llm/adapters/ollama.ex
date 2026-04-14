@@ -13,14 +13,23 @@ defmodule Cortex.LLM.Adapters.Ollama do
     model = Map.get(config, :model, "tinydolphin")
     base_url = Map.get(config, :base_url, @default_base_url)
 
-    body = %{
-      "model" => model,
-      "messages" => [
-        %{"role" => "system", "content" => system_prompt},
-        %{"role" => "user", "content" => input}
-      ],
-      "stream" => false
-    }
+    options_keys = [:temperature, :top_p, :repeat_penalty, :num_predict]
+
+    options =
+      config
+      |> Map.take(options_keys)
+      |> Map.new(fn {k, v} -> {to_string(k), v} end)
+
+    body =
+      %{
+        "model" => model,
+        "messages" => [
+          %{"role" => "system", "content" => system_prompt},
+          %{"role" => "user", "content" => input}
+        ],
+        "stream" => false
+      }
+      |> then(fn b -> if map_size(options) > 0, do: Map.put(b, "options", options), else: b end)
 
     case Req.post("#{base_url}/api/chat", json: body, receive_timeout: 120_000) do
       {:ok, %{status: 200, body: %{"message" => %{"content" => content}} = resp_body}} ->

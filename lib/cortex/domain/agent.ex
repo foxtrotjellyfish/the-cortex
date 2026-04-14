@@ -10,6 +10,14 @@ defmodule Cortex.Domain.Agent do
   @callback subscriptions() :: [String.t()]
   @callback assess(signal :: Cortex.Signal.t(), state :: map()) :: :relevant | :discard
 
+  @doc """
+  The PubSub topic the agent's output signal is routed to.
+  Defaults to `to_string(domain_name())`. Override in agents that route to a
+  different consumer (e.g. Planner routes to "graph" rather than "planner").
+  """
+  @callback output_topic() :: String.t()
+  @optional_callbacks output_topic: 0
+
   defmacro __using__(opts) do
     quote location: :keep do
       use GenServer
@@ -92,7 +100,7 @@ defmodule Cortex.Domain.Agent do
             Cortex.Trace.Collector.log(completed)
 
             output_signal =
-              Cortex.Signal.new(state.domain, "#{state.domain}", output,
+              Cortex.Signal.new(state.domain, output_topic(), output,
                 metadata: %{parent_trace_id: trace.id}
               )
 
@@ -109,6 +117,9 @@ defmodule Cortex.Domain.Agent do
       end
 
       defoverridable init: 1
+
+      def output_topic, do: to_string(domain_name())
+      defoverridable output_topic: 0
 
       unquote(Keyword.get(opts, :extra_code, nil))
     end

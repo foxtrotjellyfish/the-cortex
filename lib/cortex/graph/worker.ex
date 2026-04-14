@@ -12,10 +12,8 @@ defmodule Cortex.Graph.Worker do
   Workers are not registered in Cortex.Domain.Registry — multiple workers can
   run concurrently for the same plan. The Graph tracks them by worker_id.
 
-  This is the "parallel worker" node in the talk's OTP demo. The audience
-  watches N of these light up in the LiveView simultaneously, each making
-  an inference call, each completing and reporting back — all supervised,
-  all fault-tolerant, all BEAM-native.
+  N workers run simultaneously, each making an inference call, each completing
+  and reporting back — all supervised, all fault-tolerant, all BEAM-native.
   """
 
   # restart: :transient means the supervisor won't restart a :normal or :shutdown exit
@@ -79,6 +77,14 @@ defmodule Cortex.Graph.Worker do
             )
 
           Cortex.Trace.Collector.log(completed)
+
+          case Cortex.Memos.append(state.plan_id, state.worker_id, state.subtask, out) do
+            {:ok, _} ->
+              Logger.debug("[Worker:#{state.worker_id}] Memo appended")
+
+            {:error, cs} ->
+              Logger.error("[Worker:#{state.worker_id}] Memo insert failed: #{inspect(cs.errors)}")
+          end
 
           Logger.debug(
             "[Worker:#{state.worker_id}] Done (#{completed.duration_ms}ms): #{String.slice(out, 0, 80)}"

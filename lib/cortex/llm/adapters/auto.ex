@@ -1,8 +1,8 @@
 defmodule Cortex.LLM.Adapters.Auto do
   @moduledoc """
   Smart adapter that tries Anthropic when ANTHROPIC_API_KEY is set,
-  falls back to Ollama otherwise. Lets the demo work immediately
-  and upgrade transparently when a real API key appears.
+  falls back to Ollama otherwise. Works out of the box with no config
+  and upgrades transparently when a cloud API key appears.
   """
 
   @behaviour Cortex.LLM.Adapter
