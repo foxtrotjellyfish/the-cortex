@@ -10,7 +10,7 @@
 >
 > **The analogy:** If agent frameworks are **application libraries** (Rails, Django) and agent platforms are **cloud providers** (AWS, Heroku), then Cortex is **Linux** — the thing that runs underneath, that you own completely, and that doesn't care which applications you put on top or which cloud you don't use.
 >
-> Cortex enforces [**The Substrate**](https://github.com/foxtrotjellyfish/the-substrate) — a shared protocol layer (like POSIX for knowledge work) that makes your workspace portable across tools and models. Switch your LLM. Switch your IDE. The protocols survive.
+> Cortex enforces **[The Substrate](https://github.com/foxtrotjellyfish/the-substrate)** — a shared protocol layer (like POSIX for knowledge work) that makes your workspace portable across tools and models. Switch your LLM. Switch your IDE. The protocols survive.
 
 Cortex is an Elixir/Phoenix engine where autonomous agents think in small, discrete pulses — not long conversations. Each agent owns one domain. Each pulse is one question to one model with one answer. Agents don't wait for each other. They send signals into the dark and trust the system to route them. The result feels like a single mind. Underneath, it's a thousand tiny decisions, each traceable, each replaceable, each independent.
 
@@ -98,7 +98,7 @@ The **human chat** is a Phoenix Channels API consumed by external clients. The c
 
 ## The Substrate
 
-Underneath every domain agent, regardless of its role, runs the same protocol DNA — [**The Substrate**](https://github.com/foxtrotjellyfish/the-substrate). Eight rules that every agent follows:
+Underneath every domain agent, regardless of its role, runs the same protocol DNA — **[The Substrate](https://github.com/foxtrotjellyfish/the-substrate)**. Eight rules that every agent follows:
 
 1. **Accumulation** — content is append-only. Never overwrite. Never consolidate without permission.
 2. **Session Continuity** — every session produces a resumable handoff.
@@ -148,11 +148,11 @@ Or think of your own mind. Each domain agent is a specialist fragment of the psy
 - **Oban** — durable async job queue
 - **Ecto** + SQLite / Postgres — trace storage, persistence adapter
 - **Phoenix LiveView** — dashboard + human chat interface
-- **`:telemetry`** — observability
+- `**:telemetry`** — observability
 
 ## Status
 
-Cortex is **pre-alpha**. The architecture is defined. A challenger pass (2026-04-08) locked key decisions. See [`DECISIONS.md`](DECISIONS.md) for the rationale, [`plans/`](plans/) for the implementation plan, and [`plans/loat-v0.1-spec.md`](plans/loat-v0.1-spec.md) for the knowledge protocol spec.
+Cortex is **pre-alpha**. The architecture is defined. A challenger pass (2026-04-08) locked key decisions. See `[DECISIONS.md](DECISIONS.md)` for the rationale, `[plans/](plans/)` for the implementation plan, and `[plans/loat-v0.1-spec.md](plans/loat-v0.1-spec.md)` for the knowledge protocol spec.
 
 **What's validated so far:**
 
