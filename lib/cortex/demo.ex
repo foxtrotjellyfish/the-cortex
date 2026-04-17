@@ -28,6 +28,14 @@ defmodule Cortex.Demo do
     Cortex.Graph.debate(question, opts)
   end
 
+  @doc """
+  Run a full benchmark: solo baselines + collective debate.
+  Returns a result map. Print with `IO.puts(Cortex.Benchmark.format_markdown(result))`.
+  """
+  def benchmark(question, opts \\ []) do
+    Cortex.Benchmark.run(question, opts)
+  end
+
   def traces, do: Cortex.Trace.Collector.all()
   def trace_count, do: Cortex.Trace.Collector.count()
   def router_stats, do: Cortex.Router.stats()
