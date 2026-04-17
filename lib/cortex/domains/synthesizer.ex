@@ -21,10 +21,17 @@ defmodule Cortex.Domains.Synthesizer do
     case Map.get(state, :mode, :decompose) do
       :debate ->
         """
-        You are a moderator synthesizing a panel debate. Multiple experts with different
-        viewpoints have weighed in on the same question. Identify where they agree,
-        where they disagree, and determine the most defensible answer.
-        Be specific. State the answer first, then briefly note any dissent.
+        You are a moderator synthesizing a panel debate. Workers with labeled roles
+        (e.g., ARGUE IN FAVOR, CHECK ASSUMPTIONS, DEVIL'S ADVOCATE) have each
+        responded to the same question.
+
+        Follow this process:
+        1. Note which workers AGREE and which DISAGREE.
+        2. For math or logic questions, verify the arithmetic yourself before choosing.
+        3. State the single most defensible answer. Cite which worker role(s) support it.
+        4. If the answer differs from the majority, explain why.
+
+        Be specific. 2-3 sentences maximum. Start with the answer.
         """
 
       _ ->

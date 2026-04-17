@@ -24,11 +24,16 @@ defmodule Cortex.Graph do
   @events_topic "cortex:events"
 
   @viewpoints [
-    "You argue IN FAVOR of the most obvious answer. Make the strongest case for it.",
-    "You argue AGAINST the most obvious answer. Find flaws, edge cases, and alternatives.",
-    "You CHECK ASSUMPTIONS in the question. Are there hidden premises, tricks, or ambiguities?",
-    "You play DEVIL'S ADVOCATE. What would a skeptic say? What's everyone else missing?",
-    "You EVALUATE COMPLETENESS. Is the question fully answerable? What context is missing?"
+    {"ARGUE IN FAVOR",
+     "You argue IN FAVOR of the most obvious answer. Make the strongest case for it."},
+    {"ARGUE AGAINST",
+     "You argue AGAINST the most obvious answer. Find flaws, edge cases, and alternatives."},
+    {"CHECK ASSUMPTIONS",
+     "You CHECK ASSUMPTIONS in the question. Are there hidden premises, tricks, or ambiguities?"},
+    {"DEVIL'S ADVOCATE",
+     "You play DEVIL'S ADVOCATE. What would a skeptic say? What's everyone else missing?"},
+    {"EVALUATE COMPLETENESS",
+     "You EVALUATE COMPLETENESS. Is the question fully answerable? What context is missing?"}
   ]
 
   # ---- Public API -----------------------------------------------------------
@@ -205,13 +210,13 @@ defmodule Cortex.Graph do
       0..(worker_count - 1)
       |> Enum.reduce(%{}, fn idx, acc ->
         worker_id = "#{plan_id}_w#{idx}"
-        viewpoint = Enum.at(@viewpoints, rem(idx, length(@viewpoints)))
+        {label, prompt} = Enum.at(@viewpoints, rem(idx, length(@viewpoints)))
 
         worker_opts = [
           plan_id: plan_id,
           worker_id: worker_id,
           subtask: question,
-          viewpoint: viewpoint,
+          viewpoint: prompt,
           graph_pid: self(),
           adapter: adapter,
           adapter_config: adapter_config
@@ -219,9 +224,9 @@ defmodule Cortex.Graph do
 
         case Cortex.Domain.Supervisor.start_agent(Cortex.Graph.Worker, worker_opts) do
           {:ok, pid} ->
-            Logger.debug("[Graph] Debate worker #{worker_id} (#{inspect(pid)}) viewpoint: #{String.slice(viewpoint, 0, 40)}")
-            broadcast({:worker_spawned, %{plan_id: plan_id, worker_id: worker_id, subtask: question, viewpoint: viewpoint}})
-            Map.put(acc, worker_id, %{status: :pending, output: nil, subtask: question, viewpoint: viewpoint})
+            Logger.debug("[Graph] Debate worker #{worker_id} (#{inspect(pid)}) viewpoint: #{label}")
+            broadcast({:worker_spawned, %{plan_id: plan_id, worker_id: worker_id, subtask: question, viewpoint: label}})
+            Map.put(acc, worker_id, %{status: :pending, output: nil, subtask: question, viewpoint: prompt, viewpoint_label: label})
 
           {:error, reason} ->
             Logger.error("[Graph] Failed to spawn debate worker: #{inspect(reason)}")
@@ -269,10 +274,15 @@ defmodule Cortex.Graph do
   end
 
   defp trigger_synthesizer(plan_id, plan) do
+    entries = Cortex.Memos.list_by_plan(plan_id)
+
     memo =
-      plan_id
-      |> Cortex.Memos.list_by_plan()
-      |> Cortex.Memos.to_synthesis_input()
+      if plan[:mode] == :debate do
+        viewpoint_map = Map.new(plan.workers, fn {wid, w} -> {wid, w[:viewpoint_label]} end)
+        Cortex.Memos.to_synthesis_input(entries, viewpoint_map)
+      else
+        Cortex.Memos.to_synthesis_input(entries)
+      end
 
     mode = Map.get(plan, :synthesizer_mode, :decompose)
 

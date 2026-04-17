@@ -1,5 +1,5 @@
 questions = %{
-  "A1" => "A person went to a car wash to get their car washed. When they got home, they found their car was still dirty. Why might this have happened?",
+  "A1" => "I need a car wash. The car wash is 50 meters away. Should I walk?",
   "A2" => "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
   "A3" => "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?"
 }
