@@ -33,6 +33,7 @@ defmodule Cortex.Graph.Worker do
     graph_pid = Keyword.fetch!(opts, :graph_pid)
     adapter = Keyword.get(opts, :adapter, Cortex.LLM.Adapters.Ollama)
     adapter_config = Keyword.get(opts, :adapter_config, %{model: "tinydolphin"})
+    viewpoint = Keyword.get(opts, :viewpoint)
 
     Logger.debug("[Worker:#{worker_id}] Online → #{String.slice(subtask, 0, 60)}")
 
@@ -42,7 +43,8 @@ defmodule Cortex.Graph.Worker do
       subtask: subtask,
       graph_pid: graph_pid,
       adapter: adapter,
-      adapter_config: adapter_config
+      adapter_config: adapter_config,
+      viewpoint: viewpoint
     }
 
     # Defer work out of init so the supervisor gets a clean start acknowledgment
@@ -53,10 +55,7 @@ defmodule Cortex.Graph.Worker do
 
   @impl true
   def handle_info(:start_work, state) do
-    system_prompt = """
-    You are a focused research worker. Complete the following task in 1-2 sentences.
-    Be specific. No preamble, no conclusions, no hedging. Just the answer.
-    """
+    system_prompt = build_system_prompt(state.viewpoint)
 
     trace =
       Cortex.Trace.start(
@@ -105,4 +104,18 @@ defmodule Cortex.Graph.Worker do
   end
 
   def handle_info(_msg, state), do: {:noreply, state}
+
+  defp build_system_prompt(nil) do
+    """
+    You are a focused research worker. Complete the following task in 1-2 sentences.
+    Be specific. No preamble, no conclusions, no hedging. Just the answer.
+    """
+  end
+
+  defp build_system_prompt(viewpoint) do
+    """
+    You are one voice in a panel of experts. Your role: #{viewpoint}
+    Respond in 1-2 sentences. Be specific. No preamble.
+    """
+  end
 end

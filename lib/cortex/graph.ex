@@ -23,6 +23,14 @@ defmodule Cortex.Graph do
   @synthesizer_topic "synthesizer"
   @events_topic "cortex:events"
 
+  @viewpoints [
+    "You argue IN FAVOR of the most obvious answer. Make the strongest case for it.",
+    "You argue AGAINST the most obvious answer. Find flaws, edge cases, and alternatives.",
+    "You CHECK ASSUMPTIONS in the question. Are there hidden premises, tricks, or ambiguities?",
+    "You play DEVIL'S ADVOCATE. What would a skeptic say? What's everyone else missing?",
+    "You EVALUATE COMPLETENESS. Is the question fully answerable? What context is missing?"
+  ]
+
   # ---- Public API -----------------------------------------------------------
 
   def start_link(opts) do
@@ -34,6 +42,20 @@ defmodule Cortex.Graph do
     signal = Cortex.Signal.new(:manual, @graph_topic, plan_text)
     Phoenix.PubSub.broadcast(Cortex.PubSub, @graph_topic, {:signal, signal})
     {:ok, signal.id}
+  end
+
+  @doc """
+  Debate mode: fan out the same question to N viewpoint-diverse workers,
+  then synthesize their responses. Bypasses the Planner entirely.
+
+  Options:
+    - :workers — number of workers (default: length of viewpoints list)
+    - :adapter — LLM adapter module
+    - :adapter_config — adapter config map (model, etc.)
+    - :synthesizer_mode — atom passed in signal metadata (default: :debate)
+  """
+  def debate(question, opts \\ []) when is_binary(question) do
+    GenServer.call(__MODULE__, {:debate, question, opts}, :infinity)
   end
 
   @doc "Called by Graph.Worker on completion. Direct cast — no PubSub hop."
@@ -168,6 +190,63 @@ defmodule Cortex.Graph do
     {:reply, summary, state}
   end
 
+  @impl true
+  def handle_call({:debate, question, opts}, _from, state) do
+    worker_count = Keyword.get(opts, :workers, length(@viewpoints))
+    adapter = Keyword.get(opts, :adapter, Application.get_env(:cortex, :worker_adapter, Cortex.LLM.Adapters.Ollama))
+    adapter_config = Keyword.get(opts, :adapter_config, Application.get_env(:cortex, :worker_adapter_config, %{model: "tinydolphin"}))
+    synth_mode = Keyword.get(opts, :synthesizer_mode, :debate)
+
+    plan_id = Cortex.Signal.new(:debate, @graph_topic, question).id
+    Logger.info("[Graph] Debate #{plan_id}: \"#{String.slice(question, 0, 60)}\" → #{worker_count} viewpoints")
+    broadcast({:plan_started, %{plan_id: plan_id, subtask_count: worker_count, source: :debate, mode: :debate}})
+
+    workers =
+      0..(worker_count - 1)
+      |> Enum.reduce(%{}, fn idx, acc ->
+        worker_id = "#{plan_id}_w#{idx}"
+        viewpoint = Enum.at(@viewpoints, rem(idx, length(@viewpoints)))
+
+        worker_opts = [
+          plan_id: plan_id,
+          worker_id: worker_id,
+          subtask: question,
+          viewpoint: viewpoint,
+          graph_pid: self(),
+          adapter: adapter,
+          adapter_config: adapter_config
+        ]
+
+        case Cortex.Domain.Supervisor.start_agent(Cortex.Graph.Worker, worker_opts) do
+          {:ok, pid} ->
+            Logger.debug("[Graph] Debate worker #{worker_id} (#{inspect(pid)}) viewpoint: #{String.slice(viewpoint, 0, 40)}")
+            broadcast({:worker_spawned, %{plan_id: plan_id, worker_id: worker_id, subtask: question, viewpoint: viewpoint}})
+            Map.put(acc, worker_id, %{status: :pending, output: nil, subtask: question, viewpoint: viewpoint})
+
+          {:error, reason} ->
+            Logger.error("[Graph] Failed to spawn debate worker: #{inspect(reason)}")
+            acc
+        end
+      end)
+
+    if map_size(workers) == 0 do
+      {:reply, {:error, :no_workers_spawned}, state}
+    else
+      plan_state = %{
+        plan_id: plan_id,
+        mode: :debate,
+        synthesizer_mode: synth_mode,
+        question: question,
+        subtasks: List.duplicate(question, worker_count),
+        workers: workers,
+        plan_signal: Cortex.Signal.new(:debate, @graph_topic, question),
+        started_at: DateTime.utc_now()
+      }
+
+      {:reply, {:ok, plan_id}, put_in(state, [:plans, plan_id], plan_state)}
+    end
+  end
+
   # ---- Private --------------------------------------------------------------
 
   # Parse a numbered/bulleted plain-text plan into a list of sub-task strings.
@@ -190,12 +269,12 @@ defmodule Cortex.Graph do
   end
 
   defp trigger_synthesizer(plan_id, plan) do
-    # Read from the persistent Memo store — the SQLite record is the source
-    # of truth for the Synthesizer, not the in-memory worker state.
     memo =
       plan_id
       |> Cortex.Memos.list_by_plan()
       |> Cortex.Memos.to_synthesis_input()
+
+    mode = Map.get(plan, :synthesizer_mode, :decompose)
 
     signal =
       Cortex.Signal.new(
@@ -203,9 +282,9 @@ defmodule Cortex.Graph do
         @synthesizer_topic,
         memo,
         metadata: %{
-          # Protocol #9 envelope fields
           plan_id: plan_id,
           classification: :synthesis_request,
+          mode: mode,
           worker_count: map_size(plan.workers),
           source_signal_id: plan.plan_signal.id,
           timestamp: DateTime.utc_now()
@@ -217,7 +296,7 @@ defmodule Cortex.Graph do
     elapsed_ms = DateTime.diff(DateTime.utc_now(), plan.started_at, :millisecond)
 
     broadcast({:plan_complete, %{plan_id: plan_id, elapsed_ms: elapsed_ms, worker_count: map_size(plan.workers)}})
-    Logger.info("[Graph] Plan #{plan_id} complete in #{elapsed_ms}ms → synthesizer triggered")
+    Logger.info("[Graph] Plan #{plan_id} complete in #{elapsed_ms}ms → synthesizer triggered (mode: #{mode})")
   end
 
   defp broadcast(event) do

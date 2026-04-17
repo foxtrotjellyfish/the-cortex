@@ -116,7 +116,7 @@ defmodule Cortex.Domain.Agent do
         Map.get(state.adapter_config, :model, "unknown")
       end
 
-      defoverridable init: 1
+      defoverridable init: 1, handle_info: 2
 
       def output_topic, do: to_string(domain_name())
       defoverridable output_topic: 0

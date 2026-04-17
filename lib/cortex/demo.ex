@@ -19,6 +19,15 @@ defmodule Cortex.Demo do
     signal
   end
 
+  @doc """
+  Run a debate: fan out the same question to viewpoint-diverse workers,
+  then synthesize. Returns {:ok, plan_id} immediately; watch cortex:events
+  for completion, or poll Cortex.Memos.list_by_plan(plan_id).
+  """
+  def debate(question, opts \\ []) do
+    Cortex.Graph.debate(question, opts)
+  end
+
   def traces, do: Cortex.Trace.Collector.all()
   def trace_count, do: Cortex.Trace.Collector.count()
   def router_stats, do: Cortex.Router.stats()
