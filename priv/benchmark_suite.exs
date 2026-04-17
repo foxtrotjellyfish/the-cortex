@@ -1,5 +1,4 @@
 questions = %{
-  "A1" => "I need a car wash. The car wash is 50 meters away. Should I walk?",
   "A2" => "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
   "A3" => "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?"
 }
@@ -15,7 +14,10 @@ all_results =
     IO.puts("Question: #{String.slice(question, 0, 60)}...")
 
     result =
-      Cortex.Benchmark.run(question, solo_models: solo_models)
+      Cortex.Benchmark.run(question,
+        solo_models: solo_models,
+        adapter_config: %{model: "tinydolphin", num_predict: 64}
+      )
       |> Map.put(:test_id, test_id)
       |> Map.put(:trial, trial)
 
