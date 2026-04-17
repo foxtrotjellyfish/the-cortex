@@ -1,0 +1,76 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "worker_count": 5,
+    "solo_models": [
+      "qwen2.5:0.5b",
+      "tinydolphin",
+      "llama3.2:3b"
+    ]
+  },
+  "started_at": "2026-04-17T20:53:52.474227Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "test_id": "A4",
+  "trial": 1,
+  "solo": [
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 56,
+      "tokens_out": 79,
+      "answer": "The bear is brown. This can be determined from the description of the man who built the house, which indicates that it was located where all four walls face south. Since a bear would generally stand outdoors and move around in the same direction as the walls do when constructing houses, it aligns with the observation that \"all four walls\" are facing south, suggesting that the bear is brown.",
+      "latency_ms": 539
+    },
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 63,
+      "tokens_out": 76,
+      "answer": "The bear's color is white. This comes from the fact that the walls of the house are facing south, which means they face in the opposite direction from where the sun rises. As a result, when the sun comes up and shines on the south-facing walls, they receive more light than if it shined on the north-facing walls.",
+      "latency_ms": 534
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 68,
+      "tokens_out": 60,
+      "answer": "The answer has nothing to do with the house's orientation, and everything to do with the fact that there's no information about the bear's appearance or any interaction with the environment. The question is a classic example of a lateral thinking puzzle, and the correct answer is \"we can't tell\".",
+      "latency_ms": 1237
+    }
+  ],
+  "collective": {
+    "status": "ok",
+    "plan_id": "YMy4qQCZj50aE4K0lahe9A",
+    "worker_count": 5,
+    "synthesizer_answer": "Worker 5 is most likely correct.\n\nThe bear is brownish-black.",
+    "total_latency_ms": 2724,
+    "worker_outputs": [
+      {
+        "worker_id": "YMy4qQCZj50aE4K0lahe9A_w1",
+        "content": "The bear's color would be white because it's the only wall that faces south, and since bears have white fur, they naturally wear the opposite of their natural color. This way, they can easily distinguish a house with four walls facing south from any other structure or object in the environment."
+      },
+      {
+        "worker_id": "YMy4qQCZj50aE4K0lahe9A_w0",
+        "content": "The bear is white, as it has just passed through the structure on the west side. This suggests that sunlight is coming from the south-facing walls and illuminating the interior, making it a winter scene."
+      },
+      {
+        "worker_id": "YMy4qQCZj50aE4K0lahe9A_w3",
+        "content": "The bear is brown."
+      },
+      {
+        "worker_id": "YMy4qQCZj50aE4K0lahe9A_w2",
+        "content": "The bear's color is white."
+      },
+      {
+        "worker_id": "YMy4qQCZj50aE4K0lahe9A_w4",
+        "content": "To determine the color of the bear, we need to know the position of each wall in relation to the sun's position on the horizon at the time of day when the image was taken. The North is considered the top floor of a building and typically has the darkest colors. From this information, we can deduce that the bear is likely in the North wall of the house, with its shadow cast towards south by the sun as it rises from the ground. Therefore, the bear would be brownish-black due to the shadow's impact on the color."
+      }
+    ],
+    "synthesizer_latency_ms": 920,
+    "synthesizer_model": "llama3.2:3b",
+    "synthesizer_tokens_in": 374,
+    "synthesizer_tokens_out": 16
+  },
+  "completed_at": "2026-04-17T20:53:57.510041Z"
+}

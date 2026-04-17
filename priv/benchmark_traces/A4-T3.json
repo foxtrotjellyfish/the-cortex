@@ -1,0 +1,76 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "worker_count": 5,
+    "solo_models": [
+      "qwen2.5:0.5b",
+      "tinydolphin",
+      "llama3.2:3b"
+    ]
+  },
+  "started_at": "2026-04-17T20:54:04.451316Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "test_id": "A4",
+  "trial": 3,
+  "solo": [
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 56,
+      "tokens_out": 6,
+      "answer": "The bear is brown.",
+      "latency_ms": 88
+    },
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 63,
+      "tokens_out": 73,
+      "answer": "The color of the bear's fur depends on which direction they are facing when you observe them from above. If they are standing in front of the house and looking straight south, they might be wearing a brown or fawn coat. However, if they are behind the house, facing north, their fur would be a lighter shade of gray.",
+      "latency_ms": 516
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 68,
+      "tokens_out": 48,
+      "answer": "The answer isn't about the bear's color, but rather that we don't have enough information to determine the bear's species or even if it has color. However, in reality, most bears are brown due to their thick fur.",
+      "latency_ms": 1021
+    }
+  ],
+  "collective": {
+    "status": "ok",
+    "plan_id": "Ub8u0fXpw5ey8UTui6HjrA",
+    "worker_count": 5,
+    "synthesizer_answer": "Worker 2 is most likely correct.\n\nThe bear's coat would be white.",
+    "total_latency_ms": 3415,
+    "worker_outputs": [
+      {
+        "worker_id": "Ub8u0fXpw5ey8UTui6HjrA_w0",
+        "content": "The bear's coat would be white, as sunlight shining through the windows causes its fur to reflect light and create a beautiful golden hue. The reasoning behind this is that when sunlight hits the northern side of the building, it reflects off the exterior walls of the house, creating a soft golden glow that mimics the warmth of the sun. When the bear walks past the house, the light creates an almost magical effect on its fur, making it look even whiter than it is, as if it were covered in glittering ice crystals."
+      },
+      {
+        "worker_id": "Ub8u0fXpw5ey8UTui6HjrA_w2",
+        "content": "The bear is white."
+      },
+      {
+        "worker_id": "Ub8u0fXpw5ey8UTui6HjrA_w1",
+        "content": "The answer is white. The reasoning behind this is that when the sun is on the east and shining directly into one of the building's walls, it causes it to emit a bright light, known as solar radiation. In this case, the south-facing wall would be receiving the most direct light, which results in the bear's face being white due to its exposure to sunlight."
+      },
+      {
+        "worker_id": "Ub8u0fXpw5ey8UTui6HjrA_w3",
+        "content": "The bear's color would depend on whether he walks in the sun or shade, but it would likely be white due to the warmth of the sun. If the bear walks indoors during the day, his coat would remain white, reflecting the warmth of the light emitted from the fireplace or lanterns."
+      },
+      {
+        "worker_id": "Ub8u0fXpw5ey8UTui6HjrA_w4",
+        "content": "The question is not fully answerable, as there are missing contextual information about the house, the bear's location, and what happens after they walk by. It seems like a riddle or an incomplete situation."
+      }
+    ],
+    "synthesizer_latency_ms": 1038,
+    "synthesizer_model": "llama3.2:3b",
+    "synthesizer_tokens_in": 440,
+    "synthesizer_tokens_out": 17
+  },
+  "completed_at": "2026-04-17T20:54:09.491803Z"
+}

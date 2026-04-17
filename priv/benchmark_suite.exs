@@ -1,6 +1,9 @@
 questions = %{
+  "A1" => "I need a car wash. The car wash is 50 meters away. Should I walk?",
   "A2" => "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
-  "A3" => "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?"
+  "A3" => "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "A4" => "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "A5" => "I have a brother. My brother has no brothers. How is this possible?"
 }
 
 solo_models = ["qwen2.5:0.5b", "tinydolphin", "llama3.2:3b"]
@@ -15,8 +18,7 @@ all_results =
 
     result =
       Cortex.Benchmark.run(question,
-        solo_models: solo_models,
-        adapter_config: %{model: "tinydolphin", num_predict: 64}
+        solo_models: solo_models
       )
       |> Map.put(:test_id, test_id)
       |> Map.put(:trial, trial)
