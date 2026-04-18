@@ -32,6 +32,8 @@ defmodule Cortex.Benchmark do
   Options:
     - `:solo_models`  — list of model names (default: tinydolphin, llama3.2:3b)
     - `:workers`      — number of debate workers (default: 5)
+    - `:viewpoints`   — list of `{label, prompt}` tuples for custom viewpoints.
+      Omit to use Graph's built-in 5-role panel.
     - `:adapter`      — LLM adapter module (default: Ollama)
     - `:adapter_config` — base adapter config map
     - `:timeout`      — max wait for collective in ms (default: 120_000)
@@ -47,6 +49,12 @@ defmodule Cortex.Benchmark do
     solo_results = run_solo(question, models, opts)
     collective_result = run_collective(question, timeout, opts)
 
+    viewpoint_labels =
+      case Keyword.get(opts, :viewpoints) do
+        nil -> :default
+        vps -> Enum.map(vps, &elem(&1, 0))
+      end
+
     %{
       question: question,
       started_at: started_at,
@@ -56,6 +64,7 @@ defmodule Cortex.Benchmark do
       config: %{
         solo_models: models,
         worker_count: Keyword.get(opts, :workers, 5),
+        viewpoints: viewpoint_labels,
         adapter: Keyword.get(opts, :adapter, Cortex.LLM.Adapters.Ollama) |> to_string(),
         timeout: timeout
       }
@@ -115,7 +124,7 @@ defmodule Cortex.Benchmark do
     Phoenix.PubSub.subscribe(Cortex.PubSub, @events_topic)
     Phoenix.PubSub.subscribe(Cortex.PubSub, @traces_topic)
 
-    debate_opts = Keyword.take(opts, [:workers, :adapter, :adapter_config])
+    debate_opts = Keyword.take(opts, [:workers, :adapter, :adapter_config, :viewpoints])
     t0 = System.monotonic_time(:millisecond)
 
     Logger.info("[Benchmark] Collective: starting debate")
@@ -181,6 +190,13 @@ defmodule Cortex.Benchmark do
     total_ms = collective[:total_latency_ms] || "?"
     worker_count = collective[:worker_count] || "?"
 
+    viewpoint_desc =
+      case result.config[:viewpoints] do
+        :default -> "default (5-role panel)"
+        nil -> "default (5-role panel)"
+        labels -> "custom: #{Enum.join(labels, ", ")}"
+      end
+
     """
     ### #{timestamp}
 
@@ -188,6 +204,7 @@ defmodule Cortex.Benchmark do
 
     **Config:**
     - Worker count: #{worker_count} × viewpoint-diverse
+    - Viewpoints: #{viewpoint_desc}
     - Synthesizer: #{synth_model}
     - Adapter: #{result.config.adapter}
 

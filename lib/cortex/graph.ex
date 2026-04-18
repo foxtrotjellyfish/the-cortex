@@ -54,6 +54,9 @@ defmodule Cortex.Graph do
   then synthesize their responses. Bypasses the Planner entirely.
 
   Options:
+    - :viewpoints — list of `{label, prompt}` tuples for worker system prompts.
+      Defaults to the built-in 5-role panel. Pass custom viewpoints to test
+      question-type-specific perspectives (e.g. lateral, theory-of-mind).
     - :workers — number of workers (default: length of viewpoints list)
     - :adapter — LLM adapter module
     - :adapter_config — adapter config map (model, etc.)
@@ -197,7 +200,8 @@ defmodule Cortex.Graph do
 
   @impl true
   def handle_call({:debate, question, opts}, _from, state) do
-    worker_count = Keyword.get(opts, :workers, length(@viewpoints))
+    viewpoints = Keyword.get(opts, :viewpoints, @viewpoints)
+    worker_count = Keyword.get(opts, :workers, length(viewpoints))
     adapter = Keyword.get(opts, :adapter, Application.get_env(:cortex, :worker_adapter, Cortex.LLM.Adapters.Ollama))
     adapter_config = Keyword.get(opts, :adapter_config, Application.get_env(:cortex, :worker_adapter_config, %{model: "tinydolphin"}))
     synth_mode = Keyword.get(opts, :synthesizer_mode, :debate)
@@ -210,7 +214,7 @@ defmodule Cortex.Graph do
       0..(worker_count - 1)
       |> Enum.reduce(%{}, fn idx, acc ->
         worker_id = "#{plan_id}_w#{idx}"
-        {label, prompt} = Enum.at(@viewpoints, rem(idx, length(@viewpoints)))
+        {label, prompt} = Enum.at(viewpoints, rem(idx, length(viewpoints)))
 
         worker_opts = [
           plan_id: plan_id,
