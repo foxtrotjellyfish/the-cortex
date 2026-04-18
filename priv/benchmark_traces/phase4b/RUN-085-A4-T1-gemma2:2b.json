@@ -1,0 +1,54 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T16:50:46.300102Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "test_id": "A4",
+  "trial": 1,
+  "run_id": "RUN-085",
+  "synth_model": "gemma2:2b",
+  "collective": {
+    "status": "ok",
+    "plan_id": "FAOuZVUFfTg2WzhTPnq3qg",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 2 — The bear's color is white.**",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 2030,
+    "synthesizer_latency_ms": 583,
+    "synthesizer_tokens_in": 324,
+    "synthesizer_tokens_out": 16,
+    "worker_outputs": [
+      {
+        "worker_id": "FAOuZVUFfTg2WzhTPnq3qg_w1",
+        "content": "The bear's color would depend on the time of day and how much sunlight is hitting his face. If it's after sunset, he might be covered in a light-colored fur. On sunny days, he could be very bright white and almost invisible. Since he walks past the house and doesn't have to face south, he would probably be wearing a white coat or hat when he comes in to check on the building."
+      },
+      {
+        "worker_id": "FAOuZVUFfTg2WzhTPnq3qg_w0",
+        "content": "The bear's color is white."
+      },
+      {
+        "worker_id": "FAOuZVUFfTg2WzhTPnq3qg_w2",
+        "content": "The question contains a hidden premise, which is that the bear's color will be blue when viewed from the east or north. The answer is also blue, as it is looking out of the west, which is also considered to face south."
+      },
+      {
+        "worker_id": "FAOuZVUFfTg2WzhTPnq3qg_w4",
+        "content": "Answer: The bear's coat will be white, as it has not encountered any other colors yet."
+      },
+      {
+        "worker_id": "FAOuZVUFfTg2WzhTPnq3qg_w3",
+        "content": "The bear's fur is white."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T16:50:48.330360Z",
+  "solo": []
+}

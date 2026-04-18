@@ -1,0 +1,54 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T16:50:11.865464Z",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "test_id": "A2",
+  "trial": 1,
+  "run_id": "RUN-079",
+  "synth_model": "gemma2:2b",
+  "collective": {
+    "status": "ok",
+    "plan_id": "F1nq_7Bm0aHPK8p8pTq7VA",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 2**\n\nTo find the marble, Sally would start by checking under the basket. If there is no sign of it, she may look in the box where it was originally placed and see if there's a way to retrieve it from that area. If not, she could return to the basket where she left the marble, but be careful - the marble might have moved since leaving the basket. \n\n\n**Explanation:**\n\nWorker 2 provides a more detailed and logical approach to finding the marble based on the given scenario. They consider the possibility of the marble being in the box and then suggest checking under the basket as well. This demonstrates a better understanding of the problem's context.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 5100,
+    "synthesizer_latency_ms": 3046,
+    "synthesizer_tokens_in": 400,
+    "synthesizer_tokens_out": 145,
+    "worker_outputs": [
+      {
+        "worker_id": "F1nq_7Bm0aHPK8p8pTq7VA_w4",
+        "content": "To determine the location of the marble, Sally would need to examine the entire room (or go through each piece) to find the position where the marble was originally placed, and then move it to its proper spot. After all this, if Anne moves the marble again, Sally might not know where it is. She might then consult someone else in the room to help her or look at the box."
+      },
+      {
+        "worker_id": "F1nq_7Bm0aHPK8p8pTq7VA_w0",
+        "content": "To find the marble, Sally would start by checking under the basket. If there is no sign of it, she may look in the box where it was originally placed and see if there's a way to retrieve it from that area. If not, she could return to the basket where she left the marble, but be careful - the marble might have moved since leaving the basket."
+      },
+      {
+        "worker_id": "F1nq_7Bm0aHPK8p8pTq7VA_w2",
+        "content": "The marble would be on top of Anne's box. This is based on Assumptions: 1. Sally puts a marble in a basket and leaves the room, and 2. Anne moves the marble from the basket to a box."
+      },
+      {
+        "worker_id": "F1nq_7Bm0aHPK8p8pTq7VA_w1",
+        "content": "Marble: Anne"
+      },
+      {
+        "worker_id": "F1nq_7Bm0aHPK8p8pTq7VA_w3",
+        "content": "Sally will look for the marble on the floor, since it was left unprotected during her absence. This is because Anne used the box to protect the marble, which is where it should be found when Sally returns."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T16:50:16.966816Z",
+  "solo": []
+}

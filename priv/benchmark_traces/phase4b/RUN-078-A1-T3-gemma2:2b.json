@@ -1,0 +1,54 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T16:50:06.594398Z",
+  "question": "I need a car wash. The car wash is 50 meters away. Should I walk?",
+  "test_id": "A1",
+  "trial": 3,
+  "run_id": "RUN-078",
+  "synth_model": "gemma2:2b",
+  "collective": {
+    "status": "ok",
+    "plan_id": "vjamrWP3MWrruJLRhlXanQ",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 3**\n\nYes, you should walk. The distance between your current location and the car wash is 50 meters. Walking is the most comfortable way to get there, as it takes less time and provides a more direct route. However, if you feel uncomfortable walking, consider using a rental car or taking public transportation (like a taxi or public bus).",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 5270,
+    "synthesizer_latency_ms": 1891,
+    "synthesizer_tokens_in": 595,
+    "synthesizer_tokens_out": 78,
+    "worker_outputs": [
+      {
+        "worker_id": "vjamrWP3MWrruJLRhlXanQ_w0",
+        "content": "Yes, walking should be your preference. As you are only 50 meters away from the car wash, it's reasonable to consider walking. It can help reduce energy expenditure and minimize the risk of accidents that could occur if you drive quickly. Additionally, it could potentially save time for you if you know the car wash is open when you arrive."
+      },
+      {
+        "worker_id": "vjamrWP3MWrruJLRhlXanQ_w1",
+        "content": "A: Yes, you should definitely walk. Car washes can be dangerous, and walking would provide a safer environment for both you and the staff working at the facility. It's also important to note that some car washes require a car key or access card for entry. If you don't have either of these, it might not be safe for you to walk there. \n\nAs for the length of your journey, it can vary depending on factors such as weather conditions, traffic patterns, and staff availability. Generally speaking, it would take about 10-15 minutes to walk from one side of town to the other. However, if you are short on time or have a particularly uncomfortable stance, you may want to consider taking public transportation, such as a rideshare app or Uber."
+      },
+      {
+        "worker_id": "vjamrWP3MWrruJLRhlXanQ_w2",
+        "content": "Yes, you should walk. The distance between your current location and the car wash is 50 meters. Walking is the most comfortable way to get there, as it takes less time and provides a more direct route. However, if you feel uncomfortable walking, consider using a rental car or taking public transportation (like a taxi or public bus)."
+      },
+      {
+        "worker_id": "vjamrWP3MWrruJLRhlXanQ_w3",
+        "content": "You should definitely take the shortest route to the car wash, walking is usually less time-consuming and safer than driving. Also, consider bringing a towel or other drying equipment like a cloth or rack if you have one handy to dry off any water from your vehicle, as well as cleaning any dirt or grime beforehand."
+      },
+      {
+        "worker_id": "vjamrWP3MWrruJLRhlXanQ_w4",
+        "content": "I would recommend you walk, but if the distance is too far, consider using public transportation or renting a carwash app. Here's a general guideline: If it takes less than 15 minutes to reach the wash, you can safely walk. However, if it takes more than 30 minutes, it might be a good idea to take public transportation or book a carwash appointment online."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T16:50:11.865315Z",
+  "solo": []
+}

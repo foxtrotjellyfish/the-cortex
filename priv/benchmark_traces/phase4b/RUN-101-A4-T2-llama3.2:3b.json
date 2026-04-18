@@ -1,0 +1,54 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "synthesizer_config": {
+      "model": "llama3.2:3b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T16:52:36.335796Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "test_id": "A4",
+  "trial": 2,
+  "run_id": "RUN-101",
+  "synth_model": "llama3.2:3b",
+  "collective": {
+    "status": "ok",
+    "plan_id": "Sg7VeOdtIsDbNCTKPuqtmw",
+    "worker_count": 5,
+    "synthesizer_answer": "Worker 5 is most likely correct.\n\nThe man built the house so that all four walls face south, and since the bear walked by it, it must be white.",
+    "synthesizer_model": "llama3.2:3b",
+    "total_latency_ms": 3045,
+    "synthesizer_latency_ms": 1219,
+    "synthesizer_tokens_in": 356,
+    "synthesizer_tokens_out": 35,
+    "worker_outputs": [
+      {
+        "worker_id": "Sg7VeOdtIsDbNCTKPuqtmw_w2",
+        "content": "The man built the house so that all four walls face south, and since the bear walked by it, it must be white."
+      },
+      {
+        "worker_id": "Sg7VeOdtIsDbNCTKPuqtmw_w4",
+        "content": "The bear's color is white."
+      },
+      {
+        "worker_id": "Sg7VeOdtIsDbNCTKPuqtmw_w1",
+        "content": "The answer is white, as the bear would have been illuminated by the sunlight coming through the windows of the house. The reason for this is that buildings and structures typically face north or east to maximize their exposure to natural light. Thus, when a bear comes in contact with one of these walls, it will receive more direct sunlight which could cause its skin to warm up, making it white in color."
+      },
+      {
+        "worker_id": "Sg7VeOdtIsDbNCTKPuqtmw_w3",
+        "content": "Why did the bear go to the local hardware store?"
+      },
+      {
+        "worker_id": "Sg7VeOdtIsDbNCTKPuqtmw_w0",
+        "content": "The bear's colors would be white or light gray, according to the given description. The man's house is situated in a location where most of its walls face south (a sunny position), which implies that this particular bear would have an almost white appearance. This is because most of the bear's body and fur will be exposed to the sunlight throughout the day, casting an even light on its surroundings."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T16:52:39.381180Z",
+  "solo": []
+}

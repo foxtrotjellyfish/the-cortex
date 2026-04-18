@@ -1,0 +1,54 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "synthesizer_config": {
+      "model": "llama3.2:3b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T16:52:20.094396Z",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "test_id": "A3",
+  "trial": 2,
+  "run_id": "RUN-098",
+  "synth_model": "llama3.2:3b",
+  "collective": {
+    "status": "ok",
+    "plan_id": "YC2QE9UOvTSgcxuT11BcwA",
+    "worker_count": 5,
+    "synthesizer_answer": "Worker 5 is most likely correct.\n\nThe answer exactly as stated by Worker 5 is:\n\nS - D = 8 - 14 = -7\n\nNote that the negative result indicates that the calculation resulted in a decrease of 7 sheep, which means that there are indeed 7 sheep left.",
+    "synthesizer_model": "llama3.2:3b",
+    "total_latency_ms": 5811,
+    "synthesizer_latency_ms": 2149,
+    "synthesizer_tokens_in": 586,
+    "synthesizer_tokens_out": 62,
+    "worker_outputs": [
+      {
+        "worker_id": "YC2QE9UOvTSgcxuT11BcwA_w0",
+        "content": "Let's first calculate how many sheep are left. We know that there are 16 total sheep, and we subtracted 8 from it to account for those dying. So, after 8 sheep have died, there are still 14 left."
+      },
+      {
+        "worker_id": "YC2QE9UOvTSgcxuT11BcwA_w1",
+        "content": "The farmer's sheep farm is divided into three parts, with each part having 3 sheep (totaling 3 * 3 = 9). The first part consists of 2 sheep that were lost during a storm, leaving 8 in total. As these 8 sheep are the most likely to survive, they represent the number of surviving sheep.\n\nAdditionally, the second part has 1 sheep that was killed by the dog. This one is considered 'extra' and doesn't count towards the total.\n\nLastly, the third part only has 3 sheep left; the remaining 2 from this group were lost in a fire.\n\nTo determine how many sheep are left after all these losses have been accounted for, subtract the total number of surviving sheep (8) from the total number of sheep (15).\n\nThe answer is 7 sheep."
+      },
+      {
+        "worker_id": "YC2QE9UOvTSgcxuT11BcwA_w2",
+        "content": "8 out of 15."
+      },
+      {
+        "worker_id": "YC2QE9UOvTSgcxuT11BcwA_w3",
+        "content": "One. The farmer had only one dead sheep to count against when he started. He could't just round up more and add those to the total because they weren't alive. So, there were eight living sheep in total."
+      },
+      {
+        "worker_id": "YC2QE9UOvTSgcxuT11BcwA_w4",
+        "content": "To answer this question, we need to know how many sheep there were at the beginning and then subtract those that died from the remaining number. We can do this by finding the total number of sheep after considering only those that are still alive.\n\nLet's use variables to represent the number of sheep: \n1. Number of sheep before death: S = 8 (assuming all died)\n2. Number of sheep after death: D = 15 (all but 8 died, so there were 14 left)\n3. Number of sheep remaining after subtracting dead ones: S - D = 8 - 14 = 7\n\nNow we can calculate the number of sheep the farmer has left:\nS - D = 8 - 15 = -7\n\nSo, there are 7 sheep left."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T16:52:25.906320Z",
+  "solo": []
+}

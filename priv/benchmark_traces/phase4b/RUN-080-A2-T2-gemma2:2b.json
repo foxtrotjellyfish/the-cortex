@@ -1,0 +1,54 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T16:50:16.966952Z",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "test_id": "A2",
+  "trial": 2,
+  "run_id": "RUN-080",
+  "synth_model": "gemma2:2b",
+  "collective": {
+    "status": "ok",
+    "plan_id": "m_zzfL8K_6-AxOuTBigVfw",
+    "worker_count": 5,
+    "synthesizer_answer": "Worker 4 — The marble is in Anne's box because she moved it there after Sally left the room.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 3352,
+    "synthesizer_latency_ms": 917,
+    "synthesizer_tokens_in": 414,
+    "synthesizer_tokens_out": 26,
+    "worker_outputs": [
+      {
+        "worker_id": "m_zzfL8K_6-AxOuTBigVfw_w0",
+        "content": "When Sally comes back, she won't find the marble. Anne moved it."
+      },
+      {
+        "worker_id": "m_zzfL8K_6-AxOuTBigVfw_w2",
+        "content": "Sally will look for the marble in Anne's box. This is because when Sally puts the marble in the basket and leaves, it implies that she assumes Sally's assumption of her leaving the room is a given and doesn't need to be verified. Meanwhile, Anne moves the marble from the basket to a box and leaves the room, making Sally's assumption about her leaving the room a question."
+      },
+      {
+        "worker_id": "m_zzfL8K_6-AxOuTBigVfw_w3",
+        "content": "Oh no! Anne has moved the marble out of sight while Sally was gone! The marble must be somewhere in the room and Sally can't find it. Sally is left with no way to retrieve the marble or figure out why Anne moved it away from her. She frantically tries to find the marble, only to discover that she's the one who placed it away in the first place. In a panic, she decides to leave the room and hope for the best."
+      },
+      {
+        "worker_id": "m_zzfL8K_6-AxOuTBigVfw_w1",
+        "content": "The marble is in Anne's box because she moved it there after Sally left the room."
+      },
+      {
+        "worker_id": "m_zzfL8K_6-AxOuTBigVfw_w4",
+        "content": "The marble may be inside Anne's box, but it is not clear whether Sally has found it or if Anne has moved it. To determine the location of the marble, we need additional context and information. Please provide any relevant details to the question."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T16:50:20.320567Z",
+  "solo": []
+}
