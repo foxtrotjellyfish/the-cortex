@@ -1,0 +1,81 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": [
+      "WHAT DOES A KNOW",
+      "WHAT DOES B KNOW",
+      "PERSPECTIVE SEPARATION",
+      "TIMELINE",
+      "FALSE BELIEF CHECK"
+    ],
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "llama3.2:3b",
+      "qwen2.5:0.5b"
+    ]
+  },
+  "started_at": "2026-04-18T15:15:38.875376Z",
+  "question": "Sally puts a marble in a basket and leaves. Anne moves the marble to a box. Where will Sally look for the marble when she returns?",
+  "completed_at": "2026-04-18T15:15:44.879958Z",
+  "collective": {
+    "status": "ok",
+    "plan_id": "SztxNowa-QVogrYyXkdCqQ",
+    "worker_count": 5,
+    "total_latency_ms": 4562,
+    "synthesizer_answer": "Worker 4 is most likely correct.\n\nSally would look in the box where Anne moved the marble. She left it there when she left, and now, after returning, she'll find it by that particular location.",
+    "synthesizer_latency_ms": 1788,
+    "synthesizer_model": "llama3.2:3b",
+    "synthesizer_tokens_in": 447,
+    "synthesizer_tokens_out": 45,
+    "worker_outputs": [
+      {
+        "worker_id": "SztxNowa-QVogrYyXkdCqQ_w1",
+        "content": "The marble must have been moved by Anne because she moved it from the basket where Sally left it before she left. She did this by placing it in the box that Sally had already found. Since both were present at the same time, it would be logical for them to move the marbles around when they had previously gone over the location of the marble."
+      },
+      {
+        "worker_id": "SztxNowa-QVogrYyXkdCqQ_w0",
+        "content": "To find her missing marble, Sally would go to the box where Anne moved the marble. She could check if the marble is still there and see if it's in the basket or on the shelf where Anne left it. If Sally finds the marble, she would bring it back to the box so that Anne can retrieve it when Sally returns."
+      },
+      {
+        "worker_id": "SztxNowa-QVogrYyXkdCqQ_w4",
+        "content": "Anne. She moved the marble to a box to keep it safe from Sally, who put it in a basket. Sally's belief was that she knew where the marble was, but the reality is that she wasn't looking for it. This affects her behavior because she assumed it was in a box and didn't check further."
+      },
+      {
+        "worker_id": "SztxNowa-QVogrYyXkdCqQ_w3",
+        "content": "Sally would look in the box where Anne moved the marble. She left it there when she left, and now, after returning, she'll find it by that particular location."
+      },
+      {
+        "worker_id": "SztxNowa-QVogrYyXkdCqQ_w2",
+        "content": "Sally could look in an area where she doesn't expect to find it, like under a desk or in a drawer full of papers. But since she can see her husband's name on the door, it would likely be in his study, which is also an unlikely place for the marble to be hidden."
+      }
+    ]
+  },
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 71,
+      "tokens_out": 59,
+      "answer": "Sally will return to find the marble at her designated location, which is the box. This is because Anne moved the marble from one place to another, making it more likely that she left the marble in a safe and accessible spot where it could be found by its owner.",
+      "latency_ms": 499
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 73,
+      "tokens_out": 30,
+      "answer": "Sally will look in both the basket and the box, as there is no indication that Anne's actions changed where the marble was originally placed.",
+      "latency_ms": 786
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 61,
+      "tokens_out": 15,
+      "answer": "When Sally returns, she will look for the marble in the basket.",
+      "latency_ms": 157
+    }
+  ]
+}

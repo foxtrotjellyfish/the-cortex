@@ -1,0 +1,81 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": [
+      "CHECK ASSUMPTIONS",
+      "ARGUE AGAINST",
+      "THINK GEOGRAPHICALLY",
+      "WHAT'S THE TRICK",
+      "STEP BY STEP"
+    ],
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "llama3.2:3b",
+      "qwen2.5:0.5b"
+    ]
+  },
+  "started_at": "2026-04-18T15:15:16.613547Z",
+  "question": "A man builds a house with four sides. Each side has a southern exposure. A bear walks by. What color is the bear?",
+  "completed_at": "2026-04-18T15:15:21.682131Z",
+  "collective": {
+    "status": "ok",
+    "plan_id": "FFG1IBSx6UXS20C--jEDdg",
+    "worker_count": 5,
+    "total_latency_ms": 2855,
+    "synthesizer_answer": "Worker 5 is most likely correct.\n\nThe bear is white.",
+    "synthesizer_latency_ms": 958,
+    "synthesizer_model": "llama3.2:3b",
+    "synthesizer_tokens_in": 352,
+    "synthesizer_tokens_out": 14,
+    "worker_outputs": [
+      {
+        "worker_id": "FFG1IBSx6UXS20C--jEDdg_w1",
+        "content": "The bear's face appears to be white, indicating that it has not been exposed to sunlight."
+      },
+      {
+        "worker_id": "FFG1IBSx6UXS20C--jEDdg_w3",
+        "content": "The bear must be brown because it's sunset and the sky is orange in the western part of the country, which is where sunlight is falling behind the horizon. So, as the sun sets on the eastern side, it appears to have orange-red tones. If you walk by during daytime, you'll see that it changes into a brown color."
+      },
+      {
+        "worker_id": "FFG1IBSx6UXS20C--jEDdg_w4",
+        "content": "The bear is white."
+      },
+      {
+        "worker_id": "FFG1IBSx6UXS20C--jEDdg_w2",
+        "content": "Well, it appears that you've given us an incomplete question or instruction. Could you please provide more context or clarify your inquiry?"
+      },
+      {
+        "worker_id": "FFG1IBSx6UXS20C--jEDdg_w0",
+        "content": "One common assumption about this question is that it is asking for the color of a bear walking by in the given situation, which is a building site. However, the context of the question does not specify a location or any information about the bear's appearance. To answer this question accurately, we would need additional information, such as the bear's species, fur color, or body structure (for example, short, long-haired or muscular)."
+      }
+    ]
+  },
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 66,
+      "tokens_out": 9,
+      "answer": "The color of the bear is white.",
+      "latency_ms": 181
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 70,
+      "tokens_out": 19,
+      "answer": "There is no information about the color of the bear, so we cannot determine its color.",
+      "latency_ms": 598
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 58,
+      "tokens_out": 44,
+      "answer": "The bear is brown. Brown fur provides camouflage against the gray backdrop of the northern exposed sides and green background of the southern exposed sides, making it difficult for the bear to see directly through the windows in its house.",
+      "latency_ms": 1434
+    }
+  ]
+}

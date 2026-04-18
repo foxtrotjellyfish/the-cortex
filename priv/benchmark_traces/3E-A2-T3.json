@@ -1,0 +1,81 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": [
+      "WHAT DOES A KNOW",
+      "WHAT DOES B KNOW",
+      "PERSPECTIVE SEPARATION",
+      "TIMELINE",
+      "FALSE BELIEF CHECK"
+    ],
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "llama3.2:3b",
+      "qwen2.5:0.5b"
+    ]
+  },
+  "started_at": "2026-04-18T15:15:44.881468Z",
+  "question": "Sally puts a marble in a basket and leaves. Anne moves the marble to a box. Where will Sally look for the marble when she returns?",
+  "completed_at": "2026-04-18T15:15:50.159497Z",
+  "collective": {
+    "status": "ok",
+    "plan_id": "e9BjmDoeztUfoP5tMtXvJQ",
+    "worker_count": 5,
+    "total_latency_ms": 3636,
+    "synthesizer_answer": "Worker 5 is most likely correct.\n\nWhen Sally returns, she can be found looking at Anne's box with her marble. This is because Anne is currently holding onto the marble in the box.",
+    "synthesizer_latency_ms": 1397,
+    "synthesizer_model": "llama3.2:3b",
+    "synthesizer_tokens_in": 425,
+    "synthesizer_tokens_out": 40,
+    "worker_outputs": [
+      {
+        "worker_id": "e9BjmDoeztUfoP5tMtXvJQ_w0",
+        "content": "The marble is likely in the box, which Sally moved to the beginning of the game. She left it on the table when she put it in the basket. So, the next logical place for her to look would be on the table itself, as she's already in possession of the marble."
+      },
+      {
+        "worker_id": "e9BjmDoeztUfoP5tMtXvJQ_w2",
+        "content": "When Sally returns, she'll likely find the marble in Anne's box. The reason is that it was left in Anne's possession after Sally moved the marble from her basket to her box. Once Sally sees the box on her return, she will know that the marble is still there."
+      },
+      {
+        "worker_id": "e9BjmDoeztUfoP5tMtXvJQ_w1",
+        "content": "Anne is storing the marble in a box."
+      },
+      {
+        "worker_id": "e9BjmDoeztUfoP5tMtXvJQ_w3",
+        "content": "It's impossible to know exactly where Sally will look for the marble when she returns, but based on the information provided, it appears that Anne would still be in the box after Sally left. In fact, it might be that they both were already looking at the same box, making it a bit of an abstract scenario."
+      },
+      {
+        "worker_id": "e9BjmDoeztUfoP5tMtXvJQ_w4",
+        "content": "When Sally returns, she can be found looking at Anne's box with her marble. This is because Anne is currently holding onto the marble in the box. However, if Sally finds the marble in Anne's box and doesn't immediately return it to its original basket, it could lead her to believe that the marble is still there with her. Consequently, she might not be able to find the marble when she returns, leading to frustration and confusion."
+      }
+    ]
+  },
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 71,
+      "tokens_out": 87,
+      "answer": "When Sally returns, she would go to the box where she left the marble and look within. This is because, if Anne moved it to a different location after placing it in a basket, Sally wouldn't know where she placed the marble and might not be able to find it. The only place where Sally could have put the marble was her own box, which must be somewhere within the house.",
+      "latency_ms": 707
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 73,
+      "tokens_out": 23,
+      "answer": "She will look for it in both the basket and the box, as neither of them were moved by her.",
+      "latency_ms": 734
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 61,
+      "tokens_out": 24,
+      "answer": "When Sally looks for the marble, she should check inside the basket because that's where she left it before returning.",
+      "latency_ms": 200
+    }
+  ]
+}

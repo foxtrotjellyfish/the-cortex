@@ -1,0 +1,81 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": [
+      "WHAT DOES A KNOW",
+      "WHAT DOES B KNOW",
+      "PERSPECTIVE SEPARATION",
+      "TIMELINE",
+      "FALSE BELIEF CHECK"
+    ],
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "llama3.2:3b",
+      "qwen2.5:0.5b"
+    ]
+  },
+  "started_at": "2026-04-18T15:15:31.458513Z",
+  "question": "Sally puts a marble in a basket and leaves. Anne moves the marble to a box. Where will Sally look for the marble when she returns?",
+  "completed_at": "2026-04-18T15:15:38.874217Z",
+  "collective": {
+    "status": "ok",
+    "plan_id": "PVxvkjWiNKmfmrtJMdhAfQ",
+    "worker_count": 5,
+    "total_latency_ms": 6016,
+    "synthesizer_answer": "The worker who is most likely correct is Worker 1.\n\nHere is their answer exactly:\n\nAnne will likely find the marble in the box that Sally left, as it was placed there by her before leaving. It's possible that Sally returned early or changed her mind about where to keep the marble after leaving, so there might have been an error and the marble could be elsewhere. However, given the information provided, the most likely scenario is that Anne will find the marble in the box Sally left, as it was placed there by her before leaving.",
+    "synthesizer_latency_ms": 3218,
+    "synthesizer_model": "llama3.2:3b",
+    "synthesizer_tokens_in": 452,
+    "synthesizer_tokens_out": 110,
+    "worker_outputs": [
+      {
+        "worker_id": "PVxvkjWiNKmfmrtJMdhAfQ_w1",
+        "content": "Anne will likely find the marble in the box that Sally left, as it was placed there by her before leaving. It's possible that Sally returned early or changed her mind about where to keep the marble after leaving, so there might have been an error and the marble could be elsewhere. However, given the information provided, the most likely scenario is that Anne will find the marble in the box Sally left, as it was placed there by her before leaving."
+      },
+      {
+        "worker_id": "PVxvkjWiNKmfmrtJMdhAfQ_w0",
+        "content": "Anne takes care of the marble in the box when Sally is away from it, since it's not safe to leave it with someone else. She would then likely look through the box to find the marble and possibly move it around or rearrange items within the box before presenting it to Sally, who returns after a period of time."
+      },
+      {
+        "worker_id": "PVxvkjWiNKmfmrtJMdhAfQ_w4",
+        "content": "Sally will return to find the marble in Anne's box. This is because, by putting it in a basket, she believed that it would be close to where she left it, and so she would find it easily when she returned. However, if we consider that both of them put the marble into the same basket, the distance between them would not have been accounted for. Anne's box being closer to Sally might actually make her search for the marble more difficult."
+      },
+      {
+        "worker_id": "PVxvkjWiNKmfmrtJMdhAfQ_w2",
+        "content": "When Sally returns, she'll likely be looking in two places: The basket where she put the marble, and the box with all her tools in it (she's an artist)."
+      },
+      {
+        "worker_id": "PVxvkjWiNKmfmrtJMdhAfQ_w3",
+        "content": "Sally will look for the marble inside the box. She left it there with Anne moving it."
+      }
+    ]
+  },
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 71,
+      "tokens_out": 59,
+      "answer": "When Sally returns, she'll look in the box. This is because Anne moved the marble from the basket to the box while Sally was gone. She then left the box unlocked and open, so Sally would have no difficulty finding her marble in that space.",
+      "latency_ms": 502
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 73,
+      "tokens_out": 27,
+      "answer": "Sally will look for the marble in the basket, not the box, because that is where she originally placed it before leaving.",
+      "latency_ms": 720
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 61,
+      "tokens_out": 15,
+      "answer": "When Sally returns, she will look for the marble in the basket.",
+      "latency_ms": 177
+    }
+  ]
+}

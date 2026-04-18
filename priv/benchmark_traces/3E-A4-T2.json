@@ -1,0 +1,81 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": [
+      "CHECK ASSUMPTIONS",
+      "ARGUE AGAINST",
+      "THINK GEOGRAPHICALLY",
+      "WHAT'S THE TRICK",
+      "STEP BY STEP"
+    ],
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "llama3.2:3b",
+      "qwen2.5:0.5b"
+    ]
+  },
+  "started_at": "2026-04-18T15:15:21.688066Z",
+  "question": "A man builds a house with four sides. Each side has a southern exposure. A bear walks by. What color is the bear?",
+  "completed_at": "2026-04-18T15:15:27.610923Z",
+  "collective": {
+    "status": "ok",
+    "plan_id": "J_rsprW_G32rFK9fWorSnQ",
+    "worker_count": 5,
+    "total_latency_ms": 4302,
+    "synthesizer_answer": "Worker 2 is most likely correct.\n\nThe answer is: The man's house has four walls (i.e., four faces with different orientations) and that the bear is in one of those eastern-facing walls. Without more information about what kind of house or house design he is referring to, it is not possible to make an accurate prediction based solely on this initial assumption.",
+    "synthesizer_latency_ms": 2256,
+    "synthesizer_model": "llama3.2:3b",
+    "synthesizer_tokens_in": 363,
+    "synthesizer_tokens_out": 75,
+    "worker_outputs": [
+      {
+        "worker_id": "J_rsprW_G32rFK9fWorSnQ_w1",
+        "content": "The bear's color cannot be determined solely from the information provided. The question assumes that the person who built the house, or the gardener who placed the shrubs and flowers, was the bearer of color knowledge. However, given all this information, it is impossible to pinpoint exactly which side is visible from a certain angle."
+      },
+      {
+        "worker_id": "J_rsprW_G32rFK9fWorSnQ_w0",
+        "content": "The question assumes that the man has built the house and provided all sides with sunlight, which is typical of a North American home. This assumption allows us to infer that the man's house has four walls (i.e., four faces with different orientations) and that the bear is in one of those eastern-facing walls. Without more information about what kind of house or house design he is referring to, it is not possible to make an accurate prediction based solely on this initial assumption."
+      },
+      {
+        "worker_id": "J_rsprW_G32rFK9fWorSnQ_w2",
+        "content": "The bear, being curious, examines each side of the house. It sees all four sides are facing the sun. So, it decides to have its face tinted with the opposite color from each side for maximum visibility during the day."
+      },
+      {
+        "worker_id": "J_rsprW_G32rFK9fWorSnQ_w3",
+        "content": "The bear is brown."
+      },
+      {
+        "worker_id": "J_rsprW_G32rFK9fWorSnQ_w4",
+        "content": "The bear is white."
+      }
+    ]
+  },
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 66,
+      "tokens_out": 74,
+      "answer": "The answer to your question is gray. The reason behind this is that the bear's shadow falls on each of the four walls on the northern, eastern, and western sides of the house. This causes them to appear darker when viewed from these directions. The southern side has no shadow, so it appears the same color as the wall it's facing.",
+      "latency_ms": 601
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 70,
+      "tokens_out": 30,
+      "answer": "The information about the bear's location and the house does not provide any details about its color, so we cannot determine what color the bear is.",
+      "latency_ms": 791
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 58,
+      "tokens_out": 26,
+      "answer": "The bear can be black or brown, as both are suitable colors for bears that have south-facing exposure in their northern territories.",
+      "latency_ms": 228
+    }
+  ]
+}

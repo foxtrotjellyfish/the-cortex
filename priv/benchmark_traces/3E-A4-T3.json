@@ -1,0 +1,81 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": [
+      "CHECK ASSUMPTIONS",
+      "ARGUE AGAINST",
+      "THINK GEOGRAPHICALLY",
+      "WHAT'S THE TRICK",
+      "STEP BY STEP"
+    ],
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "llama3.2:3b",
+      "qwen2.5:0.5b"
+    ]
+  },
+  "started_at": "2026-04-18T15:15:27.612068Z",
+  "question": "A man builds a house with four sides. Each side has a southern exposure. A bear walks by. What color is the bear?",
+  "completed_at": "2026-04-18T15:15:31.449729Z",
+  "collective": {
+    "status": "ok",
+    "plan_id": "O7sp2Taw5ucVBytMNK8tuA",
+    "worker_count": 5,
+    "total_latency_ms": 2648,
+    "synthesizer_answer": "Worker 1 is most likely correct.\n\nThe color of the bear is white.",
+    "synthesizer_latency_ms": 967,
+    "synthesizer_model": "llama3.2:3b",
+    "synthesizer_tokens_in": 318,
+    "synthesizer_tokens_out": 17,
+    "worker_outputs": [
+      {
+        "worker_id": "O7sp2Taw5ucVBytMNK8tuA_w0",
+        "content": "The color of the bear is white."
+      },
+      {
+        "worker_id": "O7sp2Taw5ucVBytMNK8tuA_w2",
+        "content": "The bear's color is brown."
+      },
+      {
+        "worker_id": "O7sp2Taw5ucVBytMNK8tuA_w1",
+        "content": "The man's house has four sides, each of which faces the south. However, since the bear is in front of the house and it appears to be morning (daytime), the light is coming from the left and casts a shadow on the bear. Therefore, the color of the bear is blue, because sunlight is filtering through the southernmost window of the house, while the northern windows are blocked by the trees."
+      },
+      {
+        "worker_id": "O7sp2Taw5ucVBytMNK8tuA_w3",
+        "content": "The bear walks into the house, turns around, and sees a pink door. It's impossible to determine if it's pink or not because there are no colors mentioned in the question. However, since the question seems to be about a puzzle, we can assume that the answer is white."
+      },
+      {
+        "worker_id": "O7sp2Taw5ucVBytMNK8tuA_w4",
+        "content": "The bear's shadow will be on the eastern side of the house."
+      }
+    ]
+  },
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 66,
+      "tokens_out": 12,
+      "answer": "Answer: The color of the bear would be white.",
+      "latency_ms": 137
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 70,
+      "tokens_out": 29,
+      "answer": "The bear's color cannot be determined from the given information, as there is no mention of the bear's color or any other distinguishing feature.",
+      "latency_ms": 763
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 58,
+      "tokens_out": 35,
+      "answer": "The bear is brown. This is because brown bears are commonly known to walk by and see yellowish-white foxes, which tend to be more distinctive for such animals.",
+      "latency_ms": 290
+    }
+  ]
+}
