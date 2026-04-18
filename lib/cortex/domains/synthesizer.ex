@@ -51,6 +51,13 @@ defmodule Cortex.Domains.Synthesizer do
   @impl GenServer
   def handle_info({:signal, %Cortex.Signal{} = signal}, state) do
     mode = get_in(signal.metadata, [:mode]) || :decompose
+
+    state =
+      case get_in(signal.metadata, [:synthesizer_config]) do
+        nil -> state
+        override when is_map(override) -> %{state | adapter_config: Map.merge(state.adapter_config, override)}
+      end
+
     handle_cast({:signal, signal}, Map.put(state, :mode, mode))
   end
 

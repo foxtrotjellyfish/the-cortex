@@ -61,6 +61,8 @@ defmodule Cortex.Graph do
     - :adapter — LLM adapter module
     - :adapter_config — adapter config map (model, etc.)
     - :synthesizer_mode — atom passed in signal metadata (default: :debate)
+    - :synthesizer_config — map merged into synthesizer adapter_config for this debate
+      (e.g. `%{model: "phi3:mini"}` to swap the synthesizer model per-run)
   """
   def debate(question, opts \\ []) when is_binary(question) do
     GenServer.call(__MODULE__, {:debate, question, opts}, :infinity)
@@ -205,6 +207,7 @@ defmodule Cortex.Graph do
     adapter = Keyword.get(opts, :adapter, Application.get_env(:cortex, :worker_adapter, Cortex.LLM.Adapters.Ollama))
     adapter_config = Keyword.get(opts, :adapter_config, Application.get_env(:cortex, :worker_adapter_config, %{model: "tinydolphin"}))
     synth_mode = Keyword.get(opts, :synthesizer_mode, :debate)
+    synth_config = Keyword.get(opts, :synthesizer_config)
 
     plan_id = Cortex.Signal.new(:debate, @graph_topic, question).id
     Logger.info("[Graph] Debate #{plan_id}: \"#{String.slice(question, 0, 60)}\" → #{worker_count} viewpoints")
@@ -245,6 +248,7 @@ defmodule Cortex.Graph do
         plan_id: plan_id,
         mode: :debate,
         synthesizer_mode: synth_mode,
+        synthesizer_config: synth_config,
         question: question,
         subtasks: List.duplicate(question, worker_count),
         workers: workers,
@@ -290,20 +294,23 @@ defmodule Cortex.Graph do
 
     mode = Map.get(plan, :synthesizer_mode, :decompose)
 
-    signal =
-      Cortex.Signal.new(
-        :graph,
-        @synthesizer_topic,
-        memo,
-        metadata: %{
-          plan_id: plan_id,
-          classification: :synthesis_request,
-          mode: mode,
-          worker_count: map_size(plan.workers),
-          source_signal_id: plan.plan_signal.id,
-          timestamp: DateTime.utc_now()
-        }
-      )
+    synth_meta =
+      %{
+        plan_id: plan_id,
+        classification: :synthesis_request,
+        mode: mode,
+        worker_count: map_size(plan.workers),
+        source_signal_id: plan.plan_signal.id,
+        timestamp: DateTime.utc_now()
+      }
+
+    synth_meta =
+      case plan[:synthesizer_config] do
+        nil -> synth_meta
+        config when is_map(config) -> Map.put(synth_meta, :synthesizer_config, config)
+      end
+
+    signal = Cortex.Signal.new(:graph, @synthesizer_topic, memo, metadata: synth_meta)
 
     Cortex.Router.route(signal)
 

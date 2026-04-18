@@ -39,6 +39,8 @@ defmodule Cortex.Benchmark do
     - `:timeout`      — max wait for collective in ms (default: 120_000)
     - `:solo_prompt`  — system prompt for solo runs
     - `:solo_only`    — if true, skip collective debate (solo baseline sweep only)
+    - `:synthesizer_config` — map merged into synthesizer adapter_config for this run
+      (e.g. `%{model: "phi3:mini"}` to swap the synthesizer model)
   """
   def run(question, opts \\ []) do
     models = Keyword.get(opts, :solo_models, default_solo_models())
@@ -74,6 +76,7 @@ defmodule Cortex.Benchmark do
         solo_only: solo_only,
         worker_count: Keyword.get(opts, :workers, 5),
         viewpoints: viewpoint_labels,
+        synthesizer_config: Keyword.get(opts, :synthesizer_config),
         adapter: Keyword.get(opts, :adapter, Cortex.LLM.Adapters.Ollama) |> to_string(),
         timeout: timeout
       }
@@ -133,7 +136,7 @@ defmodule Cortex.Benchmark do
     Phoenix.PubSub.subscribe(Cortex.PubSub, @events_topic)
     Phoenix.PubSub.subscribe(Cortex.PubSub, @traces_topic)
 
-    debate_opts = Keyword.take(opts, [:workers, :adapter, :adapter_config, :viewpoints])
+    debate_opts = Keyword.take(opts, [:workers, :adapter, :adapter_config, :viewpoints, :synthesizer_config])
     t0 = System.monotonic_time(:millisecond)
 
     Logger.info("[Benchmark] Collective: starting debate")
