@@ -1,0 +1,86 @@
+{
+  "config": {
+    "timeout": 600000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 10,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:27:41.854929Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "n_workers": 10,
+  "test_id": "A4",
+  "trial": 1,
+  "run_id": "RUN-160",
+  "collective": {
+    "status": "ok",
+    "plan_id": "9QSrXVytwvZ0y19-22V5Tg",
+    "worker_count": 10,
+    "synthesizer_answer": "**Worker 7**\n\nThe bear's color is white.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 7664,
+    "synthesizer_latency_ms": 1478,
+    "synthesizer_tokens_in": 934,
+    "synthesizer_tokens_out": 17,
+    "worker_outputs": [
+      {
+        "worker_id": "9QSrXVytwvZ0y19-22V5Tg_w0",
+        "content": "The bear is white. \n\nThis is because he walks past the house and it faces south. This means that he can see the sun's rays coming from the west, which leads to his fur being a pale white color due to the natural light source behind him. He would also experience a drop in temperature when he comes into contact with the warmth of the sun, causing his skin to be white."
+      },
+      {
+        "worker_id": "9QSrXVytwvZ0y19-22V5Tg_w1",
+        "content": "The bear's color cannot be determined solely from the location of its face, as there are various interpretations. The most logical interpretation is that the bear is brownish-gray, since it is located at the southern end of the house. However, this interpretation could be influenced by the man's choice of colors for his house or his other decoration choices. Other plausible interpretations include black (the bear's face), gray (the bear's body), and white (the bear's fur). The color may also change depending on the weather outside, or the bear's mood during the day."
+      },
+      {
+        "worker_id": "9QSrXVytwvZ0y19-22V5Tg_w2",
+        "content": "The answer is black. The reasoning behind this is that when we look at the question, it's clear that the house has south-facing walls. A bear walking by can easily determine if it's daytime or nighttime because of the sun positioned directly over the house. Without additional information, it's possible that it could be dawn or dusk, depending on the location and time of day. However, since we know it's not dawn or dusk, we can reasonably assume it must be after the sun has set, hence black color. Therefore, we conclude that all four walls face south, making it a house."
+      },
+      {
+        "worker_id": "9QSrXVytwvZ0y19-22V5Tg_w5",
+        "content": "The bear's color can be determined by considering the direction of its step. When the bear walks towards the house, it's already halfway through one rotation, so we can deduce that it's facing southward. Since all four walls face south, the bear is likely to have a brown coat or fur. If you were standing in front of the house and the bear was just behind you, its color would be tan. So, based on the man's layout, the bear could be in the brown color range, but it's impossible to say for sure without additional information."
+      },
+      {
+        "worker_id": "9QSrXVytwvZ0y19-22V5Tg_w9",
+        "content": "The question is incomplete because it asks for a color of the bear, but it does not mention anything about the building or its orientation. Specifically, it doesn't specify if the house faces south or east (or north, depending on the perspective). Also, no information about the bear's general appearance is provided. Therefore, the context is missing and the question cannot be fully answered."
+      },
+      {
+        "worker_id": "9QSrXVytwvZ0y19-22V5Tg_w4",
+        "content": "The question is partially answerable, as it mentions the location of one wall, but not the whole house or the bear's color. Specifically: \"What color is the bear?\""
+      },
+      {
+        "worker_id": "9QSrXVytwvZ0y19-22V5Tg_w3",
+        "content": "The bear's color is white."
+      },
+      {
+        "worker_id": "9QSrXVytwvZ0y19-22V5Tg_w8",
+        "content": "The bear's color would be white, because it walked past it in the northward direction."
+      },
+      {
+        "worker_id": "9QSrXVytwvZ0y19-22V5Tg_w7",
+        "content": "The bear's color depends on its location when he walks by the house: \n\n1. If it faces south, he might be wearing a red coat to keep warm in the colder weather. \n2. If it faces west, he could be wearing a white coat to stay cool during hot weather."
+      },
+      {
+        "worker_id": "9QSrXVytwvZ0y19-22V5Tg_w6",
+        "content": "The bear must be white, as it would not walk towards the sun, which is located to the west. This situation is typical of a polar region and is uncommon in other parts of the world. In winter, the sun's rays tend to strike the North Pole first and set before reaching the Easternmost regions of Earth."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:27:49.520492Z",
+  "solo": []
+}

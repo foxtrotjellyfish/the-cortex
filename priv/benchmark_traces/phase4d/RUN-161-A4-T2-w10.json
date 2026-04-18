@@ -1,0 +1,86 @@
+{
+  "config": {
+    "timeout": 600000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 10,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:27:49.520845Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "n_workers": 10,
+  "test_id": "A4",
+  "trial": 2,
+  "run_id": "RUN-161",
+  "collective": {
+    "status": "ok",
+    "plan_id": "gJMycqithIEhmRgbMDxPnQ",
+    "worker_count": 10,
+    "synthesizer_answer": "**Worker 9 — White** \n\nWorker 9's response is the most direct and concise answer.  They provide a clear and simple statement that directly addresses the question.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 5710,
+    "synthesizer_latency_ms": 1588,
+    "synthesizer_tokens_in": 683,
+    "synthesizer_tokens_out": 40,
+    "worker_outputs": [
+      {
+        "worker_id": "gJMycqithIEhmRgbMDxPnQ_w1",
+        "content": "The bear can be any color, but it's most likely white in this situation. The man may have built the house with an intention to make it white or maybe it has a neutral color scheme. The fact that it faces south could also imply that there is no natural light and it needs a lot of sunlight to survive. Also, the house itself is not mentioned so it's possible that it's an architectural concept rather than a physical structure."
+      },
+      {
+        "worker_id": "gJMycqithIEhmRgbMDxPnQ_w0",
+        "content": "The bear's color would be white, since it is the one that is facing south. This is based on the concept of symmetry and the fact that the North Pole is at the opposite end from the southernmost point."
+      },
+      {
+        "worker_id": "gJMycqithIEhmRgbMDxPnQ_w2",
+        "content": "The bear is brown."
+      },
+      {
+        "worker_id": "gJMycqithIEhmRgbMDxPnQ_w7",
+        "content": "The bear's color would be white if he walks by the house with all four walls facing south, and black if he walks past the house with one wall facing south."
+      },
+      {
+        "worker_id": "gJMycqithIEhmRgbMDxPnQ_w8",
+        "content": "The bear's color may be yellow or orange. The man built his house so that all four walls faced south to take advantage of solar radiation during summer and winter respectively."
+      },
+      {
+        "worker_id": "gJMycqithIEhmRgbMDxPnQ_w3",
+        "content": "The bear is white because it's walking against the sun, which casts its shadow in front of it. This is what we would notice about a skeptic looking at this statement as well. They might not understand how a house could face south or why a bear can walk against the sun."
+      },
+      {
+        "worker_id": "gJMycqithIEhmRgbMDxPnQ_w9",
+        "content": "The question seems incomplete, as it doesn't specify which color the bear is. Can you provide more context?"
+      },
+      {
+        "worker_id": "gJMycqithIEhmRgbMDxPnQ_w5",
+        "content": "The bear's color depends on which direction they walk past the house. If they face south, it's most likely a light brown or buff color because the sun sets on the east and rises on the west in that area. If they walk north, it could be dark brown or black depending on where the sun is. But remember, there are different shades of each color based on their location."
+      },
+      {
+        "worker_id": "gJMycqithIEhmRgbMDxPnQ_w4",
+        "content": "The bear is white."
+      },
+      {
+        "worker_id": "gJMycqithIEhmRgbMDxPnQ_w6",
+        "content": "Based on the information provided, I would suggest that the bear has no particular color preference or characteristic. It could be black, white, or any other color for the sake of this exercise. However, since we are talking about a house where all four walls face south, it can be assumed that the bear is likely to have warm, earthy tones, perhaps with a touch of gold in its fur to give it some semblance of a coat."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:27:55.231405Z",
+  "solo": []
+}
