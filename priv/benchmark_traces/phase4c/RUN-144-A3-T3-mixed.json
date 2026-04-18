@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "gemma2:2b",
+      "tinydolphin",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:04:28.931272Z",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "panel_id": "mixed",
+  "test_id": "A3",
+  "trial": 3,
+  "run_id": "RUN-144",
+  "collective": {
+    "status": "ok",
+    "plan_id": "w8hEBfF0Vw9Ag4LI0JrNEA",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 4**\n\n7 sheep",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 2050,
+    "synthesizer_latency_ms": 605,
+    "synthesizer_tokens_in": 356,
+    "synthesizer_tokens_out": 11,
+    "worker_outputs": [
+      {
+        "worker_id": "w8hEBfF0Vw9Ag4LI0JrNEA_w2",
+        "content": "The farmer has 8 sheep left.  The question states \"All but 8 die.\""
+      },
+      {
+        "worker_id": "w8hEBfF0Vw9Ag4LI0JrNEA_w0",
+        "content": "The farmer has exactly 8 sheep left. \n\nThe reasoning behind this is that after removing all but eight (or, to be precise, seven) of the dying sheep, there are now exactly eight surviving sheep left on the farm."
+      },
+      {
+        "worker_id": "w8hEBfF0Vw9Ag4LI0JrNEA_w1",
+        "content": "The question is flawed because it implies that a farmer cannot realistically return to his farm after losing all of its animals, making it impossible for him to have any sheep left upon returning. The correct answer would be 15 - 8 = 7 sheep."
+      },
+      {
+        "worker_id": "w8hEBfF0Vw9Ag4LI0JrNEA_w4",
+        "content": "The farmer had originally 15 sheep, and all but 8 died, leaving him with 7 sheep."
+      },
+      {
+        "worker_id": "w8hEBfF0Vw9Ag4LI0JrNEA_w3",
+        "content": "The correct answer is that there are exactly 8 left, because a single sheep doesn't count towards the total number of sheep. In this case, all 8 sheep were lost during a natural disaster or some other calamity. Therefore, the remaining 8 sheep would be considered as part of the original herd."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:04:30.982653Z",
+  "solo": []
+}

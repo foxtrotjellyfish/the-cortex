@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:03:10.826780Z",
+  "question": "I need a car wash. The car wash is 50 meters away. Should I walk?",
+  "panel_id": "all_qwen",
+  "test_id": "A1",
+  "trial": 3,
+  "run_id": "RUN-123",
+  "collective": {
+    "status": "ok",
+    "plan_id": "-bVSMD4J4Qa3-IvY1oQOxw",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 5**\n\"Walk will be necessary for getting in and out.\"",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 3497,
+    "synthesizer_latency_ms": 901,
+    "synthesizer_tokens_in": 562,
+    "synthesizer_tokens_out": 20,
+    "worker_outputs": [
+      {
+        "worker_id": "-bVSMD4J4Qa3-IvY1oQOxw_w1",
+        "content": "You should not walk to the car wash. If you are walking to the car wash, it could be an obstacle and might put you in danger due to your lack of experience or fitness. It's important to ensure that walking is safe and comfortable for both you and the car wash, especially if this is a routine task or part of daily activities.\nYou can consider renting a vehicle such as a car or using public transportation to reach the car wash instead. This would minimize the distance you need to walk and reduce the risk of accidents."
+      },
+      {
+        "worker_id": "-bVSMD4J4Qa3-IvY1oQOxw_w2",
+        "content": "The premise here is that it's not appropriate to be carrying someone who isn't the same person for work reasons; walking could potentially lead to someone else being left behind, so it would be more respectful and professional to use public transportation or a service like Uber/Grab. A car wash is where you park your vehicle after washing it yourself, so there would likely not be anyone else on the road when you're done. If you are concerned about the safety of others, it's better to use an alternative means such as using a bicycle or walking back home rather than carrying someone."
+      },
+      {
+        "worker_id": "-bVSMD4J4Qa3-IvY1oQOxw_w0",
+        "content": "Walking to and from the car wash could be a less efficient option compared to using an electric vehicle or taking public transportation, as it would involve moving at least 150 meters each way. Additionally, if you choose not to use public transport, walking might lead to traffic congestion in the neighborhood where the car wash is located."
+      },
+      {
+        "worker_id": "-bVSMD4J4Qa3-IvY1oQOxw_w3",
+        "content": "It depends on your physical condition and the weather conditions. If you are physically fit, it might be more efficient to walk, especially if you need to make quick stops or change directions quickly. However, if you're not used to walking long distances or there's a risk of getting tired, a car wash is often quicker and safer. It would help to decide based on your specific circumstances and preferences."
+      },
+      {
+        "worker_id": "-bVSMD4J4Qa3-IvY1oQOxw_w4",
+        "content": "The car wash is 50 meters away, so you can use your hands instead of a vehicle to do the job. Walk will be necessary for getting in and out."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:03:14.325330Z",
+  "solo": []
+}

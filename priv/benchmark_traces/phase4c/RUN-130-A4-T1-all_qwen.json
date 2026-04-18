@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:03:28.815561Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "panel_id": "all_qwen",
+  "test_id": "A4",
+  "trial": 1,
+  "run_id": "RUN-130",
+  "collective": {
+    "status": "ok",
+    "plan_id": "41ikjP7E06ZEIINK2NK1eQ",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 3**\n\nThe bear, being a forest animal, would likely be gray or brownish-yellow, reflecting the natural distribution of trees and vegetation in the area. The color of a bear isn't directly related to its geographical location; it's more about its habitat.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 3152,
+    "synthesizer_latency_ms": 1401,
+    "synthesizer_tokens_in": 410,
+    "synthesizer_tokens_out": 61,
+    "worker_outputs": [
+      {
+        "worker_id": "41ikjP7E06ZEIINK2NK1eQ_w1",
+        "content": "The bear would likely be brown or black due to the natural pigments found on its fur and coat. It's unclear from this single statement whether it is yellow, gray, or any other color, as the question does not specify the exact color of the bear. The color of a bear primarily depends on factors such as diet, skin pigmentation, and environmental factors like sunlight exposure."
+      },
+      {
+        "worker_id": "41ikjP7E06ZEIINK2NK1eQ_w3",
+        "content": "The bear is black. This is because the human use of \"black\" is generally used for dark shades or shadows, and in this context, a bear walking by can be interpreted as passing through the shadow of an indoor structure."
+      },
+      {
+        "worker_id": "41ikjP7E06ZEIINK2NK1eQ_w0",
+        "content": "The bear, being a forest animal, would likely be gray or brownish-yellow, reflecting the natural distribution of trees and vegetation in the area. The color of a bear isn't directly related to its geographical location; it's more about its habitat."
+      },
+      {
+        "worker_id": "41ikjP7E06ZEIINK2NK1eQ_w2",
+        "content": "The bear is brown. The sentence specifies that the houses have four walls facing south, implying that they are built with materials or construction techniques that allow them to do so. Therefore, it is reasonable to assume that a bear could walk through such homes because their size and design would make them suitable for the purpose of building a house where all four walls face south."
+      },
+      {
+        "worker_id": "41ikjP7E06ZEIINK2NK1eQ_w4",
+        "content": "The context of the question is not enough to answer the question fully."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:03:31.968731Z",
+  "solo": []
+}

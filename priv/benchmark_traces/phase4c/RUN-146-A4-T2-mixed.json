@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "gemma2:2b",
+      "tinydolphin",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:04:32.862409Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "panel_id": "mixed",
+  "test_id": "A4",
+  "trial": 2,
+  "run_id": "RUN-146",
+  "collective": {
+    "status": "ok",
+    "plan_id": "RlLr6P_h7_Kc_tDhL5rXOg",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 4**\n\nThe bear is not colored, but it appears to be white as it has no fur or other visible coloration.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 2480,
+    "synthesizer_latency_ms": 928,
+    "synthesizer_tokens_in": 354,
+    "synthesizer_tokens_out": 31,
+    "worker_outputs": [
+      {
+        "worker_id": "RlLr6P_h7_Kc_tDhL5rXOg_w0",
+        "content": "The bear's fur has no color preference and will likely be white. This could be due to global warming or, more likely, an allergy to black bears."
+      },
+      {
+        "worker_id": "RlLr6P_h7_Kc_tDhL5rXOg_w1",
+        "content": "The bear would be brown or black as it faces south, similar to the house's appearance due to its orientation. The choice of color would depend on additional context, such as if there are other animals present who could potentially cause confusion or change."
+      },
+      {
+        "worker_id": "RlLr6P_h7_Kc_tDhL5rXOg_w2",
+        "content": "The bear's color depends on the location of the house, as the question does not account for any geographic restrictions or the direction the sun faces, leading to numerous possibilities."
+      },
+      {
+        "worker_id": "RlLr6P_h7_Kc_tDhL5rXOg_w4",
+        "content": "The bear is not colored, but it appears to be white as it has no fur or other visible coloration."
+      },
+      {
+        "worker_id": "RlLr6P_h7_Kc_tDhL5rXOg_w3",
+        "content": "The answer is white. The reasoning behind this is that when the sun shines on a south-facing wall, it warms up and makes the room warm. So, the bear would be warm and in need of warmth, which would make it white. This idea is known as \"the sun's reflection theory\"."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:04:35.344382Z",
+  "solo": []
+}

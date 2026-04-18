@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:02:28.423396Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "panel_id": "all_td",
+  "test_id": "A4",
+  "trial": 1,
+  "run_id": "RUN-115",
+  "collective": {
+    "status": "ok",
+    "plan_id": "dUa-G1K07QPZQJhVLzlTfg",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 5** \nThe bear appears to be brown due to the sunset behind it.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 2829,
+    "synthesizer_latency_ms": 796,
+    "synthesizer_tokens_in": 412,
+    "synthesizer_tokens_out": 23,
+    "worker_outputs": [
+      {
+        "worker_id": "dUa-G1K07QPZQJhVLzlTfg_w1",
+        "content": "The question itself is vague and not based on geographical information. Bear colors can be either white, black or brown. However, it's highly likely that the question is referring to a specific type of bear, like a grizzly or black bear, which has grey fur. So to answer this question, one could say 'White'."
+      },
+      {
+        "worker_id": "dUa-G1K07QPZQJhVLzlTfg_w0",
+        "content": "The bear's color cannot be determined from the information provided, but if it were to turn red, that would suggest it was living near the equator, which is opposite of the south wall, so a likely color for the bear might be brown or chestnut. However, this information is not definitive as we do not have enough information about the bear's diet and environment to pinpoint its exact color."
+      },
+      {
+        "worker_id": "dUa-G1K07QPZQJhVLzlTfg_w3",
+        "content": "Devil's Advocate: The bear's fur color is white because it walks by the house, which faces south."
+      },
+      {
+        "worker_id": "dUa-G1K07QPZQJhVLzlTfg_w2",
+        "content": "The bear's coat is white. This assumption assumes that all walls of the house are facing south, which contradicts other information given in the question. The premise suggests that there is an opening where all four walls face south, but it doesn't explicitly state that this is the case for the entire house. Hence, the answer could be any color, but the most likely one is white."
+      },
+      {
+        "worker_id": "dUa-G1K07QPZQJhVLzlTfg_w4",
+        "content": "The bear appears to be brown due to the sunset behind it."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:02:31.253610Z",
+  "solo": []
+}

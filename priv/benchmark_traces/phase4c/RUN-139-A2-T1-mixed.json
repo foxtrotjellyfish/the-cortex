@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "gemma2:2b",
+      "tinydolphin",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:04:08.181597Z",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "panel_id": "mixed",
+  "test_id": "A2",
+  "trial": 1,
+  "run_id": "RUN-139",
+  "collective": {
+    "status": "ok",
+    "plan_id": "xzbW_kbUpWGpAe534lCeCg",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 4**\n\n\"In this case scenario, Sally left the room with a marble in a basket, then Anne moved it from the basket to a box on the floor (which is empty). The question asks what location would be most appropriate for Sally to look for her missing marble if she's inside the room when she comes back.\n\nFrom these options, it's clear that the most likely place where Sally would look for her missing marble would be on the floor (if not already in the box). The reasoning behind this is that Anne moved the marble to a different location and nowhere else can be expected to hold onto a marble.\"",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 5307,
+    "synthesizer_latency_ms": 2756,
+    "synthesizer_tokens_in": 488,
+    "synthesizer_tokens_out": 134,
+    "worker_outputs": [
+      {
+        "worker_id": "xzbW_kbUpWGpAe534lCeCg_w4",
+        "content": "She would expect to find it in the box."
+      },
+      {
+        "worker_id": "xzbW_kbUpWGpAe534lCeCg_w2",
+        "content": "Sally will likely check the basket first, assuming the marble is still there."
+      },
+      {
+        "worker_id": "xzbW_kbUpWGpAe534lCeCg_w1",
+        "content": "When Sally returns, she will likely not look for the marble immediately but will try to find it among the items inside the box or within her own collection, as she left it in the room."
+      },
+      {
+        "worker_id": "xzbW_kbUpWGpAe534lCeCg_w0",
+        "content": "1. She may look at the top of the box, which is already empty as Anne moved it. 2. If she looks on the floor, she might find the marble lying there. 3. She may use her binoculars to check if any other marbles were moved and search for that one.\n\nIn this case scenario, Sally left the room with a marble in a basket, then Anne moved it from the basket to a box on the floor (which is empty). The question asks what location would be most appropriate for Sally to look for her missing marble if she's inside the room when she comes back.\n\nFrom these options, it's clear that the most likely place where Sally would look for her missing marble would be on the floor (if not already in the box). The reasoning behind this is that Anne moved the marble to a different location and nowhere else can be expected to hold onto a marble."
+      },
+      {
+        "worker_id": "xzbW_kbUpWGpAe534lCeCg_w3",
+        "content": "When Sally comes back, she won't be looking at a basket or a box. Instead, she'll be searching for a marble that was in Anne's possession and never left her possession. This is because Anne put the marble in a box before leaving the room. She didn't leave it on a basket, but rather, placed it into an unmarked box, making it easier to find later when Sally returns."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:04:13.489554Z",
+  "solo": []
+}

@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:03:26.705458Z",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "panel_id": "all_qwen",
+  "test_id": "A3",
+  "trial": 3,
+  "run_id": "RUN-129",
+  "collective": {
+    "status": "ok",
+    "plan_id": "Rkzcon-a1jzDFDO6m-PKcA",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 4**\n\n8",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 2108,
+    "synthesizer_latency_ms": 557,
+    "synthesizer_tokens_in": 384,
+    "synthesizer_tokens_out": 10,
+    "worker_outputs": [
+      {
+        "worker_id": "Rkzcon-a1jzDFDO6m-PKcA_w4",
+        "content": "The correct answer to the question \"A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left? \" is that there are 7 sheep remaining (15 - 8 = 7). The context of the question does not provide any missing information to determine how many sheep were originally present."
+      },
+      {
+        "worker_id": "Rkzcon-a1jzDFDO6m-PKcA_w1",
+        "content": "The correct calculation would be: 15 - 8 = 7 sheep remaining, not a 9 sheep. The alternative approach using a mathematical model (subtracting from total) is flawed because it doesn't account for the loss of the 8 sheep that died. Therefore, the farmer has left 7 sheep."
+      },
+      {
+        "worker_id": "Rkzcon-a1jzDFDO6m-PKcA_w0",
+        "content": "The farmer would lose 3 sheep, as 15 - 8 = 7."
+      },
+      {
+        "worker_id": "Rkzcon-a1jzDFDO6m-PKcA_w2",
+        "content": "Let x be the number of sheep a farmer has at start. After all but eight sheep dies, he is left with (x - 8). The answer is 8."
+      },
+      {
+        "worker_id": "Rkzcon-a1jzDFDO6m-PKcA_w3",
+        "content": "The farmer still has 15 sheep, and all but 8 died, so he now has exactly 0 sheep. There are no remaining sheep; instead, he lost 9 sheep due to their death."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:03:28.815353Z",
+  "solo": []
+}

@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:03:18.603709Z",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "panel_id": "all_qwen",
+  "test_id": "A2",
+  "trial": 3,
+  "run_id": "RUN-126",
+  "collective": {
+    "status": "ok",
+    "plan_id": "pTuJrRauX1kCLHRUjDNU1A",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 5**\n\nWhen Sally comes back, she would need to look for the marble in the original basket. She left it there while she went away and is trying to locate it when she returns. The marble can only be found by moving from the original basket to a box, not by simply leaving it where she put it.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 2957,
+    "synthesizer_latency_ms": 1480,
+    "synthesizer_tokens_in": 366,
+    "synthesizer_tokens_out": 71,
+    "worker_outputs": [
+      {
+        "worker_id": "pTuJrRauX1kCLHRUjDNU1A_w0",
+        "content": "When Sally returns to the scene, she should focus on finding the marble in the basket, as it is her initial action upon noticing its presence."
+      },
+      {
+        "worker_id": "pTuJrRauX1kCLHRUjDNU1A_w3",
+        "content": "When Sally returns, she will find that the marble was moved to a box by Anne, not into the basket she left in."
+      },
+      {
+        "worker_id": "pTuJrRauX1kCLHRUjDNU1A_w1",
+        "content": "When Sally returns, she will not find the marble she moved to the box herself; she would need to go back to the original location of the marble in the basket. If someone else had moved the marble to the box before Sally came back, she might be able to locate it. However, without more context about where the marble originally ended up, it's difficult to know for certain where she should look now that she left the room."
+      },
+      {
+        "worker_id": "pTuJrRauX1kCLHRUjDNU1A_w4",
+        "content": "Anne should check the empty spot in the basket."
+      },
+      {
+        "worker_id": "pTuJrRauX1kCLHRUjDNU1A_w2",
+        "content": "When Sally comes back, she would need to look for the marble in the original basket. She left it there while she went away and is trying to locate it when she returns. The marble can only be found by moving from the original basket to a box, not by simply leaving it where she put it."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:03:21.562085Z",
+  "solo": []
+}

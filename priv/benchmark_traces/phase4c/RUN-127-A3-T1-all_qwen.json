@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:03:21.562511Z",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "panel_id": "all_qwen",
+  "test_id": "A3",
+  "trial": 1,
+  "run_id": "RUN-127",
+  "collective": {
+    "status": "ok",
+    "plan_id": "M28XtQMefBAn0LfxamwPtA",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 4**\n\n\\( 15 - 8 = 7 \\) sheep left.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 1944,
+    "synthesizer_latency_ms": 708,
+    "synthesizer_tokens_in": 327,
+    "synthesizer_tokens_out": 24,
+    "worker_outputs": [
+      {
+        "worker_id": "M28XtQMefBAn0LfxamwPtA_w4",
+        "content": "The question can be answered completely with a simple calculation: 15 - 8 = 7."
+      },
+      {
+        "worker_id": "M28XtQMefBAn0LfxamwPtA_w2",
+        "content": "To find out how many sheep the farmer has left after some died, we can subtract the number of sheep that died from the total number of sheep originally.\n\n15 total sheep - 8 sheep that died = 7 sheep remaining."
+      },
+      {
+        "worker_id": "M28XtQMefBAn0LfxamwPtA_w0",
+        "content": "The farmer initially has 15 sheep. After losing 8, he would have:\n\n\\[ 15 - 8 = 7 \\]\n\nTherefore, the farmer is left with 7 sheep."
+      },
+      {
+        "worker_id": "M28XtQMefBAn0LfxamwPtA_w3",
+        "content": "The farmer has \\( 15 - 8 = 7 \\) sheep left."
+      },
+      {
+        "worker_id": "M28XtQMefBAn0LfxamwPtA_w1",
+        "content": "The farmer initially had 15 sheep. If all but 8 sheep died, then the remaining number of sheep would be 15 - 8 = 7 sheep. The answer is that the farmer has 7 sheep left."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:03:23.508106Z",
+  "solo": []
+}

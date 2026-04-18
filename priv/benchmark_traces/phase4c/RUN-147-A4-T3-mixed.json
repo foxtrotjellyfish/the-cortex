@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "gemma2:2b",
+      "tinydolphin",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:04:35.345011Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "panel_id": "mixed",
+  "test_id": "A4",
+  "trial": 3,
+  "run_id": "RUN-147",
+  "collective": {
+    "status": "ok",
+    "plan_id": "4BZBI45RM9jmtVxJWdc5rA",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 4** \n\nThe bear is brown, tan, or green. \n\n\n**Explanation:**\n\nWorker 4's response demonstrates a strong understanding of the problem by considering the house orientation and making logical deductions about the bear's likely color based on these factors.  They also address potential biases in the question (like assuming black/white) to arrive at a more comprehensive answer.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 3795,
+    "synthesizer_latency_ms": 1858,
+    "synthesizer_tokens_in": 437,
+    "synthesizer_tokens_out": 84,
+    "worker_outputs": [
+      {
+        "worker_id": "4BZBI45RM9jmtVxJWdc5rA_w2",
+        "content": "The bear's color is irrelevant; the house's orientation doesn't influence the bear's color or anything about it."
+      },
+      {
+        "worker_id": "4BZBI45RM9jmtVxJWdc5rA_w0",
+        "content": "The bear's fur color would be black. Since it's walking past a house with all four walls facing south, it must be using its feet to navigate or walk uphill, which would cause its body temperature to decrease and its coat color to darken. Thus, the bear's fur would darken as it descends into the cold, dark depths of the South Pole."
+      },
+      {
+        "worker_id": "4BZBI45RM9jmtVxJWdc5rA_w3",
+        "content": "The bear is red."
+      },
+      {
+        "worker_id": "4BZBI45RM9jmtVxJWdc5rA_w1",
+        "content": "To determine the color of the bear, we must first address why it's likely not black or white:\n\n1. The bear encounters all four walls facing south.\n2. Houses built on an island often have a central point where the north wall meets the house.\n\nSince houses typically don't face the ocean (as it's known as an island), the most plausible colors for a bear to pass through would be brown, tan, or green instead of black or white.\n\nTherefore, based on this reasoning, the bear could indeed be brown, tan, or green. It’s less likely to be dark-colored animals like black or white unless they are part of specific island communities with distinctive landmarks (like islands in the Pacific Ocean).\n\nSo, a more probable color for the bear would be brown, tan, or green."
+      },
+      {
+        "worker_id": "4BZBI45RM9jmtVxJWdc5rA_w4",
+        "content": "The bear is brown and tan."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:04:39.140753Z",
+  "solo": []
+}

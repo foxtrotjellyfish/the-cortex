@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "gemma2:2b",
+      "tinydolphin",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:03:58.815671Z",
+  "question": "I need a car wash. The car wash is 50 meters away. Should I walk?",
+  "panel_id": "mixed",
+  "test_id": "A1",
+  "trial": 2,
+  "run_id": "RUN-137",
+  "collective": {
+    "status": "ok",
+    "plan_id": "iMvJYn-B-taUF9uqLmOsEA",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 3**\n\nTo determine if it's possible to walk to the car wash, you would need to calculate how far from the car wash you can go and whether that distance allows you to reach the car wash within your travel time.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 3628,
+    "synthesizer_latency_ms": 1406,
+    "synthesizer_tokens_in": 472,
+    "synthesizer_tokens_out": 53,
+    "worker_outputs": [
+      {
+        "worker_id": "iMvJYn-B-taUF9uqLmOsEA_w2",
+        "content": "You might consider factors like your preferred mode of transportation and the environmental impact of walking versus driving to determine the optimal approach."
+      },
+      {
+        "worker_id": "iMvJYn-B-taUF9uqLmOsEA_w1",
+        "content": "You should consider walking to the car wash instead of driving, especially if you are young or have limited mobility. The distance and potentially high cost of gasoline make it more convenient and safer to drive yourself rather than taking public transportation."
+      },
+      {
+        "worker_id": "iMvJYn-B-taUF9uqLmOsEA_w4",
+        "content": "To determine if it's possible to walk to the car wash, you would need to calculate how far from the car wash you can go and whether that distance allows you to reach the car wash within your travel time."
+      },
+      {
+        "worker_id": "iMvJYn-B-taUF9uqLmOsEA_w0",
+        "content": "It really depends on how fast you walk and if it's too hot outside. If the weather is nice, then you could easily walk to the car wash without any problems. However, if it's very hot and there's no shade nearby, you might want to invest in a portable air conditioner to help keep you comfortable while still getting your car cleaned. If you need more distance between your starting point and the car wash, driving is the best option, but please note that the distance can vary depending on how fast you drive."
+      },
+      {
+        "worker_id": "iMvJYn-B-taUF9uqLmOsEA_w3",
+        "content": "Ah, this is an interesting scenario. Let me see if I can give you some suggestions. A car wash is typically a short walk. It's also very easy to find. Additionally, it's a common practice in many countries to use public transportation or a ridesharing app to avoid the hassle of parking and navigating around town. Furthermore, there are numerous car washes nearby that accept cash, debit, or credit card, making it convenient for you to reach without needing a car."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:04:02.444456Z",
+  "solo": []
+}

@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:01:45.733336Z",
+  "question": "I need a car wash. The car wash is 50 meters away. Should I walk?",
+  "panel_id": "all_td",
+  "test_id": "A1",
+  "trial": 3,
+  "run_id": "RUN-108",
+  "collective": {
+    "status": "ok",
+    "plan_id": "TqADAqqylNrNAA6dZLypnA",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 5**\n\n\"You can simply use the car wash app on your phone or download it from the play store. It will take care of everything for you while you enjoy a hot day at the beach!\"",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 4078,
+    "synthesizer_latency_ms": 1296,
+    "synthesizer_tokens_in": 514,
+    "synthesizer_tokens_out": 47,
+    "worker_outputs": [
+      {
+        "worker_id": "TqADAqqylNrNAA6dZLypnA_w1",
+        "content": "Yes, you should definitely walk to the car wash. This is because the distance from your home to the car wash is less than half a kilometer. If you walked at a normal pace, it would only take about 15 minutes or so. However, as an additional point, there might be an issue with your car's suspension and handling if you walk all the way, so it could make sense to consider a rented car wash option instead."
+      },
+      {
+        "worker_id": "TqADAqqylNrNAA6dZLypnA_w2",
+        "content": "Sure, but it could be tricky. It's not easy to find a parking spot on the street nearby without disturbing the neighbors or obstructing traffic flow. If there are any vehicles parked in that area when you approach, you might have trouble getting close enough to the car wash. The walk could also be time-consuming and challenging, depending on the weather conditions and the distance from your car."
+      },
+      {
+        "worker_id": "TqADAqqylNrNAA6dZLypnA_w4",
+        "content": "To determine if you should walk to the car wash, we would need more context about what the location of the car wash is, whether it is an open area, and any nearby amenities like restrooms or other facilities that you might use while waiting. We also need to know your intended purpose for visiting the car wash, such as for a quick cleanup or a longer session to maintain your vehicle's appearance."
+      },
+      {
+        "worker_id": "TqADAqqylNrNAA6dZLypnA_w0",
+        "content": "Certainly! Walking is the most reasonable choice, as it allows you to breathe and engage your body while getting your vehicle professionally cleaned. Just be prepared for some stretches and light exercise afterward. Additionally, it's an excellent way to clear your mind before you face the day ahead, allowing you to stay focused on your goals."
+      },
+      {
+        "worker_id": "TqADAqqylNrNAA6dZLypnA_w3",
+        "content": "Oh no, you don't need to walk. You can simply use the car wash app on your phone or download it from the play store. It will take care of everything for you while you enjoy a hot day at the beach!"
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:01:49.813706Z",
+  "solo": []
+}

@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "gemma2:2b",
+      "tinydolphin",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:04:13.489711Z",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "panel_id": "mixed",
+  "test_id": "A2",
+  "trial": 2,
+  "run_id": "RUN-140",
+  "collective": {
+    "status": "ok",
+    "plan_id": "HyGt_O3bG5zcTwIoYg3PvQ",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 4**\n\nWhen Sally returns, she will not necessarily find the marble because Anne moved it without her permission. She may have left the marble in the box, or she could have taken it away herself. The specific location of the marble is unknown. \n\n\n**Explanation:**  While Worker 1 and 3 make assumptions about where Sally might look, they don't consider the possibility that the marble was moved by someone else (Anne). Worker 4 acknowledges this potential scenario and highlights the uncertainty regarding the marble's location. This makes them the most likely correct worker as it addresses a key aspect of the problem - the possible relocation of the marble.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 4186,
+    "synthesizer_latency_ms": 2643,
+    "synthesizer_tokens_in": 366,
+    "synthesizer_tokens_out": 138,
+    "worker_outputs": [
+      {
+        "worker_id": "HyGt_O3bG5zcTwIoYg3PvQ_w2",
+        "content": "Sally will likely look in the basket because that is where she placed the marble initially."
+      },
+      {
+        "worker_id": "HyGt_O3bG5zcTwIoYg3PvQ_w1",
+        "content": "When Sally returns, she should check her own original location or the spot of the marble if it was not moved right away. She might also want to check other possible hiding spots in the room."
+      },
+      {
+        "worker_id": "HyGt_O3bG5zcTwIoYg3PvQ_w0",
+        "content": "Anne would look in the box with the marbles after Sally is gone. The reason is that when Sally leaves the room, the marble is still inside the basket in the box, which means it must be close to her. Anne knows where Sally is going and so she would expect to find her there."
+      },
+      {
+        "worker_id": "HyGt_O3bG5zcTwIoYg3PvQ_w4",
+        "content": "When Sally returns, she will not necessarily find the marble because Anne moved it without her permission. She may have left the marble in the box, or she could have taken it away herself. The specific location of the marble is unknown."
+      },
+      {
+        "worker_id": "HyGt_O3bG5zcTwIoYg3PvQ_w3",
+        "content": "Sally will not know where to find the marble because she left it unnoticed in her absence. \n\nSally might think that Anne moved the marble to another spot, but in reality, the marble has been taken by an unknown person and is now hidden somewhere else."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:04:17.677100Z",
+  "solo": []
+}

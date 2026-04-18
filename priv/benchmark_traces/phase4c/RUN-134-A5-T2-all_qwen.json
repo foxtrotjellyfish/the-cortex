@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:03:41.558746Z",
+  "question": "I have a brother. My brother has no brothers. How is this possible?",
+  "panel_id": "all_qwen",
+  "test_id": "A5",
+  "trial": 2,
+  "run_id": "RUN-134",
+  "collective": {
+    "status": "ok",
+    "plan_id": "Eho1OkY44P-P2ixegFqB9Q",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 3**\n\n\"It's impossible for a person to have none of their own siblings. The assumption that \"my brother\" and \"no brothers\" are logically linked is not supported by the given information. The premise states that one \"has no brothers,\" which directly contradicts the idea that \"I have a brother.\" Therefore, based on this specific statement, it can be concluded that \"My brother has none of their own siblings.\"",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 3548,
+    "synthesizer_latency_ms": 1875,
+    "synthesizer_tokens_in": 404,
+    "synthesizer_tokens_out": 93,
+    "worker_outputs": [
+      {
+        "worker_id": "Eho1OkY44P-P2ixegFqB9Q_w1",
+        "content": "The scenario you described is not typical of human nature or the way siblings interact. For your brother to have \"no brothers\" would suggest that he has an additional sibling, which contradicts common social norms and family structures. It's important to consider other possibilities if you believe your brother has no brothers."
+      },
+      {
+        "worker_id": "Eho1OkY44P-P2ixegFqB9Q_w4",
+        "content": "It is impossible for a single individual to have no brothers, as individuals are defined by their relationship with other people."
+      },
+      {
+        "worker_id": "Eho1OkY44P-P2ixegFqB9Q_w2",
+        "content": "It's impossible for a person to have none of their own siblings. The assumption that \"my brother\" and \"no brothers\" are logically linked is not supported by the given information. The premise states that one \"has no brothers,\" which directly contradicts the idea that \"I have a brother.\" Therefore, based on this specific statement, it can be concluded that \"My brother has none of their own siblings.\""
+      },
+      {
+        "worker_id": "Eho1OkY44P-P2ixegFqB9Q_w0",
+        "content": "It's not possible for your brother to be without brothers, as this would contradict the fundamental principle of mono-sociality (the belief that only one person should share the same social role). If there are no other siblings, it means you and your brother can share a mother's and father's roles."
+      },
+      {
+        "worker_id": "Eho1OkY44P-P2ixegFqB9Q_w3",
+        "content": "It is not uncommon for siblings to have no siblings, especially if the person being tested is their parent or family member."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:03:45.107953Z",
+  "solo": []
+}

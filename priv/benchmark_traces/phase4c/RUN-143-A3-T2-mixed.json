@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "gemma2:2b",
+      "tinydolphin",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:04:26.567869Z",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "panel_id": "mixed",
+  "test_id": "A3",
+  "trial": 2,
+  "run_id": "RUN-143",
+  "collective": {
+    "status": "ok",
+    "plan_id": "qcG1sUb8wNXMVE3UPPfVJA",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 3**\n\nThe farmer has 8 sheep left.  The wording \"All but 8 die\" means that 8 sheep survived.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 2362,
+    "synthesizer_latency_ms": 968,
+    "synthesizer_tokens_in": 325,
+    "synthesizer_tokens_out": 34,
+    "worker_outputs": [
+      {
+        "worker_id": "qcG1sUb8wNXMVE3UPPfVJA_w0",
+        "content": "The farmer has 7 sheep. His total number of sheep is now: 15 - 8 = 7."
+      },
+      {
+        "worker_id": "qcG1sUb8wNXMVE3UPPfVJA_w3",
+        "content": "The farmer has 9 sheep left."
+      },
+      {
+        "worker_id": "qcG1sUb8wNXMVE3UPPfVJA_w2",
+        "content": "The farmer has 8 sheep left.  The wording \"All but 8 die\" means that 8 sheep survived."
+      },
+      {
+        "worker_id": "qcG1sUb8wNXMVE3UPPfVJA_w1",
+        "content": "If all 15 sheep except 8 died, then the farmer would indeed have no sheep at all. The farmer would be left with only 0 sheep and would not have any animals to manage or care for them in his fields or on the farm. This scenario is a clear example of paradoxes or absurdities that can be addressed by focusing on the core reality of the animal population rather than attempting an overcomplicated mathematical calculation or logical argument."
+      },
+      {
+        "worker_id": "qcG1sUb8wNXMVE3UPPfVJA_w4",
+        "content": "The farmer had originally 15 sheep, so if all but 8 died, he would be left with 8 sheep."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:04:28.930868Z",
+  "solo": []
+}

@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:03:31.968975Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "panel_id": "all_qwen",
+  "test_id": "A4",
+  "trial": 2,
+  "run_id": "RUN-131",
+  "collective": {
+    "status": "ok",
+    "plan_id": "7wREhwsc4qMiGxcIP3Xi-Q",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 3** \n\nThe bear cannot be red because it faces south and thus would not be able to see the wall that faces south in a north-south direction. The bears must therefore have been brown or gray, as they are typically found in these colors.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 2699,
+    "synthesizer_latency_ms": 1284,
+    "synthesizer_tokens_in": 352,
+    "synthesizer_tokens_out": 58,
+    "worker_outputs": [
+      {
+        "worker_id": "7wREhwsc4qMiGxcIP3Xi-Q_w0",
+        "content": "The bear would likely be brown or tan, as they are common colors for bears that live in areas with significant rainfall and are exposed to cold climates."
+      },
+      {
+        "worker_id": "7wREhwsc4qMiGxcIP3Xi-Q_w3",
+        "content": "The bear must be brown or gray, not white or black. The walls facing south are most likely wood or stone rather than metal, so it's possible the walls themselves could be painted brown or gray."
+      },
+      {
+        "worker_id": "7wREhwsc4qMiGxcIP3Xi-Q_w2",
+        "content": "The bear cannot be red because it faces south and thus would not be able to see the wall that faces south in a north-south direction. The bears must therefore have been brown or gray, as they are typically found in these colors."
+      },
+      {
+        "worker_id": "7wREhwsc4qMiGxcIP3Xi-Q_w1",
+        "content": "The bear would appear to be black or brown because its fur typically has darker tones that are more consistent across all directions, including the front and back (south) facing direction. While it's possible the bear could have a mix of colors on some faces if it moves differently from typical animals, it is most likely brown-black in this case."
+      },
+      {
+        "worker_id": "7wREhwsc4qMiGxcIP3Xi-Q_w4",
+        "content": "The color of the bear cannot be determined without more information."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:03:34.669164Z",
+  "solo": []
+}

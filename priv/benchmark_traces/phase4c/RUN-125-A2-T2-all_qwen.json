@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:03:16.723940Z",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "panel_id": "all_qwen",
+  "test_id": "A2",
+  "trial": 2,
+  "run_id": "RUN-125",
+  "collective": {
+    "status": "ok",
+    "plan_id": "bCFQdoIv9TGNEct6uliZOQ",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 4**\n\nWhen Sally returns and sees the marble, she'll likely search through the box to find it, as it is her new location in case she was out of sight when leaving the basket.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 1878,
+    "synthesizer_latency_ms": 1000,
+    "synthesizer_tokens_in": 264,
+    "synthesizer_tokens_out": 47,
+    "worker_outputs": [
+      {
+        "worker_id": "bCFQdoIv9TGNEct6uliZOQ_w3",
+        "content": "Sally will not find the marble in the box. She left it with Anne when she was away."
+      },
+      {
+        "worker_id": "bCFQdoIv9TGNEct6uliZOQ_w1",
+        "content": "When Sally returns, she will most likely find the marble she moved into the box rather than looking through it again."
+      },
+      {
+        "worker_id": "bCFQdoIv9TGNEct6uliZOQ_w0",
+        "content": "When Sally returns, she will not look for the marble; instead, she will try to return it herself."
+      },
+      {
+        "worker_id": "bCFQdoIv9TGNEct6uliZOQ_w2",
+        "content": "When Sally returns and sees the marble, she'll likely search through the box to find it, as it is her new location in case she was out of sight when leaving the basket."
+      },
+      {
+        "worker_id": "bCFQdoIv9TGNEct6uliZOQ_w4",
+        "content": "She'll try to find it in the basket."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:03:18.603230Z",
+  "solo": []
+}

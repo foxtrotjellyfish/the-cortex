@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:03:14.325662Z",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "panel_id": "all_qwen",
+  "test_id": "A2",
+  "trial": 1,
+  "run_id": "RUN-124",
+  "collective": {
+    "status": "ok",
+    "plan_id": "G3sHq96oucGmAcyCp8vNiQ",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 1**  \n\"When Sally returns to find the marble, she would most likely need to search both the basket (the original location) and the box that Anne moved it to. She should first locate the original spot where Sally left the marble in the basket before checking the box.\"",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 2397,
+    "synthesizer_latency_ms": 1298,
+    "synthesizer_tokens_in": 299,
+    "synthesizer_tokens_out": 63,
+    "worker_outputs": [
+      {
+        "worker_id": "G3sHq96oucGmAcyCp8vNiQ_w1",
+        "content": "When Sally returns to find the marble, she would most likely need to search both the basket (the original location) and the box that Anne moved it to. She should first locate the original spot where Sally left the marble in the basket before checking the box."
+      },
+      {
+        "worker_id": "G3sHq96oucGmAcyCp8vNiQ_w2",
+        "content": "When Sally returns, she would most likely not look for the marble; rather, she would need to find it in the box or return to the location it was initially left."
+      },
+      {
+        "worker_id": "G3sHq96oucGmAcyCp8vNiQ_w3",
+        "content": "When Sally returns to find the marble, she would likely need to try to locate it quickly because the marble is now in a box."
+      },
+      {
+        "worker_id": "G3sHq96oucGmAcyCp8vNiQ_w0",
+        "content": "When Sally comes back, she will likely need to search her own belongings or carefully locate the marble within the box that Anne moved it to."
+      },
+      {
+        "worker_id": "G3sHq96oucGmAcyCp8vNiQ_w4",
+        "content": "She should check the basket again."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:03:16.723549Z",
+  "solo": []
+}

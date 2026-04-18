@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:03:34.669265Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "panel_id": "all_qwen",
+  "test_id": "A4",
+  "trial": 3,
+  "run_id": "RUN-132",
+  "collective": {
+    "status": "ok",
+    "plan_id": "2Z9nMEwFUAOD8M0nvt4r5Q",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 4**\nThe bear would be brown or black. The answer depends on how the question was posed, but \"brown\" is the most common description among those who can identify the house's direction (south). \"Black\" could also work depending on a specific context.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 2146,
+    "synthesizer_latency_ms": 1228,
+    "synthesizer_tokens_in": 275,
+    "synthesizer_tokens_out": 61,
+    "worker_outputs": [
+      {
+        "worker_id": "2Z9nMEwFUAOD8M0nvt4r5Q_w4",
+        "content": "The bear's coat color would be brown, as this is how most bears are known to have brown fur."
+      },
+      {
+        "worker_id": "2Z9nMEwFUAOD8M0nvt4r5Q_w1",
+        "content": "The bear would likely be brown or black, not white or yellow (which are commonly associated with houses facing south)."
+      },
+      {
+        "worker_id": "2Z9nMEwFUAOD8M0nvt4r5Q_w0",
+        "content": "The bear is black, not brown or yellow, as stated in the given passage about the house facing south."
+      },
+      {
+        "worker_id": "2Z9nMEwFUAOD8M0nvt4r5Q_w2",
+        "content": "The bear would be brown or black. The answer depends on how the question was posed, but \"brown\" is the most common description among those who can identify the house's direction (south). \"Black\" could also work depending on a specific context."
+      },
+      {
+        "worker_id": "2Z9nMEwFUAOD8M0nvt4r5Q_w3",
+        "content": "The bear is brown."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:03:36.814844Z",
+  "solo": []
+}

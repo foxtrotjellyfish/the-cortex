@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "gemma2:2b",
+      "tinydolphin",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:04:30.982983Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "panel_id": "mixed",
+  "test_id": "A4",
+  "trial": 1,
+  "run_id": "RUN-145",
+  "collective": {
+    "status": "ok",
+    "plan_id": "0sOffSEp_guQDwChIt7idA",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 4** \n\nThe bear is brown or black.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 1879,
+    "synthesizer_latency_ms": 668,
+    "synthesizer_tokens_in": 302,
+    "synthesizer_tokens_out": 17,
+    "worker_outputs": [
+      {
+        "worker_id": "0sOffSEp_guQDwChIt7idA_w0",
+        "content": "The bear's color is white. It has just stepped out of the shade of the south-facing walls and into the sunlight, which was casting down upon it."
+      },
+      {
+        "worker_id": "0sOffSEp_guQDwChIt7idA_w2",
+        "content": "The bear's color depends on its habitat and species, as location doesn't influence color."
+      },
+      {
+        "worker_id": "0sOffSEp_guQDwChIt7idA_w3",
+        "content": "The bear is white."
+      },
+      {
+        "worker_id": "0sOffSEp_guQDwChIt7idA_w1",
+        "content": "The bear would be brown or black, as it's typically found in these colors. The color of the bear wouldn't change based on where its shadow falls on the walls if those are facing south.\n\nIf we assume the bear is moving in a way that casts its shadow across one wall (which appears to be South), then the actual color would remain white or red, not brown/black."
+      },
+      {
+        "worker_id": "0sOffSEp_guQDwChIt7idA_w4",
+        "content": "The color of the bear is brown or black."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:04:32.862210Z",
+  "solo": []
+}

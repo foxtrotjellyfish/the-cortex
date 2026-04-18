@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "gemma2:2b",
+      "tinydolphin",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:04:23.772098Z",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "panel_id": "mixed",
+  "test_id": "A3",
+  "trial": 1,
+  "run_id": "RUN-142",
+  "collective": {
+    "status": "ok",
+    "plan_id": "ICRkGxgXkOjO8w0jfFqZYA",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 5**\n\nThe farmer has 7 sheep left.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 2795,
+    "synthesizer_latency_ms": 828,
+    "synthesizer_tokens_in": 467,
+    "synthesizer_tokens_out": 17,
+    "worker_outputs": [
+      {
+        "worker_id": "ICRkGxgXkOjO8w0jfFqZYA_w2",
+        "content": "The farmer has **8** sheep left. The wording \"all but 8\" implies that 8 remain alive."
+      },
+      {
+        "worker_id": "ICRkGxgXkOjO8w0jfFqZYA_w0",
+        "content": "The answer is 7.\n\nAssuming the farmer has already euthanized the remaining 8 sheep, there are now 7 sheep left in the farm. This means that 15 - 8 = 7 sheep were taken away from the farm, resulting in a total of 7."
+      },
+      {
+        "worker_id": "ICRkGxgXkOjO8w0jfFqZYA_w1",
+        "content": "To address this question effectively, we need to identify a flaw or edge case: if some sheep were initially not dead and thus should be included in our count, it wouldn't make sense to subtract 8 from the total.\n\nThis is an example of a classic common mistake known as \"the paradox of the missing sheep.\" In this scenario, even though there are 15 sheep (as stated), we must account for the fact that some could have been dead but aren't mentioned in our initial count. Therefore, it's essential to consider all instances and their status before making a decision."
+      },
+      {
+        "worker_id": "ICRkGxgXkOjO8w0jfFqZYA_w4",
+        "content": "The number of sheep remains unchanged at 15."
+      },
+      {
+        "worker_id": "ICRkGxgXkOjO8w0jfFqZYA_w3",
+        "content": "The farmer has 7 sheep left.\n\nThe reason given for this answer is that the sheep are dying in a random order due to the extreme weather conditions, which resulted in the loss of 8 out of 15. This scenario would make logical sense if we know that there is a significant decrease in temperature or humidity over a period of time. If not, the death rate would be even higher as these sheep might have been affected by a combination of factors like heat exhaustion and starvation."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:04:26.567690Z",
+  "solo": []
+}

@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:03:00.417166Z",
+  "question": "I need a car wash. The car wash is 50 meters away. Should I walk?",
+  "panel_id": "all_qwen",
+  "test_id": "A1",
+  "trial": 1,
+  "run_id": "RUN-121",
+  "collective": {
+    "status": "ok",
+    "plan_id": "aM7vOrHg5ixCxarL1TaTpA",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 5**\n\n\"Certainly! Although walking might seem inconvenient, it's generally more efficient and less stressful to use public transportation or bike lanes for short distances compared to driving alone. A 50-meter car wash could lead you to a place where taking public transit would be preferable.\" \n\n\n**Explanation:** Worker 5 presents the most logical argument in favor of walking. They acknowledge the inconvenience but emphasize the potential benefits of using public transport or cycling for short distances, especially considering the proximity of the car wash.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 5026,
+    "synthesizer_latency_ms": 2185,
+    "synthesizer_tokens_in": 429,
+    "synthesizer_tokens_out": 110,
+    "worker_outputs": [
+      {
+        "worker_id": "aM7vOrHg5ixCxarL1TaTpA_w1",
+        "content": "Walking to the car wash would be an unsafe and impractical option for many people due to traffic, potential hazards on the road, and the distance involved. Alternatives could include using public transportation, biking, or hiring a professional car washer at the nearest convenient location if access is not possible."
+      },
+      {
+        "worker_id": "aM7vOrHg5ixCxarL1TaTpA_w2",
+        "content": "The premise here is that you are planning to buy or rent the car and would want it clean immediately. To address this, it might be advisable to consider a shorter route (5-10 meters) for a more efficient vehicle move rather than walking 50 meters."
+      },
+      {
+        "worker_id": "aM7vOrHg5ixCxarL1TaTpA_w4",
+        "content": "Yes, you could walk to the car wash and then return home via another route that might be quicker or safer than the direct one-way trip. If that's not an option, consider using public transportation such as buses or trams for a more efficient journey."
+      },
+      {
+        "worker_id": "aM7vOrHg5ixCxarL1TaTpA_w3",
+        "content": "If the car wash is 50 meters away, walking would be a good option for you because it's relatively close and less strenuous than driving. However, if you're concerned about fatigue or want to minimize physical exertion, taking public transportation or using a bicycle could also be an effective alternative."
+      },
+      {
+        "worker_id": "aM7vOrHg5ixCxarL1TaTpA_w0",
+        "content": "Certainly! Although walking might seem inconvenient, it's generally more efficient and less stressful to use public transportation or bike lanes for short distances compared to driving alone. A 50-meter car wash could lead you to a place where taking public transit would be preferable."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:03:05.443775Z",
+  "solo": []
+}

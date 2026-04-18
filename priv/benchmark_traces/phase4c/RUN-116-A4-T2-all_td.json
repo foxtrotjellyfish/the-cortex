@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:02:31.253900Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "panel_id": "all_td",
+  "test_id": "A4",
+  "trial": 2,
+  "run_id": "RUN-116",
+  "collective": {
+    "status": "ok",
+    "plan_id": "1Dc4nZAP5RgzoanQEbxfvA",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 1**\n\n[Worker 1 — CHECK ASSUMPTIONS]\n The bear would be white, unless he's a polar bear, in which case he would have dark brown or black fur.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 4605,
+    "synthesizer_latency_ms": 1373,
+    "synthesizer_tokens_in": 592,
+    "synthesizer_tokens_out": 47,
+    "worker_outputs": [
+      {
+        "worker_id": "1Dc4nZAP5RgzoanQEbxfvA_w2",
+        "content": "The bear would be white, unless he's a polar bear, in which case he would have dark brown or black fur."
+      },
+      {
+        "worker_id": "1Dc4nZAP5RgzoanQEbxfvA_w0",
+        "content": "To determine the bear's color, we must analyze the information provided in the statement: \"a bear walks past the house.\" \n\nThe statement tells us that there are four walls facing south, but it doesn't specify whether they're all facing south (that would be a cardinal direction) or not. As a generalization, we can assume that the four walls face south unless otherwise stated. \n\nIf the man has an architectural background, he could design his house based on cardinal directions (north/south and east/west), which would indicate that all four walls are facing south. In this case, the bear would most likely be looking at one of the south-facing walls. \n\nHowever, if the man is not an architect and built the house with non-standard orientation, it's still possible for him to face one of the walls south-facing. So, we can use this information as a starting point: based on the statement, the bear would most likely be looking at the south-facing wall of the house. \n\nIf he didn't, there are several possibilities to consider: the man might not have specified the orientation of his walls, or he could have built the house with non-standard orientation. If the bear doesn't face south-facing, we can rule out this option."
+      },
+      {
+        "worker_id": "1Dc4nZAP5RgzoanQEbxfvA_w3",
+        "content": "Sounds like a joke. The bear is white, as it could only walk in the direction of sunlight."
+      },
+      {
+        "worker_id": "1Dc4nZAP5RgzoanQEbxfvA_w1",
+        "content": "The bear is green. This is due to the sunlight reflecting off the south-facing wall of the house and warming up the bear's fur. The reasoning behind this answer is that the sun's rays are blocked by the north-facing wall of the house, so they do not reach the building's southern side. This causes the walls to absorb more heat, leading to an increase in temperature."
+      },
+      {
+        "worker_id": "1Dc4nZAP5RgzoanQEbxfvA_w4",
+        "content": "The question asks for the color of the bear's face. Answering this requires more context about the bear's appearance and its actions. Without further information, we can provide a general answer but not specific details."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:02:35.860122Z",
+  "solo": []
+}

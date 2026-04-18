@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:02:01.416196Z",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "panel_id": "all_td",
+  "test_id": "A2",
+  "trial": 3,
+  "run_id": "RUN-111",
+  "collective": {
+    "status": "ok",
+    "plan_id": "Dh1zksVztYFi_JijSJ-gzg",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 3**\n\nThe marble must have already been moved by someone else. Sally cannot look in any of the boxes when she returns. The premise is that the marble is in Anne's possession after Sally has left, and it must be removed from her possession before Sally can check to see if it exists in another location. This eliminates any possibility of an earlier movement by Anne or anyone else.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 4232,
+    "synthesizer_latency_ms": 1799,
+    "synthesizer_tokens_in": 458,
+    "synthesizer_tokens_out": 84,
+    "worker_outputs": [
+      {
+        "worker_id": "Dh1zksVztYFi_JijSJ-gzg_w1",
+        "content": "The answer is when she comes back. The reasoning behind this is that Sally couldn't have moved the marble from its original location because if she did, it would mean she could move the marble to a new box with Anne instead of returning it to the basket where Anne originally placed it. This contradicts the assumption that they are both in the same room and should be moving items together."
+      },
+      {
+        "worker_id": "Dh1zksVztYFi_JijSJ-gzg_w0",
+        "content": "Sally will look on the floor or by the window."
+      },
+      {
+        "worker_id": "Dh1zksVztYFi_JijSJ-gzg_w2",
+        "content": "The marble must have already been moved by someone else. Sally cannot look in any of the boxes when she returns. The premise is that the marble is in Anne's possession after Sally has left, and it must be removed from her possession before Sally can check to see if it exists in another location. This eliminates any possibility of an earlier movement by Anne or anyone else."
+      },
+      {
+        "worker_id": "Dh1zksVztYFi_JijSJ-gzg_w3",
+        "content": "Sally would likely look for the marble in the box that Anne moved first. It's possible that she may not even know if the marble is still inside the original basket or in the new box. So, to answer the question, Sally wouldn't just look in the box itself but instead also outside of it and from various angles to see where the marble has gone."
+      },
+      {
+        "worker_id": "Dh1zksVztYFi_JijSJ-gzg_w4",
+        "content": "To find the marble, Sally would need to examine the box it was originally placed in. She could check all of its contents, such as pens, papers, and other items, just like when someone leaves a basket with only one marble inside. After examining the entirety of the box, Sally will be able to conclude that the marble is not there."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:02:05.648899Z",
+  "solo": []
+}

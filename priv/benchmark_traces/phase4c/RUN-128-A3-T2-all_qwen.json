@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b",
+      "qwen2.5:0.5b"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:03:23.508284Z",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "panel_id": "all_qwen",
+  "test_id": "A3",
+  "trial": 2,
+  "run_id": "RUN-128",
+  "collective": {
+    "status": "ok",
+    "plan_id": "FMYLXBCnpj4oFee_xT3Yfg",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 2**\n\n7 sheep left. After losing 8 of his sheep, he would still have only 15 to begin with if no additional factors are considered.\nThis is because we can reason through it as a problem: \n- If a farmer initially has 15 sheep and all but 8 die (which means they lose 8), the remaining count must be exactly 7.",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 3196,
+    "synthesizer_latency_ms": 1725,
+    "synthesizer_tokens_in": 365,
+    "synthesizer_tokens_out": 86,
+    "worker_outputs": [
+      {
+        "worker_id": "FMYLXBCnpj4oFee_xT3Yfg_w2",
+        "content": "The number of sheep remains unchanged after the farmer had all but 8 sheep die, as they are not part of the herd that was lost. Thus, the remaining 7 sheep represent the total number of sheep the farmer has."
+      },
+      {
+        "worker_id": "FMYLXBCnpj4oFee_xT3Yfg_w1",
+        "content": "The farmer has 7 sheep left. After losing 8 of his sheep, he would still have only 15 to begin with if no additional factors are considered.\nThis is because we can reason through it as a problem: \n- If a farmer initially has 15 sheep and all but 8 die (which means they lose 8), the remaining count must be exactly 7."
+      },
+      {
+        "worker_id": "FMYLXBCnpj4oFee_xT3Yfg_w0",
+        "content": "The farmer is left with 7 sheep."
+      },
+      {
+        "worker_id": "FMYLXBCnpj4oFee_xT3Yfg_w3",
+        "content": "The farmer has no sheep left. After all, he had 15 sheep and only 8 died, so there were originally 15 sheep."
+      },
+      {
+        "worker_id": "FMYLXBCnpj4oFee_xT3Yfg_w4",
+        "content": "The question is fully answered by specifying that \"all but 8 die.\" If there were initially 15 sheep and 8 died, then 7 sheep are still remaining (since 15 - 8 = 7)."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:03:26.705194Z",
+  "solo": []
+}

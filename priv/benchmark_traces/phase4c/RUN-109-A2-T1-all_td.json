@@ -1,0 +1,61 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": [
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin",
+      "tinydolphin"
+    ],
+    "synthesizer_config": {
+      "model": "gemma2:2b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-18T18:01:49.814092Z",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "panel_id": "all_td",
+  "test_id": "A2",
+  "trial": 1,
+  "run_id": "RUN-109",
+  "collective": {
+    "status": "ok",
+    "plan_id": "mE92CGYgogovuHKOJNWgXQ",
+    "worker_count": 5,
+    "synthesizer_answer": "**Worker 4**\n\n\"She would probably take the marble from the box it was originally placed in if the original location is not apparent.  If the box is empty, she could still try searching the floor around it or look behind a nearby object.  However, if the box is full of items, there are more possibilities to explore. Anne could check under the bed if she has recently moved it.  She could also check behind any chairs and nearby shelves. If Sally is unable to find the marble immediately, it might be worth checking under a coffee table, where marbles can often be found.\"",
+    "synthesizer_model": "gemma2:2b",
+    "total_latency_ms": 5587,
+    "synthesizer_latency_ms": 2569,
+    "synthesizer_tokens_in": 543,
+    "synthesizer_tokens_out": 125,
+    "worker_outputs": [
+      {
+        "worker_id": "mE92CGYgogovuHKOJNWgXQ_w2",
+        "content": "To determine where the marble is, we can first consider the initial position of the marble before being moved by Anne. If it was still in its original basket, then Sally would still be searching for it in a box, as there's no logical connection between the locations. So, Sally will look for the marble in a box."
+      },
+      {
+        "worker_id": "mE92CGYgogovuHKOJNWgXQ_w1",
+        "content": "When Sally returns after being gone for an extended period, she would likely find the marble in her box of marbles in her room. The reasoning behind this is that Anne has moved it there as a way to maintain order and make it convenient for Sally to retrieve it later."
+      },
+      {
+        "worker_id": "mE92CGYgogovuHKOJNWgXQ_w3",
+        "content": "Anne could have moved the marble from the basket to the box during her absence. This means that she was aware of what happened and is now looking for it. Therefore, Sally cannot simply walk into the room and expect to find the marble there, as it has been placed in another location."
+      },
+      {
+        "worker_id": "mE92CGYgogovuHKOJNWgXQ_w0",
+        "content": "1. She would probably take the marble from the box it was originally placed in if the original location is not apparent.\n2. If the box is empty, she could still try searching the floor around it or look behind a nearby object.\n3. However, if the box is full of items, there are more possibilities to explore. \n4. Anne could check under the bed if she has recently moved it.\n5. She could also check behind any chairs and nearby shelves.\n6. If Sally is unable to find the marble immediately, it might be worth checking under a coffee table, where marbles can often be found."
+      },
+      {
+        "worker_id": "mE92CGYgogovuHKOJNWgXQ_w4",
+        "content": "Based on what we know, we cannot definitively conclude that she will find it in the box or at any particular spot in the room. We must infer her actions based on context clues and analyze various possibilities for her action. The context is limited, so a clear answer isn't possible. We need to see more about the room and what was going on when Sally disappeared to find out what happened to the marble."
+      }
+    ]
+  },
+  "completed_at": "2026-04-18T18:01:55.402002Z",
+  "solo": []
+}
