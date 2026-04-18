@@ -63,6 +63,9 @@ defmodule Cortex.Graph do
     - :synthesizer_mode — atom passed in signal metadata (default: :debate)
     - :synthesizer_config — map merged into synthesizer adapter_config for this debate
       (e.g. `%{model: "phi3:mini"}` to swap the synthesizer model per-run)
+    - :worker_adapter_configs — optional list of per-worker adapter maps or model name strings,
+      one entry per worker index (length should match worker count). Merged with `:adapter_config`.
+      Omitted entries or a short list falls back to the base `:adapter_config`.
   """
   def debate(question, opts \\ []) when is_binary(question) do
     GenServer.call(__MODULE__, {:debate, question, opts}, :infinity)
@@ -98,10 +101,16 @@ defmodule Cortex.Graph do
     else
       plan_id = signal.id
       Logger.info("[Graph] Plan #{plan_id}: #{length(subtasks)} sub-tasks → fanning out")
-      broadcast({:plan_started, %{plan_id: plan_id, subtask_count: length(subtasks), source: signal.source}})
+
+      broadcast(
+        {:plan_started,
+         %{plan_id: plan_id, subtask_count: length(subtasks), source: signal.source}}
+      )
 
       adapter = Application.get_env(:cortex, :worker_adapter, Cortex.LLM.Adapters.Ollama)
-      adapter_config = Application.get_env(:cortex, :worker_adapter_config, %{model: "tinydolphin"})
+
+      adapter_config =
+        Application.get_env(:cortex, :worker_adapter_config, %{model: "tinydolphin"})
 
       # Spawn one Worker per sub-task; build tracking state in a single pass
       workers =
@@ -121,8 +130,14 @@ defmodule Cortex.Graph do
 
           case Cortex.Domain.Supervisor.start_agent(Cortex.Graph.Worker, opts) do
             {:ok, pid} ->
-              Logger.debug("[Graph] Spawned #{worker_id} (pid=#{inspect(pid)}) → #{String.slice(subtask, 0, 60)}")
-              broadcast({:worker_spawned, %{plan_id: plan_id, worker_id: worker_id, subtask: subtask}})
+              Logger.debug(
+                "[Graph] Spawned #{worker_id} (pid=#{inspect(pid)}) → #{String.slice(subtask, 0, 60)}"
+              )
+
+              broadcast(
+                {:worker_spawned, %{plan_id: plan_id, worker_id: worker_id, subtask: subtask}}
+              )
+
               Map.put(acc, worker_id, %{status: :pending, output: nil, subtask: subtask})
 
             {:error, reason} ->
@@ -170,7 +185,11 @@ defmodule Cortex.Graph do
         total = map_size(workers)
 
         Logger.info("[Graph] Plan #{plan_id}: #{done_count}/#{total} workers done")
-        broadcast({:worker_done, %{plan_id: plan_id, worker_id: worker_id, done: done_count, total: total}})
+
+        broadcast(
+          {:worker_done,
+           %{plan_id: plan_id, worker_id: worker_id, done: done_count, total: total}}
+        )
 
         if done_count == total do
           trigger_synthesizer(plan_id, plan)
@@ -204,20 +223,44 @@ defmodule Cortex.Graph do
   def handle_call({:debate, question, opts}, _from, state) do
     viewpoints = Keyword.get(opts, :viewpoints, @viewpoints)
     worker_count = Keyword.get(opts, :workers, length(viewpoints))
-    adapter = Keyword.get(opts, :adapter, Application.get_env(:cortex, :worker_adapter, Cortex.LLM.Adapters.Ollama))
-    adapter_config = Keyword.get(opts, :adapter_config, Application.get_env(:cortex, :worker_adapter_config, %{model: "tinydolphin"}))
+
+    adapter =
+      Keyword.get(
+        opts,
+        :adapter,
+        Application.get_env(:cortex, :worker_adapter, Cortex.LLM.Adapters.Ollama)
+      )
+
+    adapter_config =
+      Keyword.get(
+        opts,
+        :adapter_config,
+        Application.get_env(:cortex, :worker_adapter_config, %{model: "tinydolphin"})
+      )
+
+    worker_adapter_configs = Keyword.get(opts, :worker_adapter_configs)
     synth_mode = Keyword.get(opts, :synthesizer_mode, :debate)
     synth_config = Keyword.get(opts, :synthesizer_config)
 
     plan_id = Cortex.Signal.new(:debate, @graph_topic, question).id
-    Logger.info("[Graph] Debate #{plan_id}: \"#{String.slice(question, 0, 60)}\" → #{worker_count} viewpoints")
-    broadcast({:plan_started, %{plan_id: plan_id, subtask_count: worker_count, source: :debate, mode: :debate}})
+
+    Logger.info(
+      "[Graph] Debate #{plan_id}: \"#{String.slice(question, 0, 60)}\" → #{worker_count} viewpoints"
+    )
+
+    broadcast(
+      {:plan_started,
+       %{plan_id: plan_id, subtask_count: worker_count, source: :debate, mode: :debate}}
+    )
 
     workers =
       0..(worker_count - 1)
       |> Enum.reduce(%{}, fn idx, acc ->
         worker_id = "#{plan_id}_w#{idx}"
         {label, prompt} = Enum.at(viewpoints, rem(idx, length(viewpoints)))
+
+        per_worker_config =
+          merge_worker_adapter_config(adapter_config, worker_adapter_configs, idx)
 
         worker_opts = [
           plan_id: plan_id,
@@ -226,14 +269,27 @@ defmodule Cortex.Graph do
           viewpoint: prompt,
           graph_pid: self(),
           adapter: adapter,
-          adapter_config: adapter_config
+          adapter_config: per_worker_config
         ]
 
         case Cortex.Domain.Supervisor.start_agent(Cortex.Graph.Worker, worker_opts) do
           {:ok, pid} ->
-            Logger.debug("[Graph] Debate worker #{worker_id} (#{inspect(pid)}) viewpoint: #{label}")
-            broadcast({:worker_spawned, %{plan_id: plan_id, worker_id: worker_id, subtask: question, viewpoint: label}})
-            Map.put(acc, worker_id, %{status: :pending, output: nil, subtask: question, viewpoint: prompt, viewpoint_label: label})
+            Logger.debug(
+              "[Graph] Debate worker #{worker_id} (#{inspect(pid)}) viewpoint: #{label}"
+            )
+
+            broadcast(
+              {:worker_spawned,
+               %{plan_id: plan_id, worker_id: worker_id, subtask: question, viewpoint: label}}
+            )
+
+            Map.put(acc, worker_id, %{
+              status: :pending,
+              output: nil,
+              subtask: question,
+              viewpoint: prompt,
+              viewpoint_label: label
+            })
 
           {:error, reason} ->
             Logger.error("[Graph] Failed to spawn debate worker: #{inspect(reason)}")
@@ -316,11 +372,27 @@ defmodule Cortex.Graph do
 
     elapsed_ms = DateTime.diff(DateTime.utc_now(), plan.started_at, :millisecond)
 
-    broadcast({:plan_complete, %{plan_id: plan_id, elapsed_ms: elapsed_ms, worker_count: map_size(plan.workers)}})
-    Logger.info("[Graph] Plan #{plan_id} complete in #{elapsed_ms}ms → synthesizer triggered (mode: #{mode})")
+    broadcast(
+      {:plan_complete,
+       %{plan_id: plan_id, elapsed_ms: elapsed_ms, worker_count: map_size(plan.workers)}}
+    )
+
+    Logger.info(
+      "[Graph] Plan #{plan_id} complete in #{elapsed_ms}ms → synthesizer triggered (mode: #{mode})"
+    )
   end
 
   defp broadcast(event) do
     Phoenix.PubSub.broadcast(Cortex.PubSub, @events_topic, event)
+  end
+
+  defp merge_worker_adapter_config(base, nil, _idx), do: base
+
+  defp merge_worker_adapter_config(base, list, idx) when is_list(list) do
+    case Enum.at(list, idx) do
+      nil -> base
+      %{model: _} = extra -> Map.merge(base, extra)
+      model when is_binary(model) -> Map.put(base, :model, model)
+    end
   end
 end
