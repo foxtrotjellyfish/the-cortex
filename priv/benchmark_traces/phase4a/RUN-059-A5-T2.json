@@ -1,0 +1,85 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "llama3.2:3b",
+      "gemma2:2b",
+      "smollm:1.7b",
+      "phi3:mini"
+    ],
+    "solo_only": "true"
+  },
+  "started_at": "2026-04-18T16:13:11.908254Z",
+  "question": "I have a brother. My brother has no brothers. How is this possible?",
+  "test_id": "A5",
+  "trial": 2,
+  "run_id": "RUN-059",
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 53,
+      "tokens_out": 156,
+      "answer": "Imagine you have three identical twin brothers named John, Jack, and Jim. \n\nNow, let's think about how it could be that they don't all have brothers. You see, the same reasoning can be applied here. Each of the three brothers is a separate entity. They are different from each other, yet they also share some similarities, like having the same parents and living in the same town.\n\nIn this situation, each brother has their own separate lives, and they aren't related by blood. So, even though there isn't any immediate evidence that all three brothers are related to one another, over time and through various events, these differences in circumstance can combine to create a network of relationships and connections.",
+      "latency_ms": 1632
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 47,
+      "tokens_out": 31,
+      "answer": "It's possible for a sibling to have no brothers because siblings can be very similar or unique, leading them to grow up together as one family unit.",
+      "latency_ms": 236
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 59,
+      "tokens_out": 31,
+      "answer": "This is a classic lateral thinking puzzle, and the answer is that your brother has a sister, or more broadly, he has one or zero sisters.",
+      "latency_ms": 643
+    },
+    {
+      "status": "ok",
+      "model": "gemma2:2b",
+      "tokens_in": 49,
+      "tokens_out": 15,
+      "answer": "You and your brother are part of a set of twins.",
+      "latency_ms": 1883
+    },
+    {
+      "status": "ok",
+      "model": "smollm:1.7b",
+      "tokens_in": 50,
+      "tokens_out": 85,
+      "answer": "Your brother's situation can be explained by the concept of sibling relationships and the rarity of having an identical twin brother. Siblings are individuals who share one or both parents, but in rare cases, they may also share a common ancestor (e.g., a grandparent). In this scenario, your brother is not related to you through his father's side of the family, which means he does not have any siblings.",
+      "latency_ms": 1860
+    },
+    {
+      "status": "ok",
+      "model": "phi3:mini",
+      "tokens_in": 52,
+      "tokens_out": 43,
+      "answer": "This can be true if you are referring to myself as your sibling, thus I am the only child of my parents and do not count among his brothers or sisters, making him an only child too.",
+      "latency_ms": 2328
+    }
+  ],
+  "completed_at": "2026-04-18T16:13:20.491079Z",
+  "collective": {
+    "status": "skipped",
+    "plan_id": "",
+    "worker_count": 0,
+    "total_latency_ms": 0,
+    "synthesizer_answer": "(solo-only — collective not run)",
+    "synthesizer_latency_ms": "",
+    "synthesizer_model": "",
+    "synthesizer_tokens_in": "",
+    "synthesizer_tokens_out": "",
+    "worker_outputs": []
+  }
+}

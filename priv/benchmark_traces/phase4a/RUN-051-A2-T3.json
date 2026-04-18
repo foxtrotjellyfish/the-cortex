@@ -1,0 +1,85 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "llama3.2:3b",
+      "gemma2:2b",
+      "smollm:1.7b",
+      "phi3:mini"
+    ],
+    "solo_only": "true"
+  },
+  "started_at": "2026-04-18T16:12:07.882453Z",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "test_id": "A2",
+  "trial": 3,
+  "run_id": "RUN-051",
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 84,
+      "tokens_out": 20,
+      "answer": "Sally will look in the box where Anne moved the marble when she left the room.",
+      "latency_ms": 792
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 73,
+      "tokens_out": 29,
+      "answer": "If Sally returns to the scene after seeing the marble moved by Anne, she will likely check into the box where the marble was previously kept.",
+      "latency_ms": 229
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 85,
+      "tokens_out": 27,
+      "answer": "She will look for it in the box, not the basket, because that is where it was moved by Anne during her absence.",
+      "latency_ms": 574
+    },
+    {
+      "status": "ok",
+      "model": "gemma2:2b",
+      "tokens_in": 75,
+      "tokens_out": 15,
+      "answer": "Sally would look in the box where Anne moved the marble.",
+      "latency_ms": 1914
+    },
+    {
+      "status": "ok",
+      "model": "smollm:1.7b",
+      "tokens_in": 76,
+      "tokens_out": 3,
+      "answer": "Answer:",
+      "latency_ms": 751
+    },
+    {
+      "status": "ok",
+      "model": "phi3:mini",
+      "tokens_in": 83,
+      "tokens_out": 83,
+      "answer": "If prompted by question phrasing similar to this one, I cannot generate an answer as it suggests interaction and observation capabilities not attributed to AI technology prior to September 2021 knowledge cutoff. However, based on human behavior inferred from typical understanding of expectation patterns: Sally will look for the marble in the basket because that's where she last remembers seeing it before leaving.",
+      "latency_ms": 3407
+    }
+  ],
+  "completed_at": "2026-04-18T16:12:15.550360Z",
+  "collective": {
+    "status": "skipped",
+    "plan_id": "",
+    "worker_count": 0,
+    "total_latency_ms": 0,
+    "synthesizer_answer": "(solo-only — collective not run)",
+    "synthesizer_latency_ms": "",
+    "synthesizer_model": "",
+    "synthesizer_tokens_in": "",
+    "synthesizer_tokens_out": "",
+    "worker_outputs": []
+  }
+}

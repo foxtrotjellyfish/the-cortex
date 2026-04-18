@@ -1,0 +1,85 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "llama3.2:3b",
+      "gemma2:2b",
+      "smollm:1.7b",
+      "phi3:mini"
+    ],
+    "solo_only": "true"
+  },
+  "started_at": "2026-04-18T16:11:24.625556Z",
+  "question": "I need a car wash. The car wash is 50 meters away. Should I walk?",
+  "test_id": "A1",
+  "trial": 1,
+  "run_id": "RUN-046",
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 59,
+      "tokens_out": 61,
+      "answer": "Yes, you should definitely walk to the car wash. It's about 50 meters away from your house. Since it takes about 1-2 minutes to walk there, you have plenty of time to adjust your schedule and do other things while you wait for the car wash.",
+      "latency_ms": 1136
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 51,
+      "tokens_out": 96,
+      "answer": "To determine if walking would be an efficient way to get to the car wash, one could consider the distance required for both directions: towards the car wash and then back home.\n\nThe car wash is located 50 meters away from your current position, so walking will allow you to cover a certain distance but not necessarily return you to your starting point. If this distance is manageable, including physical activity in your route could be beneficial, as it can help burn calories if applicable.",
+      "latency_ms": 1587
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 62,
+      "tokens_out": 36,
+      "answer": "Considering it's a relatively short distance, walking to the car wash might be a convenient and cost-effective option, especially if you're just taking your vehicle for a quick clean.",
+      "latency_ms": 3111
+    },
+    {
+      "status": "ok",
+      "model": "gemma2:2b",
+      "tokens_in": 53,
+      "tokens_out": 27,
+      "answer": "Yes, walking is an appropriate option for getting to the car wash as it's only 50 meters away.",
+      "latency_ms": 2761
+    },
+    {
+      "status": "ok",
+      "model": "smollm:1.7b",
+      "tokens_in": 54,
+      "tokens_out": 22,
+      "answer": "The car wash is 50 meters away, so you should walk there to get the car washed.",
+      "latency_ms": 1161
+    },
+    {
+      "status": "ok",
+      "model": "phi3:mini",
+      "tokens_in": 58,
+      "tokens_out": 33,
+      "answer": "Given that it's only 50 meters to the car wash, walking should suffice and provide you with some exercise without being exhausting.",
+      "latency_ms": 2930
+    }
+  ],
+  "completed_at": "2026-04-18T16:11:37.311551Z",
+  "collective": {
+    "status": "skipped",
+    "plan_id": "",
+    "worker_count": 0,
+    "total_latency_ms": 0,
+    "synthesizer_answer": "(solo-only — collective not run)",
+    "synthesizer_latency_ms": "",
+    "synthesizer_model": "",
+    "synthesizer_tokens_in": "",
+    "synthesizer_tokens_out": "",
+    "worker_outputs": []
+  }
+}

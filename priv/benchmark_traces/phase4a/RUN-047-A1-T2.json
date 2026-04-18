@@ -1,0 +1,85 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "llama3.2:3b",
+      "gemma2:2b",
+      "smollm:1.7b",
+      "phi3:mini"
+    ],
+    "solo_only": "true"
+  },
+  "started_at": "2026-04-18T16:11:37.312094Z",
+  "question": "I need a car wash. The car wash is 50 meters away. Should I walk?",
+  "test_id": "A1",
+  "trial": 2,
+  "run_id": "RUN-047",
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 59,
+      "tokens_out": 71,
+      "answer": "Yes, you should definitely walk to the car wash. The distance from your house to the car wash is 50 meters. If you take the shortest path possible, it will only take about 1 minute to walk there. This makes it a convenient option for getting to the car wash quickly and without any hassle.",
+      "latency_ms": 1102
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 51,
+      "tokens_out": 26,
+      "answer": "The car wash is located 50 meters away from your house, so you would likely use the fastest route by walking.",
+      "latency_ms": 211
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 62,
+      "tokens_out": 29,
+      "answer": "It would likely be more time-efficient to walk, considering it's only 50 meters away and doesn't seem like an excessively long distance.",
+      "latency_ms": 608
+    },
+    {
+      "status": "ok",
+      "model": "gemma2:2b",
+      "tokens_in": 53,
+      "tokens_out": 20,
+      "answer": "Yes, walking is an appropriate option as it's only 50 meters.",
+      "latency_ms": 1983
+    },
+    {
+      "status": "ok",
+      "model": "smollm:1.7b",
+      "tokens_in": 54,
+      "tokens_out": 25,
+      "answer": "You should walk because walking will take you less time than driving to the car wash, and it's more environmentally friendly.",
+      "latency_ms": 1188
+    },
+    {
+      "status": "ok",
+      "model": "phi3:mini",
+      "tokens_in": 58,
+      "tokens_out": 56,
+      "answer": "Given that it's only 50 meters to the car wash, walking could be considered reasonable if you are in no rush or do not mind spending time outside your vehicle for a few minutes; otherwise, driving would be quicker and more convenient.",
+      "latency_ms": 2604
+    }
+  ],
+  "completed_at": "2026-04-18T16:11:45.008057Z",
+  "collective": {
+    "status": "skipped",
+    "plan_id": "",
+    "worker_count": 0,
+    "total_latency_ms": 0,
+    "synthesizer_answer": "(solo-only — collective not run)",
+    "synthesizer_latency_ms": "",
+    "synthesizer_model": "",
+    "synthesizer_tokens_in": "",
+    "synthesizer_tokens_out": "",
+    "worker_outputs": []
+  }
+}

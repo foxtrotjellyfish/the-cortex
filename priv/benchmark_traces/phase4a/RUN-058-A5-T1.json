@@ -1,0 +1,85 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "llama3.2:3b",
+      "gemma2:2b",
+      "smollm:1.7b",
+      "phi3:mini"
+    ],
+    "solo_only": "true"
+  },
+  "started_at": "2026-04-18T16:13:02.896448Z",
+  "question": "I have a brother. My brother has no brothers. How is this possible?",
+  "test_id": "A5",
+  "trial": 1,
+  "run_id": "RUN-058",
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 53,
+      "tokens_out": 102,
+      "answer": "This might seem unusual, but it's actually quite common in some cultures. In these societies, it's not uncommon for a male to be raised without an older sibling to teach him the same skills and values as his other siblings. This can lead to unique dynamics between the two siblings, where one brother may have no brothers at all or may only have close friends. It's just another example of how relationships can vary greatly depending on cultural background and expectations.",
+      "latency_ms": 1318
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 47,
+      "tokens_out": 41,
+      "answer": "This scenario implies that one's brother(s) did not share any of their siblings' birth order or were related to them in some way, allowing for the presence of \"no\" as a condition.",
+      "latency_ms": 302
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 59,
+      "tokens_out": 29,
+      "answer": "This is not biologically or logically possible, but a common puzzle answer is that your brother is adopted and does not have any biological brothers.",
+      "latency_ms": 716
+    },
+    {
+      "status": "ok",
+      "model": "gemma2:2b",
+      "tokens_in": 49,
+      "tokens_out": 26,
+      "answer": "You and your brother are part of an only child family where all members were born to parents who had no siblings.",
+      "latency_ms": 2067
+    },
+    {
+      "status": "ok",
+      "model": "smollm:1.7b",
+      "tokens_in": 50,
+      "tokens_out": 58,
+      "answer": "This is possible because there are two types of siblings: full siblings and half siblings. Full siblings have one biological parent, while half siblings have one biological parent who is not their biological parent. In your case, your brother has no biological parents, so he doesn't have any brothers.",
+      "latency_ms": 1536
+    },
+    {
+      "status": "ok",
+      "model": "phi3:mini",
+      "tokens_in": 52,
+      "tokens_out": 82,
+      "answer": "You are referring to yourself, and you're an only child; thus there aren't any other siblings except for your hypothetical younger sister or brother who isn't yet born (if the answer implies future possibilities). Alternatively, if \"no brothers\" refers to a step-sibling relationship in which they are not biologically yours and you do have a male sibling.",
+      "latency_ms": 3072
+    }
+  ],
+  "completed_at": "2026-04-18T16:13:11.907977Z",
+  "collective": {
+    "status": "skipped",
+    "plan_id": "",
+    "worker_count": 0,
+    "total_latency_ms": 0,
+    "synthesizer_answer": "(solo-only — collective not run)",
+    "synthesizer_latency_ms": "",
+    "synthesizer_model": "",
+    "synthesizer_tokens_in": "",
+    "synthesizer_tokens_out": "",
+    "worker_outputs": []
+  }
+}

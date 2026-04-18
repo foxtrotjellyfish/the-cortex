@@ -1,0 +1,85 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "llama3.2:3b",
+      "gemma2:2b",
+      "smollm:1.7b",
+      "phi3:mini"
+    ],
+    "solo_only": "true"
+  },
+  "started_at": "2026-04-18T16:12:36.199192Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "test_id": "A4",
+  "trial": 1,
+  "run_id": "RUN-055",
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 63,
+      "tokens_out": 9,
+      "answer": "The bear's color is white.",
+      "latency_ms": 724
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 56,
+      "tokens_out": 28,
+      "answer": "The bear is brown, as it blends into the natural surroundings of the man's home located in an area with a predominantly southern climate.",
+      "latency_ms": 243
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 68,
+      "tokens_out": 72,
+      "answer": "The bear's color cannot be determined by the direction of the house, as bears are black and brown or white depending on the species and their natural environment. However, if we consider the question literally, a more humorous response would be that the bear appears to be \"invisible\" because it is not reflecting any light from the south-facing walls of the house.",
+      "latency_ms": 1435
+    },
+    {
+      "status": "ok",
+      "model": "gemma2:2b",
+      "tokens_in": 58,
+      "tokens_out": 8,
+      "answer": "The bear is white.",
+      "latency_ms": 1766
+    },
+    {
+      "status": "ok",
+      "model": "smollm:1.7b",
+      "tokens_in": 59,
+      "tokens_out": 6,
+      "answer": "The bear is black.",
+      "latency_ms": 1034
+    },
+    {
+      "status": "ok",
+      "model": "phi3:mini",
+      "tokens_in": 62,
+      "tokens_out": 121,
+      "answer": "The only place on Earth where such a scenario could occur would be at the South Pole, suggesting that during certain seasons when it's dark even at noon (winter), and sunlight reflects off snow creating polarized light which can make everything appear white. However, considering standard circumstances without special effects or location specificity implying extreme conditions: The bear is black because in real life bears do not naturally inhabit the South Pole region where a house could have all walls facing south to maximize sunlight exposure for warmth and lighting purposes only during polar summer.",
+      "latency_ms": 3815
+    }
+  ],
+  "completed_at": "2026-04-18T16:12:45.216475Z",
+  "collective": {
+    "status": "skipped",
+    "plan_id": "",
+    "worker_count": 0,
+    "total_latency_ms": 0,
+    "synthesizer_answer": "(solo-only — collective not run)",
+    "synthesizer_latency_ms": "",
+    "synthesizer_model": "",
+    "synthesizer_tokens_in": "",
+    "synthesizer_tokens_out": "",
+    "worker_outputs": []
+  }
+}

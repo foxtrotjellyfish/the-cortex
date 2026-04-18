@@ -1,0 +1,85 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "llama3.2:3b",
+      "gemma2:2b",
+      "smollm:1.7b",
+      "phi3:mini"
+    ],
+    "solo_only": "true"
+  },
+  "started_at": "2026-04-18T16:12:15.564606Z",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "test_id": "A3",
+  "trial": 1,
+  "run_id": "RUN-052",
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 62,
+      "tokens_out": 64,
+      "answer": "The question is asking how many sheep are left after 8 out of 15, or 0.625, die. This is because the initial number of sheep is 15 and the total number of deaths is 8, which means that there are now 13 living sheep.",
+      "latency_ms": 1066
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 54,
+      "tokens_out": 44,
+      "answer": "The farmer is left with 7 sheep. This is because by \"all but 8,\" he means that 9 of his sheep survived, leaving him with 15 - 8 = 7 sheep.",
+      "latency_ms": 319
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 65,
+      "tokens_out": 26,
+      "answer": "The farmer originally had 15 sheep, all but 8 of which died, so he still has 8 sheep left.",
+      "latency_ms": 601
+    },
+    {
+      "status": "ok",
+      "model": "gemma2:2b",
+      "tokens_in": 56,
+      "tokens_out": 11,
+      "answer": "The farmer has 8 sheep left.",
+      "latency_ms": 1812
+    },
+    {
+      "status": "ok",
+      "model": "smollm:1.7b",
+      "tokens_in": 57,
+      "tokens_out": 21,
+      "answer": "The farmer has 15 sheep, minus 8 that died, which is 7 sheep.",
+      "latency_ms": 892
+    },
+    {
+      "status": "ok",
+      "model": "phi3:mini",
+      "tokens_in": 61,
+      "tokens_out": 10,
+      "answer": "The farmer has 8 sheep left.",
+      "latency_ms": 1689
+    }
+  ],
+  "completed_at": "2026-04-18T16:12:21.946001Z",
+  "collective": {
+    "status": "skipped",
+    "plan_id": "",
+    "worker_count": 0,
+    "total_latency_ms": 0,
+    "synthesizer_answer": "(solo-only — collective not run)",
+    "synthesizer_latency_ms": "",
+    "synthesizer_model": "",
+    "synthesizer_tokens_in": "",
+    "synthesizer_tokens_out": "",
+    "worker_outputs": []
+  }
+}

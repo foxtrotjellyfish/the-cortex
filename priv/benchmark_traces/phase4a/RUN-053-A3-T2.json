@@ -1,0 +1,85 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "llama3.2:3b",
+      "gemma2:2b",
+      "smollm:1.7b",
+      "phi3:mini"
+    ],
+    "solo_only": "true"
+  },
+  "started_at": "2026-04-18T16:12:21.946238Z",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "test_id": "A3",
+  "trial": 2,
+  "run_id": "RUN-053",
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 62,
+      "tokens_out": 79,
+      "answer": "The question is asking for the number of surviving sheep after some unspecified number of sheep die. In order to answer this question, we need to know how many sheep there were initially and how many are now alive.\n\nAssuming the initial number of sheep is equal to the total number of sheep that have died (15), there are now 8 surviving sheep.",
+      "latency_ms": 1154
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 54,
+      "tokens_out": 23,
+      "answer": "The farmer has 7 sheep left, as he started with 15 and lost 8 of them.",
+      "latency_ms": 193
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 65,
+      "tokens_out": 34,
+      "answer": "Since all but 8 of the 15 sheep died, that means 7 sheep died and 8 remained alive. The farmer now has 8 sheep left.",
+      "latency_ms": 712
+    },
+    {
+      "status": "ok",
+      "model": "gemma2:2b",
+      "tokens_in": 56,
+      "tokens_out": 11,
+      "answer": "The farmer has 8 sheep left.",
+      "latency_ms": 1805
+    },
+    {
+      "status": "ok",
+      "model": "smollm:1.7b",
+      "tokens_in": 57,
+      "tokens_out": 24,
+      "answer": "The farmer has 15 sheep, so he has 15 - 8 = 7 sheep remaining.",
+      "latency_ms": 1187
+    },
+    {
+      "status": "ok",
+      "model": "phi3:mini",
+      "tokens_in": 61,
+      "tokens_out": 47,
+      "answer": "The farmer has 8 sheep left. The phrase \"all but 8\" means that all of his other sheep, except for these eight surviving ones, died. So he is still left with the eight alive sheep.",
+      "latency_ms": 2369
+    }
+  ],
+  "completed_at": "2026-04-18T16:12:29.367243Z",
+  "collective": {
+    "status": "skipped",
+    "plan_id": "",
+    "worker_count": 0,
+    "total_latency_ms": 0,
+    "synthesizer_answer": "(solo-only — collective not run)",
+    "synthesizer_latency_ms": "",
+    "synthesizer_model": "",
+    "synthesizer_tokens_in": "",
+    "synthesizer_tokens_out": "",
+    "worker_outputs": []
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "llama3.2:3b",
+      "gemma2:2b",
+      "smollm:1.7b",
+      "phi3:mini"
+    ],
+    "solo_only": "true"
+  },
+  "started_at": "2026-04-18T16:12:00.331192Z",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "test_id": "A2",
+  "trial": 2,
+  "run_id": "RUN-050",
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 84,
+      "tokens_out": 73,
+      "answer": "When Sally comes back, she will likely look in the box that Anne left her with the marble. This is because the marble belongs to the one who moved it from its basket to the box, which means Sally would have a better idea where it is. However, this information could be wrong or misleading depending on when you provide it.",
+      "latency_ms": 1176
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 73,
+      "tokens_out": 62,
+      "answer": "When Sally comes back, she will look for the marble in the basket. This is because the information provided indicates that the marble was originally put in the basket and left with Sally while she was away, so it would be logical to expect that upon her return, she should find the marble inside the basket.",
+      "latency_ms": 406
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 85,
+      "tokens_out": 42,
+      "answer": "She will look in the basket because it is more likely that Sally left the marble there when she went out of the room, rather than moving it to the box where Anne was present while she was gone.",
+      "latency_ms": 849
+    },
+    {
+      "status": "ok",
+      "model": "gemma2:2b",
+      "tokens_in": 75,
+      "tokens_out": 10,
+      "answer": "Sally will look in the box.",
+      "latency_ms": 1834
+    },
+    {
+      "status": "ok",
+      "model": "smollm:1.7b",
+      "tokens_in": 76,
+      "tokens_out": 3,
+      "answer": "Answer:",
+      "latency_ms": 1010
+    },
+    {
+      "status": "ok",
+      "model": "phi3:mini",
+      "tokens_in": 83,
+      "tokens_out": 24,
+      "answer": "Sally will look in the basket because that is her last known location of the marble before leaving the room.",
+      "latency_ms": 2275
+    }
+  ],
+  "completed_at": "2026-04-18T16:12:07.882021Z",
+  "collective": {
+    "status": "skipped",
+    "plan_id": "",
+    "worker_count": 0,
+    "total_latency_ms": 0,
+    "synthesizer_answer": "(solo-only — collective not run)",
+    "synthesizer_latency_ms": "",
+    "synthesizer_model": "",
+    "synthesizer_tokens_in": "",
+    "synthesizer_tokens_out": "",
+    "worker_outputs": []
+  }
+}

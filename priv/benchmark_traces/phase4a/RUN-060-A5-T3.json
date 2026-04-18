@@ -1,0 +1,85 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "llama3.2:3b",
+      "gemma2:2b",
+      "smollm:1.7b",
+      "phi3:mini"
+    ],
+    "solo_only": "true"
+  },
+  "started_at": "2026-04-18T16:13:20.491408Z",
+  "question": "I have a brother. My brother has no brothers. How is this possible?",
+  "test_id": "A5",
+  "trial": 3,
+  "run_id": "RUN-060",
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 53,
+      "tokens_out": 196,
+      "answer": "It's not possible because in the human population, half of all children are boys, and half are girls. When a woman gives birth to a baby boy or girl, it is usually to share her genes with two more siblings. This concept is known as polygamy. The other half of humanity is therefore unaffected by these practices. However, this does not apply in the case of brothers and sisters. \n\nTo answer your question directly: your brother, being a male individual, would be in line with the majority of humanity, which has no restrictions on having more than one sibling. On the other hand, his female counterpart would have been in line with their genetic makeup, as they are typically born to partners sharing the same genes. The lack of polygamy in this case implies that your brother is an exception and could be a result of your family's personal circumstances or cultural norms.",
+      "latency_ms": 1942
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 47,
+      "tokens_out": 30,
+      "answer": "This is not true. There are many people who share the same birth date and name, so there cannot be more than one brother among siblings.",
+      "latency_ms": 233
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 59,
+      "tokens_out": 20,
+      "answer": "This scenario is possible if your brother is an only child, meaning you are his only sibling.",
+      "latency_ms": 447
+    },
+    {
+      "status": "ok",
+      "model": "gemma2:2b",
+      "tokens_in": 49,
+      "tokens_out": 9,
+      "answer": "You are one of twins.",
+      "latency_ms": 1810
+    },
+    {
+      "status": "ok",
+      "model": "smollm:1.7b",
+      "tokens_in": 50,
+      "tokens_out": 76,
+      "answer": "This is possible because there are an infinite number of ways to arrange the elements in a set, and each unique arrangement corresponds to a different permutation of the elements. In this case, the set of all possible arrangements of the elements that can be arranged with no duplicates is infinite, so it's possible for there to be an infinite number of arrangements where there are no brothers.",
+      "latency_ms": 1465
+    },
+    {
+      "status": "ok",
+      "model": "phi3:mini",
+      "tokens_in": 52,
+      "tokens_out": 46,
+      "answer": "This statement can be true if I am referring to myself, indicating that there's only one person being spoken about (me), hence my brother having zero brothers since we are the same individual in terms of sibling count.",
+      "latency_ms": 2386
+    }
+  ],
+  "completed_at": "2026-04-18T16:13:28.774965Z",
+  "collective": {
+    "status": "skipped",
+    "plan_id": "",
+    "worker_count": 0,
+    "total_latency_ms": 0,
+    "synthesizer_answer": "(solo-only — collective not run)",
+    "synthesizer_latency_ms": "",
+    "synthesizer_model": "",
+    "synthesizer_tokens_in": "",
+    "synthesizer_tokens_out": "",
+    "worker_outputs": []
+  }
+}

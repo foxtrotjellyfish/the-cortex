@@ -1,0 +1,85 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "llama3.2:3b",
+      "gemma2:2b",
+      "smollm:1.7b",
+      "phi3:mini"
+    ],
+    "solo_only": "true"
+  },
+  "started_at": "2026-04-18T16:12:45.216757Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "test_id": "A4",
+  "trial": 2,
+  "run_id": "RUN-056",
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 63,
+      "tokens_out": 9,
+      "answer": "The bear is brownish-gray.",
+      "latency_ms": 730
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 56,
+      "tokens_out": 35,
+      "answer": "The bear is brown or fox. The house faces south, so the color of the bear must be brown or white to avoid making it walk through walls on either side.",
+      "latency_ms": 269
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 68,
+      "tokens_out": 65,
+      "answer": "The bear's color cannot be determined, as it was not specified whether the color of the bear or its fur would change due to sunlight through the southern-facing windows, but since that isn't an option, we can assume standard animal behavior and appearance. The answer remains: we don't know the bear's exact color.",
+      "latency_ms": 1289
+    },
+    {
+      "status": "ok",
+      "model": "gemma2:2b",
+      "tokens_in": 58,
+      "tokens_out": 8,
+      "answer": "The bear is black.",
+      "latency_ms": 1782
+    },
+    {
+      "status": "ok",
+      "model": "smollm:1.7b",
+      "tokens_in": 59,
+      "tokens_out": 6,
+      "answer": "The bear is black.",
+      "latency_ms": 754
+    },
+    {
+      "status": "ok",
+      "model": "phi3:mini",
+      "tokens_in": 62,
+      "tokens_out": 121,
+      "answer": "The only place on Earth where this could occur naturally, and with bears that walk in front of houses facing south are polar bears during certain times when they exit their dens after giving birth - hence implying a very specific scenario likely set within the context as April Fool's. Therefore, considering normal circumstances or if it is not an April Fool’in this case, there would essentially be no natural bear that fits this description since most bear species do not build houses nor have habitats where walls face south consistently all year round due to Earth's tilt and changing seasons.",
+      "latency_ms": 3891
+    }
+  ],
+  "completed_at": "2026-04-18T16:12:53.931345Z",
+  "collective": {
+    "status": "skipped",
+    "plan_id": "",
+    "worker_count": 0,
+    "total_latency_ms": 0,
+    "synthesizer_answer": "(solo-only — collective not run)",
+    "synthesizer_latency_ms": "",
+    "synthesizer_model": "",
+    "synthesizer_tokens_in": "",
+    "synthesizer_tokens_out": "",
+    "worker_outputs": []
+  }
+}

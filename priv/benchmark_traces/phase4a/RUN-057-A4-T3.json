@@ -1,0 +1,85 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "llama3.2:3b",
+      "gemma2:2b",
+      "smollm:1.7b",
+      "phi3:mini"
+    ],
+    "solo_only": "true"
+  },
+  "started_at": "2026-04-18T16:12:53.931550Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "test_id": "A4",
+  "trial": 3,
+  "run_id": "RUN-057",
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 63,
+      "tokens_out": 10,
+      "answer": "The bear's color would be white.",
+      "latency_ms": 715
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 56,
+      "tokens_out": 26,
+      "answer": "The bear is black because its fur covers the four corners of the home, which are located on opposite sides of the wall.",
+      "latency_ms": 226
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 68,
+      "tokens_out": 40,
+      "answer": "The bear's fur color is irrelevant to the orientation of the house, so it doesn't affect its color. The bear can be any color, but that information isn't provided in the scenario.",
+      "latency_ms": 785
+    },
+    {
+      "status": "ok",
+      "model": "gemma2:2b",
+      "tokens_in": 58,
+      "tokens_out": 8,
+      "answer": "The bear is white.",
+      "latency_ms": 1773
+    },
+    {
+      "status": "ok",
+      "model": "smollm:1.7b",
+      "tokens_in": 59,
+      "tokens_out": 6,
+      "answer": "The bear is black.",
+      "latency_ms": 758
+    },
+    {
+      "status": "ok",
+      "model": "phi3:mini",
+      "tokens_in": 62,
+      "tokens_out": 146,
+      "answer": "The answer to this riddle relies on understanding that it's not possible for such a structure to exist given natural light constraints, and thus interpreting \"walking past\" as figuratively seeing or perceiving something unusual in the environment; considering these hints along with common knowledge about bear habitats near human-inhabited areas where sunlight can reach south-facing structures. The man must live near the North Pole, likely within the Arctic Circle region inhabited by polar bears that do not change color according to light exposure but are traditionally white due to their habitat's snowy environment; hence we infer he sees a \"white\" bear walking past his south-facing house.",
+      "latency_ms": 4707
+    }
+  ],
+  "completed_at": "2026-04-18T16:13:02.896064Z",
+  "collective": {
+    "status": "skipped",
+    "plan_id": "",
+    "worker_count": 0,
+    "total_latency_ms": 0,
+    "synthesizer_answer": "(solo-only — collective not run)",
+    "synthesizer_latency_ms": "",
+    "synthesizer_model": "",
+    "synthesizer_tokens_in": "",
+    "synthesizer_tokens_out": "",
+    "worker_outputs": []
+  }
+}

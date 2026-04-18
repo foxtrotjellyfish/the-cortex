@@ -1,0 +1,85 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_count": 5,
+    "solo_models": [
+      "tinydolphin",
+      "qwen2.5:0.5b",
+      "llama3.2:3b",
+      "gemma2:2b",
+      "smollm:1.7b",
+      "phi3:mini"
+    ],
+    "solo_only": "true"
+  },
+  "started_at": "2026-04-18T16:12:29.367641Z",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "test_id": "A3",
+  "trial": 3,
+  "run_id": "RUN-054",
+  "solo": [
+    {
+      "status": "ok",
+      "model": "tinydolphin",
+      "tokens_in": 62,
+      "tokens_out": 90,
+      "answer": "A farmer has 15 sheep. They lost 8 of them because of a disease called sheep scab. After removing the dead sheep from the herd, there are now 7 sheep left in the farm. To find out how many sheep are remaining after this loss, subtract the number of dead sheep from the total number of sheep (15) and divide by 2 to determine how many surviving sheep there are.",
+      "latency_ms": 1223
+    },
+    {
+      "status": "ok",
+      "model": "qwen2.5:0.5b",
+      "tokens_in": 54,
+      "tokens_out": 29,
+      "answer": "The farmer originally had 15 sheep. If all but 8 sheep die, then he would be left with only 7 sheep.",
+      "latency_ms": 225
+    },
+    {
+      "status": "ok",
+      "model": "llama3.2:3b",
+      "tokens_in": 65,
+      "tokens_out": 20,
+      "answer": "The farmer still has the original 8 sheep, as they are the only ones that survived.",
+      "latency_ms": 425
+    },
+    {
+      "status": "ok",
+      "model": "gemma2:2b",
+      "tokens_in": 56,
+      "tokens_out": 11,
+      "answer": "The farmer has 8 sheep left.",
+      "latency_ms": 1799
+    },
+    {
+      "status": "ok",
+      "model": "smollm:1.7b",
+      "tokens_in": 57,
+      "tokens_out": 20,
+      "answer": "The farmer has 15 sheep minus 8 that died, which is 7 sheep.",
+      "latency_ms": 1190
+    },
+    {
+      "status": "ok",
+      "model": "phi3:mini",
+      "tokens_in": 61,
+      "tokens_out": 10,
+      "answer": "The farmer has 8 sheep left.",
+      "latency_ms": 1969
+    }
+  ],
+  "completed_at": "2026-04-18T16:12:36.198947Z",
+  "collective": {
+    "status": "skipped",
+    "plan_id": "",
+    "worker_count": 0,
+    "total_latency_ms": 0,
+    "synthesizer_answer": "(solo-only — collective not run)",
+    "synthesizer_latency_ms": "",
+    "synthesizer_model": "",
+    "synthesizer_tokens_in": "",
+    "synthesizer_tokens_out": "",
+    "worker_outputs": []
+  }
+}

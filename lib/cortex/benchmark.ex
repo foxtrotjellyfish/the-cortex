@@ -38,16 +38,24 @@ defmodule Cortex.Benchmark do
     - `:adapter_config` — base adapter config map
     - `:timeout`      — max wait for collective in ms (default: 120_000)
     - `:solo_prompt`  — system prompt for solo runs
+    - `:solo_only`    — if true, skip collective debate (solo baseline sweep only)
   """
   def run(question, opts \\ []) do
     models = Keyword.get(opts, :solo_models, default_solo_models())
     timeout = Keyword.get(opts, :timeout, @default_timeout)
+    solo_only = Keyword.get(opts, :solo_only, false)
 
     Logger.info("[Benchmark] Starting: #{String.slice(question, 0, 60)}")
     started_at = DateTime.utc_now()
 
     solo_results = run_solo(question, models, opts)
-    collective_result = run_collective(question, timeout, opts)
+
+    collective_result =
+      if solo_only do
+        skipped_collective()
+      else
+        run_collective(question, timeout, opts)
+      end
 
     viewpoint_labels =
       case Keyword.get(opts, :viewpoints) do
@@ -63,6 +71,7 @@ defmodule Cortex.Benchmark do
       collective: collective_result,
       config: %{
         solo_models: models,
+        solo_only: solo_only,
         worker_count: Keyword.get(opts, :workers, 5),
         viewpoints: viewpoint_labels,
         adapter: Keyword.get(opts, :adapter, Cortex.LLM.Adapters.Ollama) |> to_string(),
@@ -301,6 +310,21 @@ defmodule Cortex.Benchmark do
 
   defp default_solo_models do
     ["tinydolphin", "llama3.2:3b"]
+  end
+
+  defp skipped_collective do
+    %{
+      status: :skipped,
+      synthesizer_answer: "(solo-only — collective not run)",
+      synthesizer_model: nil,
+      synthesizer_tokens_in: nil,
+      synthesizer_tokens_out: nil,
+      synthesizer_latency_ms: nil,
+      total_latency_ms: 0,
+      worker_count: 0,
+      worker_outputs: [],
+      plan_id: nil
+    }
   end
 
   defp format_timestamp(nil), do: "RUN — (no timestamp)"
