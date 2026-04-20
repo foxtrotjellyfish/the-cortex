@@ -1,0 +1,55 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": "",
+    "synthesizer_config": {
+      "model": "gemma2:9b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-20T20:17:31.988579Z",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "test_id": "A3",
+  "trial": 3,
+  "run_id": "RUN-204",
+  "synth_model": "gemma2:9b",
+  "collective": {
+    "status": "ok",
+    "plan_id": "NfU3n3kqvXkQIjBuL-rxYA",
+    "worker_count": 5,
+    "synthesizer_answer": "Worker 3 —  The farmer has 7 sheep left.",
+    "synthesizer_model": "gemma2:9b",
+    "total_latency_ms": 10435,
+    "synthesizer_latency_ms": 4708,
+    "synthesizer_tokens_in": 809,
+    "synthesizer_tokens_out": 16,
+    "worker_outputs": [
+      {
+        "worker_id": "NfU3n3kqvXkQIjBuL-rxYA_w4",
+        "content": "14 sheep (8 remaining)"
+      },
+      {
+        "worker_id": "NfU3n3kqvXkQIjBuL-rxYA_w0",
+        "content": "Farmers go through a cycle of breeding and death, which often leads to a significant drop in herds. The total number of sheep can be calculated by multiplying the number of surviving sheep (15) by the number of days in a year (365). To find out how many sheep there are remaining after all have died, we need to subtract this number from the total number of sheep (15):\n\nThe number of surviving sheep is 15.\nTotal number of sheep = 15 (surviving sheep) + 0 (dead sheep) = 30\nTherefore, after all the animals have died, there are 30 surviving sheep left."
+      },
+      {
+        "worker_id": "NfU3n3kqvXkQIjBuL-rxYA_w2",
+        "content": "The farmer has 7 sheep left."
+      },
+      {
+        "worker_id": "NfU3n3kqvXkQIjBuL-rxYA_w3",
+        "content": "So, imagine this. On a farm, all of the sheep must be counted because they're unique and important to the operation. \n\nThe farmer begins by inspecting all of the animals first. He checks each one, one by one, to make sure that they haven't been taken away in transit or by accident. Each animal has a special identifier attached to it - a tag, so he can look for them later. \n\nOnce he finds every single sheep, there are now only 8 left to count. \n\nNow he needs to figure out how many of those were still alive at the time he counted them all. He could take the average of each remaining number or use another method of calculation that is more straightforward - for example, divide the total number by eight. But there's no \"correct\" way, since every count is unique and a farmer cannot know exactly how many animals are alive at any given moment.\n\nTherefore, to determine how many sheep were left after all counts were completed, he would need to find out which of the remaining 8 did not die during the count and then use their specific identifiers to figure out whose body is missing."
+      },
+      {
+        "worker_id": "NfU3n3kqvXkQIjBuL-rxYA_w1",
+        "content": "Let's analyze this question step by step:\n\n1. The question states that \"all but eight die.\" This implies that there are more than eight sheep alive in the herd.\n2. However, we know from earlier information that there is only one female dog in the herd. If all other animals die except for just eight, it would mean that the remaining 13 animals could be dogs or cats (since there is no mention of any pets).\n3. It can also be inferred that since this question occurs after the animals were slaughtered (and not before), the surviving sheep are most likely puppies or kittens, and therefore younger. This could potentially reduce the number of survivors from 15 to 8.\n4. The statement \"all but eight die\" would indicate that there must be at least one living sheep left in the herd. We can assume this is a baby or lamb due to its lower number than other sheep.\n5. Therefore, we can conclude that to find out how many survive, we need to subtract the number of dead sheep from the total number of living ones.\n6. This gives us 8 - 15 = 7 sheep remaining in the herd.\n\nTherefore, given this information and assuming there are at least one living sheep left in the herd, the farmer has 7 sheep remaining."
+      }
+    ]
+  },
+  "completed_at": "2026-04-20T20:17:42.425955Z",
+  "solo": []
+}

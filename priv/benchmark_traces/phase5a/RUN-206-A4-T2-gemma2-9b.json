@@ -1,0 +1,55 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": "",
+    "synthesizer_config": {
+      "model": "gemma2:9b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-20T20:17:46.409605Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "test_id": "A4",
+  "trial": 2,
+  "run_id": "RUN-206",
+  "synth_model": "gemma2:9b",
+  "collective": {
+    "status": "ok",
+    "plan_id": "zKmUd6mCqXqQUrhQyoHRGA",
+    "worker_count": 5,
+    "synthesizer_answer": "Worker 1 \nThere are no hidden premises, tricks, or ambiguities in this question. The answer is \"gray\".",
+    "synthesizer_model": "gemma2:9b",
+    "total_latency_ms": 5513,
+    "synthesizer_latency_ms": 3234,
+    "synthesizer_tokens_in": 393,
+    "synthesizer_tokens_out": 28,
+    "worker_outputs": [
+      {
+        "worker_id": "zKmUd6mCqXqQUrhQyoHRGA_w2",
+        "content": "There are no hidden premises, tricks, or ambiguities in this question. The answer is \"gray\"."
+      },
+      {
+        "worker_id": "zKmUd6mCqXqQUrhQyoHRGA_w1",
+        "content": "The color of the bear would be white, assuming it doesn't hibernate or have fur. This assumes that the house faces north, as it would then be in front of the sun during the day and facing south at night. If it does hibernate, it could take on a different color depending on its habits."
+      },
+      {
+        "worker_id": "zKmUd6mCqXqQUrhQyoHRGA_w3",
+        "content": "The bear's color would be white. It's because it comes from the North Pole and doesn't experience any seasons, so it has no color preference when it comes to the warmth of the sun."
+      },
+      {
+        "worker_id": "zKmUd6mCqXqQUrhQyoHRGA_w0",
+        "content": "The answer is brown, because there are no other colors in the given options."
+      },
+      {
+        "worker_id": "zKmUd6mCqXqQUrhQyoHRGA_w4",
+        "content": "The question about the color of the bear walking past the house is incomplete and needs further context to answer accurately. Specifically, we need to know if the bear's face is turned towards south or not (i.e., if it's a morning or noon). If it is facing south, the answer would be white. \n\nIf you provide more information about the location and time of day when this was taken (e.g., morning or afternoon), we can provide an accurate evaluation of the question's completeness."
+      }
+    ]
+  },
+  "completed_at": "2026-04-20T20:17:51.924650Z",
+  "solo": []
+}

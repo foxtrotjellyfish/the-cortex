@@ -1,0 +1,55 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": "",
+    "synthesizer_config": {
+      "model": "deepseek-r1:8b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-20T20:29:41.025636Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "test_id": "A4",
+  "trial": 1,
+  "run_id": "RUN-220",
+  "synth_model": "deepseek-r1:8b",
+  "collective": {
+    "status": "ok",
+    "plan_id": "lXKtbPABaNdywJ9P-48Y-A",
+    "worker_count": 5,
+    "synthesizer_answer": "",
+    "synthesizer_model": "deepseek-r1:8b",
+    "total_latency_ms": 120000,
+    "synthesizer_latency_ms": 120001,
+    "synthesizer_tokens_in": "",
+    "synthesizer_tokens_out": "",
+    "worker_outputs": [
+      {
+        "worker_id": "lXKtbPABaNdywJ9P-48Y-A_w3",
+        "content": "Why would someone build a house with all four walls facing south, and what does a bear do when they walk by it?"
+      },
+      {
+        "worker_id": "lXKtbPABaNdywJ9P-48Y-A_w2",
+        "content": "Sure. We can see that the question asks about the bear's color. The given information is that the man built the house so that all four walls face south and also indicated that a bear walked past it. However, we need more information to determine the bear's color specifically. Could you please provide any context or clues for us to deduce this further?"
+      },
+      {
+        "worker_id": "lXKtbPABaNdywJ9P-48Y-A_w4",
+        "content": "The question is incomplete. Can you provide context or details about what the man has built and where he's located?"
+      },
+      {
+        "worker_id": "lXKtbPABaNdywJ9P-48Y-A_w1",
+        "content": "The answer would be white."
+      },
+      {
+        "worker_id": "lXKtbPABaNdywJ9P-48Y-A_w0",
+        "content": "The bear's colors will be influenced by the sun's position and direction. As it walks east to west, it will absorb more red and blue light from the setting sun, while exposure to the sun's strongest rays (north) will cause it to emit more of these same colors. Thus, a bear walking along the eastern wall of a house in the morning will be brightly colored with shades of red and blue. As it moves west to east during the day, the color of the bear's fur will change as it absorbs and emits sunlight. In this case, the bear's coat would darken due to exposure to more intense sunlight, but retain its natural color as a result of remaining close to southward-facing walls during the day."
+      }
+    ]
+  },
+  "completed_at": "2026-04-20T20:31:41.026959Z",
+  "solo": []
+}

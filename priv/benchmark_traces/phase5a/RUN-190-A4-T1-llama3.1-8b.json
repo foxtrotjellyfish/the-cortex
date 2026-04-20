@@ -1,0 +1,55 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": "",
+    "synthesizer_config": {
+      "model": "llama3.1:8b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-20T20:13:40.848410Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "test_id": "A4",
+  "trial": 1,
+  "run_id": "RUN-190",
+  "synth_model": "llama3.1:8b",
+  "collective": {
+    "status": "ok",
+    "plan_id": "dNcRan3v3jm7K8K_E_Sf6Q",
+    "worker_count": 5,
+    "synthesizer_answer": "Worker 4 is most likely correct.\n\nThe bear's color can be determined by observing its behavior in relation to the sun. On a bright, sunny day, it would be light brown due to being near windows or near the equator. During winter when it moves slowly due to polarity, it may appear dark brown due to insufficient exposure to sunlight. In the middle of summer when its feet are exposed to direct sunlight, it could be golden yellow or orange depending on its mood.",
+    "synthesizer_model": "llama3.1:8b",
+    "total_latency_ms": 7634,
+    "synthesizer_latency_ms": 5567,
+    "synthesizer_tokens_in": 356,
+    "synthesizer_tokens_out": 97,
+    "worker_outputs": [
+      {
+        "worker_id": "dNcRan3v3jm7K8K_E_Sf6Q_w2",
+        "content": "The bear is brown."
+      },
+      {
+        "worker_id": "dNcRan3v3jm7K8K_E_Sf6Q_w0",
+        "content": "The bear's coat would likely be red or pink due to the sunlight reflecting off its fur, as it is the opposite of white."
+      },
+      {
+        "worker_id": "dNcRan3v3jm7K8K_E_Sf6Q_w3",
+        "content": "The bear's color is black."
+      },
+      {
+        "worker_id": "dNcRan3v3jm7K8K_E_Sf6Q_w4",
+        "content": "The bear's color can be determined by observing its behavior in relation to the sun. On a bright, sunny day, it would be light brown due to being near windows or near the equator. During winter when it moves slowly due to polarity, it may appear dark brown due to insufficient exposure to sunlight. In the middle of summer when its feet are exposed to direct sunlight, it could be golden yellow or orange depending on its mood."
+      },
+      {
+        "worker_id": "dNcRan3v3jm7K8K_E_Sf6Q_w1",
+        "content": "The answer is red, as it walks by the house with its bear paw facing south. This is because the sun rises in the east and sets in the west, so when the bear walks past the man's house, its face will be facing south. If it were to walk past the house with its bear paw facing north or west, it would turn its face to the north or west, which would result in a different color."
+      }
+    ]
+  },
+  "completed_at": "2026-04-20T20:13:48.482983Z",
+  "solo": []
+}

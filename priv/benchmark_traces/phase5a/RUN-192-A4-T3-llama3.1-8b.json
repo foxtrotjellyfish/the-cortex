@@ -1,0 +1,55 @@
+{
+  "config": {
+    "timeout": 120000,
+    "adapter": "Elixir.Cortex.LLM.Adapters.Ollama",
+    "viewpoints": "default",
+    "worker_adapter_configs": "",
+    "synthesizer_config": {
+      "model": "llama3.1:8b"
+    },
+    "worker_count": 5,
+    "solo_models": [],
+    "solo_only": "false"
+  },
+  "started_at": "2026-04-20T20:13:57.886608Z",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "test_id": "A4",
+  "trial": 3,
+  "run_id": "RUN-192",
+  "synth_model": "llama3.1:8b",
+  "collective": {
+    "status": "ok",
+    "plan_id": "AXx3v3Y9Zt5ViyAzP6qKHA",
+    "worker_count": 5,
+    "synthesizer_answer": "Worker 2 — The bear's coat is white, as it would be facing away from the sun and not have its back to it. This is why the question seems to imply that the house has a direct south-facing wall.",
+    "synthesizer_model": "llama3.1:8b",
+    "total_latency_ms": 4951,
+    "synthesizer_latency_ms": 3154,
+    "synthesizer_tokens_in": 326,
+    "synthesizer_tokens_out": 47,
+    "worker_outputs": [
+      {
+        "worker_id": "AXx3v3Y9Zt5ViyAzP6qKHA_w3",
+        "content": "The bear's colors are white."
+      },
+      {
+        "worker_id": "AXx3v3Y9Zt5ViyAzP6qKHA_w2",
+        "content": "The bear's coat is white, as it would be facing away from the sun and not have its back to it. This is why the question seems to imply that the house has a direct south-facing wall."
+      },
+      {
+        "worker_id": "AXx3v3Y9Zt5ViyAzP6qKHA_w4",
+        "content": "The color of the bear would depend on his surroundings and his physical characteristics. However, if we consider him to be a white bear (due to the lack of contrasting colors), it could be that he's moving away from the southern wall or has a hat or scarf covering his face. This is just one interpretation."
+      },
+      {
+        "worker_id": "AXx3v3Y9Zt5ViyAzP6qKHA_w0",
+        "content": "The bear's coat is white."
+      },
+      {
+        "worker_id": "AXx3v3Y9Zt5ViyAzP6qKHA_w1",
+        "content": "The bear's color would depend on its own personal preferences and the weather conditions. If it is cold outside, it might be brown or even white, as it may have frozen droplets of water on its fur. However, if it is warm outside, it could be black, since all walls face south in this case."
+      }
+    ]
+  },
+  "completed_at": "2026-04-20T20:14:02.838070Z",
+  "solo": []
+}
