@@ -132,6 +132,92 @@ defmodule Cortex.Benchmark do
   end
 
   @doc """
+  Run workers + algorithmic aggregation (no LLM synthesizer in the grading path).
+
+  Starts a debate, waits for workers to complete, extracts answers via
+  pattern matching, and returns a majority vote. The LLM synthesizer still
+  runs (for comparison data) but its answer is recorded separately.
+
+  Requires `:test_id` in opts (e.g. "A1", "A2") for answer extraction.
+  """
+  def run_algorithmic(question, opts \\ []) do
+    timeout = Keyword.get(opts, :timeout, @default_timeout)
+    test_id = Keyword.fetch!(opts, :test_id)
+
+    Phoenix.PubSub.subscribe(Cortex.PubSub, @events_topic)
+    Phoenix.PubSub.subscribe(Cortex.PubSub, @traces_topic)
+
+    debate_opts =
+      Keyword.take(opts, [
+        :workers,
+        :adapter,
+        :adapter_config,
+        :viewpoints,
+        :synthesizer_config,
+        :worker_adapter_configs
+      ])
+
+    t0 = System.monotonic_time(:millisecond)
+
+    Logger.info("[Benchmark] Algorithmic: starting debate for #{test_id}")
+
+    case Cortex.Graph.debate(question, debate_opts) do
+      {:ok, plan_id} ->
+        workers_result = await_workers_only(plan_id, t0, timeout)
+
+        synth_result =
+          if workers_result[:status] == :ok do
+            remaining = max(timeout - (System.monotonic_time(:millisecond) - t0), 5_000)
+            await_synthesizer_quiet(t0, remaining)
+          else
+            %{synthesizer_answer: nil, synthesizer_status: :skipped}
+          end
+
+        Phoenix.PubSub.unsubscribe(Cortex.PubSub, @events_topic)
+        Phoenix.PubSub.unsubscribe(Cortex.PubSub, @traces_topic)
+
+        worker_memos = Cortex.Memos.list_by_plan(plan_id)
+
+        worker_texts =
+          Enum.map(worker_memos, fn memo -> String.trim(memo.content) end)
+
+        vote = Cortex.Benchmark.AnswerExtractor.majority_vote(worker_texts, test_id)
+        total_ms = System.monotonic_time(:millisecond) - t0
+
+        %{
+          status: :ok,
+          plan_id: plan_id,
+          algorithmic_answer: vote.answer,
+          algorithmic_votes: vote.votes,
+          algorithmic_total: vote.total,
+          algorithmic_distribution: vote.distribution,
+          extracted_answers: vote.extracted,
+          synthesizer_answer: synth_result[:synthesizer_answer],
+          synthesizer_model: synth_result[:synthesizer_model],
+          worker_outputs:
+            Enum.map(worker_memos, fn memo ->
+              %{worker_id: memo.worker_id, content: String.trim(memo.content)}
+            end),
+          total_latency_ms: total_ms,
+          worker_count: length(worker_memos)
+        }
+
+      {:error, reason} ->
+        Phoenix.PubSub.unsubscribe(Cortex.PubSub, @events_topic)
+        Phoenix.PubSub.unsubscribe(Cortex.PubSub, @traces_topic)
+
+        %{
+          status: :error,
+          error: inspect(reason),
+          plan_id: nil,
+          algorithmic_answer: nil,
+          worker_outputs: [],
+          total_latency_ms: System.monotonic_time(:millisecond) - t0
+        }
+    end
+  end
+
+  @doc """
   Run the collective debate and wait for synthesizer output.
   Returns a result map with worker outputs, synthesizer answer, and timing.
   """
@@ -320,6 +406,36 @@ defmodule Cortex.Benchmark do
           total_latency_ms: System.monotonic_time(:millisecond) - t0,
           worker_count: plan_meta[:worker_count]
         }
+    end
+  end
+
+  defp await_workers_only(plan_id, t0, timeout) do
+    receive do
+      {:plan_complete, %{plan_id: ^plan_id} = meta} ->
+        workers_ms = System.monotonic_time(:millisecond) - t0
+        Logger.info("[Benchmark] Workers done in #{workers_ms}ms (algorithmic mode)")
+        %{status: :ok, workers_ms: workers_ms, worker_count: meta[:worker_count]}
+    after
+      timeout ->
+        Logger.warning("[Benchmark] Workers timed out (algorithmic mode) after #{timeout}ms")
+        %{status: :timeout, error: "Workers did not complete within #{timeout}ms"}
+    end
+  end
+
+  defp await_synthesizer_quiet(_t0, timeout) do
+    receive do
+      {:new_trace, %Cortex.Trace{domain: :synthesizer} = trace} ->
+        Logger.info("[Benchmark] Synthesizer done (captured for comparison)")
+
+        %{
+          synthesizer_answer: String.trim(trace.output || ""),
+          synthesizer_model: trace.model,
+          synthesizer_status: :ok
+        }
+    after
+      timeout ->
+        Logger.debug("[Benchmark] Synthesizer timed out (non-critical in algorithmic mode)")
+        %{synthesizer_answer: nil, synthesizer_model: nil, synthesizer_status: :timeout}
     end
   end
 

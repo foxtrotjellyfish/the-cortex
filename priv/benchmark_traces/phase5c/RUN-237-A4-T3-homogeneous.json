@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "worker_count": 5,
+  "test_id": "A4",
+  "plan_id": "PeZsHwcAh1Lc66YixhLTCg",
+  "synthesizer_answer": "Worker 1 is most likely correct.\n\nThe bear is white. This is because it has walked through the house from the west to the east, which means its color would be white in the northern hemisphere and black in the southern hemisphere.",
+  "algorithmic_answer": "white",
+  "algorithmic_votes": 2,
+  "algorithmic_total": 5,
+  "algorithmic_distribution": {
+    "black": 1,
+    "red": 1,
+    "white": 2
+  },
+  "extracted_answers": [
+    "white",
+    "white",
+    "red",
+    "black",
+    ""
+  ],
+  "synthesizer_model": "llama3.2:3b",
+  "worker_outputs": [
+    {
+      "content": "The bear is white. This is because it has walked through the house from the west to the east, which means its color would be white in the northern hemisphere and black in the southern hemisphere.",
+      "worker_id": "PeZsHwcAh1Lc66YixhLTCg_w0"
+    },
+    {
+      "content": "The color of the bear's fur would be white, as it faces south. If the house was oriented differently, it might be gray or brown instead.",
+      "worker_id": "PeZsHwcAh1Lc66YixhLTCg_w1"
+    },
+    {
+      "content": "The question is incomplete and lacks context, so I cannot provide a fully answer. However, if you meant a bear's color to be green or red, there would be context provided. However, as it stands now, no specific color information is given in the question.",
+      "worker_id": "PeZsHwcAh1Lc66YixhLTCg_w4"
+    },
+    {
+      "content": "The answer is black.",
+      "worker_id": "PeZsHwcAh1Lc66YixhLTCg_w2"
+    },
+    {
+      "content": "A person with a bear's head.",
+      "worker_id": "PeZsHwcAh1Lc66YixhLTCg_w3"
+    }
+  ],
+  "total_latency_ms": 2398,
+  "trial": 3,
+  "run_id": "RUN-237",
+  "algo_correct": "true",
+  "synth_correct": "true",
+  "config_name": "homogeneous",
+  "config_label": "tinydolphin×5",
+  "correct_answer": "white"
+}

@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "worker_count": 5,
+  "test_id": "A2",
+  "plan_id": "F0rvC7J8bZWe3SkNmp6wew",
+  "synthesizer_answer": "Worker 3 is most likely correct.\n\nA. She would check under the box that contains her belongings.",
+  "algorithmic_answer": "basket",
+  "algorithmic_votes": 3,
+  "algorithmic_total": 5,
+  "algorithmic_distribution": {
+    "basket": 3,
+    "box": 2
+  },
+  "extracted_answers": [
+    "basket",
+    "basket",
+    "box",
+    "box",
+    "basket"
+  ],
+  "synthesizer_model": "llama3.2:3b",
+  "worker_outputs": [
+    {
+      "content": "Sally would likely look in the basket.  The question implies that the marble was moved *from* the basket to a box, not vice versa.",
+      "worker_id": "F0rvC7J8bZWe3SkNmp6wew_w2"
+    },
+    {
+      "content": "Sally will likely expect to find the marble in the box, rather than the basket, because that's where Anne moved it, highlighting the issue of implicit assumptions and lack of consideration for alternative perspectives.",
+      "worker_id": "F0rvC7J8bZWe3SkNmp6wew_w3"
+    },
+    {
+      "content": "A. She would check under the box that contains her belongings. B. She would start searching the floor and walls of the room. C. She would begin by looking through her closets and drawers. D. She would check around the corner, and E. She would go outside and see if she can spot a hidden marble in the park. \n\nIn your opinion, which is most likely correct?",
+      "worker_id": "F0rvC7J8bZWe3SkNmp6wew_w0"
+    },
+    {
+      "content": "The marble could be anywhere in the box. It was either left behind when Anne moved it or it could have slipped out of her hand as she was unpacking. The context is missing and therefore, the question about its completion cannot be answered. To answer this fully, we should know what happened before, during, and after Sally put the marble in the box.",
+      "worker_id": "F0rvC7J8bZWe3SkNmp6wew_w4"
+    },
+    {
+      "content": "I would argue that while many might expect Sally to look for her marble in the original location (the basket), one must consider human psychology and memory reliance on expectation rather than just logical deduction; therefore, it's likely Anne may unintentionally lead Sally back into the basket as she trusted its contents.",
+      "worker_id": "F0rvC7J8bZWe3SkNmp6wew_w1"
+    }
+  ],
+  "total_latency_ms": 5603,
+  "trial": 3,
+  "run_id": "RUN-246",
+  "algo_correct": "true",
+  "synth_correct": "false",
+  "config_name": "diverse",
+  "config_label": "td/phi3/gemma2/llama3.2/td",
+  "correct_answer": "basket"
+}

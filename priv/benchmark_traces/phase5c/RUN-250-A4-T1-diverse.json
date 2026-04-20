@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "worker_count": 5,
+  "test_id": "A4",
+  "plan_id": "NcHnZU-L-WXEDBkJCB4aeg",
+  "synthesizer_answer": "Worker 5 is most likely correct.\n\nThe bear's house could be located in a region where summer ends and winter starts, or the man could have built his house at an angle such as west-northwest to account for both directions of sunlight. Also, consider the bear's age and diet: if he walks past during winter when food is scarce, he might be in a state of hibernation.\n\nThe correct answer is not explicitly stated by Worker 5, but it can be inferred that the bear's house could face any direction, not just south, to account for both directions of sunlight.",
+  "algorithmic_answer": "white",
+  "algorithmic_votes": 3,
+  "algorithmic_total": 5,
+  "algorithmic_distribution": {
+    "black": 1,
+    "white": 3
+  },
+  "extracted_answers": [
+    "black",
+    "white",
+    "white",
+    "",
+    "white"
+  ],
+  "synthesizer_model": "llama3.2:3b",
+  "worker_outputs": [
+    {
+      "content": "The answer is black.  Houses built in the southern hemisphere are always facing south, thus implying that we live on the Earth's equator or near it.",
+      "worker_id": "NcHnZU-L-WXEDBkJCB4aeg_w2"
+    },
+    {
+      "content": "The color of the bear would be white, as it could have been one of the many days when no sunlight reached them. It's possible they were built in winter when snow covers the ground, making visibility even more challenging.",
+      "worker_id": "NcHnZU-L-WXEDBkJCB4aeg_w0"
+    },
+    {
+      "content": "The bear is white, because it was clearly not living in a sun-facing house with no shading or protection from the elements; otherwise, it would have been a sun-scorched, melted mess by now.",
+      "worker_id": "NcHnZU-L-WXEDBkJCB4aeg_w3"
+    },
+    {
+      "content": "The question is not fully answerable, but there are two critical missing pieces of information: the location of the bear's house and the season when he last visited it. \n\nBear's house could be located in a region where summer ends and winter starts, or the man could have built his house at an angle such as west-northwest to account for both directions of sunlight. Also, consider the bear's age and diet: if he walks past during winter when food is scarce, he might be in a state of hibernation.",
+      "worker_id": "NcHnZU-L-WXEDBkJCB4aeg_w4"
+    },
+    {
+      "content": "The most obvious answer would be brown or black, but considering edge cases and alternatives: if it's in the Arctic region (as suggested by \"all four walls facing south\"), a grizzly bear could potentially stand out due to its size despite similar fur coloration. Additionally, some polar bears might appear white from afar, leading one to mistakenly assume all brown/black animals are absent at such latitudes during winter months when the sun barely rises above the horizon.",
+      "worker_id": "NcHnZU-L-WXEDBkJCB4aeg_w1"
+    }
+  ],
+  "total_latency_ms": 8121,
+  "trial": 1,
+  "run_id": "RUN-250",
+  "algo_correct": "true",
+  "synth_correct": "false",
+  "config_name": "diverse",
+  "config_label": "td/phi3/gemma2/llama3.2/td",
+  "correct_answer": "white"
+}

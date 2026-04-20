@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "worker_count": 5,
+  "test_id": "A4",
+  "plan_id": "vtPDKmaEhnvd7kVTV92ztw",
+  "synthesizer_answer": "Based on the analysis, Worker 2 is most likely correct.\n\nThe bear's skin appears to be white due to the sunlight shining through the windows and the contrast between the wall colors.",
+  "algorithmic_answer": "brown",
+  "algorithmic_votes": 2,
+  "algorithmic_total": 5,
+  "algorithmic_distribution": {
+    "brown": 2,
+    "white": 2
+  },
+  "extracted_answers": [
+    "brown",
+    "white",
+    "white",
+    "brown",
+    ""
+  ],
+  "synthesizer_model": "llama3.2:3b",
+  "worker_outputs": [
+    {
+      "content": "Based on the information provided, it's difficult to definitively say which of the two options best describes the bear's color. The man could be building the house in the shade of the trees and the bear might simply pass by in the sunlight. However, if we consider the more likely scenario that the man is building the house with south-facing walls, then the bear would likely have a light brown or light gray coat. If the man's walls are facing east (the northernmost direction), then the bear's color might be dark brown, as it could be near a hillside where shadows can make a difference in coloration.",
+      "worker_id": "vtPDKmaEhnvd7kVTV92ztw_w0"
+    },
+    {
+      "content": "The bear's skin appears to be white due to the sunlight shining through the windows and the contrast between the wall colors.",
+      "worker_id": "vtPDKmaEhnvd7kVTV92ztw_w2"
+    },
+    {
+      "content": "The bear, being from the North Pole, would likely have white fur since it faces toward winter and the sun.",
+      "worker_id": "vtPDKmaEhnvd7kVTV92ztw_w3"
+    },
+    {
+      "content": "The bear must be brown, as there are no other options to choose from. The reasoning behind this choice is that if it were orange or red, the house would not be situated in a position where an image of a bear would be visible. Moreover, all four walls face south to indicate that the house faces east, which is opposite of the position of a bear. So, a more fitting color for the bear's skin would be brown, representing the natural color of most animals.",
+      "worker_id": "vtPDKmaEhnvd7kVTV92ztw_w1"
+    },
+    {
+      "content": "The question is partially answered but not enough context is given. Can you provide more details about the bear's surroundings?",
+      "worker_id": "vtPDKmaEhnvd7kVTV92ztw_w4"
+    }
+  ],
+  "total_latency_ms": 3497,
+  "trial": 2,
+  "run_id": "RUN-236",
+  "algo_correct": "false",
+  "synth_correct": "true",
+  "config_name": "homogeneous",
+  "config_label": "tinydolphin×5",
+  "correct_answer": "white"
+}

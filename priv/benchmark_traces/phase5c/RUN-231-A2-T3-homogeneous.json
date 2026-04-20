@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "worker_count": 5,
+  "test_id": "A2",
+  "plan_id": "cwsHAMwh_WwgB0dsbWtV1w",
+  "synthesizer_answer": "Worker 1 is most likely correct.\n\nShe could look in the box.",
+  "algorithmic_answer": "basket",
+  "algorithmic_votes": 2,
+  "algorithmic_total": 5,
+  "algorithmic_distribution": {
+    "basket": 2,
+    "box": 1
+  },
+  "extracted_answers": [
+    "basket",
+    "",
+    "basket",
+    "box",
+    ""
+  ],
+  "synthesizer_model": "llama3.2:3b",
+  "worker_outputs": [
+    {
+      "content": "Here are the options:\n1. She could look at the basket.\n2. She could look in the box.\n3. She could ask Anne.\n\nAnswer: She could look in the box. Answered in 1-2 sentences. No preamble, specific context given - Sally moves the marble from the basket to a box.",
+      "worker_id": "cwsHAMwh_WwgB0dsbWtV1w_w4"
+    },
+    {
+      "content": "As an AI, I can't directly interact with humans. However, I can provide an algorithm to solve this problem. The most likely outcome is that the marble will be on Anne's side of the room.",
+      "worker_id": "cwsHAMwh_WwgB0dsbWtV1w_w1"
+    },
+    {
+      "content": "1. If Sally looks at any of the surfaces in the room (e.g., the floor or a bookshelf), she won't be able to see the marble in the basket.\n2. If Anne moves the marble from its current location, it will no longer be there. She could have moved it to another box or even placed it under a chair, where Sally might not be able to see it.\n3. Since Sally is in the room when Anne puts the marble in the basket, she can only look at the basket itself. So, if the marble is already in the basket, she won't have any view of its location once Anne moves it again.",
+      "worker_id": "cwsHAMwh_WwgB0dsbWtV1w_w2"
+    },
+    {
+      "content": "Sally, when you put a marble in a basket and then leave the room, it's most likely that the marble would be found in the box Anne moved. In this scenario, we can infer that Sally, being one of the experts on this matter, is aware of this situation and can deduce it from their perspective - that the marble would be in Anne's box when Sally returns to the room.",
+      "worker_id": "cwsHAMwh_WwgB0dsbWtV1w_w0"
+    },
+    {
+      "content": "When Sally returns to the room, there should be no visible marble, as Anne moved it before Sally arrived.",
+      "worker_id": "cwsHAMwh_WwgB0dsbWtV1w_w3"
+    }
+  ],
+  "total_latency_ms": 3835,
+  "trial": 3,
+  "run_id": "RUN-231",
+  "algo_correct": "true",
+  "synth_correct": "false",
+  "config_name": "homogeneous",
+  "config_label": "tinydolphin×5",
+  "correct_answer": "basket"
+}

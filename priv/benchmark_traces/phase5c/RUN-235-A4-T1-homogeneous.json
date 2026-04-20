@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "worker_count": 5,
+  "test_id": "A4",
+  "plan_id": "aF2q95OXjDH5J8Ubhw6aHw",
+  "synthesizer_answer": "Worker 5 is most likely correct.\n\nThe color of the bear is most likely white.",
+  "algorithmic_answer": "white",
+  "algorithmic_votes": 3,
+  "algorithmic_total": 5,
+  "algorithmic_distribution": {
+    "black": 1,
+    "white": 3,
+    "yellow": 1
+  },
+  "extracted_answers": [
+    "black",
+    "yellow",
+    "white",
+    "white",
+    "white"
+  ],
+  "synthesizer_model": "llama3.2:3b",
+  "worker_outputs": [
+    {
+      "content": "To determine the color of the bear, we need to analyze the question's components: 1) The location - it's at an angle, hence faces south. 2) The color - it's likely brown or black, because a bear typically has brown fur. 3) The environment - this could be any urban or suburban area where buildings are typically oriented towards the sun. \n\nBased on these points, we can conclude that the color of the bear is most likely brown. It's also likely that they walk past windows in front of them since they're walking through a house with walls facing south. However, this doesn't necessarily mean they have brown eyes or hair, so it would be helpful to consider alternative explanations for their appearance.",
+      "worker_id": "aF2q95OXjDH5J8Ubhw6aHw_w1"
+    },
+    {
+      "content": "The bear's fur has a distinct shade of yellow, which comes from the sun rays hitting its back. This creates a sun-dappled appearance, making it easy to spot from afar when he's out walking near the house.",
+      "worker_id": "aF2q95OXjDH5J8Ubhw6aHw_w0"
+    },
+    {
+      "content": "There's no hidden premise here, and there isn't any tricks involved either. The question asks what color a bear would be if it were built with all four walls facing south. A bear can only face one way (either north or south) and thus the colors could only be blue or white. Therefore, the answer is blue.",
+      "worker_id": "aF2q95OXjDH5J8Ubhw6aHw_w2"
+    },
+    {
+      "content": "The bear is white.",
+      "worker_id": "aF2q95OXjDH5J8Ubhw6aHw_w3"
+    },
+    {
+      "content": "The question is not fully answerable, but based on the context provided, it is likely that the bear's color would be white. The house itself has four walls facing south, which means the bear could have a light brown or white coat depending on the season and climate. However, this information isn't given in the question itself, so we cannot provide an exact answer without additional context.",
+      "worker_id": "aF2q95OXjDH5J8Ubhw6aHw_w4"
+    }
+  ],
+  "total_latency_ms": 3637,
+  "trial": 1,
+  "run_id": "RUN-235",
+  "algo_correct": "true",
+  "synth_correct": "true",
+  "config_name": "homogeneous",
+  "config_label": "tinydolphin×5",
+  "correct_answer": "white"
+}

@@ -1,0 +1,51 @@
+{
+  "status": "ok",
+  "worker_count": 5,
+  "test_id": "A1",
+  "plan_id": "cabSmgt1qGS4e1B1mqKIGw",
+  "synthesizer_answer": "Worker 4 is most likely correct.\n\nYes, you should walk to the car wash. If you take public transportation or drive there, it's not feasible for you to walk due to the distance and traffic situation. A car wash is a place where cars get cleaned and is usually located close to their parking lots, so walking there would be safe, efficient, and environmentally friendly for both you and the business itself.",
+  "algorithmic_answer": "need_car",
+  "algorithmic_votes": 2,
+  "algorithmic_total": 5,
+  "algorithmic_distribution": {
+    "need_car": 2
+  },
+  "extracted_answers": [
+    "",
+    "need_car",
+    "",
+    "",
+    "need_car"
+  ],
+  "synthesizer_model": "llama3.2:3b",
+  "worker_outputs": [
+    {
+      "content": "Considering the distance of just over half a kilometer, walking might not be practical for everyone due to time constraints or physical limitations; public transport options could provide comfort and speed without sacrificing accessibility.",
+      "worker_id": "cabSmgt1qGS4e1B1mqKIGw_w1"
+    },
+    {
+      "content": "Sure, the car wash is only 50 meters away. It would be quicker and safer for you to walk if your destination is that close. However, if the distance feels too far, or you simply don't feel comfortable walking, a ride in a taxi or Uber might be a better option.",
+      "worker_id": "cabSmgt1qGS4e1B1mqKIGw_w0"
+    },
+    {
+      "content": "You're being far too pedestrian about this - you could walk, but why not consider the environmental impact of that water and energy used by the car wash, or explore alternative options like DIY car washes at home or community car wash events that support local businesses?",
+      "worker_id": "cabSmgt1qGS4e1B1mqKIGw_w3"
+    },
+    {
+      "content": "Yes, you should walk to the car wash. If you take public transportation or drive there, it's not feasible for you to walk due to the distance and traffic situation. A car wash is a place where cars get cleaned and is usually located close to their parking lots, so walking there would be safe, efficient, and environmentally friendly for both you and the business itself.",
+      "worker_id": "cabSmgt1qGS4e1B1mqKIGw_w4"
+    },
+    {
+      "content": "You're assuming walking is the only option to reach the car wash, neglecting other possibilities like cycling or driving.",
+      "worker_id": "cabSmgt1qGS4e1B1mqKIGw_w2"
+    }
+  ],
+  "total_latency_ms": 6149,
+  "trial": 2,
+  "run_id": "RUN-242",
+  "algo_correct": "true",
+  "synth_correct": "false",
+  "config_name": "diverse",
+  "config_label": "td/phi3/gemma2/llama3.2/td",
+  "correct_answer": "need_car"
+}

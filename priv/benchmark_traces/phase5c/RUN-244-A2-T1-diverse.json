@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "worker_count": 5,
+  "test_id": "A2",
+  "plan_id": "vqf4fvykAK5DvA9Cx8mJIA",
+  "synthesizer_answer": "Worker 1 is most likely correct.\n\nThe marble will most likely be in Anne's box, as Sally left it there when she left the room. If Anne had not moved it before Sally returned, it would still be sitting on the floor, waiting for her to discover it.",
+  "algorithmic_answer": "basket",
+  "algorithmic_votes": 3,
+  "algorithmic_total": 5,
+  "algorithmic_distribution": {
+    "basket": 3,
+    "box": 1
+  },
+  "extracted_answers": [
+    "box",
+    "",
+    "basket",
+    "basket",
+    "basket"
+  ],
+  "synthesizer_model": "llama3.2:3b",
+  "worker_outputs": [
+    {
+      "content": "The marble will most likely be in Anne's box, as Sally left it there when she left the room. If Anne had not moved it before Sally returned, it would still be sitting on the floor, waiting for her to discover it.",
+      "worker_id": "vqf4fvykAK5DvA9Cx8mJIA_w0"
+    },
+    {
+      "content": "Sally will likely be confused if she can't find the marble on the table or other visible places she normally keeps it, because the skeptic is questioning why Anne didn't put the marble in a new, more obvious location like a designated spot.",
+      "worker_id": "vqf4fvykAK5DvA9Cx8mJIA_w3"
+    },
+    {
+      "content": "The question is not fully answerable. Sally can only look at her left, as she has already put the marble in a box and moved it to another location. Therefore, when she comes back, she won't be able to look for it in the basket. Anne could potentially look at her right, or even go to the box where she put the marble, but Sally can only look at her left.",
+      "worker_id": "vqf4fvykAK5DvA9Cx8mJIA_w4"
+    },
+    {
+      "content": "I would argue that it is not necessarily true that Sally will look for the marble in the basket because people often rely on routine rather than expectation and could simply start searching elsewhere due to recent memory of events leading up to her discovery. However, if we strictly consider human cognitive biases like \"gaze restoration\" or assuming things stay as they are before leaving, it's plausible she might first check the basket despite being aware that actions have changed since she left.",
+      "worker_id": "vqf4fvykAK5DvA9Cx8mJIA_w1"
+    },
+    {
+      "content": "Sally will likely look inside the basket, assuming it was left with the intention of finding the marble within.",
+      "worker_id": "vqf4fvykAK5DvA9Cx8mJIA_w2"
+    }
+  ],
+  "total_latency_ms": 6499,
+  "trial": 1,
+  "run_id": "RUN-244",
+  "algo_correct": "true",
+  "synth_correct": "false",
+  "config_name": "diverse",
+  "config_label": "td/phi3/gemma2/llama3.2/td",
+  "correct_answer": "basket"
+}

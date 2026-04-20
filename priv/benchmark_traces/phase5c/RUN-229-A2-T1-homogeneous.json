@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "worker_count": 5,
+  "test_id": "A2",
+  "plan_id": "ZTFykgq2ltrx-fW2nY3syA",
+  "synthesizer_answer": "Worker 5 — CHECK ASSUMPTIONS\n Check Assumptions: The premise is that Sally has placed the marble in a basket, and Anne moved it to a box. Therefore, we can assume that if we know where the basket is, we also know where the marble is. If Sally doesn't find the marble in the basket, then she should look in the box instead, which is still nearby.",
+  "algorithmic_answer": "box",
+  "algorithmic_votes": 4,
+  "algorithmic_total": 5,
+  "algorithmic_distribution": {
+    "basket": 1,
+    "box": 4
+  },
+  "extracted_answers": [
+    "box",
+    "box",
+    "box",
+    "basket",
+    "box"
+  ],
+  "synthesizer_model": "llama3.2:3b",
+  "worker_outputs": [
+    {
+      "content": "Sally would likely start by looking at the box next to her. She might check if any other marbles are sitting in that box, but more likely, she'd check the entire room from head to foot. In this case, Anne moved the marble from the basket to a box. So, in this situation, Sally would look for the marble in the box next to her, as it's the most logical place after Anne moves it to another location.",
+      "worker_id": "ZTFykgq2ltrx-fW2nY3syA_w3"
+    },
+    {
+      "content": "Marbles. She won't be able to see it until her return, so she could potentially start searching in that box. After a few moments, if she doesn't find the marble in that box, she might start looking in other containers, but still not having found the marble yet.",
+      "worker_id": "ZTFykgq2ltrx-fW2nY3syA_w0"
+    },
+    {
+      "content": "Anne would take it to the box. Sally would look under the desk. Anne knows Sally better than Sally does, so she can find it for her. Anne knows that Sally is distracted and might not be looking under the desk. So, when Sally returns, she would be more likely to look under the desk, where Anne will have placed the marble.",
+      "worker_id": "ZTFykgq2ltrx-fW2nY3syA_w1"
+    },
+    {
+      "content": "The question is incomplete because it lacks specific contextual information about where the marble was originally placed when Sally left or what actions were taken afterward. In order to provide a complete and accurate answer, we would need to know the location of the marble when Sally left (if any) and any subsequent actions that occurred between then and when Anne moved it from the basket to a box (if any).",
+      "worker_id": "ZTFykgq2ltrx-fW2nY3syA_w4"
+    },
+    {
+      "content": "Check Assumptions: The premise is that Sally has placed the marble in a basket, and Anne moved it to a box. Therefore, we can assume that if we know where the basket is, we also know where the marble is. If Sally doesn't find the marble in the basket, then she should look in the box instead, which is still nearby.",
+      "worker_id": "ZTFykgq2ltrx-fW2nY3syA_w2"
+    }
+  ],
+  "total_latency_ms": 5224,
+  "trial": 1,
+  "run_id": "RUN-229",
+  "algo_correct": "false",
+  "synth_correct": "true",
+  "config_name": "homogeneous",
+  "config_label": "tinydolphin×5",
+  "correct_answer": "basket"
+}

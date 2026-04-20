@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "worker_count": 5,
+  "test_id": "A3",
+  "plan_id": "r2mKrVrzSb3BXzcsboe7FQ",
+  "synthesizer_answer": "Worker 5 is most likely correct.\n\nTheir answer exactly: The farmer has 8 sheep left.",
+  "algorithmic_answer": "7",
+  "algorithmic_votes": 2,
+  "algorithmic_total": 5,
+  "algorithmic_distribution": {
+    "2": 1,
+    "7": 2,
+    "8": 2
+  },
+  "extracted_answers": [
+    "2",
+    "8",
+    "7",
+    "7",
+    "8"
+  ],
+  "synthesizer_model": "llama3.2:3b",
+  "worker_outputs": [
+    {
+      "content": "A farmer with 15 sheep can be divided into groups of 3 to account for his deaths, resulting in 4 groups of 3 each. Then, subtracting the 12 dead animals from the original count, we are left with 2 sheep. So there is only one surviving sheep left after all the deaths.",
+      "worker_id": "r2mKrVrzSb3BXzcsboe7FQ_w0"
+    },
+    {
+      "content": "The question implies that there are only two possible outcomes: either all or none, which is not necessarily true in real-life scenarios; thus, while mathematically it's a trick question with an answer of 8 based on \"all but\", practically the farmer has more than just these surviving sheep.",
+      "worker_id": "r2mKrVrzSb3BXzcsboe7FQ_w1"
+    },
+    {
+      "content": "This classic lateral thinking puzzle is based on a flawed assumption that the initial number of sheep being 15 is what matters, rather than the fact that \"all but 8\" means only 7 died, leaving 11 alive or an entirely different implication - it's actually about the relative decrease, not the absolute numbers.",
+      "worker_id": "r2mKrVrzSb3BXzcsboe7FQ_w3"
+    },
+    {
+      "content": "Farmers usually have two or three sheep. Therefore, there are only 7 remaining sheep. The question is asking for an answer in terms of a specific number of sheep. If we were given a full contextual answer explaining the situation, this could be solved much more easily, but without any context, it's impossible to provide an accurate answer.",
+      "worker_id": "r2mKrVrzSb3BXzcsboe7FQ_w4"
+    },
+    {
+      "content": "The farmer has 8 sheep left. The wording \"all but 8\" implies that 8 remain alive.",
+      "worker_id": "r2mKrVrzSb3BXzcsboe7FQ_w2"
+    }
+  ],
+  "total_latency_ms": 5556,
+  "trial": 1,
+  "run_id": "RUN-247",
+  "algo_correct": "false",
+  "synth_correct": "true",
+  "config_name": "diverse",
+  "config_label": "td/phi3/gemma2/llama3.2/td",
+  "correct_answer": "8"
+}
