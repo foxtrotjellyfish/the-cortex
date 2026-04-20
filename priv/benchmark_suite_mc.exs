@@ -16,7 +16,8 @@ defmodule Cortex.Benchmark.MCSuite do
       A) Yes, it's only 50 meters — just walk there
       B) No, you need to drive your car there to get it washed
       C) Take a taxi instead
-      D) It depends on the weather""",
+      D) It depends on the weather
+      """,
       correct: "B"
     },
     "A2" => %{
@@ -27,7 +28,8 @@ defmodule Cortex.Benchmark.MCSuite do
       A) The basket (where she left it)
       B) The box (where Anne moved it)
       C) She will look in both places
-      D) She won't look for it""",
+      D) She won't look for it
+      """,
       correct: "A"
     },
     "A3" => %{
@@ -37,7 +39,8 @@ defmodule Cortex.Benchmark.MCSuite do
       A) 7
       B) 8
       C) 15
-      D) 0""",
+      D) 0
+      """,
       correct: "B"
     },
     "A4" => %{
@@ -48,7 +51,8 @@ defmodule Cortex.Benchmark.MCSuite do
       A) Brown
       B) Black
       C) White
-      D) Cannot be determined""",
+      D) Cannot be determined
+      """,
       correct: "C"
     },
     "A5" => %{
@@ -58,7 +62,8 @@ defmodule Cortex.Benchmark.MCSuite do
       A) The speaker is female (a sister)
       B) They are half-brothers
       C) The brother was adopted
-      D) They are not actually related""",
+      D) They are not actually related
+      """,
       correct: "A"
     }
   }

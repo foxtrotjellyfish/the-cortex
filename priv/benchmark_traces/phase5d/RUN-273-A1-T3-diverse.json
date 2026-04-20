@@ -1,0 +1,103 @@
+{
+  "status": "ok",
+  "question": "I need a car wash. The car wash is 50 meters away. Should I walk?",
+  "worker_count": 5,
+  "test_id": "A1",
+  "trial": 3,
+  "mc_prompt": "Q: I need a car wash. The car wash is 50 meters away. Should I walk?\nA) Yes, it's only 50 meters — just walk there\nB) No, you need to drive your car there to get it washed\nC) Take a taxi instead\nD) It depends on the weather\n",
+  "run_id": "RUN-273",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "ARGUE_FOR",
+      "answer": "C",
+      "confidence": 0.1062,
+      "probabilities": {
+        "A": 0.3239,
+        "B": 0.1709,
+        "C": 0.4301,
+        "D": 0.0752
+      },
+      "raw_response": "",
+      "worker_idx": 0
+    },
+    {
+      "model": "phi3:mini",
+      "viewpoint": "ARGUE_AGAINST",
+      "answer": "B",
+      "confidence": 0.6048,
+      "probabilities": {
+        "A": 0.1563,
+        "B": 0.7611,
+        "C": 0.0348,
+        "D": 0.0478
+      },
+      "raw_response": "",
+      "worker_idx": 1
+    },
+    {
+      "model": "gemma2:2b",
+      "viewpoint": "CHECK_ASSUMPTIONS",
+      "answer": "A",
+      "confidence": 0.2045,
+      "probabilities": {
+        "A": 0.5112,
+        "B": 0.1166,
+        "C": 0.3067,
+        "D": 0.0655
+      },
+      "raw_response": "",
+      "worker_idx": 2
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "DEVILS_ADVOCATE",
+      "answer": "A",
+      "confidence": 0.276,
+      "probabilities": {
+        "A": 0.532,
+        "B": 0.1417,
+        "C": 0.0704,
+        "D": 0.256
+      },
+      "raw_response": "",
+      "worker_idx": 3
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "COMPLETENESS",
+      "answer": "D",
+      "confidence": 0.3312,
+      "probabilities": {
+        "A": 0.1972,
+        "B": 0.125,
+        "C": 0.1493,
+        "D": 0.5284
+      },
+      "raw_response": "",
+      "worker_idx": 4
+    }
+  ],
+  "total_latency_ms": 1957,
+  "config_name": "diverse",
+  "config_label": "td/phi3/gemma2/llama3.2/td",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 1,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.7206000000000001,
+    "B": 1.3153,
+    "C": 0.9913,
+    "D": 0.9729
+  }
+}

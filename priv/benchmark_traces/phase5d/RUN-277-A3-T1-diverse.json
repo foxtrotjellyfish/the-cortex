@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "worker_count": 5,
+  "test_id": "A3",
+  "trial": 1,
+  "mc_prompt": "Q: A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?\nA) 7\nB) 8\nC) 15\nD) 0\n",
+  "run_id": "RUN-277",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "ARGUE_FOR",
+      "answer": "A",
+      "confidence": 0.1401,
+      "probabilities": {
+        "A": 0.4098,
+        "B": 0.1493,
+        "C": 0.1713,
+        "D": 0.2697
+      },
+      "raw_response": "",
+      "worker_idx": 0
+    },
+    {
+      "model": "phi3:mini",
+      "viewpoint": "ARGUE_AGAINST",
+      "answer": "A",
+      "confidence": 0.7386,
+      "probabilities": {
+        "A": 0.8693,
+        "B": 0.1307
+      },
+      "raw_response": "",
+      "worker_idx": 1
+    },
+    {
+      "model": "gemma2:2b",
+      "viewpoint": "CHECK_ASSUMPTIONS",
+      "answer": "D",
+      "confidence": 0.2603,
+      "probabilities": {
+        "A": 0.1486,
+        "B": 0.1752,
+        "C": 0.208,
+        "D": 0.4683
+      },
+      "raw_response": "",
+      "worker_idx": 2
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "DEVILS_ADVOCATE",
+      "answer": "B",
+      "confidence": 0.0097,
+      "probabilities": {
+        "A": 0.282,
+        "B": 0.2917,
+        "C": 0.1852,
+        "D": 0.2411
+      },
+      "raw_response": "",
+      "worker_idx": 3
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "COMPLETENESS",
+      "answer": "D",
+      "confidence": 0.0804,
+      "probabilities": {
+        "A": 0.2384,
+        "B": 0.2431,
+        "C": 0.195,
+        "D": 0.3235
+      },
+      "raw_response": "",
+      "worker_idx": 4
+    }
+  ],
+  "total_latency_ms": 2074,
+  "config_name": "diverse",
+  "config_label": "td/phi3/gemma2/llama3.2/td",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 1.9481,
+    "B": 0.9900000000000001,
+    "C": 0.7595000000000001,
+    "D": 1.3026
+  }
+}

@@ -395,14 +395,14 @@ defmodule Cortex.Benchmark do
       |> Enum.map(fn idx ->
         {label, viewpoint_prompt} = Enum.at(viewpoints, rem(idx, length(viewpoints)))
 
-        config = merge_worker_config(base_adapter_config, worker_adapter_configs, idx)
-
-        full_prompt = viewpoint_prompt <> "\n\n" <> mc_prompt <> "\nAnswer:"
+        config =
+          merge_worker_config(base_adapter_config, worker_adapter_configs, idx)
+          |> Map.put(:system, viewpoint_prompt)
 
         model_name = Map.get(config, :model, "tinydolphin")
         Logger.info("[Benchmark] Worker #{idx} (#{label}, #{model_name}) scoring...")
 
-        case adapter.score_choices(full_prompt, config, choices) do
+        case adapter.score_choices(mc_prompt, config, choices) do
           {:ok, result} ->
             Map.merge(result, %{
               worker_idx: idx,

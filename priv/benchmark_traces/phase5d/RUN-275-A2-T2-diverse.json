@@ -1,0 +1,101 @@
+{
+  "status": "ok",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "worker_count": 5,
+  "test_id": "A2",
+  "trial": 2,
+  "mc_prompt": "Q: Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?\nA) The basket (where she left it)\nB) The box (where Anne moved it)\nC) She will look in both places\nD) She won't look for it\n",
+  "run_id": "RUN-275",
+  "majority_answer": "C",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "ARGUE_FOR",
+      "answer": "D",
+      "confidence": 0.6474,
+      "probabilities": {
+        "A": 0.1034,
+        "B": 0.0622,
+        "C": 0.0835,
+        "D": 0.7508
+      },
+      "raw_response": "",
+      "worker_idx": 0
+    },
+    {
+      "model": "phi3:mini",
+      "viewpoint": "ARGUE_AGAINST",
+      "answer": "C",
+      "confidence": 0.1489,
+      "probabilities": {
+        "A": 0.0016,
+        "B": 0.4006,
+        "C": 0.5495,
+        "D": 0.0483
+      },
+      "raw_response": "",
+      "worker_idx": 1
+    },
+    {
+      "model": "gemma2:2b",
+      "viewpoint": "CHECK_ASSUMPTIONS",
+      "answer": "C",
+      "confidence": 0.4917,
+      "probabilities": {
+        "A": 0.2102,
+        "B": 0.0471,
+        "C": 0.7019,
+        "D": 0.0408
+      },
+      "raw_response": "",
+      "worker_idx": 2
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "DEVILS_ADVOCATE",
+      "answer": "C",
+      "confidence": 0.0034,
+      "probabilities": {
+        "A": 0.3019,
+        "B": 0.304,
+        "C": 0.3074,
+        "D": 0.0866
+      },
+      "raw_response": "",
+      "worker_idx": 3
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "COMPLETENESS",
+      "answer": "D",
+      "confidence": 0.7678,
+      "probabilities": {
+        "A": 0.0698,
+        "B": 0.0518,
+        "C": 0.0409,
+        "D": 0.8376
+      },
+      "raw_response": "",
+      "worker_idx": 4
+    }
+  ],
+  "total_latency_ms": 1414,
+  "config_name": "diverse",
+  "config_label": "td/phi3/gemma2/llama3.2/td",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "C": 3,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 0.6869,
+    "B": 0.8657,
+    "C": 1.6832,
+    "D": 1.7641
+  }
+}

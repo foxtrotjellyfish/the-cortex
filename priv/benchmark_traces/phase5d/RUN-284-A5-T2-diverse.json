@@ -1,0 +1,102 @@
+{
+  "status": "ok",
+  "question": "I have a brother. My brother has no brothers. How is this possible?",
+  "worker_count": 5,
+  "test_id": "A5",
+  "trial": 2,
+  "mc_prompt": "Q: I have a brother. My brother has no brothers. How is this possible?\nA) The speaker is female (a sister)\nB) They are half-brothers\nC) The brother was adopted\nD) They are not actually related\n",
+  "run_id": "RUN-284",
+  "majority_answer": "A",
+  "weighted_answer": "C",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "ARGUE_FOR",
+      "answer": "A",
+      "confidence": 0.0441,
+      "probabilities": {
+        "A": 0.3369,
+        "B": 0.2242,
+        "C": 0.1461,
+        "D": 0.2928
+      },
+      "raw_response": "",
+      "worker_idx": 0
+    },
+    {
+      "model": "phi3:mini",
+      "viewpoint": "ARGUE_AGAINST",
+      "answer": "C",
+      "confidence": 0.3644,
+      "probabilities": {
+        "A": 0.0026,
+        "B": 0.2827,
+        "C": 0.6471,
+        "D": 0.0676
+      },
+      "raw_response": "",
+      "worker_idx": 1
+    },
+    {
+      "model": "gemma2:2b",
+      "viewpoint": "CHECK_ASSUMPTIONS",
+      "answer": "C",
+      "confidence": 0.1916,
+      "probabilities": {
+        "A": 0.0162,
+        "B": 0.3906,
+        "C": 0.5822,
+        "D": 0.0109
+      },
+      "raw_response": "",
+      "worker_idx": 2
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "DEVILS_ADVOCATE",
+      "answer": "A",
+      "confidence": 0.2214,
+      "probabilities": {
+        "A": 0.4398,
+        "B": 0.1526,
+        "C": 0.2184,
+        "D": 0.1893
+      },
+      "raw_response": "",
+      "worker_idx": 3
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "COMPLETENESS",
+      "answer": "D",
+      "confidence": 0.1681,
+      "probabilities": {
+        "A": 0.2481,
+        "B": 0.2305,
+        "C": 0.1052,
+        "D": 0.4162
+      },
+      "raw_response": "",
+      "worker_idx": 4
+    }
+  ],
+  "total_latency_ms": 2033,
+  "config_name": "diverse",
+  "config_label": "td/phi3/gemma2/llama3.2/td",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "C": 2,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.0436,
+    "B": 1.2806,
+    "C": 1.6989999999999998,
+    "D": 0.9768
+  }
+}

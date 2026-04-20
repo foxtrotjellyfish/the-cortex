@@ -1,0 +1,101 @@
+{
+  "status": "ok",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "worker_count": 5,
+  "test_id": "A3",
+  "trial": 1,
+  "mc_prompt": "Q: A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?\nA) 7\nB) 8\nC) 15\nD) 0\n",
+  "run_id": "RUN-262",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "ARGUE_FOR",
+      "answer": "A",
+      "confidence": 0.1401,
+      "probabilities": {
+        "A": 0.4098,
+        "B": 0.1493,
+        "C": 0.1713,
+        "D": 0.2697
+      },
+      "raw_response": "",
+      "worker_idx": 0
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "ARGUE_AGAINST",
+      "answer": "A",
+      "confidence": 0.5512,
+      "probabilities": {
+        "A": 0.7201,
+        "B": 0.1109,
+        "D": 0.1689
+      },
+      "raw_response": "",
+      "worker_idx": 1
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "CHECK_ASSUMPTIONS",
+      "answer": "C",
+      "confidence": 0.0551,
+      "probabilities": {
+        "A": 0.2938,
+        "B": 0.2122,
+        "C": 0.3489,
+        "D": 0.145
+      },
+      "raw_response": "",
+      "worker_idx": 2
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "DEVILS_ADVOCATE",
+      "answer": "D",
+      "confidence": 0.0554,
+      "probabilities": {
+        "A": 0.2011,
+        "B": 0.2656,
+        "C": 0.2123,
+        "D": 0.321
+      },
+      "raw_response": "",
+      "worker_idx": 3
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "COMPLETENESS",
+      "answer": "D",
+      "confidence": 0.0804,
+      "probabilities": {
+        "A": 0.2384,
+        "B": 0.2431,
+        "C": 0.195,
+        "D": 0.3235
+      },
+      "raw_response": "",
+      "worker_idx": 4
+    }
+  ],
+  "total_latency_ms": 399,
+  "config_name": "homogeneous",
+  "config_label": "tinydolphin×5",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "C": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 1.8632,
+    "B": 0.9811,
+    "C": 0.9275,
+    "D": 1.2281
+  }
+}

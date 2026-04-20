@@ -1,0 +1,103 @@
+{
+  "status": "ok",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "worker_count": 5,
+  "test_id": "A4",
+  "trial": 2,
+  "mc_prompt": "Q: A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?\nA) Brown\nB) Black\nC) White\nD) Cannot be determined\n",
+  "run_id": "RUN-266",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "ARGUE_FOR",
+      "answer": "D",
+      "confidence": 0.2175,
+      "probabilities": {
+        "A": 0.1944,
+        "B": 0.226,
+        "C": 0.1361,
+        "D": 0.4435
+      },
+      "raw_response": "",
+      "worker_idx": 0
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "ARGUE_AGAINST",
+      "answer": "A",
+      "confidence": 0.1692,
+      "probabilities": {
+        "A": 0.4295,
+        "B": 0.1701,
+        "C": 0.1401,
+        "D": 0.2603
+      },
+      "raw_response": "",
+      "worker_idx": 1
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "CHECK_ASSUMPTIONS",
+      "answer": "C",
+      "confidence": 0.0025,
+      "probabilities": {
+        "A": 0.2538,
+        "B": 0.2974,
+        "C": 0.2999,
+        "D": 0.1489
+      },
+      "raw_response": "",
+      "worker_idx": 2
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "DEVILS_ADVOCATE",
+      "answer": "B",
+      "confidence": 0.066,
+      "probabilities": {
+        "A": 0.1031,
+        "B": 0.3971,
+        "C": 0.3311,
+        "D": 0.1687
+      },
+      "raw_response": "",
+      "worker_idx": 3
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "COMPLETENESS",
+      "answer": "B",
+      "confidence": 0.2277,
+      "probabilities": {
+        "A": 0.2257,
+        "B": 0.4534,
+        "C": 0.2116,
+        "D": 0.1094
+      },
+      "raw_response": "",
+      "worker_idx": 4
+    }
+  ],
+  "total_latency_ms": 380,
+  "config_name": "homogeneous",
+  "config_label": "tinydolphin×5",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "B": 2,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.2065000000000001,
+    "B": 1.544,
+    "C": 1.1188,
+    "D": 1.1308
+  }
+}

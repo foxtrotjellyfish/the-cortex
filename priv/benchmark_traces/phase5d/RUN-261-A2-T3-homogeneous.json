@@ -1,0 +1,102 @@
+{
+  "status": "ok",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "worker_count": 5,
+  "test_id": "A2",
+  "trial": 3,
+  "mc_prompt": "Q: Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?\nA) The basket (where she left it)\nB) The box (where Anne moved it)\nC) She will look in both places\nD) She won't look for it\n",
+  "run_id": "RUN-261",
+  "majority_answer": "C",
+  "weighted_answer": "D",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "ARGUE_FOR",
+      "answer": "D",
+      "confidence": 0.6474,
+      "probabilities": {
+        "A": 0.1034,
+        "B": 0.0622,
+        "C": 0.0835,
+        "D": 0.7508
+      },
+      "raw_response": "",
+      "worker_idx": 0
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "ARGUE_AGAINST",
+      "answer": "C",
+      "confidence": 0.0289,
+      "probabilities": {
+        "A": 0.0758,
+        "B": 0.2993,
+        "C": 0.3282,
+        "D": 0.2967
+      },
+      "raw_response": "",
+      "worker_idx": 1
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "CHECK_ASSUMPTIONS",
+      "answer": "A",
+      "confidence": 0.1635,
+      "probabilities": {
+        "A": 0.4127,
+        "B": 0.1882,
+        "C": 0.2492,
+        "D": 0.1499
+      },
+      "raw_response": "",
+      "worker_idx": 2
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "DEVILS_ADVOCATE",
+      "answer": "C",
+      "confidence": 0.0668,
+      "probabilities": {
+        "A": 0.2535,
+        "B": 0.1791,
+        "C": 0.3203,
+        "D": 0.2471
+      },
+      "raw_response": "",
+      "worker_idx": 3
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "COMPLETENESS",
+      "answer": "D",
+      "confidence": 0.7678,
+      "probabilities": {
+        "A": 0.0698,
+        "B": 0.0518,
+        "C": 0.0409,
+        "D": 0.8376
+      },
+      "raw_response": "",
+      "worker_idx": 4
+    }
+  ],
+  "total_latency_ms": 487,
+  "config_name": "homogeneous",
+  "config_label": "tinydolphin×5",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "C": 2,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 0.9152000000000001,
+    "B": 0.7806,
+    "C": 1.0221,
+    "D": 2.2821000000000002
+  }
+}
