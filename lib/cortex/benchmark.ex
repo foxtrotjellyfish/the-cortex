@@ -361,8 +361,8 @@ defmodule Cortex.Benchmark do
   Run constrained MC benchmark: workers score answer choices via logprobs
   instead of generating prose. No LLM synthesizer needed.
 
-  Each worker receives the MC-formatted question (with its viewpoint prepended)
-  and the Ollama adapter scores token probabilities for A/B/C/D.
+  Each worker receives the MC-formatted question and the Ollama adapter scores
+  token probabilities for A/B/C/D.
 
   Requires in opts:
     - `:test_id`     — e.g. "A1", "A2"
@@ -372,7 +372,9 @@ defmodule Cortex.Benchmark do
   Optional:
     - `:worker_adapter_configs` — per-worker model configs
     - `:workers`    — number of workers (default: 5)
-    - `:viewpoints` — custom viewpoints as `{label, prompt}` tuples
+    - `:viewpoints` — custom viewpoints as `{label, prompt}` tuples,
+      or `:none` to run without viewpoints (model diversity only).
+      Defaults to the 5-role panel.
     - `:adapter`    — LLM adapter module (must support score_choices/3)
   """
   def run_constrained(question, opts \\ []) do
@@ -383,21 +385,29 @@ defmodule Cortex.Benchmark do
     base_adapter_config = Keyword.get(opts, :adapter_config, %{})
     worker_adapter_configs = Keyword.get(opts, :worker_adapter_configs)
 
-    viewpoints = Keyword.get(opts, :viewpoints) || default_viewpoints()
-    worker_count = Keyword.get(opts, :workers, length(viewpoints))
+    use_viewpoints = Keyword.get(opts, :viewpoints)
+    no_viewpoints? = use_viewpoints == :none
+
+    viewpoints = if no_viewpoints?, do: nil, else: use_viewpoints || default_viewpoints()
+    worker_count = Keyword.get(opts, :workers, if(viewpoints, do: length(viewpoints), else: 5))
 
     t0 = System.monotonic_time(:millisecond)
 
-    Logger.info("[Benchmark] Constrained MC: #{test_id} with #{worker_count} workers")
+    mode_label = if no_viewpoints?, do: "no-viewpoints", else: "viewpoints"
+    Logger.info("[Benchmark] Constrained MC: #{test_id} with #{worker_count} workers (#{mode_label})")
 
     scored_results =
       0..(worker_count - 1)
       |> Enum.map(fn idx ->
-        {label, viewpoint_prompt} = Enum.at(viewpoints, rem(idx, length(viewpoints)))
+        config = merge_worker_config(base_adapter_config, worker_adapter_configs, idx)
 
-        config =
-          merge_worker_config(base_adapter_config, worker_adapter_configs, idx)
-          |> Map.put(:system, viewpoint_prompt)
+        {label, config} =
+          if no_viewpoints? do
+            {"NONE", config}
+          else
+            {vp_label, viewpoint_prompt} = Enum.at(viewpoints, rem(idx, length(viewpoints)))
+            {vp_label, Map.put(config, :system, viewpoint_prompt)}
+          end
 
         model_name = Map.get(config, :model, "tinydolphin")
         Logger.info("[Benchmark] Worker #{idx} (#{label}, #{model_name}) scoring...")

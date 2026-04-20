@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "question": "I need a car wash. The car wash is 50 meters away. Should I walk?",
+  "worker_count": 5,
+  "test_id": "A1",
+  "trial": 3,
+  "mc_prompt": "Q: I need a car wash. The car wash is 50 meters away. Should I walk?\nA) Yes, it's only 50 meters — just walk there\nB) No, you need to drive your car there to get it washed\nC) Take a taxi instead\nD) It depends on the weather\n\nAnswer:",
+  "run_id": "RUN-288",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 5,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.1109,
+      "probabilities": {
+        "A": 0.4472,
+        "B": 0.1664,
+        "C": 0.3363,
+        "D": 0.05
+      },
+      "raw_response": "A",
+      "worker_idx": 0
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.1109,
+      "probabilities": {
+        "A": 0.4472,
+        "B": 0.1664,
+        "C": 0.3363,
+        "D": 0.05
+      },
+      "raw_response": "A",
+      "worker_idx": 1
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.1109,
+      "probabilities": {
+        "A": 0.4472,
+        "B": 0.1664,
+        "C": 0.3363,
+        "D": 0.05
+      },
+      "raw_response": "A",
+      "worker_idx": 2
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.1109,
+      "probabilities": {
+        "A": 0.4472,
+        "B": 0.1664,
+        "C": 0.3363,
+        "D": 0.05
+      },
+      "raw_response": "A",
+      "worker_idx": 3
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.1109,
+      "probabilities": {
+        "A": 0.4472,
+        "B": 0.1664,
+        "C": 0.3363,
+        "D": 0.05
+      },
+      "raw_response": "A",
+      "worker_idx": 4
+    }
+  ],
+  "total_latency_ms": 152,
+  "config_name": "homogeneous",
+  "config_label": "tinydolphin×5 (no viewpoints)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 5
+  },
+  "weighted_scores": {
+    "A": 2.2359999999999998,
+    "B": 0.832,
+    "C": 1.6815,
+    "D": 0.25
+  }
+}

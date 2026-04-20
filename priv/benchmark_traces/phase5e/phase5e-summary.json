@@ -1,0 +1,3081 @@
+{
+  "phase": "5E-alpha",
+  "method": "logprobs_mc_no_viewpoints",
+  "hypothesis": "Model diversity without viewpoint damage produces better collective accuracy",
+  "solo": [
+    {
+      "model": "tinydolphin",
+      "test_id": "A1",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.1111,
+      "probabilities": {
+        "A": 0.4473,
+        "B": 0.1664,
+        "C": 0.3362,
+        "D": 0.0501
+      }
+    },
+    {
+      "model": "tinydolphin",
+      "test_id": "A1",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.1109,
+      "probabilities": {
+        "A": 0.4472,
+        "B": 0.1664,
+        "C": 0.3363,
+        "D": 0.05
+      }
+    },
+    {
+      "model": "tinydolphin",
+      "test_id": "A1",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.1109,
+      "probabilities": {
+        "A": 0.4472,
+        "B": 0.1664,
+        "C": 0.3363,
+        "D": 0.05
+      }
+    },
+    {
+      "model": "tinydolphin",
+      "test_id": "A2",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 0.359,
+      "probabilities": {
+        "A": 0.618,
+        "B": 0.259,
+        "C": 0.0194,
+        "D": 0.1036
+      }
+    },
+    {
+      "model": "tinydolphin",
+      "test_id": "A2",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 0.3581,
+      "probabilities": {
+        "A": 0.6175,
+        "B": 0.2594,
+        "C": 0.0194,
+        "D": 0.1038
+      }
+    },
+    {
+      "model": "tinydolphin",
+      "test_id": "A2",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 0.3581,
+      "probabilities": {
+        "A": 0.6175,
+        "B": 0.2594,
+        "C": 0.0194,
+        "D": 0.1038
+      }
+    },
+    {
+      "model": "tinydolphin",
+      "test_id": "A3",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.0256,
+      "probabilities": {
+        "A": 0.3249,
+        "B": 0.1061,
+        "C": 0.2698,
+        "D": 0.2993
+      }
+    },
+    {
+      "model": "tinydolphin",
+      "test_id": "A3",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.0248,
+      "probabilities": {
+        "A": 0.3247,
+        "B": 0.1057,
+        "C": 0.2697,
+        "D": 0.2999
+      }
+    },
+    {
+      "model": "tinydolphin",
+      "test_id": "A3",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.0248,
+      "probabilities": {
+        "A": 0.3247,
+        "B": 0.1057,
+        "C": 0.2697,
+        "D": 0.2999
+      }
+    },
+    {
+      "model": "tinydolphin",
+      "test_id": "A4",
+      "trial": 1,
+      "correct": "C",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.5208,
+      "probabilities": {
+        "A": 0.7187,
+        "B": 0.0355,
+        "C": 0.0479,
+        "D": 0.1979
+      }
+    },
+    {
+      "model": "tinydolphin",
+      "test_id": "A4",
+      "trial": 2,
+      "correct": "C",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.5206,
+      "probabilities": {
+        "A": 0.7189,
+        "B": 0.0352,
+        "C": 0.0476,
+        "D": 0.1983
+      }
+    },
+    {
+      "model": "tinydolphin",
+      "test_id": "A4",
+      "trial": 3,
+      "correct": "C",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.5206,
+      "probabilities": {
+        "A": 0.7189,
+        "B": 0.0352,
+        "C": 0.0476,
+        "D": 0.1983
+      }
+    },
+    {
+      "model": "tinydolphin",
+      "test_id": "A5",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "D",
+      "confidence": 0.285,
+      "probabilities": {
+        "A": 0.2487,
+        "B": 0.1269,
+        "C": 0.0906,
+        "D": 0.5337
+      }
+    },
+    {
+      "model": "tinydolphin",
+      "test_id": "A5",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "D",
+      "confidence": 0.2872,
+      "probabilities": {
+        "A": 0.2477,
+        "B": 0.1269,
+        "C": 0.0905,
+        "D": 0.5349
+      }
+    },
+    {
+      "model": "tinydolphin",
+      "test_id": "A5",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "D",
+      "confidence": 0.2872,
+      "probabilities": {
+        "A": 0.2477,
+        "B": 0.1269,
+        "C": 0.0905,
+        "D": 0.5349
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A1",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.6879,
+      "probabilities": {
+        "A": 0.8428,
+        "B": 0.1549,
+        "C": 0.0023
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A1",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.6882,
+      "probabilities": {
+        "A": 0.8429,
+        "B": 0.1547,
+        "C": 0.0023
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A1",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.6882,
+      "probabilities": {
+        "A": 0.8429,
+        "B": 0.1547,
+        "C": 0.0023
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A2",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 0.7856,
+      "probabilities": {
+        "A": 0.8752,
+        "B": 0.0352,
+        "C": 0.0896
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A2",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 0.7854,
+      "probabilities": {
+        "A": 0.8751,
+        "B": 0.0353,
+        "C": 0.0897
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A2",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 0.7854,
+      "probabilities": {
+        "A": 0.8751,
+        "B": 0.0353,
+        "C": 0.0897
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A3",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "confidence": 0.5332,
+      "probabilities": {
+        "A": 0.2334,
+        "B": 0.7666
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A3",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "confidence": 0.5342,
+      "probabilities": {
+        "A": 0.2329,
+        "B": 0.7671
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A3",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "confidence": 0.5342,
+      "probabilities": {
+        "A": 0.2329,
+        "B": 0.7671
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A4",
+      "trial": 1,
+      "correct": "C",
+      "is_correct": true,
+      "answer": "C",
+      "confidence": 0.3329,
+      "probabilities": {
+        "A": 0.044,
+        "B": 0.015,
+        "C": 0.6369,
+        "D": 0.304
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A4",
+      "trial": 2,
+      "correct": "C",
+      "is_correct": true,
+      "answer": "C",
+      "confidence": 0.3342,
+      "probabilities": {
+        "A": 0.0445,
+        "B": 0.015,
+        "C": 0.6373,
+        "D": 0.3031
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A4",
+      "trial": 3,
+      "correct": "C",
+      "is_correct": true,
+      "answer": "C",
+      "confidence": 0.3342,
+      "probabilities": {
+        "A": 0.0445,
+        "B": 0.015,
+        "C": 0.6373,
+        "D": 0.3031
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A5",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 0.9563,
+      "probabilities": {
+        "A": 0.9761,
+        "B": 0.0041,
+        "C": 0.0198
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A5",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 0.9567,
+      "probabilities": {
+        "A": 0.9763,
+        "B": 0.0041,
+        "C": 0.0196
+      }
+    },
+    {
+      "model": "phi3:mini",
+      "test_id": "A5",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 0.9567,
+      "probabilities": {
+        "A": 0.9763,
+        "B": 0.0041,
+        "C": 0.0196
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A1",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.6472,
+      "probabilities": {
+        "A": 0.8236,
+        "B": 0.1764
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A1",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.6474,
+      "probabilities": {
+        "A": 0.8237,
+        "B": 0.1763
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A1",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.6474,
+      "probabilities": {
+        "A": 0.8237,
+        "B": 0.1763
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A2",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 1.0,
+      "probabilities": {
+        "A": 1.0
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A2",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 1.0,
+      "probabilities": {
+        "A": 1.0
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A2",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 1.0,
+      "probabilities": {
+        "A": 1.0
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A3",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.015,
+      "probabilities": {
+        "A": 0.5075,
+        "C": 0.4925
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A3",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.0144,
+      "probabilities": {
+        "A": 0.5072,
+        "C": 0.4928
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A3",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.0144,
+      "probabilities": {
+        "A": 0.5072,
+        "C": 0.4928
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A4",
+      "trial": 1,
+      "correct": "C",
+      "is_correct": false,
+      "answer": "D",
+      "confidence": 0.1964,
+      "probabilities": {
+        "A": 0.3165,
+        "B": 0.0346,
+        "C": 0.136,
+        "D": 0.5129
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A4",
+      "trial": 2,
+      "correct": "C",
+      "is_correct": false,
+      "answer": "D",
+      "confidence": 0.1948,
+      "probabilities": {
+        "A": 0.3173,
+        "B": 0.0346,
+        "C": 0.136,
+        "D": 0.5121
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A4",
+      "trial": 3,
+      "correct": "C",
+      "is_correct": false,
+      "answer": "D",
+      "confidence": 0.1948,
+      "probabilities": {
+        "A": 0.3173,
+        "B": 0.0346,
+        "C": 0.136,
+        "D": 0.5121
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A5",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 1.0,
+      "probabilities": {
+        "A": 1.0
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A5",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 1.0,
+      "probabilities": {
+        "A": 1.0
+      }
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "A5",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 1.0,
+      "probabilities": {
+        "A": 1.0
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A1",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.9423,
+      "probabilities": {
+        "A": 0.9692,
+        "B": 0.0269,
+        "C": 0.0009,
+        "D": 0.0031
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A1",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.9411,
+      "probabilities": {
+        "A": 0.9685,
+        "B": 0.0274,
+        "C": 0.0009,
+        "D": 0.0032
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A1",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.9411,
+      "probabilities": {
+        "A": 0.9685,
+        "B": 0.0274,
+        "C": 0.0009,
+        "D": 0.0032
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A2",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "confidence": 0.5048,
+      "probabilities": {
+        "A": 0.2041,
+        "B": 0.0795,
+        "C": 0.7089,
+        "D": 0.0075
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A2",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "confidence": 0.5018,
+      "probabilities": {
+        "A": 0.2066,
+        "B": 0.0774,
+        "C": 0.7084,
+        "D": 0.0076
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A2",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "confidence": 0.5018,
+      "probabilities": {
+        "A": 0.2066,
+        "B": 0.0774,
+        "C": 0.7084,
+        "D": 0.0076
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A3",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.7832,
+      "probabilities": {
+        "A": 0.8916,
+        "B": 0.1084
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A3",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.7852,
+      "probabilities": {
+        "A": 0.8926,
+        "B": 0.1074
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A3",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.7852,
+      "probabilities": {
+        "A": 0.8926,
+        "B": 0.1074
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A4",
+      "trial": 1,
+      "correct": "C",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.2216,
+      "probabilities": {
+        "A": 0.6044,
+        "C": 0.0129,
+        "D": 0.3828
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A4",
+      "trial": 2,
+      "correct": "C",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.2283,
+      "probabilities": {
+        "A": 0.6077,
+        "C": 0.0129,
+        "D": 0.3794
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A4",
+      "trial": 3,
+      "correct": "C",
+      "is_correct": false,
+      "answer": "A",
+      "confidence": 0.2283,
+      "probabilities": {
+        "A": 0.6077,
+        "C": 0.0129,
+        "D": 0.3794
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A5",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 0.2865,
+      "probabilities": {
+        "A": 0.6256,
+        "B": 0.0219,
+        "C": 0.3391,
+        "D": 0.0134
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A5",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 0.2905,
+      "probabilities": {
+        "A": 0.6278,
+        "B": 0.0215,
+        "C": 0.3373,
+        "D": 0.0133
+      }
+    },
+    {
+      "model": "llama3.2:3b",
+      "test_id": "A5",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "confidence": 0.2905,
+      "probabilities": {
+        "A": 0.6278,
+        "B": 0.0215,
+        "C": 0.3373,
+        "D": 0.0133
+      }
+    }
+  ],
+  "collective": [
+    {
+      "config": "homogeneous",
+      "test_id": "A1",
+      "trial": 1,
+      "run_id": "RUN-286",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1111,
+          "probabilities": {
+            "A": 0.4473,
+            "B": 0.1664,
+            "C": 0.3362,
+            "D": 0.0501
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        }
+      ],
+      "total_latency_ms": 835,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "B",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "homogeneous",
+      "test_id": "A1",
+      "trial": 2,
+      "run_id": "RUN-287",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        }
+      ],
+      "total_latency_ms": 142,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "B",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "homogeneous",
+      "test_id": "A1",
+      "trial": 3,
+      "run_id": "RUN-288",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        }
+      ],
+      "total_latency_ms": 152,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "B",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "homogeneous",
+      "test_id": "A2",
+      "trial": 1,
+      "run_id": "RUN-289",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.359,
+          "probabilities": {
+            "A": 0.618,
+            "B": 0.259,
+            "C": 0.0194,
+            "D": 0.1036
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        }
+      ],
+      "total_latency_ms": 192,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "A",
+      "majority_correct": true,
+      "weighted_correct": true
+    },
+    {
+      "config": "homogeneous",
+      "test_id": "A2",
+      "trial": 2,
+      "run_id": "RUN-290",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        }
+      ],
+      "total_latency_ms": 123,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "A",
+      "majority_correct": true,
+      "weighted_correct": true
+    },
+    {
+      "config": "homogeneous",
+      "test_id": "A2",
+      "trial": 3,
+      "run_id": "RUN-291",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        }
+      ],
+      "total_latency_ms": 125,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "A",
+      "majority_correct": true,
+      "weighted_correct": true
+    },
+    {
+      "config": "homogeneous",
+      "test_id": "A3",
+      "trial": 1,
+      "run_id": "RUN-292",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0256,
+          "probabilities": {
+            "A": 0.3249,
+            "B": 0.1061,
+            "C": 0.2698,
+            "D": 0.2993
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        }
+      ],
+      "total_latency_ms": 153,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "B",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "homogeneous",
+      "test_id": "A3",
+      "trial": 2,
+      "run_id": "RUN-293",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        }
+      ],
+      "total_latency_ms": 120,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "B",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "homogeneous",
+      "test_id": "A3",
+      "trial": 3,
+      "run_id": "RUN-294",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        }
+      ],
+      "total_latency_ms": 119,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "B",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "homogeneous",
+      "test_id": "A4",
+      "trial": 1,
+      "run_id": "RUN-295",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5208,
+          "probabilities": {
+            "A": 0.7187,
+            "B": 0.0355,
+            "C": 0.0479,
+            "D": 0.1979
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        }
+      ],
+      "total_latency_ms": 154,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "C",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "homogeneous",
+      "test_id": "A4",
+      "trial": 2,
+      "run_id": "RUN-296",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        }
+      ],
+      "total_latency_ms": 118,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "C",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "homogeneous",
+      "test_id": "A4",
+      "trial": 3,
+      "run_id": "RUN-297",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        }
+      ],
+      "total_latency_ms": 119,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "C",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "homogeneous",
+      "test_id": "A5",
+      "trial": 1,
+      "run_id": "RUN-298",
+      "majority_answer": "D",
+      "weighted_answer": "D",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.285,
+          "probabilities": {
+            "A": 0.2487,
+            "B": 0.1269,
+            "C": 0.0906,
+            "D": 0.5337
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        }
+      ],
+      "total_latency_ms": 154,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "A",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "homogeneous",
+      "test_id": "A5",
+      "trial": 2,
+      "run_id": "RUN-299",
+      "majority_answer": "D",
+      "weighted_answer": "D",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        }
+      ],
+      "total_latency_ms": 119,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "A",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "homogeneous",
+      "test_id": "A5",
+      "trial": 3,
+      "run_id": "RUN-300",
+      "majority_answer": "D",
+      "weighted_answer": "D",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        }
+      ],
+      "total_latency_ms": 124,
+      "config_label": "tinydolphin×5 (no viewpoints)",
+      "correct_answer": "A",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "diverse",
+      "test_id": "A1",
+      "trial": 1,
+      "run_id": "RUN-301",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1111,
+          "probabilities": {
+            "A": 0.4473,
+            "B": 0.1664,
+            "C": 0.3362,
+            "D": 0.0501
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.6879,
+          "probabilities": {
+            "A": 0.8428,
+            "B": 0.1549,
+            "C": 0.0023
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.6472,
+          "probabilities": {
+            "A": 0.8236,
+            "B": 0.1764
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.9423,
+          "probabilities": {
+            "A": 0.9692,
+            "B": 0.0269,
+            "C": 0.0009,
+            "D": 0.0031
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1111,
+          "probabilities": {
+            "A": 0.4473,
+            "B": 0.1664,
+            "C": 0.3362,
+            "D": 0.0501
+          }
+        }
+      ],
+      "total_latency_ms": 2208,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "B",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "diverse",
+      "test_id": "A1",
+      "trial": 2,
+      "run_id": "RUN-302",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.6879,
+          "probabilities": {
+            "A": 0.8428,
+            "B": 0.1549,
+            "C": 0.0023
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.6474,
+          "probabilities": {
+            "A": 0.8237,
+            "B": 0.1763
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.9411,
+          "probabilities": {
+            "A": 0.9685,
+            "B": 0.0274,
+            "C": 0.0009,
+            "D": 0.0032
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1111,
+          "probabilities": {
+            "A": 0.4473,
+            "B": 0.1664,
+            "C": 0.3362,
+            "D": 0.0501
+          }
+        }
+      ],
+      "total_latency_ms": 1936,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "B",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "diverse",
+      "test_id": "A1",
+      "trial": 3,
+      "run_id": "RUN-303",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 5,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1109,
+          "probabilities": {
+            "A": 0.4472,
+            "B": 0.1664,
+            "C": 0.3363,
+            "D": 0.05
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.6879,
+          "probabilities": {
+            "A": 0.8428,
+            "B": 0.1549,
+            "C": 0.0023
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.6474,
+          "probabilities": {
+            "A": 0.8237,
+            "B": 0.1763
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.9411,
+          "probabilities": {
+            "A": 0.9685,
+            "B": 0.0274,
+            "C": 0.0009,
+            "D": 0.0032
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.1111,
+          "probabilities": {
+            "A": 0.4473,
+            "B": 0.1664,
+            "C": 0.3362,
+            "D": 0.0501
+          }
+        }
+      ],
+      "total_latency_ms": 1974,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "B",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "diverse",
+      "test_id": "A2",
+      "trial": 1,
+      "run_id": "RUN-304",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 4,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.359,
+          "probabilities": {
+            "A": 0.618,
+            "B": 0.259,
+            "C": 0.0194,
+            "D": 0.1036
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.7856,
+          "probabilities": {
+            "A": 0.8752,
+            "B": 0.0352,
+            "C": 0.0896
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 1.0,
+          "probabilities": {
+            "A": 1.0
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "C",
+          "confidence": 0.5048,
+          "probabilities": {
+            "A": 0.2041,
+            "B": 0.0795,
+            "C": 0.7089,
+            "D": 0.0075
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.359,
+          "probabilities": {
+            "A": 0.618,
+            "B": 0.259,
+            "C": 0.0194,
+            "D": 0.1036
+          }
+        }
+      ],
+      "total_latency_ms": 2031,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "A",
+      "majority_correct": true,
+      "weighted_correct": true
+    },
+    {
+      "config": "diverse",
+      "test_id": "A2",
+      "trial": 2,
+      "run_id": "RUN-305",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 4,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.7856,
+          "probabilities": {
+            "A": 0.8752,
+            "B": 0.0352,
+            "C": 0.0896
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 1.0,
+          "probabilities": {
+            "A": 1.0
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "C",
+          "confidence": 0.5018,
+          "probabilities": {
+            "A": 0.2066,
+            "B": 0.0774,
+            "C": 0.7084,
+            "D": 0.0076
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.359,
+          "probabilities": {
+            "A": 0.618,
+            "B": 0.259,
+            "C": 0.0194,
+            "D": 0.1036
+          }
+        }
+      ],
+      "total_latency_ms": 2008,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "A",
+      "majority_correct": true,
+      "weighted_correct": true
+    },
+    {
+      "config": "diverse",
+      "test_id": "A2",
+      "trial": 3,
+      "run_id": "RUN-306",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 4,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.3581,
+          "probabilities": {
+            "A": 0.6175,
+            "B": 0.2594,
+            "C": 0.0194,
+            "D": 0.1038
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.7856,
+          "probabilities": {
+            "A": 0.8752,
+            "B": 0.0352,
+            "C": 0.0896
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 1.0,
+          "probabilities": {
+            "A": 1.0
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "C",
+          "confidence": 0.5018,
+          "probabilities": {
+            "A": 0.2066,
+            "B": 0.0774,
+            "C": 0.7084,
+            "D": 0.0076
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.359,
+          "probabilities": {
+            "A": 0.618,
+            "B": 0.259,
+            "C": 0.0194,
+            "D": 0.1036
+          }
+        }
+      ],
+      "total_latency_ms": 2001,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "A",
+      "majority_correct": true,
+      "weighted_correct": true
+    },
+    {
+      "config": "diverse",
+      "test_id": "A3",
+      "trial": 1,
+      "run_id": "RUN-307",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 4,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0256,
+          "probabilities": {
+            "A": 0.3249,
+            "B": 0.1061,
+            "C": 0.2698,
+            "D": 0.2993
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "B",
+          "confidence": 0.5332,
+          "probabilities": {
+            "A": 0.2334,
+            "B": 0.7666
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.015,
+          "probabilities": {
+            "A": 0.5075,
+            "C": 0.4925
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.7832,
+          "probabilities": {
+            "A": 0.8916,
+            "B": 0.1084
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0256,
+          "probabilities": {
+            "A": 0.3249,
+            "B": 0.1061,
+            "C": 0.2698,
+            "D": 0.2993
+          }
+        }
+      ],
+      "total_latency_ms": 2011,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "B",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "diverse",
+      "test_id": "A3",
+      "trial": 2,
+      "run_id": "RUN-308",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 4,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "B",
+          "confidence": 0.5332,
+          "probabilities": {
+            "A": 0.2334,
+            "B": 0.7666
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0144,
+          "probabilities": {
+            "A": 0.5072,
+            "C": 0.4928
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.7852,
+          "probabilities": {
+            "A": 0.8926,
+            "B": 0.1074
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0256,
+          "probabilities": {
+            "A": 0.3249,
+            "B": 0.1061,
+            "C": 0.2698,
+            "D": 0.2993
+          }
+        }
+      ],
+      "total_latency_ms": 1839,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "B",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "diverse",
+      "test_id": "A3",
+      "trial": 3,
+      "run_id": "RUN-309",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 4,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0248,
+          "probabilities": {
+            "A": 0.3247,
+            "B": 0.1057,
+            "C": 0.2697,
+            "D": 0.2999
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "B",
+          "confidence": 0.5332,
+          "probabilities": {
+            "A": 0.2334,
+            "B": 0.7666
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0144,
+          "probabilities": {
+            "A": 0.5072,
+            "C": 0.4928
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.7852,
+          "probabilities": {
+            "A": 0.8926,
+            "B": 0.1074
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.0256,
+          "probabilities": {
+            "A": 0.3249,
+            "B": 0.1061,
+            "C": 0.2698,
+            "D": 0.2993
+          }
+        }
+      ],
+      "total_latency_ms": 1863,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "B",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "diverse",
+      "test_id": "A4",
+      "trial": 1,
+      "run_id": "RUN-310",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 3,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5208,
+          "probabilities": {
+            "A": 0.7187,
+            "B": 0.0355,
+            "C": 0.0479,
+            "D": 0.1979
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "C",
+          "confidence": 0.3329,
+          "probabilities": {
+            "A": 0.044,
+            "B": 0.015,
+            "C": 0.6369,
+            "D": 0.304
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.1964,
+          "probabilities": {
+            "A": 0.3165,
+            "B": 0.0346,
+            "C": 0.136,
+            "D": 0.5129
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.2216,
+          "probabilities": {
+            "A": 0.6044,
+            "C": 0.0129,
+            "D": 0.3828
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5208,
+          "probabilities": {
+            "A": 0.7187,
+            "B": 0.0355,
+            "C": 0.0479,
+            "D": 0.1979
+          }
+        }
+      ],
+      "total_latency_ms": 2050,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "C",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "diverse",
+      "test_id": "A4",
+      "trial": 2,
+      "run_id": "RUN-311",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 3,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "C",
+          "confidence": 0.3329,
+          "probabilities": {
+            "A": 0.044,
+            "B": 0.015,
+            "C": 0.6369,
+            "D": 0.304
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.1948,
+          "probabilities": {
+            "A": 0.3173,
+            "B": 0.0346,
+            "C": 0.136,
+            "D": 0.5121
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.2283,
+          "probabilities": {
+            "A": 0.6077,
+            "C": 0.0129,
+            "D": 0.3794
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5208,
+          "probabilities": {
+            "A": 0.7187,
+            "B": 0.0355,
+            "C": 0.0479,
+            "D": 0.1979
+          }
+        }
+      ],
+      "total_latency_ms": 1848,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "C",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "diverse",
+      "test_id": "A4",
+      "trial": 3,
+      "run_id": "RUN-312",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 3,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5206,
+          "probabilities": {
+            "A": 0.7189,
+            "B": 0.0352,
+            "C": 0.0476,
+            "D": 0.1983
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "C",
+          "confidence": 0.3329,
+          "probabilities": {
+            "A": 0.044,
+            "B": 0.015,
+            "C": 0.6369,
+            "D": 0.304
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.1948,
+          "probabilities": {
+            "A": 0.3173,
+            "B": 0.0346,
+            "C": 0.136,
+            "D": 0.5121
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.2283,
+          "probabilities": {
+            "A": 0.6077,
+            "C": 0.0129,
+            "D": 0.3794
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.5208,
+          "probabilities": {
+            "A": 0.7187,
+            "B": 0.0355,
+            "C": 0.0479,
+            "D": 0.1979
+          }
+        }
+      ],
+      "total_latency_ms": 1823,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "C",
+      "majority_correct": false,
+      "weighted_correct": false
+    },
+    {
+      "config": "diverse",
+      "test_id": "A5",
+      "trial": 1,
+      "run_id": "RUN-313",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 3,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.285,
+          "probabilities": {
+            "A": 0.2487,
+            "B": 0.1269,
+            "C": 0.0906,
+            "D": 0.5337
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.9563,
+          "probabilities": {
+            "A": 0.9761,
+            "B": 0.0041,
+            "C": 0.0198
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 1.0,
+          "probabilities": {
+            "A": 1.0
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.2865,
+          "probabilities": {
+            "A": 0.6256,
+            "B": 0.0219,
+            "C": 0.3391,
+            "D": 0.0134
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.285,
+          "probabilities": {
+            "A": 0.2487,
+            "B": 0.1269,
+            "C": 0.0906,
+            "D": 0.5337
+          }
+        }
+      ],
+      "total_latency_ms": 2125,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "A",
+      "majority_correct": true,
+      "weighted_correct": true
+    },
+    {
+      "config": "diverse",
+      "test_id": "A5",
+      "trial": 2,
+      "run_id": "RUN-314",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 3,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.9563,
+          "probabilities": {
+            "A": 0.9761,
+            "B": 0.0041,
+            "C": 0.0198
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 1.0,
+          "probabilities": {
+            "A": 1.0
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.2905,
+          "probabilities": {
+            "A": 0.6278,
+            "B": 0.0215,
+            "C": 0.3373,
+            "D": 0.0133
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.285,
+          "probabilities": {
+            "A": 0.2487,
+            "B": 0.1269,
+            "C": 0.0906,
+            "D": 0.5337
+          }
+        }
+      ],
+      "total_latency_ms": 1928,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "A",
+      "majority_correct": true,
+      "weighted_correct": true
+    },
+    {
+      "config": "diverse",
+      "test_id": "A5",
+      "trial": 3,
+      "run_id": "RUN-315",
+      "majority_answer": "A",
+      "weighted_answer": "A",
+      "majority_votes": 3,
+      "per_worker": [
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.2872,
+          "probabilities": {
+            "A": 0.2477,
+            "B": 0.1269,
+            "C": 0.0905,
+            "D": 0.5349
+          }
+        },
+        {
+          "model": "phi3:mini",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.9563,
+          "probabilities": {
+            "A": 0.9761,
+            "B": 0.0041,
+            "C": 0.0198
+          }
+        },
+        {
+          "model": "gemma2:2b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 1.0,
+          "probabilities": {
+            "A": 1.0
+          }
+        },
+        {
+          "model": "llama3.2:3b",
+          "viewpoint": "NONE",
+          "answer": "A",
+          "confidence": 0.2905,
+          "probabilities": {
+            "A": 0.6278,
+            "B": 0.0215,
+            "C": 0.3373,
+            "D": 0.0133
+          }
+        },
+        {
+          "model": "tinydolphin",
+          "viewpoint": "NONE",
+          "answer": "D",
+          "confidence": 0.285,
+          "probabilities": {
+            "A": 0.2487,
+            "B": 0.1269,
+            "C": 0.0906,
+            "D": 0.5337
+          }
+        }
+      ],
+      "total_latency_ms": 1921,
+      "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+      "correct_answer": "A",
+      "majority_correct": true,
+      "weighted_correct": true
+    }
+  ]
+}

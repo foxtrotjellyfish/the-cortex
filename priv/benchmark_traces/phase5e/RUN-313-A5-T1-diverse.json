@@ -1,0 +1,97 @@
+{
+  "status": "ok",
+  "question": "I have a brother. My brother has no brothers. How is this possible?",
+  "worker_count": 5,
+  "test_id": "A5",
+  "trial": 1,
+  "mc_prompt": "Q: I have a brother. My brother has no brothers. How is this possible?\nA) The speaker is female (a sister)\nB) They are half-brothers\nC) The brother was adopted\nD) They are not actually related\n\nAnswer:",
+  "run_id": "RUN-313",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "D",
+      "confidence": 0.285,
+      "probabilities": {
+        "A": 0.2487,
+        "B": 0.1269,
+        "C": 0.0906,
+        "D": 0.5337
+      },
+      "raw_response": "A",
+      "worker_idx": 0
+    },
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.9563,
+      "probabilities": {
+        "A": 0.9761,
+        "B": 0.0041,
+        "C": 0.0198
+      },
+      "raw_response": "The",
+      "worker_idx": 1
+    },
+    {
+      "model": "gemma2:2b",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 1.0,
+      "probabilities": {
+        "A": 1.0
+      },
+      "raw_response": "The",
+      "worker_idx": 2
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.2865,
+      "probabilities": {
+        "A": 0.6256,
+        "B": 0.0219,
+        "C": 0.3391,
+        "D": 0.0134
+      },
+      "raw_response": "The",
+      "worker_idx": 3
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "D",
+      "confidence": 0.285,
+      "probabilities": {
+        "A": 0.2487,
+        "B": 0.1269,
+        "C": 0.0906,
+        "D": 0.5337
+      },
+      "raw_response": "A",
+      "worker_idx": 4
+    }
+  ],
+  "total_latency_ms": 2125,
+  "config_name": "diverse",
+  "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 3,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 3.0991,
+    "B": 0.27980000000000005,
+    "C": 0.5401,
+    "D": 1.0808
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "status": "ok",
+  "question": "I need a car wash. The car wash is 50 meters away. Should I walk?",
+  "worker_count": 5,
+  "test_id": "A1",
+  "trial": 2,
+  "mc_prompt": "Q: I need a car wash. The car wash is 50 meters away. Should I walk?\nA) Yes, it's only 50 meters — just walk there\nB) No, you need to drive your car there to get it washed\nC) Take a taxi instead\nD) It depends on the weather\n\nAnswer:",
+  "run_id": "RUN-302",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 5,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.1109,
+      "probabilities": {
+        "A": 0.4472,
+        "B": 0.1664,
+        "C": 0.3363,
+        "D": 0.05
+      },
+      "raw_response": "A",
+      "worker_idx": 0
+    },
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.6879,
+      "probabilities": {
+        "A": 0.8428,
+        "B": 0.1549,
+        "C": 0.0023
+      },
+      "raw_response": "A",
+      "worker_idx": 1
+    },
+    {
+      "model": "gemma2:2b",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.6474,
+      "probabilities": {
+        "A": 0.8237,
+        "B": 0.1763
+      },
+      "raw_response": "The",
+      "worker_idx": 2
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.9411,
+      "probabilities": {
+        "A": 0.9685,
+        "B": 0.0274,
+        "C": 0.0009,
+        "D": 0.0032
+      },
+      "raw_response": "The",
+      "worker_idx": 3
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.1111,
+      "probabilities": {
+        "A": 0.4473,
+        "B": 0.1664,
+        "C": 0.3362,
+        "D": 0.0501
+      },
+      "raw_response": "A",
+      "worker_idx": 4
+    }
+  ],
+  "total_latency_ms": 1936,
+  "config_name": "diverse",
+  "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 5
+  },
+  "weighted_scores": {
+    "A": 3.5295,
+    "B": 0.6914,
+    "C": 0.6757,
+    "D": 0.1033
+  }
+}

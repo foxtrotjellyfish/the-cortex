@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "question": "I have a brother. My brother has no brothers. How is this possible?",
+  "worker_count": 5,
+  "test_id": "A5",
+  "trial": 3,
+  "mc_prompt": "Q: I have a brother. My brother has no brothers. How is this possible?\nA) The speaker is female (a sister)\nB) They are half-brothers\nC) The brother was adopted\nD) They are not actually related\n\nAnswer:",
+  "run_id": "RUN-300",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 5,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "D",
+      "confidence": 0.2872,
+      "probabilities": {
+        "A": 0.2477,
+        "B": 0.1269,
+        "C": 0.0905,
+        "D": 0.5349
+      },
+      "raw_response": "A",
+      "worker_idx": 0
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "D",
+      "confidence": 0.2872,
+      "probabilities": {
+        "A": 0.2477,
+        "B": 0.1269,
+        "C": 0.0905,
+        "D": 0.5349
+      },
+      "raw_response": "A",
+      "worker_idx": 1
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "D",
+      "confidence": 0.2872,
+      "probabilities": {
+        "A": 0.2477,
+        "B": 0.1269,
+        "C": 0.0905,
+        "D": 0.5349
+      },
+      "raw_response": "A",
+      "worker_idx": 2
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "D",
+      "confidence": 0.2872,
+      "probabilities": {
+        "A": 0.2477,
+        "B": 0.1269,
+        "C": 0.0905,
+        "D": 0.5349
+      },
+      "raw_response": "A",
+      "worker_idx": 3
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "D",
+      "confidence": 0.2872,
+      "probabilities": {
+        "A": 0.2477,
+        "B": 0.1269,
+        "C": 0.0905,
+        "D": 0.5349
+      },
+      "raw_response": "A",
+      "worker_idx": 4
+    }
+  ],
+  "total_latency_ms": 124,
+  "config_name": "homogeneous",
+  "config_label": "tinydolphin×5 (no viewpoints)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "D": 5
+  },
+  "weighted_scores": {
+    "A": 1.2385,
+    "B": 0.6345000000000001,
+    "C": 0.4525,
+    "D": 2.6745
+  }
+}

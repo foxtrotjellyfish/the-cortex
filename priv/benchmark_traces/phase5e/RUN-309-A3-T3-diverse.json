@@ -1,0 +1,95 @@
+{
+  "status": "ok",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "worker_count": 5,
+  "test_id": "A3",
+  "trial": 3,
+  "mc_prompt": "Q: A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?\nA) 7\nB) 8\nC) 15\nD) 0\n\nAnswer:",
+  "run_id": "RUN-309",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.0248,
+      "probabilities": {
+        "A": 0.3247,
+        "B": 0.1057,
+        "C": 0.2697,
+        "D": 0.2999
+      },
+      "raw_response": "A",
+      "worker_idx": 0
+    },
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "answer": "B",
+      "confidence": 0.5332,
+      "probabilities": {
+        "A": 0.2334,
+        "B": 0.7666
+      },
+      "raw_response": "The",
+      "worker_idx": 1
+    },
+    {
+      "model": "gemma2:2b",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.0144,
+      "probabilities": {
+        "A": 0.5072,
+        "C": 0.4928
+      },
+      "raw_response": "The",
+      "worker_idx": 2
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.7852,
+      "probabilities": {
+        "A": 0.8926,
+        "B": 0.1074
+      },
+      "raw_response": "The",
+      "worker_idx": 3
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.0256,
+      "probabilities": {
+        "A": 0.3249,
+        "B": 0.1061,
+        "C": 0.2698,
+        "D": 0.2993
+      },
+      "raw_response": "A",
+      "worker_idx": 4
+    }
+  ],
+  "total_latency_ms": 1863,
+  "config_name": "diverse",
+  "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 4,
+    "B": 1
+  },
+  "weighted_scores": {
+    "A": 2.2828,
+    "B": 1.0858,
+    "C": 1.0323,
+    "D": 0.5992
+  }
+}

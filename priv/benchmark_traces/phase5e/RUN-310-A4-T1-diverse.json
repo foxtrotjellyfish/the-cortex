@@ -1,0 +1,101 @@
+{
+  "status": "ok",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "worker_count": 5,
+  "test_id": "A4",
+  "trial": 1,
+  "mc_prompt": "Q: A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?\nA) Brown\nB) Black\nC) White\nD) Cannot be determined\n\nAnswer:",
+  "run_id": "RUN-310",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.5208,
+      "probabilities": {
+        "A": 0.7187,
+        "B": 0.0355,
+        "C": 0.0479,
+        "D": 0.1979
+      },
+      "raw_response": "C",
+      "worker_idx": 0
+    },
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "answer": "C",
+      "confidence": 0.3329,
+      "probabilities": {
+        "A": 0.044,
+        "B": 0.015,
+        "C": 0.6369,
+        "D": 0.304
+      },
+      "raw_response": "The",
+      "worker_idx": 1
+    },
+    {
+      "model": "gemma2:2b",
+      "viewpoint": "NONE",
+      "answer": "D",
+      "confidence": 0.1964,
+      "probabilities": {
+        "A": 0.3165,
+        "B": 0.0346,
+        "C": 0.136,
+        "D": 0.5129
+      },
+      "raw_response": "The",
+      "worker_idx": 2
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.2216,
+      "probabilities": {
+        "A": 0.6044,
+        "C": 0.0129,
+        "D": 0.3828
+      },
+      "raw_response": "The",
+      "worker_idx": 3
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "answer": "A",
+      "confidence": 0.5208,
+      "probabilities": {
+        "A": 0.7187,
+        "B": 0.0355,
+        "C": 0.0479,
+        "D": 0.1979
+      },
+      "raw_response": "C",
+      "worker_idx": 4
+    }
+  ],
+  "total_latency_ms": 2050,
+  "config_name": "diverse",
+  "config_label": "td/phi3/gemma2/llama3.2/td (no viewpoints)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 3,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 2.4023000000000003,
+    "B": 0.12059999999999998,
+    "C": 0.8816000000000002,
+    "D": 1.5955000000000001
+  }
+}
