@@ -48,4 +48,83 @@ defmodule Cortex.LLM.Adapters.Ollama do
         {:error, "Ollama connection failed: #{inspect(reason)}"}
     end
   end
+
+  @doc """
+  Score multiple-choice answers via logprobs. Uses /api/generate with
+  `logprobs: true, num_predict: 1` to read the model's probability
+  distribution over answer tokens without generating prose.
+
+  Returns `{:ok, %{answer: "B", probabilities: %{...}, confidence: float}}`
+  or `{:error, reason}`.
+  """
+  def score_choices(prompt, config, choices \\ ~w(A B C D)) do
+    model = Map.get(config, :model, "tinydolphin")
+    base_url = Map.get(config, :base_url, @default_base_url)
+
+    body = %{
+      "model" => model,
+      "prompt" => prompt,
+      "stream" => false,
+      "logprobs" => true,
+      "top_logprobs" => 10,
+      "options" => %{"num_predict" => 1, "temperature" => 0}
+    }
+
+    case Req.post("#{base_url}/api/generate", json: body, receive_timeout: 60_000) do
+      {:ok, %{status: 200, body: resp_body}} ->
+        {:ok, parse_logprobs(resp_body, choices)}
+
+      {:ok, %{status: status, body: body}} ->
+        {:error, "Ollama returned #{status}: #{inspect(body)}"}
+
+      {:error, reason} ->
+        {:error, "Ollama connection failed: #{inspect(reason)}"}
+    end
+  end
+
+  defp parse_logprobs(resp_body, choices) do
+    raw_probs =
+      resp_body
+      |> get_in(["logprobs"])
+      |> List.wrap()
+      |> List.first(%{})
+      |> Map.get("top_logprobs", [])
+      |> Enum.reduce(%{}, fn entry, acc ->
+        token = entry["token"] |> String.trim()
+
+        if token in choices do
+          Map.put(acc, token, :math.exp(entry["logprob"]))
+        else
+          acc
+        end
+      end)
+
+    total = Map.values(raw_probs) |> Enum.sum()
+
+    probabilities =
+      if total > 0,
+        do: Map.new(raw_probs, fn {k, v} -> {k, Float.round(v / total, 4)} end),
+        else: raw_probs
+
+    sorted = Enum.sort_by(probabilities, &elem(&1, 1), :desc)
+
+    {answer, top_p} =
+      case sorted do
+        [{a, p} | _] -> {a, p}
+        [] -> {nil, 0.0}
+      end
+
+    second_p =
+      case sorted do
+        [_, {_, p} | _] -> p
+        _ -> 0.0
+      end
+
+    %{
+      answer: answer,
+      probabilities: probabilities,
+      confidence: Float.round(top_p - second_p, 4),
+      raw_response: String.trim(resp_body["response"] || "")
+    }
+  end
 end

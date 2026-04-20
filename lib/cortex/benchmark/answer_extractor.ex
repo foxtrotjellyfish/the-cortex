@@ -162,6 +162,71 @@ defmodule Cortex.Benchmark.AnswerExtractor do
     end
   end
 
+  @doc """
+  Aggregate logprobs-scored MC results via majority vote.
+
+  Takes a list of `%{answer: "B", probabilities: %{...}, confidence: float}`
+  maps (one per worker) and returns the majority answer with vote breakdown.
+  """
+  @spec majority_vote_mc([map()]) :: map()
+  def majority_vote_mc(scored_results) do
+    answers = Enum.map(scored_results, & &1.answer)
+    non_nil = Enum.reject(answers, &is_nil/1)
+
+    frequencies =
+      non_nil
+      |> Enum.frequencies()
+      |> Enum.sort_by(&elem(&1, 1), :desc)
+
+    {winner, winner_count} =
+      case frequencies do
+        [{answer, count} | _] -> {answer, count}
+        [] -> {nil, 0}
+      end
+
+    %{
+      answer: winner,
+      votes: winner_count,
+      total: length(scored_results),
+      extracted: answers,
+      distribution: Map.new(frequencies),
+      per_worker: scored_results
+    }
+  end
+
+  @doc """
+  Confidence-weighted MC aggregation.
+
+  Instead of 1 vote per worker, each worker contributes its probability
+  distribution. The choice with the highest summed probability wins.
+  """
+  @spec weighted_vote_mc([map()], [String.t()]) :: map()
+  def weighted_vote_mc(scored_results, choices \\ ~w(A B C D)) do
+    summed =
+      Enum.reduce(scored_results, %{}, fn result, acc ->
+        Enum.reduce(choices, acc, fn choice, inner_acc ->
+          p = Map.get(result.probabilities || %{}, choice, 0.0)
+          Map.update(inner_acc, choice, p, &(&1 + p))
+        end)
+      end)
+
+    sorted = Enum.sort_by(summed, &elem(&1, 1), :desc)
+
+    {winner, top_score} =
+      case sorted do
+        [{a, s} | _] -> {a, s}
+        [] -> {nil, 0.0}
+      end
+
+    %{
+      answer: winner,
+      scores: Map.new(sorted),
+      total: length(scored_results),
+      top_score: Float.round(top_score, 4),
+      per_worker: scored_results
+    }
+  end
+
   defp normalize_color("grey"), do: "gray"
   defp normalize_color(c), do: c
 

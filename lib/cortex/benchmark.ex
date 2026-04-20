@@ -357,6 +357,116 @@ defmodule Cortex.Benchmark do
     end
   end
 
+  @doc """
+  Run constrained MC benchmark: workers score answer choices via logprobs
+  instead of generating prose. No LLM synthesizer needed.
+
+  Each worker receives the MC-formatted question (with its viewpoint prepended)
+  and the Ollama adapter scores token probabilities for A/B/C/D.
+
+  Requires in opts:
+    - `:test_id`     — e.g. "A1", "A2"
+    - `:choices`     — list of choice labels (default: ~w(A B C D))
+    - `:mc_prompt`   — the full multiple-choice prompt string
+
+  Optional:
+    - `:worker_adapter_configs` — per-worker model configs
+    - `:workers`    — number of workers (default: 5)
+    - `:viewpoints` — custom viewpoints as `{label, prompt}` tuples
+    - `:adapter`    — LLM adapter module (must support score_choices/3)
+  """
+  def run_constrained(question, opts \\ []) do
+    test_id = Keyword.fetch!(opts, :test_id)
+    mc_prompt = Keyword.fetch!(opts, :mc_prompt)
+    choices = Keyword.get(opts, :choices, ~w(A B C D))
+    adapter = Keyword.get(opts, :adapter, Cortex.LLM.Adapters.Ollama)
+    base_adapter_config = Keyword.get(opts, :adapter_config, %{})
+    worker_adapter_configs = Keyword.get(opts, :worker_adapter_configs)
+
+    viewpoints = Keyword.get(opts, :viewpoints) || default_viewpoints()
+    worker_count = Keyword.get(opts, :workers, length(viewpoints))
+
+    t0 = System.monotonic_time(:millisecond)
+
+    Logger.info("[Benchmark] Constrained MC: #{test_id} with #{worker_count} workers")
+
+    scored_results =
+      0..(worker_count - 1)
+      |> Enum.map(fn idx ->
+        {label, viewpoint_prompt} = Enum.at(viewpoints, rem(idx, length(viewpoints)))
+
+        config = merge_worker_config(base_adapter_config, worker_adapter_configs, idx)
+
+        full_prompt = viewpoint_prompt <> "\n\n" <> mc_prompt <> "\nAnswer:"
+
+        model_name = Map.get(config, :model, "tinydolphin")
+        Logger.info("[Benchmark] Worker #{idx} (#{label}, #{model_name}) scoring...")
+
+        case adapter.score_choices(full_prompt, config, choices) do
+          {:ok, result} ->
+            Map.merge(result, %{
+              worker_idx: idx,
+              viewpoint: label,
+              model: model_name
+            })
+
+          {:error, reason} ->
+            Logger.error("[Benchmark] Worker #{idx} score_choices failed: #{inspect(reason)}")
+
+            %{
+              answer: nil,
+              probabilities: %{},
+              confidence: 0.0,
+              worker_idx: idx,
+              viewpoint: label,
+              model: model_name,
+              error: inspect(reason)
+            }
+        end
+      end)
+
+    majority = Cortex.Benchmark.AnswerExtractor.majority_vote_mc(scored_results)
+    weighted = Cortex.Benchmark.AnswerExtractor.weighted_vote_mc(scored_results, choices)
+
+    total_ms = System.monotonic_time(:millisecond) - t0
+
+    %{
+      status: :ok,
+      test_id: test_id,
+      question: question,
+      mc_prompt: mc_prompt,
+      majority_answer: majority.answer,
+      majority_votes: majority.votes,
+      majority_total: majority.total,
+      majority_distribution: majority.distribution,
+      weighted_answer: weighted.answer,
+      weighted_scores: weighted.scores,
+      per_worker: scored_results,
+      total_latency_ms: total_ms,
+      worker_count: worker_count
+    }
+  end
+
+  defp default_viewpoints do
+    [
+      {"ARGUE_FOR", "You argue IN FAVOR of the most obvious answer. Make the strongest case for it."},
+      {"ARGUE_AGAINST", "You argue AGAINST the most obvious answer. Find flaws, edge cases, and alternatives."},
+      {"CHECK_ASSUMPTIONS", "You CHECK ASSUMPTIONS in the question. Are there hidden premises, tricks, or ambiguities?"},
+      {"DEVILS_ADVOCATE", "You play DEVIL'S ADVOCATE. What would a skeptic say? What's everyone else missing?"},
+      {"COMPLETENESS", "You EVALUATE COMPLETENESS. Is the question fully answerable? What context is missing?"}
+    ]
+  end
+
+  defp merge_worker_config(base, nil, _idx), do: base
+
+  defp merge_worker_config(base, configs, idx) when is_list(configs) do
+    case Enum.at(configs, idx) do
+      nil -> base
+      model when is_binary(model) -> Map.put(base, :model, model)
+      map when is_map(map) -> Map.merge(base, map)
+    end
+  end
+
   # -- Private ----------------------------------------------------------------
 
   defp await_collective(plan_id, t0, timeout) do
