@@ -1,0 +1,4547 @@
+{
+  "description": "8 aggregation methods over 5H escape-hatch-removed traces (0 Ollama calls)",
+  "phase": "5H-aggregation",
+  "summary": {
+    "curated_5": {
+      "BellCurve": {
+        "total": 24,
+        "correct": 3,
+        "pct": 12.5
+      },
+      "Conf-Wt": {
+        "total": 24,
+        "correct": 18,
+        "pct": 75.0
+      },
+      "Ent-Gate": {
+        "total": 24,
+        "correct": 15,
+        "pct": 62.5
+      },
+      "Ent-Wt": {
+        "total": 24,
+        "correct": 12,
+        "pct": 50.0
+      },
+      "LogOP": {
+        "total": 24,
+        "correct": 15,
+        "pct": 62.5
+      },
+      "Majority": {
+        "total": 24,
+        "correct": 9,
+        "pct": 37.5
+      },
+      "MoE": {
+        "total": 24,
+        "correct": 15,
+        "pct": 62.5
+      },
+      "PoE": {
+        "total": 24,
+        "correct": 15,
+        "pct": 62.5
+      }
+    },
+    "full_8": {
+      "BellCurve": {
+        "total": 24,
+        "correct": 6,
+        "pct": 25.0
+      },
+      "Conf-Wt": {
+        "total": 24,
+        "correct": 9,
+        "pct": 37.5
+      },
+      "Ent-Gate": {
+        "total": 24,
+        "correct": 9,
+        "pct": 37.5
+      },
+      "Ent-Wt": {
+        "total": 24,
+        "correct": 9,
+        "pct": 37.5
+      },
+      "LogOP": {
+        "total": 24,
+        "correct": 6,
+        "pct": 25.0
+      },
+      "Majority": {
+        "total": 24,
+        "correct": 9,
+        "pct": 37.5
+      },
+      "MoE": {
+        "total": 24,
+        "correct": 12,
+        "pct": 50.0
+      },
+      "PoE": {
+        "total": 24,
+        "correct": 6,
+        "pct": 25.0
+      }
+    }
+  },
+  "bell_curve_params": {
+    "mu": 0.6,
+    "sigma": 0.1
+  },
+  "modified_tests": [
+    "A1",
+    "A2",
+    "A4"
+  ],
+  "per_run": [
+    {
+      "config": "curated_5",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.47348665004581497,
+            "B": 0.43407387264007813,
+            "C": 0.09243947731410691
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8366235716967974,
+            "B": 0.1633764283032026,
+            "C": 0.0
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.759025,
+            "B": 0.23365,
+            "C": 0.007325000000000001
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9595176975240343,
+            "B": 0.030820562917726814,
+            "C": 0.009661739558238938
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9304773839144687,
+            "B": 0.06643474515989707,
+            "C": 0.0030878709256343265
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8,
+            "B": 0.2,
+            "C": 0.0
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.702,
+            "B": 0.22212,
+            "C": 0.07588
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999981445615719,
+            "B": 1.8554380256917219e-6,
+            "C": 4.0249990065299144e-13
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "B",
+      "test_id": "A1",
+      "trial": 1,
+      "run_id": "RUN-364"
+    },
+    {
+      "config": "curated_5",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4727160019265828,
+            "B": 0.43481992838133526,
+            "C": 0.09246406969208193
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8362056337200162,
+            "B": 0.16379436627998376,
+            "C": 0.0
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.7584941269126914,
+            "B": 0.2341808205820582,
+            "C": 0.007325052505250526
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9594452120539149,
+            "B": 0.030893184300906398,
+            "C": 0.009661603645178771
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9303583885989988,
+            "B": 0.06655096096914173,
+            "C": 0.003090650431859394
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8,
+            "B": 0.2,
+            "C": 0.0
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.7015753015301531,
+            "B": 0.22254465646564653,
+            "C": 0.07588004200420043
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999981270786262,
+            "B": 1.8729209691298703e-6,
+            "C": 4.0457331337940043e-13
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "B",
+      "test_id": "A1",
+      "trial": 2,
+      "run_id": "RUN-365"
+    },
+    {
+      "config": "curated_5",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4727160019265828,
+            "B": 0.43481992838133526,
+            "C": 0.09246406969208193
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8362056337200162,
+            "B": 0.16379436627998376,
+            "C": 0.0
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.7584941269126914,
+            "B": 0.2341808205820582,
+            "C": 0.007325052505250526
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9594452120539149,
+            "B": 0.030893184300906398,
+            "C": 0.009661603645178771
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9303583885989988,
+            "B": 0.06655096096914173,
+            "C": 0.003090650431859394
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8,
+            "B": 0.2,
+            "C": 0.0
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.7015753015301531,
+            "B": 0.22254465646564653,
+            "C": 0.07588004200420043
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999981270786262,
+            "B": 1.8729209691298703e-6,
+            "C": 4.0457331337940043e-13
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "B",
+      "test_id": "A1",
+      "trial": 3,
+      "run_id": "RUN-366"
+    },
+    {
+      "config": "curated_5",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.30251760348585355,
+            "B": 0.2557280639955852,
+            "C": 0.4417543325185611
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4114908577580143,
+            "B": 0.23869321116528658,
+            "C": 0.349815931076699
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.38362087408740875,
+            "B": 0.3214058165816581,
+            "C": 0.29497330933093313
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999812236916934,
+            "B": 1.6438892234021343e-5,
+            "C": 2.3374160724672955e-6
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8312094846324715,
+            "B": 0.12687934089162953,
+            "C": 0.041911174475898885
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.2,
+            "C": 0.4
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.38362087408740875,
+            "B": 0.3214058165816581,
+            "C": 0.29497330933093313
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999168100997722,
+            "B": 8.28640180763263e-5,
+            "C": 3.2588215154070827e-7
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "A",
+      "test_id": "A2",
+      "trial": 1,
+      "run_id": "RUN-367"
+    },
+    {
+      "config": "curated_5",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.302925807749594,
+            "B": 0.2554485656540263,
+            "C": 0.4416256265963797
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4114476403716066,
+            "B": 0.23864427765871776,
+            "C": 0.3499080819696756
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.38361978002199776,
+            "B": 0.32130024597540247,
+            "C": 0.2950799740025998
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999813218034991,
+            "B": 1.6339350129657672e-5,
+            "C": 2.3388463712632232e-6
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8314241003488668,
+            "B": 0.1267036794823371,
+            "C": 0.04187222016879607
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.2,
+            "C": 0.4
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.38361978002199776,
+            "B": 0.32130024597540247,
+            "C": 0.2950799740025998
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999174901592985,
+            "B": 8.218588840476e-5,
+            "C": 3.239522968227932e-7
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "A",
+      "test_id": "A2",
+      "trial": 2,
+      "run_id": "RUN-368"
+    },
+    {
+      "config": "curated_5",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.302925807749594,
+            "B": 0.2554485656540263,
+            "C": 0.4416256265963797
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4114476403716066,
+            "B": 0.23864427765871776,
+            "C": 0.3499080819696756
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.38361978002199776,
+            "B": 0.32130024597540247,
+            "C": 0.2950799740025998
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999813218034991,
+            "B": 1.6339350129657672e-5,
+            "C": 2.3388463712632232e-6
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8314241003488668,
+            "B": 0.1267036794823371,
+            "C": 0.04187222016879607
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.2,
+            "C": 0.4
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.38361978002199776,
+            "B": 0.32130024597540247,
+            "C": 0.2950799740025998
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999174901592985,
+            "B": 8.218588840476e-5,
+            "C": 3.239522968227932e-7
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "A",
+      "test_id": "A2",
+      "trial": 3,
+      "run_id": "RUN-369"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.3366877366381227,
+            "B": 0.33611064764415255,
+            "C": 0.230223323844621,
+            "D": 0.09697829187310363
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.2756738020041245,
+            "B": 0.42351913506825656,
+            "C": 0.0,
+            "D": 0.30080706292761905
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.24711960803919608,
+            "B": 0.33381221877812217,
+            "C": 0.1399983901609839,
+            "D": 0.2790697830216978
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "D",
+          "distribution": {
+            "A": 0.2225200105887479,
+            "B": 0.2757060856333527,
+            "C": 0.1297390499960369,
+            "D": 0.3720348537818625
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8716623230888476,
+            "B": 0.08507880457196806,
+            "C": 0.033144201994244976,
+            "D": 0.010114670344939337
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.4,
+            "C": 0.0,
+            "D": 0.2
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.2626691890810919,
+            "B": 0.2882676532346765,
+            "C": 0.16595331666833316,
+            "D": 0.2831098410158984
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999910617736386,
+            "B": 8.858529621976397e-6,
+            "C": 7.94863549396222e-8,
+            "D": 2.103843404992651e-10
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A3",
+      "trial": 1,
+      "run_id": "RUN-370"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.3367240247352649,
+            "B": 0.3356133034107105,
+            "C": 0.23050585567607842,
+            "D": 0.09715681617794611
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.2756646656138186,
+            "B": 0.42367080894914566,
+            "C": 0.0,
+            "D": 0.30066452543703576
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.2470196080391961,
+            "B": 0.33401221877812215,
+            "C": 0.1399983901609839,
+            "D": 0.27896978302169784
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "D",
+          "distribution": {
+            "A": 0.22263948022202712,
+            "B": 0.27629935059179356,
+            "C": 0.1298408093570649,
+            "D": 0.37122035982911444
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8715968351536523,
+            "B": 0.08515645854518669,
+            "C": 0.03313556362074005,
+            "D": 0.010111142680421155
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.4,
+            "C": 0.0,
+            "D": 0.2
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.2625891890810919,
+            "B": 0.2884276532346765,
+            "C": 0.16595331666833316,
+            "D": 0.2830298410158984
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999910180032574,
+            "B": 8.902373996233478e-6,
+            "C": 7.941264965389579e-8,
+            "D": 2.1009662228729294e-10
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A3",
+      "trial": 2,
+      "run_id": "RUN-371"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.3367240247352649,
+            "B": 0.3356133034107105,
+            "C": 0.23050585567607842,
+            "D": 0.09715681617794611
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.2756646656138186,
+            "B": 0.42367080894914566,
+            "C": 0.0,
+            "D": 0.30066452543703576
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.2470196080391961,
+            "B": 0.33401221877812215,
+            "C": 0.1399983901609839,
+            "D": 0.27896978302169784
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "D",
+          "distribution": {
+            "A": 0.22263948022202712,
+            "B": 0.27629935059179356,
+            "C": 0.1298408093570649,
+            "D": 0.37122035982911444
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8715968351536523,
+            "B": 0.08515645854518669,
+            "C": 0.03313556362074005,
+            "D": 0.010111142680421155
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.4,
+            "C": 0.0,
+            "D": 0.2
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.2625891890810919,
+            "B": 0.2884276532346765,
+            "C": 0.16595331666833316,
+            "D": 0.2830298410158984
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999910180032574,
+            "B": 8.902373996233478e-6,
+            "C": 7.941264965389579e-8,
+            "D": 2.1009662228729294e-10
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A3",
+      "trial": 3,
+      "run_id": "RUN-372"
+    },
+    {
+      "config": "curated_5",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4239284277377206,
+            "B": 0.26018608531045306,
+            "C": 0.3158854869518264
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "C",
+          "distribution": {
+            "A": 0.35664160031064196,
+            "B": 0.2713548788355737,
+            "C": 0.37200352085378446
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.30890071340467384,
+            "B": 0.3730659199253259,
+            "C": 0.3180333666700003
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.17223850080819483,
+            "B": 0.5974006096199699,
+            "C": 0.23036088957183526
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.39963014756201903,
+            "B": 0.4135227345543676,
+            "C": 0.18684711788361336
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.2,
+            "C": 0.4
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.33483169091651693,
+            "B": 0.3340340045099401,
+            "C": 0.33113430457354304
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.45276042995077886,
+            "B": 0.5371235597465659,
+            "C": 0.010116010302655338
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "C",
+      "test_id": "A4",
+      "trial": 1,
+      "run_id": "RUN-373"
+    },
+    {
+      "config": "curated_5",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.423964348783032,
+            "B": 0.26020793917857826,
+            "C": 0.3158277120383897
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "C",
+          "distribution": {
+            "A": 0.35661908796729064,
+            "B": 0.27134096037547006,
+            "C": 0.37203995165723924
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.3088289795646232,
+            "B": 0.373103367003367,
+            "C": 0.3180676534320099
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.1721737330086764,
+            "B": 0.5971918903764438,
+            "C": 0.23063437661487987
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.39947880065341373,
+            "B": 0.4137321288009692,
+            "C": 0.18678907054561703
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.2,
+            "C": 0.4
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.3347886506124865,
+            "B": 0.33405647275676476,
+            "C": 0.3311548766307488
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.45168291447262243,
+            "B": 0.538221714571066,
+            "C": 0.01009537095631158
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "C",
+      "test_id": "A4",
+      "trial": 2,
+      "run_id": "RUN-374"
+    },
+    {
+      "config": "curated_5",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.423964348783032,
+            "B": 0.26020793917857826,
+            "C": 0.3158277120383897
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "C",
+          "distribution": {
+            "A": 0.35661908796729064,
+            "B": 0.27134096037547006,
+            "C": 0.37203995165723924
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.3088289795646232,
+            "B": 0.373103367003367,
+            "C": 0.3180676534320099
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.1721737330086764,
+            "B": 0.5971918903764438,
+            "C": 0.23063437661487987
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.39947880065341373,
+            "B": 0.4137321288009692,
+            "C": 0.18678907054561703
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.2,
+            "C": 0.4
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.3347886506124865,
+            "B": 0.33405647275676476,
+            "C": 0.3311548766307488
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.45168291447262243,
+            "B": 0.538221714571066,
+            "C": 0.01009537095631158
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "C",
+      "test_id": "A4",
+      "trial": 3,
+      "run_id": "RUN-375"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "D",
+          "distribution": {
+            "A": 0.2098387307202892,
+            "B": 0.10132216625795658,
+            "C": 0.19993457701336217,
+            "D": 0.4889045260083922
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.49859981285080307,
+            "B": 0.0,
+            "C": 0.11463820081624569,
+            "D": 0.38676198633295134
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4684873267326733,
+            "B": 0.03468338633863387,
+            "C": 0.11305090909090909,
+            "D": 0.3837783778377838
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.999820829051424,
+            "B": 2.5033981166878477e-7,
+            "C": 9.850901036892778e-7,
+            "D": 1.779355186604844e-4
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9387543938094632,
+            "B": 0.004266129389743133,
+            "C": 0.030432782932314086,
+            "D": 0.026546693868479566
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.0,
+            "C": 0.2,
+            "D": 0.4
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4684873267326733,
+            "B": 0.03468338633863387,
+            "C": 0.11305090909090909,
+            "D": 0.3837783778377838
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999999461087647,
+            "B": 1.9382517257858486e-12,
+            "C": 3.580538967967233e-8,
+            "D": 1.8083907263146665e-8
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "A",
+      "test_id": "A5",
+      "trial": 1,
+      "run_id": "RUN-376"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "D",
+          "distribution": {
+            "A": 0.20983464390430365,
+            "B": 0.10132270334918796,
+            "C": 0.19993542584855567,
+            "D": 0.4889072268979527
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.49862511373886115,
+            "B": 0.0,
+            "C": 0.11463241611899114,
+            "D": 0.38674247014214774
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4685273267326734,
+            "B": 0.03468338633863387,
+            "C": 0.11301090909090909,
+            "D": 0.3837783778377838
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9998208296196754,
+            "B": 2.506310301825707e-7,
+            "C": 9.842432731435846e-7,
+            "D": 1.7793550602114748e-4
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9388147006954732,
+            "B": 0.004266228638623514,
+            "C": 0.030371759204893486,
+            "D": 0.026547311461009835
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.0,
+            "C": 0.2,
+            "D": 0.4
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4685273267326734,
+            "B": 0.03468338633863387,
+            "C": 0.11301090909090909,
+            "D": 0.3837783778377838
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999999464814012,
+            "B": 1.937854665824609e-12,
+            "C": 3.5436458264675476e-8,
+            "D": 1.8080202689885388e-8
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "A",
+      "test_id": "A5",
+      "trial": 2,
+      "run_id": "RUN-377"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "D",
+          "distribution": {
+            "A": 0.20983464390430365,
+            "B": 0.10132270334918796,
+            "C": 0.19993542584855567,
+            "D": 0.4889072268979527
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.49862511373886115,
+            "B": 0.0,
+            "C": 0.11463241611899114,
+            "D": 0.38674247014214774
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4685273267326734,
+            "B": 0.03468338633863387,
+            "C": 0.11301090909090909,
+            "D": 0.3837783778377838
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9998208296196754,
+            "B": 2.506310301825707e-7,
+            "C": 9.842432731435846e-7,
+            "D": 1.7793550602114748e-4
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9388147006954732,
+            "B": 0.004266228638623514,
+            "C": 0.030371759204893486,
+            "D": 0.026547311461009835
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.0,
+            "C": 0.2,
+            "D": 0.4
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4685273267326734,
+            "B": 0.03468338633863387,
+            "C": 0.11301090909090909,
+            "D": 0.3837783778377838
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999999464814012,
+            "B": 1.937854665824609e-12,
+            "C": 3.5436458264675476e-8,
+            "D": 1.8080202689885388e-8
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "A",
+      "test_id": "A5",
+      "trial": 3,
+      "run_id": "RUN-378"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.12811057943948734,
+            "B": 0.36752746370046663,
+            "C": 0.14684700135525303,
+            "D": 0.35751495550479306
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.0,
+            "B": 0.21638855511231553,
+            "C": 0.0,
+            "D": 0.7836114448876845
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.04363333333333333,
+            "B": 0.25523333333333337,
+            "C": 0.07496666666666667,
+            "D": 0.6261666666666666
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 9.037395812650376e-7,
+            "B": 2.0163054069548086e-6,
+            "C": 8.222756749360202e-7,
+            "D": 0.9999962576793369
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.03616309699826977,
+            "B": 0.040003954624461574,
+            "C": 0.02936713737542222,
+            "D": 0.8944658110018465
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.0,
+            "B": 0.2,
+            "C": 0.0,
+            "D": 0.8
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.12130320632063207,
+            "B": 0.2223444704470447,
+            "C": 0.10700228422842284,
+            "D": 0.5493500390039003
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 1.0802125379540231e-7,
+            "B": 1.7893519151297396e-7,
+            "C": 3.814953128718534e-8,
+            "D": 0.9999996748940234
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "D",
+      "test_id": "A6",
+      "trial": 1,
+      "run_id": "RUN-379"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.12917476692616278,
+            "B": 0.3641389720560926,
+            "C": 0.14556175838990135,
+            "D": 0.3611245026278433
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.0,
+            "B": 0.21688421096588079,
+            "C": 0.0,
+            "D": 0.7831157890341193
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.04346600673266007,
+            "B": 0.25597469919674704,
+            "C": 0.07425951071559511,
+            "D": 0.6262997833549978
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 9.037505021345145e-7,
+            "B": 2.0300268471375693e-6,
+            "C": 8.203039766011312e-7,
+            "D": 0.9999962459186741
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.03604975744295722,
+            "B": 0.039949128337029044,
+            "C": 0.029247604781522496,
+            "D": 0.8947535094384912
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.0,
+            "B": 0.2,
+            "C": 0.0,
+            "D": 0.8
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.1212028103602281,
+            "B": 0.2227892899650929,
+            "C": 0.10657799065777991,
+            "D": 0.549429909016899
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 1.0616822170165228e-7,
+            "B": 1.7742685193297522e-7,
+            "C": 3.731937277360306e-8,
+            "D": 0.9999996790855535
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "D",
+      "test_id": "A6",
+      "trial": 2,
+      "run_id": "RUN-380"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.12917476692616278,
+            "B": 0.3641389720560926,
+            "C": 0.14556175838990135,
+            "D": 0.3611245026278433
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.0,
+            "B": 0.21688421096588079,
+            "C": 0.0,
+            "D": 0.7831157890341193
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.04346600673266007,
+            "B": 0.25597469919674704,
+            "C": 0.07425951071559511,
+            "D": 0.6262997833549978
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 9.037505021345145e-7,
+            "B": 2.0300268471375693e-6,
+            "C": 8.203039766011312e-7,
+            "D": 0.9999962459186741
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.03604975744295722,
+            "B": 0.039949128337029044,
+            "C": 0.029247604781522496,
+            "D": 0.8947535094384912
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.0,
+            "B": 0.2,
+            "C": 0.0,
+            "D": 0.8
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.1212028103602281,
+            "B": 0.2227892899650929,
+            "C": 0.10657799065777991,
+            "D": 0.549429909016899
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 1.0616822170165228e-7,
+            "B": 1.7742685193297522e-7,
+            "C": 3.731937277360306e-8,
+            "D": 0.9999996790855535
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "D",
+      "test_id": "A6",
+      "trial": 3,
+      "run_id": "RUN-381"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4520782588270869,
+            "B": 0.42051589172551085,
+            "C": 0.09392483493255553,
+            "D": 0.03348101451484664
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.3785042507480574,
+            "B": 0.5066727283414769,
+            "C": 0.0,
+            "D": 0.11482302091046573
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.3545103889611039,
+            "B": 0.5816709929007099,
+            "C": 0.06191880811918808,
+            "D": 0.0018998100189981002
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.27977947639290346,
+            "B": 0.6355209265500502,
+            "C": 0.0514831664538594,
+            "D": 0.03321643060318692
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.35874162432640655,
+            "B": 0.6388432168853526,
+            "C": 0.0019526132871844424,
+            "D": 4.6254550105636136e-4
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.4,
+            "C": 0.0,
+            "D": 0.2
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.3366936196997362,
+            "B": 0.4968599466357994,
+            "C": 0.08811890488118905,
+            "D": 0.07832752878327529
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.05288587858348883,
+            "B": 0.9471141214162584,
+            "C": 2.5264579475571166e-13,
+            "D": 1.8845305329587884e-16
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A7",
+      "trial": 1,
+      "run_id": "RUN-382"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.45287081191983847,
+            "B": 0.41987113172666174,
+            "C": 0.0937037625539832,
+            "D": 0.03355429379951673
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.3783964173053618,
+            "B": 0.5068132741292016,
+            "C": 0.0,
+            "D": 0.11479030856543654
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.35438945396064453,
+            "B": 0.5819092754023427,
+            "C": 0.061801420618014205,
+            "D": 0.0018998500189985003
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.2792887718524962,
+            "B": 0.636180540733059,
+            "C": 0.05136689991318,
+            "D": 0.033163787501264856
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.35838860425595714,
+            "B": 0.6391966548831503,
+            "C": 0.0019520297705637464,
+            "D": 4.627110903288185e-4
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.4,
+            "C": 0.0,
+            "D": 0.2
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.3365968716993687,
+            "B": 0.49705057263710567,
+            "C": 0.08802499488024995,
+            "D": 0.07832756078327562
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.052502108367770646,
+            "B": 0.9474978916319776,
+            "C": 2.5167377818582083e-13,
+            "D": 1.8834553495588821e-16
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A7",
+      "trial": 2,
+      "run_id": "RUN-383"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.45287081191983847,
+            "B": 0.41987113172666174,
+            "C": 0.0937037625539832,
+            "D": 0.03355429379951673
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.3783964173053618,
+            "B": 0.5068132741292016,
+            "C": 0.0,
+            "D": 0.11479030856543654
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.35438945396064453,
+            "B": 0.5819092754023427,
+            "C": 0.061801420618014205,
+            "D": 0.0018998500189985003
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.2792887718524962,
+            "B": 0.636180540733059,
+            "C": 0.05136689991318,
+            "D": 0.033163787501264856
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.35838860425595714,
+            "B": 0.6391966548831503,
+            "C": 0.0019520297705637464,
+            "D": 4.627110903288185e-4
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.4,
+            "C": 0.0,
+            "D": 0.2
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.3365968716993687,
+            "B": 0.49705057263710567,
+            "C": 0.08802499488024995,
+            "D": 0.07832756078327562
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.052502108367770646,
+            "B": 0.9474978916319776,
+            "C": 2.5167377818582083e-13,
+            "D": 1.8834553495588821e-16
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A7",
+      "trial": 3,
+      "run_id": "RUN-384"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.09571206130490781,
+            "B": 0.4127259887161403,
+            "C": 0.39297442504121904,
+            "D": 0.09858751769145366
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.3177585097879306,
+            "B": 0.24493641479543218,
+            "C": 0.43730507541663727,
+            "D": 0.0
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.2386326627337266,
+            "B": 0.23565730626937306,
+            "C": 0.2733711068893111,
+            "D": 0.052338924107589245
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 2.3733667473325093e-6,
+            "B": 1.904296968345534e-6,
+            "C": 2.188530036464012e-6,
+            "D": 3.810495708446754e-7
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.03041701419026887,
+            "B": 0.4766419768643268,
+            "C": 0.47348590433366894,
+            "D": 0.019455104611735437
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.2,
+            "C": 0.4,
+            "D": 0.0
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.2386326627337266,
+            "B": 0.23565730626937306,
+            "C": 0.2733711068893111,
+            "D": 0.052338924107589245
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 5.379530771288305e-7,
+            "B": 0.5083033004919996,
+            "C": 0.49169610396727476,
+            "D": 5.758764861773177e-8
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A8",
+      "trial": 1,
+      "run_id": "RUN-385"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.09722823631967673,
+            "B": 0.4122411277399073,
+            "C": 0.39236365677669277,
+            "D": 0.09816697193013446
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.3171673834424591,
+            "B": 0.24522365560650966,
+            "C": 0.43760896095103125,
+            "D": 0.0
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.238236402359764,
+            "B": 0.2359746405359464,
+            "C": 0.2735300329967003,
+            "D": 0.05225892410758924
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 2.354128222537462e-6,
+            "B": 1.9054997712638812e-6,
+            "C": 2.1894782493961367e-6,
+            "D": 3.805031496743206e-7
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.030382202105284153,
+            "B": 0.4764627624587753,
+            "C": 0.4737560265434948,
+            "D": 0.019399008892445727
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.2,
+            "C": 0.4,
+            "D": 0.0
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.238236402359764,
+            "B": 0.2359746405359464,
+            "C": 0.2735300329967003,
+            "D": 0.05225892410758924
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 5.346414936999572e-7,
+            "B": 0.5071205870378673,
+            "C": 0.4928788215839313,
+            "D": 5.67367075799638e-8
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A8",
+      "trial": 2,
+      "run_id": "RUN-386"
+    },
+    {
+      "config": "curated_5",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.09722823631967673,
+            "B": 0.4122411277399073,
+            "C": 0.39236365677669277,
+            "D": 0.09816697193013446
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.3171673834424591,
+            "B": 0.24522365560650966,
+            "C": 0.43760896095103125,
+            "D": 0.0
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.238236402359764,
+            "B": 0.2359746405359464,
+            "C": 0.2735300329967003,
+            "D": 0.05225892410758924
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 2.354128222537462e-6,
+            "B": 1.9054997712638812e-6,
+            "C": 2.1894782493961367e-6,
+            "D": 3.805031496743206e-7
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.030382202105284153,
+            "B": 0.4764627624587753,
+            "C": 0.4737560265434948,
+            "D": 0.019399008892445727
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4,
+            "B": 0.2,
+            "C": 0.4,
+            "D": 0.0
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.238236402359764,
+            "B": 0.2359746405359464,
+            "C": 0.2735300329967003,
+            "D": 0.05225892410758924
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 5.346414936999572e-7,
+            "B": 0.5071205870378673,
+            "C": 0.4928788215839313,
+            "D": 5.67367075799638e-8
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A8",
+      "trial": 3,
+      "run_id": "RUN-387"
+    },
+    {
+      "config": "full_8",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5352608372844273,
+            "B": 0.3586827936502472,
+            "C": 0.1060563690653256
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9042249822688418,
+            "B": 0.09577501773115822,
+            "C": 0.0
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8096565756575657,
+            "B": 0.1665005514837198,
+            "C": 0.023842872858714444
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.999996836377441,
+            "B": 2.3876327643621295e-6,
+            "C": 7.759897946233468e-7
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9791273845430045,
+            "B": 0.01914539019595823,
+            "C": 0.0017272252610372114
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.875,
+            "B": 0.125,
+            "C": 0.0
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.76768700370037,
+            "B": 0.16768798254825482,
+            "C": 0.06462501375137514
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999999999999786,
+            "B": 2.1369787231504206e-14,
+            "C": 9.377309935638523e-23
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "B",
+      "test_id": "A1",
+      "trial": 1,
+      "run_id": "RUN-388"
+    },
+    {
+      "config": "full_8",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5352556350953297,
+            "B": 0.358686622674573,
+            "C": 0.10605774223009735
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9042340770089462,
+            "B": 0.09576592299105388,
+            "C": 0.0
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8097428571428571,
+            "B": 0.1664142857142857,
+            "C": 0.02384285714285714
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999968373771553,
+            "B": 2.386553426585989e-6,
+            "C": 7.760694180512543e-7
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.979165917579703,
+            "B": 0.0191069465235057,
+            "C": 0.0017271358967912804
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.875,
+            "B": 0.125,
+            "C": 0.0
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.7677625,
+            "B": 0.1676125,
+            "C": 0.064625
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.999999999999979,
+            "B": 2.1022288813548424e-14,
+            "C": 9.370478718076976e-23
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "B",
+      "test_id": "A1",
+      "trial": 2,
+      "run_id": "RUN-389"
+    },
+    {
+      "config": "full_8",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5352556350953297,
+            "B": 0.358686622674573,
+            "C": 0.10605774223009735
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9042340770089462,
+            "B": 0.09576592299105388,
+            "C": 0.0
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8097428571428571,
+            "B": 0.1664142857142857,
+            "C": 0.02384285714285714
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999968373771553,
+            "B": 2.386553426585989e-6,
+            "C": 7.760694180512543e-7
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.979165917579703,
+            "B": 0.0191069465235057,
+            "C": 0.0017271358967912804
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.875,
+            "B": 0.125,
+            "C": 0.0
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.7677625,
+            "B": 0.1676125,
+            "C": 0.064625
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.999999999999979,
+            "B": 2.1022288813548424e-14,
+            "C": 9.370478718076976e-23
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "B",
+      "test_id": "A1",
+      "trial": 3,
+      "run_id": "RUN-390"
+    },
+    {
+      "config": "full_8",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.24479493098374147,
+            "B": 0.24553349295834037,
+            "C": 0.5096715760579179
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5477982988775424,
+            "B": 0.1461920245396975,
+            "C": 0.3060096765827601
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5084255463046304,
+            "B": 0.22954113536353635,
+            "C": 0.2620333183318332
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999900339181123,
+            "B": 8.360806010915947e-6,
+            "C": 1.6052758768634477e-6
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.968302111762365,
+            "B": 0.017726348944708998,
+            "C": 0.013971539292926017
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5,
+            "B": 0.125,
+            "C": 0.375
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5084255463046304,
+            "B": 0.22954113536353635,
+            "C": 0.2620333183318332
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999999999999856,
+            "B": 1.26144210036172e-14,
+            "C": 1.8787414614300293e-15
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "A",
+      "test_id": "A2",
+      "trial": 1,
+      "run_id": "RUN-391"
+    },
+    {
+      "config": "full_8",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.24517414593046075,
+            "B": 0.24382425813397163,
+            "C": 0.5110015959355676
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5474138666452987,
+            "B": 0.1460933773193813,
+            "C": 0.30649275603532006
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5084149314931493,
+            "B": 0.2289564418941894,
+            "C": 0.2626286266126613
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999900305950744,
+            "B": 8.358469826124149e-6,
+            "C": 1.6109350996086866e-6
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9682163391020157,
+            "B": 0.01767915388526912,
+            "C": 0.014104507012715262
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5,
+            "B": 0.125,
+            "C": 0.375
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5084149314931493,
+            "B": 0.2289564418941894,
+            "C": 0.2626286266126613
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999999999999856,
+            "B": 1.2356985876525857e-14,
+            "C": 2.0280750882298455e-15
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "A",
+      "test_id": "A2",
+      "trial": 2,
+      "run_id": "RUN-392"
+    },
+    {
+      "config": "full_8",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.24517414593046075,
+            "B": 0.24382425813397163,
+            "C": 0.5110015959355676
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5474138666452987,
+            "B": 0.1460933773193813,
+            "C": 0.30649275603532006
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5084149314931493,
+            "B": 0.2289564418941894,
+            "C": 0.2626286266126613
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999900305950744,
+            "B": 8.358469826124149e-6,
+            "C": 1.6109350996086866e-6
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9682163391020157,
+            "B": 0.01767915388526912,
+            "C": 0.014104507012715262
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5,
+            "B": 0.125,
+            "C": 0.375
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5084149314931493,
+            "B": 0.2289564418941894,
+            "C": 0.2626286266126613
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999999999999856,
+            "B": 1.2356985876525857e-14,
+            "C": 2.0280750882298455e-15
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "A",
+      "test_id": "A2",
+      "trial": 3,
+      "run_id": "RUN-393"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.3893332846310912,
+            "B": 0.2381149374181074,
+            "C": 0.30404470976907544,
+            "D": 0.06850706818172603
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5961186715899889,
+            "B": 0.23615253921742094,
+            "C": 0.0,
+            "D": 0.16772878919259027
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4831969188795406,
+            "B": 0.20690698215892697,
+            "C": 0.15042765152056223,
+            "D": 0.1594684474409702
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8289921666577494,
+            "B": 0.0615027761374896,
+            "C": 0.041382449117574625,
+            "D": 0.06812260808718638
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9735358713534867,
+            "B": 0.01731792306510692,
+            "C": 0.00877290266349705,
+            "D": 3.7330291790941124e-4
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.625,
+            "B": 0.25,
+            "C": 0.0,
+            "D": 0.125
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.46340574317568245,
+            "B": 0.19430478327167278,
+            "C": 0.1653458229177082,
+            "D": 0.1769436506349365
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999999999999899,
+            "B": 1.0026532843031213e-14,
+            "C": 4.348413343232238e-17,
+            "D": 4.673856882254075e-28
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A3",
+      "trial": 1,
+      "run_id": "RUN-394"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.3892490805981676,
+            "B": 0.2381321041585061,
+            "C": 0.3040994232602793,
+            "D": 0.06851939198304692
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5961858356873391,
+            "B": 0.23611326784977454,
+            "C": 0.0,
+            "D": 0.16770089646288644
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.483325490308112,
+            "B": 0.2067641250160698,
+            "C": 0.15044193723484794,
+            "D": 0.1594684474409702
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8264518907299059,
+            "B": 0.06233171405464082,
+            "C": 0.04206828327995647,
+            "D": 0.0691481119354968
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9733618515165745,
+            "B": 0.01729257421136408,
+            "C": 0.00897238568647261,
+            "D": 3.7318858558893595e-4
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.625,
+            "B": 0.25,
+            "C": 0.0,
+            "D": 0.125
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4635182431756824,
+            "B": 0.1941797832716728,
+            "C": 0.1653583229177082,
+            "D": 0.1769436506349365
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999999999999901,
+            "B": 9.923905403685994e-15,
+            "C": 5.21277406292929e-17,
+            "D": 4.669090004130789e-28
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A3",
+      "trial": 2,
+      "run_id": "RUN-395"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.3892490805981676,
+            "B": 0.2381321041585061,
+            "C": 0.3040994232602793,
+            "D": 0.06851939198304692
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5961858356873391,
+            "B": 0.23611326784977454,
+            "C": 0.0,
+            "D": 0.16770089646288644
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.483325490308112,
+            "B": 0.2067641250160698,
+            "C": 0.15044193723484794,
+            "D": 0.1594684474409702
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.8264518907299059,
+            "B": 0.06233171405464082,
+            "C": 0.04206828327995647,
+            "D": 0.0691481119354968
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9733618515165745,
+            "B": 0.01729257421136408,
+            "C": 0.00897238568647261,
+            "D": 3.7318858558893595e-4
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.625,
+            "B": 0.25,
+            "C": 0.0,
+            "D": 0.125
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4635182431756824,
+            "B": 0.1941797832716728,
+            "C": 0.1653583229177082,
+            "D": 0.1769436506349365
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999999999999901,
+            "B": 9.923905403685994e-15,
+            "C": 5.21277406292929e-17,
+            "D": 4.669090004130789e-28
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A3",
+      "trial": 3,
+      "run_id": "RUN-396"
+    },
+    {
+      "config": "full_8",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4843013124620983,
+            "B": 0.1497534128544702,
+            "C": 0.3659452746834316
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4485123615480823,
+            "B": 0.16261980641255266,
+            "C": 0.388867832039365
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "C",
+          "distribution": {
+            "A": 0.39010035670233695,
+            "B": 0.19918295996266291,
+            "C": 0.41071668333500017
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "C",
+          "distribution": {
+            "A": 0.07893952413632113,
+            "B": 0.1251999587262476,
+            "C": 0.7958605171374313
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4919879811878435,
+            "B": 0.026811135581850536,
+            "C": 0.4812008832303059
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5,
+            "B": 0.125,
+            "C": 0.375
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "C",
+          "distribution": {
+            "A": 0.38600730682282314,
+            "B": 0.21825875281871254,
+            "C": 0.3957339403584644
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5442230770209017,
+            "B": 4.233140434568743e-11,
+            "C": 0.45577692293676697
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "C",
+      "test_id": "A4",
+      "trial": 1,
+      "run_id": "RUN-397"
+    },
+    {
+      "config": "full_8",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.48432805042300403,
+            "B": 0.14974428869408501,
+            "C": 0.36592766088291095
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4484641722062136,
+            "B": 0.16261439635071692,
+            "C": 0.3889214314430695
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "C",
+          "distribution": {
+            "A": 0.39000035670233696,
+            "B": 0.19918295996266291,
+            "C": 0.41081668333500015
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "C",
+          "distribution": {
+            "A": 0.07043305330523583,
+            "B": 0.11184267047071407,
+            "C": 0.8177242762240501
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4864680647475572,
+            "B": 0.027095196421581237,
+            "C": 0.48643673883086147
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5,
+            "B": 0.125,
+            "C": 0.375
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "C",
+          "distribution": {
+            "A": 0.38593230682282315,
+            "B": 0.21825875281871254,
+            "C": 0.3958089403584644
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5001287933218695,
+            "B": 4.632181900213264e-11,
+            "C": 0.4998712066318088
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "C",
+      "test_id": "A4",
+      "trial": 2,
+      "run_id": "RUN-398"
+    },
+    {
+      "config": "full_8",
+      "modified": true,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.48432805042300403,
+            "B": 0.14974428869408501,
+            "C": 0.36592766088291095
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4484641722062136,
+            "B": 0.16261439635071692,
+            "C": 0.3889214314430695
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "C",
+          "distribution": {
+            "A": 0.39000035670233696,
+            "B": 0.19918295996266291,
+            "C": 0.41081668333500015
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "C",
+          "distribution": {
+            "A": 0.07043305330523583,
+            "B": 0.11184267047071407,
+            "C": 0.8177242762240501
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4864680647475572,
+            "B": 0.027095196421581237,
+            "C": 0.48643673883086147
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5,
+            "B": 0.125,
+            "C": 0.375
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "C",
+          "distribution": {
+            "A": 0.38593230682282315,
+            "B": 0.21825875281871254,
+            "C": 0.3958089403584644
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5001287933218695,
+            "B": 4.632181900213264e-11,
+            "C": 0.4998712066318088
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correct": "C",
+      "test_id": "A4",
+      "trial": 3,
+      "run_id": "RUN-399"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.39995827165106196,
+            "B": 0.06501966476183434,
+            "C": 0.26342518051419744,
+            "D": 0.2715968830729063
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.6984019933591277,
+            "B": 0.0,
+            "C": 0.06895620252488592,
+            "D": 0.23264180411598645
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.6210045792079207,
+            "B": 0.024414616461646166,
+            "C": 0.11304431818181818,
+            "D": 0.24153648614861487
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999400529867062,
+            "B": 9.608053710781808e-8,
+            "C": 5.238654952394899e-7,
+            "D": 5.932706726146248e-5
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9937826697615951,
+            "B": 7.099636543422404e-4,
+            "C": 0.0034141991798525002,
+            "D": 0.0020931674042100937
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.625,
+            "B": 0.0,
+            "C": 0.125,
+            "D": 0.25
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.6210045792079207,
+            "B": 0.024414616461646166,
+            "C": 0.11304431818181818,
+            "D": 0.24153648614861487
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 1.0,
+            "B": 6.785120697293759e-26,
+            "C": 1.9407941647543494e-20,
+            "D": 3.873471393627339e-22
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "A",
+      "test_id": "A5",
+      "trial": 1,
+      "run_id": "RUN-400"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4003651107055011,
+            "B": 0.06495765143512487,
+            "C": 0.26241223045087275,
+            "D": 0.27226500740850146
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.6985055338095402,
+            "B": 0.0,
+            "C": 0.0689325294365002,
+            "D": 0.23256193675395964
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.6212874274927492,
+            "B": 0.024364885238523853,
+            "C": 0.11282353485348534,
+            "D": 0.24152415241524153
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999400535372923,
+            "B": 9.589476865916699e-8,
+            "C": 5.23530727891392e-7,
+            "D": 5.9327037211121814e-5
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9937912051545318,
+            "B": 7.080249596427361e-4,
+            "C": 0.0034104609503756655,
+            "D": 0.00209030893544993
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.625,
+            "B": 0.0,
+            "C": 0.125,
+            "D": 0.25
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.6212874274927492,
+            "B": 0.024364885238523853,
+            "C": 0.11282353485348534,
+            "D": 0.24152415241524153
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 1.0,
+            "B": 6.637848733700804e-26,
+            "C": 1.923727077063792e-20,
+            "D": 3.8310923791263955e-22
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "A",
+      "test_id": "A5",
+      "trial": 2,
+      "run_id": "RUN-401"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4003651107055011,
+            "B": 0.06495765143512487,
+            "C": 0.26241223045087275,
+            "D": 0.27226500740850146
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.6985055338095402,
+            "B": 0.0,
+            "C": 0.0689325294365002,
+            "D": 0.23256193675395964
+          }
+        },
+        "Ent-Gate": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.6212874274927492,
+            "B": 0.024364885238523853,
+            "C": 0.11282353485348534,
+            "D": 0.24152415241524153
+          }
+        },
+        "Ent-Wt": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999400535372923,
+            "B": 9.589476865916699e-8,
+            "C": 5.23530727891392e-7,
+            "D": 5.9327037211121814e-5
+          }
+        },
+        "LogOP": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9937912051545318,
+            "B": 7.080249596427361e-4,
+            "C": 0.0034104609503756655,
+            "D": 0.00209030893544993
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.625,
+            "B": 0.0,
+            "C": 0.125,
+            "D": 0.25
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 0.6212874274927492,
+            "B": 0.024364885238523853,
+            "C": 0.11282353485348534,
+            "D": 0.24152415241524153
+          }
+        },
+        "PoE": {
+          "correct": true,
+          "answer": "A",
+          "distribution": {
+            "A": 1.0,
+            "B": 6.637848733700804e-26,
+            "C": 1.923727077063792e-20,
+            "D": 3.8310923791263955e-22
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "A",
+      "test_id": "A5",
+      "trial": 3,
+      "run_id": "RUN-402"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.125970793621181,
+            "B": 0.39569900208526454,
+            "C": 0.14206027864745233,
+            "D": 0.33626992564610203
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.3158642926267214,
+            "B": 0.2512538921844463,
+            "C": 0.0,
+            "D": 0.43288181518883234
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.36905000000000004,
+            "B": 0.26658333333333334,
+            "C": 0.0492,
+            "D": 0.31516666666666665
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5000785864757621,
+            "B": 1.970978971717678e-6,
+            "C": 5.722402763835028e-7,
+            "D": 0.4999188703049898
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.7757811132804654,
+            "B": 0.03481987136178925,
+            "C": 0.04577694277695977,
+            "D": 0.14362207258078563
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.25,
+            "B": 0.25,
+            "C": 0.0,
+            "D": 0.5
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.3362395039503951,
+            "B": 0.24319029402940293,
+            "C": 0.07566392764276428,
+            "D": 0.3449062743774377
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999986199121318,
+            "B": 1.6470359581366367e-11,
+            "C": 1.4698061526099062e-10,
+            "D": 1.3799244171657805e-6
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "D",
+      "test_id": "A6",
+      "trial": 1,
+      "run_id": "RUN-403"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.12598563969394233,
+            "B": 0.39700350119307587,
+            "C": 0.14176910435889112,
+            "D": 0.3352417547540907
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.3159674478473797,
+            "B": 0.25098770840769863,
+            "C": 0.0,
+            "D": 0.43304484374492164
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.3694318951438189,
+            "B": 0.26620280805252805,
+            "C": 0.04908218344832183,
+            "D": 0.3152831133553311
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5000666261092743,
+            "B": 1.9583108423544355e-6,
+            "C": 5.722348774514276e-7,
+            "D": 0.4999308433450061
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.7748786102281235,
+            "B": 0.034645954750997535,
+            "C": 0.04654654464317156,
+            "D": 0.1439288903777074
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.25,
+            "B": 0.25,
+            "C": 0.0,
+            "D": 0.5
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.33652592530825925,
+            "B": 0.24290490006879897,
+            "C": 0.07557556522900565,
+            "D": 0.3449936093939361
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999985829973066,
+            "B": 1.5971667966210448e-11,
+            "C": 1.6952337013729473e-10,
+            "D": 1.4168171983509612e-6
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "D",
+      "test_id": "A6",
+      "trial": 2,
+      "run_id": "RUN-404"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "B",
+          "distribution": {
+            "A": 0.12598563969394233,
+            "B": 0.39700350119307587,
+            "C": 0.14176910435889112,
+            "D": 0.3352417547540907
+          }
+        },
+        "Conf-Wt": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.3159674478473797,
+            "B": 0.25098770840769863,
+            "C": 0.0,
+            "D": 0.43304484374492164
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.3694318951438189,
+            "B": 0.26620280805252805,
+            "C": 0.04908218344832183,
+            "D": 0.3152831133553311
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5000666261092743,
+            "B": 1.9583108423544355e-6,
+            "C": 5.722348774514276e-7,
+            "D": 0.4999308433450061
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.7748786102281235,
+            "B": 0.034645954750997535,
+            "C": 0.04654654464317156,
+            "D": 0.1439288903777074
+          }
+        },
+        "Majority": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.25,
+            "B": 0.25,
+            "C": 0.0,
+            "D": 0.5
+          }
+        },
+        "MoE": {
+          "correct": true,
+          "answer": "D",
+          "distribution": {
+            "A": 0.33652592530825925,
+            "B": 0.24290490006879897,
+            "C": 0.07557556522900565,
+            "D": 0.3449936093939361
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999985829973066,
+            "B": 1.5971667966210448e-11,
+            "C": 1.6952337013729473e-10,
+            "D": 1.4168171983509612e-6
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "D",
+      "test_id": "A6",
+      "trial": 3,
+      "run_id": "RUN-405"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4526289868265926,
+            "B": 0.4200877637325878,
+            "C": 0.0938363220076441,
+            "D": 0.03344692743317548
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.6716076221783845,
+            "B": 0.26772099767004626,
+            "C": 0.0,
+            "D": 0.06067138015156915
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.6290345079777736,
+            "B": 0.3323834245146914,
+            "C": 0.03749646178239319,
+            "D": 0.0010856057251417716
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999953990461478,
+            "B": 3.942382109514616e-6,
+            "C": 4.5251737627472904e-7,
+            "D": 2.0605436623907116e-7
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9911902336129849,
+            "B": 0.0080093871624517,
+            "C": 7.130922590691961e-4,
+            "D": 8.728696549432467e-5
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.625,
+            "B": 0.25,
+            "C": 0.0,
+            "D": 0.125
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5835835123123352,
+            "B": 0.31053746664737464,
+            "C": 0.056924315550743156,
+            "D": 0.048954705489547064
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 1.0,
+            "B": 1.817766875600819e-17,
+            "C": 7.176449985715072e-26,
+            "D": 3.6169212362163206e-33
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A7",
+      "trial": 1,
+      "run_id": "RUN-406"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4526091055622534,
+            "B": 0.4201042119184274,
+            "C": 0.09383844549961048,
+            "D": 0.033448237019708775
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.671721719132191,
+            "B": 0.2676279804371044,
+            "C": 0.0,
+            "D": 0.060650300430704594
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.6293487936920593,
+            "B": 0.3323834245146914,
+            "C": 0.037182176068107475,
+            "D": 0.0010856057251417716
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999954030716646,
+            "B": 3.942377174529422e-6,
+            "C": 4.484970525373453e-7,
+            "D": 2.0605410830485313e-7
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9912067406672128,
+            "B": 0.008007287646149809,
+            "C": 6.987076018459812e-4,
+            "D": 8.726408479155917e-5
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.625,
+            "B": 0.25,
+            "C": 0.0,
+            "D": 0.125
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5838585123123352,
+            "B": 0.31053746664737464,
+            "C": 0.05664931555074315,
+            "D": 0.048954705489547064
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 1.0,
+            "B": 1.8137167569798745e-17,
+            "C": 6.096067574867241e-26,
+            "D": 3.6088624690301006e-33
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A7",
+      "trial": 2,
+      "run_id": "RUN-407"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.4526091055622534,
+            "B": 0.4201042119184274,
+            "C": 0.09383844549961048,
+            "D": 0.033448237019708775
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.671721719132191,
+            "B": 0.2676279804371044,
+            "C": 0.0,
+            "D": 0.060650300430704594
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.6293487936920593,
+            "B": 0.3323834245146914,
+            "C": 0.037182176068107475,
+            "D": 0.0010856057251417716
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9999954030716646,
+            "B": 3.942377174529422e-6,
+            "C": 4.484970525373453e-7,
+            "D": 2.0605410830485313e-7
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.9912067406672128,
+            "B": 0.008007287646149809,
+            "C": 6.987076018459812e-4,
+            "D": 8.726408479155917e-5
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.625,
+            "B": 0.25,
+            "C": 0.0,
+            "D": 0.125
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5838585123123352,
+            "B": 0.31053746664737464,
+            "C": 0.05664931555074315,
+            "D": 0.048954705489547064
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 1.0,
+            "B": 1.8137167569798745e-17,
+            "C": 6.096067574867241e-26,
+            "D": 3.6088624690301006e-33
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A7",
+      "trial": 3,
+      "run_id": "RUN-408"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.09591991050511921,
+            "B": 0.4126301104792905,
+            "C": 0.3928853419459797,
+            "D": 0.09856461533582285
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.5078107208383011,
+            "B": 0.17670440623765207,
+            "C": 0.3154848729240468,
+            "D": 0.0
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.2729579142085792,
+            "B": 0.14728581641835814,
+            "C": 0.1720444418058194,
+            "D": 0.03271182756724328
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 9.315643468677054e-6,
+            "B": 6.347630907264842e-7,
+            "C": 8.112667629608481e-7,
+            "D": 1.2701601028095436e-7
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.19086016526099994,
+            "B": 0.18973864826249548,
+            "C": 0.5937012763670894,
+            "D": 0.025699910109415153
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.625,
+            "B": 0.125,
+            "C": 0.25,
+            "D": 0.0
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.2729579142085792,
+            "B": 0.14728581641835814,
+            "C": 0.1720444418058194,
+            "D": 0.03271182756724328
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 1.1404643504107781e-4,
+            "B": 1.0879420626125592e-4,
+            "C": 0.999777159346372,
+            "D": 1.2325716783176486e-11
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A8",
+      "trial": 1,
+      "run_id": "RUN-409"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.09591833957154988,
+            "B": 0.4126308563435892,
+            "C": 0.392885988851219,
+            "D": 0.09856479349981484
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.507838404149639,
+            "B": 0.17669446745332712,
+            "C": 0.31546712839703395,
+            "D": 0.0
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.2729829142085792,
+            "B": 0.14728581641835814,
+            "C": 0.1720194418058194,
+            "D": 0.03271182756724328
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 9.467898776071264e-6,
+            "B": 6.347629942751288e-7,
+            "C": 8.109585049986337e-7,
+            "D": 1.2701599098105092e-7
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.1911655205800059,
+            "B": 0.19003741319894749,
+            "C": 0.5930566886998468,
+            "D": 0.025740377521199596
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.625,
+            "B": 0.125,
+            "C": 0.25,
+            "D": 0.0
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.2729829142085792,
+            "B": 0.14728581641835814,
+            "C": 0.1720194418058194,
+            "D": 0.03271182756724328
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 1.1652200868165734e-4,
+            "B": 1.1113333141557364e-4,
+            "C": 0.999772344647312,
+            "D": 1.2590725326952144e-11
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A8",
+      "trial": 2,
+      "run_id": "RUN-410"
+    },
+    {
+      "config": "full_8",
+      "modified": false,
+      "methods": {
+        "BellCurve": {
+          "correct": true,
+          "answer": "B",
+          "distribution": {
+            "A": 0.09591833957154988,
+            "B": 0.4126308563435892,
+            "C": 0.392885988851219,
+            "D": 0.09856479349981484
+          }
+        },
+        "Conf-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.507838404149639,
+            "B": 0.17669446745332712,
+            "C": 0.31546712839703395,
+            "D": 0.0
+          }
+        },
+        "Ent-Gate": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.2729829142085792,
+            "B": 0.14728581641835814,
+            "C": 0.1720194418058194,
+            "D": 0.03271182756724328
+          }
+        },
+        "Ent-Wt": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 9.467898776071264e-6,
+            "B": 6.347629942751288e-7,
+            "C": 8.109585049986337e-7,
+            "D": 1.2701599098105092e-7
+          }
+        },
+        "LogOP": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 0.1911655205800059,
+            "B": 0.19003741319894749,
+            "C": 0.5930566886998468,
+            "D": 0.025740377521199596
+          }
+        },
+        "Majority": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.625,
+            "B": 0.125,
+            "C": 0.25,
+            "D": 0.0
+          }
+        },
+        "MoE": {
+          "correct": false,
+          "answer": "A",
+          "distribution": {
+            "A": 0.2729829142085792,
+            "B": 0.14728581641835814,
+            "C": 0.1720194418058194,
+            "D": 0.03271182756724328
+          }
+        },
+        "PoE": {
+          "correct": false,
+          "answer": "C",
+          "distribution": {
+            "A": 1.1652200868165734e-4,
+            "B": 1.1113333141557364e-4,
+            "C": 0.999772344647312,
+            "D": 1.2590725326952144e-11
+          }
+        }
+      },
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": "B",
+      "test_id": "A8",
+      "trial": 3,
+      "run_id": "RUN-411"
+    }
+  ]
+}
