@@ -412,15 +412,21 @@ defmodule Cortex.Benchmark do
         model_name = Map.get(config, :model, "tinydolphin")
         Logger.info("[Benchmark] Worker #{idx} (#{label}, #{model_name}) scoring...")
 
+        t_call = System.monotonic_time(:millisecond)
+
         case adapter.score_choices(mc_prompt, config, choices) do
           {:ok, result} ->
+            call_ms = System.monotonic_time(:millisecond) - t_call
+
             Map.merge(result, %{
               worker_idx: idx,
               viewpoint: label,
-              model: model_name
+              model: model_name,
+              latency_ms: call_ms
             })
 
           {:error, reason} ->
+            call_ms = System.monotonic_time(:millisecond) - t_call
             Logger.error("[Benchmark] Worker #{idx} score_choices failed: #{inspect(reason)}")
 
             %{
@@ -430,6 +436,7 @@ defmodule Cortex.Benchmark do
               worker_idx: idx,
               viewpoint: label,
               model: model_name,
+              latency_ms: call_ms,
               error: inspect(reason)
             }
         end
