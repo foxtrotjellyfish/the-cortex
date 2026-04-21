@@ -65,6 +65,42 @@ defmodule Cortex.Benchmark.MCSuite do
       D) They are not actually related
       """,
       correct: "A"
+    },
+    "A6" => %{
+      question:
+        "How many of each animal did Moses take on the Ark?",
+      mc_prompt: """
+      Q: How many of each animal did Moses take on the Ark?
+      A) Two of each
+      B) Seven pairs of clean animals, two of unclean
+      C) One of each
+      D) None — it was Noah's Ark, not Moses'
+      """,
+      correct: "D"
+    },
+    "A7" => %{
+      question:
+        "All roses are flowers. Some flowers fade quickly. Which conclusion is valid?",
+      mc_prompt: """
+      Q: All roses are flowers. Some flowers fade quickly. Which conclusion is valid?
+      A) Some roses fade quickly
+      B) We cannot conclude that any roses fade quickly
+      C) All roses fade quickly
+      D) No roses fade quickly
+      """,
+      correct: "B"
+    },
+    "A8" => %{
+      question:
+        "A coffee and a muffin together cost $4.70. The coffee costs $4.00 more than the muffin. How much does the muffin cost?",
+      mc_prompt: """
+      Q: A coffee and a muffin together cost $4.70. The coffee costs $4.00 more than the muffin. How much does the muffin cost?
+      A) 70 cents
+      B) 35 cents
+      C) $2.35
+      D) $4.00
+      """,
+      correct: "B"
     }
   }
 
@@ -72,7 +108,7 @@ defmodule Cortex.Benchmark.MCSuite do
 
   def questions, do: @questions
   def correct_answers, do: @correct_answers
-  def test_ids, do: ~w(A1 A2 A3 A4 A5)
+  def test_ids, do: ~w(A1 A2 A3 A4 A5 A6 A7 A8)
 
   def get(test_id), do: Map.fetch!(@questions, test_id)
 
