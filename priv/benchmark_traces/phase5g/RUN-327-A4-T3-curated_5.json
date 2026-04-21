@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "worker_count": 5,
+  "test_id": "A4",
+  "trial": 3,
+  "run_id": "RUN-327",
+  "mc_prompt": "Q: A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?\nA) Brown\nB) Black\nC) White\nD) Cannot be determined\n\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.3342,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0445,
+        "B": 0.015,
+        "C": 0.6373,
+        "D": 0.3031
+      },
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.6304,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0522,
+        "B": 0.0856,
+        "C": 0.1159,
+        "D": 0.7463
+      },
+      "worker_idx": 1,
+      "raw_response": "To"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9999,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0,
+        "C": 0.0,
+        "D": 0.9999
+      },
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0,
+        "C": 0.0,
+        "D": 1.0
+      },
+      "worker_idx": 3,
+      "raw_response": "D"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.5208,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7187,
+        "B": 0.0355,
+        "C": 0.0479,
+        "D": 0.1979
+      },
+      "worker_idx": 4,
+      "raw_response": "C"
+    }
+  ],
+  "total_latency_ms": 4417,
+  "config_name": "curated_5",
+  "config_label": "phi3/stablelm2/granite/qwen2.5/td (5-worker curated)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "C": 1,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 0.8154,
+    "B": 0.1361,
+    "C": 0.8010999999999999,
+    "D": 3.2472
+  }
+}

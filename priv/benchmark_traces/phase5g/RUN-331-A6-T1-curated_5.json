@@ -1,0 +1,98 @@
+{
+  "status": "ok",
+  "question": "How many of each animal did Moses take on the Ark?",
+  "worker_count": 5,
+  "test_id": "A6",
+  "trial": 1,
+  "run_id": "RUN-331",
+  "mc_prompt": "Q: How many of each animal did Moses take on the Ark?\nA) Two of each\nB) Seven pairs of clean animals, two of unclean\nC) One of each\nD) None — it was Noah's Ark, not Moses'\n\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7612,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1108,
+        "B": 0.009,
+        "C": 0.0082,
+        "D": 0.872
+      },
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.54,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0201,
+        "B": 0.7567,
+        "C": 0.2167,
+        "D": 0.0065
+      },
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2784,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1603,
+        "B": 0.2235,
+        "C": 0.1142,
+        "D": 0.5019
+      },
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.051,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.3153,
+        "B": 0.1225,
+        "C": 0.1959,
+        "D": 0.3663
+      },
+      "worker_idx": 4,
+      "raw_response": "A"
+    }
+  ],
+  "total_latency_ms": 4976,
+  "config_name": "curated_5",
+  "config_label": "phi3/stablelm2/granite/qwen2.5/td (5-worker curated)",
+  "correct_answer": "D",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "B": 1,
+    "D": 4
+  },
+  "weighted_scores": {
+    "A": 0.6065,
+    "B": 1.1117000000000001,
+    "C": 0.535,
+    "D": 2.7466999999999997
+  }
+}

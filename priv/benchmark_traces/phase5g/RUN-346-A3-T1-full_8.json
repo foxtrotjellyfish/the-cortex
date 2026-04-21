@@ -1,0 +1,135 @@
+{
+  "status": "ok",
+  "question": "A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?",
+  "worker_count": 8,
+  "test_id": "A3",
+  "trial": 1,
+  "run_id": "RUN-346",
+  "mc_prompt": "Q: A farmer has 15 sheep. All but 8 die. How many sheep does the farmer have left?\nA) 7\nB) 8\nC) 15\nD) 0\n\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 5,
+  "majority_total": 8,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0256,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.3249,
+        "B": 0.1061,
+        "C": 0.2698,
+        "D": 0.2993
+      },
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.5332,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2334,
+        "B": 0.7666
+      },
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "gemma2:2b",
+      "viewpoint": "NONE",
+      "confidence": 0.015,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5075,
+        "C": 0.4925
+      },
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7832,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8916,
+        "B": 0.1084
+      },
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0138,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5069,
+        "C": 0.4931
+      },
+      "worker_idx": 4,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.8502,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0325,
+        "B": 0.0574,
+        "C": 0.0025,
+        "D": 0.9076
+      },
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "gemma3:4b",
+      "viewpoint": "NONE",
+      "confidence": 0.9901,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9948,
+        "B": 0.0047,
+        "C": 0.0005
+      },
+      "worker_idx": 6,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2956,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2157,
+        "B": 0.5113,
+        "C": 0.0644,
+        "D": 0.2087
+      },
+      "worker_idx": 7,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 11659,
+  "config_name": "full_8",
+  "config_label": "all 8 models (full panel)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 5,
+    "B": 2,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 3.7073,
+    "B": 1.5544999999999995,
+    "C": 1.3227999999999998,
+    "D": 1.4156
+  }
+}

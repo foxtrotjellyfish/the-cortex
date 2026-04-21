@@ -1,0 +1,98 @@
+{
+  "status": "ok",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "worker_count": 5,
+  "test_id": "A2",
+  "trial": 1,
+  "run_id": "RUN-319",
+  "mc_prompt": "Q: Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?\nA) The basket (where she left it)\nB) The box (where Anne moved it)\nC) She will look in both places\nD) She won't look for it\n\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7856,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8752,
+        "B": 0.0352,
+        "C": 0.0896
+      },
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9742,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0121,
+        "B": 0.9863,
+        "C": 0.0016
+      },
+      "worker_idx": 1,
+      "raw_response": "B"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4105,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0934,
+        "B": 0.2468,
+        "C": 0.6573,
+        "D": 0.0024
+      },
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0,
+        "C": 0.0
+      },
+      "worker_idx": 3,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.359,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.618,
+        "B": 0.259,
+        "C": 0.0194,
+        "D": 0.1036
+      },
+      "worker_idx": 4,
+      "raw_response": "A"
+    }
+  ],
+  "total_latency_ms": 5386,
+  "config_name": "curated_5",
+  "config_label": "phi3/stablelm2/granite/qwen2.5/td (5-worker curated)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 3,
+    "B": 1,
+    "C": 1
+  },
+  "weighted_scores": {
+    "A": 2.5987,
+    "B": 1.5272999999999999,
+    "C": 0.7678999999999999,
+    "D": 0.106
+  }
+}

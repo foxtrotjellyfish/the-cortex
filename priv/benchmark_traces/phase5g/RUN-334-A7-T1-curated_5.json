@@ -1,0 +1,98 @@
+{
+  "status": "ok",
+  "question": "All roses are flowers. Some flowers fade quickly. Which conclusion is valid?",
+  "worker_count": 5,
+  "test_id": "A7",
+  "trial": 1,
+  "run_id": "RUN-334",
+  "mc_prompt": "Q: All roses are flowers. Some flowers fade quickly. Which conclusion is valid?\nA) Some roses fade quickly\nB) We cannot conclude that any roses fade quickly\nC) All roses fade quickly\nD) No roses fade quickly\n\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "B",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8586,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0707,
+        "B": 0.9293
+      },
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.6129,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0814,
+        "B": 0.7654,
+        "C": 0.1525,
+        "D": 0.0008
+      },
+      "worker_idx": 1,
+      "raw_response": "B"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1081,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5031,
+        "B": 0.395,
+        "C": 0.0952,
+        "D": 0.0068
+      },
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5258,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7629,
+        "B": 0.2371
+      },
+      "worker_idx": 3,
+      "raw_response": "Let"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1186,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2654,
+        "B": 0.1576,
+        "C": 0.1929,
+        "D": 0.384
+      },
+      "worker_idx": 4,
+      "raw_response": "A"
+    }
+  ],
+  "total_latency_ms": 4604,
+  "config_name": "curated_5",
+  "config_label": "phi3/stablelm2/granite/qwen2.5/td (5-worker curated)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 2,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.6835,
+    "B": 2.4844,
+    "C": 0.4406,
+    "D": 0.3916
+  }
+}
