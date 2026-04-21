@@ -89,6 +89,14 @@ defmodule Cortex.Benchmark do
   @doc """
   Run solo baselines only. One LLM call per model, sequential.
   Returns a list of result maps.
+
+  ## Parallelization opportunity
+
+  This is currently sequential `Enum.map` — each model waits for the previous
+  to finish. On BEAM, this could use `Task.async_stream/3` with
+  `max_concurrency: 3-4` to overlap calls. Estimated speedup: ~2-3× for
+  same-model batches on M3 Pro (18GB). Mixed-model runs are bottlenecked by
+  Ollama's model loading into unified memory (~3 small models resident at once).
   """
   def run_solo(question, models \\ nil, opts \\ []) do
     models = models || default_solo_models()
@@ -396,6 +404,9 @@ defmodule Cortex.Benchmark do
     mode_label = if no_viewpoints?, do: "no-viewpoints", else: "viewpoints"
     Logger.info("[Benchmark] Constrained MC: #{test_id} with #{worker_count} workers (#{mode_label})")
 
+    # Sequential scoring loop — candidate for Task.async_stream/3 (max_concurrency: 3-4).
+    # Same-model: ~2-5× speedup (num_predict=1 calls are ~0.2s each).
+    # Mixed-model: limited by Ollama model-swap overhead and unified memory ceiling.
     scored_results =
       0..(worker_count - 1)
       |> Enum.map(fn idx ->
