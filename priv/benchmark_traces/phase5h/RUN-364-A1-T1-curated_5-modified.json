@@ -1,0 +1,105 @@
+{
+  "status": "ok",
+  "modified": "true",
+  "question": "I need a car wash. The car wash is 50 meters away. Should I walk?",
+  "worker_count": 5,
+  "mc_prompt": "Q: I need a car wash. The car wash is 50 meters away. Should I walk?\nA) Yes, it's only 50 meters — just walk there\nB) No, you need to drive your car there to get it washed\nC) Take a taxi instead\n\nAnswer:",
+  "choices": [
+    "A",
+    "B",
+    "C"
+  ],
+  "test_id": "A1",
+  "trial": 1,
+  "run_id": "RUN-364",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.5329,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7654,
+        "B": 0.2325,
+        "C": 0.0021
+      },
+      "latency_ms": 2558,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.2182,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3909,
+        "B": 0.6091
+      },
+      "latency_ms": 1437,
+      "worker_idx": 1,
+      "raw_response": "B"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7898,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8827,
+        "B": 0.0929,
+        "C": 0.0244
+      },
+      "latency_ms": 2078,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9943,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9971,
+        "B": 0.0001,
+        "C": 0.0028
+      },
+      "latency_ms": 2277,
+      "worker_idx": 3,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1238,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4739,
+        "B": 0.176,
+        "C": 0.3501
+      },
+      "latency_ms": 739,
+      "worker_idx": 4,
+      "raw_response": "A"
+    }
+  ],
+  "total_latency_ms": 9098,
+  "config_name": "curated_5",
+  "config_label": "phi3/stablelm2/granite/qwen2.5/td (5-worker curated)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 4,
+    "B": 1
+  },
+  "weighted_scores": {
+    "A": 3.51,
+    "B": 1.1106,
+    "C": 0.3794
+  }
+}

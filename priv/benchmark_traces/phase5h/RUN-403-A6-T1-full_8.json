@@ -1,0 +1,151 @@
+{
+  "status": "ok",
+  "modified": "false",
+  "question": "How many of each animal did Moses take on the Ark?",
+  "worker_count": 8,
+  "mc_prompt": "Q: How many of each animal did Moses take on the Ark?\nA) Two of each\nB) Seven pairs of clean animals, two of unclean\nC) One of each\nD) None — it was Noah's Ark, not Moses'\n\nAnswer:",
+  "choices": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "test_id": "A6",
+  "trial": 1,
+  "run_id": "RUN-403",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 4,
+  "majority_total": 8,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.051,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.3153,
+        "B": 0.1225,
+        "C": 0.1959,
+        "D": 0.3663
+      },
+      "latency_ms": 703,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7612,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1108,
+        "B": 0.009,
+        "C": 0.0082,
+        "D": 0.872
+      },
+      "latency_ms": 2389,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "gemma2:2b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0
+      },
+      "latency_ms": 2102,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7499,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0839,
+        "B": 0.8338,
+        "C": 0.0698,
+        "D": 0.0125
+      },
+      "latency_ms": 241,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2005,
+      "worker_idx": 4,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.54,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0201,
+        "B": 0.7567,
+        "C": 0.2167,
+        "D": 0.0065
+      },
+      "latency_ms": 1080,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "gemma3:4b",
+      "viewpoint": "NONE",
+      "confidence": 0.999,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9995,
+        "C": 0.0005
+      },
+      "latency_ms": 370,
+      "worker_idx": 6,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2784,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1603,
+        "B": 0.2235,
+        "C": 0.1142,
+        "D": 0.5019
+      },
+      "latency_ms": 2043,
+      "worker_idx": 7,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 10935,
+  "config_name": "full_8",
+  "config_label": "all 8 models (full panel)",
+  "correct_answer": "D",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 2,
+    "D": 4
+  },
+  "weighted_scores": {
+    "A": 2.6899,
+    "B": 1.9455,
+    "C": 0.6053000000000001,
+    "D": 2.7592
+  }
+}

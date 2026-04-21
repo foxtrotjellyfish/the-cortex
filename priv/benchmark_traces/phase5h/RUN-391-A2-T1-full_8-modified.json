@@ -1,0 +1,146 @@
+{
+  "status": "ok",
+  "modified": "true",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "worker_count": 8,
+  "mc_prompt": "Q: Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?\nA) The basket (where she left it)\nB) The box (where Anne moved it)\nC) She will look in both places\n\nAnswer:",
+  "choices": [
+    "A",
+    "B",
+    "C"
+  ],
+  "test_id": "A2",
+  "trial": 1,
+  "run_id": "RUN-391",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 4,
+  "majority_total": 8,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.4317,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7029,
+        "B": 0.2712,
+        "C": 0.0259
+      },
+      "latency_ms": 730,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.3746,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0437,
+        "B": 0.2908,
+        "C": 0.6654
+      },
+      "latency_ms": 2111,
+      "worker_idx": 1,
+      "raw_response": "A"
+    },
+    {
+      "model": "gemma2:2b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0
+      },
+      "latency_ms": 2038,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3908,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1508,
+        "B": 0.2292,
+        "C": 0.62
+      },
+      "latency_ms": 290,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0,
+        "C": 0.0
+      },
+      "latency_ms": 2043,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9769,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0109,
+        "B": 0.9878,
+        "C": 0.0013
+      },
+      "latency_ms": 1097,
+      "worker_idx": 5,
+      "raw_response": "B"
+    },
+    {
+      "model": "gemma3:4b",
+      "viewpoint": "NONE",
+      "confidence": 0.9971,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9985,
+        "B": 0.0001,
+        "C": 0.0014
+      },
+      "latency_ms": 419,
+      "worker_idx": 6,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6216,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1606,
+        "B": 0.0572,
+        "C": 0.7822
+      },
+      "latency_ms": 2066,
+      "worker_idx": 7,
+      "raw_response": "C"
+    }
+  ],
+  "total_latency_ms": 10794,
+  "config_name": "full_8",
+  "config_label": "all 8 models (full panel)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 4,
+    "B": 1,
+    "C": 3
+  },
+  "weighted_scores": {
+    "A": 4.0674,
+    "B": 1.8362999999999998,
+    "C": 2.0962000000000005
+  }
+}

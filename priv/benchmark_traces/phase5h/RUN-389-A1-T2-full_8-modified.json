@@ -1,0 +1,146 @@
+{
+  "status": "ok",
+  "modified": "true",
+  "question": "I need a car wash. The car wash is 50 meters away. Should I walk?",
+  "worker_count": 8,
+  "mc_prompt": "Q: I need a car wash. The car wash is 50 meters away. Should I walk?\nA) Yes, it's only 50 meters — just walk there\nB) No, you need to drive your car there to get it washed\nC) Take a taxi instead\n\nAnswer:",
+  "choices": [
+    "A",
+    "B",
+    "C"
+  ],
+  "test_id": "A1",
+  "trial": 2,
+  "run_id": "RUN-389",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 7,
+  "majority_total": 8,
+  "per_worker": [
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1238,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4739,
+        "B": 0.176,
+        "C": 0.3501
+      },
+      "latency_ms": 737,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.5329,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7654,
+        "B": 0.2325,
+        "C": 0.0021
+      },
+      "latency_ms": 2608,
+      "worker_idx": 1,
+      "raw_response": "A"
+    },
+    {
+      "model": "gemma2:2b",
+      "viewpoint": "NONE",
+      "confidence": 0.4789,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6712,
+        "B": 0.1923,
+        "C": 0.1365
+      },
+      "latency_ms": 2422,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9229,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9609,
+        "B": 0.038,
+        "C": 0.0011
+      },
+      "latency_ms": 147,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9943,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9971,
+        "B": 0.0001,
+        "C": 0.0028
+      },
+      "latency_ms": 2305,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.2182,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3909,
+        "B": 0.6091
+      },
+      "latency_ms": 1393,
+      "worker_idx": 5,
+      "raw_response": "B"
+    },
+    {
+      "model": "gemma3:4b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0,
+        "C": 0.0
+      },
+      "latency_ms": 279,
+      "worker_idx": 6,
+      "raw_response": "A"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7898,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8827,
+        "B": 0.0929,
+        "C": 0.0244
+      },
+      "latency_ms": 1788,
+      "worker_idx": 7,
+      "raw_response": "A"
+    }
+  ],
+  "total_latency_ms": 11679,
+  "config_name": "full_8",
+  "config_label": "all 8 models (full panel)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 7,
+    "B": 1
+  },
+  "weighted_scores": {
+    "A": 6.1421,
+    "B": 1.3409,
+    "C": 0.517
+  }
+}

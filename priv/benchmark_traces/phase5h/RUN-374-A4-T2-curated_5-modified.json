@@ -1,0 +1,107 @@
+{
+  "status": "ok",
+  "modified": "true",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "worker_count": 5,
+  "mc_prompt": "Q: A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?\nA) Brown\nB) Black\nC) White\n\nAnswer:",
+  "choices": [
+    "A",
+    "B",
+    "C"
+  ],
+  "test_id": "A4",
+  "trial": 2,
+  "run_id": "RUN-374",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7245,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8479,
+        "B": 0.1234,
+        "C": 0.0286
+      },
+      "latency_ms": 49,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.8675,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0571,
+        "B": 0.0183,
+        "C": 0.9246
+      },
+      "latency_ms": 78,
+      "worker_idx": 1,
+      "raw_response": "To"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1511,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4369,
+        "B": 0.2774,
+        "C": 0.2858
+      },
+      "latency_ms": 1755,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9561,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0214,
+        "B": 0.9775,
+        "C": 0.001
+      },
+      "latency_ms": 1697,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1052,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3106,
+        "B": 0.2736,
+        "C": 0.4158
+      },
+      "latency_ms": 686,
+      "worker_idx": 4,
+      "raw_response": "C"
+    }
+  ],
+  "total_latency_ms": 4267,
+  "config_name": "curated_5",
+  "config_label": "phi3/stablelm2/granite/qwen2.5/td (5-worker curated)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 1,
+    "C": 2
+  },
+  "weighted_scores": {
+    "A": 1.6739000000000002,
+    "B": 1.6702000000000001,
+    "C": 1.6557999999999997
+  }
+}
