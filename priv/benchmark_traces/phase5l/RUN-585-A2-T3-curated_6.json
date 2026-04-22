@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "question": "Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?",
+  "worker_count": 6,
+  "test_id": "A2",
+  "trial": 3,
+  "run_id": "RUN-585",
+  "mc_prompt": "Q: Sally puts a marble in a basket and leaves the room. While she's gone, Anne moves the marble from the basket to a box. When Sally comes back, where will she look for the marble?\nA) The basket (where she left it)\nB) The box (where Anne moved it)\nC) She will look in both places\nD) She won't look for it\n\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7854,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8751,
+        "B": 0.0353,
+        "C": 0.0897
+      },
+      "latency_ms": 50,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9739,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0122,
+        "B": 0.9861,
+        "C": 0.0016
+      },
+      "latency_ms": 79,
+      "worker_idx": 1,
+      "raw_response": "B"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4105,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0934,
+        "B": 0.2468,
+        "C": 0.6573,
+        "D": 0.0024
+      },
+      "latency_ms": 2038,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0,
+        "C": 0.0
+      },
+      "latency_ms": 2037,
+      "worker_idx": 3,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.359,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.618,
+        "B": 0.259,
+        "C": 0.0194,
+        "D": 0.1036
+      },
+      "latency_ms": 726,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.7305,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0474,
+        "B": 0.098,
+        "C": 0.8285,
+        "D": 0.0261
+      },
+      "latency_ms": 718,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 5650,
+  "config_name": "curated_6",
+  "config_label": "curated 5 + tinyllama (6-worker, A8 crack)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 3,
+    "B": 1,
+    "C": 2
+  },
+  "weighted_scores": {
+    "A": 2.6461,
+    "B": 1.6251999999999998,
+    "C": 1.5965,
+    "D": 0.1321
+  }
+}

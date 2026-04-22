@@ -1,0 +1,147 @@
+{
+  "status": "ok",
+  "question": "I have a brother. My brother has no brothers. How is this possible?",
+  "worker_count": 8,
+  "test_id": "A5",
+  "trial": 3,
+  "run_id": "RUN-642",
+  "mc_prompt": "Q: I have a brother. My brother has no brothers. How is this possible?\nA) The speaker is female (a sister)\nB) They are half-brothers\nC) The brother was adopted\nD) They are not actually related\n\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "A",
+  "majority_votes": 4,
+  "majority_total": 8,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9563,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9761,
+        "B": 0.0041,
+        "C": 0.0198
+      },
+      "latency_ms": 1580,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9985,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0004,
+        "C": 0.0005,
+        "D": 0.999
+      },
+      "latency_ms": 86,
+      "worker_idx": 1,
+      "raw_response": "D"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0683,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1172,
+        "B": 0.0424,
+        "C": 0.4543,
+        "D": 0.386
+      },
+      "latency_ms": 2022,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "latency_ms": 2519,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.285,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2487,
+        "B": 0.1269,
+        "C": 0.0906,
+        "D": 0.5337
+      },
+      "latency_ms": 712,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0228,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3699,
+        "B": 0.2374,
+        "C": 0.3927
+      },
+      "latency_ms": 708,
+      "worker_idx": 5,
+      "raw_response": "Q"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2091,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2079,
+        "B": 0.0907,
+        "C": 0.4553,
+        "D": 0.2462
+      },
+      "latency_ms": 90,
+      "worker_idx": 6,
+      "raw_response": "C"
+    },
+    {
+      "model": "smollm2:1.7b",
+      "viewpoint": "NONE",
+      "confidence": 0.0429,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1874,
+        "B": 0.0841,
+        "C": 0.3857,
+        "D": 0.3428
+      },
+      "latency_ms": 1494,
+      "worker_idx": 7,
+      "raw_response": "C"
+    }
+  ],
+  "total_latency_ms": 9212,
+  "config_name": "coverage_8",
+  "config_label": "curated 5 + tinyllama + falcon3 + smollm2 (8-worker, max coverage)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "C": 4,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 3.1075999999999997,
+    "B": 0.5856,
+    "C": 1.7989,
+    "D": 2.5077
+  }
+}

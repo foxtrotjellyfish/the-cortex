@@ -1,0 +1,132 @@
+{
+  "status": "ok",
+  "question": "All roses are flowers. Some flowers fade quickly. Which conclusion is valid?",
+  "worker_count": 7,
+  "test_id": "A7",
+  "trial": 2,
+  "run_id": "RUN-623",
+  "mc_prompt": "Q: All roses are flowers. Some flowers fade quickly. Which conclusion is valid?\nA) Some roses fade quickly\nB) We cannot conclude that any roses fade quickly\nC) All roses fade quickly\nD) No roses fade quickly\n\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8586,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0707,
+        "B": 0.9293
+      },
+      "latency_ms": 2077,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.6139,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0812,
+        "B": 0.7659,
+        "C": 0.152,
+        "D": 0.0008
+      },
+      "latency_ms": 120,
+      "worker_idx": 1,
+      "raw_response": "B"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1081,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5031,
+        "B": 0.395,
+        "C": 0.0952,
+        "D": 0.0068
+      },
+      "latency_ms": 2038,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5258,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7629,
+        "B": 0.2371
+      },
+      "latency_ms": 2280,
+      "worker_idx": 3,
+      "raw_response": "Let"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1186,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2654,
+        "B": 0.1576,
+        "C": 0.1929,
+        "D": 0.384
+      },
+      "latency_ms": 692,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0002,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.4999,
+        "C": 0.5001
+      },
+      "latency_ms": 710,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.984,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0044,
+        "B": 0.9889,
+        "C": 0.0018,
+        "D": 0.0049
+      },
+      "latency_ms": 92,
+      "worker_idx": 6,
+      "raw_response": "B"
+    }
+  ],
+  "total_latency_ms": 8009,
+  "config_name": "power_7",
+  "config_label": "curated 5 + tinyllama + falcon3 (7-worker, A7+A8)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 3,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.6877,
+    "B": 3.9737,
+    "C": 0.942,
+    "D": 0.3965
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "question": "I need a car wash. The car wash is 50 meters away. Should I walk?",
+  "worker_count": 6,
+  "test_id": "A1",
+  "trial": 3,
+  "run_id": "RUN-582",
+  "mc_prompt": "Q: I need a car wash. The car wash is 50 meters away. Should I walk?\nA) Yes, it's only 50 meters — just walk there\nB) No, you need to drive your car there to get it washed\nC) Take a taxi instead\nD) It depends on the weather\n\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 4,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6882,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8429,
+        "B": 0.1547,
+        "C": 0.0023
+      },
+      "latency_ms": 39,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.0935,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.4002,
+        "B": 0.4937,
+        "D": 0.1061
+      },
+      "latency_ms": 79,
+      "worker_idx": 1,
+      "raw_response": "To"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3578,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6049,
+        "B": 0.1057,
+        "C": 0.0424,
+        "D": 0.2471
+      },
+      "latency_ms": 2026,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0,
+        "B": 0.0,
+        "C": 0.0
+      },
+      "latency_ms": 2290,
+      "worker_idx": 3,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1111,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4473,
+        "B": 0.1664,
+        "C": 0.3362,
+        "D": 0.0501
+      },
+      "latency_ms": 718,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.5108,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0856,
+        "B": 0.1736,
+        "C": 0.6844,
+        "D": 0.0564
+      },
+      "latency_ms": 708,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 5860,
+  "config_name": "curated_6",
+  "config_label": "curated 5 + tinyllama (6-worker, A8 crack)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 4,
+    "B": 1,
+    "C": 1
+  },
+  "weighted_scores": {
+    "A": 3.3808999999999996,
+    "B": 1.0941,
+    "C": 1.0653000000000001,
+    "D": 0.45969999999999994
+  }
+}

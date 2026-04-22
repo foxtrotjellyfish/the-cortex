@@ -1,0 +1,148 @@
+{
+  "status": "ok",
+  "question": "A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?",
+  "worker_count": 8,
+  "test_id": "A4",
+  "trial": 2,
+  "run_id": "RUN-638",
+  "mc_prompt": "Q: A man builds a house where all four walls face south. A bear walks past the house. What color is the bear?\nA) Brown\nB) Black\nC) White\nD) Cannot be determined\n\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 4,
+  "majority_total": 8,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.3329,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.044,
+        "B": 0.015,
+        "C": 0.6369,
+        "D": 0.304
+      },
+      "latency_ms": 1526,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.6304,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0522,
+        "B": 0.0856,
+        "C": 0.1159,
+        "D": 0.7463
+      },
+      "latency_ms": 100,
+      "worker_idx": 1,
+      "raw_response": "To"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9999,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0,
+        "C": 0.0,
+        "D": 0.9999
+      },
+      "latency_ms": 1805,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0,
+        "C": 0.0,
+        "D": 1.0
+      },
+      "latency_ms": 2488,
+      "worker_idx": 3,
+      "raw_response": "D"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.5208,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7187,
+        "B": 0.0355,
+        "C": 0.0479,
+        "D": 0.1979
+      },
+      "latency_ms": 692,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.209,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.3955,
+        "C": 0.6045
+      },
+      "latency_ms": 701,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9144,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0356,
+        "B": 0.0093,
+        "C": 0.0051,
+        "D": 0.95
+      },
+      "latency_ms": 109,
+      "worker_idx": 6,
+      "raw_response": "D"
+    },
+    {
+      "model": "smollm2:1.7b",
+      "viewpoint": "NONE",
+      "confidence": 0.2233,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2636,
+        "B": 0.097,
+        "C": 0.4869,
+        "D": 0.1526
+      },
+      "latency_ms": 1748,
+      "worker_idx": 7,
+      "raw_response": "C"
+    }
+  ],
+  "total_latency_ms": 9169,
+  "config_name": "coverage_8",
+  "config_label": "curated 5 + tinyllama + falcon3 + smollm2 (8-worker, max coverage)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "C": 3,
+    "D": 4
+  },
+  "weighted_scores": {
+    "A": 1.1140999999999999,
+    "B": 0.6379,
+    "C": 1.8972000000000002,
+    "D": 4.3507
+  }
+}

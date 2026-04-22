@@ -1,0 +1,145 @@
+{
+  "status": "ok",
+  "question": "A coffee and a muffin together cost $4.70. The coffee costs $4.00 more than the muffin. How much does the muffin cost?",
+  "worker_count": 8,
+  "test_id": "A8",
+  "trial": 1,
+  "run_id": "RUN-649",
+  "mc_prompt": "Q: A coffee and a muffin together cost $4.70. The coffee costs $4.00 more than the muffin. How much does the muffin cost?\nA) 70 cents\nB) 35 cents\nC) $2.35\nD) $4.00\n\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 3,
+  "majority_total": 8,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6831,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8151,
+        "B": 0.132,
+        "C": 0.0529
+      },
+      "latency_ms": 1624,
+      "worker_idx": 0,
+      "raw_response": "To"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.4361,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0112,
+        "B": 0.6283,
+        "C": 0.1922,
+        "D": 0.1683
+      },
+      "latency_ms": 146,
+      "worker_idx": 1,
+      "raw_response": "To"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3938,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.2833,
+        "C": 0.6771,
+        "D": 0.0396
+      },
+      "latency_ms": 2046,
+      "worker_idx": 2,
+      "raw_response": "Let"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0,
+      "answer": "",
+      "probabilities": {},
+      "latency_ms": 2239,
+      "worker_idx": 3,
+      "raw_response": "To"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0778,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3669,
+        "B": 0.1347,
+        "C": 0.4447,
+        "D": 0.0538
+      },
+      "latency_ms": 706,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1127,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0128,
+        "B": 0.5198,
+        "C": 0.4071,
+        "D": 0.0603
+      },
+      "latency_ms": 696,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0369,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.3775,
+        "B": 0.3406,
+        "C": 0.2621,
+        "D": 0.0198
+      },
+      "latency_ms": 216,
+      "worker_idx": 6,
+      "raw_response": "Let"
+    },
+    {
+      "model": "smollm2:1.7b",
+      "viewpoint": "NONE",
+      "confidence": 0.4054,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1589,
+        "B": 0.1379,
+        "C": 0.5643,
+        "D": 0.1389
+      },
+      "latency_ms": 1811,
+      "worker_idx": 7,
+      "raw_response": "Let"
+    }
+  ],
+  "total_latency_ms": 9486,
+  "config_name": "coverage_8",
+  "config_label": "curated 5 + tinyllama + falcon3 + smollm2 (8-worker, max coverage)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 2,
+    "C": 3
+  },
+  "weighted_scores": {
+    "A": 1.7424,
+    "B": 2.1766000000000005,
+    "C": 2.6004000000000005,
+    "D": 0.4807
+  }
+}
