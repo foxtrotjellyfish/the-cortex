@@ -1,0 +1,829 @@
+{
+  "phase": "6A",
+  "model": "phi3:mini",
+  "method": "solo_logprobs_mc_medqa_feasibility",
+  "elapsed_ms": 13884,
+  "trials": 3,
+  "total_calls": 60,
+  "results": [
+    {
+      "id": "test-00054",
+      "correct": "A",
+      "trial": 1,
+      "answer": "A",
+      "confidence": 0.9583,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.9771,
+        "B": 0.0188,
+        "C": 0.0011,
+        "D": 0.003
+      }
+    },
+    {
+      "id": "test-00054",
+      "correct": "A",
+      "trial": 2,
+      "answer": "A",
+      "confidence": 0.958,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.9769,
+        "B": 0.0189,
+        "C": 0.0011,
+        "D": 0.003
+      }
+    },
+    {
+      "id": "test-00054",
+      "correct": "A",
+      "trial": 3,
+      "answer": "A",
+      "confidence": 0.958,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.9769,
+        "B": 0.0189,
+        "C": 0.0011,
+        "D": 0.003
+      }
+    },
+    {
+      "id": "test-00061",
+      "correct": "A",
+      "trial": 1,
+      "answer": "B",
+      "confidence": 0.2201,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2161,
+        "B": 0.502,
+        "C": 0.2819
+      }
+    },
+    {
+      "id": "test-00061",
+      "correct": "A",
+      "trial": 2,
+      "answer": "B",
+      "confidence": 0.2198,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2188,
+        "B": 0.5005,
+        "C": 0.2807
+      }
+    },
+    {
+      "id": "test-00061",
+      "correct": "A",
+      "trial": 3,
+      "answer": "B",
+      "confidence": 0.2198,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2188,
+        "B": 0.5005,
+        "C": 0.2807
+      }
+    },
+    {
+      "id": "test-00064",
+      "correct": "A",
+      "trial": 1,
+      "answer": "C",
+      "confidence": 0.7638,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1132,
+        "B": 0.0098,
+        "C": 0.877
+      }
+    },
+    {
+      "id": "test-00064",
+      "correct": "A",
+      "trial": 2,
+      "answer": "C",
+      "confidence": 0.7657,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1122,
+        "B": 0.0099,
+        "C": 0.8779
+      }
+    },
+    {
+      "id": "test-00064",
+      "correct": "A",
+      "trial": 3,
+      "answer": "C",
+      "confidence": 0.7657,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1122,
+        "B": 0.0099,
+        "C": 0.8779
+      }
+    },
+    {
+      "id": "test-00066",
+      "correct": "C",
+      "trial": 1,
+      "answer": "C",
+      "confidence": 0.3346,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.3106,
+        "B": 0.0301,
+        "C": 0.6452,
+        "D": 0.0141
+      }
+    },
+    {
+      "id": "test-00066",
+      "correct": "C",
+      "trial": 2,
+      "answer": "C",
+      "confidence": 0.3282,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.3138,
+        "B": 0.0302,
+        "C": 0.642,
+        "D": 0.0141
+      }
+    },
+    {
+      "id": "test-00066",
+      "correct": "C",
+      "trial": 3,
+      "answer": "C",
+      "confidence": 0.3282,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.3138,
+        "B": 0.0302,
+        "C": 0.642,
+        "D": 0.0141
+      }
+    },
+    {
+      "id": "test-00074",
+      "correct": "C",
+      "trial": 1,
+      "answer": "D",
+      "confidence": 0.5548,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2207,
+        "B": 0.0038,
+        "D": 0.7755
+      }
+    },
+    {
+      "id": "test-00074",
+      "correct": "C",
+      "trial": 2,
+      "answer": "D",
+      "confidence": 0.5536,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2213,
+        "B": 0.0038,
+        "D": 0.7749
+      }
+    },
+    {
+      "id": "test-00074",
+      "correct": "C",
+      "trial": 3,
+      "answer": "D",
+      "confidence": 0.5536,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2213,
+        "B": 0.0038,
+        "D": 0.7749
+      }
+    },
+    {
+      "id": "test-00076",
+      "correct": "B",
+      "trial": 1,
+      "answer": "B",
+      "confidence": 0.7765,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0227,
+        "B": 0.8759,
+        "C": 0.0019,
+        "D": 0.0994
+      }
+    },
+    {
+      "id": "test-00076",
+      "correct": "B",
+      "trial": 2,
+      "answer": "B",
+      "confidence": 0.7766,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0228,
+        "B": 0.8759,
+        "C": 0.0019,
+        "D": 0.0993
+      }
+    },
+    {
+      "id": "test-00076",
+      "correct": "B",
+      "trial": 3,
+      "answer": "B",
+      "confidence": 0.7766,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0228,
+        "B": 0.8759,
+        "C": 0.0019,
+        "D": 0.0993
+      }
+    },
+    {
+      "id": "test-00095",
+      "correct": "D",
+      "trial": 1,
+      "answer": "D",
+      "confidence": 0.6637,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1267,
+        "B": 0.0729,
+        "C": 0.01,
+        "D": 0.7904
+      }
+    },
+    {
+      "id": "test-00095",
+      "correct": "D",
+      "trial": 2,
+      "answer": "D",
+      "confidence": 0.6657,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1257,
+        "B": 0.0728,
+        "C": 0.0102,
+        "D": 0.7914
+      }
+    },
+    {
+      "id": "test-00095",
+      "correct": "D",
+      "trial": 3,
+      "answer": "D",
+      "confidence": 0.6657,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1257,
+        "B": 0.0728,
+        "C": 0.0102,
+        "D": 0.7914
+      }
+    },
+    {
+      "id": "test-00121",
+      "correct": "A",
+      "trial": 1,
+      "answer": "C",
+      "confidence": 0.0995,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.243,
+        "B": 0.3288,
+        "C": 0.4283
+      }
+    },
+    {
+      "id": "test-00121",
+      "correct": "A",
+      "trial": 2,
+      "answer": "C",
+      "confidence": 0.101,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2419,
+        "B": 0.3286,
+        "C": 0.4296
+      }
+    },
+    {
+      "id": "test-00121",
+      "correct": "A",
+      "trial": 3,
+      "answer": "C",
+      "confidence": 0.101,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2419,
+        "B": 0.3286,
+        "C": 0.4296
+      }
+    },
+    {
+      "id": "test-00130",
+      "correct": "B",
+      "trial": 1,
+      "answer": "D",
+      "confidence": 0.6829,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0154,
+        "B": 0.1493,
+        "C": 0.0031,
+        "D": 0.8322
+      }
+    },
+    {
+      "id": "test-00130",
+      "correct": "B",
+      "trial": 2,
+      "answer": "D",
+      "confidence": 0.6833,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0155,
+        "B": 0.1491,
+        "C": 0.003,
+        "D": 0.8324
+      }
+    },
+    {
+      "id": "test-00130",
+      "correct": "B",
+      "trial": 3,
+      "answer": "D",
+      "confidence": 0.6833,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0155,
+        "B": 0.1491,
+        "C": 0.003,
+        "D": 0.8324
+      }
+    },
+    {
+      "id": "test-00138",
+      "correct": "B",
+      "trial": 1,
+      "answer": "B",
+      "confidence": 0.9057,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0434,
+        "B": 0.9491,
+        "D": 0.0075
+      }
+    },
+    {
+      "id": "test-00138",
+      "correct": "B",
+      "trial": 2,
+      "answer": "B",
+      "confidence": 0.9064,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0431,
+        "B": 0.9495,
+        "D": 0.0074
+      }
+    },
+    {
+      "id": "test-00138",
+      "correct": "B",
+      "trial": 3,
+      "answer": "B",
+      "confidence": 0.9064,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0431,
+        "B": 0.9495,
+        "D": 0.0074
+      }
+    },
+    {
+      "id": "test-00140",
+      "correct": "C",
+      "trial": 1,
+      "answer": "D",
+      "confidence": 0.2691,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2139,
+        "B": 0.0892,
+        "C": 0.2139,
+        "D": 0.483
+      }
+    },
+    {
+      "id": "test-00140",
+      "correct": "C",
+      "trial": 2,
+      "answer": "D",
+      "confidence": 0.2707,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2128,
+        "B": 0.089,
+        "C": 0.2137,
+        "D": 0.4844
+      }
+    },
+    {
+      "id": "test-00140",
+      "correct": "C",
+      "trial": 3,
+      "answer": "D",
+      "confidence": 0.2707,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2128,
+        "B": 0.089,
+        "C": 0.2137,
+        "D": 0.4844
+      }
+    },
+    {
+      "id": "test-00146",
+      "correct": "C",
+      "trial": 1,
+      "answer": "D",
+      "confidence": 0.5694,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0916,
+        "B": 0.0288,
+        "C": 0.1551,
+        "D": 0.7245
+      }
+    },
+    {
+      "id": "test-00146",
+      "correct": "C",
+      "trial": 2,
+      "answer": "D",
+      "confidence": 0.5703,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0914,
+        "B": 0.0289,
+        "C": 0.1547,
+        "D": 0.725
+      }
+    },
+    {
+      "id": "test-00146",
+      "correct": "C",
+      "trial": 3,
+      "answer": "D",
+      "confidence": 0.5703,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0914,
+        "B": 0.0289,
+        "C": 0.1547,
+        "D": 0.725
+      }
+    },
+    {
+      "id": "test-00168",
+      "correct": "B",
+      "trial": 1,
+      "answer": "A",
+      "confidence": 0.9057,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.9388,
+        "B": 0.0281,
+        "D": 0.0331
+      }
+    },
+    {
+      "id": "test-00168",
+      "correct": "B",
+      "trial": 2,
+      "answer": "A",
+      "confidence": 0.9059,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.9389,
+        "B": 0.0281,
+        "D": 0.033
+      }
+    },
+    {
+      "id": "test-00168",
+      "correct": "B",
+      "trial": 3,
+      "answer": "A",
+      "confidence": 0.9059,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.9389,
+        "B": 0.0281,
+        "D": 0.033
+      }
+    },
+    {
+      "id": "test-00172",
+      "correct": "C",
+      "trial": 1,
+      "answer": "C",
+      "confidence": 0.4432,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0151,
+        "B": 0.1021,
+        "C": 0.663,
+        "D": 0.2198
+      }
+    },
+    {
+      "id": "test-00172",
+      "correct": "C",
+      "trial": 2,
+      "answer": "C",
+      "confidence": 0.4463,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0151,
+        "B": 0.1017,
+        "C": 0.6648,
+        "D": 0.2185
+      }
+    },
+    {
+      "id": "test-00172",
+      "correct": "C",
+      "trial": 3,
+      "answer": "C",
+      "confidence": 0.4463,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0151,
+        "B": 0.1017,
+        "C": 0.6648,
+        "D": 0.2185
+      }
+    },
+    {
+      "id": "test-00198",
+      "correct": "D",
+      "trial": 1,
+      "answer": "C",
+      "confidence": 0.7257,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0738,
+        "B": 0.083,
+        "C": 0.8087,
+        "D": 0.0345
+      }
+    },
+    {
+      "id": "test-00198",
+      "correct": "D",
+      "trial": 2,
+      "answer": "C",
+      "confidence": 0.7267,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0734,
+        "B": 0.0828,
+        "C": 0.8095,
+        "D": 0.0342
+      }
+    },
+    {
+      "id": "test-00198",
+      "correct": "D",
+      "trial": 3,
+      "answer": "C",
+      "confidence": 0.7267,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0734,
+        "B": 0.0828,
+        "C": 0.8095,
+        "D": 0.0342
+      }
+    },
+    {
+      "id": "test-00204",
+      "correct": "B",
+      "trial": 1,
+      "answer": "A",
+      "confidence": 0.1259,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.3941,
+        "B": 0.2682,
+        "C": 0.0814,
+        "D": 0.2564
+      }
+    },
+    {
+      "id": "test-00204",
+      "correct": "B",
+      "trial": 2,
+      "answer": "A",
+      "confidence": 0.1265,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.3939,
+        "B": 0.2674,
+        "C": 0.0812,
+        "D": 0.2574
+      }
+    },
+    {
+      "id": "test-00204",
+      "correct": "B",
+      "trial": 3,
+      "answer": "A",
+      "confidence": 0.1265,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.3939,
+        "B": 0.2674,
+        "C": 0.0812,
+        "D": 0.2574
+      }
+    },
+    {
+      "id": "test-00206",
+      "correct": "C",
+      "trial": 1,
+      "answer": "C",
+      "confidence": 0.8752,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0602,
+        "B": 0.0028,
+        "C": 0.9354,
+        "D": 0.0017
+      }
+    },
+    {
+      "id": "test-00206",
+      "correct": "C",
+      "trial": 2,
+      "answer": "C",
+      "confidence": 0.8759,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0598,
+        "B": 0.0028,
+        "C": 0.9357,
+        "D": 0.0017
+      }
+    },
+    {
+      "id": "test-00206",
+      "correct": "C",
+      "trial": 3,
+      "answer": "C",
+      "confidence": 0.8759,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0598,
+        "B": 0.0028,
+        "C": 0.9357,
+        "D": 0.0017
+      }
+    },
+    {
+      "id": "test-00208",
+      "correct": "B",
+      "trial": 1,
+      "answer": "C",
+      "confidence": 0.6905,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0773,
+        "B": 0.0752,
+        "C": 0.769,
+        "D": 0.0785
+      }
+    },
+    {
+      "id": "test-00208",
+      "correct": "B",
+      "trial": 2,
+      "answer": "C",
+      "confidence": 0.6908,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0771,
+        "B": 0.0751,
+        "C": 0.7693,
+        "D": 0.0785
+      }
+    },
+    {
+      "id": "test-00208",
+      "correct": "B",
+      "trial": 3,
+      "answer": "C",
+      "confidence": 0.6908,
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0771,
+        "B": 0.0751,
+        "C": 0.7693,
+        "D": 0.0785
+      }
+    },
+    {
+      "id": "test-00213",
+      "correct": "A",
+      "trial": 1,
+      "answer": "A",
+      "confidence": 0.8798,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.9363,
+        "B": 0.0565,
+        "D": 0.0072
+      }
+    },
+    {
+      "id": "test-00213",
+      "correct": "A",
+      "trial": 2,
+      "answer": "A",
+      "confidence": 0.8798,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.9363,
+        "B": 0.0565,
+        "D": 0.0072
+      }
+    },
+    {
+      "id": "test-00213",
+      "correct": "A",
+      "trial": 3,
+      "answer": "A",
+      "confidence": 0.8798,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.9363,
+        "B": 0.0565,
+        "D": 0.0072
+      }
+    },
+    {
+      "id": "test-00214",
+      "correct": "B",
+      "trial": 1,
+      "answer": "B",
+      "confidence": 0.2993,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.3078,
+        "B": 0.6071,
+        "D": 0.0851
+      }
+    },
+    {
+      "id": "test-00214",
+      "correct": "B",
+      "trial": 2,
+      "answer": "B",
+      "confidence": 0.2964,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.3091,
+        "B": 0.6055,
+        "D": 0.0854
+      }
+    },
+    {
+      "id": "test-00214",
+      "correct": "B",
+      "trial": 3,
+      "answer": "B",
+      "confidence": 0.2964,
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.3091,
+        "B": 0.6055,
+        "D": 0.0854
+      }
+    }
+  ],
+  "questions": 20,
+  "per_question_accuracy": "9/20",
+  "accuracy_pct": 45.0
+}
