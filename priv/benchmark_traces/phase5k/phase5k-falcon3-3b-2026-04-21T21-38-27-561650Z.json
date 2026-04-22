@@ -1,0 +1,380 @@
+{
+  "description": "Model safari candidate sweep — 1 models × 8 tests × 3 trials",
+  "phase": "5K",
+  "method": "solo_logprobs_mc_candidate_sweep",
+  "models": [
+    "falcon3:3b"
+  ],
+  "tests": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+  ],
+  "solo": [
+    {
+      "model": "falcon3:3b",
+      "test_id": "A1",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9888,
+        "B": 0.0038,
+        "C": 0.0048,
+        "D": 0.0026
+      },
+      "confidence": 0.984
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A1",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9888,
+        "B": 0.0038,
+        "C": 0.0048,
+        "D": 0.0026
+      },
+      "confidence": 0.984
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A1",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9888,
+        "B": 0.0038,
+        "C": 0.0048,
+        "D": 0.0026
+      },
+      "confidence": 0.984
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A2",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6801,
+        "B": 0.0858,
+        "C": 0.1172,
+        "D": 0.1168
+      },
+      "confidence": 0.5629
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A2",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6671,
+        "B": 0.0894,
+        "C": 0.1226,
+        "D": 0.121
+      },
+      "confidence": 0.5445
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A2",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6671,
+        "B": 0.0894,
+        "C": 0.1226,
+        "D": 0.121
+      },
+      "confidence": 0.5445
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A3",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1064,
+        "B": 0.3347,
+        "C": 0.2285,
+        "D": 0.3304
+      },
+      "confidence": 0.0043
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A3",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1057,
+        "B": 0.3375,
+        "C": 0.2328,
+        "D": 0.324
+      },
+      "confidence": 0.0135
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A3",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1057,
+        "B": 0.3375,
+        "C": 0.2328,
+        "D": 0.324
+      },
+      "confidence": 0.0135
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A4",
+      "trial": 1,
+      "correct": "C",
+      "is_correct": false,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0356,
+        "B": 0.0094,
+        "C": 0.0051,
+        "D": 0.9499
+      },
+      "confidence": 0.9143
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A4",
+      "trial": 2,
+      "correct": "C",
+      "is_correct": false,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0356,
+        "B": 0.0093,
+        "C": 0.0051,
+        "D": 0.95
+      },
+      "confidence": 0.9144
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A4",
+      "trial": 3,
+      "correct": "C",
+      "is_correct": false,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0356,
+        "B": 0.0093,
+        "C": 0.0051,
+        "D": 0.95
+      },
+      "confidence": 0.9144
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A5",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2095,
+        "B": 0.0901,
+        "C": 0.4487,
+        "D": 0.2518
+      },
+      "confidence": 0.1969
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A5",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2079,
+        "B": 0.0907,
+        "C": 0.4553,
+        "D": 0.2462
+      },
+      "confidence": 0.2091
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A5",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2079,
+        "B": 0.0907,
+        "C": 0.4553,
+        "D": 0.2462
+      },
+      "confidence": 0.2091
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A6",
+      "trial": 1,
+      "correct": "D",
+      "is_correct": true,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0388,
+        "B": 0.0368,
+        "C": 0.1156,
+        "D": 0.8088
+      },
+      "confidence": 0.6932
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A6",
+      "trial": 2,
+      "correct": "D",
+      "is_correct": true,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0385,
+        "B": 0.0369,
+        "C": 0.1164,
+        "D": 0.8083
+      },
+      "confidence": 0.6919
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A6",
+      "trial": 3,
+      "correct": "D",
+      "is_correct": true,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0385,
+        "B": 0.0369,
+        "C": 0.1164,
+        "D": 0.8083
+      },
+      "confidence": 0.6919
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A7",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0046,
+        "B": 0.9888,
+        "C": 0.0018,
+        "D": 0.0048
+      },
+      "confidence": 0.984
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A7",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0044,
+        "B": 0.9889,
+        "C": 0.0018,
+        "D": 0.0049
+      },
+      "confidence": 0.984
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A7",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0044,
+        "B": 0.9889,
+        "C": 0.0018,
+        "D": 0.0049
+      },
+      "confidence": 0.984
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A8",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.3775,
+        "B": 0.3406,
+        "C": 0.2621,
+        "D": 0.0198
+      },
+      "confidence": 0.0369
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A8",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.3658,
+        "B": 0.3448,
+        "C": 0.2695,
+        "D": 0.0199
+      },
+      "confidence": 0.021
+    },
+    {
+      "model": "falcon3:3b",
+      "test_id": "A8",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.3658,
+        "B": 0.3448,
+        "C": 0.2695,
+        "D": 0.0199
+      },
+      "confidence": 0.021
+    }
+  ]
+}

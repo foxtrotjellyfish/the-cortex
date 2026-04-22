@@ -1,0 +1,1443 @@
+{
+  "description": "Model safari candidate sweep — 5 models × 8 tests × 3 trials",
+  "phase": "5K",
+  "method": "solo_logprobs_mc_candidate_sweep",
+  "models": [
+    "smollm2:1.7b",
+    "mollysama/rwkv-7-g1f:1.5b",
+    "tinyllama",
+    "dolphin-phi",
+    "phi:2.7b"
+  ],
+  "tests": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+  ],
+  "solo": [
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A1",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8202,
+        "B": 0.0684,
+        "C": 0.0935,
+        "D": 0.0179
+      },
+      "confidence": 0.7267
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A1",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8172,
+        "B": 0.0691,
+        "C": 0.0953,
+        "D": 0.0183
+      },
+      "confidence": 0.7219
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A1",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8172,
+        "B": 0.0691,
+        "C": 0.0953,
+        "D": 0.0183
+      },
+      "confidence": 0.7219
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A2",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5488,
+        "B": 0.3502,
+        "C": 0.0806,
+        "D": 0.0204
+      },
+      "confidence": 0.1986
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A2",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.55,
+        "B": 0.3491,
+        "C": 0.0808,
+        "D": 0.0201
+      },
+      "confidence": 0.2009
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A2",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": true,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.55,
+        "B": 0.3491,
+        "C": 0.0808,
+        "D": 0.0201
+      },
+      "confidence": 0.2009
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A3",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2881,
+        "B": 0.5157,
+        "C": 0.0904,
+        "D": 0.1058
+      },
+      "confidence": 0.2276
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A3",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2864,
+        "B": 0.5175,
+        "C": 0.0905,
+        "D": 0.1056
+      },
+      "confidence": 0.2311
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A3",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2864,
+        "B": 0.5175,
+        "C": 0.0905,
+        "D": 0.1056
+      },
+      "confidence": 0.2311
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A4",
+      "trial": 1,
+      "correct": "C",
+      "is_correct": true,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2636,
+        "B": 0.097,
+        "C": 0.4869,
+        "D": 0.1526
+      },
+      "confidence": 0.2233
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A4",
+      "trial": 2,
+      "correct": "C",
+      "is_correct": true,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2636,
+        "B": 0.0975,
+        "C": 0.4866,
+        "D": 0.1524
+      },
+      "confidence": 0.223
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A4",
+      "trial": 3,
+      "correct": "C",
+      "is_correct": true,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2636,
+        "B": 0.0975,
+        "C": 0.4866,
+        "D": 0.1524
+      },
+      "confidence": 0.223
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A5",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1874,
+        "B": 0.0841,
+        "C": 0.3857,
+        "D": 0.3428
+      },
+      "confidence": 0.0429
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A5",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1874,
+        "B": 0.0838,
+        "C": 0.3854,
+        "D": 0.3434
+      },
+      "confidence": 0.042
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A5",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1874,
+        "B": 0.0838,
+        "C": 0.3854,
+        "D": 0.3434
+      },
+      "confidence": 0.042
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A6",
+      "trial": 1,
+      "correct": "D",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4003,
+        "B": 0.3643,
+        "C": 0.1177,
+        "D": 0.1177
+      },
+      "confidence": 0.036
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A6",
+      "trial": 2,
+      "correct": "D",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.3992,
+        "B": 0.3668,
+        "C": 0.1163,
+        "D": 0.1176
+      },
+      "confidence": 0.0324
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A6",
+      "trial": 3,
+      "correct": "D",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.3992,
+        "B": 0.3668,
+        "C": 0.1163,
+        "D": 0.1176
+      },
+      "confidence": 0.0324
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A7",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5551,
+        "B": 0.0752,
+        "C": 0.2981,
+        "D": 0.0716
+      },
+      "confidence": 0.257
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A7",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5568,
+        "B": 0.0747,
+        "C": 0.2974,
+        "D": 0.0711
+      },
+      "confidence": 0.2594
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A7",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5568,
+        "B": 0.0747,
+        "C": 0.2974,
+        "D": 0.0711
+      },
+      "confidence": 0.2594
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A8",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1589,
+        "B": 0.1379,
+        "C": 0.5643,
+        "D": 0.1389
+      },
+      "confidence": 0.4054
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A8",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1594,
+        "B": 0.1362,
+        "C": 0.5663,
+        "D": 0.1381
+      },
+      "confidence": 0.4069
+    },
+    {
+      "model": "smollm2:1.7b",
+      "test_id": "A8",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1594,
+        "B": 0.1362,
+        "C": 0.5663,
+        "D": 0.1381
+      },
+      "confidence": 0.4069
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A1",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A1",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A1",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A2",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A2",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A2",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A3",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A3",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A3",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A4",
+      "trial": 1,
+      "correct": "C",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A4",
+      "trial": 2,
+      "correct": "C",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A4",
+      "trial": 3,
+      "correct": "C",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A5",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A5",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A5",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A6",
+      "trial": 1,
+      "correct": "D",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A6",
+      "trial": 2,
+      "correct": "D",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A6",
+      "trial": 3,
+      "correct": "D",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A7",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A7",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A7",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A8",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A8",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "mollysama/rwkv-7-g1f:1.5b",
+      "test_id": "A8",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": {},
+      "confidence": 0.0
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A1",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0856,
+        "B": 0.1736,
+        "C": 0.6844,
+        "D": 0.0564
+      },
+      "confidence": 0.5108
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A1",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0862,
+        "B": 0.1738,
+        "C": 0.6834,
+        "D": 0.0566
+      },
+      "confidence": 0.5096
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A1",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0862,
+        "B": 0.1738,
+        "C": 0.6834,
+        "D": 0.0566
+      },
+      "confidence": 0.5096
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A2",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0474,
+        "B": 0.098,
+        "C": 0.8285,
+        "D": 0.0261
+      },
+      "confidence": 0.7305
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A2",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0475,
+        "B": 0.0973,
+        "C": 0.8291,
+        "D": 0.0261
+      },
+      "confidence": 0.7318
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A2",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0475,
+        "B": 0.0973,
+        "C": 0.8291,
+        "D": 0.0261
+      },
+      "confidence": 0.7318
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A3",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.6089,
+        "C": 0.3911
+      },
+      "confidence": 0.2178
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A3",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.6092,
+        "C": 0.3908
+      },
+      "confidence": 0.2184
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A3",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.6092,
+        "C": 0.3908
+      },
+      "confidence": 0.2184
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A4",
+      "trial": 1,
+      "correct": "C",
+      "is_correct": true,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.3955,
+        "C": 0.6045
+      },
+      "confidence": 0.209
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A4",
+      "trial": 2,
+      "correct": "C",
+      "is_correct": true,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.397,
+        "C": 0.603
+      },
+      "confidence": 0.206
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A4",
+      "trial": 3,
+      "correct": "C",
+      "is_correct": true,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.397,
+        "C": 0.603
+      },
+      "confidence": 0.206
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A5",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3699,
+        "B": 0.2374,
+        "C": 0.3927
+      },
+      "confidence": 0.0228
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A5",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3685,
+        "B": 0.2392,
+        "C": 0.3923
+      },
+      "confidence": 0.0238
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A5",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3685,
+        "B": 0.2392,
+        "C": 0.3923
+      },
+      "confidence": 0.0238
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A6",
+      "trial": 1,
+      "correct": "D",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2028,
+        "B": 0.087,
+        "C": 0.6077,
+        "D": 0.1026
+      },
+      "confidence": 0.4049
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A6",
+      "trial": 2,
+      "correct": "D",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2018,
+        "B": 0.0871,
+        "C": 0.6086,
+        "D": 0.1025
+      },
+      "confidence": 0.4068
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A6",
+      "trial": 3,
+      "correct": "D",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2018,
+        "B": 0.0871,
+        "C": 0.6086,
+        "D": 0.1025
+      },
+      "confidence": 0.4068
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A7",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.4999,
+        "C": 0.5001
+      },
+      "confidence": 0.0002
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A7",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.4998,
+        "C": 0.5002
+      },
+      "confidence": 0.0004
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A7",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.4998,
+        "C": 0.5002
+      },
+      "confidence": 0.0004
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A8",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0128,
+        "B": 0.5198,
+        "C": 0.4071,
+        "D": 0.0603
+      },
+      "confidence": 0.1127
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A8",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0127,
+        "B": 0.5234,
+        "C": 0.4039,
+        "D": 0.0599
+      },
+      "confidence": 0.1195
+    },
+    {
+      "model": "tinyllama",
+      "test_id": "A8",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": true,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0127,
+        "B": 0.5234,
+        "C": 0.4039,
+        "D": 0.0599
+      },
+      "confidence": 0.1195
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A1",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A1",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A1",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A2",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A2",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A2",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A3",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A3",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A3",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A4",
+      "trial": 1,
+      "correct": "C",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A4",
+      "trial": 2,
+      "correct": "C",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A4",
+      "trial": 3,
+      "correct": "C",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A5",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A5",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A5",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A6",
+      "trial": 1,
+      "correct": "D",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A6",
+      "trial": 2,
+      "correct": "D",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A6",
+      "trial": 3,
+      "correct": "D",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A7",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A7",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A7",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A8",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A8",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "dolphin-phi",
+      "test_id": "A8",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A1",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A1",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A1",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A2",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A2",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A2",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A3",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A3",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A3",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A4",
+      "trial": 1,
+      "correct": "C",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A4",
+      "trial": 2,
+      "correct": "C",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A4",
+      "trial": 3,
+      "correct": "C",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A5",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A5",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A5",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A6",
+      "trial": 1,
+      "correct": "D",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A6",
+      "trial": 2,
+      "correct": "D",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A6",
+      "trial": 3,
+      "correct": "D",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A7",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A7",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A7",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A8",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A8",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A8",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    }
+  ]
+}

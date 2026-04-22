@@ -1,0 +1,260 @@
+{
+  "description": "Model safari candidate sweep — 1 models × 8 tests × 3 trials",
+  "phase": "5K",
+  "method": "solo_logprobs_mc_candidate_sweep",
+  "models": [
+    "phi:2.7b"
+  ],
+  "tests": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+  ],
+  "solo": [
+    {
+      "model": "phi:2.7b",
+      "test_id": "A1",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A1",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A1",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A2",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A2",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A2",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A3",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A3",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A3",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A4",
+      "trial": 1,
+      "correct": "C",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A4",
+      "trial": 2,
+      "correct": "C",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A4",
+      "trial": 3,
+      "correct": "C",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A5",
+      "trial": 1,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A5",
+      "trial": 2,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A5",
+      "trial": 3,
+      "correct": "A",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A6",
+      "trial": 1,
+      "correct": "D",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A6",
+      "trial": 2,
+      "correct": "D",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A6",
+      "trial": 3,
+      "correct": "D",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A7",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A7",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A7",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A8",
+      "trial": 1,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A8",
+      "trial": 2,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    },
+    {
+      "model": "phi:2.7b",
+      "test_id": "A8",
+      "trial": 3,
+      "correct": "B",
+      "is_correct": false,
+      "answer": null,
+      "probabilities": null,
+      "confidence": null
+    }
+  ]
+}
