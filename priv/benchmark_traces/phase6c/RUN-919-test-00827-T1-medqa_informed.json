@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "question": "A 28-year-old woman presents to her primary care physician for evaluation of amenorrhea. Her last period occurred 4 months ago but she has not had sex in the last year and home pregnancy tests have come back negative. She first started having periods at age 13 and her periods have been unremarkable up until they stopped 4 months ago. Her past medical history is significant for radius and ulnar forearm fractures that she sustained in a car crash 3 months ago. She didn't see the car coming and has had increasing difficulty noticing objects in her peripheral vision. She also notes having recurrent headaches 5 months ago. Otherwise she has been healthy with no previous pregnancies. Physical exam reveals galactorrhea and temporal field visual defects. Which of the following mechanisms is most likely responsible for this patient's amenorrhea?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-919",
+  "test_id": "test-00827",
+  "mc_prompt": "Q: A 28-year-old woman presents to her primary care physician for evaluation of amenorrhea. Her last period occurred 4 months ago but she has not had sex in the last year and home pregnancy tests have come back negative. She first started having periods at age 13 and her periods have been unremarkable up until they stopped 4 months ago. Her past medical history is significant for radius and ulnar forearm fractures that she sustained in a car crash 3 months ago. She didn't see the car coming and has had increasing difficulty noticing objects in her peripheral vision. She also notes having recurrent headaches 5 months ago. Otherwise she has been healthy with no previous pregnancies. Physical exam reveals galactorrhea and temporal field visual defects. Which of the following mechanisms is most likely responsible for this patient's amenorrhea?\nA) Inhibition of gonadotropin-releasing hormone release\nB) Intrauterine scar tissue accumulation\nC) Nondisjunction of chromosomes\nD) Nutritional imbalance\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 5,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9547,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9738,
+        "B": 0.0191,
+        "D": 0.007
+      },
+      "latency_ms": 2218,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7664,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.848,
+        "B": 0.0816,
+        "C": 0.0638,
+        "D": 0.0066
+      },
+      "latency_ms": 2170,
+      "worker_idx": 1,
+      "raw_response": "A"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.482,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7387,
+        "B": 0.0021,
+        "C": 0.0024,
+        "D": 0.2567
+      },
+      "latency_ms": 416,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9936,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9968,
+        "C": 0.0032
+      },
+      "latency_ms": 2763,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9686,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9843,
+        "B": 0.0157
+      },
+      "latency_ms": 458,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8025,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 5
+  },
+  "weighted_scores": {
+    "A": 4.5416,
+    "B": 0.11850000000000002,
+    "C": 0.06939999999999999,
+    "D": 0.2703
+  }
+}

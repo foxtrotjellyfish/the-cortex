@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "question": "Two weeks after starting chemotherapy with etoposide, a 66-year-old man with small cell lung cancer comes to the physician because of persistent nausea and vomiting. His symptoms improve significantly after the administration of metoclopramide. This patient's symptoms were most likely due to the effect of chemotherapy on which of the following structures?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-723",
+  "test_id": "test-00849",
+  "mc_prompt": "Q: Two weeks after starting chemotherapy with etoposide, a 66-year-old man with small cell lung cancer comes to the physician because of persistent nausea and vomiting. His symptoms improve significantly after the administration of metoclopramide. This patient's symptoms were most likely due to the effect of chemotherapy on which of the following structures?\nA) Vestibular nerve\nB) Intestinal smooth muscle\nC) Vagus nerve\nD) Area postrema\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4995,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0411,
+        "B": 0.013,
+        "C": 0.2232,
+        "D": 0.7227
+      },
+      "latency_ms": 287,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.0641,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.3684,
+        "B": 0.167,
+        "C": 0.0321,
+        "D": 0.4325
+      },
+      "latency_ms": 161,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.526,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0165,
+        "B": 0.7489,
+        "C": 0.0117,
+        "D": 0.2229
+      },
+      "latency_ms": 2344,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9948,
+      "answer": "D",
+      "probabilities": {
+        "C": 0.0026,
+        "D": 0.9974
+      },
+      "latency_ms": 2358,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0921,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.382,
+        "B": 0.2273,
+        "C": 0.2899,
+        "D": 0.1008
+      },
+      "latency_ms": 821,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.5248,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.2376,
+        "C": 0.7624
+      },
+      "latency_ms": 802,
+      "worker_idx": 5,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 6773,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "D",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 0.808,
+    "B": 1.3938000000000001,
+    "C": 1.3218999999999999,
+    "D": 2.4762999999999997
+  }
+}

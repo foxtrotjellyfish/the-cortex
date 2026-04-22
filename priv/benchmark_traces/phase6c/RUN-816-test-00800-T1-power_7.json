@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "question": "A 4-year-old child is rushed to the emergency department after developing sudden abdominal pain followed by nausea, vomiting, and dark, almost black-colored stool. Prior to the onset of symptoms, he was seen playing with his mother’s purse containing a bottle of vitamin supplements, which she takes for chronic microcytic anemia. Which of the following medications is the treatment for this patient's intoxication?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-816",
+  "test_id": "test-00800",
+  "mc_prompt": "Q: A 4-year-old child is rushed to the emergency department after developing sudden abdominal pain followed by nausea, vomiting, and dark, almost black-colored stool. Prior to the onset of symptoms, he was seen playing with his mother’s purse containing a bottle of vitamin supplements, which she takes for chronic microcytic anemia. Which of the following medications is the treatment for this patient's intoxication?\nA) Dimercaprol\nB) Deferoxamine\nC) Protamine\nD) Succimer\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 4,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8576,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0607,
+        "B": 0.9183,
+        "D": 0.021
+      },
+      "latency_ms": 1983,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.944,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0278,
+        "B": 0.0003,
+        "D": 0.9718
+      },
+      "latency_ms": 176,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8378,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0463,
+        "B": 0.0252,
+        "C": 0.0445,
+        "D": 0.8841
+      },
+      "latency_ms": 1838,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0126,
+      "answer": "D",
+      "probabilities": {
+        "B": 0.4937,
+        "D": 0.5063
+      },
+      "latency_ms": 2105,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.2732,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5032,
+        "B": 0.1485,
+        "C": 0.23,
+        "D": 0.1184
+      },
+      "latency_ms": 776,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.4584,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.1977,
+        "C": 0.6561,
+        "D": 0.1462
+      },
+      "latency_ms": 818,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5963,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0627,
+        "B": 0.1679,
+        "C": 0.0052,
+        "D": 0.7642
+      },
+      "latency_ms": 262,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 7959,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "D": 4
+  },
+  "weighted_scores": {
+    "A": 0.7007,
+    "B": 1.9516,
+    "C": 0.9358000000000001,
+    "D": 3.412
+  }
+}

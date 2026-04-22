@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "question": "A 48-year-old woman comes to the physician because of a 4-month history of lightheadedness, intermittent headaches, and easy bruising. Five months ago, she was treated for an episode of thrombophlebitis. Physical examination shows multiple bruises on her limbs. Laboratory studies show a platelet count of 900,000/mm3 and elevated levels of serum lactate dehydrogenase and uric acid. Treatment with a medication is begun that is also used in the treatment of sickle cell disease. Which of the following mechanisms is most likely responsible for the beneficial effect of this drug in sickle cell disease?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-820",
+  "test_id": "test-00839",
+  "mc_prompt": "Q: A 48-year-old woman comes to the physician because of a 4-month history of lightheadedness, intermittent headaches, and easy bruising. Five months ago, she was treated for an episode of thrombophlebitis. Physical examination shows multiple bruises on her limbs. Laboratory studies show a platelet count of 900,000/mm3 and elevated levels of serum lactate dehydrogenase and uric acid. Treatment with a medication is begun that is also used in the treatment of sickle cell disease. Which of the following mechanisms is most likely responsible for the beneficial effect of this drug in sickle cell disease?\nA) Inhibition of thrombocyte aggregation\nB) Increase in circulating fetal hemoglobin\nC) Inhibition of stem cell differentiation\nD) Restoration of the body's iron stores\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4562,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.271,
+        "B": 0.7272,
+        "D": 0.0018
+      },
+      "latency_ms": 2366,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9493,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9695,
+        "B": 0.0102,
+        "D": 0.0202
+      },
+      "latency_ms": 252,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8932,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9437,
+        "B": 0.0505,
+        "C": 0.0033,
+        "D": 0.0024
+      },
+      "latency_ms": 1889,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.976,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.988,
+        "D": 0.012
+      },
+      "latency_ms": 2469,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.659,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1074,
+        "B": 0.0747,
+        "C": 0.0514,
+        "D": 0.7664
+      },
+      "latency_ms": 808,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1441,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1278,
+        "B": 0.3641,
+        "C": 0.5082
+      },
+      "latency_ms": 809,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6312,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8033,
+        "B": 0.1721,
+        "C": 0.0183,
+        "D": 0.0063
+      },
+      "latency_ms": 362,
+      "worker_idx": 6,
+      "raw_response": "A"
+    }
+  ],
+  "total_latency_ms": 8956,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 3,
+    "B": 2,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 3.2227,
+    "B": 2.3868,
+    "C": 0.5811999999999999,
+    "D": 0.8090999999999999
+  }
+}

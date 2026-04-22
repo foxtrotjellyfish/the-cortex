@@ -1,0 +1,103 @@
+{
+  "status": "ok",
+  "question": "A 4-year-old child is rushed to the emergency department after developing sudden abdominal pain followed by nausea, vomiting, and dark, almost black-colored stool. Prior to the onset of symptoms, he was seen playing with his mother’s purse containing a bottle of vitamin supplements, which she takes for chronic microcytic anemia. Which of the following medications is the treatment for this patient's intoxication?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-916",
+  "test_id": "test-00800",
+  "mc_prompt": "Q: A 4-year-old child is rushed to the emergency department after developing sudden abdominal pain followed by nausea, vomiting, and dark, almost black-colored stool. Prior to the onset of symptoms, he was seen playing with his mother’s purse containing a bottle of vitamin supplements, which she takes for chronic microcytic anemia. Which of the following medications is the treatment for this patient's intoxication?\nA) Dimercaprol\nB) Deferoxamine\nC) Protamine\nD) Succimer\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8576,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0607,
+        "B": 0.9183,
+        "D": 0.021
+      },
+      "latency_ms": 2217,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8378,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0463,
+        "B": 0.0252,
+        "C": 0.0445,
+        "D": 0.8841
+      },
+      "latency_ms": 1816,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5963,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0627,
+        "B": 0.1679,
+        "C": 0.0052,
+        "D": 0.7642
+      },
+      "latency_ms": 265,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0126,
+      "answer": "D",
+      "probabilities": {
+        "B": 0.4937,
+        "D": 0.5063
+      },
+      "latency_ms": 2611,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6746,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7886,
+        "B": 0.0974,
+        "D": 0.114
+      },
+      "latency_ms": 314,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7223,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "B": 1,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 0.9582999999999999,
+    "B": 1.7025,
+    "C": 0.049699999999999994,
+    "D": 2.2896
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "status": "ok",
+  "question": "A 35-year-old man comes to the emergency department with acute shortness of breath that developed after a 10-hour international flight. His pulse is 124/min and pulse oximetry on room air shows an oxygen saturation of 90%. He weighs 50-kg (110-lb). A diagnosis of pulmonary embolism is suspected and intravenous heparin is initiated. If the volume of distribution of heparin is equivalent to 60 mL/kg and the target peak plasma concentration is 0.5 units/mL, which of the following is the most appropriate loading dose for this patient?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-935",
+  "test_id": "test-01027",
+  "mc_prompt": "Q: A 35-year-old man comes to the emergency department with acute shortness of breath that developed after a 10-hour international flight. His pulse is 124/min and pulse oximetry on room air shows an oxygen saturation of 90%. He weighs 50-kg (110-lb). A diagnosis of pulmonary embolism is suspected and intravenous heparin is initiated. If the volume of distribution of heparin is equivalent to 60 mL/kg and the target peak plasma concentration is 0.5 units/mL, which of the following is the most appropriate loading dose for this patient?\nA) 3,000 units\nB) 1,500 units\nC) 6,000 units\nD) Cannot be calculated, as bioavailability is not known\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.3067,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5402,
+        "B": 0.1157,
+        "C": 0.2335,
+        "D": 0.1106
+      },
+      "latency_ms": 2348,
+      "worker_idx": 0,
+      "raw_response": "To"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5392,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0471,
+        "B": 0.0887,
+        "C": 0.7017,
+        "D": 0.1625
+      },
+      "latency_ms": 2153,
+      "worker_idx": 1,
+      "raw_response": "To"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4851,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6596,
+        "B": 0.1156,
+        "C": 0.1745,
+        "D": 0.0503
+      },
+      "latency_ms": 370,
+      "worker_idx": 2,
+      "raw_response": "Answer"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0038,
+      "answer": "D",
+      "probabilities": {
+        "B": 0.0146,
+        "C": 0.4908,
+        "D": 0.4946
+      },
+      "latency_ms": 2167,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0
+      },
+      "latency_ms": 402,
+      "worker_idx": 4,
+      "raw_response": "To"
+    }
+  ],
+  "total_latency_ms": 7441,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 3,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 2.2469,
+    "B": 0.3346,
+    "C": 1.6005000000000003,
+    "D": 0.8180000000000001
+  }
+}

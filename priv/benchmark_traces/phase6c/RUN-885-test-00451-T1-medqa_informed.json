@@ -1,0 +1,108 @@
+{
+  "status": "ok",
+  "question": "A 63-year-old man is aiming to improve his health by eating a well balanced diet, walking daily, and quitting smoking following a 45-year smoking history. While on his daily walks he notices a strong cramping pain in his calves that consistently appears after a mile of walking. He sees his physician and a diagnosis of peripheral artery disease with intermittent claudication is made. To improve his symptoms, cilostazol is prescribed. What is the mechanism of action of this medication?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-885",
+  "test_id": "test-00451",
+  "mc_prompt": "Q: A 63-year-old man is aiming to improve his health by eating a well balanced diet, walking daily, and quitting smoking following a 45-year smoking history. While on his daily walks he notices a strong cramping pain in his calves that consistently appears after a mile of walking. He sees his physician and a diagnosis of peripheral artery disease with intermittent claudication is made. To improve his symptoms, cilostazol is prescribed. What is the mechanism of action of this medication?\nA) Irreversible cyclooxygenase inhibitor\nB) Thromboxane synthase inhibitor\nC) Adenosine diphosphate receptor inhibitor\nD) Phosphodiesterase inhibitor\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9115,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0347,
+        "B": 0.0034,
+        "C": 0.0157,
+        "D": 0.9462
+      },
+      "latency_ms": 2049,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8434,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0004,
+        "B": 0.0005,
+        "C": 0.0779,
+        "D": 0.9213
+      },
+      "latency_ms": 2093,
+      "worker_idx": 1,
+      "raw_response": "D"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7598,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8249,
+        "B": 0.0496,
+        "C": 0.0651,
+        "D": 0.0604
+      },
+      "latency_ms": 305,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9962,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0008,
+        "B": 0.9974,
+        "C": 0.0012,
+        "D": 0.0006
+      },
+      "latency_ms": 2361,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6711,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1625,
+        "B": 0.0016,
+        "C": 0.8336,
+        "D": 0.0023
+      },
+      "latency_ms": 362,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7171,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "D",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 1.0233,
+    "B": 1.0525,
+    "C": 0.9935,
+    "D": 1.9308
+  }
+}

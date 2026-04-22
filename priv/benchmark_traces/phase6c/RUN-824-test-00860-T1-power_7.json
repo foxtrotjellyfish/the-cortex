@@ -1,0 +1,134 @@
+{
+  "status": "ok",
+  "question": "A 24-year-old woman delivers a baby at term. The Apgar counts are 9 and 10 at 1 and 5 minutes, respectively. Thirty minutes after delivery, the mother’s blood pressure drops to 80/60 mm Hg and her pulse is 124/min. On physical examination, her distal extremities are clammy and cold, and the uterus is boggy. Aggressive fluid resuscitation is initiated. After administering 4 units of IV fluids and 4 units of whole blood, her vitals stabilize. The next morning, she says she is unable to lactate when she tries to breastfeed her child. Which of the following is the most likely cause of the failure of lactation in this patient?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-824",
+  "test_id": "test-00860",
+  "mc_prompt": "Q: A 24-year-old woman delivers a baby at term. The Apgar counts are 9 and 10 at 1 and 5 minutes, respectively. Thirty minutes after delivery, the mother’s blood pressure drops to 80/60 mm Hg and her pulse is 124/min. On physical examination, her distal extremities are clammy and cold, and the uterus is boggy. Aggressive fluid resuscitation is initiated. After administering 4 units of IV fluids and 4 units of whole blood, her vitals stabilize. The next morning, she says she is unable to lactate when she tries to breastfeed her child. Which of the following is the most likely cause of the failure of lactation in this patient?\nA) Pituitary tumor\nB) Remains of placenta in uterus\nC) Pituitary infarction\nD) Pituitary hemorrhage\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "D",
+  "majority_votes": 4,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.1999,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0568,
+        "B": 0.112,
+        "C": 0.3157,
+        "D": 0.5156
+      },
+      "latency_ms": 2195,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.3461,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0719,
+        "C": 0.6371,
+        "D": 0.291
+      },
+      "latency_ms": 271,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0997,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2191,
+        "B": 0.2746,
+        "C": 0.3743,
+        "D": 0.132
+      },
+      "latency_ms": 1886,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.687,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0203,
+        "B": 0.1464,
+        "D": 0.8334
+      },
+      "latency_ms": 2499,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.75,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0681,
+        "B": 0.0628,
+        "C": 0.051,
+        "D": 0.8181
+      },
+      "latency_ms": 802,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.39,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0918,
+        "B": 0.2033,
+        "C": 0.5933,
+        "D": 0.1117
+      },
+      "latency_ms": 827,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1628,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0003,
+        "B": 0.0001,
+        "C": 0.5812,
+        "D": 0.4184
+      },
+      "latency_ms": 351,
+      "worker_idx": 6,
+      "raw_response": "C"
+    }
+  ],
+  "total_latency_ms": 8832,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "C": 4,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 0.5283,
+    "B": 0.7992,
+    "C": 2.5526,
+    "D": 3.1202
+  }
+}

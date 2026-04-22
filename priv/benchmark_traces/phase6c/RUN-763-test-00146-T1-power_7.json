@@ -1,0 +1,131 @@
+{
+  "status": "ok",
+  "question": "A 60-year-old man is referred to a dermatologist by his family physician for management of a rare case of dermatitis that has not responded to standard therapy with corticosteroids. The patient’s medical history is unremarkable, and he is currently working reduced hours at his job as an accountant. Physical examination reveals confluent scaly patches, plaques, and generalized erythroderma along the torso and lower extremities (see image). There is also a solid skin lesion with a diameter greater than 1 cm. The dermatologist suspects a malignancy and orders a biopsy. Which of the following is the most accurate description of this condition?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-763",
+  "test_id": "test-00146",
+  "mc_prompt": "Q: A 60-year-old man is referred to a dermatologist by his family physician for management of a rare case of dermatitis that has not responded to standard therapy with corticosteroids. The patient’s medical history is unremarkable, and he is currently working reduced hours at his job as an accountant. Physical examination reveals confluent scaly patches, plaques, and generalized erythroderma along the torso and lower extremities (see image). There is also a solid skin lesion with a diameter greater than 1 cm. The dermatologist suspects a malignancy and orders a biopsy. Which of the following is the most accurate description of this condition?\nA) Vascular tumor containing spindle cells\nB) Tumor arising from the folliculosebaceous–apocrine germ\nC) Tumor arising from cutaneous T cells\nD) Tumor arising from epidermal keratinocytes\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 5,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.5694,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0916,
+        "B": 0.0288,
+        "C": 0.1551,
+        "D": 0.7245
+      },
+      "latency_ms": 2182,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9776,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0112,
+        "D": 0.9888
+      },
+      "latency_ms": 256,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4693,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2196,
+        "B": 0.0499,
+        "C": 0.0416,
+        "D": 0.6889
+      },
+      "latency_ms": 1894,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.938,
+      "answer": "D",
+      "probabilities": {
+        "C": 0.031,
+        "D": 0.969
+      },
+      "latency_ms": 2544,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1513,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0176,
+        "B": 0.3064,
+        "C": 0.4577,
+        "D": 0.2182
+      },
+      "latency_ms": 823,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2185,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3216,
+        "B": 0.1384,
+        "C": 0.5401
+      },
+      "latency_ms": 819,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9601,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0188,
+        "B": 0.0005,
+        "C": 0.0018,
+        "D": 0.9789
+      },
+      "latency_ms": 390,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 8908,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "C": 2,
+    "D": 5
+  },
+  "weighted_scores": {
+    "A": 0.6804,
+    "B": 0.5239999999999999,
+    "C": 1.2273,
+    "D": 4.5683
+  }
+}

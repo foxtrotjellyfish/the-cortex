@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "question": "A 28-year-old woman presents to her primary care physician for evaluation of amenorrhea. Her last period occurred 4 months ago but she has not had sex in the last year and home pregnancy tests have come back negative. She first started having periods at age 13 and her periods have been unremarkable up until they stopped 4 months ago. Her past medical history is significant for radius and ulnar forearm fractures that she sustained in a car crash 3 months ago. She didn't see the car coming and has had increasing difficulty noticing objects in her peripheral vision. She also notes having recurrent headaches 5 months ago. Otherwise she has been healthy with no previous pregnancies. Physical exam reveals galactorrhea and temporal field visual defects. Which of the following mechanisms is most likely responsible for this patient's amenorrhea?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-819",
+  "test_id": "test-00827",
+  "mc_prompt": "Q: A 28-year-old woman presents to her primary care physician for evaluation of amenorrhea. Her last period occurred 4 months ago but she has not had sex in the last year and home pregnancy tests have come back negative. She first started having periods at age 13 and her periods have been unremarkable up until they stopped 4 months ago. Her past medical history is significant for radius and ulnar forearm fractures that she sustained in a car crash 3 months ago. She didn't see the car coming and has had increasing difficulty noticing objects in her peripheral vision. She also notes having recurrent headaches 5 months ago. Otherwise she has been healthy with no previous pregnancies. Physical exam reveals galactorrhea and temporal field visual defects. Which of the following mechanisms is most likely responsible for this patient's amenorrhea?\nA) Inhibition of gonadotropin-releasing hormone release\nB) Intrauterine scar tissue accumulation\nC) Nondisjunction of chromosomes\nD) Nutritional imbalance\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 5,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9547,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9738,
+        "B": 0.0191,
+        "D": 0.007
+      },
+      "latency_ms": 2512,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9367,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9668,
+        "B": 0.0019,
+        "C": 0.0011,
+        "D": 0.0301
+      },
+      "latency_ms": 272,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7664,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.848,
+        "B": 0.0816,
+        "C": 0.0638,
+        "D": 0.0066
+      },
+      "latency_ms": 1893,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9936,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9968,
+        "C": 0.0032
+      },
+      "latency_ms": 2498,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.4177,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1749,
+        "B": 0.1505,
+        "C": 0.082,
+        "D": 0.5926
+      },
+      "latency_ms": 824,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2422,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1987,
+        "B": 0.2796,
+        "C": 0.5218
+      },
+      "latency_ms": 834,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.482,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7387,
+        "B": 0.0021,
+        "C": 0.0024,
+        "D": 0.2567
+      },
+      "latency_ms": 408,
+      "worker_idx": 6,
+      "raw_response": "A"
+    }
+  ],
+  "total_latency_ms": 9242,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 5,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 4.8976999999999995,
+    "B": 0.5347999999999999,
+    "C": 0.6743,
+    "D": 0.893
+  }
+}

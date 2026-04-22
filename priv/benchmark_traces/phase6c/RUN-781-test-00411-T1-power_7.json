@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "question": "An 8-year-old girl presents to her pediatrician with intensely pruritic lesions over her buttocks, as shown. These lesions occur intermittently but have worsened over time. Her medical history is remarkable for iron deficiency, for which she is on ferrous sulfate. The patient has also experienced intermittent episodes of mild diarrhea, previously diagnosed as lactose intolerance. Her height is at the 30th percentile and weight is at the 25th percentile for age and sex. An immunoglobulin A (IgA) tissue transglutaminase titer is 5 times the upper limit of normal. Which of the following is the most likely cause of this patient's condition?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-781",
+  "test_id": "test-00411",
+  "mc_prompt": "Q: An 8-year-old girl presents to her pediatrician with intensely pruritic lesions over her buttocks, as shown. These lesions occur intermittently but have worsened over time. Her medical history is remarkable for iron deficiency, for which she is on ferrous sulfate. The patient has also experienced intermittent episodes of mild diarrhea, previously diagnosed as lactose intolerance. Her height is at the 30th percentile and weight is at the 25th percentile for age and sex. An immunoglobulin A (IgA) tissue transglutaminase titer is 5 times the upper limit of normal. Which of the following is the most likely cause of this patient's condition?\nA) Crohn’s disease\nB) Celiac disease\nC) Common variable immune deficiency\nD) Henoch-Schonlein purpura\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9853,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0056,
+        "B": 0.9909,
+        "D": 0.0035
+      },
+      "latency_ms": 2107,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9972,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.001,
+        "C": 0.9982,
+        "D": 0.0008
+      },
+      "latency_ms": 268,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7027,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.057,
+        "B": 0.8168,
+        "C": 0.0121,
+        "D": 0.1141
+      },
+      "latency_ms": 1911,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.991,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.9955,
+        "C": 0.0045
+      },
+      "latency_ms": 2533,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0849,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4156,
+        "B": 0.3307,
+        "C": 0.1533,
+        "D": 0.1003
+      },
+      "latency_ms": 864,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2928,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.2875,
+        "C": 0.5803,
+        "D": 0.1322
+      },
+      "latency_ms": 840,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7424,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1136,
+        "B": 0.0034,
+        "C": 0.027,
+        "D": 0.856
+      },
+      "latency_ms": 353,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 8876,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "B": 3,
+    "C": 2,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 0.5928,
+    "B": 3.4248000000000007,
+    "C": 1.7753999999999999,
+    "D": 1.2069
+  }
+}

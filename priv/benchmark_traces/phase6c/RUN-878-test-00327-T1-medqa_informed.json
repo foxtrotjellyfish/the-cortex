@@ -1,0 +1,101 @@
+{
+  "status": "ok",
+  "question": "A 22-year-old man from Nepal presents to the emergency department complaining of swelling and pain in his right testicle. The patient states that he just arrived in the United States to live with his wife, with whom he is monogamous. The patient denies painful urination or urethral discharge, but admits that 10 days ago he “felt like he had a fever” and the right side of his face was swollen and painful. Which of the following is characteristic of the most likely diagnosis?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-878",
+  "test_id": "test-00327",
+  "mc_prompt": "Q: A 22-year-old man from Nepal presents to the emergency department complaining of swelling and pain in his right testicle. The patient states that he just arrived in the United States to live with his wife, with whom he is monogamous. The patient denies painful urination or urethral discharge, but admits that 10 days ago he “felt like he had a fever” and the right side of his face was swollen and painful. Which of the following is characteristic of the most likely diagnosis?\nA) Preventable by a live attenuated vaccine\nB) Original presentation in the form of a painless chancre\nC) Cause buboes in the inguinal lymph nodes\nD) Is a common cause of septic arthritis in this patient’s age group\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.2649,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2494,
+        "B": 0.1592,
+        "C": 0.5143,
+        "D": 0.0771
+      },
+      "latency_ms": 2341,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3576,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0076,
+        "B": 0.0111,
+        "C": 0.6694,
+        "D": 0.3118
+      },
+      "latency_ms": 2126,
+      "worker_idx": 1,
+      "raw_response": "C"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1271,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3198,
+        "B": 0.0286,
+        "C": 0.4469,
+        "D": 0.2047
+      },
+      "latency_ms": 338,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "C",
+      "probabilities": {
+        "C": 1.0
+      },
+      "latency_ms": 2662,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.781,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8905,
+        "B": 0.1095
+      },
+      "latency_ms": 417,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7888,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "C": 4
+  },
+  "weighted_scores": {
+    "A": 1.4672999999999998,
+    "B": 0.3084,
+    "C": 2.6306000000000003,
+    "D": 0.5936
+  }
+}

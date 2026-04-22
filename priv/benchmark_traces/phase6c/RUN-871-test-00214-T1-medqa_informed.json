@@ -1,0 +1,104 @@
+{
+  "status": "ok",
+  "question": "A 35-year-old female is brought to the emergency department after being found unconscious. The patient is found to have a blood glucose level of 35 mg/dL. Hgb A1c was found to be 5.1%. C-peptide level was found to be decreased. The patient returned to her baseline after glucose replacement. She states that she has never had an episode like this before. She has no significant past medical history but reports a family history of diabetes in her mother. She states that she has been undergoing a difficult divorce over the past few months. What is the likely cause of this patient's condition?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-871",
+  "test_id": "test-00214",
+  "mc_prompt": "Q: A 35-year-old female is brought to the emergency department after being found unconscious. The patient is found to have a blood glucose level of 35 mg/dL. Hgb A1c was found to be 5.1%. C-peptide level was found to be decreased. The patient returned to her baseline after glucose replacement. She states that she has never had an episode like this before. She has no significant past medical history but reports a family history of diabetes in her mother. She states that she has been undergoing a difficult divorce over the past few months. What is the likely cause of this patient's condition?\nA) Insulinoma\nB) Factitious disorder\nC) Hypothyroidism\nD) Somatization disorder\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.2993,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3078,
+        "B": 0.6071,
+        "D": 0.0851
+      },
+      "latency_ms": 2543,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4641,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1602,
+        "B": 0.1162,
+        "C": 0.6243,
+        "D": 0.0993
+      },
+      "latency_ms": 2401,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0039,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.4555,
+        "B": 0.4594,
+        "C": 0.0535,
+        "D": 0.0317
+      },
+      "latency_ms": 330,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9831,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9888,
+        "B": 0.0055,
+        "D": 0.0057
+      },
+      "latency_ms": 2631,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5396,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7322,
+        "C": 0.1926,
+        "D": 0.0753
+      },
+      "latency_ms": 371,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8276,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 2,
+    "C": 1
+  },
+  "weighted_scores": {
+    "A": 2.6445,
+    "B": 1.1882,
+    "C": 0.8704,
+    "D": 0.29710000000000003
+  }
+}

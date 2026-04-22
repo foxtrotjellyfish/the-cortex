@@ -1,0 +1,103 @@
+{
+  "status": "ok",
+  "question": "An 11-year-old boy presents to your office with pitting edema and proteinuria exceeding 3.5g in 24 hours. You suspect that this patient has experienced a loss of polyanions in his glomerular basement membranes. Which of the following findings would confirm your diagnosis?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-895",
+  "test_id": "test-00574",
+  "mc_prompt": "Q: An 11-year-old boy presents to your office with pitting edema and proteinuria exceeding 3.5g in 24 hours. You suspect that this patient has experienced a loss of polyanions in his glomerular basement membranes. Which of the following findings would confirm your diagnosis?\nA) WBC casts in the urine\nB) Selective albuminuria\nC) Negatively birefringent crystals in the urine\nD) Bence-Jones proteinuria\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4687,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7001,
+        "B": 0.0685,
+        "D": 0.2314
+      },
+      "latency_ms": 1981,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7319,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0554,
+        "B": 0.8101,
+        "C": 0.0782,
+        "D": 0.0563
+      },
+      "latency_ms": 2101,
+      "worker_idx": 1,
+      "raw_response": "B"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8809,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0217,
+        "B": 0.9276,
+        "C": 0.0467,
+        "D": 0.004
+      },
+      "latency_ms": 264,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9898,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.9949,
+        "C": 0.0051
+      },
+      "latency_ms": 2372,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1575,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.434,
+        "B": 0.0625,
+        "C": 0.227,
+        "D": 0.2765
+      },
+      "latency_ms": 330,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7048,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 3
+  },
+  "weighted_scores": {
+    "A": 1.2112,
+    "B": 2.8636,
+    "C": 0.357,
+    "D": 0.5682
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "status": "ok",
+  "question": "A 19-year-old man with a past medical history significant only for facial acne presents with increased inguinal pruritis. Relevant social history includes participation in school wrestling. He has no significant family history. Other than the pruritic rash, a review of systems is negative. On physical examination, there is an erythematous, well-demarcated patch on his left thigh, over his pubic region, and throughout the perineum. The scrotum is spared. Which of the following is the most likely diagnosis?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-905",
+  "test_id": "test-00671",
+  "mc_prompt": "Q: A 19-year-old man with a past medical history significant only for facial acne presents with increased inguinal pruritis. Relevant social history includes participation in school wrestling. He has no significant family history. Other than the pruritic rash, a review of systems is negative. On physical examination, there is an erythematous, well-demarcated patch on his left thigh, over his pubic region, and throughout the perineum. The scrotum is spared. Which of the following is the most likely diagnosis?\nA) Tinea corporis\nB) Tinea cruris\nC) Candidal balanitis\nD) Tinea unguium\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9224,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0365,
+        "B": 0.9589,
+        "D": 0.0047
+      },
+      "latency_ms": 2004,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3949,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.281,
+        "B": 0.6759,
+        "C": 0.0349,
+        "D": 0.0082
+      },
+      "latency_ms": 2098,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0842,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3997,
+        "B": 0.0012,
+        "C": 0.4839,
+        "D": 0.1153
+      },
+      "latency_ms": 312,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9808,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0051,
+        "B": 0.9878,
+        "C": 0.007
+      },
+      "latency_ms": 2377,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.803,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0985,
+        "B": 0.9015
+      },
+      "latency_ms": 354,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7146,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "B": 4,
+    "C": 1
+  },
+  "weighted_scores": {
+    "A": 0.8208000000000001,
+    "B": 3.5253,
+    "C": 0.5258,
+    "D": 0.1282
+  }
+}

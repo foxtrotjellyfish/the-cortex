@@ -1,0 +1,116 @@
+{
+  "status": "ok",
+  "question": "A 28-year-old woman comes to the obstetrics and gynecology clinic because she has been unsuccessfully trying to conceive with her husband for the last 2 years. He has had 2 children from a previous marriage and has been tested for causes of male infertility. She has had prior abdominal surgery as well as a family history of endocrine abnormalities. Based on this history, a panel of tests are obtained and treatment is started. This treatment will be administered intermittently one week before her normal menstrual cycle. If the most likely drug prescribed in this case was administered in a different manner, which of the following conditions may also be treated by this drug?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-666",
+  "test_id": "test-00198",
+  "mc_prompt": "Q: A 28-year-old woman comes to the obstetrics and gynecology clinic because she has been unsuccessfully trying to conceive with her husband for the last 2 years. He has had 2 children from a previous marriage and has been tested for causes of male infertility. She has had prior abdominal surgery as well as a family history of endocrine abnormalities. Based on this history, a panel of tests are obtained and treatment is started. This treatment will be administered intermittently one week before her normal menstrual cycle. If the most likely drug prescribed in this case was administered in a different manner, which of the following conditions may also be treated by this drug?\nA) Diabetes\nB) Parkinson disease\nC) Polycystic ovarian syndrome\nD) Prostate cancer\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 5,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7257,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0738,
+        "B": 0.083,
+        "C": 0.8087,
+        "D": 0.0345
+      },
+      "latency_ms": 507,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.1673,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0108,
+        "C": 0.5782,
+        "D": 0.4109
+      },
+      "latency_ms": 223,
+      "worker_idx": 1,
+      "raw_response": "Based"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1103,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.4341,
+        "B": 0.0019,
+        "C": 0.5444,
+        "D": 0.0196
+      },
+      "latency_ms": 1853,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "C",
+      "probabilities": {
+        "C": 1.0
+      },
+      "latency_ms": 2200,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.3744,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1892,
+        "B": 0.0833,
+        "C": 0.1639,
+        "D": 0.5636
+      },
+      "latency_ms": 803,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.3652,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1736,
+        "B": 0.2306,
+        "C": 0.5958
+      },
+      "latency_ms": 797,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6383,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "D",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "C": 5,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 0.8815,
+    "B": 0.39880000000000004,
+    "C": 3.6910000000000003,
+    "D": 1.0286
+  }
+}

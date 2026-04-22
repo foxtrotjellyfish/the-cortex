@@ -1,0 +1,130 @@
+{
+  "status": "ok",
+  "question": "A 31-year-old male comes to your office for his annual exam. He states that he received all of his recommended vaccinations prior to beginning college, but has not had any vaccines in the past 13 years. His medical history is significant for intermittent, exercise-induced asthma. He has been sexually active in the past with multiple female partners. In addition to an influenza vaccine, which vaccine should be administered to this patient during this visit?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-844",
+  "test_id": "test-01133",
+  "mc_prompt": "Q: A 31-year-old male comes to your office for his annual exam. He states that he received all of his recommended vaccinations prior to beginning college, but has not had any vaccines in the past 13 years. His medical history is significant for intermittent, exercise-induced asthma. He has been sexually active in the past with multiple female partners. In addition to an influenza vaccine, which vaccine should be administered to this patient during this visit?\nA) Pneumococcal vaccine\nB) Tetanus, diphtheria, and acellular pertussis booster (Tdap) vaccine\nC) Haemophilus influenza B (HIB) vaccine\nD) Human papillomavirus (HPV) vaccine\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4521,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1707,
+        "B": 0.1886,
+        "D": 0.6407
+      },
+      "latency_ms": 2044,
+      "worker_idx": 0,
+      "raw_response": "B"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.771,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8855,
+        "D": 0.1145
+      },
+      "latency_ms": 184,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5333,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1804,
+        "B": 0.7137,
+        "C": 0.0666,
+        "D": 0.0393
+      },
+      "latency_ms": 2117,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2312,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6156,
+        "D": 0.3844
+      },
+      "latency_ms": 2368,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.5229,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1609,
+        "B": 0.0862,
+        "C": 0.0692,
+        "D": 0.6838
+      },
+      "latency_ms": 757,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "C",
+      "probabilities": {
+        "C": 1.0
+      },
+      "latency_ms": 759,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9982,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0007,
+        "B": 0.0004,
+        "C": 0.0,
+        "D": 0.9989
+      },
+      "latency_ms": 314,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 8543,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 1,
+    "C": 1,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 2.0138000000000003,
+    "B": 0.9888999999999999,
+    "C": 1.1358,
+    "D": 2.8616
+  }
+}

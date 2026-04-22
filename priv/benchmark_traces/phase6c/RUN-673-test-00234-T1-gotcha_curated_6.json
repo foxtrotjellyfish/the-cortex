@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "question": "A 55-year-old man comes to the physician because of a 3-month history of a progressively growing mass in his axilla. During this period, he has had recurrent episodes of low-grade fever lasting for 7 to 10 days, and an 8-kg (18-lb) weight loss. His only medication is a multivitamin. Physical examination shows nontender, right axillary, cervical, and inguinal lymphadenopathy. His serum calcium concentration is 15.1 mg/dL and parathyroid hormone (PTH) concentration is 9 pg/mL. A lymph node biopsy shows granuloma formation and large CD15-positive, CD30-positive cells with bilobed nuclei. Which of the following is the most likely explanation for this patient's laboratory findings?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-673",
+  "test_id": "test-00234",
+  "mc_prompt": "Q: A 55-year-old man comes to the physician because of a 3-month history of a progressively growing mass in his axilla. During this period, he has had recurrent episodes of low-grade fever lasting for 7 to 10 days, and an 8-kg (18-lb) weight loss. His only medication is a multivitamin. Physical examination shows nontender, right axillary, cervical, and inguinal lymphadenopathy. His serum calcium concentration is 15.1 mg/dL and parathyroid hormone (PTH) concentration is 9 pg/mL. A lymph node biopsy shows granuloma formation and large CD15-positive, CD30-positive cells with bilobed nuclei. Which of the following is the most likely explanation for this patient's laboratory findings?\nA) Excessive intake of dietary ergocalciferol\nB) Induction of focal osteolysis by tumor cells\nC) Secretion of γ-interferon by activated T-lymphocytes\nD) Production of PTH-related peptide by malignant cells\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 5,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6863,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1,
+        "B": 0.0461,
+        "C": 0.0675,
+        "D": 0.7863
+      },
+      "latency_ms": 729,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9375,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0013,
+        "B": 0.0306,
+        "D": 0.9681
+      },
+      "latency_ms": 272,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9618,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0057,
+        "B": 0.0143,
+        "C": 0.0039,
+        "D": 0.9761
+      },
+      "latency_ms": 1916,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1774,
+      "answer": "D",
+      "probabilities": {
+        "B": 0.2506,
+        "C": 0.286,
+        "D": 0.4634
+      },
+      "latency_ms": 2036,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.643,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1036,
+        "B": 0.1017,
+        "C": 0.048,
+        "D": 0.7466
+      },
+      "latency_ms": 847,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1025,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1897,
+        "B": 0.3539,
+        "C": 0.4564
+      },
+      "latency_ms": 861,
+      "worker_idx": 5,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 6661,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "C": 1,
+    "D": 5
+  },
+  "weighted_scores": {
+    "A": 0.4003,
+    "B": 0.7972,
+    "C": 0.8617999999999999,
+    "D": 3.9405
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "status": "ok",
+  "question": "A 22-year-old female college student is treated with metronidazole after presenting to student health services with itching, discharge, and pain in her vagina. At a party shortly afterward she experiences facial flushing, nausea, tachycardia, dyspnea, headache, and abdominal cramps after consuming alcohol. Serum levels of which of the following are likely elevated in this patient following alcohol consumption:",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-853",
+  "test_id": "test-00061",
+  "mc_prompt": "Q: A 22-year-old female college student is treated with metronidazole after presenting to student health services with itching, discharge, and pain in her vagina. At a party shortly afterward she experiences facial flushing, nausea, tachycardia, dyspnea, headache, and abdominal cramps after consuming alcohol. Serum levels of which of the following are likely elevated in this patient following alcohol consumption:\nA) Acetaldehyde\nB) Uric acid\nC) Cytochrome P-450 enzymes\nD) Amylase\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.2201,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2161,
+        "B": 0.502,
+        "C": 0.2819
+      },
+      "latency_ms": 2264,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9805,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9887,
+        "B": 0.0013,
+        "C": 0.0082,
+        "D": 0.0019
+      },
+      "latency_ms": 2387,
+      "worker_idx": 1,
+      "raw_response": "A"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9958,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9975,
+        "B": 0.0017,
+        "C": 0.0007,
+        "D": 0.0001
+      },
+      "latency_ms": 285,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9756,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9878,
+        "C": 0.0122
+      },
+      "latency_ms": 2598,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9816,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9908,
+        "B": 0.0092
+      },
+      "latency_ms": 325,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7861,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 4,
+    "B": 1
+  },
+  "weighted_scores": {
+    "A": 4.1809,
+    "B": 0.5142,
+    "C": 0.30299999999999994,
+    "D": 0.002
+  }
+}

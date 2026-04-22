@@ -1,0 +1,102 @@
+{
+  "status": "ok",
+  "question": "An 11-month-old boy is brought to the emergency department by his mother after she observed jerking movements of his arms and legs for about 30 seconds earlier that morning. He has not had fever, cough, or a runny nose. He has been healthy, except for occasional eczema. He was delivered at home in Romania. His mother had no prenatal care. She reports that he has required more time to reach developmental milestones compared to his older brother. The patient's immunization records are not available. He takes no medications. He appears pale with blue eyes and has a musty odor. He has poor eye contact. Which of the following would have most likely prevented the patient's symptoms?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-933",
+  "test_id": "test-00987",
+  "mc_prompt": "Q: An 11-month-old boy is brought to the emergency department by his mother after she observed jerking movements of his arms and legs for about 30 seconds earlier that morning. He has not had fever, cough, or a runny nose. He has been healthy, except for occasional eczema. He was delivered at home in Romania. His mother had no prenatal care. She reports that he has required more time to reach developmental milestones compared to his older brother. The patient's immunization records are not available. He takes no medications. He appears pale with blue eyes and has a musty odor. He has poor eye contact. Which of the following would have most likely prevented the patient's symptoms?\nA) Levothyroxine therapy during pregnancy\nB) Dietary restriction of phenylalanine\nC) Daily allopurinol intake\nD) Avoidance of fasting states\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8881,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0391,
+        "B": 0.9272,
+        "C": 0.0014,
+        "D": 0.0322
+      },
+      "latency_ms": 2641,
+      "worker_idx": 0,
+      "raw_response": "B"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3289,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2882,
+        "B": 0.0425,
+        "C": 0.0522,
+        "D": 0.6171
+      },
+      "latency_ms": 2173,
+      "worker_idx": 1,
+      "raw_response": "D"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8423,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8981,
+        "B": 0.0558,
+        "C": 0.0298,
+        "D": 0.0164
+      },
+      "latency_ms": 346,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0
+      },
+      "latency_ms": 2714,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1118,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.4441,
+        "B": 0.5559
+      },
+      "latency_ms": 420,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8294,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 2,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 2.6695,
+    "B": 1.5814,
+    "C": 0.0834,
+    "D": 0.6657
+  }
+}

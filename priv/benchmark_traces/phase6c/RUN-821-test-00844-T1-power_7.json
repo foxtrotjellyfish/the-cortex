@@ -1,0 +1,135 @@
+{
+  "status": "ok",
+  "question": "A 14-year-old girl comes to the physician because she has not yet had her period. She is at the 10th percentile for height and 25th percentile for weight. Examination shows a broad chest with widely spaced nipples, a low posterior hairline, forearms angled 20° away from the body when fully extended, and shortened fourth metacarpals bilaterally. Sexual development is Tanner stage 1. Which of the following statements about this patient's fertility is most accurate?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-821",
+  "test_id": "test-00844",
+  "mc_prompt": "Q: A 14-year-old girl comes to the physician because she has not yet had her period. She is at the 10th percentile for height and 25th percentile for weight. Examination shows a broad chest with widely spaced nipples, a low posterior hairline, forearms angled 20° away from the body when fully extended, and shortened fourth metacarpals bilaterally. Sexual development is Tanner stage 1. Which of the following statements about this patient's fertility is most accurate?\nA) Pregnancy success rate with donor oocytes is similar to patients with primary ovarian failure\nB) Administration of gonadotropins will increase the chances of conceiving\nC) Impaired tubal ciliary function will prevent natural fertilization\nD) The majority of patients become pregnant without medical assistance\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.2675,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2809,
+        "B": 0.1476,
+        "C": 0.5484,
+        "D": 0.023
+      },
+      "latency_ms": 2403,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9876,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0023,
+        "B": 0.9912,
+        "C": 0.0036,
+        "D": 0.0029
+      },
+      "latency_ms": 251,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1194,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3101,
+        "B": 0.4295,
+        "C": 0.2078,
+        "D": 0.0526
+      },
+      "latency_ms": 1853,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3756,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6878,
+        "C": 0.3122
+      },
+      "latency_ms": 2470,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.3032,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2022,
+        "B": 0.1507,
+        "C": 0.1417,
+        "D": 0.5054
+      },
+      "latency_ms": 809,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.177,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1226,
+        "B": 0.5272,
+        "C": 0.3502
+      },
+      "latency_ms": 809,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7135,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0255,
+        "B": 0.1189,
+        "C": 0.0232,
+        "D": 0.8324
+      },
+      "latency_ms": 354,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 8949,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "B": 3,
+    "C": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 1.6314,
+    "B": 2.3651,
+    "C": 1.5871,
+    "D": 1.4163000000000001
+  }
+}

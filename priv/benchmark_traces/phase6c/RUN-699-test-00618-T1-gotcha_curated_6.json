@@ -1,0 +1,116 @@
+{
+  "status": "ok",
+  "question": "A 48-year-old man is brought to the emergency department by his son with a fever over the past day. The patient’s son adds that his father has been having some behavioral problems, as well, and that he was complaining about bugs crawling over his skin this morning even though there were no insects. Past medical history is unremarkable. No current medications. The patient was an alcoholic for several years but abruptly quit drinking 5 days ago. The patient’s temperature is 40.0°C (104.0°F), pulse is 130/min, blood pressure is 146/88 mm Hg, and respiratory rate is 24/min. On physical examination, he is confused, restless, agitated, and lacks orientation to time, place or person. Which of the following the most appropriate initial course of treatment of this patient?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-699",
+  "test_id": "test-00618",
+  "mc_prompt": "Q: A 48-year-old man is brought to the emergency department by his son with a fever over the past day. The patient’s son adds that his father has been having some behavioral problems, as well, and that he was complaining about bugs crawling over his skin this morning even though there were no insects. Past medical history is unremarkable. No current medications. The patient was an alcoholic for several years but abruptly quit drinking 5 days ago. The patient’s temperature is 40.0°C (104.0°F), pulse is 130/min, blood pressure is 146/88 mm Hg, and respiratory rate is 24/min. On physical examination, he is confused, restless, agitated, and lacks orientation to time, place or person. Which of the following the most appropriate initial course of treatment of this patient?\nA) Chlorpromazine\nB) Clonidine\nC) Diazepam\nD) Haloperidol\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.218,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0677,
+        "B": 0.3328,
+        "C": 0.0487,
+        "D": 0.5508
+      },
+      "latency_ms": 531,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9776,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0112,
+        "D": 0.9888
+      },
+      "latency_ms": 233,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7709,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0607,
+        "B": 0.0024,
+        "C": 0.8539,
+        "D": 0.083
+      },
+      "latency_ms": 1881,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2259,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0307,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.3387,
+        "B": 0.308,
+        "C": 0.2342,
+        "D": 0.1191
+      },
+      "latency_ms": 810,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.6091,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.1426,
+        "C": 0.7517,
+        "D": 0.1058
+      },
+      "latency_ms": 831,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6545,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "C": 2,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 0.4783,
+    "B": 0.7858,
+    "C": 1.8885,
+    "D": 2.8475
+  }
+}

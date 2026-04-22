@@ -1,0 +1,105 @@
+{
+  "status": "ok",
+  "question": "A 6-week-old male infant is brought to the physician by his mother because of a 2-day history of recurrent nonbilious vomiting. Vomiting occurs almost immediately after most feeds. Each time, he becomes irritable while feeding and refuses to finish the bottle. He was born at 37 weeks' gestation and weighed 3300 g (7 lb 4 oz); he currently weighs 4000 g (8 lb 13 oz). He has Down syndrome. His vaccinations are up-to-date. He appears agitated and cries during the examination. His temperature is 37.2°C (99°F), pulse is 156/min, respirations are 32/min, and blood pressure is 100/49 mm Hg. Examination shows upward slanting of the eyelids, a broad and flat nasal bridge, and a single transverse palmar crease on both hands. The abdomen is soft and nontender. A 2.5-cm (1-inch) epigastric mass is palpated. Cardiac examination shows no abnormalities. Arterial blood gas analysis is within normal limits. Further diagnostic evaluation of the patient is most likely to show which of the following?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-910",
+  "test_id": "test-00729",
+  "mc_prompt": "Q: A 6-week-old male infant is brought to the physician by his mother because of a 2-day history of recurrent nonbilious vomiting. Vomiting occurs almost immediately after most feeds. Each time, he becomes irritable while feeding and refuses to finish the bottle. He was born at 37 weeks' gestation and weighed 3300 g (7 lb 4 oz); he currently weighs 4000 g (8 lb 13 oz). He has Down syndrome. His vaccinations are up-to-date. He appears agitated and cries during the examination. His temperature is 37.2°C (99°F), pulse is 156/min, respirations are 32/min, and blood pressure is 100/49 mm Hg. Examination shows upward slanting of the eyelids, a broad and flat nasal bridge, and a single transverse palmar crease on both hands. The abdomen is soft and nontender. A 2.5-cm (1-inch) epigastric mass is palpated. Cardiac examination shows no abnormalities. Arterial blood gas analysis is within normal limits. Further diagnostic evaluation of the patient is most likely to show which of the following?\nA) Dilated colon segment on abdominal x-ray\nB) Detection of rotavirus antigen on enzyme immunoassay (EIA)\nC) Elongated and thickened pylorus on abdominal ultrasound\nD) Tripple bubble sign on abdominal x-ray\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.3422,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6199,
+        "B": 0.068,
+        "C": 0.0344,
+        "D": 0.2777
+      },
+      "latency_ms": 2697,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2538,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1229,
+        "B": 0.2114,
+        "C": 0.4652,
+        "D": 0.2005
+      },
+      "latency_ms": 2233,
+      "worker_idx": 1,
+      "raw_response": "A"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7433,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1051,
+        "B": 0.028,
+        "C": 0.0184,
+        "D": 0.8484
+      },
+      "latency_ms": 550,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3467,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2204,
+        "C": 0.5671,
+        "D": 0.2124
+      },
+      "latency_ms": 2619,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.508,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7393,
+        "C": 0.2313,
+        "D": 0.0294
+      },
+      "latency_ms": 610,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8709,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "C": 2,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.8075999999999999,
+    "B": 0.3074,
+    "C": 1.3164000000000002,
+    "D": 1.5684
+  }
+}

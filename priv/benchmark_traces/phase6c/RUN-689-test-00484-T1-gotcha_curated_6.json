@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "question": "A previously healthy 4-month-old girl is brought to the emergency department by her parents because she has not stopped crying for the past 5 hours. Her parents report that she has not eaten anything during this period and that they were unable to calm her down. She has not had any trauma. She was born at term via vaginal delivery and her delivery was uncomplicated. Her vital signs are within normal limits. Examination shows a reddened and swollen 2nd toe of the left foot. A photograph of the left foot is shown. Which of the following is the most likely diagnosis?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-689",
+  "test_id": "test-00484",
+  "mc_prompt": "Q: A previously healthy 4-month-old girl is brought to the emergency department by her parents because she has not stopped crying for the past 5 hours. Her parents report that she has not eaten anything during this period and that they were unable to calm her down. She has not had any trauma. She was born at term via vaginal delivery and her delivery was uncomplicated. Her vital signs are within normal limits. Examination shows a reddened and swollen 2nd toe of the left foot. A photograph of the left foot is shown. Which of the following is the most likely diagnosis?\nA) Raynaud phenomenon\nB) Ingrown toe nail\nC) Hair tourniquet syndrome\nD) Herpetic whitlow\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.1852,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.051,
+        "B": 0.5049,
+        "C": 0.3197,
+        "D": 0.1244
+      },
+      "latency_ms": 401,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.5817,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7685,
+        "B": 0.0338,
+        "C": 0.011,
+        "D": 0.1868
+      },
+      "latency_ms": 190,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3687,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0225,
+        "B": 0.6305,
+        "C": 0.0853,
+        "D": 0.2618
+      },
+      "latency_ms": 1844,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9642,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.9821,
+        "C": 0.0179
+      },
+      "latency_ms": 2156,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.476,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1936,
+        "B": 0.0689,
+        "C": 0.0679,
+        "D": 0.6696
+      },
+      "latency_ms": 776,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.4712,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.2644,
+        "C": 0.7356
+      },
+      "latency_ms": 787,
+      "worker_idx": 5,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 6154,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "B": 3,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.0356,
+    "B": 2.4846000000000004,
+    "C": 1.2374,
+    "D": 1.2426
+  }
+}

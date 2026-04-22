@@ -1,0 +1,132 @@
+{
+  "status": "ok",
+  "question": "A 7-year-old boy is brought to a pediatrician by his parents for evaluation of frequent bed wetting during the night. A detailed history reveals that there has been no history of urinary incontinence during the day since the boy was 4 years of age, but that he has never been dry at night continuously for 1 week. There is no history of urinary tract infections, urgency, frequency, or hesitancy. On physical examination, the boy’s vital signs are stable. His neurologic and abdominal examinations are completely normal. His laboratory investigations are as follows:\nUrine-specific gravity (first-morning sample) 1.035\nUrine red blood cells Absent\nUrine pus cells Absent\nUrine culture Negative\nWhich of the following is the next step in the management of this patient?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-761",
+  "test_id": "test-00138",
+  "mc_prompt": "Q: A 7-year-old boy is brought to a pediatrician by his parents for evaluation of frequent bed wetting during the night. A detailed history reveals that there has been no history of urinary incontinence during the day since the boy was 4 years of age, but that he has never been dry at night continuously for 1 week. There is no history of urinary tract infections, urgency, frequency, or hesitancy. On physical examination, the boy’s vital signs are stable. His neurologic and abdominal examinations are completely normal. His laboratory investigations are as follows:\nUrine-specific gravity (first-morning sample) 1.035\nUrine red blood cells Absent\nUrine pus cells Absent\nUrine culture Negative\nWhich of the following is the next step in the management of this patient?\nA) Magnetic resonance imaging (MRI) of the spine\nB) Reassuring the parents and use of an enuresis alarm\nC) Treatment with oral oxybutynin\nD) Treatment with oral imipramine\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 5,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9057,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0434,
+        "B": 0.9491,
+        "D": 0.0075
+      },
+      "latency_ms": 2259,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.4958,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0015,
+        "B": 0.1505,
+        "C": 0.6719,
+        "D": 0.1761
+      },
+      "latency_ms": 276,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9708,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0015,
+        "B": 0.9842,
+        "C": 0.0134,
+        "D": 0.001
+      },
+      "latency_ms": 2178,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "B",
+      "probabilities": {
+        "B": 1.0
+      },
+      "latency_ms": 2594,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1154,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2684,
+        "B": 0.2031,
+        "C": 0.3838,
+        "D": 0.1446
+      },
+      "latency_ms": 858,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1526,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0414,
+        "B": 0.4665,
+        "C": 0.3139,
+        "D": 0.1782
+      },
+      "latency_ms": 854,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9817,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0007,
+        "B": 0.9888,
+        "C": 0.0071,
+        "D": 0.0034
+      },
+      "latency_ms": 426,
+      "worker_idx": 6,
+      "raw_response": "B"
+    }
+  ],
+  "total_latency_ms": 9447,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "B": 5,
+    "C": 2
+  },
+  "weighted_scores": {
+    "A": 0.3569,
+    "B": 4.7422,
+    "C": 1.3901000000000001,
+    "D": 0.5108
+  }
+}

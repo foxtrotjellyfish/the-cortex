@@ -1,0 +1,117 @@
+{
+  "status": "ok",
+  "question": "A 22-year-old woman comes to the physician for the evaluation of irregular menstrual bleeding. Menses have occurred at 45- to 90-day intervals since menarche at the age of 15 years. Her last menstrual period was 5 weeks ago. The patient reports that she was too embarrassed to discuss this issue with anyone until now. Over the past two years, she was unable to become pregnant despite having unprotected sexual intercourse with her husband on a regular basis. There is no personal or family history of serious illness. She is 170 cm (5 ft 7 in) tall and weighs 85 kg (187 lb); BMI is 29.4 kg/m2. Her vital signs are within normal limits. Examination shows oily skin and severe facial acne. There is abnormal pigmented hair on the upper lip and around both nipples. The patient wishes to have children. In addition to recommending lifestyle modifications, which of the following is the most appropriate step in management?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-747",
+  "test_id": "test-01196",
+  "mc_prompt": "Q: A 22-year-old woman comes to the physician for the evaluation of irregular menstrual bleeding. Menses have occurred at 45- to 90-day intervals since menarche at the age of 15 years. Her last menstrual period was 5 weeks ago. The patient reports that she was too embarrassed to discuss this issue with anyone until now. Over the past two years, she was unable to become pregnant despite having unprotected sexual intercourse with her husband on a regular basis. There is no personal or family history of serious illness. She is 170 cm (5 ft 7 in) tall and weighs 85 kg (187 lb); BMI is 29.4 kg/m2. Her vital signs are within normal limits. Examination shows oily skin and severe facial acne. There is abnormal pigmented hair on the upper lip and around both nipples. The patient wishes to have children. In addition to recommending lifestyle modifications, which of the following is the most appropriate step in management?\nA) In vitro fertilization with patient's egg\nB) Progesterone therapy\nC) Clomiphene therapy\nD) Leuprolide therapy\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 6,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7545,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0388,
+        "B": 0.0053,
+        "C": 0.8552,
+        "D": 0.1007
+      },
+      "latency_ms": 614,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.7478,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.1115,
+        "C": 0.8593,
+        "D": 0.0292
+      },
+      "latency_ms": 267,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3651,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1078,
+        "B": 0.247,
+        "C": 0.6121,
+        "D": 0.033
+      },
+      "latency_ms": 2230,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1963,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.3202,
+        "C": 0.5165,
+        "D": 0.1633
+      },
+      "latency_ms": 2659,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0841,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2799,
+        "B": 0.2091,
+        "C": 0.364,
+        "D": 0.1469
+      },
+      "latency_ms": 856,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0102,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.4265,
+        "C": 0.4367,
+        "D": 0.1368
+      },
+      "latency_ms": 893,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 7520,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "C": 6
+  },
+  "weighted_scores": {
+    "A": 0.4265,
+    "B": 1.3195999999999999,
+    "C": 3.6437999999999997,
+    "D": 0.6099
+  }
+}

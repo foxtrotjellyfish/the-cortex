@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "question": "A 72-year-old Caucasian male presents to your office with dysphagia and halitosis. If this patient is also found to have cricopharyngeal muscle dysfunction, which of the following is the most likely cause of his presenting symptoms?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-940",
+  "test_id": "test-01070",
+  "mc_prompt": "Q: A 72-year-old Caucasian male presents to your office with dysphagia and halitosis. If this patient is also found to have cricopharyngeal muscle dysfunction, which of the following is the most likely cause of his presenting symptoms?\nA) Gastroesophageal reflux disease\nB) Esophageal candidiasis\nC) Meckel's diverticulum\nD) Zenker's diverticulum\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8549,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0712,
+        "B": 0.0027,
+        "D": 0.9261
+      },
+      "latency_ms": 1890,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9041,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9288,
+        "B": 0.0247,
+        "C": 0.0218,
+        "D": 0.0247
+      },
+      "latency_ms": 1804,
+      "worker_idx": 1,
+      "raw_response": "A"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3222,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6552,
+        "B": 0.0028,
+        "C": 0.009,
+        "D": 0.333
+      },
+      "latency_ms": 241,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2268,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9184,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0408,
+        "D": 0.9592
+      },
+      "latency_ms": 279,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 6482,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "D",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 1.696,
+    "B": 0.0302,
+    "C": 0.0308,
+    "D": 3.2430000000000003
+  }
+}

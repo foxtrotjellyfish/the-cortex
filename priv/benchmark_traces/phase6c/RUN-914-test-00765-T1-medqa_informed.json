@@ -1,0 +1,105 @@
+{
+  "status": "ok",
+  "question": "A 7-year-old boy is brought to your office with complaints of wheezing and dyspnea. Laboratory work reveals eosinophilia and positive skin tests for allergens. Which of the following types of drugs would be an effective treatment in this patient?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-914",
+  "test_id": "test-00765",
+  "mc_prompt": "Q: A 7-year-old boy is brought to your office with complaints of wheezing and dyspnea. Laboratory work reveals eosinophilia and positive skin tests for allergens. Which of the following types of drugs would be an effective treatment in this patient?\nA) Beta-2 antagonist\nB) Histone deacetylase inhibitor\nC) Muscarinic antagonist\nD) Anticoagulant\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7901,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0753,
+        "B": 0.0575,
+        "C": 0.8654,
+        "D": 0.0019
+      },
+      "latency_ms": 1886,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4405,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2759,
+        "B": 0.0071,
+        "C": 0.7164,
+        "D": 0.0006
+      },
+      "latency_ms": 2053,
+      "worker_idx": 1,
+      "raw_response": "C"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9196,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9543,
+        "B": 0.0347,
+        "C": 0.001,
+        "D": 0.0099
+      },
+      "latency_ms": 227,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.318,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3333,
+        "B": 0.6513,
+        "C": 0.0154
+      },
+      "latency_ms": 2322,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9077,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9441,
+        "B": 0.0196,
+        "D": 0.0364
+      },
+      "latency_ms": 266,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 6755,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 1,
+    "C": 2
+  },
+  "weighted_scores": {
+    "A": 2.5829,
+    "B": 0.7701999999999999,
+    "C": 1.5981999999999998,
+    "D": 0.0488
+  }
+}

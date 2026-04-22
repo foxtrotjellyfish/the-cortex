@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "question": "A 44-year-old man presents to the family medicine clinic for some small bumps on his left thigh. The lesions are non-pruritic and have been present for the last 3 weeks. He reports feeling fatigued and malaise for the past few months. The patient has no known medical problems and takes no medications. He smokes one pack of cigarettes per day and uses intravenous street drugs. His heart rate is 82/min, the respiratory rate is 14/min, the temperature is 36.7°C (98.1°F), and the blood pressure is 126/80 mm Hg. Auscultation of the heart is without murmurs. Lungs are clear to auscultation bilaterally. Three 2-3 mm, dome-shaped, hardened papules are noted on the left thigh. Central umbilication can be observed in each papule. There is a non-tender cervical lymphadenopathy present. Which of the following is the most likely diagnosis?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-894",
+  "test_id": "test-00558",
+  "mc_prompt": "Q: A 44-year-old man presents to the family medicine clinic for some small bumps on his left thigh. The lesions are non-pruritic and have been present for the last 3 weeks. He reports feeling fatigued and malaise for the past few months. The patient has no known medical problems and takes no medications. He smokes one pack of cigarettes per day and uses intravenous street drugs. His heart rate is 82/min, the respiratory rate is 14/min, the temperature is 36.7°C (98.1°F), and the blood pressure is 126/80 mm Hg. Auscultation of the heart is without murmurs. Lungs are clear to auscultation bilaterally. Three 2-3 mm, dome-shaped, hardened papules are noted on the left thigh. Central umbilication can be observed in each papule. There is a non-tender cervical lymphadenopathy present. Which of the following is the most likely diagnosis?\nA) Bed bug bite\nB) Molluscum contagiosum\nC) Atopic dermatitis\nD) Acute urticaria\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9604,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.019,
+        "B": 0.9794,
+        "D": 0.0016
+      },
+      "latency_ms": 2259,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6069,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0196,
+        "B": 0.7772,
+        "C": 0.0329,
+        "D": 0.1703
+      },
+      "latency_ms": 2168,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8005,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0322,
+        "B": 0.8592,
+        "C": 0.0587,
+        "D": 0.0499
+      },
+      "latency_ms": 463,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "B",
+      "probabilities": {
+        "B": 1.0
+      },
+      "latency_ms": 2514,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.934,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.967,
+        "B": 0.033
+      },
+      "latency_ms": 485,
+      "worker_idx": 4,
+      "raw_response": "Based"
+    }
+  ],
+  "total_latency_ms": 7890,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "B": 4
+  },
+  "weighted_scores": {
+    "A": 1.0378,
+    "B": 3.6488,
+    "C": 0.0916,
+    "D": 0.2218
+  }
+}

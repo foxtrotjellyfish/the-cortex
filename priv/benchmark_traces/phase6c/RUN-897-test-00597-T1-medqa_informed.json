@@ -1,0 +1,104 @@
+{
+  "status": "ok",
+  "question": "A study is conducted to determine the most effective ways to prevent transmission of various infective agents. One of the agents studied is a picornavirus that preferentially infects hepatocytes. The investigator determines that inactivating this virus can prevent its spread. Which of the following disinfectants is most likely to inactivate this virus?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-897",
+  "test_id": "test-00597",
+  "mc_prompt": "Q: A study is conducted to determine the most effective ways to prevent transmission of various infective agents. One of the agents studied is a picornavirus that preferentially infects hepatocytes. The investigator determines that inactivating this virus can prevent its spread. Which of the following disinfectants is most likely to inactivate this virus?\nA) Chlorhexidine\nB) Sodium hypochlorite\nC) Sulfuric acid\nD) Ethyl alcohol\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4405,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0706,
+        "B": 0.6849,
+        "D": 0.2444
+      },
+      "latency_ms": 3398,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8731,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0477,
+        "B": 0.9208,
+        "C": 0.0042,
+        "D": 0.0274
+      },
+      "latency_ms": 2382,
+      "worker_idx": 1,
+      "raw_response": "B"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4795,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0089,
+        "B": 0.726,
+        "C": 0.0186,
+        "D": 0.2465
+      },
+      "latency_ms": 236,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9121,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0008,
+        "B": 0.9537,
+        "C": 0.0039,
+        "D": 0.0416
+      },
+      "latency_ms": 2289,
+      "worker_idx": 3,
+      "raw_response": "To"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5071,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7384,
+        "B": 0.0303,
+        "D": 0.2313
+      },
+      "latency_ms": 323,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8628,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "B": 4
+  },
+  "weighted_scores": {
+    "A": 0.8664,
+    "B": 3.3156999999999996,
+    "C": 0.026699999999999998,
+    "D": 0.7911999999999999
+  }
+}

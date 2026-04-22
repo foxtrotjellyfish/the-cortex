@@ -1,0 +1,115 @@
+{
+  "status": "ok",
+  "question": "A 54-year-old woman presents with sudden onset, mild vaginal bleeding for the past day. She says she is postmenopausal, and her last menstrual period was 5 years ago. A detailed workup is performed, and several premalignant lesions are found in her uterus. The patient agrees to a hysterectomy. The surgical team decides to use an anesthesia protocol consisting of nitrous oxide, desflurane, and atracurium. Which of the following best describes the role of atracurium in this patient’s anesthesia?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-739",
+  "test_id": "test-01063",
+  "mc_prompt": "Q: A 54-year-old woman presents with sudden onset, mild vaginal bleeding for the past day. She says she is postmenopausal, and her last menstrual period was 5 years ago. A detailed workup is performed, and several premalignant lesions are found in her uterus. The patient agrees to a hysterectomy. The surgical team decides to use an anesthesia protocol consisting of nitrous oxide, desflurane, and atracurium. Which of the following best describes the role of atracurium in this patient’s anesthesia?\nA) It reduces neuron and muscle tissue excitability\nB) It increases GABA linked chloride channel opening\nC) It acts on the pain centers in the spinal cord and brain\nD) It competes with acetylcholine for binding sites in the neuromuscular junction\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 5,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.5044,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0682,
+        "B": 0.2128,
+        "C": 0.0018,
+        "D": 0.7172
+      },
+      "latency_ms": 481,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9998,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0001,
+        "D": 0.9999
+      },
+      "latency_ms": 210,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9611,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0151,
+        "B": 0.0031,
+        "C": 0.0056,
+        "D": 0.9762
+      },
+      "latency_ms": 1880,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9986,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0007,
+        "D": 0.9993
+      },
+      "latency_ms": 2742,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.5818,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1451,
+        "B": 0.0789,
+        "C": 0.0491,
+        "D": 0.7269
+      },
+      "latency_ms": 830,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0664,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.4668,
+        "C": 0.5332
+      },
+      "latency_ms": 807,
+      "worker_idx": 5,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 6950,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "D",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "C": 1,
+    "D": 5
+  },
+  "weighted_scores": {
+    "A": 0.22920000000000001,
+    "B": 0.7615999999999999,
+    "C": 0.5897,
+    "D": 4.419499999999999
+  }
+}

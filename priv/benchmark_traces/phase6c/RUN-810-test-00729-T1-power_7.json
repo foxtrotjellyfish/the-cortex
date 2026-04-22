@@ -1,0 +1,137 @@
+{
+  "status": "ok",
+  "question": "A 6-week-old male infant is brought to the physician by his mother because of a 2-day history of recurrent nonbilious vomiting. Vomiting occurs almost immediately after most feeds. Each time, he becomes irritable while feeding and refuses to finish the bottle. He was born at 37 weeks' gestation and weighed 3300 g (7 lb 4 oz); he currently weighs 4000 g (8 lb 13 oz). He has Down syndrome. His vaccinations are up-to-date. He appears agitated and cries during the examination. His temperature is 37.2°C (99°F), pulse is 156/min, respirations are 32/min, and blood pressure is 100/49 mm Hg. Examination shows upward slanting of the eyelids, a broad and flat nasal bridge, and a single transverse palmar crease on both hands. The abdomen is soft and nontender. A 2.5-cm (1-inch) epigastric mass is palpated. Cardiac examination shows no abnormalities. Arterial blood gas analysis is within normal limits. Further diagnostic evaluation of the patient is most likely to show which of the following?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-810",
+  "test_id": "test-00729",
+  "mc_prompt": "Q: A 6-week-old male infant is brought to the physician by his mother because of a 2-day history of recurrent nonbilious vomiting. Vomiting occurs almost immediately after most feeds. Each time, he becomes irritable while feeding and refuses to finish the bottle. He was born at 37 weeks' gestation and weighed 3300 g (7 lb 4 oz); he currently weighs 4000 g (8 lb 13 oz). He has Down syndrome. His vaccinations are up-to-date. He appears agitated and cries during the examination. His temperature is 37.2°C (99°F), pulse is 156/min, respirations are 32/min, and blood pressure is 100/49 mm Hg. Examination shows upward slanting of the eyelids, a broad and flat nasal bridge, and a single transverse palmar crease on both hands. The abdomen is soft and nontender. A 2.5-cm (1-inch) epigastric mass is palpated. Cardiac examination shows no abnormalities. Arterial blood gas analysis is within normal limits. Further diagnostic evaluation of the patient is most likely to show which of the following?\nA) Dilated colon segment on abdominal x-ray\nB) Detection of rotavirus antigen on enzyme immunoassay (EIA)\nC) Elongated and thickened pylorus on abdominal ultrasound\nD) Tripple bubble sign on abdominal x-ray\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "D",
+  "majority_votes": 2,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.3422,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6199,
+        "B": 0.068,
+        "C": 0.0344,
+        "D": 0.2777
+      },
+      "latency_ms": 2802,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.5628,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1271,
+        "B": 0.0105,
+        "C": 0.1498,
+        "D": 0.7126
+      },
+      "latency_ms": 379,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2538,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1229,
+        "B": 0.2114,
+        "C": 0.4652,
+        "D": 0.2005
+      },
+      "latency_ms": 1957,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3467,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2204,
+        "C": 0.5671,
+        "D": 0.2124
+      },
+      "latency_ms": 2652,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0021,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3149,
+        "B": 0.317,
+        "C": 0.2274,
+        "D": 0.1406
+      },
+      "latency_ms": 888,
+      "worker_idx": 4,
+      "raw_response": "D"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0897,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1635,
+        "B": 0.3758,
+        "C": 0.2861,
+        "D": 0.1746
+      },
+      "latency_ms": 915,
+      "worker_idx": 5,
+      "raw_response": "B"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7433,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1051,
+        "B": 0.028,
+        "C": 0.0184,
+        "D": 0.8484
+      },
+      "latency_ms": 569,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 10162,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "B": 2,
+    "C": 2,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 1.6738,
+    "B": 1.0107,
+    "C": 1.7484,
+    "D": 2.5667999999999997
+  }
+}

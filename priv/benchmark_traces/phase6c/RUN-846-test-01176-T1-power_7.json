@@ -1,0 +1,134 @@
+{
+  "status": "ok",
+  "question": "A 66-year-old man comes to the physician because of fatigue and swelling of his legs and feet for 6 weeks. During this time he has felt like his eyes have been unusually puffy in the mornings and his urine has been frothy. He has hypertension and rheumatoid factor-positive rheumatoid arthritis. Current medications include amlodipine, methotrexate, and ibuprofen. He does not smoke. He has a history of chronic alcohol abuse. His temperature is 36.7°C (98°F), pulse is 80/min, and blood pressure is 148/86 mm Hg. Physical examination shows pallor, periorbital edema, 2+ pedal edema, and ascites. He has swan-neck deformities and nodules of multiple fingers and swelling and restricted range of motion of bilateral knee joints. Laboratory studies show:\nHemoglobin 8.2 mg/dl\nProthrombin time 12 seconds\nSerum\nAlbumin 2.8 g/dl\nTotal bilirubin 1.0 mg/dl\nAlkaline phosphatase 120 U/L\nAST 20 U/L\nALT 19 U/L\nUrea 18 mg/dl\nCreatinine 1.2 mg/dl\nUrine\nProtein 3+\nWBCs 5–10/hpf\nRBCs negative\nBacteria negative\nUltrasound of the liver and kidneys shows no abnormalities. Which of the following is the most likely cause of this patient's findings?\"",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-846",
+  "test_id": "test-01176",
+  "mc_prompt": "Q: A 66-year-old man comes to the physician because of fatigue and swelling of his legs and feet for 6 weeks. During this time he has felt like his eyes have been unusually puffy in the mornings and his urine has been frothy. He has hypertension and rheumatoid factor-positive rheumatoid arthritis. Current medications include amlodipine, methotrexate, and ibuprofen. He does not smoke. He has a history of chronic alcohol abuse. His temperature is 36.7°C (98°F), pulse is 80/min, and blood pressure is 148/86 mm Hg. Physical examination shows pallor, periorbital edema, 2+ pedal edema, and ascites. He has swan-neck deformities and nodules of multiple fingers and swelling and restricted range of motion of bilateral knee joints. Laboratory studies show:\nHemoglobin 8.2 mg/dl\nProthrombin time 12 seconds\nSerum\nAlbumin 2.8 g/dl\nTotal bilirubin 1.0 mg/dl\nAlkaline phosphatase 120 U/L\nAST 20 U/L\nALT 19 U/L\nUrea 18 mg/dl\nCreatinine 1.2 mg/dl\nUrine\nProtein 3+\nWBCs 5–10/hpf\nRBCs negative\nBacteria negative\nUltrasound of the liver and kidneys shows no abnormalities. Which of the following is the most likely cause of this patient's findings?\"\nA) Adverse effect of ibuprofen\nB) Decreased cardiac ejection fraction\nC) Renal deposition of AL amyloid\nD) Increased serum amyloid A production\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 4,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.893,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.045,
+        "B": 0.0111,
+        "C": 0.0059,
+        "D": 0.938
+      },
+      "latency_ms": 3078,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.6293,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0006,
+        "C": 0.8143,
+        "D": 0.185
+      },
+      "latency_ms": 352,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5722,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0213,
+        "B": 0.0223,
+        "C": 0.1921,
+        "D": 0.7643
+      },
+      "latency_ms": 2532,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1498,
+      "answer": "D",
+      "probabilities": {
+        "C": 0.4251,
+        "D": 0.5749
+      },
+      "latency_ms": 3007,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1471,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1203,
+        "B": 0.4543,
+        "C": 0.3072,
+        "D": 0.1182
+      },
+      "latency_ms": 906,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.4127,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1192,
+        "B": 0.6048,
+        "C": 0.1921,
+        "D": 0.0839
+      },
+      "latency_ms": 917,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6124,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0003,
+        "B": 0.0,
+        "C": 0.1936,
+        "D": 0.806
+      },
+      "latency_ms": 589,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 11383,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "D",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "B": 2,
+    "C": 1,
+    "D": 4
+  },
+  "weighted_scores": {
+    "A": 0.30670000000000003,
+    "B": 1.0925,
+    "C": 2.1303,
+    "D": 3.4703
+  }
+}

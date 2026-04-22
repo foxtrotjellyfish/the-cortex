@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "question": "A 68-year-old woman presents to the emergency room with chest pain. She reports sudden severe and crushing substernal chest pain that started 1 hour ago. Her past medical history is notable for hypertension, hyperlipidemia, diabetes mellitus, obesity, and a prior myocardial infarction requiring a coronary artery bypass graft 2 years ago. She takes aspirin, metoprolol, lisinopril, spironolactone, atorvastatin, and insulin. She is retired and lives a sedentary lifestyle at home. Her temperature is 98.8°F (37.1°C), blood pressure is 109/68 mmHg, pulse is 118/min, and respirations are 24/min. Before being able to start the physical examination, the patient loses consciousness. Her pulse is palpable but weak. Her blood pressure is now 88/50 mmHg and pulse is 130/min. Her skin is pale, cold, and clammy. An electrocardiogram demonstrates ST elevations in leads I, aVL, V3, V4, V5, and V6. A medication that primarily stimulates which of the following receptors would be most appropriate to improve the hemodynamic status of this patient?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-915",
+  "test_id": "test-00799",
+  "mc_prompt": "Q: A 68-year-old woman presents to the emergency room with chest pain. She reports sudden severe and crushing substernal chest pain that started 1 hour ago. Her past medical history is notable for hypertension, hyperlipidemia, diabetes mellitus, obesity, and a prior myocardial infarction requiring a coronary artery bypass graft 2 years ago. She takes aspirin, metoprolol, lisinopril, spironolactone, atorvastatin, and insulin. She is retired and lives a sedentary lifestyle at home. Her temperature is 98.8°F (37.1°C), blood pressure is 109/68 mmHg, pulse is 118/min, and respirations are 24/min. Before being able to start the physical examination, the patient loses consciousness. Her pulse is palpable but weak. Her blood pressure is now 88/50 mmHg and pulse is 130/min. Her skin is pale, cold, and clammy. An electrocardiogram demonstrates ST elevations in leads I, aVL, V3, V4, V5, and V6. A medication that primarily stimulates which of the following receptors would be most appropriate to improve the hemodynamic status of this patient?\nA) Alpha-2 adrenergic receptor\nB) Beta-1 adrenergic receptor\nC) Beta-2 adrenergic receptor\nD) D2 receptor\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.944,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.028,
+        "B": 0.972
+      },
+      "latency_ms": 2143,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1464,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.236,
+        "B": 0.4519,
+        "C": 0.3055,
+        "D": 0.0066
+      },
+      "latency_ms": 2244,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5014,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2429,
+        "B": 0.7443,
+        "C": 0.0103,
+        "D": 0.0025
+      },
+      "latency_ms": 531,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1214,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5607,
+        "B": 0.4393
+      },
+      "latency_ms": 2864,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8654,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9327,
+        "B": 0.0673
+      },
+      "latency_ms": 599,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8382,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 3
+  },
+  "weighted_scores": {
+    "A": 2.0003,
+    "B": 2.6748,
+    "C": 0.31579999999999997,
+    "D": 0.0091
+  }
+}

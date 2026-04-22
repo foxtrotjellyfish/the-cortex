@@ -1,0 +1,101 @@
+{
+  "status": "ok",
+  "question": "A 15-year-old female presents to her pediatrician’s office for severe menstrual cramping. The patient underwent menarche at age 11, and her periods were irregular every 2-3 months for two years. After that, her cycles became roughly regular every 28-35 days, but she has had extremely painful cramps and often has to miss school. The cramps are intermittent and feel like a dull ache in the center of her abdomen, and there is usually accompanying back pain. The patient has been using heating pads with limited relief. She reports some periods being “really heavy” and requires a superabsorbent pad every 6 hours for 2 days each cycle, but this does not limit her activities. She denies any bowel or bladder changes. The patient had normal development throughout childhood, is on the soccer team at school, and is not sexually active. Her father has hypertension and her mother has endometriosis and heavy periods. On exam, the patient is 5 feet 5 inches and weighs 158 pounds (BMI 26.3 kg/m^2). She is well appearing and has no abdominal tenderness. She has Tanner IV breasts and Tanner IV pubic hair, and external genitalia are normal. Which of the following is the best next step for this patient’s menstrual cramps?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-942",
+  "test_id": "test-01125",
+  "mc_prompt": "Q: A 15-year-old female presents to her pediatrician’s office for severe menstrual cramping. The patient underwent menarche at age 11, and her periods were irregular every 2-3 months for two years. After that, her cycles became roughly regular every 28-35 days, but she has had extremely painful cramps and often has to miss school. The cramps are intermittent and feel like a dull ache in the center of her abdomen, and there is usually accompanying back pain. The patient has been using heating pads with limited relief. She reports some periods being “really heavy” and requires a superabsorbent pad every 6 hours for 2 days each cycle, but this does not limit her activities. She denies any bowel or bladder changes. The patient had normal development throughout childhood, is on the soccer team at school, and is not sexually active. Her father has hypertension and her mother has endometriosis and heavy periods. On exam, the patient is 5 feet 5 inches and weighs 158 pounds (BMI 26.3 kg/m^2). She is well appearing and has no abdominal tenderness. She has Tanner IV breasts and Tanner IV pubic hair, and external genitalia are normal. Which of the following is the best next step for this patient’s menstrual cramps?\nA) Pelvic ultrasound\nB) MRI of the pelvis\nC) NSAIDs\nD) Increased exercise\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 5,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.737,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1149,
+        "B": 0.0332,
+        "C": 0.8519
+      },
+      "latency_ms": 2722,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8796,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0546,
+        "B": 0.01,
+        "C": 0.9342,
+        "D": 0.0011
+      },
+      "latency_ms": 2226,
+      "worker_idx": 1,
+      "raw_response": "C"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9997,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0001,
+        "B": 0.0,
+        "C": 0.9998,
+        "D": 0.0
+      },
+      "latency_ms": 511,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8288,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0856,
+        "C": 0.9144
+      },
+      "latency_ms": 2856,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.829,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0808,
+        "B": 0.0094,
+        "C": 0.9098
+      },
+      "latency_ms": 601,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8917,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "C": 5
+  },
+  "weighted_scores": {
+    "A": 0.33599999999999997,
+    "B": 0.0526,
+    "C": 4.6101,
+    "D": 0.0011
+  }
+}

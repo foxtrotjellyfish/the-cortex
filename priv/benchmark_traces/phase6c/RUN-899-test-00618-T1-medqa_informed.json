@@ -1,0 +1,102 @@
+{
+  "status": "ok",
+  "question": "A 48-year-old man is brought to the emergency department by his son with a fever over the past day. The patient’s son adds that his father has been having some behavioral problems, as well, and that he was complaining about bugs crawling over his skin this morning even though there were no insects. Past medical history is unremarkable. No current medications. The patient was an alcoholic for several years but abruptly quit drinking 5 days ago. The patient’s temperature is 40.0°C (104.0°F), pulse is 130/min, blood pressure is 146/88 mm Hg, and respiratory rate is 24/min. On physical examination, he is confused, restless, agitated, and lacks orientation to time, place or person. Which of the following the most appropriate initial course of treatment of this patient?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-899",
+  "test_id": "test-00618",
+  "mc_prompt": "Q: A 48-year-old man is brought to the emergency department by his son with a fever over the past day. The patient’s son adds that his father has been having some behavioral problems, as well, and that he was complaining about bugs crawling over his skin this morning even though there were no insects. Past medical history is unremarkable. No current medications. The patient was an alcoholic for several years but abruptly quit drinking 5 days ago. The patient’s temperature is 40.0°C (104.0°F), pulse is 130/min, blood pressure is 146/88 mm Hg, and respiratory rate is 24/min. On physical examination, he is confused, restless, agitated, and lacks orientation to time, place or person. Which of the following the most appropriate initial course of treatment of this patient?\nA) Chlorpromazine\nB) Clonidine\nC) Diazepam\nD) Haloperidol\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.218,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0677,
+        "B": 0.3328,
+        "C": 0.0487,
+        "D": 0.5508
+      },
+      "latency_ms": 2153,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7709,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0607,
+        "B": 0.0024,
+        "C": 0.8539,
+        "D": 0.083
+      },
+      "latency_ms": 2164,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8526,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0505,
+        "B": 0.0075,
+        "C": 0.0389,
+        "D": 0.9031
+      },
+      "latency_ms": 398,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2514,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5836,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7918,
+        "D": 0.2082
+      },
+      "latency_ms": 469,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7700,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "C": 1,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 0.9706999999999999,
+    "B": 0.3427,
+    "C": 0.9415,
+    "D": 2.7451000000000003
+  }
+}

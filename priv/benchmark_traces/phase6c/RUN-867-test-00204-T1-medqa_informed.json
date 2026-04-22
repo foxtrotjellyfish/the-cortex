@@ -1,0 +1,105 @@
+{
+  "status": "ok",
+  "question": "A 10-year-old Caucasian female with Turner's syndrome underwent an abdominal imaging study and was discovered that the poles of her kidneys were fused inferiorly. Normal ascension of kidney during embryological development would be prevented by which of the following anatomical structures?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-867",
+  "test_id": "test-00204",
+  "mc_prompt": "Q: A 10-year-old Caucasian female with Turner's syndrome underwent an abdominal imaging study and was discovered that the poles of her kidneys were fused inferiorly. Normal ascension of kidney during embryological development would be prevented by which of the following anatomical structures?\nA) Superior mesenteric artery\nB) Inferior mesenteric artery\nC) Celiac artery\nD) Splenic artery\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.1259,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.3941,
+        "B": 0.2682,
+        "C": 0.0814,
+        "D": 0.2564
+      },
+      "latency_ms": 1893,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3108,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2295,
+        "B": 0.5403,
+        "C": 0.1313,
+        "D": 0.099
+      },
+      "latency_ms": 2061,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6263,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.144,
+        "B": 0.0059,
+        "C": 0.7703,
+        "D": 0.0797
+      },
+      "latency_ms": 237,
+      "worker_idx": 2,
+      "raw_response": "Answer"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8289,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8912,
+        "B": 0.0623,
+        "C": 0.0465
+      },
+      "latency_ms": 2290,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9192,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9494,
+        "B": 0.0302,
+        "D": 0.0203
+      },
+      "latency_ms": 268,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 6749,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 3,
+    "B": 1,
+    "C": 1
+  },
+  "weighted_scores": {
+    "A": 2.6082,
+    "B": 0.9069,
+    "C": 1.0295,
+    "D": 0.4554
+  }
+}

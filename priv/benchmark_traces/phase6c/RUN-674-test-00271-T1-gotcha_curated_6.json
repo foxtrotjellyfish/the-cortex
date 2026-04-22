@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "question": "A 22-year-old primigravida presents for a regular prenatal visit at 16 weeks gestation. She is concerned about the results of a dipstick test she performed at home, which showed 1+ glucose. She does not know  if her liquid consumption has increased, but she urinates more frequently than before. The course of her pregnancy has been unremarkable and she has no significant co-morbidities. The BMI is 25.6 kg/cm2 and she has gained 3 kg (6.72 lb) during the pregnancy. The blood pressure is 110/80 mm Hg, the heart rate is 82/min, the respiratory rate is 14/min, and the temperature is 36.6℃ (97.9℉). The lungs are clear to auscultation, the heart sounds are normal with no murmurs, and there is no abdominal or costovertebral angle tenderness. The laboratory tests show the following results:\nFasting glucose 97 mg/L\nALT 12 IU/L\nAST 14 IU/L\nTotal bilirubin 0.8 mg/dL(15 µmol/L)\nPlasma creatinine 0.7 mg/dL (61.9 µmol/L)\nWhich of the following tests are indicated to determine the cause of the abnormal dipstick test results?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-674",
+  "test_id": "test-00271",
+  "mc_prompt": "Q: A 22-year-old primigravida presents for a regular prenatal visit at 16 weeks gestation. She is concerned about the results of a dipstick test she performed at home, which showed 1+ glucose. She does not know  if her liquid consumption has increased, but she urinates more frequently than before. The course of her pregnancy has been unremarkable and she has no significant co-morbidities. The BMI is 25.6 kg/cm2 and she has gained 3 kg (6.72 lb) during the pregnancy. The blood pressure is 110/80 mm Hg, the heart rate is 82/min, the respiratory rate is 14/min, and the temperature is 36.6℃ (97.9℉). The lungs are clear to auscultation, the heart sounds are normal with no murmurs, and there is no abdominal or costovertebral angle tenderness. The laboratory tests show the following results:\nFasting glucose 97 mg/L\nALT 12 IU/L\nAST 14 IU/L\nTotal bilirubin 0.8 mg/dL(15 µmol/L)\nPlasma creatinine 0.7 mg/dL (61.9 µmol/L)\nWhich of the following tests are indicated to determine the cause of the abnormal dipstick test results?\nA) HbA1c measurement\nB) No tests required\nC) Urinalysis\nD) Oral glucose tolerance test\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 4,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.2791,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6135,
+        "B": 0.0088,
+        "C": 0.0433,
+        "D": 0.3344
+      },
+      "latency_ms": 848,
+      "worker_idx": 0,
+      "raw_response": "To"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9767,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.004,
+        "C": 0.9863,
+        "D": 0.0096
+      },
+      "latency_ms": 337,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9384,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0014,
+        "B": 0.001,
+        "C": 0.968,
+        "D": 0.0296
+      },
+      "latency_ms": 1989,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2956,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6478,
+        "C": 0.3522
+      },
+      "latency_ms": 2745,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1279,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2637,
+        "B": 0.2435,
+        "C": 0.3916,
+        "D": 0.1013
+      },
+      "latency_ms": 893,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0077,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.071,
+        "B": 0.3835,
+        "C": 0.3912,
+        "D": 0.1543
+      },
+      "latency_ms": 892,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 7704,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "C": 4
+  },
+  "weighted_scores": {
+    "A": 1.6014000000000002,
+    "B": 0.6368,
+    "C": 3.1325999999999996,
+    "D": 0.6292
+  }
+}

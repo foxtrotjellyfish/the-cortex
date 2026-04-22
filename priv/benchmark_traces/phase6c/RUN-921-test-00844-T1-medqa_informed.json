@@ -1,0 +1,105 @@
+{
+  "status": "ok",
+  "question": "A 14-year-old girl comes to the physician because she has not yet had her period. She is at the 10th percentile for height and 25th percentile for weight. Examination shows a broad chest with widely spaced nipples, a low posterior hairline, forearms angled 20° away from the body when fully extended, and shortened fourth metacarpals bilaterally. Sexual development is Tanner stage 1. Which of the following statements about this patient's fertility is most accurate?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-921",
+  "test_id": "test-00844",
+  "mc_prompt": "Q: A 14-year-old girl comes to the physician because she has not yet had her period. She is at the 10th percentile for height and 25th percentile for weight. Examination shows a broad chest with widely spaced nipples, a low posterior hairline, forearms angled 20° away from the body when fully extended, and shortened fourth metacarpals bilaterally. Sexual development is Tanner stage 1. Which of the following statements about this patient's fertility is most accurate?\nA) Pregnancy success rate with donor oocytes is similar to patients with primary ovarian failure\nB) Administration of gonadotropins will increase the chances of conceiving\nC) Impaired tubal ciliary function will prevent natural fertilization\nD) The majority of patients become pregnant without medical assistance\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.2675,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2809,
+        "B": 0.1476,
+        "C": 0.5484,
+        "D": 0.023
+      },
+      "latency_ms": 2321,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1194,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3101,
+        "B": 0.4295,
+        "C": 0.2078,
+        "D": 0.0526
+      },
+      "latency_ms": 2385,
+      "worker_idx": 1,
+      "raw_response": "A"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7135,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0255,
+        "B": 0.1189,
+        "C": 0.0232,
+        "D": 0.8324
+      },
+      "latency_ms": 375,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3756,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6878,
+        "C": 0.3122
+      },
+      "latency_ms": 2456,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3566,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6246,
+        "B": 0.1074,
+        "D": 0.268
+      },
+      "latency_ms": 431,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7969,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 1,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.9289,
+    "B": 0.8033999999999999,
+    "C": 1.0916,
+    "D": 1.1760000000000002
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "question": "A 30-year-old woman presents to the physician because of ongoing diarrhea for the past 1 month. She reports that diarrhea has been intermittently present for the past month. The stool is often loose and associated with blood and lower abdominal pain. She denies any recent travel history, and she works at a nursing home as a caretaker. She is not currently on any medications. Clinical examination shows mild tenderness in the suprapubic region, and there is no organomegaly. Findings on colonoscopy include patchy erythema and ulceration in the cecum, ascending, descending, and sigmoid colon. Mucosal biopsy shows colonic crypts with lymphocytic and neutrophilic infiltrates. What is the most likely diagnosis?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-717",
+  "test_id": "test-00806",
+  "mc_prompt": "Q: A 30-year-old woman presents to the physician because of ongoing diarrhea for the past 1 month. She reports that diarrhea has been intermittently present for the past month. The stool is often loose and associated with blood and lower abdominal pain. She denies any recent travel history, and she works at a nursing home as a caretaker. She is not currently on any medications. Clinical examination shows mild tenderness in the suprapubic region, and there is no organomegaly. Findings on colonoscopy include patchy erythema and ulceration in the cecum, ascending, descending, and sigmoid colon. Mucosal biopsy shows colonic crypts with lymphocytic and neutrophilic infiltrates. What is the most likely diagnosis?\nA) Crohn’s disease\nB) Acute infective colitis\nC) Pseudomembranous colitis\nD) Irritable bowel syndrome\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4953,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7367,
+        "B": 0.0218,
+        "C": 0.2414
+      },
+      "latency_ms": 539,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9666,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0065,
+        "B": 0.0046,
+        "C": 0.9778,
+        "D": 0.0112
+      },
+      "latency_ms": 220,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3652,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3136,
+        "B": 0.0021,
+        "C": 0.6788,
+        "D": 0.0055
+      },
+      "latency_ms": 1890,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0164,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1014,
+        "C": 0.4411,
+        "D": 0.4575
+      },
+      "latency_ms": 2204,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.6279,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0826,
+        "B": 0.0949,
+        "C": 0.0973,
+        "D": 0.7252
+      },
+      "latency_ms": 815,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0879,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1249,
+        "B": 0.3936,
+        "C": 0.4815
+      },
+      "latency_ms": 841,
+      "worker_idx": 5,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 6510,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "C": 3,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 1.3657,
+    "B": 0.517,
+    "C": 2.9179000000000004,
+    "D": 1.1994
+  }
+}

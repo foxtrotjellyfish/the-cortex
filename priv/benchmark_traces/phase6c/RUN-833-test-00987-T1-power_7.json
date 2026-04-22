@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "question": "An 11-month-old boy is brought to the emergency department by his mother after she observed jerking movements of his arms and legs for about 30 seconds earlier that morning. He has not had fever, cough, or a runny nose. He has been healthy, except for occasional eczema. He was delivered at home in Romania. His mother had no prenatal care. She reports that he has required more time to reach developmental milestones compared to his older brother. The patient's immunization records are not available. He takes no medications. He appears pale with blue eyes and has a musty odor. He has poor eye contact. Which of the following would have most likely prevented the patient's symptoms?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-833",
+  "test_id": "test-00987",
+  "mc_prompt": "Q: An 11-month-old boy is brought to the emergency department by his mother after she observed jerking movements of his arms and legs for about 30 seconds earlier that morning. He has not had fever, cough, or a runny nose. He has been healthy, except for occasional eczema. He was delivered at home in Romania. His mother had no prenatal care. She reports that he has required more time to reach developmental milestones compared to his older brother. The patient's immunization records are not available. He takes no medications. He appears pale with blue eyes and has a musty odor. He has poor eye contact. Which of the following would have most likely prevented the patient's symptoms?\nA) Levothyroxine therapy during pregnancy\nB) Dietary restriction of phenylalanine\nC) Daily allopurinol intake\nD) Avoidance of fasting states\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8881,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0391,
+        "B": 0.9272,
+        "C": 0.0014,
+        "D": 0.0322
+      },
+      "latency_ms": 2202,
+      "worker_idx": 0,
+      "raw_response": "B"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9903,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9944,
+        "C": 0.0041,
+        "D": 0.0015
+      },
+      "latency_ms": 267,
+      "worker_idx": 1,
+      "raw_response": "A"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3289,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2882,
+        "B": 0.0425,
+        "C": 0.0522,
+        "D": 0.6171
+      },
+      "latency_ms": 1909,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0
+      },
+      "latency_ms": 2312,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0408,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2697,
+        "B": 0.323,
+        "C": 0.2822,
+        "D": 0.1251
+      },
+      "latency_ms": 1088,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2997,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.2857,
+        "C": 0.5854,
+        "D": 0.1289
+      },
+      "latency_ms": 1072,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8423,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8981,
+        "B": 0.0558,
+        "C": 0.0298,
+        "D": 0.0164
+      },
+      "latency_ms": 358,
+      "worker_idx": 6,
+      "raw_response": "A"
+    }
+  ],
+  "total_latency_ms": 9208,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 3,
+    "B": 2,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 3.4894999999999996,
+    "B": 1.6342,
+    "C": 0.9551000000000001,
+    "D": 0.9211999999999999
+  }
+}

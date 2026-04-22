@@ -1,0 +1,117 @@
+{
+  "status": "ok",
+  "question": "A 24-year-old pregnant woman at 28 weeks gestation presents to the emergency department with complaints of fever with chills and pain in her knee and ankle joints for the past 2 days. She also complains of headaches and difficulty moving her neck. Further questioning reveals that she had a tick bite on her arm while gardening a few days ago. Past medical history is noncontributory. She takes a multivitamin with iron and folate every day and has been receiving regular prenatal care and the pregnancy is progressing normally. On examination, an erythematous rash is seen on her right arm, as shown in the accompanying photograph. Her obstetric examination is normal. Ultrasound of the fetus is reassuring with a normal heartbeat and no gross abnormalities. A specimen is collected to test for Lyme disease. What is the next best step for this patient?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-662",
+  "test_id": "test-00140",
+  "mc_prompt": "Q: A 24-year-old pregnant woman at 28 weeks gestation presents to the emergency department with complaints of fever with chills and pain in her knee and ankle joints for the past 2 days. She also complains of headaches and difficulty moving her neck. Further questioning reveals that she had a tick bite on her arm while gardening a few days ago. Past medical history is noncontributory. She takes a multivitamin with iron and folate every day and has been receiving regular prenatal care and the pregnancy is progressing normally. On examination, an erythematous rash is seen on her right arm, as shown in the accompanying photograph. Her obstetric examination is normal. Ultrasound of the fetus is reassuring with a normal heartbeat and no gross abnormalities. A specimen is collected to test for Lyme disease. What is the next best step for this patient?\nA) Ibuprofen\nB) Tetracycline\nC) Amoxicilin\nD) Gentamicin\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 4,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.2691,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2139,
+        "B": 0.0892,
+        "C": 0.2139,
+        "D": 0.483
+      },
+      "latency_ms": 576,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9815,
+      "answer": "D",
+      "probabilities": {
+        "B": 0.0041,
+        "C": 0.0072,
+        "D": 0.9887
+      },
+      "latency_ms": 234,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0025,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0362,
+        "B": 0.4014,
+        "C": 0.4039,
+        "D": 0.1586
+      },
+      "latency_ms": 1908,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7848,
+      "answer": "C",
+      "probabilities": {
+        "C": 0.8924,
+        "D": 0.1076
+      },
+      "latency_ms": 2029,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.159,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2451,
+        "B": 0.2245,
+        "C": 0.4041,
+        "D": 0.1263
+      },
+      "latency_ms": 827,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.5993,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.1566,
+        "C": 0.7559,
+        "D": 0.0875
+      },
+      "latency_ms": 835,
+      "worker_idx": 5,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 6409,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "C": 4,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 0.4952,
+    "B": 0.8757999999999999,
+    "C": 2.6774,
+    "D": 1.9517
+  }
+}

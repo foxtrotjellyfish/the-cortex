@@ -1,0 +1,132 @@
+{
+  "status": "ok",
+  "question": "A 56-year-old man is brought to the emergency department. He was found unconscious on the street. The staff recognizes him as a local homeless man with a long history of alcoholism. At the hospital, his pulse is 95/min, the blood pressure is 110/70 mm Hg, the respirations are 20/min, and the oxygen saturation is 98% on room air. On physical exam, the unconscious man is covered in bloody vomit with small clots and food particles. He smells of alcohol. A digital exam reveals black tarry stool in the rectal vault. The patient is given oxygen, IV fluids, and an NG-tube is placed and set to intermittent suction. Labs are sent and the patient is prepared for a procedure. Which of the following is the most appropriate next step in his management?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-764",
+  "test_id": "test-00168",
+  "mc_prompt": "Q: A 56-year-old man is brought to the emergency department. He was found unconscious on the street. The staff recognizes him as a local homeless man with a long history of alcoholism. At the hospital, his pulse is 95/min, the blood pressure is 110/70 mm Hg, the respirations are 20/min, and the oxygen saturation is 98% on room air. On physical exam, the unconscious man is covered in bloody vomit with small clots and food particles. He smells of alcohol. A digital exam reveals black tarry stool in the rectal vault. The patient is given oxygen, IV fluids, and an NG-tube is placed and set to intermittent suction. Labs are sent and the patient is prepared for a procedure. Which of the following is the most appropriate next step in his management?\nA) Undergo colonoscopy\nB) Undergo upper GI endoscopy\nC) Proton pump inhibitors with anti-H.pylori regimen\nD) Surgery for peptic ulcer disease\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 5,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9057,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9388,
+        "B": 0.0281,
+        "D": 0.0331
+      },
+      "latency_ms": 2265,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.0357,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3955,
+        "B": 0.4312,
+        "C": 0.0285,
+        "D": 0.1448
+      },
+      "latency_ms": 243,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3488,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.055,
+        "B": 0.6382,
+        "C": 0.2894,
+        "D": 0.0174
+      },
+      "latency_ms": 1900,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "B",
+      "probabilities": {
+        "B": 1.0
+      },
+      "latency_ms": 2501,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.612,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0888,
+        "B": 0.1085,
+        "C": 0.0822,
+        "D": 0.7205
+      },
+      "latency_ms": 837,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1946,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.5371,
+        "C": 0.3425,
+        "D": 0.1204
+      },
+      "latency_ms": 842,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9729,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0069,
+        "B": 0.9804,
+        "C": 0.0075,
+        "D": 0.0053
+      },
+      "latency_ms": 397,
+      "worker_idx": 6,
+      "raw_response": "B"
+    }
+  ],
+  "total_latency_ms": 8986,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "B": 5,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.4849999999999999,
+    "B": 3.7235,
+    "C": 0.7501,
+    "D": 1.0415
+  }
+}

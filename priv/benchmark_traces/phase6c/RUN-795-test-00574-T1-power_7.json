@@ -1,0 +1,132 @@
+{
+  "status": "ok",
+  "question": "An 11-year-old boy presents to your office with pitting edema and proteinuria exceeding 3.5g in 24 hours. You suspect that this patient has experienced a loss of polyanions in his glomerular basement membranes. Which of the following findings would confirm your diagnosis?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-795",
+  "test_id": "test-00574",
+  "mc_prompt": "Q: An 11-year-old boy presents to your office with pitting edema and proteinuria exceeding 3.5g in 24 hours. You suspect that this patient has experienced a loss of polyanions in his glomerular basement membranes. Which of the following findings would confirm your diagnosis?\nA) WBC casts in the urine\nB) Selective albuminuria\nC) Negatively birefringent crystals in the urine\nD) Bence-Jones proteinuria\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4687,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7001,
+        "B": 0.0685,
+        "D": 0.2314
+      },
+      "latency_ms": 1968,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9028,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0486,
+        "D": 0.9514
+      },
+      "latency_ms": 176,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7319,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0554,
+        "B": 0.8101,
+        "C": 0.0782,
+        "D": 0.0563
+      },
+      "latency_ms": 1825,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9898,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.9949,
+        "C": 0.0051
+      },
+      "latency_ms": 2372,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.4118,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5814,
+        "B": 0.1696,
+        "C": 0.166,
+        "D": 0.083
+      },
+      "latency_ms": 758,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0867,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0966,
+        "B": 0.4083,
+        "C": 0.495
+      },
+      "latency_ms": 759,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8809,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0217,
+        "B": 0.9276,
+        "C": 0.0467,
+        "D": 0.004
+      },
+      "latency_ms": 266,
+      "worker_idx": 6,
+      "raw_response": "B"
+    }
+  ],
+  "total_latency_ms": 8125,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 3,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.5038,
+    "B": 3.379,
+    "C": 0.7909999999999999,
+    "D": 1.3261
+  }
+}

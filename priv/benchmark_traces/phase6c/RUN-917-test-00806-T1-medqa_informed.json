@@ -1,0 +1,104 @@
+{
+  "status": "ok",
+  "question": "A 30-year-old woman presents to the physician because of ongoing diarrhea for the past 1 month. She reports that diarrhea has been intermittently present for the past month. The stool is often loose and associated with blood and lower abdominal pain. She denies any recent travel history, and she works at a nursing home as a caretaker. She is not currently on any medications. Clinical examination shows mild tenderness in the suprapubic region, and there is no organomegaly. Findings on colonoscopy include patchy erythema and ulceration in the cecum, ascending, descending, and sigmoid colon. Mucosal biopsy shows colonic crypts with lymphocytic and neutrophilic infiltrates. What is the most likely diagnosis?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-917",
+  "test_id": "test-00806",
+  "mc_prompt": "Q: A 30-year-old woman presents to the physician because of ongoing diarrhea for the past 1 month. She reports that diarrhea has been intermittently present for the past month. The stool is often loose and associated with blood and lower abdominal pain. She denies any recent travel history, and she works at a nursing home as a caretaker. She is not currently on any medications. Clinical examination shows mild tenderness in the suprapubic region, and there is no organomegaly. Findings on colonoscopy include patchy erythema and ulceration in the cecum, ascending, descending, and sigmoid colon. Mucosal biopsy shows colonic crypts with lymphocytic and neutrophilic infiltrates. What is the most likely diagnosis?\nA) Crohn’s disease\nB) Acute infective colitis\nC) Pseudomembranous colitis\nD) Irritable bowel syndrome\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "C",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4953,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7367,
+        "B": 0.0218,
+        "C": 0.2414
+      },
+      "latency_ms": 2400,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3652,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3136,
+        "B": 0.0021,
+        "C": 0.6788,
+        "D": 0.0055
+      },
+      "latency_ms": 1863,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9208,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0327,
+        "B": 0.0116,
+        "C": 0.9535,
+        "D": 0.0023
+      },
+      "latency_ms": 348,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0164,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1014,
+        "C": 0.4411,
+        "D": 0.4575
+      },
+      "latency_ms": 2410,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4812,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6805,
+        "B": 0.1202,
+        "D": 0.1993
+      },
+      "latency_ms": 466,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7488,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "C": 2,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.8649,
+    "B": 0.1557,
+    "C": 2.3148,
+    "D": 0.6646
+  }
+}

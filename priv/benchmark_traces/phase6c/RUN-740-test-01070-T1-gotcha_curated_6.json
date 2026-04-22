@@ -1,0 +1,114 @@
+{
+  "status": "ok",
+  "question": "A 72-year-old Caucasian male presents to your office with dysphagia and halitosis. If this patient is also found to have cricopharyngeal muscle dysfunction, which of the following is the most likely cause of his presenting symptoms?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-740",
+  "test_id": "test-01070",
+  "mc_prompt": "Q: A 72-year-old Caucasian male presents to your office with dysphagia and halitosis. If this patient is also found to have cricopharyngeal muscle dysfunction, which of the following is the most likely cause of his presenting symptoms?\nA) Gastroesophageal reflux disease\nB) Esophageal candidiasis\nC) Meckel's diverticulum\nD) Zenker's diverticulum\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8549,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0712,
+        "B": 0.0027,
+        "D": 0.9261
+      },
+      "latency_ms": 292,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.4704,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2648,
+        "D": 0.7352
+      },
+      "latency_ms": 159,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9041,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9288,
+        "B": 0.0247,
+        "C": 0.0218,
+        "D": 0.0247
+      },
+      "latency_ms": 2084,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2354,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.3175,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5265,
+        "B": 0.209,
+        "C": 0.1708,
+        "D": 0.0936
+      },
+      "latency_ms": 795,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.3484,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.6742,
+        "C": 0.3258
+      },
+      "latency_ms": 853,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6539,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "D",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 1,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 1.7913,
+    "B": 0.9106000000000001,
+    "C": 0.5184,
+    "D": 2.7796
+  }
+}

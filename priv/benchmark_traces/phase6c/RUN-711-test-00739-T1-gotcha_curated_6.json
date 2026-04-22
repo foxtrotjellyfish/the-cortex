@@ -1,0 +1,116 @@
+{
+  "status": "ok",
+  "question": "A 30-year-old man is brought to the emergency room by ambulance after being involved in a motor vehicle collision. He was driving a motorcycle and collided with a bus. The EMT personnel found the patient alert with anterograde amnesia for the several minutes preceding the accident. Vital signs are within normal limits. On physical examination, the patient is drowsy but follows commands. Pupils are equal, round, and reactive to light. The remainder of the initial examination is unremarkable. While the patient is being transferred to observation, his level of consciousness acutely declines. Repeat vital signs are significant for a blood pressure of 190/110 mm Hg. Ophthalmic examination now shows a fixed and dilated left pupil with no pupillary light reflex. A noncontrast CT of the head is performed and is shown in the image. Which of the following is the most likely etiology of this patient’s condition?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-711",
+  "test_id": "test-00739",
+  "mc_prompt": "Q: A 30-year-old man is brought to the emergency room by ambulance after being involved in a motor vehicle collision. He was driving a motorcycle and collided with a bus. The EMT personnel found the patient alert with anterograde amnesia for the several minutes preceding the accident. Vital signs are within normal limits. On physical examination, the patient is drowsy but follows commands. Pupils are equal, round, and reactive to light. The remainder of the initial examination is unremarkable. While the patient is being transferred to observation, his level of consciousness acutely declines. Repeat vital signs are significant for a blood pressure of 190/110 mm Hg. Ophthalmic examination now shows a fixed and dilated left pupil with no pupillary light reflex. A noncontrast CT of the head is performed and is shown in the image. Which of the following is the most likely etiology of this patient’s condition?\nA) Tearing of the middle meningeal artery\nB) Dural arteriovenous fistula\nC) Charcot-Bouchard microaneurysm\nD) Arteriovenous malformation\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 4,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.057,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3985,
+        "B": 0.0201,
+        "C": 0.4555,
+        "D": 0.1258
+      },
+      "latency_ms": 619,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9982,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0007,
+        "C": 0.9989,
+        "D": 0.0004
+      },
+      "latency_ms": 250,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2456,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1139,
+        "B": 0.3128,
+        "C": 0.0148,
+        "D": 0.5584
+      },
+      "latency_ms": 2195,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2642,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1838,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0507,
+        "B": 0.0375,
+        "C": 0.5478,
+        "D": 0.364
+      },
+      "latency_ms": 858,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0226,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.4004,
+        "C": 0.423,
+        "D": 0.1765
+      },
+      "latency_ms": 844,
+      "worker_idx": 5,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7408,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "C": 4,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 0.5638,
+    "B": 0.7707999999999999,
+    "C": 2.44,
+    "D": 2.2251
+  }
+}

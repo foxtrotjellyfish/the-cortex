@@ -1,0 +1,116 @@
+{
+  "status": "ok",
+  "question": "A 45-year-old mechanic presents to the emergency department complaining of acute-onset shortness of breath while repairing a plowing tractor for his neighbor. The patient denies having any history of asthma or respiratory symptoms, and does not smoke. His temperature is 99.8°F (37.7°C), pulse is 65/min, blood pressure is 126/86 mmHg, and respirations are 20/min. His oxygen saturation is 97%. On exam, he is pale and diaphoretic. His pupils are contracted. Diffuse wheezes are noted in all lung fields. What is the best treatment for his condition?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-683",
+  "test_id": "test-00435",
+  "mc_prompt": "Q: A 45-year-old mechanic presents to the emergency department complaining of acute-onset shortness of breath while repairing a plowing tractor for his neighbor. The patient denies having any history of asthma or respiratory symptoms, and does not smoke. His temperature is 99.8°F (37.7°C), pulse is 65/min, blood pressure is 126/86 mmHg, and respirations are 20/min. His oxygen saturation is 97%. On exam, he is pale and diaphoretic. His pupils are contracted. Diffuse wheezes are noted in all lung fields. What is the best treatment for his condition?\nA) Succinylcholine\nB) Inhaled ipratropium and oxygen\nC) Atropine and pralidoxime\nD) Inhaled albuterol and oxygen\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7927,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0579,
+        "B": 0.0747,
+        "D": 0.8674
+      },
+      "latency_ms": 476,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9916,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.9958,
+        "D": 0.0042
+      },
+      "latency_ms": 215,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4171,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0006,
+        "B": 0.7079,
+        "C": 0.0007,
+        "D": 0.2908
+      },
+      "latency_ms": 2156,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.963,
+      "answer": "D",
+      "probabilities": {
+        "B": 0.0185,
+        "D": 0.9815
+      },
+      "latency_ms": 2239,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0357,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2787,
+        "B": 0.3238,
+        "C": 0.2881,
+        "D": 0.1093
+      },
+      "latency_ms": 792,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0665,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.4142,
+        "C": 0.4807,
+        "D": 0.1051
+      },
+      "latency_ms": 815,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6694,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "B": 3,
+    "C": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 0.3372,
+    "B": 2.5349,
+    "C": 0.7695000000000001,
+    "D": 2.3583000000000003
+  }
+}

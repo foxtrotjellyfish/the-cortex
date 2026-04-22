@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "question": "A 25-year-old man presents to the office because of extreme fatigue for the past 2 days. He is also worried about his skin looking yellow. He does not have any other complaints and denies fever and headache. He admits to using illicit intravenous drugs in the past. He does not have any immunization records because he moved from Africa to the US at the age of 18. His vital signs are as follows: heart rate 72/min, respiratory rate 14/min, temperature 37.9°C (100.2°F), and blood pressure 100/74 mm Hg. Physical examination is not significant except for mild diffuse abdominal tenderness. His blood is drawn for routine tests and shows an alanine aminotransferase level (ALT) of 2,000 IU/L. A hepatitis viral panel is ordered which shows:\nAnti-HAV IgM negative\nHBsAg positive\nAnti-HBs negative\nIgM anti-HBc positive\nAnti-HCV negative\nAnti-HDV negative\nWhat is the most likely diagnosis?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-806",
+  "test_id": "test-00680",
+  "mc_prompt": "Q: A 25-year-old man presents to the office because of extreme fatigue for the past 2 days. He is also worried about his skin looking yellow. He does not have any other complaints and denies fever and headache. He admits to using illicit intravenous drugs in the past. He does not have any immunization records because he moved from Africa to the US at the age of 18. His vital signs are as follows: heart rate 72/min, respiratory rate 14/min, temperature 37.9°C (100.2°F), and blood pressure 100/74 mm Hg. Physical examination is not significant except for mild diffuse abdominal tenderness. His blood is drawn for routine tests and shows an alanine aminotransferase level (ALT) of 2,000 IU/L. A hepatitis viral panel is ordered which shows:\nAnti-HAV IgM negative\nHBsAg positive\nAnti-HBs negative\nIgM anti-HBc positive\nAnti-HCV negative\nAnti-HDV negative\nWhat is the most likely diagnosis?\nA) Past hepatitis B infection\nB) Acute hepatitis A\nC) Acute hepatitis D superinfection\nD) Acute hepatitis B\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 4,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9896,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.003,
+        "B": 0.0025,
+        "C": 0.0019,
+        "D": 0.9926
+      },
+      "latency_ms": 2630,
+      "worker_idx": 0,
+      "raw_response": "D"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9466,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0004,
+        "C": 0.9731,
+        "D": 0.0265
+      },
+      "latency_ms": 322,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0174,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4205,
+        "B": 0.0994,
+        "C": 0.077,
+        "D": 0.4031
+      },
+      "latency_ms": 2208,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2658,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.419,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1693,
+        "B": 0.1402,
+        "C": 0.1022,
+        "D": 0.5883
+      },
+      "latency_ms": 854,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1297,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.354,
+        "B": 0.4837,
+        "C": 0.1623
+      },
+      "latency_ms": 890,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3887,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.09,
+        "B": 0.0018,
+        "C": 0.2597,
+        "D": 0.6484
+      },
+      "latency_ms": 491,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 10054,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "D",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "D": 4
+  },
+  "weighted_scores": {
+    "A": 1.0372,
+    "B": 0.7276,
+    "C": 1.5762,
+    "D": 3.6589000000000005
+  }
+}

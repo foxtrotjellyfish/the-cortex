@@ -1,0 +1,101 @@
+{
+  "status": "ok",
+  "question": "A 52-year-old man with hypertension and hyperlipidemia comes to the emergency department 30 minutes after the sudden onset of substernal chest pain while sitting in a chair at home. He reports drinking 2 glasses of whiskey earlier that day, after a stressful day at work. Current medications include hydrochlorothiazide and atorvastatin. He has smoked one pack of cigarettes daily for the past 20 years. His pulse is 102/min, and blood pressure is 135/88 mm Hg. Cardiopulmonary examination shows normal heart sounds. An ECG obtained on arrival at the emergency department shows ST-segment elevations in the anterior leads. 15 minutes later, the patient's chest pain has resolved and a repeat ECG shows no abnormalities. Which of the following is the most likely underlying mechanism of this patient’s chest pain?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-929",
+  "test_id": "test-00916",
+  "mc_prompt": "Q: A 52-year-old man with hypertension and hyperlipidemia comes to the emergency department 30 minutes after the sudden onset of substernal chest pain while sitting in a chair at home. He reports drinking 2 glasses of whiskey earlier that day, after a stressful day at work. Current medications include hydrochlorothiazide and atorvastatin. He has smoked one pack of cigarettes daily for the past 20 years. His pulse is 102/min, and blood pressure is 135/88 mm Hg. Cardiopulmonary examination shows normal heart sounds. An ECG obtained on arrival at the emergency department shows ST-segment elevations in the anterior leads. 15 minutes later, the patient's chest pain has resolved and a repeat ECG shows no abnormalities. Which of the following is the most likely underlying mechanism of this patient’s chest pain?\nA) Coronary artery vasospasm\nB) Coronary artery vasodilation\nC) Atherosclerotic plaque rupture\nD) Pericardial inflammation\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.0363,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5109,
+        "B": 0.0053,
+        "C": 0.4746,
+        "D": 0.0092
+      },
+      "latency_ms": 2732,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5724,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2124,
+        "B": 0.0019,
+        "C": 0.7848,
+        "D": 0.0008
+      },
+      "latency_ms": 2176,
+      "worker_idx": 1,
+      "raw_response": "C"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9991,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0004,
+        "B": 0.0,
+        "C": 0.9995,
+        "D": 0.0001
+      },
+      "latency_ms": 383,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.759,
+      "answer": "C",
+      "probabilities": {
+        "C": 0.8795,
+        "D": 0.1205
+      },
+      "latency_ms": 2718,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0
+      },
+      "latency_ms": 460,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8470,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "C": 3
+  },
+  "weighted_scores": {
+    "A": 1.7237,
+    "B": 0.0072,
+    "C": 3.1384,
+    "D": 0.1306
+  }
+}

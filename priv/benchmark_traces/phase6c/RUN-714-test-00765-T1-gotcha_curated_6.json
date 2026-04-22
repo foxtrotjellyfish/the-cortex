@@ -1,0 +1,121 @@
+{
+  "status": "ok",
+  "question": "A 7-year-old boy is brought to your office with complaints of wheezing and dyspnea. Laboratory work reveals eosinophilia and positive skin tests for allergens. Which of the following types of drugs would be an effective treatment in this patient?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-714",
+  "test_id": "test-00765",
+  "mc_prompt": "Q: A 7-year-old boy is brought to your office with complaints of wheezing and dyspnea. Laboratory work reveals eosinophilia and positive skin tests for allergens. Which of the following types of drugs would be an effective treatment in this patient?\nA) Beta-2 antagonist\nB) Histone deacetylase inhibitor\nC) Muscarinic antagonist\nD) Anticoagulant\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7901,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0753,
+        "B": 0.0575,
+        "C": 0.8654,
+        "D": 0.0019
+      },
+      "latency_ms": 290,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.325,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5897,
+        "B": 0.0243,
+        "C": 0.1213,
+        "D": 0.2647
+      },
+      "latency_ms": 147,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4405,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2759,
+        "B": 0.0071,
+        "C": 0.7164,
+        "D": 0.0006
+      },
+      "latency_ms": 2050,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.318,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3333,
+        "B": 0.6513,
+        "C": 0.0154
+      },
+      "latency_ms": 2399,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.3819,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.568,
+        "B": 0.1861,
+        "C": 0.1683,
+        "D": 0.0776
+      },
+      "latency_ms": 761,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2499,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1767,
+        "B": 0.2508,
+        "C": 0.5007,
+        "D": 0.0718
+      },
+      "latency_ms": 765,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6413,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 1,
+    "C": 3
+  },
+  "weighted_scores": {
+    "A": 2.0189,
+    "B": 1.1770999999999998,
+    "C": 2.3875,
+    "D": 0.41659999999999997
+  }
+}

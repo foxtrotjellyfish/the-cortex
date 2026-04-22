@@ -1,0 +1,134 @@
+{
+  "status": "ok",
+  "question": "A 67-year-old woman presents from home hospice with a change in her mental status. She has seemed more confused lately and is unable to verbalize her symptoms. Her temperature is 102°F (38.9°C), blood pressure is 117/65 mmHg, pulse is 110/min, respirations are 19/min, and oxygen saturation is 95% on room air. Physical exam is notable for a right upper quadrant mass that elicits discomfort when palpated. Ultrasound is notable for pericholecystic fluid and gallbladder wall thickening without any gallstones. Which of the following is the most likely diagnosis?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-770",
+  "test_id": "test-00213",
+  "mc_prompt": "Q: A 67-year-old woman presents from home hospice with a change in her mental status. She has seemed more confused lately and is unable to verbalize her symptoms. Her temperature is 102°F (38.9°C), blood pressure is 117/65 mmHg, pulse is 110/min, respirations are 19/min, and oxygen saturation is 95% on room air. Physical exam is notable for a right upper quadrant mass that elicits discomfort when palpated. Ultrasound is notable for pericholecystic fluid and gallbladder wall thickening without any gallstones. Which of the following is the most likely diagnosis?\nA) Acalculous cholecystitis\nB) Calculous cholescystitis\nC) Choledocholithiasis\nD) Emphysematous cholecystitis\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 4,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8798,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9363,
+        "B": 0.0565,
+        "D": 0.0072
+      },
+      "latency_ms": 1903,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.515,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6912,
+        "C": 0.1762,
+        "D": 0.1326
+      },
+      "latency_ms": 229,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8147,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8741,
+        "B": 0.0211,
+        "C": 0.0594,
+        "D": 0.0454
+      },
+      "latency_ms": 1621,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6527,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1141,
+        "B": 0.7693,
+        "C": 0.1166
+      },
+      "latency_ms": 2189,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.2917,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.205,
+        "B": 0.1756,
+        "C": 0.1227,
+        "D": 0.4967
+      },
+      "latency_ms": 808,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.3402,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1825,
+        "B": 0.2387,
+        "C": 0.5789
+      },
+      "latency_ms": 813,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9998,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9999,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.0001
+      },
+      "latency_ms": 362,
+      "worker_idx": 6,
+      "raw_response": "A"
+    }
+  ],
+  "total_latency_ms": 7925,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 4,
+    "B": 1,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 4.0031,
+    "B": 1.2611999999999999,
+    "C": 1.0537999999999998,
+    "D": 0.6819999999999999
+  }
+}

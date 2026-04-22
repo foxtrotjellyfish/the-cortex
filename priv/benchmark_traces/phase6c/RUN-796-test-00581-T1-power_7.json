@@ -1,0 +1,134 @@
+{
+  "status": "ok",
+  "question": "A 58-year-old woman presents to the emergency department with difficulty breathing and a sensation that her heart was racing for the past 3 days. She adds that she has lost weight over the last 7 weeks, despite a good appetite, and is anxious most of the time with difficulty sleeping at night. She has smoked 10 cigarettes per day for the past 15 years. Her blood pressure is 100/55 mmHg, temperature is 36.5°C (97.7°F), and pulse is irregular with a rate of 140–150/min. On physical examination she is thin, frail, and appears anxious. Her palms are sweaty and there are fine tremors on extension of both hands. She has a palpable smooth thyroid mass. Examination of the eyes reveals bilateral exophthalmos. An electrocardiogram is obtained and shown in the picture. Which of the following has a strong positive correlation with this patient’s heart rhythm?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-796",
+  "test_id": "test-00581",
+  "mc_prompt": "Q: A 58-year-old woman presents to the emergency department with difficulty breathing and a sensation that her heart was racing for the past 3 days. She adds that she has lost weight over the last 7 weeks, despite a good appetite, and is anxious most of the time with difficulty sleeping at night. She has smoked 10 cigarettes per day for the past 15 years. Her blood pressure is 100/55 mmHg, temperature is 36.5°C (97.7°F), and pulse is irregular with a rate of 140–150/min. On physical examination she is thin, frail, and appears anxious. Her palms are sweaty and there are fine tremors on extension of both hands. She has a palpable smooth thyroid mass. Examination of the eyes reveals bilateral exophthalmos. An electrocardiogram is obtained and shown in the picture. Which of the following has a strong positive correlation with this patient’s heart rhythm?\nA) Digoxin blood level\nB) PR interval\nC) Age\nD) Amiodarone blood level\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7882,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0859,
+        "B": 0.031,
+        "C": 0.009,
+        "D": 0.8741
+      },
+      "latency_ms": 2227,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.4507,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1218,
+        "B": 0.2094,
+        "C": 0.0087,
+        "D": 0.6601
+      },
+      "latency_ms": 281,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0424,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2431,
+        "B": 0.2951,
+        "C": 0.3375,
+        "D": 0.1243
+      },
+      "latency_ms": 1919,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2605,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0002,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3537,
+        "B": 0.3539,
+        "C": 0.1918,
+        "D": 0.1006
+      },
+      "latency_ms": 844,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2449,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.13,
+        "B": 0.2617,
+        "C": 0.5066,
+        "D": 0.1017
+      },
+      "latency_ms": 854,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0042,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0128,
+        "B": 0.4842,
+        "C": 0.48,
+        "D": 0.023
+      },
+      "latency_ms": 448,
+      "worker_idx": 6,
+      "raw_response": "B"
+    }
+  ],
+  "total_latency_ms": 9181,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "B": 2,
+    "C": 2,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 0.9473,
+    "B": 1.6353,
+    "C": 1.5336,
+    "D": 2.8838000000000004
+  }
+}

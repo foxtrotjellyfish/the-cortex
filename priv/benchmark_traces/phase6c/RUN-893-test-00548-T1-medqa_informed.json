@@ -1,0 +1,104 @@
+{
+  "status": "ok",
+  "question": "A 24-year-old man, who recently migrated from a developing country, presents to a physician because of a 2-year history of cough, blood in his sputum, fever, and weight loss. His sputum smear and culture confirm the diagnosis of pulmonary tuberculosis due to Mycobacterium tuberculosis. His Mantoux test is 2 mm × 3 mm, and his chest radiograph is normal. High-sensitivity enzyme-linked immunosorbent assay for HIV-1 and Western blot assay for HIV-1 are positive. His CD4+ T cell count is 90/μL and HIV RNA is 30,000 copies/mL. He is started on a 4-drug regimen consisting of isoniazid, rifampin, pyrazinamide, and ethambutol in appropriate doses. He becomes sputum smear-negative after 4 weeks and reports significant improvement in symptoms. After another 4 weeks, the physician removes pyrazinamide from the antitubercular regimen and adds antiretroviral therapy (dolutegravir/tenofovir/emtricitabine). After 3 weeks, the patient presents with complaints of fever and significantly increased cough for 3 days. There is no respiratory distress but generalized lymphadenopathy is present. His chest radiograph shows pulmonary infiltrates and mediastinal lymphadenopathy, sputum smear is negative, Mantoux test is 12 mm × 14 mm, CD4+ T cell count is 370/μL, and HIV RNA is 2,900 copies/mL. What is the most appropriate initial step in treatment?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-893",
+  "test_id": "test-00548",
+  "mc_prompt": "Q: A 24-year-old man, who recently migrated from a developing country, presents to a physician because of a 2-year history of cough, blood in his sputum, fever, and weight loss. His sputum smear and culture confirm the diagnosis of pulmonary tuberculosis due to Mycobacterium tuberculosis. His Mantoux test is 2 mm × 3 mm, and his chest radiograph is normal. High-sensitivity enzyme-linked immunosorbent assay for HIV-1 and Western blot assay for HIV-1 are positive. His CD4+ T cell count is 90/μL and HIV RNA is 30,000 copies/mL. He is started on a 4-drug regimen consisting of isoniazid, rifampin, pyrazinamide, and ethambutol in appropriate doses. He becomes sputum smear-negative after 4 weeks and reports significant improvement in symptoms. After another 4 weeks, the physician removes pyrazinamide from the antitubercular regimen and adds antiretroviral therapy (dolutegravir/tenofovir/emtricitabine). After 3 weeks, the patient presents with complaints of fever and significantly increased cough for 3 days. There is no respiratory distress but generalized lymphadenopathy is present. His chest radiograph shows pulmonary infiltrates and mediastinal lymphadenopathy, sputum smear is negative, Mantoux test is 12 mm × 14 mm, CD4+ T cell count is 370/μL, and HIV RNA is 2,900 copies/mL. What is the most appropriate initial step in treatment?\nA) Stop antiretroviral therapy and continue antitubercular therapy\nB) Change antitubercular therapy to isoniazid-rifampin-pyrazinamide-ethambutol-streptomycin\nC) Change antitubercular therapy to isoniazid-rifampin-ethambutol-streptomycin\nD) Continue antitubercular therapy and antiretroviral therapy without any change\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "D",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4831,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0627,
+        "B": 0.1605,
+        "C": 0.6436,
+        "D": 0.1333
+      },
+      "latency_ms": 2732,
+      "worker_idx": 0,
+      "raw_response": "B"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.067,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1394,
+        "B": 0.3089,
+        "C": 0.3759,
+        "D": 0.1758
+      },
+      "latency_ms": 2318,
+      "worker_idx": 1,
+      "raw_response": "B"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9562,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.006,
+        "B": 0.0006,
+        "C": 0.0186,
+        "D": 0.9748
+      },
+      "latency_ms": 679,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5342,
+      "answer": "D",
+      "probabilities": {
+        "C": 0.2329,
+        "D": 0.7671
+      },
+      "latency_ms": 2546,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3175,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6436,
+        "C": 0.3261,
+        "D": 0.0303
+      },
+      "latency_ms": 785,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 9060,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "D",
+  "majority_correct": "false",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "C": 2,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 0.8516999999999999,
+    "B": 0.47000000000000003,
+    "C": 1.5971,
+    "D": 2.0813
+  }
+}

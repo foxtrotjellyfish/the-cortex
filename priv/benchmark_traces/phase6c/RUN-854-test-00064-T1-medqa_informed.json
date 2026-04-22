@@ -1,0 +1,99 @@
+{
+  "status": "ok",
+  "question": "A healthy 19-year-old man presents to his primary care provider complaining of painless “blisters” in his mouth. He reports that he noticed a white film on his tongue and the sides of his mouth 2 days ago while brushing his teeth. The film was easily brushed off. He also complains of a bitter metallic taste in his mouth but otherwise denies pain, burning, dysphagia, or hoarseness. He is otherwise healthy and takes no medications. He is a competitive swimmer and has had 8 sexual partners in the past year. He intermittently uses barrier protection. On exam, he is well-appearing and in no acute distress. His oral examination demonstrates patches of white pseudomembranes that can be wiped away to reveal erythematous mucosa. A medication with which of the following mechanisms of action is most appropriate in this patient?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-854",
+  "test_id": "test-00064",
+  "mc_prompt": "Q: A healthy 19-year-old man presents to his primary care provider complaining of painless “blisters” in his mouth. He reports that he noticed a white film on his tongue and the sides of his mouth 2 days ago while brushing his teeth. The film was easily brushed off. He also complains of a bitter metallic taste in his mouth but otherwise denies pain, burning, dysphagia, or hoarseness. He is otherwise healthy and takes no medications. He is a competitive swimmer and has had 8 sexual partners in the past year. He intermittently uses barrier protection. On exam, he is well-appearing and in no acute distress. His oral examination demonstrates patches of white pseudomembranes that can be wiped away to reveal erythematous mucosa. A medication with which of the following mechanisms of action is most appropriate in this patient?\nA) Disruption of cell membrane permeability\nB) Disruption of microtubule formation\nC) Inhibition of 14-alpha-demethylase\nD) Inhibition of beta-glucan synthase\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7638,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1132,
+        "B": 0.0098,
+        "C": 0.877
+      },
+      "latency_ms": 2438,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6613,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7763,
+        "B": 0.0398,
+        "C": 0.0689,
+        "D": 0.115
+      },
+      "latency_ms": 2139,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9818,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0082,
+        "B": 0.0,
+        "C": 0.99,
+        "D": 0.0018
+      },
+      "latency_ms": 397,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "C",
+      "probabilities": {
+        "C": 1.0
+      },
+      "latency_ms": 3057,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0
+      },
+      "latency_ms": 520,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8552,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "C": 3
+  },
+  "weighted_scores": {
+    "A": 1.8977,
+    "B": 0.049600000000000005,
+    "C": 2.9359,
+    "D": 0.1168
+  }
+}

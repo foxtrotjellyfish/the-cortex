@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "question": "A 35-year-old female is brought to the emergency department after being found unconscious. The patient is found to have a blood glucose level of 35 mg/dL. Hgb A1c was found to be 5.1%. C-peptide level was found to be decreased. The patient returned to her baseline after glucose replacement. She states that she has never had an episode like this before. She has no significant past medical history but reports a family history of diabetes in her mother. She states that she has been undergoing a difficult divorce over the past few months. What is the likely cause of this patient's condition?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-771",
+  "test_id": "test-00214",
+  "mc_prompt": "Q: A 35-year-old female is brought to the emergency department after being found unconscious. The patient is found to have a blood glucose level of 35 mg/dL. Hgb A1c was found to be 5.1%. C-peptide level was found to be decreased. The patient returned to her baseline after glucose replacement. She states that she has never had an episode like this before. She has no significant past medical history but reports a family history of diabetes in her mother. She states that she has been undergoing a difficult divorce over the past few months. What is the likely cause of this patient's condition?\nA) Insulinoma\nB) Factitious disorder\nC) Hypothyroidism\nD) Somatization disorder\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 2,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.2993,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3078,
+        "B": 0.6071,
+        "D": 0.0851
+      },
+      "latency_ms": 2549,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.6465,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.821,
+        "C": 0.0046,
+        "D": 0.1745
+      },
+      "latency_ms": 205,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4641,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1602,
+        "B": 0.1162,
+        "C": 0.6243,
+        "D": 0.0993
+      },
+      "latency_ms": 1851,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9831,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9888,
+        "B": 0.0055,
+        "D": 0.0057
+      },
+      "latency_ms": 2391,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1928,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.221,
+        "B": 0.1938,
+        "C": 0.1714,
+        "D": 0.4138
+      },
+      "latency_ms": 795,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.3814,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.3093,
+        "C": 0.6907
+      },
+      "latency_ms": 792,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0039,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.4555,
+        "B": 0.4594,
+        "C": 0.0535,
+        "D": 0.0317
+      },
+      "latency_ms": 322,
+      "worker_idx": 6,
+      "raw_response": "B"
+    }
+  ],
+  "total_latency_ms": 8908,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 2.9543,
+    "B": 1.6913,
+    "C": 1.5445000000000002,
+    "D": 0.8100999999999999
+  }
+}

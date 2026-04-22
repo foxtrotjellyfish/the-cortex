@@ -1,0 +1,135 @@
+{
+  "status": "ok",
+  "question": "A 7-year-old boy is brought to the physician by his mother for evaluation of progressively worsening swelling around the eyes. He has no history of major medical illness. He had a sore throat and cough 2 weeks ago that resolved spontaneously. Physical examination shows moderate periorbital edema and 2+ pitting edema of the lower extremities bilaterally. A kidney biopsy specimen shows effacement of the podocytes on electron microscopy. Which of the following is most likely to be found on urinalysis?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-828",
+  "test_id": "test-00904",
+  "mc_prompt": "Q: A 7-year-old boy is brought to the physician by his mother for evaluation of progressively worsening swelling around the eyes. He has no history of major medical illness. He had a sore throat and cough 2 weeks ago that resolved spontaneously. Physical examination shows moderate periorbital edema and 2+ pitting edema of the lower extremities bilaterally. A kidney biopsy specimen shows effacement of the podocytes on electron microscopy. Which of the following is most likely to be found on urinalysis?\nA) Hyaline casts and immunoglobulins\nB) Fatty casts and albumin\nC) White blood cell casts and eosinophils\nD) Granular casts and tubular epithelial cells\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 2,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7924,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0031,
+        "B": 0.882,
+        "C": 0.0254,
+        "D": 0.0896
+      },
+      "latency_ms": 2111,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.2275,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.3359,
+        "B": 0.1007,
+        "D": 0.5634
+      },
+      "latency_ms": 216,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0093,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3403,
+        "B": 0.3496,
+        "C": 0.0248,
+        "D": 0.2854
+      },
+      "latency_ms": 1619,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3986,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6883,
+        "B": 0.022,
+        "C": 0.2897
+      },
+      "latency_ms": 2537,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.713,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0708,
+        "B": 0.0839,
+        "C": 0.0484,
+        "D": 0.7969
+      },
+      "latency_ms": 786,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0124,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1208,
+        "B": 0.4334,
+        "C": 0.4458
+      },
+      "latency_ms": 790,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9599,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9784,
+        "B": 0.0008,
+        "C": 0.0023,
+        "D": 0.0185
+      },
+      "latency_ms": 316,
+      "worker_idx": 6,
+      "raw_response": "A"
+    }
+  ],
+  "total_latency_ms": 8375,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 2,
+    "C": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 2.5376,
+    "B": 1.8724,
+    "C": 0.8363999999999999,
+    "D": 1.7538
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "status": "ok",
+  "question": "An 8-year-old girl presents to her pediatrician with intensely pruritic lesions over her buttocks, as shown. These lesions occur intermittently but have worsened over time. Her medical history is remarkable for iron deficiency, for which she is on ferrous sulfate. The patient has also experienced intermittent episodes of mild diarrhea, previously diagnosed as lactose intolerance. Her height is at the 30th percentile and weight is at the 25th percentile for age and sex. An immunoglobulin A (IgA) tissue transglutaminase titer is 5 times the upper limit of normal. Which of the following is the most likely cause of this patient's condition?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-881",
+  "test_id": "test-00411",
+  "mc_prompt": "Q: An 8-year-old girl presents to her pediatrician with intensely pruritic lesions over her buttocks, as shown. These lesions occur intermittently but have worsened over time. Her medical history is remarkable for iron deficiency, for which she is on ferrous sulfate. The patient has also experienced intermittent episodes of mild diarrhea, previously diagnosed as lactose intolerance. Her height is at the 30th percentile and weight is at the 25th percentile for age and sex. An immunoglobulin A (IgA) tissue transglutaminase titer is 5 times the upper limit of normal. Which of the following is the most likely cause of this patient's condition?\nA) Crohn’s disease\nB) Celiac disease\nC) Common variable immune deficiency\nD) Henoch-Schonlein purpura\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9853,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0056,
+        "B": 0.9909,
+        "D": 0.0035
+      },
+      "latency_ms": 2077,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7027,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.057,
+        "B": 0.8168,
+        "C": 0.0121,
+        "D": 0.1141
+      },
+      "latency_ms": 2131,
+      "worker_idx": 1,
+      "raw_response": "B"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7424,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1136,
+        "B": 0.0034,
+        "C": 0.027,
+        "D": 0.856
+      },
+      "latency_ms": 377,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.991,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.9955,
+        "C": 0.0045
+      },
+      "latency_ms": 2469,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7226,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1198,
+        "B": 0.8424,
+        "C": 0.0378
+      },
+      "latency_ms": 407,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7465,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "B": 4,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 0.29600000000000004,
+    "B": 3.6490000000000005,
+    "C": 0.0814,
+    "D": 0.9736
+  }
+}

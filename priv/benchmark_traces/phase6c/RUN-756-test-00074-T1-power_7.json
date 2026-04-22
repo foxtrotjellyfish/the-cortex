@@ -1,0 +1,130 @@
+{
+  "status": "ok",
+  "question": "A 21-year-old man comes to the physician because of pruritus and a hypopigmented rash on his upper body for 5 days. He first noticed the symptoms after returning from a business trip last week in the Bahamas. While he was there, he visited a couple of beaches and went hiking with some coworkers. The rash initially started as a single lesion on his upper back but since then has extended to his shoulders. He has a history of type 1 diabetes mellitus controlled with an insulin pump. He works as an office manager and has no known exposure to melanocytotoxic chemicals. He has been sexually active with three female partners over the past year and uses condoms inconsistently. He is 183 cm (6 ft) tall and weighs 80 kg (176 lb); BMI is 23.9 kg/m2. His temperature is 37.2°C (99°F), pulse is 78/min, and blood pressure is 130/84 mm Hg. A photograph of the rash is shown. One month ago, his hemoglobin A1C was 7.8%. Which of the following is most likely to confirm the diagnosis?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-756",
+  "test_id": "test-00074",
+  "mc_prompt": "Q: A 21-year-old man comes to the physician because of pruritus and a hypopigmented rash on his upper body for 5 days. He first noticed the symptoms after returning from a business trip last week in the Bahamas. While he was there, he visited a couple of beaches and went hiking with some coworkers. The rash initially started as a single lesion on his upper back but since then has extended to his shoulders. He has a history of type 1 diabetes mellitus controlled with an insulin pump. He works as an office manager and has no known exposure to melanocytotoxic chemicals. He has been sexually active with three female partners over the past year and uses condoms inconsistently. He is 183 cm (6 ft) tall and weighs 80 kg (176 lb); BMI is 23.9 kg/m2. His temperature is 37.2°C (99°F), pulse is 78/min, and blood pressure is 130/84 mm Hg. A photograph of the rash is shown. One month ago, his hemoglobin A1C was 7.8%. Which of the following is most likely to confirm the diagnosis?\nA) Wood lamp examination\nB) Skin culture\nC) Potassium hydroxide preparation\nD) Skin biopsy\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 5,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.5548,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2207,
+        "B": 0.0038,
+        "D": 0.7755
+      },
+      "latency_ms": 2352,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9974,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0013,
+        "D": 0.9987
+      },
+      "latency_ms": 322,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9329,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0261,
+        "B": 0.0046,
+        "C": 0.0103,
+        "D": 0.959
+      },
+      "latency_ms": 1943,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2366,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.027,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3055,
+        "B": 0.2134,
+        "C": 0.3325,
+        "D": 0.1486
+      },
+      "latency_ms": 875,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2291,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0385,
+        "B": 0.3071,
+        "C": 0.5362,
+        "D": 0.1182
+      },
+      "latency_ms": 884,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9928,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0036,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.9964
+      },
+      "latency_ms": 524,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 9268,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "C": 2,
+    "D": 5
+  },
+  "weighted_scores": {
+    "A": 0.5957,
+    "B": 0.5288999999999999,
+    "C": 0.879,
+    "D": 4.9963999999999995
+  }
+}

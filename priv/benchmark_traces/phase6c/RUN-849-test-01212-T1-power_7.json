@@ -1,0 +1,132 @@
+{
+  "status": "ok",
+  "question": "A 47-year-old female presents to her primary physician for follow up after an ED visit for nephrolithiasis 1 week prior. CT scan in the ED revealed a 4-mm stone occluding the right ureter. She was able to pass the stone without assistance over the course of 5 hours. Pathology report on the stone states it was composed of calcium oxalate. She says that the pain of passing the stone was excruciating and asks how she can prevent kidney stones in the future. Which of the following interventions is most likely to prevent renal calculi formation in the future for this patient?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-849",
+  "test_id": "test-01212",
+  "mc_prompt": "Q: A 47-year-old female presents to her primary physician for follow up after an ED visit for nephrolithiasis 1 week prior. CT scan in the ED revealed a 4-mm stone occluding the right ureter. She was able to pass the stone without assistance over the course of 5 hours. Pathology report on the stone states it was composed of calcium oxalate. She says that the pain of passing the stone was excruciating and asks how she can prevent kidney stones in the future. Which of the following interventions is most likely to prevent renal calculi formation in the future for this patient?\nA) Decreasing calcium intake\nB) Decreasing sodium intake\nC) Increasing consumption of nuts and seeds\nD) Urine acidification with cranberry juice\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9264,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0368,
+        "B": 0.9632
+      },
+      "latency_ms": 2577,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.8063,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0826,
+        "C": 0.0285,
+        "D": 0.8889
+      },
+      "latency_ms": 216,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4176,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6505,
+        "B": 0.0805,
+        "C": 0.036,
+        "D": 0.2329
+      },
+      "latency_ms": 2116,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4427,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.0525,
+        "C": 0.6951,
+        "D": 0.2524
+      },
+      "latency_ms": 2634,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.5746,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1313,
+        "B": 0.0851,
+        "C": 0.0778,
+        "D": 0.7059
+      },
+      "latency_ms": 749,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.4264,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.7132,
+        "C": 0.2868
+      },
+      "latency_ms": 1106,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7158,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1374,
+        "B": 0.007,
+        "C": 0.0025,
+        "D": 0.8532
+      },
+      "latency_ms": 433,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 9832,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "B": 2,
+    "C": 1,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 1.0386,
+    "B": 1.9014999999999997,
+    "C": 1.1267,
+    "D": 2.9333
+  }
+}

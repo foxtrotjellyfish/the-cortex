@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "question": "A 34-year-old man comes to the physician with a 2-month history of difficulty concentrating at work. He is worried he may lose his job due to poor performance. He feels constantly tired but attributes his fatigue to waking up early most mornings and being unable to fall back asleep. His wife has noticed that he has been speaking more slowly than usual and his appetite has decreased. He used to enjoy dance classes with her but has not been as interested in this recently. He is a veteran who returned from a deployment to Afghanistan 2 years ago. Which of the following is the most likely diagnosis?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-708",
+  "test_id": "test-00698",
+  "mc_prompt": "Q: A 34-year-old man comes to the physician with a 2-month history of difficulty concentrating at work. He is worried he may lose his job due to poor performance. He feels constantly tired but attributes his fatigue to waking up early most mornings and being unable to fall back asleep. His wife has noticed that he has been speaking more slowly than usual and his appetite has decreased. He used to enjoy dance classes with her but has not been as interested in this recently. He is a veteran who returned from a deployment to Afghanistan 2 years ago. Which of the following is the most likely diagnosis?\nA) Major depressive disorder\nB) Adjustment disorder\nC) Acute stress disorder\nD) Post traumatic stress disorder\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8217,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0839,
+        "B": 0.0065,
+        "C": 0.004,
+        "D": 0.9056
+      },
+      "latency_ms": 403,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9828,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0042,
+        "C": 0.0065,
+        "D": 0.9893
+      },
+      "latency_ms": 185,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1232,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5361,
+        "B": 0.0089,
+        "C": 0.0421,
+        "D": 0.4129
+      },
+      "latency_ms": 1857,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1102,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5551,
+        "D": 0.4449
+      },
+      "latency_ms": 2149,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.5799,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1185,
+        "B": 0.1002,
+        "C": 0.083,
+        "D": 0.6984
+      },
+      "latency_ms": 780,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.615,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1329,
+        "B": 0.1192,
+        "C": 0.7479
+      },
+      "latency_ms": 792,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6166,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "C": 1,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 1.4307,
+    "B": 0.2348,
+    "C": 0.8835,
+    "D": 3.4511
+  }
+}

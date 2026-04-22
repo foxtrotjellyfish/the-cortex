@@ -1,0 +1,102 @@
+{
+  "status": "ok",
+  "question": "A 74-year-old man was admitted to the intensive care ward due to progressive dyspnea, cough with pink sputum, and diaphoresis. He had 2 myocardial infarctions at the age of 66 and 69 years and suffers from chronic heart failure. At the time of presentation, his vital signs are as follows: blood pressure 90/50 mm Hg, heart rate 108/min, respiratory rate 29/min, and temperature 35.5°C (95.9°F). On physical examination, the patient sits upright. He is lethargic and cyanotic. Lung auscultation reveals widespread bilateral fine rales. Cardiac examination is significant for S3, accentuation of the pulmonic component of S2, and a systolic murmur heard best at the apex of the heart. Soon after hospitalization, the patient develops ventricular fibrillation and dies despite adequate resuscitation measures. Which microscopic finding would you expect to see in this patient on autopsy?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-943",
+  "test_id": "test-01128",
+  "mc_prompt": "Q: A 74-year-old man was admitted to the intensive care ward due to progressive dyspnea, cough with pink sputum, and diaphoresis. He had 2 myocardial infarctions at the age of 66 and 69 years and suffers from chronic heart failure. At the time of presentation, his vital signs are as follows: blood pressure 90/50 mm Hg, heart rate 108/min, respiratory rate 29/min, and temperature 35.5°C (95.9°F). On physical examination, the patient sits upright. He is lethargic and cyanotic. Lung auscultation reveals widespread bilateral fine rales. Cardiac examination is significant for S3, accentuation of the pulmonic component of S2, and a systolic murmur heard best at the apex of the heart. Soon after hospitalization, the patient develops ventricular fibrillation and dies despite adequate resuscitation measures. Which microscopic finding would you expect to see in this patient on autopsy?\nA) Brownish inclusions in the pulmonary macrophages on H&E staining\nB) Positive Prussian-blue staining of the kidney tissue\nC) Ground-glass hepatocytes\nD) Positive Congo-red staining of the cardiac tissue\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.3229,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5729,
+        "B": 0.1557,
+        "C": 0.0214,
+        "D": 0.25
+      },
+      "latency_ms": 2567,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5254,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1733,
+        "B": 0.0788,
+        "C": 0.0491,
+        "D": 0.6987
+      },
+      "latency_ms": 2211,
+      "worker_idx": 1,
+      "raw_response": "A"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9967,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0016,
+        "B": 0.0,
+        "C": 0.0001,
+        "D": 0.9983
+      },
+      "latency_ms": 482,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2879,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8923,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9296,
+        "B": 0.033,
+        "D": 0.0373
+      },
+      "latency_ms": 557,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8698,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 1.6774,
+    "B": 0.26749999999999996,
+    "C": 0.0706,
+    "D": 2.9843
+  }
+}

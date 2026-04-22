@@ -1,0 +1,131 @@
+{
+  "status": "ok",
+  "question": "A 54-year-old man is brought to the emergency department after he was found outside in the middle of a blizzard. On presentation, he is conscious but does not know where he is nor how he got there. His wife is contacted and says that he has been getting increasingly confused over the past 6 weeks. This progressed from misplacing objects to getting lost in places that he knew how to navigate previously. Most worryingly, he has recently started forgetting the names of their children. In addition to these memory changes, she says that he now has rapid jerky movements of his extremities as well as coordination and balance problems. Finally, he has become extremely paranoid about government surveillance and has had hallucinations about secret agents in their house. His previous medical history is significant for a previous car crash in which the patient required internal fixation of a femur fracture and a corneal transplant for corneal degeneration. Otherwise he had no neurologic deficits prior to 6 weeks ago. Physical exam reveals myoclonus and ataxia. Which of the following is true of the most likely cause of this patient's symptoms?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-845",
+  "test_id": "test-01139",
+  "mc_prompt": "Q: A 54-year-old man is brought to the emergency department after he was found outside in the middle of a blizzard. On presentation, he is conscious but does not know where he is nor how he got there. His wife is contacted and says that he has been getting increasingly confused over the past 6 weeks. This progressed from misplacing objects to getting lost in places that he knew how to navigate previously. Most worryingly, he has recently started forgetting the names of their children. In addition to these memory changes, she says that he now has rapid jerky movements of his extremities as well as coordination and balance problems. Finally, he has become extremely paranoid about government surveillance and has had hallucinations about secret agents in their house. His previous medical history is significant for a previous car crash in which the patient required internal fixation of a femur fracture and a corneal transplant for corneal degeneration. Otherwise he had no neurologic deficits prior to 6 weeks ago. Physical exam reveals myoclonus and ataxia. Which of the following is true of the most likely cause of this patient's symptoms?\nA) Can be transmitted on medical equipment even after autoclaving instruments\nB) Contains genetic material but is unable to survive independent from a host\nC) Has a cell wall containing peptidoglycan\nD) Leads to intracellular aggregations of hyperphosphorylated tau protein\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 4,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.3638,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6265,
+        "B": 0.2627,
+        "C": 0.0866,
+        "D": 0.0241
+      },
+      "latency_ms": 2602,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9996,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0002,
+        "D": 0.9998
+      },
+      "latency_ms": 355,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9218,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0061,
+        "B": 0.0107,
+        "C": 0.0307,
+        "D": 0.9525
+      },
+      "latency_ms": 1935,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2867,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.6179,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1054,
+        "B": 0.1034,
+        "C": 0.0678,
+        "D": 0.7233
+      },
+      "latency_ms": 1383,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.359,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1626,
+        "B": 0.2392,
+        "C": 0.5982
+      },
+      "latency_ms": 1246,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8488,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9154,
+        "B": 0.0076,
+        "C": 0.0666,
+        "D": 0.0104
+      },
+      "latency_ms": 537,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 10925,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "C": 1,
+    "D": 4
+  },
+  "weighted_scores": {
+    "A": 1.8161999999999998,
+    "B": 0.6236,
+    "C": 0.8498999999999999,
+    "D": 3.7101
+  }
+}

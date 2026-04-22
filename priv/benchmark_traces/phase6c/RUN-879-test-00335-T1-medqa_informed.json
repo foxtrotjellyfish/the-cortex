@@ -1,0 +1,101 @@
+{
+  "status": "ok",
+  "question": "A 23-year-old man presents with sudden loss of consciousness while pitching in a baseball game. There is no history of injury. Consciousness is regained after cardiopulmonary resuscitation. Past medical history is negative for any neurological and cardiovascular problems. Physical examination reveals a prominent A wave on the jugular venous pulse and a double apical impulse. There are no audible murmurs. An S4 is present. What is the most likely diagnosis?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-879",
+  "test_id": "test-00335",
+  "mc_prompt": "Q: A 23-year-old man presents with sudden loss of consciousness while pitching in a baseball game. There is no history of injury. Consciousness is regained after cardiopulmonary resuscitation. Past medical history is negative for any neurological and cardiovascular problems. Physical examination reveals a prominent A wave on the jugular venous pulse and a double apical impulse. There are no audible murmurs. An S4 is present. What is the most likely diagnosis?\nA) Hypertrophic cardiomyopathy\nB) Aortic stenosis\nC) Takotsubo cardiomyopathy\nD) Restrictive cardiomyopathy\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9364,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9644,
+        "B": 0.0076,
+        "D": 0.028
+      },
+      "latency_ms": 2257,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1719,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5609,
+        "B": 0.0185,
+        "C": 0.0316,
+        "D": 0.389
+      },
+      "latency_ms": 2096,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3911,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.3018,
+        "B": 0.0051,
+        "C": 0.0001,
+        "D": 0.6929
+      },
+      "latency_ms": 284,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8286,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0857,
+        "C": 0.9143
+      },
+      "latency_ms": 2621,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0
+      },
+      "latency_ms": 369,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7630,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 3,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 2.9128000000000003,
+    "B": 0.0312,
+    "C": 0.946,
+    "D": 1.1099
+  }
+}

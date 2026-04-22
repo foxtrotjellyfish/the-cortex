@@ -1,0 +1,102 @@
+{
+  "status": "ok",
+  "question": "A 32-year-old primigravid woman at 16 weeks' gestation comes to the physician for a routine prenatal visit. She is asymptomatic and has no history of serious illness. Her only medication is a prenatal vitamin. Her temperature is 37.2°C (99°F) and blood pressure is 108/60 mm Hg. Pelvic examination shows a uterus consistent in size with a 16-week gestation. A quadruple screening test shows maternal serum AFP of 3 times the median and normal levels of serum β-hCG, estriol, and inhibin A. Which of the following is most likely to account for these findings?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-892",
+  "test_id": "test-00542",
+  "mc_prompt": "Q: A 32-year-old primigravid woman at 16 weeks' gestation comes to the physician for a routine prenatal visit. She is asymptomatic and has no history of serious illness. Her only medication is a prenatal vitamin. Her temperature is 37.2°C (99°F) and blood pressure is 108/60 mm Hg. Pelvic examination shows a uterus consistent in size with a 16-week gestation. A quadruple screening test shows maternal serum AFP of 3 times the median and normal levels of serum β-hCG, estriol, and inhibin A. Which of the following is most likely to account for these findings?\nA) Partial molar pregnancy\nB) Neural tube defect\nC) Trisomy 18\nD) Trisomy 21\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6921,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8393,
+        "B": 0.0135,
+        "D": 0.1472
+      },
+      "latency_ms": 2366,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5201,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6739,
+        "B": 0.08,
+        "C": 0.1538,
+        "D": 0.0923
+      },
+      "latency_ms": 2144,
+      "worker_idx": 1,
+      "raw_response": "A"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6056,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1265,
+        "B": 0.0409,
+        "C": 0.1005,
+        "D": 0.7321
+      },
+      "latency_ms": 350,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9808,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0096,
+        "C": 0.9904
+      },
+      "latency_ms": 2703,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5496,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7748,
+        "D": 0.2252
+      },
+      "latency_ms": 425,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7991,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 3,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 2.4241,
+    "B": 0.1344,
+    "C": 1.2447,
+    "D": 1.1968
+  }
+}

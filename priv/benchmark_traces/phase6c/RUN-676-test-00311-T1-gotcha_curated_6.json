@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "question": "A 53-year-old man comes to the physician because of a 2-month history of multiple episodes of small amounts of blood in his stools. Examination shows pale conjunctivae. His hemoglobin concentration is 8.3 g/dL and mean corpuscular volume is 72μm3. Colonoscopy shows a 2.3-cm polypoid mass in the ascending colon. A photomicrograph of a biopsy specimen of the lesion is shown. Which of the following processes is most likely to be involved in the pathogenesis of this patient's condition?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-676",
+  "test_id": "test-00311",
+  "mc_prompt": "Q: A 53-year-old man comes to the physician because of a 2-month history of multiple episodes of small amounts of blood in his stools. Examination shows pale conjunctivae. His hemoglobin concentration is 8.3 g/dL and mean corpuscular volume is 72μm3. Colonoscopy shows a 2.3-cm polypoid mass in the ascending colon. A photomicrograph of a biopsy specimen of the lesion is shown. Which of the following processes is most likely to be involved in the pathogenesis of this patient's condition?\nA) Underexpression of COX-2\nB) Increased phosphorylation of serine and threonine\nC) Impaired degradation of β-catenin\nD) Abnormal transfer of phosphate to cellular proteins\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 4,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.3742,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1669,
+        "B": 0.1331,
+        "C": 0.1589,
+        "D": 0.5411
+      },
+      "latency_ms": 487,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.4024,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6461,
+        "B": 0.0223,
+        "C": 0.2437,
+        "D": 0.0879
+      },
+      "latency_ms": 203,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7794,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0822,
+        "B": 0.0269,
+        "C": 0.8616,
+        "D": 0.0293
+      },
+      "latency_ms": 1846,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "C",
+      "probabilities": {
+        "C": 1.0
+      },
+      "latency_ms": 2210,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.2549,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0484,
+        "B": 0.0548,
+        "C": 0.5758,
+        "D": 0.3209
+      },
+      "latency_ms": 803,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1247,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1115,
+        "B": 0.3819,
+        "C": 0.5066
+      },
+      "latency_ms": 818,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6367,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "C": 4,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.0551,
+    "B": 0.619,
+    "C": 3.3466,
+    "D": 0.9792000000000001
+  }
+}

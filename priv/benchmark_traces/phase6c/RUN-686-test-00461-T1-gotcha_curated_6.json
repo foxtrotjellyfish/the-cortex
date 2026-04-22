@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "question": "A 58-year-old man comes to the physician because he is unable to achieve erections during sexual intercourse. He first noticed the problem 8 months ago, when he became sexually active with a new girlfriend. He states that his relationship with his girlfriend is good, but his inability to engage in sexual intercourse has been frustrating. He has hyperlipidemia and was diagnosed with major depressive disorder 3 years ago. He works as a lawyer and enjoys his job, but he has had a great deal of stress lately. He had not been sexually active for the previous 3 years, since the death of his wife. He does not smoke. He drinks 4–6 beers on weekends. Current medications include simvastatin and citalopram. His temperature is 37.5°C (99.5°F), pulse is 80/min, and blood pressure is 135/82 mm Hg. BMI is 30 kg/m2. Pedal pulses are difficult to palpate. The remainder of the physical examination shows no abnormalities. Which of the following is the most appropriate next step in management?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-686",
+  "test_id": "test-00461",
+  "mc_prompt": "Q: A 58-year-old man comes to the physician because he is unable to achieve erections during sexual intercourse. He first noticed the problem 8 months ago, when he became sexually active with a new girlfriend. He states that his relationship with his girlfriend is good, but his inability to engage in sexual intercourse has been frustrating. He has hyperlipidemia and was diagnosed with major depressive disorder 3 years ago. He works as a lawyer and enjoys his job, but he has had a great deal of stress lately. He had not been sexually active for the previous 3 years, since the death of his wife. He does not smoke. He drinks 4–6 beers on weekends. Current medications include simvastatin and citalopram. His temperature is 37.5°C (99.5°F), pulse is 80/min, and blood pressure is 135/82 mm Hg. BMI is 30 kg/m2. Pedal pulses are difficult to palpate. The remainder of the physical examination shows no abnormalities. Which of the following is the most appropriate next step in management?\nA) Psychotherapy\nB) Penile prosthesis insertion\nC) Nocturnal penile tumescence testing\nD) Switch citalopram to bupropion\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "C",
+  "majority_votes": 2,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.3837,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1211,
+        "B": 0.0177,
+        "C": 0.6224,
+        "D": 0.2387
+      },
+      "latency_ms": 662,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9734,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.007,
+        "B": 0.9832,
+        "C": 0.0098
+      },
+      "latency_ms": 304,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0859,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.3683,
+        "B": 0.2004,
+        "C": 0.1489,
+        "D": 0.2824
+      },
+      "latency_ms": 2024,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1508,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.4246,
+        "C": 0.5754
+      },
+      "latency_ms": 2680,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0188,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.2945,
+        "B": 0.2546,
+        "C": 0.2757,
+        "D": 0.1751
+      },
+      "latency_ms": 868,
+      "worker_idx": 4,
+      "raw_response": "D"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.137,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.5021,
+        "C": 0.3651,
+        "D": 0.1328
+      },
+      "latency_ms": 884,
+      "worker_idx": 5,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7422,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 2,
+    "C": 2
+  },
+  "weighted_scores": {
+    "A": 1.2155,
+    "B": 1.9579999999999997,
+    "C": 1.9973,
+    "D": 0.8290000000000001
+  }
+}

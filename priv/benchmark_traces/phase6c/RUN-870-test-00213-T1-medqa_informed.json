@@ -1,0 +1,101 @@
+{
+  "status": "ok",
+  "question": "A 67-year-old woman presents from home hospice with a change in her mental status. She has seemed more confused lately and is unable to verbalize her symptoms. Her temperature is 102°F (38.9°C), blood pressure is 117/65 mmHg, pulse is 110/min, respirations are 19/min, and oxygen saturation is 95% on room air. Physical exam is notable for a right upper quadrant mass that elicits discomfort when palpated. Ultrasound is notable for pericholecystic fluid and gallbladder wall thickening without any gallstones. Which of the following is the most likely diagnosis?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-870",
+  "test_id": "test-00213",
+  "mc_prompt": "Q: A 67-year-old woman presents from home hospice with a change in her mental status. She has seemed more confused lately and is unable to verbalize her symptoms. Her temperature is 102°F (38.9°C), blood pressure is 117/65 mmHg, pulse is 110/min, respirations are 19/min, and oxygen saturation is 95% on room air. Physical exam is notable for a right upper quadrant mass that elicits discomfort when palpated. Ultrasound is notable for pericholecystic fluid and gallbladder wall thickening without any gallstones. Which of the following is the most likely diagnosis?\nA) Acalculous cholecystitis\nB) Calculous cholescystitis\nC) Choledocholithiasis\nD) Emphysematous cholecystitis\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8798,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9363,
+        "B": 0.0565,
+        "D": 0.0072
+      },
+      "latency_ms": 2680,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8147,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8741,
+        "B": 0.0211,
+        "C": 0.0594,
+        "D": 0.0454
+      },
+      "latency_ms": 2167,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9998,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9999,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.0001
+      },
+      "latency_ms": 348,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6527,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1141,
+        "B": 0.7693,
+        "C": 0.1166
+      },
+      "latency_ms": 2734,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0
+      },
+      "latency_ms": 423,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8353,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 4,
+    "B": 1
+  },
+  "weighted_scores": {
+    "A": 3.9244,
+    "B": 0.8469,
+    "C": 0.176,
+    "D": 0.052700000000000004
+  }
+}

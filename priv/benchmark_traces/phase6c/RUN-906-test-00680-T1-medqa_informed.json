@@ -1,0 +1,101 @@
+{
+  "status": "ok",
+  "question": "A 25-year-old man presents to the office because of extreme fatigue for the past 2 days. He is also worried about his skin looking yellow. He does not have any other complaints and denies fever and headache. He admits to using illicit intravenous drugs in the past. He does not have any immunization records because he moved from Africa to the US at the age of 18. His vital signs are as follows: heart rate 72/min, respiratory rate 14/min, temperature 37.9°C (100.2°F), and blood pressure 100/74 mm Hg. Physical examination is not significant except for mild diffuse abdominal tenderness. His blood is drawn for routine tests and shows an alanine aminotransferase level (ALT) of 2,000 IU/L. A hepatitis viral panel is ordered which shows:\nAnti-HAV IgM negative\nHBsAg positive\nAnti-HBs negative\nIgM anti-HBc positive\nAnti-HCV negative\nAnti-HDV negative\nWhat is the most likely diagnosis?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-906",
+  "test_id": "test-00680",
+  "mc_prompt": "Q: A 25-year-old man presents to the office because of extreme fatigue for the past 2 days. He is also worried about his skin looking yellow. He does not have any other complaints and denies fever and headache. He admits to using illicit intravenous drugs in the past. He does not have any immunization records because he moved from Africa to the US at the age of 18. His vital signs are as follows: heart rate 72/min, respiratory rate 14/min, temperature 37.9°C (100.2°F), and blood pressure 100/74 mm Hg. Physical examination is not significant except for mild diffuse abdominal tenderness. His blood is drawn for routine tests and shows an alanine aminotransferase level (ALT) of 2,000 IU/L. A hepatitis viral panel is ordered which shows:\nAnti-HAV IgM negative\nHBsAg positive\nAnti-HBs negative\nIgM anti-HBc positive\nAnti-HCV negative\nAnti-HDV negative\nWhat is the most likely diagnosis?\nA) Past hepatitis B infection\nB) Acute hepatitis A\nC) Acute hepatitis D superinfection\nD) Acute hepatitis B\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9896,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.003,
+        "B": 0.0025,
+        "C": 0.0019,
+        "D": 0.9926
+      },
+      "latency_ms": 2307,
+      "worker_idx": 0,
+      "raw_response": "D"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0174,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4205,
+        "B": 0.0994,
+        "C": 0.077,
+        "D": 0.4031
+      },
+      "latency_ms": 1951,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3887,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.09,
+        "B": 0.0018,
+        "C": 0.2597,
+        "D": 0.6484
+      },
+      "latency_ms": 507,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2602,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.781,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8905,
+        "C": 0.1095
+      },
+      "latency_ms": 508,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7875,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "D",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 1.404,
+    "B": 0.1037,
+    "C": 0.4481,
+    "D": 3.0441000000000003
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "status": "ok",
+  "question": "A 6-year-old boy is brought in by his parents to a pediatrician’s office for persistent fever. His temperature has ranged from 38.6°C–39.5°C (101.5°F–103.1°F) over the past week. He was diagnosed with a gene defect on chromosome 7, which has caused dysfunction in a transmembrane protein. This defect has resulted in several hospitalizations for various respiratory infections. At the present time, he is struggling with a cough with thick purulent sputum. A sputum sample is sent for culture and the patient is started on vancomycin.The pediatrician tells the patient’s family that there is a collection of mucus in the respiratory tree which increases the patient's chances of future infections. He will have to undergo chest physiotherapy and they should report any signs of infection immediately to a medical professional. Which of the following pathogens will most likely infect this patient in adulthood?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-880",
+  "test_id": "test-00387",
+  "mc_prompt": "Q: A 6-year-old boy is brought in by his parents to a pediatrician’s office for persistent fever. His temperature has ranged from 38.6°C–39.5°C (101.5°F–103.1°F) over the past week. He was diagnosed with a gene defect on chromosome 7, which has caused dysfunction in a transmembrane protein. This defect has resulted in several hospitalizations for various respiratory infections. At the present time, he is struggling with a cough with thick purulent sputum. A sputum sample is sent for culture and the patient is started on vancomycin.The pediatrician tells the patient’s family that there is a collection of mucus in the respiratory tree which increases the patient's chances of future infections. He will have to undergo chest physiotherapy and they should report any signs of infection immediately to a medical professional. Which of the following pathogens will most likely infect this patient in adulthood?\nA) Staphylococcus\nB) Pseudomonas\nC) Burkholderia\nD) Candida\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "B",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.0175,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4718,
+        "B": 0.4543,
+        "C": 0.0519,
+        "D": 0.0221
+      },
+      "latency_ms": 2469,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2498,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2744,
+        "B": 0.5242,
+        "C": 0.042,
+        "D": 0.1594
+      },
+      "latency_ms": 2161,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9566,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0042,
+        "B": 0.9726,
+        "C": 0.016,
+        "D": 0.0072
+      },
+      "latency_ms": 376,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.382,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2432,
+        "C": 0.1316,
+        "D": 0.6252
+      },
+      "latency_ms": 2809,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2112,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6056,
+        "B": 0.3944
+      },
+      "latency_ms": 485,
+      "worker_idx": 4,
+      "raw_response": "Based"
+    }
+  ],
+  "total_latency_ms": 8301,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 2,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.5992,
+    "B": 2.3455,
+    "C": 0.2415,
+    "D": 0.8139
+  }
+}

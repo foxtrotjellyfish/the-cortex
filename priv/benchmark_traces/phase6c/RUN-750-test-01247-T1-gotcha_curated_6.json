@@ -1,0 +1,117 @@
+{
+  "status": "ok",
+  "question": "A 51-year-old woman goes to respiratory function testing in order to evaluate her shortness of breath. She recently joined a walking program with her friends in order to lose weight; however, she noticed that she was not able to keep up with her friends during the program. She has a 60-pack-year history of smoking as well as hypertension well-controlled on medication. The following represent the parameters for this patient's respiratory anatomy and function:\n\nVital capacity (VC): 5,000 mL\nInspiratory reserve volume (IRV): 2,500 mL\nFunctional reserve capacity (FRC): 2,700 mL\nResidual volume (RV): 1,000 mL\nUpper airway volume: 100 mL\nConducting airway volume: 125 mL\n\nInspired CO2 pressure (PiCO2): 1 mmHg\nArterial CO2 pressure (PaCO2): 50 mmHg\nExpired CO2 pressure (PeCO2): 20 mmHg\n\nWhich of the following best represents the total volume of gas in this patient's airways and lungs that does not participate in gas exchange?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-750",
+  "test_id": "test-01247",
+  "mc_prompt": "Q: A 51-year-old woman goes to respiratory function testing in order to evaluate her shortness of breath. She recently joined a walking program with her friends in order to lose weight; however, she noticed that she was not able to keep up with her friends during the program. She has a 60-pack-year history of smoking as well as hypertension well-controlled on medication. The following represent the parameters for this patient's respiratory anatomy and function:\n\nVital capacity (VC): 5,000 mL\nInspiratory reserve volume (IRV): 2,500 mL\nFunctional reserve capacity (FRC): 2,700 mL\nResidual volume (RV): 1,000 mL\nUpper airway volume: 100 mL\nConducting airway volume: 125 mL\n\nInspired CO2 pressure (PiCO2): 1 mmHg\nArterial CO2 pressure (PaCO2): 50 mmHg\nExpired CO2 pressure (PeCO2): 20 mmHg\n\nWhich of the following best represents the total volume of gas in this patient's airways and lungs that does not participate in gas exchange?\nA) 480 mL\nB) 600 mL\nC) 800 mL\nD) 1200 mL\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.1988,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0886,
+        "B": 0.4978,
+        "C": 0.1146,
+        "D": 0.299
+      },
+      "latency_ms": 741,
+      "worker_idx": 0,
+      "raw_response": "To"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.4342,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0207,
+        "B": 0.0277,
+        "C": 0.2587,
+        "D": 0.6929
+      },
+      "latency_ms": 275,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1535,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1979,
+        "B": 0.0528,
+        "C": 0.4514,
+        "D": 0.2979
+      },
+      "latency_ms": 1939,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0,
+      "answer": "",
+      "probabilities": {},
+      "latency_ms": 2391,
+      "worker_idx": 3,
+      "raw_response": "To"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0461,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2105,
+        "B": 0.3149,
+        "C": 0.361,
+        "D": 0.1135
+      },
+      "latency_ms": 873,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.207,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.17,
+        "B": 0.2714,
+        "C": 0.4784,
+        "D": 0.0802
+      },
+      "latency_ms": 878,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 7097,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "B": 1,
+    "C": 3,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 0.6877,
+    "B": 1.1646,
+    "C": 1.6641,
+    "D": 1.4835
+  }
+}

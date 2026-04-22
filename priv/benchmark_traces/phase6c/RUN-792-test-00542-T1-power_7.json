@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "question": "A 32-year-old primigravid woman at 16 weeks' gestation comes to the physician for a routine prenatal visit. She is asymptomatic and has no history of serious illness. Her only medication is a prenatal vitamin. Her temperature is 37.2°C (99°F) and blood pressure is 108/60 mm Hg. Pelvic examination shows a uterus consistent in size with a 16-week gestation. A quadruple screening test shows maternal serum AFP of 3 times the median and normal levels of serum β-hCG, estriol, and inhibin A. Which of the following is most likely to account for these findings?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-792",
+  "test_id": "test-00542",
+  "mc_prompt": "Q: A 32-year-old primigravid woman at 16 weeks' gestation comes to the physician for a routine prenatal visit. She is asymptomatic and has no history of serious illness. Her only medication is a prenatal vitamin. Her temperature is 37.2°C (99°F) and blood pressure is 108/60 mm Hg. Pelvic examination shows a uterus consistent in size with a 16-week gestation. A quadruple screening test shows maternal serum AFP of 3 times the median and normal levels of serum β-hCG, estriol, and inhibin A. Which of the following is most likely to account for these findings?\nA) Partial molar pregnancy\nB) Neural tube defect\nC) Trisomy 18\nD) Trisomy 21\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6921,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8393,
+        "B": 0.0135,
+        "D": 0.1472
+      },
+      "latency_ms": 2366,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.4573,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6964,
+        "B": 0.0018,
+        "C": 0.0627,
+        "D": 0.2391
+      },
+      "latency_ms": 255,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5201,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6739,
+        "B": 0.08,
+        "C": 0.1538,
+        "D": 0.0923
+      },
+      "latency_ms": 1874,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9808,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0096,
+        "C": 0.9904
+      },
+      "latency_ms": 2440,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.4396,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1453,
+        "B": 0.1596,
+        "C": 0.0959,
+        "D": 0.5992
+      },
+      "latency_ms": 806,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.4209,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1367,
+        "B": 0.2212,
+        "C": 0.6421
+      },
+      "latency_ms": 819,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6056,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1265,
+        "B": 0.0409,
+        "C": 0.1005,
+        "D": 0.7321
+      },
+      "latency_ms": 350,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 8910,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 3,
+    "C": 2,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 2.6277,
+    "B": 0.517,
+    "C": 2.0454,
+    "D": 1.8098999999999998
+  }
+}

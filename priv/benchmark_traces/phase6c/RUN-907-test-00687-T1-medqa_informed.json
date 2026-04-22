@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "question": "A 31-year-old woman comes to the physician because of dragging pelvic pain and a 3 kg (6 lb 9 oz) weight loss over the past 6 months. Menses occur at irregular 30- to 45-day intervals; her last menstrual period was 5 weeks ago. Her temperature is 38°C (100.4°F), heart rate is 102/min, and blood pressure is 128/84 mm Hg. Physical examination shows hyperreflexia. Urine pregnancy test is negative. Ultrasonography shows a 6-cm hypoechoic adnexal mass. This adnexal mass is most likely derived from which of the following cell types?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-907",
+  "test_id": "test-00687",
+  "mc_prompt": "Q: A 31-year-old woman comes to the physician because of dragging pelvic pain and a 3 kg (6 lb 9 oz) weight loss over the past 6 months. Menses occur at irregular 30- to 45-day intervals; her last menstrual period was 5 weeks ago. Her temperature is 38°C (100.4°F), heart rate is 102/min, and blood pressure is 128/84 mm Hg. Physical examination shows hyperreflexia. Urine pregnancy test is negative. Ultrasonography shows a 6-cm hypoechoic adnexal mass. This adnexal mass is most likely derived from which of the following cell types?\nA) Germ cells\nB) Chorionic epithelial cells\nC) Endometrial cells\nD) Stromal cells\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6885,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8404,
+        "B": 0.0077,
+        "D": 0.1519
+      },
+      "latency_ms": 1564,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7249,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8446,
+        "B": 0.0093,
+        "C": 0.0263,
+        "D": 0.1197
+      },
+      "latency_ms": 2130,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6027,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8008,
+        "B": 0.0003,
+        "C": 0.0008,
+        "D": 0.1981
+      },
+      "latency_ms": 372,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1198,
+      "answer": "C",
+      "probabilities": {
+        "C": 0.5599,
+        "D": 0.4401
+      },
+      "latency_ms": 2169,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0
+      },
+      "latency_ms": 404,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 6641,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 4,
+    "C": 1
+  },
+  "weighted_scores": {
+    "A": 3.4858000000000002,
+    "B": 0.017300000000000003,
+    "C": 0.587,
+    "D": 0.9097999999999999
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "status": "ok",
+  "question": "A 22-year-old primigravida presents for a regular prenatal visit at 16 weeks gestation. She is concerned about the results of a dipstick test she performed at home, which showed 1+ glucose. She does not know  if her liquid consumption has increased, but she urinates more frequently than before. The course of her pregnancy has been unremarkable and she has no significant co-morbidities. The BMI is 25.6 kg/cm2 and she has gained 3 kg (6.72 lb) during the pregnancy. The blood pressure is 110/80 mm Hg, the heart rate is 82/min, the respiratory rate is 14/min, and the temperature is 36.6℃ (97.9℉). The lungs are clear to auscultation, the heart sounds are normal with no murmurs, and there is no abdominal or costovertebral angle tenderness. The laboratory tests show the following results:\nFasting glucose 97 mg/L\nALT 12 IU/L\nAST 14 IU/L\nTotal bilirubin 0.8 mg/dL(15 µmol/L)\nPlasma creatinine 0.7 mg/dL (61.9 µmol/L)\nWhich of the following tests are indicated to determine the cause of the abnormal dipstick test results?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-874",
+  "test_id": "test-00271",
+  "mc_prompt": "Q: A 22-year-old primigravida presents for a regular prenatal visit at 16 weeks gestation. She is concerned about the results of a dipstick test she performed at home, which showed 1+ glucose. She does not know  if her liquid consumption has increased, but she urinates more frequently than before. The course of her pregnancy has been unremarkable and she has no significant co-morbidities. The BMI is 25.6 kg/cm2 and she has gained 3 kg (6.72 lb) during the pregnancy. The blood pressure is 110/80 mm Hg, the heart rate is 82/min, the respiratory rate is 14/min, and the temperature is 36.6℃ (97.9℉). The lungs are clear to auscultation, the heart sounds are normal with no murmurs, and there is no abdominal or costovertebral angle tenderness. The laboratory tests show the following results:\nFasting glucose 97 mg/L\nALT 12 IU/L\nAST 14 IU/L\nTotal bilirubin 0.8 mg/dL(15 µmol/L)\nPlasma creatinine 0.7 mg/dL (61.9 µmol/L)\nWhich of the following tests are indicated to determine the cause of the abnormal dipstick test results?\nA) HbA1c measurement\nB) No tests required\nC) Urinalysis\nD) Oral glucose tolerance test\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "C",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.2791,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6135,
+        "B": 0.0088,
+        "C": 0.0433,
+        "D": 0.3344
+      },
+      "latency_ms": 2955,
+      "worker_idx": 0,
+      "raw_response": "To"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9384,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0014,
+        "B": 0.001,
+        "C": 0.968,
+        "D": 0.0296
+      },
+      "latency_ms": 2489,
+      "worker_idx": 1,
+      "raw_response": "C"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9886,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0002,
+        "B": 0.0002,
+        "C": 0.9941,
+        "D": 0.0055
+      },
+      "latency_ms": 561,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2956,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6478,
+        "C": 0.3522
+      },
+      "latency_ms": 2893,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1307,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.154,
+        "B": 0.0899,
+        "C": 0.3127,
+        "D": 0.4434
+      },
+      "latency_ms": 598,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 9497,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "C": 2,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.4169,
+    "B": 0.09989999999999999,
+    "C": 2.6702999999999997,
+    "D": 0.8129
+  }
+}

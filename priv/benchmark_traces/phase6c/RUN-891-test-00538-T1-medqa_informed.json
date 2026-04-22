@@ -1,0 +1,102 @@
+{
+  "status": "ok",
+  "question": "A 25-year-old female presents to urgent care with complaints of one day of burning and pain with urination, urgency, and frequency. She denies having a fever but has experienced intermittent chills. She is sexually active and inconsistently uses condoms. The patient has no past medical history. She is allergic to sulfa drugs. Physical examination of the genitalia is normal. Urinalysis shows positive leukocyte esterase and nitrites. The urine culture demonstrates gram-negative rods that form pink colonies on MacConkey agar. She is treated with an antibiotic and her symptoms quickly improve. The mechanism of the antibiotic she was most likely treated with is which of the following?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-891",
+  "test_id": "test-00538",
+  "mc_prompt": "Q: A 25-year-old female presents to urgent care with complaints of one day of burning and pain with urination, urgency, and frequency. She denies having a fever but has experienced intermittent chills. She is sexually active and inconsistently uses condoms. The patient has no past medical history. She is allergic to sulfa drugs. Physical examination of the genitalia is normal. Urinalysis shows positive leukocyte esterase and nitrites. The urine culture demonstrates gram-negative rods that form pink colonies on MacConkey agar. She is treated with an antibiotic and her symptoms quickly improve. The mechanism of the antibiotic she was most likely treated with is which of the following?\nA) Inhibits cell wall synthesis\nB) Binds D-ala D-ala in the cell wall\nC) Inhibits initiation complex\nD) Inhibits sterol synthesis\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8906,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9212,
+        "B": 0.0306,
+        "C": 0.0269,
+        "D": 0.0213
+      },
+      "latency_ms": 2152,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8408,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8901,
+        "B": 0.0469,
+        "C": 0.0493,
+        "D": 0.0136
+      },
+      "latency_ms": 1862,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.501,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2478,
+        "B": 0.0028,
+        "C": 0.0005,
+        "D": 0.7488
+      },
+      "latency_ms": 349,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1134,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4954,
+        "C": 0.1225,
+        "D": 0.382
+      },
+      "latency_ms": 2475,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0
+      },
+      "latency_ms": 424,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7264,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 4,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 3.5545,
+    "B": 0.0803,
+    "C": 0.1992,
+    "D": 1.1657000000000002
+  }
+}

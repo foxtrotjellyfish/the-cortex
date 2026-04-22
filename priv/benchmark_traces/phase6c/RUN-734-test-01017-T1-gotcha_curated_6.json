@@ -1,0 +1,117 @@
+{
+  "status": "ok",
+  "question": "A 60-year-old man presents to his local walk-in clinic with 1 week of fever, chills, night sweats, anorexia, malaise, progressive shortness of breath, and sharp chest pain. He is found with a blood pressure of 100/80 mm Hg, a heart rate of 84/min, an elevated respiratory rate, and a holosystolic heart murmur III/VI. His palms and soles show non-tender erythematous lesions. His personal medical history is relevant for frequent visits to the ER for lower gastrointestinal bleeding in the last month with a recent colonoscopy that reported an ulcerative lesion suggestive of colorectal cancer. He has not been subjected to dental procedures recently, and he denies the use of psychoactive drugs. A chest plain film shows clear lungs and mild cardiomegaly, and echocardiography reports the presence of vegetations involving the mitral valve. Which of the following organisms is the most likely causative agent?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-734",
+  "test_id": "test-01017",
+  "mc_prompt": "Q: A 60-year-old man presents to his local walk-in clinic with 1 week of fever, chills, night sweats, anorexia, malaise, progressive shortness of breath, and sharp chest pain. He is found with a blood pressure of 100/80 mm Hg, a heart rate of 84/min, an elevated respiratory rate, and a holosystolic heart murmur III/VI. His palms and soles show non-tender erythematous lesions. His personal medical history is relevant for frequent visits to the ER for lower gastrointestinal bleeding in the last month with a recent colonoscopy that reported an ulcerative lesion suggestive of colorectal cancer. He has not been subjected to dental procedures recently, and he denies the use of psychoactive drugs. A chest plain film shows clear lungs and mild cardiomegaly, and echocardiography reports the presence of vegetations involving the mitral valve. Which of the following organisms is the most likely causative agent?\nA) Staphylococcus aureus\nB) Escherichia coli\nC) Haemophilus aphrophilus\nD) Streptococcus bovis\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 5,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.892,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0504,
+        "B": 0.0072,
+        "D": 0.9424
+      },
+      "latency_ms": 694,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.7479,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0125,
+        "C": 0.1198,
+        "D": 0.8677
+      },
+      "latency_ms": 272,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8735,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0288,
+        "B": 0.0061,
+        "C": 0.0458,
+        "D": 0.9193
+      },
+      "latency_ms": 2471,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6146,
+      "answer": "D",
+      "probabilities": {
+        "C": 0.1927,
+        "D": 0.8073
+      },
+      "latency_ms": 2671,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.3883,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1394,
+        "B": 0.1917,
+        "C": 0.0888,
+        "D": 0.58
+      },
+      "latency_ms": 912,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.173,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0669,
+        "B": 0.2965,
+        "C": 0.4695,
+        "D": 0.167
+      },
+      "latency_ms": 867,
+      "worker_idx": 5,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7888,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "D",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "C": 1,
+    "D": 5
+  },
+  "weighted_scores": {
+    "A": 0.298,
+    "B": 0.5015000000000001,
+    "C": 0.9166,
+    "D": 4.2837
+  }
+}

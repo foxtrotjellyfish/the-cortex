@@ -1,0 +1,120 @@
+{
+  "status": "ok",
+  "question": "A 7-year-old boy is brought to the physician by his mother for evaluation of progressively worsening swelling around the eyes. He has no history of major medical illness. He had a sore throat and cough 2 weeks ago that resolved spontaneously. Physical examination shows moderate periorbital edema and 2+ pitting edema of the lower extremities bilaterally. A kidney biopsy specimen shows effacement of the podocytes on electron microscopy. Which of the following is most likely to be found on urinalysis?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-728",
+  "test_id": "test-00904",
+  "mc_prompt": "Q: A 7-year-old boy is brought to the physician by his mother for evaluation of progressively worsening swelling around the eyes. He has no history of major medical illness. He had a sore throat and cough 2 weeks ago that resolved spontaneously. Physical examination shows moderate periorbital edema and 2+ pitting edema of the lower extremities bilaterally. A kidney biopsy specimen shows effacement of the podocytes on electron microscopy. Which of the following is most likely to be found on urinalysis?\nA) Hyaline casts and immunoglobulins\nB) Fatty casts and albumin\nC) White blood cell casts and eosinophils\nD) Granular casts and tubular epithelial cells\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 2,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7924,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0031,
+        "B": 0.882,
+        "C": 0.0254,
+        "D": 0.0896
+      },
+      "latency_ms": 423,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.2275,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.3359,
+        "B": 0.1007,
+        "D": 0.5634
+      },
+      "latency_ms": 193,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0093,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3403,
+        "B": 0.3496,
+        "C": 0.0248,
+        "D": 0.2854
+      },
+      "latency_ms": 2371,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3986,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6883,
+        "B": 0.022,
+        "C": 0.2897
+      },
+      "latency_ms": 2422,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.713,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0708,
+        "B": 0.0839,
+        "C": 0.0484,
+        "D": 0.7969
+      },
+      "latency_ms": 793,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0124,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1208,
+        "B": 0.4334,
+        "C": 0.4458
+      },
+      "latency_ms": 792,
+      "worker_idx": 5,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 6995,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "B": 2,
+    "C": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 1.5592,
+    "B": 1.8716000000000002,
+    "C": 0.8341,
+    "D": 1.7353
+  }
+}

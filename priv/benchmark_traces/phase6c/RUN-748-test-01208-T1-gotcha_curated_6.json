@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "question": "Which of the following patient presentations seen in a pediatric immunology clinic is most consistent with a diagnosis of Bruton's agammaglobulinemia?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-748",
+  "test_id": "test-01208",
+  "mc_prompt": "Q: Which of the following patient presentations seen in a pediatric immunology clinic is most consistent with a diagnosis of Bruton's agammaglobulinemia?\nA) A 15-month-old girl who has had repeated otitis media, pneumonia, and progressive clumsiness since beginning to walk in the past three months\nB) A 10-month-old boy who has had recurrent viral infections as well as hypocalcemia during neonatal period\nC) A 4-year-old girl who has had repeated oral candidasis in the past nine months\nD) A 9-month-old boy who has had recurrent otitis media and pneumococcal pneumonia in the past three months\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.0362,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5125,
+        "B": 0.0112,
+        "D": 0.4763
+      },
+      "latency_ms": 405,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.7895,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0179,
+        "B": 0.0796,
+        "C": 0.0333,
+        "D": 0.8691
+      },
+      "latency_ms": 185,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2435,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5767,
+        "B": 0.3332,
+        "C": 0.0176,
+        "D": 0.0725
+      },
+      "latency_ms": 1866,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6194,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7835,
+        "C": 0.0524,
+        "D": 0.1641
+      },
+      "latency_ms": 2183,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0903,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.362,
+        "B": 0.1111,
+        "C": 0.0746,
+        "D": 0.4523
+      },
+      "latency_ms": 810,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0132,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.4153,
+        "B": 0.1562,
+        "C": 0.4285
+      },
+      "latency_ms": 798,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6248,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "D",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 3,
+    "C": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 2.6679000000000004,
+    "B": 0.6913,
+    "C": 0.6064,
+    "D": 2.0343
+  }
+}

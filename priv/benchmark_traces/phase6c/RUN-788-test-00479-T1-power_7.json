@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "question": "A 63-year-old patient presents to the emergency department because of severe left leg pain and tingling. His condition started suddenly 30 minutes ago. He has had hypertension for the past 10 years for which he takes bisoprolol. He does not smoke or drink alcohol. His temperature is 37.1°C (98.7°F), the blood pressure is 130/80 mm Hg, and the pulse is 100/min and irregular. On physical examination, the patient appears in severe pain and his left leg is pale and cool. The popliteal pulse is weaker on the left side compared to the right side. Which of the following is the most common cause of this patient's condition?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-788",
+  "test_id": "test-00479",
+  "mc_prompt": "Q: A 63-year-old patient presents to the emergency department because of severe left leg pain and tingling. His condition started suddenly 30 minutes ago. He has had hypertension for the past 10 years for which he takes bisoprolol. He does not smoke or drink alcohol. His temperature is 37.1°C (98.7°F), the blood pressure is 130/80 mm Hg, and the pulse is 100/min and irregular. On physical examination, the patient appears in severe pain and his left leg is pale and cool. The popliteal pulse is weaker on the left side compared to the right side. Which of the following is the most common cause of this patient's condition?\nA) Vasculitis\nB) Hyperhomocysteinemia\nC) Arterial emboli\nD) Arterial trauma\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 4,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.1701,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5481,
+        "B": 0.0541,
+        "C": 0.0198,
+        "D": 0.378
+      },
+      "latency_ms": 2104,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.5071,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.103,
+        "C": 0.7021,
+        "D": 0.195
+      },
+      "latency_ms": 223,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9753,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9872,
+        "B": 0.0007,
+        "C": 0.0119,
+        "D": 0.0003
+      },
+      "latency_ms": 2162,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "C",
+      "probabilities": {
+        "C": 1.0
+      },
+      "latency_ms": 2498,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0918,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2975,
+        "B": 0.3893,
+        "C": 0.2119,
+        "D": 0.1013
+      },
+      "latency_ms": 804,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.5766,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0578,
+        "B": 0.1293,
+        "C": 0.7059,
+        "D": 0.1069
+      },
+      "latency_ms": 810,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9459,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.025,
+        "B": 0.0019,
+        "C": 0.9709,
+        "D": 0.0022
+      },
+      "latency_ms": 348,
+      "worker_idx": 6,
+      "raw_response": "C"
+    }
+  ],
+  "total_latency_ms": 8949,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 1,
+    "C": 4
+  },
+  "weighted_scores": {
+    "A": 2.0186,
+    "B": 0.5753,
+    "C": 3.6225,
+    "D": 0.7836999999999998
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "status": "ok",
+  "question": "A 23-year-old man presents with sudden loss of consciousness while pitching in a baseball game. There is no history of injury. Consciousness is regained after cardiopulmonary resuscitation. Past medical history is negative for any neurological and cardiovascular problems. Physical examination reveals a prominent A wave on the jugular venous pulse and a double apical impulse. There are no audible murmurs. An S4 is present. What is the most likely diagnosis?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-779",
+  "test_id": "test-00335",
+  "mc_prompt": "Q: A 23-year-old man presents with sudden loss of consciousness while pitching in a baseball game. There is no history of injury. Consciousness is regained after cardiopulmonary resuscitation. Past medical history is negative for any neurological and cardiovascular problems. Physical examination reveals a prominent A wave on the jugular venous pulse and a double apical impulse. There are no audible murmurs. An S4 is present. What is the most likely diagnosis?\nA) Hypertrophic cardiomyopathy\nB) Aortic stenosis\nC) Takotsubo cardiomyopathy\nD) Restrictive cardiomyopathy\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9364,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9644,
+        "B": 0.0076,
+        "D": 0.028
+      },
+      "latency_ms": 2059,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.5476,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0642,
+        "B": 0.002,
+        "C": 0.1931,
+        "D": 0.7407
+      },
+      "latency_ms": 204,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1719,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5609,
+        "B": 0.0185,
+        "C": 0.0316,
+        "D": 0.389
+      },
+      "latency_ms": 1858,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8286,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0857,
+        "C": 0.9143
+      },
+      "latency_ms": 2417,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0256,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.025,
+        "B": 0.0118,
+        "C": 0.4688,
+        "D": 0.4944
+      },
+      "latency_ms": 781,
+      "worker_idx": 4,
+      "raw_response": "D"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.368,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.316,
+        "C": 0.684
+      },
+      "latency_ms": 799,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3911,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.3018,
+        "B": 0.0051,
+        "C": 0.0001,
+        "D": 0.6929
+      },
+      "latency_ms": 268,
+      "worker_idx": 6,
+      "raw_response": "C"
+    }
+  ],
+  "total_latency_ms": 8388,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "C": 2,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 2.002,
+    "B": 0.361,
+    "C": 2.2919000000000005,
+    "D": 2.345
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "status": "ok",
+  "question": "A 7-year-old boy is brought to your office with complaints of wheezing and dyspnea. Laboratory work reveals eosinophilia and positive skin tests for allergens. Which of the following types of drugs would be an effective treatment in this patient?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-814",
+  "test_id": "test-00765",
+  "mc_prompt": "Q: A 7-year-old boy is brought to your office with complaints of wheezing and dyspnea. Laboratory work reveals eosinophilia and positive skin tests for allergens. Which of the following types of drugs would be an effective treatment in this patient?\nA) Beta-2 antagonist\nB) Histone deacetylase inhibitor\nC) Muscarinic antagonist\nD) Anticoagulant\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7901,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0753,
+        "B": 0.0575,
+        "C": 0.8654,
+        "D": 0.0019
+      },
+      "latency_ms": 1923,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.325,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5897,
+        "B": 0.0243,
+        "C": 0.1213,
+        "D": 0.2647
+      },
+      "latency_ms": 156,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4405,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2759,
+        "B": 0.0071,
+        "C": 0.7164,
+        "D": 0.0006
+      },
+      "latency_ms": 1840,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.318,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3333,
+        "B": 0.6513,
+        "C": 0.0154
+      },
+      "latency_ms": 2359,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.3819,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.568,
+        "B": 0.1861,
+        "C": 0.1683,
+        "D": 0.0776
+      },
+      "latency_ms": 764,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2499,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1767,
+        "B": 0.2508,
+        "C": 0.5007,
+        "D": 0.0718
+      },
+      "latency_ms": 761,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9196,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9543,
+        "B": 0.0347,
+        "C": 0.001,
+        "D": 0.0099
+      },
+      "latency_ms": 235,
+      "worker_idx": 6,
+      "raw_response": "A"
+    }
+  ],
+  "total_latency_ms": 8038,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 3,
+    "B": 1,
+    "C": 3
+  },
+  "weighted_scores": {
+    "A": 2.9732,
+    "B": 1.2117999999999998,
+    "C": 2.3885,
+    "D": 0.4265
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "question": "A 40-year-old man presents to the physician with progressive weight loss for the last 3 months. He also says he frequently sweats profusely at night and has a recurring low-grade fever, for which he takes acetaminophen. The patient denies any symptoms like cough, breathlessness, or gastrointestinal symptoms. His temperature is 37.1ºC  (98.8ºF), pulse is 76/min, blood pressure is 116/78 mm Hg, and respiratory rate is 13/min. On physical examination, he has generalized pallor. Bilateral cervical lymphadenopathy is present. Examination of his abdomen reveals non-tender hepatosplenomegaly in the right upper quadrant. Laboratory evaluation confirms the diagnosis of Hodgkin’s lymphoma. Which of the following viral infections is most likely to have played a role in the pathogenesis of this patient’s malignancy?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-859",
+  "test_id": "test-00121",
+  "mc_prompt": "Q: A 40-year-old man presents to the physician with progressive weight loss for the last 3 months. He also says he frequently sweats profusely at night and has a recurring low-grade fever, for which he takes acetaminophen. The patient denies any symptoms like cough, breathlessness, or gastrointestinal symptoms. His temperature is 37.1ºC  (98.8ºF), pulse is 76/min, blood pressure is 116/78 mm Hg, and respiratory rate is 13/min. On physical examination, he has generalized pallor. Bilateral cervical lymphadenopathy is present. Examination of his abdomen reveals non-tender hepatosplenomegaly in the right upper quadrant. Laboratory evaluation confirms the diagnosis of Hodgkin’s lymphoma. Which of the following viral infections is most likely to have played a role in the pathogenesis of this patient’s malignancy?\nA) Epstein-Barr virus\nB) Human T-cell leukemia virus type 1\nC) Human herpesvirus-8\nD) Human papillomavirus type 16\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.0995,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.243,
+        "B": 0.3288,
+        "C": 0.4283
+      },
+      "latency_ms": 3050,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.953,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9692,
+        "B": 0.0053,
+        "C": 0.0162,
+        "D": 0.0092
+      },
+      "latency_ms": 2145,
+      "worker_idx": 1,
+      "raw_response": "A"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9946,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9967,
+        "B": 0.0003,
+        "C": 0.0021,
+        "D": 0.001
+      },
+      "latency_ms": 392,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "C",
+      "probabilities": {
+        "C": 1.0
+      },
+      "latency_ms": 2804,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.943,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9715,
+        "B": 0.0285
+      },
+      "latency_ms": 468,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8865,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 3,
+    "C": 2
+  },
+  "weighted_scores": {
+    "A": 3.1803999999999997,
+    "B": 0.36290000000000006,
+    "C": 1.4466,
+    "D": 0.0102
+  }
+}

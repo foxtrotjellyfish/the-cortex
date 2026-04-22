@@ -1,0 +1,104 @@
+{
+  "status": "ok",
+  "question": "A 29-year-old G4P0 woman presents following a spontaneous pregnancy loss in the 18th week of her pregnancy. This is her fourth loss in the second trimester and she is concerned about her inability to have a successful pregnancy. She is otherwise healthy and has no acute complaints. Her vitals are unremarkable and exam is notable only for a firm, asymmetric uterus. Laboratory studies are ordered as seen below.\n\nHemoglobin: 9.0 g/dL\nHematocrit: 30%\nLeukocyte count: 6,800/mm^3 with normal differential\nPlatelet count: 199,000/mm^3\n\nSerum:\nNa+: 139 mEq/L\nCl-: 100 mEq/L\nK+: 4.3 mEq/L\nHCO3-: 25 mEq/L\nBUN: 20 mg/dL\nGlucose: 99 mg/dL\nCreatinine: 1.1 mg/dL\n\nWhich of the following tests is most likely to elucidate the cause of this patient's pregnancy losses?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-932",
+  "test_id": "test-00980",
+  "mc_prompt": "Q: A 29-year-old G4P0 woman presents following a spontaneous pregnancy loss in the 18th week of her pregnancy. This is her fourth loss in the second trimester and she is concerned about her inability to have a successful pregnancy. She is otherwise healthy and has no acute complaints. Her vitals are unremarkable and exam is notable only for a firm, asymmetric uterus. Laboratory studies are ordered as seen below.\n\nHemoglobin: 9.0 g/dL\nHematocrit: 30%\nLeukocyte count: 6,800/mm^3 with normal differential\nPlatelet count: 199,000/mm^3\n\nSerum:\nNa+: 139 mEq/L\nCl-: 100 mEq/L\nK+: 4.3 mEq/L\nHCO3-: 25 mEq/L\nBUN: 20 mg/dL\nGlucose: 99 mg/dL\nCreatinine: 1.1 mg/dL\n\nWhich of the following tests is most likely to elucidate the cause of this patient's pregnancy losses?\nA) Karotyping\nB) Hysterosalpingogram\nC) Prolactin level\nD) TSH level\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.1682,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3459,
+        "B": 0.5141,
+        "D": 0.14
+      },
+      "latency_ms": 2327,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4394,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6152,
+        "B": 0.1758,
+        "C": 0.1501,
+        "D": 0.0588
+      },
+      "latency_ms": 2164,
+      "worker_idx": 1,
+      "raw_response": "A"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8297,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9144,
+        "B": 0.0001,
+        "C": 0.0847,
+        "D": 0.0008
+      },
+      "latency_ms": 463,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8656,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9175,
+        "B": 0.0176,
+        "C": 0.0519,
+        "D": 0.013
+      },
+      "latency_ms": 2579,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7373,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8368,
+        "C": 0.0995,
+        "D": 0.0637
+      },
+      "latency_ms": 567,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8101,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 4,
+    "B": 1
+  },
+  "weighted_scores": {
+    "A": 3.6298000000000004,
+    "B": 0.7075999999999999,
+    "C": 0.3862,
+    "D": 0.2763
+  }
+}

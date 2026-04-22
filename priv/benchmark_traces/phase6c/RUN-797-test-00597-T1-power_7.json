@@ -1,0 +1,135 @@
+{
+  "status": "ok",
+  "question": "A study is conducted to determine the most effective ways to prevent transmission of various infective agents. One of the agents studied is a picornavirus that preferentially infects hepatocytes. The investigator determines that inactivating this virus can prevent its spread. Which of the following disinfectants is most likely to inactivate this virus?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-797",
+  "test_id": "test-00597",
+  "mc_prompt": "Q: A study is conducted to determine the most effective ways to prevent transmission of various infective agents. One of the agents studied is a picornavirus that preferentially infects hepatocytes. The investigator determines that inactivating this virus can prevent its spread. Which of the following disinfectants is most likely to inactivate this virus?\nA) Chlorhexidine\nB) Sodium hypochlorite\nC) Sulfuric acid\nD) Ethyl alcohol\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 4,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4405,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0706,
+        "B": 0.6849,
+        "D": 0.2444
+      },
+      "latency_ms": 1935,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.0205,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2439,
+        "B": 0.006,
+        "C": 0.3853,
+        "D": 0.3648
+      },
+      "latency_ms": 175,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8731,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0477,
+        "B": 0.9208,
+        "C": 0.0042,
+        "D": 0.0274
+      },
+      "latency_ms": 1830,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9121,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0008,
+        "B": 0.9537,
+        "C": 0.0039,
+        "D": 0.0416
+      },
+      "latency_ms": 2321,
+      "worker_idx": 3,
+      "raw_response": "To"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.5818,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1306,
+        "B": 0.0616,
+        "C": 0.0954,
+        "D": 0.7124
+      },
+      "latency_ms": 749,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1156,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0814,
+        "B": 0.4015,
+        "C": 0.5171
+      },
+      "latency_ms": 751,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4795,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0089,
+        "B": 0.726,
+        "C": 0.0186,
+        "D": 0.2465
+      },
+      "latency_ms": 239,
+      "worker_idx": 6,
+      "raw_response": "B"
+    }
+  ],
+  "total_latency_ms": 8000,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "B": 4,
+    "C": 2,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 0.5839000000000001,
+    "B": 3.7544999999999997,
+    "C": 1.0245,
+    "D": 1.6371
+  }
+}

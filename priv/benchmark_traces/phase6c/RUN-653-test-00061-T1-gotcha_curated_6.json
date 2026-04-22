@@ -1,0 +1,116 @@
+{
+  "status": "ok",
+  "question": "A 22-year-old female college student is treated with metronidazole after presenting to student health services with itching, discharge, and pain in her vagina. At a party shortly afterward she experiences facial flushing, nausea, tachycardia, dyspnea, headache, and abdominal cramps after consuming alcohol. Serum levels of which of the following are likely elevated in this patient following alcohol consumption:",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-653",
+  "test_id": "test-00061",
+  "mc_prompt": "Q: A 22-year-old female college student is treated with metronidazole after presenting to student health services with itching, discharge, and pain in her vagina. At a party shortly afterward she experiences facial flushing, nausea, tachycardia, dyspnea, headache, and abdominal cramps after consuming alcohol. Serum levels of which of the following are likely elevated in this patient following alcohol consumption:\nA) Acetaldehyde\nB) Uric acid\nC) Cytochrome P-450 enzymes\nD) Amylase\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.2201,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2161,
+        "B": 0.502,
+        "C": 0.2819
+      },
+      "latency_ms": 369,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0
+      },
+      "latency_ms": 178,
+      "worker_idx": 1,
+      "raw_response": "In"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9805,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9887,
+        "B": 0.0013,
+        "C": 0.0082,
+        "D": 0.0019
+      },
+      "latency_ms": 1824,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9756,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9878,
+        "C": 0.0122
+      },
+      "latency_ms": 2666,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.5091,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1578,
+        "B": 0.0657,
+        "C": 0.1096,
+        "D": 0.6669
+      },
+      "latency_ms": 787,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1128,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0827,
+        "B": 0.4022,
+        "C": 0.515
+      },
+      "latency_ms": 777,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6601,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 3,
+    "B": 1,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 3.4331,
+    "B": 0.9712,
+    "C": 0.9269,
+    "D": 0.6688000000000001
+  }
+}

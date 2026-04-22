@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "question": "A 60-year-old man presents to his local walk-in clinic with 1 week of fever, chills, night sweats, anorexia, malaise, progressive shortness of breath, and sharp chest pain. He is found with a blood pressure of 100/80 mm Hg, a heart rate of 84/min, an elevated respiratory rate, and a holosystolic heart murmur III/VI. His palms and soles show non-tender erythematous lesions. His personal medical history is relevant for frequent visits to the ER for lower gastrointestinal bleeding in the last month with a recent colonoscopy that reported an ulcerative lesion suggestive of colorectal cancer. He has not been subjected to dental procedures recently, and he denies the use of psychoactive drugs. A chest plain film shows clear lungs and mild cardiomegaly, and echocardiography reports the presence of vegetations involving the mitral valve. Which of the following organisms is the most likely causative agent?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-934",
+  "test_id": "test-01017",
+  "mc_prompt": "Q: A 60-year-old man presents to his local walk-in clinic with 1 week of fever, chills, night sweats, anorexia, malaise, progressive shortness of breath, and sharp chest pain. He is found with a blood pressure of 100/80 mm Hg, a heart rate of 84/min, an elevated respiratory rate, and a holosystolic heart murmur III/VI. His palms and soles show non-tender erythematous lesions. His personal medical history is relevant for frequent visits to the ER for lower gastrointestinal bleeding in the last month with a recent colonoscopy that reported an ulcerative lesion suggestive of colorectal cancer. He has not been subjected to dental procedures recently, and he denies the use of psychoactive drugs. A chest plain film shows clear lungs and mild cardiomegaly, and echocardiography reports the presence of vegetations involving the mitral valve. Which of the following organisms is the most likely causative agent?\nA) Staphylococcus aureus\nB) Escherichia coli\nC) Haemophilus aphrophilus\nD) Streptococcus bovis\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 5,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.892,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0504,
+        "B": 0.0072,
+        "D": 0.9424
+      },
+      "latency_ms": 2536,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8735,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0288,
+        "B": 0.0061,
+        "C": 0.0458,
+        "D": 0.9193
+      },
+      "latency_ms": 2201,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9759,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0111,
+        "B": 0.0015,
+        "C": 0.0005,
+        "D": 0.987
+      },
+      "latency_ms": 395,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6146,
+      "answer": "D",
+      "probabilities": {
+        "C": 0.1927,
+        "D": 0.8073
+      },
+      "latency_ms": 2867,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6208,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1896,
+        "D": 0.8104
+      },
+      "latency_ms": 524,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8524,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "D",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "D": 5
+  },
+  "weighted_scores": {
+    "A": 0.2799,
+    "B": 0.014799999999999999,
+    "C": 0.23900000000000002,
+    "D": 4.4664
+  }
+}

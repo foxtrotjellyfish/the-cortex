@@ -1,0 +1,103 @@
+{
+  "status": "ok",
+  "question": "A 62-year-old woman is evaluated because of a 3-day history of headache, nausea, and decreased urination. Laboratory studies show:\nSerum\nNa+ 136 mEq/L\nK+ 3.2 mEq/L\nCl- 115 mEq/L\nMg2+ 1.4 mEq/L\nUrine\npH 7.0\nArterial blood gas analysis on room air shows a pH of 7.28 and a HCO3- concentration of 14 mEq/L. Prolonged treatment with which of the following drugs would best explain this patient's findings?\"",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-872",
+  "test_id": "test-00227",
+  "mc_prompt": "Q: A 62-year-old woman is evaluated because of a 3-day history of headache, nausea, and decreased urination. Laboratory studies show:\nSerum\nNa+ 136 mEq/L\nK+ 3.2 mEq/L\nCl- 115 mEq/L\nMg2+ 1.4 mEq/L\nUrine\npH 7.0\nArterial blood gas analysis on room air shows a pH of 7.28 and a HCO3- concentration of 14 mEq/L. Prolonged treatment with which of the following drugs would best explain this patient's findings?\"\nA) Trimethoprim-sulfamethoxazole\nB) Eplerenone\nC) Amphotericin B\nD) Heparin\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.451,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6949,
+        "B": 0.0505,
+        "C": 0.2439,
+        "D": 0.0107
+      },
+      "latency_ms": 2876,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5406,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1904,
+        "B": 0.731,
+        "C": 0.0582,
+        "D": 0.0204
+      },
+      "latency_ms": 2137,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7797,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0089,
+        "B": 0.8655,
+        "C": 0.0398,
+        "D": 0.0858
+      },
+      "latency_ms": 346,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5962,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.7981,
+        "C": 0.2019
+      },
+      "latency_ms": 2658,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7842,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8765,
+        "B": 0.0923,
+        "D": 0.0312
+      },
+      "latency_ms": 420,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8438,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 3
+  },
+  "weighted_scores": {
+    "A": 1.7707,
+    "B": 2.5374,
+    "C": 0.5438000000000001,
+    "D": 0.1481
+  }
+}

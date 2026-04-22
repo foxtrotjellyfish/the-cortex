@@ -1,0 +1,135 @@
+{
+  "status": "ok",
+  "question": "A previously healthy 3-year-old boy is brought to the physician by his parents because of fever and a rash for 6 days. His temperature is 38.9°C (102°F). Examination shows right-sided anterior cervical lymphadenopathy, bilateral conjunctival injection, erythema of the tongue and lips, and a maculopapular rash involving the hands, feet, perineum, and trunk. Which of the following is the most common complication of this patient's condition?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-798",
+  "test_id": "test-00604",
+  "mc_prompt": "Q: A previously healthy 3-year-old boy is brought to the physician by his parents because of fever and a rash for 6 days. His temperature is 38.9°C (102°F). Examination shows right-sided anterior cervical lymphadenopathy, bilateral conjunctival injection, erythema of the tongue and lips, and a maculopapular rash involving the hands, feet, perineum, and trunk. Which of the following is the most common complication of this patient's condition?\nA) Coronary artery aneurysm\nB) Rapidly progressive glomerulonephritis\nC) Hearing loss\nD) Retinopathy\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.5837,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7198,
+        "B": 0.0792,
+        "C": 0.1361,
+        "D": 0.0649
+      },
+      "latency_ms": 2309,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9928,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0036,
+        "D": 0.9964
+      },
+      "latency_ms": 230,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.328,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0148,
+        "B": 0.6365,
+        "C": 0.0402,
+        "D": 0.3085
+      },
+      "latency_ms": 1857,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1136,
+      "answer": "D",
+      "probabilities": {
+        "B": 0.3976,
+        "C": 0.0913,
+        "D": 0.5112
+      },
+      "latency_ms": 2415,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.3916,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1995,
+        "B": 0.1221,
+        "C": 0.0873,
+        "D": 0.5911
+      },
+      "latency_ms": 786,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.3134,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0975,
+        "B": 0.2522,
+        "C": 0.5656,
+        "D": 0.0848
+      },
+      "latency_ms": 809,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.912,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0071,
+        "B": 0.9481,
+        "C": 0.0088,
+        "D": 0.0361
+      },
+      "latency_ms": 362,
+      "worker_idx": 6,
+      "raw_response": "Answer"
+    }
+  ],
+  "total_latency_ms": 8769,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "B": 2,
+    "C": 1,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 1.0423000000000002,
+    "B": 2.4357,
+    "C": 0.9293,
+    "D": 2.5929999999999995
+  }
+}

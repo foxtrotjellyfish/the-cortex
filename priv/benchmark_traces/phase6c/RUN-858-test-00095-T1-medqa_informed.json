@@ -1,0 +1,103 @@
+{
+  "status": "ok",
+  "question": "A 40-year-old man presents to his primary-care doctor for a follow-up of his hypertension. He is asymptomatic at his office visit and denies any new complaints. He has a 10-year history of hypertension that remains poorly controlled on maximum doses of lisinopril, hydrochlorothiazide, and amlodipine. His past medical history is otherwise unremarkable. He has no smoking history, drinks alcohol occasionally, and denies any illicit drug use. His father required a kidney transplant in his forties. The physical exam is notable for palpable flank masses bilaterally. Laboratory studies show a creatinine of 2.5. The physician orders a renal ultrasound, and the results are shown. Which of the following is the most appropriate test to screen for additional complications of this patient's condition?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-858",
+  "test_id": "test-00095",
+  "mc_prompt": "Q: A 40-year-old man presents to his primary-care doctor for a follow-up of his hypertension. He is asymptomatic at his office visit and denies any new complaints. He has a 10-year history of hypertension that remains poorly controlled on maximum doses of lisinopril, hydrochlorothiazide, and amlodipine. His past medical history is otherwise unremarkable. He has no smoking history, drinks alcohol occasionally, and denies any illicit drug use. His father required a kidney transplant in his forties. The physical exam is notable for palpable flank masses bilaterally. Laboratory studies show a creatinine of 2.5. The physician orders a renal ultrasound, and the results are shown. Which of the following is the most appropriate test to screen for additional complications of this patient's condition?\nA) Colonoscopy\nB) Esophagogastroduodenoscopy\nC) Liver function tests\nD) MR angiography of the brain\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6637,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1267,
+        "B": 0.0729,
+        "C": 0.01,
+        "D": 0.7904
+      },
+      "latency_ms": 2930,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0755,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1246,
+        "B": 0.3525,
+        "C": 0.428,
+        "D": 0.0948
+      },
+      "latency_ms": 2140,
+      "worker_idx": 1,
+      "raw_response": "C"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.982,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0033,
+        "B": 0.0005,
+        "C": 0.9891,
+        "D": 0.0071
+      },
+      "latency_ms": 415,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9528,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0236,
+        "C": 0.9764
+      },
+      "latency_ms": 2783,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7658,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8829,
+        "C": 0.1171
+      },
+      "latency_ms": 467,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8735,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "D",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "C": 3,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.1611,
+    "B": 0.4259,
+    "C": 2.5206000000000004,
+    "D": 0.8923
+  }
+}

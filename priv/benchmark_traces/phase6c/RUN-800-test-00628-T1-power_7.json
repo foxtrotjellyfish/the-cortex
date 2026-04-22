@@ -1,0 +1,136 @@
+{
+  "status": "ok",
+  "question": "A 42-year-old man comes to the physician to establish care. He recently moved to the area and has not been to a primary care physician for over 5 years. He has no history of serious illness, but has intermittent bilateral knee pain for which he takes 650 mg acetaminophen every other day. He is married with three children and is sexually active with his wife. During the past 10 years, he has unsuccessfully tried to lose weight. He has smoked one half pack of cigarettes daily for 15 years. About 2–3 times per week he has 1–2 glasses of wine with dinner. He is 160 cm (5 ft 3 in) tall and weighs 93 kg (205 lb); BMI is 36.3 kg/m2. Vital signs are within normal limits. On abdominal examination, the liver is palpated 2 to 3 cm below the right costal margin. Laboratory studies show:\nHemoglobin 12.6 g/dL\nPlatelet count 360,000/mm3\nHemoglobin A1c 6.3%\nSerum\nFerritin 194 ng/mL\nTotal bilirubin 0.7 mg/dL\nAlkaline phosphatase 52 U/L\nAspartate aminotransferase 92 U/L\nAlanine aminotransferase 144 U/L\nHepatitis B surface antigen Negative\nHepatitis B core IgM antibody Negative\nHepatitis B surface antibody Positive\nHepatitis C antibody Negative\nAntinuclear antibody titers 1:20 (N = < 1:60)\nSmooth muscle antibody titers Negative\nAnti-LKM1 antibody titers Negative\nTransabdominal ultrasonography shows a mildly enlarged, diffusely hyperechoic liver. Which of the following is the most likely underlying cause of these liver abnormalities?\"",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-800",
+  "test_id": "test-00628",
+  "mc_prompt": "Q: A 42-year-old man comes to the physician to establish care. He recently moved to the area and has not been to a primary care physician for over 5 years. He has no history of serious illness, but has intermittent bilateral knee pain for which he takes 650 mg acetaminophen every other day. He is married with three children and is sexually active with his wife. During the past 10 years, he has unsuccessfully tried to lose weight. He has smoked one half pack of cigarettes daily for 15 years. About 2–3 times per week he has 1–2 glasses of wine with dinner. He is 160 cm (5 ft 3 in) tall and weighs 93 kg (205 lb); BMI is 36.3 kg/m2. Vital signs are within normal limits. On abdominal examination, the liver is palpated 2 to 3 cm below the right costal margin. Laboratory studies show:\nHemoglobin 12.6 g/dL\nPlatelet count 360,000/mm3\nHemoglobin A1c 6.3%\nSerum\nFerritin 194 ng/mL\nTotal bilirubin 0.7 mg/dL\nAlkaline phosphatase 52 U/L\nAspartate aminotransferase 92 U/L\nAlanine aminotransferase 144 U/L\nHepatitis B surface antigen Negative\nHepatitis B core IgM antibody Negative\nHepatitis B surface antibody Positive\nHepatitis C antibody Negative\nAntinuclear antibody titers 1:20 (N = < 1:60)\nSmooth muscle antibody titers Negative\nAnti-LKM1 antibody titers Negative\nTransabdominal ultrasonography shows a mildly enlarged, diffusely hyperechoic liver. Which of the following is the most likely underlying cause of these liver abnormalities?\"\nA) Autoimmune liver damage\nB) Congestive hepatopathy\nC) Insulin resistance\nD) Acetaminophen use\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8223,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0803,
+        "B": 0.0104,
+        "C": 0.0067,
+        "D": 0.9026
+      },
+      "latency_ms": 2831,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9125,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9453,
+        "B": 0.0062,
+        "C": 0.0157,
+        "D": 0.0328
+      },
+      "latency_ms": 414,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0795,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.3978,
+        "B": 0.3183,
+        "C": 0.132,
+        "D": 0.1519
+      },
+      "latency_ms": 2097,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1308,
+      "answer": "C",
+      "probabilities": {
+        "C": 0.5654,
+        "D": 0.4346
+      },
+      "latency_ms": 2919,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.002,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2051,
+        "B": 0.3296,
+        "C": 0.3276,
+        "D": 0.1377
+      },
+      "latency_ms": 995,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2041,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.159,
+        "B": 0.4586,
+        "C": 0.2545,
+        "D": 0.1278
+      },
+      "latency_ms": 994,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9243,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9587,
+        "B": 0.0013,
+        "C": 0.0057,
+        "D": 0.0344
+      },
+      "latency_ms": 715,
+      "worker_idx": 6,
+      "raw_response": "A"
+    }
+  ],
+  "total_latency_ms": 10965,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 3,
+    "B": 2,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 2.7462,
+    "B": 1.1244,
+    "C": 1.3076,
+    "D": 1.8217999999999999
+  }
+}

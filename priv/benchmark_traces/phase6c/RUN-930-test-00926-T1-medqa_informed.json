@@ -1,0 +1,104 @@
+{
+  "status": "ok",
+  "question": "A 48-year-old man with type II diabetes mellitus complicated by peripheral neuropathy presents to the emergency department for a foot wound that he noticed. He denies any pain, fevers, or chills. His temperature is 101°F (38.3°C), blood pressure is 150/80 mmHg, pulse is 80/min, and respirations are 22/min. An ulcer with associated erythema and purulence is noted on his foot. Based on his radiography, he is diagnosed with osteomyelitis and admitted to the hospital for partial amputation of his right foot. He is given appropriate prophylaxis for tetanus and discharged 5 hospital days later on antibiotics. He returns to the emergency department one week later with difficulty breathing. His temperature is 98°F (37°C), blood pressure is 100/70 mmHg, pulse is 130/min, respirations are 27/min, and oxygen saturation is 92% on room air. His amputated foot stump is erythematous and edematous but not tender to palpation. An electrocardiogram reveals sinus tachycardia. He requests something to help calm his breathing down. What is the next best step in management?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-930",
+  "test_id": "test-00926",
+  "mc_prompt": "Q: A 48-year-old man with type II diabetes mellitus complicated by peripheral neuropathy presents to the emergency department for a foot wound that he noticed. He denies any pain, fevers, or chills. His temperature is 101°F (38.3°C), blood pressure is 150/80 mmHg, pulse is 80/min, and respirations are 22/min. An ulcer with associated erythema and purulence is noted on his foot. Based on his radiography, he is diagnosed with osteomyelitis and admitted to the hospital for partial amputation of his right foot. He is given appropriate prophylaxis for tetanus and discharged 5 hospital days later on antibiotics. He returns to the emergency department one week later with difficulty breathing. His temperature is 98°F (37°C), blood pressure is 100/70 mmHg, pulse is 130/min, respirations are 27/min, and oxygen saturation is 92% on room air. His amputated foot stump is erythematous and edematous but not tender to palpation. An electrocardiogram reveals sinus tachycardia. He requests something to help calm his breathing down. What is the next best step in management?\nA) Complete blood count, type and screen, and order 1 unit of blood\nB) CT angiography of the chest and give oxygen\nC) Deep wound culture and start piperacillin-tazobactam\nD) Erythrocyte sedimentation rate and give oxycodone\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8208,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0848,
+        "B": 0.9056,
+        "C": 0.0096
+      },
+      "latency_ms": 2447,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5657,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.005,
+        "B": 0.7793,
+        "C": 0.2136,
+        "D": 0.0022
+      },
+      "latency_ms": 2269,
+      "worker_idx": 1,
+      "raw_response": "B"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7598,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0011,
+        "B": 0.8766,
+        "C": 0.1168,
+        "D": 0.0055
+      },
+      "latency_ms": 554,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3236,
+      "answer": "D",
+      "probabilities": {
+        "B": 0.3382,
+        "D": 0.6618
+      },
+      "latency_ms": 2967,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.411,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5957,
+        "B": 0.1847,
+        "C": 0.1116,
+        "D": 0.108
+      },
+      "latency_ms": 672,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8910,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "B": 3,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 0.6866,
+    "B": 3.0843999999999996,
+    "C": 0.4516,
+    "D": 0.7775000000000001
+  }
+}

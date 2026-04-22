@@ -1,0 +1,137 @@
+{
+  "status": "ok",
+  "question": "A 10-year-old Caucasian female with Turner's syndrome underwent an abdominal imaging study and was discovered that the poles of her kidneys were fused inferiorly. Normal ascension of kidney during embryological development would be prevented by which of the following anatomical structures?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-767",
+  "test_id": "test-00204",
+  "mc_prompt": "Q: A 10-year-old Caucasian female with Turner's syndrome underwent an abdominal imaging study and was discovered that the poles of her kidneys were fused inferiorly. Normal ascension of kidney during embryological development would be prevented by which of the following anatomical structures?\nA) Superior mesenteric artery\nB) Inferior mesenteric artery\nC) Celiac artery\nD) Splenic artery\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 2,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.1259,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.3941,
+        "B": 0.2682,
+        "C": 0.0814,
+        "D": 0.2564
+      },
+      "latency_ms": 2162,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.3046,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.3241,
+        "B": 0.0442,
+        "C": 0.003,
+        "D": 0.6287
+      },
+      "latency_ms": 156,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3108,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2295,
+        "B": 0.5403,
+        "C": 0.1313,
+        "D": 0.099
+      },
+      "latency_ms": 1832,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8289,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8912,
+        "B": 0.0623,
+        "C": 0.0465
+      },
+      "latency_ms": 2320,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1106,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.3563,
+        "B": 0.0504,
+        "C": 0.1264,
+        "D": 0.4669
+      },
+      "latency_ms": 751,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.3153,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2236,
+        "B": 0.1435,
+        "C": 0.5389,
+        "D": 0.0939
+      },
+      "latency_ms": 774,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6263,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.144,
+        "B": 0.0059,
+        "C": 0.7703,
+        "D": 0.0797
+      },
+      "latency_ms": 227,
+      "worker_idx": 6,
+      "raw_response": "Answer"
+    }
+  ],
+  "total_latency_ms": 8223,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 1,
+    "C": 2,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 2.5627999999999997,
+    "B": 1.1148,
+    "C": 1.6978,
+    "D": 1.6246
+  }
+}

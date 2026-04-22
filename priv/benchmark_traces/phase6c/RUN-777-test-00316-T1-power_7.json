@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "question": "A 32-year-old woman presents to the physician because she feels depressed, has difficulty sleeping, has a poor appetite, and has had a problem concentrating for the past 3 months. During this time, she has also has had low energy and has lost interest in playing the guitar. During high school, the patient went through similar episodes of low mood and poor sleep. At that time, she would repeatedly engage in binge eating and purging behavior, for which she was referred to therapy. There is no evidence of suicidal ideation. Her physician offers to prescribe a medication for her current symptoms. Treatment with which of the following drugs should be avoided in this patient?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-777",
+  "test_id": "test-00316",
+  "mc_prompt": "Q: A 32-year-old woman presents to the physician because she feels depressed, has difficulty sleeping, has a poor appetite, and has had a problem concentrating for the past 3 months. During this time, she has also has had low energy and has lost interest in playing the guitar. During high school, the patient went through similar episodes of low mood and poor sleep. At that time, she would repeatedly engage in binge eating and purging behavior, for which she was referred to therapy. There is no evidence of suicidal ideation. Her physician offers to prescribe a medication for her current symptoms. Treatment with which of the following drugs should be avoided in this patient?\nA) Bupropion\nB) Citalopram\nC) Fluoxetine\nD) Trazodone\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6042,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7427,
+        "B": 0.1385,
+        "C": 0.0392,
+        "D": 0.0795
+      },
+      "latency_ms": 2370,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.4714,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2619,
+        "B": 0.0034,
+        "C": 0.0014,
+        "D": 0.7333
+      },
+      "latency_ms": 273,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1374,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2607,
+        "B": 0.0534,
+        "C": 0.4117,
+        "D": 0.2743
+      },
+      "latency_ms": 1900,
+      "worker_idx": 2,
+      "raw_response": "In"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.692,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.154,
+        "D": 0.846
+      },
+      "latency_ms": 2485,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1413,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4132,
+        "B": 0.2379,
+        "C": 0.2719,
+        "D": 0.0769
+      },
+      "latency_ms": 784,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.4032,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.2984,
+        "C": 0.7016
+      },
+      "latency_ms": 782,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9941,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0017,
+        "B": 0.0013,
+        "C": 0.0011,
+        "D": 0.9958
+      },
+      "latency_ms": 367,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 8962,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "C": 2,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 1.8341999999999998,
+    "B": 0.7329,
+    "C": 1.4269,
+    "D": 3.0058000000000002
+  }
+}

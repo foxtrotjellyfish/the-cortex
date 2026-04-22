@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "question": "A 1-month-old girl is brought to the pediatrician by her parents. They are concerned that she becomes lethargic and irritated between meals. They found that feeding her often with small servings helps. She was born at 39 weeks via spontaneous vaginal delivery and is meeting all developmental milestones. Her mother has one brother that occasionally requires blood transfusions. Today, her blood pressure is 55/33 mm Hg, his heart rate is 120/min, respiratory rate is 40/min, and temperature of 37.0°C (98.6°F). On physical exam, the infant is irritated. She is slightly jaundiced. Her heart has a regular rate and rhythm and her lungs are clear to auscultation bilaterally. Her blood work shows normocytic anemia with elevated reticulocyte count and decreased haptoglobin. Sickle cell anemia and other hemoglobinopathies are also ruled out. A Coombs test is negative. Red blood cell osmotic fragility gap is normal. The physician determined that these findings are related to an enzyme deficiency. Which of the following allosterically inhibits this enzyme?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-701",
+  "test_id": "test-00639",
+  "mc_prompt": "Q: A 1-month-old girl is brought to the pediatrician by her parents. They are concerned that she becomes lethargic and irritated between meals. They found that feeding her often with small servings helps. She was born at 39 weeks via spontaneous vaginal delivery and is meeting all developmental milestones. Her mother has one brother that occasionally requires blood transfusions. Today, her blood pressure is 55/33 mm Hg, his heart rate is 120/min, respiratory rate is 40/min, and temperature of 37.0°C (98.6°F). On physical exam, the infant is irritated. She is slightly jaundiced. Her heart has a regular rate and rhythm and her lungs are clear to auscultation bilaterally. Her blood work shows normocytic anemia with elevated reticulocyte count and decreased haptoglobin. Sickle cell anemia and other hemoglobinopathies are also ruled out. A Coombs test is negative. Red blood cell osmotic fragility gap is normal. The physician determined that these findings are related to an enzyme deficiency. Which of the following allosterically inhibits this enzyme?\nA) Alanine\nB) Adenosine monophosphate\nC) Fructose 1,6-bisphosphate\nD) Fructose 2,6-bisphosphate\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 5,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7754,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0182,
+        "B": 0.1032,
+        "D": 0.8786
+      },
+      "latency_ms": 736,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.8982,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0293,
+        "B": 0.0027,
+        "C": 0.0349,
+        "D": 0.9331
+      },
+      "latency_ms": 289,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2986,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1704,
+        "B": 0.0264,
+        "C": 0.2523,
+        "D": 0.5509
+      },
+      "latency_ms": 1957,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9934,
+      "answer": "D",
+      "probabilities": {
+        "C": 0.0033,
+        "D": 0.9967
+      },
+      "latency_ms": 2654,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.7871,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0554,
+        "B": 0.0451,
+        "C": 0.0562,
+        "D": 0.8433
+      },
+      "latency_ms": 895,
+      "worker_idx": 4,
+      "raw_response": "D"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.057,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1773,
+        "B": 0.3323,
+        "C": 0.2753,
+        "D": 0.2151
+      },
+      "latency_ms": 878,
+      "worker_idx": 5,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7410,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "B": 1,
+    "D": 5
+  },
+  "weighted_scores": {
+    "A": 0.4506,
+    "B": 0.5097,
+    "C": 0.622,
+    "D": 4.4177
+  }
+}

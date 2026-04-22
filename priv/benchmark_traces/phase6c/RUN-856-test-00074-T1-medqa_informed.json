@@ -1,0 +1,101 @@
+{
+  "status": "ok",
+  "question": "A 21-year-old man comes to the physician because of pruritus and a hypopigmented rash on his upper body for 5 days. He first noticed the symptoms after returning from a business trip last week in the Bahamas. While he was there, he visited a couple of beaches and went hiking with some coworkers. The rash initially started as a single lesion on his upper back but since then has extended to his shoulders. He has a history of type 1 diabetes mellitus controlled with an insulin pump. He works as an office manager and has no known exposure to melanocytotoxic chemicals. He has been sexually active with three female partners over the past year and uses condoms inconsistently. He is 183 cm (6 ft) tall and weighs 80 kg (176 lb); BMI is 23.9 kg/m2. His temperature is 37.2°C (99°F), pulse is 78/min, and blood pressure is 130/84 mm Hg. A photograph of the rash is shown. One month ago, his hemoglobin A1C was 7.8%. Which of the following is most likely to confirm the diagnosis?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-856",
+  "test_id": "test-00074",
+  "mc_prompt": "Q: A 21-year-old man comes to the physician because of pruritus and a hypopigmented rash on his upper body for 5 days. He first noticed the symptoms after returning from a business trip last week in the Bahamas. While he was there, he visited a couple of beaches and went hiking with some coworkers. The rash initially started as a single lesion on his upper back but since then has extended to his shoulders. He has a history of type 1 diabetes mellitus controlled with an insulin pump. He works as an office manager and has no known exposure to melanocytotoxic chemicals. He has been sexually active with three female partners over the past year and uses condoms inconsistently. He is 183 cm (6 ft) tall and weighs 80 kg (176 lb); BMI is 23.9 kg/m2. His temperature is 37.2°C (99°F), pulse is 78/min, and blood pressure is 130/84 mm Hg. A photograph of the rash is shown. One month ago, his hemoglobin A1C was 7.8%. Which of the following is most likely to confirm the diagnosis?\nA) Wood lamp examination\nB) Skin culture\nC) Potassium hydroxide preparation\nD) Skin biopsy\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.5548,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2207,
+        "B": 0.0038,
+        "D": 0.7755
+      },
+      "latency_ms": 2832,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9329,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0261,
+        "B": 0.0046,
+        "C": 0.0103,
+        "D": 0.959
+      },
+      "latency_ms": 2477,
+      "worker_idx": 1,
+      "raw_response": "D"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9928,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0036,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.9964
+      },
+      "latency_ms": 513,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2830,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4416,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.707,
+        "B": 0.0277,
+        "D": 0.2654
+      },
+      "latency_ms": 564,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 9217,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "D": 4
+  },
+  "weighted_scores": {
+    "A": 0.9574,
+    "B": 0.0361,
+    "C": 0.0103,
+    "D": 3.9963
+  }
+}

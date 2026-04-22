@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "question": "A 56-year-old man is brought to the emergency department. He was found unconscious on the street. The staff recognizes him as a local homeless man with a long history of alcoholism. At the hospital, his pulse is 95/min, the blood pressure is 110/70 mm Hg, the respirations are 20/min, and the oxygen saturation is 98% on room air. On physical exam, the unconscious man is covered in bloody vomit with small clots and food particles. He smells of alcohol. A digital exam reveals black tarry stool in the rectal vault. The patient is given oxygen, IV fluids, and an NG-tube is placed and set to intermittent suction. Labs are sent and the patient is prepared for a procedure. Which of the following is the most appropriate next step in his management?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-864",
+  "test_id": "test-00168",
+  "mc_prompt": "Q: A 56-year-old man is brought to the emergency department. He was found unconscious on the street. The staff recognizes him as a local homeless man with a long history of alcoholism. At the hospital, his pulse is 95/min, the blood pressure is 110/70 mm Hg, the respirations are 20/min, and the oxygen saturation is 98% on room air. On physical exam, the unconscious man is covered in bloody vomit with small clots and food particles. He smells of alcohol. A digital exam reveals black tarry stool in the rectal vault. The patient is given oxygen, IV fluids, and an NG-tube is placed and set to intermittent suction. Labs are sent and the patient is prepared for a procedure. Which of the following is the most appropriate next step in his management?\nA) Undergo colonoscopy\nB) Undergo upper GI endoscopy\nC) Proton pump inhibitors with anti-H.pylori regimen\nD) Surgery for peptic ulcer disease\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9057,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9388,
+        "B": 0.0281,
+        "D": 0.0331
+      },
+      "latency_ms": 2457,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3488,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.055,
+        "B": 0.6382,
+        "C": 0.2894,
+        "D": 0.0174
+      },
+      "latency_ms": 2431,
+      "worker_idx": 1,
+      "raw_response": "B"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9729,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0069,
+        "B": 0.9804,
+        "C": 0.0075,
+        "D": 0.0053
+      },
+      "latency_ms": 412,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "B",
+      "probabilities": {
+        "B": 1.0
+      },
+      "latency_ms": 2711,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4874,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7437,
+        "B": 0.2563
+      },
+      "latency_ms": 461,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8472,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 3
+  },
+  "weighted_scores": {
+    "A": 1.7444,
+    "B": 2.903,
+    "C": 0.2969,
+    "D": 0.055799999999999995
+  }
+}

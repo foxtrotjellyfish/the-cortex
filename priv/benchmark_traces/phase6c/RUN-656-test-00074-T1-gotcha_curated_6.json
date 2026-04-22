@@ -1,0 +1,115 @@
+{
+  "status": "ok",
+  "question": "A 21-year-old man comes to the physician because of pruritus and a hypopigmented rash on his upper body for 5 days. He first noticed the symptoms after returning from a business trip last week in the Bahamas. While he was there, he visited a couple of beaches and went hiking with some coworkers. The rash initially started as a single lesion on his upper back but since then has extended to his shoulders. He has a history of type 1 diabetes mellitus controlled with an insulin pump. He works as an office manager and has no known exposure to melanocytotoxic chemicals. He has been sexually active with three female partners over the past year and uses condoms inconsistently. He is 183 cm (6 ft) tall and weighs 80 kg (176 lb); BMI is 23.9 kg/m2. His temperature is 37.2°C (99°F), pulse is 78/min, and blood pressure is 130/84 mm Hg. A photograph of the rash is shown. One month ago, his hemoglobin A1C was 7.8%. Which of the following is most likely to confirm the diagnosis?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-656",
+  "test_id": "test-00074",
+  "mc_prompt": "Q: A 21-year-old man comes to the physician because of pruritus and a hypopigmented rash on his upper body for 5 days. He first noticed the symptoms after returning from a business trip last week in the Bahamas. While he was there, he visited a couple of beaches and went hiking with some coworkers. The rash initially started as a single lesion on his upper back but since then has extended to his shoulders. He has a history of type 1 diabetes mellitus controlled with an insulin pump. He works as an office manager and has no known exposure to melanocytotoxic chemicals. He has been sexually active with three female partners over the past year and uses condoms inconsistently. He is 183 cm (6 ft) tall and weighs 80 kg (176 lb); BMI is 23.9 kg/m2. His temperature is 37.2°C (99°F), pulse is 78/min, and blood pressure is 130/84 mm Hg. A photograph of the rash is shown. One month ago, his hemoglobin A1C was 7.8%. Which of the following is most likely to confirm the diagnosis?\nA) Wood lamp examination\nB) Skin culture\nC) Potassium hydroxide preparation\nD) Skin biopsy\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 4,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.5548,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2207,
+        "B": 0.0038,
+        "D": 0.7755
+      },
+      "latency_ms": 774,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9974,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0013,
+        "D": 0.9987
+      },
+      "latency_ms": 307,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9329,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0261,
+        "B": 0.0046,
+        "C": 0.0103,
+        "D": 0.959
+      },
+      "latency_ms": 1708,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2385,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.027,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3055,
+        "B": 0.2134,
+        "C": 0.3325,
+        "D": 0.1486
+      },
+      "latency_ms": 875,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2291,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0385,
+        "B": 0.3071,
+        "C": 0.5362,
+        "D": 0.1182
+      },
+      "latency_ms": 883,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6932,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "C": 2,
+    "D": 4
+  },
+  "weighted_scores": {
+    "A": 0.5921,
+    "B": 0.5288999999999999,
+    "C": 0.879,
+    "D": 4.0
+  }
+}

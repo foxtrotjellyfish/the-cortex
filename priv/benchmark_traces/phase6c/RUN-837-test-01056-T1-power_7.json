@@ -1,0 +1,131 @@
+{
+  "status": "ok",
+  "question": "A 29-year-old man diagnosed with schizophrenia 4 years ago presents for follow-up to discuss his medication. The patient was diagnosed with schizophrenia 4 years ago and has since tried several antipsychotic medications, none of which have been able to treat his negative symptoms. He has changed to clozapine 2 weeks ago and says that he does feel better. His physical exam is unremarkable, and he is responding appropriately to questioning. If this patient’s current medication is to be continued, which of the following laboratory tests should be ordered at this time?\n ",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-837",
+  "test_id": "test-01056",
+  "mc_prompt": "Q: A 29-year-old man diagnosed with schizophrenia 4 years ago presents for follow-up to discuss his medication. The patient was diagnosed with schizophrenia 4 years ago and has since tried several antipsychotic medications, none of which have been able to treat his negative symptoms. He has changed to clozapine 2 weeks ago and says that he does feel better. His physical exam is unremarkable, and he is responding appropriately to questioning. If this patient’s current medication is to be continued, which of the following laboratory tests should be ordered at this time?\n \nA) Slit-lamp examination\nB) Electrocardiogram\nC) Prolactin level\nD) Complete blood count\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 5,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4748,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1078,
+        "B": 0.1872,
+        "C": 0.662,
+        "D": 0.043
+      },
+      "latency_ms": 1764,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9903,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0021,
+        "C": 0.9941,
+        "D": 0.0038
+      },
+      "latency_ms": 201,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.949,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.002,
+        "B": 0.0209,
+        "C": 0.9699,
+        "D": 0.0073
+      },
+      "latency_ms": 1606,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "C",
+      "probabilities": {
+        "C": 1.0
+      },
+      "latency_ms": 2447,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1785,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.3118,
+        "B": 0.112,
+        "C": 0.0859,
+        "D": 0.4903
+      },
+      "latency_ms": 810,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0626,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.4687,
+        "C": 0.5313
+      },
+      "latency_ms": 783,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3945,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6535,
+        "B": 0.0058,
+        "C": 0.259,
+        "D": 0.0818
+      },
+      "latency_ms": 319,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 7931,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "D",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "C": 5,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.0772,
+    "B": 0.7946,
+    "C": 4.5022,
+    "D": 0.6262
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "question": "A 61-year-old man with schizophrenia in a locked inpatient psychiatry unit was observed making an unusual smacking motion with his lips, pursing his mouth, and blinking excessively. These symptoms started slowly about 2 weeks ago and have become more pronounced, but they do not seem to bother the patient. He resides in an inpatient psychiatric facility where he has been successfully treated with haloperidol for the past several months. His physical exam and vitals are within normal limits. Which of the following accurately describes his symptoms?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-752",
+  "test_id": "test-00054",
+  "mc_prompt": "Q: A 61-year-old man with schizophrenia in a locked inpatient psychiatry unit was observed making an unusual smacking motion with his lips, pursing his mouth, and blinking excessively. These symptoms started slowly about 2 weeks ago and have become more pronounced, but they do not seem to bother the patient. He resides in an inpatient psychiatric facility where he has been successfully treated with haloperidol for the past several months. His physical exam and vitals are within normal limits. Which of the following accurately describes his symptoms?\nA) Tardive dyskinesia\nB) Acute dystonia\nC) Pseudoparkinsonism\nD) Palsy\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 4,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9583,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9771,
+        "B": 0.0188,
+        "C": 0.0011,
+        "D": 0.003
+      },
+      "latency_ms": 405,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9961,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9976,
+        "B": 0.0004,
+        "C": 0.0015,
+        "D": 0.0005
+      },
+      "latency_ms": 177,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9329,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9635,
+        "B": 0.005,
+        "C": 0.0306,
+        "D": 0.001
+      },
+      "latency_ms": 1840,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3608,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3196,
+        "C": 0.6804
+      },
+      "latency_ms": 2443,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0366,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2526,
+        "B": 0.2504,
+        "C": 0.2892,
+        "D": 0.2079
+      },
+      "latency_ms": 800,
+      "worker_idx": 4,
+      "raw_response": "D"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.5283,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1068,
+        "B": 0.1825,
+        "C": 0.7108
+      },
+      "latency_ms": 792,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9105,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9398,
+        "B": 0.0277,
+        "C": 0.0293,
+        "D": 0.0032
+      },
+      "latency_ms": 2044,
+      "worker_idx": 6,
+      "raw_response": "A"
+    }
+  ],
+  "total_latency_ms": 8503,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 4,
+    "C": 3
+  },
+  "weighted_scores": {
+    "A": 4.557,
+    "B": 0.4848,
+    "C": 1.7429000000000001,
+    "D": 0.2156
+  }
+}

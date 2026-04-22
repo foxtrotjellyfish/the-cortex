@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "question": "A clinical researcher is interested in creating a new drug for HIV patients. Darunavir has been particularly efficacious in recent patients; however, some have experienced an increased incidence of hyperglycemia. A new drug called DN501 is developed with the same mechanism of action as darunavir but fewer side effects. Which of the following is the mechanism of action of DN501?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-669",
+  "test_id": "test-00208",
+  "mc_prompt": "Q: A clinical researcher is interested in creating a new drug for HIV patients. Darunavir has been particularly efficacious in recent patients; however, some have experienced an increased incidence of hyperglycemia. A new drug called DN501 is developed with the same mechanism of action as darunavir but fewer side effects. Which of the following is the mechanism of action of DN501?\nA) Prevents viral transcription\nB) Inhibits viral assembly\nC) Inhibits viral entry\nD) Prevents T-cell binding\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 5,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6905,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0773,
+        "B": 0.0752,
+        "C": 0.769,
+        "D": 0.0785
+      },
+      "latency_ms": 365,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9766,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0008,
+        "C": 0.9879,
+        "D": 0.0113
+      },
+      "latency_ms": 165,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.026,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3897,
+        "B": 0.0441,
+        "C": 0.4157,
+        "D": 0.1506
+      },
+      "latency_ms": 1841,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3153,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.2479,
+        "C": 0.5632,
+        "D": 0.1889
+      },
+      "latency_ms": 2170,
+      "worker_idx": 3,
+      "raw_response": "To"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0142,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.032,
+        "B": 0.0139,
+        "C": 0.47,
+        "D": 0.4842
+      },
+      "latency_ms": 777,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1968,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1311,
+        "B": 0.2231,
+        "C": 0.4213,
+        "D": 0.2245
+      },
+      "latency_ms": 774,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6092,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "C": 5,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 0.6309,
+    "B": 0.6042000000000001,
+    "C": 3.6271,
+    "D": 1.138
+  }
+}

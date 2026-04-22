@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "question": "A 13-year-old boy is brought to the emergency department because he was vomiting and seemed abnormally sleepy at home. On presentation, he is found to be confused and very lethargic. His parents said that he has had a fever and cough for several days prior to presentation and was given an over the counter medication. Physical exam of this patient reveals mild hepatomegaly and dry mucous membranes. Which of the following effects would the drug most likely also have on the nephron?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-738",
+  "test_id": "test-01062",
+  "mc_prompt": "Q: A 13-year-old boy is brought to the emergency department because he was vomiting and seemed abnormally sleepy at home. On presentation, he is found to be confused and very lethargic. His parents said that he has had a fever and cough for several days prior to presentation and was given an over the counter medication. Physical exam of this patient reveals mild hepatomegaly and dry mucous membranes. Which of the following effects would the drug most likely also have on the nephron?\nA) Constriction of afferent arteriole and no effect on efferent arteriole\nB) Dilation of afferent arteriole and no effect on efferent arteriole\nC) No effect on afferent arteriole and constriction of efferent arteriole\nD) No effect on afferent arteriole and dilation of efferent arteriole\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "D",
+  "majority_votes": 2,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.0209,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.3381,
+        "B": 0.2764,
+        "C": 0.0683,
+        "D": 0.3172
+      },
+      "latency_ms": 530,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.1564,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0822,
+        "B": 0.2294,
+        "C": 0.4224,
+        "D": 0.266
+      },
+      "latency_ms": 226,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.13,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.45,
+        "B": 0.1124,
+        "C": 0.1176,
+        "D": 0.32
+      },
+      "latency_ms": 2144,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2601,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.6747,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0916,
+        "B": 0.0702,
+        "C": 0.0719,
+        "D": 0.7663
+      },
+      "latency_ms": 814,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1383,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.3703,
+        "C": 0.5086,
+        "D": 0.1211
+      },
+      "latency_ms": 823,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 7138,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "C": 2,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 0.9619000000000001,
+    "B": 1.0587000000000002,
+    "C": 1.1888,
+    "D": 2.7906000000000004
+  }
+}

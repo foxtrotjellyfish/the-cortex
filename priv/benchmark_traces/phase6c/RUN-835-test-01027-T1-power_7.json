@@ -1,0 +1,135 @@
+{
+  "status": "ok",
+  "question": "A 35-year-old man comes to the emergency department with acute shortness of breath that developed after a 10-hour international flight. His pulse is 124/min and pulse oximetry on room air shows an oxygen saturation of 90%. He weighs 50-kg (110-lb). A diagnosis of pulmonary embolism is suspected and intravenous heparin is initiated. If the volume of distribution of heparin is equivalent to 60 mL/kg and the target peak plasma concentration is 0.5 units/mL, which of the following is the most appropriate loading dose for this patient?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-835",
+  "test_id": "test-01027",
+  "mc_prompt": "Q: A 35-year-old man comes to the emergency department with acute shortness of breath that developed after a 10-hour international flight. His pulse is 124/min and pulse oximetry on room air shows an oxygen saturation of 90%. He weighs 50-kg (110-lb). A diagnosis of pulmonary embolism is suspected and intravenous heparin is initiated. If the volume of distribution of heparin is equivalent to 60 mL/kg and the target peak plasma concentration is 0.5 units/mL, which of the following is the most appropriate loading dose for this patient?\nA) 3,000 units\nB) 1,500 units\nC) 6,000 units\nD) Cannot be calculated, as bioavailability is not known\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "C",
+  "majority_votes": 2,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.3067,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5402,
+        "B": 0.1157,
+        "C": 0.2335,
+        "D": 0.1106
+      },
+      "latency_ms": 2367,
+      "worker_idx": 0,
+      "raw_response": "To"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.3172,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0116,
+        "B": 0.0942,
+        "C": 0.6057,
+        "D": 0.2885
+      },
+      "latency_ms": 259,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5392,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0471,
+        "B": 0.0887,
+        "C": 0.7017,
+        "D": 0.1625
+      },
+      "latency_ms": 2174,
+      "worker_idx": 2,
+      "raw_response": "To"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0038,
+      "answer": "D",
+      "probabilities": {
+        "B": 0.0146,
+        "C": 0.4908,
+        "D": 0.4946
+      },
+      "latency_ms": 2511,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.6658,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0969,
+        "B": 0.0627,
+        "C": 0.0777,
+        "D": 0.7627
+      },
+      "latency_ms": 798,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.001,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.5005,
+        "C": 0.4995
+      },
+      "latency_ms": 808,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4851,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6596,
+        "B": 0.1156,
+        "C": 0.1745,
+        "D": 0.0503
+      },
+      "latency_ms": 351,
+      "worker_idx": 6,
+      "raw_response": "Answer"
+    }
+  ],
+  "total_latency_ms": 9268,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 1,
+    "C": 2,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 1.3554,
+    "B": 0.992,
+    "C": 2.7834000000000003,
+    "D": 1.8692000000000002
+  }
+}

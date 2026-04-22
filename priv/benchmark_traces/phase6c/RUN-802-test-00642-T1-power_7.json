@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "question": "A 40-year-old woman presents with severe shortness of breath. The patient is unable to provide a history due to her breathing difficulties. The patient’s roommate says that she came home and found her in this state. She also says that they both occasionally take sleeping pills to help them fall asleep. Physical examination reveals an obese female, dyspneic with diminished chest wall movements. The patient’s A-a gradient is calculated to be 10 mm Hg. Which of the following most likely accounts for this patient’s symptoms?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-802",
+  "test_id": "test-00642",
+  "mc_prompt": "Q: A 40-year-old woman presents with severe shortness of breath. The patient is unable to provide a history due to her breathing difficulties. The patient’s roommate says that she came home and found her in this state. She also says that they both occasionally take sleeping pills to help them fall asleep. Physical examination reveals an obese female, dyspneic with diminished chest wall movements. The patient’s A-a gradient is calculated to be 10 mm Hg. Which of the following most likely accounts for this patient’s symptoms?\nA) Alveolar hypoventilation\nB) Impaired gas diffusion\nC) Left-to-right blood shunt\nD) Right-to-left blood shunt\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.5908,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7378,
+        "B": 0.1,
+        "C": 0.0152,
+        "D": 0.147
+      },
+      "latency_ms": 2311,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9984,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9992,
+        "D": 0.0008
+      },
+      "latency_ms": 257,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9697,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9801,
+        "B": 0.006,
+        "C": 0.0104,
+        "D": 0.0035
+      },
+      "latency_ms": 1843,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2189,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.186,
+        "B": 0.2975,
+        "D": 0.5164
+      },
+      "latency_ms": 2421,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.527,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1472,
+        "B": 0.0918,
+        "C": 0.0868,
+        "D": 0.6742
+      },
+      "latency_ms": 783,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.7234,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.1383,
+        "C": 0.8617
+      },
+      "latency_ms": 790,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9344,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0325,
+        "B": 0.9669,
+        "C": 0.0005,
+        "D": 0.0001
+      },
+      "latency_ms": 308,
+      "worker_idx": 6,
+      "raw_response": "B"
+    }
+  ],
+  "total_latency_ms": 8713,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 3,
+    "B": 1,
+    "C": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 3.0828,
+    "B": 1.6004999999999998,
+    "C": 0.9745999999999999,
+    "D": 1.3419999999999999
+  }
+}

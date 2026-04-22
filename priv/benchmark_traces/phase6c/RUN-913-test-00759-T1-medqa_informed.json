@@ -1,0 +1,102 @@
+{
+  "status": "ok",
+  "question": "A 33-year-old woman presents to the clinic for follow-up of her AIDS treatment with highly active anti-retroviral therapy (HAART). She is in good spirits and has been fully compliant with her medications and clinic visits. Other medications include prophylactic co-trimoxazole. Recent blood studies show the following:\nHemoglobin (Hb%)  11 g/dL\nMean corpuscular volume (MCV)  80 fl\nReticulocyte count 0.5%\nErythrocyte count 2 x 106/mm3\nLeucocyte count 700/mm3\nNeutrophils 40%\nPlatelet count 20,000/mm3\nAssays also show a decreased viral DNA and mRNA burden, as well as a significantly diminished viral load. To avoid modifying the effective anti-retroviral therapy, she is started on a ‘blood improving’ medication. Thirty minutes after the first dose, the patient develops difficulty breathing, severe muscle pain, and vomiting. Her pulse rate is 120/min and the blood pressure is 80/50 mm Hg. Which of the following medications was most likely administered to the patient?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-913",
+  "test_id": "test-00759",
+  "mc_prompt": "Q: A 33-year-old woman presents to the clinic for follow-up of her AIDS treatment with highly active anti-retroviral therapy (HAART). She is in good spirits and has been fully compliant with her medications and clinic visits. Other medications include prophylactic co-trimoxazole. Recent blood studies show the following:\nHemoglobin (Hb%)  11 g/dL\nMean corpuscular volume (MCV)  80 fl\nReticulocyte count 0.5%\nErythrocyte count 2 x 106/mm3\nLeucocyte count 700/mm3\nNeutrophils 40%\nPlatelet count 20,000/mm3\nAssays also show a decreased viral DNA and mRNA burden, as well as a significantly diminished viral load. To avoid modifying the effective anti-retroviral therapy, she is started on a ‘blood improving’ medication. Thirty minutes after the first dose, the patient develops difficulty breathing, severe muscle pain, and vomiting. Her pulse rate is 120/min and the blood pressure is 80/50 mm Hg. Which of the following medications was most likely administered to the patient?\nA) Interleukin 3\nB) Platelet-derived growth factor\nC) Sargramostim\nD) Thrombopoietin\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "D",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4916,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.225,
+        "B": 0.0387,
+        "C": 0.7166,
+        "D": 0.0197
+      },
+      "latency_ms": 2664,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4052,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.034,
+        "B": 0.0214,
+        "C": 0.6749,
+        "D": 0.2697
+      },
+      "latency_ms": 1938,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9939,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0001,
+        "B": 0.0,
+        "C": 0.003,
+        "D": 0.9969
+      },
+      "latency_ms": 510,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2862,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7594,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8797,
+        "C": 0.1203
+      },
+      "latency_ms": 565,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8539,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "C": 2,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 1.1388,
+    "B": 0.0601,
+    "C": 1.5148000000000001,
+    "D": 2.2862999999999998
+  }
+}

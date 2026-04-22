@@ -1,0 +1,137 @@
+{
+  "status": "ok",
+  "question": "A 6-year-old boy is brought in by his parents to a pediatrician’s office for persistent fever. His temperature has ranged from 38.6°C–39.5°C (101.5°F–103.1°F) over the past week. He was diagnosed with a gene defect on chromosome 7, which has caused dysfunction in a transmembrane protein. This defect has resulted in several hospitalizations for various respiratory infections. At the present time, he is struggling with a cough with thick purulent sputum. A sputum sample is sent for culture and the patient is started on vancomycin.The pediatrician tells the patient’s family that there is a collection of mucus in the respiratory tree which increases the patient's chances of future infections. He will have to undergo chest physiotherapy and they should report any signs of infection immediately to a medical professional. Which of the following pathogens will most likely infect this patient in adulthood?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-780",
+  "test_id": "test-00387",
+  "mc_prompt": "Q: A 6-year-old boy is brought in by his parents to a pediatrician’s office for persistent fever. His temperature has ranged from 38.6°C–39.5°C (101.5°F–103.1°F) over the past week. He was diagnosed with a gene defect on chromosome 7, which has caused dysfunction in a transmembrane protein. This defect has resulted in several hospitalizations for various respiratory infections. At the present time, he is struggling with a cough with thick purulent sputum. A sputum sample is sent for culture and the patient is started on vancomycin.The pediatrician tells the patient’s family that there is a collection of mucus in the respiratory tree which increases the patient's chances of future infections. He will have to undergo chest physiotherapy and they should report any signs of infection immediately to a medical professional. Which of the following pathogens will most likely infect this patient in adulthood?\nA) Staphylococcus\nB) Pseudomonas\nC) Burkholderia\nD) Candida\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.0175,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4718,
+        "B": 0.4543,
+        "C": 0.0519,
+        "D": 0.0221
+      },
+      "latency_ms": 2238,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.4544,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0867,
+        "B": 0.0489,
+        "C": 0.205,
+        "D": 0.6594
+      },
+      "latency_ms": 274,
+      "worker_idx": 1,
+      "raw_response": "Based"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2498,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2744,
+        "B": 0.5242,
+        "C": 0.042,
+        "D": 0.1594
+      },
+      "latency_ms": 1939,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.382,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2432,
+        "C": 0.1316,
+        "D": 0.6252
+      },
+      "latency_ms": 2601,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.3234,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1888,
+        "B": 0.187,
+        "C": 0.112,
+        "D": 0.5122
+      },
+      "latency_ms": 839,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.3061,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0497,
+        "B": 0.2106,
+        "C": 0.5229,
+        "D": 0.2168
+      },
+      "latency_ms": 877,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9566,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0042,
+        "B": 0.9726,
+        "C": 0.016,
+        "D": 0.0072
+      },
+      "latency_ms": 408,
+      "worker_idx": 6,
+      "raw_response": "B"
+    }
+  ],
+  "total_latency_ms": 9177,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "B": 2,
+    "C": 1,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 1.3188000000000002,
+    "B": 2.3976,
+    "C": 1.0814,
+    "D": 2.2023
+  }
+}

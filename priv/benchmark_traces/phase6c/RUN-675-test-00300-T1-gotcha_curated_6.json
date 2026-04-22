@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "question": "A 5-year-old boy is brought to the physician because of an irregular gait 3 days after receiving age-appropriate vaccinations. Examination of the lower extremities shows no redness or swelling. When the child stands on his right leg, his left leg drops and his pelvis tilts towards the left. Sensation to light touch is normal in both legs. This patient's symptoms are most likely due to the injection of the vaccine into which of the following locations?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-675",
+  "test_id": "test-00300",
+  "mc_prompt": "Q: A 5-year-old boy is brought to the physician because of an irregular gait 3 days after receiving age-appropriate vaccinations. Examination of the lower extremities shows no redness or swelling. When the child stands on his right leg, his left leg drops and his pelvis tilts towards the left. Sensation to light touch is normal in both legs. This patient's symptoms are most likely due to the injection of the vaccine into which of the following locations?\nA) Inferolateral quadrant of the right buttock\nB) Inferomedial quadrant of the right buttock\nC) Inferomedial quadrant of the left buttock\nD) Superomedial quadrant of the right buttock\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.2109,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4867,
+        "B": 0.2758,
+        "C": 0.0865,
+        "D": 0.151
+      },
+      "latency_ms": 397,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.4927,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2298,
+        "C": 0.0477,
+        "D": 0.7225
+      },
+      "latency_ms": 190,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0317,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.3026,
+        "B": 0.1699,
+        "C": 0.1932,
+        "D": 0.3343
+      },
+      "latency_ms": 1858,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2296,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.3686,
+        "C": 0.5982,
+        "D": 0.0332
+      },
+      "latency_ms": 2434,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.5964,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1296,
+        "B": 0.0622,
+        "C": 0.0822,
+        "D": 0.726
+      },
+      "latency_ms": 778,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1552,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.4224,
+        "C": 0.5776
+      },
+      "latency_ms": 775,
+      "worker_idx": 5,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 6434,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "D",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "C": 2,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 1.1486999999999998,
+    "B": 1.2989000000000002,
+    "C": 1.5854,
+    "D": 1.9669999999999999
+  }
+}

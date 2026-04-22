@@ -1,0 +1,104 @@
+{
+  "status": "ok",
+  "question": "A 25-year-old woman presents to her new family physician for a follow-up appointment. She previously presented with itching, as well as frequent and painful urination. A vaginal swab was taken and sent to the laboratory to confirm the diagnosis. Diplococci were seen on Gram stain and were grown on Thayer-Martin agar. When discussing her infection, the patient says that she uses safe sex practices. Her history is significant for meningitis and for infection with Streptococcus pneumoniae. The physician discusses that the reason behind these infections comes from a defect in the innate immune system. Which of the following best describes the component that is likely deficient in this patient?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-882",
+  "test_id": "test-00416",
+  "mc_prompt": "Q: A 25-year-old woman presents to her new family physician for a follow-up appointment. She previously presented with itching, as well as frequent and painful urination. A vaginal swab was taken and sent to the laboratory to confirm the diagnosis. Diplococci were seen on Gram stain and were grown on Thayer-Martin agar. When discussing her infection, the patient says that she uses safe sex practices. Her history is significant for meningitis and for infection with Streptococcus pneumoniae. The physician discusses that the reason behind these infections comes from a defect in the innate immune system. Which of the following best describes the component that is likely deficient in this patient?\nA) Plays a role in angioedema\nB) Degraded by C1 esterase inhibitor\nC) Creates pores in the cell membrane\nD) Induces the alternative complement pathway\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4854,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.054,
+        "B": 0.6945,
+        "C": 0.0423,
+        "D": 0.2091
+      },
+      "latency_ms": 2137,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1993,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0912,
+        "B": 0.2959,
+        "C": 0.1176,
+        "D": 0.4952
+      },
+      "latency_ms": 2152,
+      "worker_idx": 1,
+      "raw_response": "D"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9827,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0062,
+        "B": 0.003,
+        "C": 0.0019,
+        "D": 0.9889
+      },
+      "latency_ms": 375,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8378,
+      "answer": "D",
+      "probabilities": {
+        "C": 0.0811,
+        "D": 0.9189
+      },
+      "latency_ms": 2172,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7392,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8474,
+        "C": 0.0444,
+        "D": 0.1082
+      },
+      "latency_ms": 409,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7246,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "B": 1,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 0.9988,
+    "B": 0.9934,
+    "C": 0.2873,
+    "D": 2.7203
+  }
+}

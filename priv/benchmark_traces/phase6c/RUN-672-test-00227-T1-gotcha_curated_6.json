@@ -1,0 +1,120 @@
+{
+  "status": "ok",
+  "question": "A 62-year-old woman is evaluated because of a 3-day history of headache, nausea, and decreased urination. Laboratory studies show:\nSerum\nNa+ 136 mEq/L\nK+ 3.2 mEq/L\nCl- 115 mEq/L\nMg2+ 1.4 mEq/L\nUrine\npH 7.0\nArterial blood gas analysis on room air shows a pH of 7.28 and a HCO3- concentration of 14 mEq/L. Prolonged treatment with which of the following drugs would best explain this patient's findings?\"",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-672",
+  "test_id": "test-00227",
+  "mc_prompt": "Q: A 62-year-old woman is evaluated because of a 3-day history of headache, nausea, and decreased urination. Laboratory studies show:\nSerum\nNa+ 136 mEq/L\nK+ 3.2 mEq/L\nCl- 115 mEq/L\nMg2+ 1.4 mEq/L\nUrine\npH 7.0\nArterial blood gas analysis on room air shows a pH of 7.28 and a HCO3- concentration of 14 mEq/L. Prolonged treatment with which of the following drugs would best explain this patient's findings?\"\nA) Trimethoprim-sulfamethoxazole\nB) Eplerenone\nC) Amphotericin B\nD) Heparin\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.451,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6949,
+        "B": 0.0505,
+        "C": 0.2439,
+        "D": 0.0107
+      },
+      "latency_ms": 505,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.2189,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1051,
+        "B": 0.2456,
+        "C": 0.1847,
+        "D": 0.4645
+      },
+      "latency_ms": 213,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5406,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1904,
+        "B": 0.731,
+        "C": 0.0582,
+        "D": 0.0204
+      },
+      "latency_ms": 1867,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5962,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.7981,
+        "C": 0.2019
+      },
+      "latency_ms": 2267,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.3082,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5037,
+        "B": 0.1955,
+        "C": 0.195,
+        "D": 0.1058
+      },
+      "latency_ms": 836,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1063,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0333,
+        "B": 0.4748,
+        "C": 0.3685,
+        "D": 0.1234
+      },
+      "latency_ms": 827,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6517,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 3,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.5274,
+    "B": 2.4955,
+    "C": 1.2522,
+    "D": 0.7248
+  }
+}

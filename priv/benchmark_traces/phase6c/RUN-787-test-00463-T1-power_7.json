@@ -1,0 +1,136 @@
+{
+  "status": "ok",
+  "question": "A 65-year-old man, known to have chronic obstructive lung disease for the last 3 years, presents to the emergency department with a cough, breathing difficulty, and increased expectoration for a day. There is no history of fever. His regular medications include inhaled salmeterol and inhaled fluticasone propionate. He was a chronic smoker but quit smoking 2 years ago. His temperature is 37.1°C (98.8°F), the pulse rate is 88/min, the blood pressure is 128/86 mm Hg, and the respirations are 30/min. On physical examination, the use of the accessory muscles of respiration is evident and the arterial saturation of oxygen is 87%. Auscultation of the chest reveals the presence of bilateral rhonchi with diminished breath sounds in both lungs. Which of the following medications, if administered for the next 2 weeks, is most likely to reduce the risk of subsequent exacerbations over the next 6 months?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-787",
+  "test_id": "test-00463",
+  "mc_prompt": "Q: A 65-year-old man, known to have chronic obstructive lung disease for the last 3 years, presents to the emergency department with a cough, breathing difficulty, and increased expectoration for a day. There is no history of fever. His regular medications include inhaled salmeterol and inhaled fluticasone propionate. He was a chronic smoker but quit smoking 2 years ago. His temperature is 37.1°C (98.8°F), the pulse rate is 88/min, the blood pressure is 128/86 mm Hg, and the respirations are 30/min. On physical examination, the use of the accessory muscles of respiration is evident and the arterial saturation of oxygen is 87%. Auscultation of the chest reveals the presence of bilateral rhonchi with diminished breath sounds in both lungs. Which of the following medications, if administered for the next 2 weeks, is most likely to reduce the risk of subsequent exacerbations over the next 6 months?\nA) Oral prednisone\nB) Supplemental oxygen\nC) Montelukast\nD) Nebulized N-acetylcysteine\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6355,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7957,
+        "B": 0.1602,
+        "C": 0.0087,
+        "D": 0.0354
+      },
+      "latency_ms": 2319,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.2506,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0581,
+        "B": 0.3007,
+        "C": 0.0899,
+        "D": 0.5513
+      },
+      "latency_ms": 274,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2709,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3015,
+        "B": 0.0216,
+        "C": 0.5724,
+        "D": 0.1044
+      },
+      "latency_ms": 1920,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0408,
+      "answer": "D",
+      "probabilities": {
+        "C": 0.4796,
+        "D": 0.5204
+      },
+      "latency_ms": 2569,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0095,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2442,
+        "B": 0.3184,
+        "C": 0.3089,
+        "D": 0.1285
+      },
+      "latency_ms": 859,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2419,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0787,
+        "B": 0.2832,
+        "C": 0.5251,
+        "D": 0.1131
+      },
+      "latency_ms": 872,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9268,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0117,
+        "B": 0.0135,
+        "C": 0.024,
+        "D": 0.9508
+      },
+      "latency_ms": 464,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 9277,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "B": 1,
+    "C": 2,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 1.4899,
+    "B": 1.0976000000000001,
+    "C": 2.0086,
+    "D": 2.4039
+  }
+}

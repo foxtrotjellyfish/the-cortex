@@ -1,0 +1,104 @@
+{
+  "status": "ok",
+  "question": "A 4-week-old female newborn is brought to the physician because of increasing yellowing of her eyes and skin for 2 weeks. The mother has noticed that the girl's stools have become pale over the past week. She was breastfed since birth but her parents switched her to formula feeds recently after reading on the internet that breastfeeding could be the cause of her current symptoms. The patient was delivered vaginally at 38 weeks' gestation. Pregnancy and delivery were uncomplicated. She appears healthy. Vital signs are within normal limits. She is at the 50th percentile for length and at the 60th percentile for weight. Examination shows scleral icterus and jaundice. The liver is palpated 2 cm below the right costal margin. Cardiopulmonary examination shows no abnormalities. Neurologic examination shows no focal findings. Serum studies show:\nBilirubin\nTotal 15 mg/dL\nDirect 12.3 mg/dL\nAlkaline phosphatase 2007 U/L\nAST 53 U/L\nALT 45 U/L\nγ-glutamyl transferase 154 U/L\nBlood group A positive\nWhich of the following is the most likely diagnosis?\"",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-860",
+  "test_id": "test-00130",
+  "mc_prompt": "Q: A 4-week-old female newborn is brought to the physician because of increasing yellowing of her eyes and skin for 2 weeks. The mother has noticed that the girl's stools have become pale over the past week. She was breastfed since birth but her parents switched her to formula feeds recently after reading on the internet that breastfeeding could be the cause of her current symptoms. The patient was delivered vaginally at 38 weeks' gestation. Pregnancy and delivery were uncomplicated. She appears healthy. Vital signs are within normal limits. She is at the 50th percentile for length and at the 60th percentile for weight. Examination shows scleral icterus and jaundice. The liver is palpated 2 cm below the right costal margin. Cardiopulmonary examination shows no abnormalities. Neurologic examination shows no focal findings. Serum studies show:\nBilirubin\nTotal 15 mg/dL\nDirect 12.3 mg/dL\nAlkaline phosphatase 2007 U/L\nAST 53 U/L\nALT 45 U/L\nγ-glutamyl transferase 154 U/L\nBlood group A positive\nWhich of the following is the most likely diagnosis?\"\nA) Galactosemia\nB) Biliary atresia\nC) Crigler–Najjar syndrome\nD) Breast milk jaundice\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6829,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0154,
+        "B": 0.1493,
+        "C": 0.0031,
+        "D": 0.8322
+      },
+      "latency_ms": 2624,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8608,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0173,
+        "B": 0.0158,
+        "C": 0.9138,
+        "D": 0.053
+      },
+      "latency_ms": 2188,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.976,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0117,
+        "B": 0.0002,
+        "C": 0.0004,
+        "D": 0.9877
+      },
+      "latency_ms": 496,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8216,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.9108,
+        "C": 0.0892
+      },
+      "latency_ms": 2922,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4904,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7452,
+        "D": 0.2548
+      },
+      "latency_ms": 556,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8787,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 0.7896,
+    "B": 1.0761,
+    "C": 1.0065,
+    "D": 2.1277
+  }
+}

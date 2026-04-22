@@ -1,0 +1,134 @@
+{
+  "status": "ok",
+  "question": "A 30-year-old woman presents to the physician because of ongoing diarrhea for the past 1 month. She reports that diarrhea has been intermittently present for the past month. The stool is often loose and associated with blood and lower abdominal pain. She denies any recent travel history, and she works at a nursing home as a caretaker. She is not currently on any medications. Clinical examination shows mild tenderness in the suprapubic region, and there is no organomegaly. Findings on colonoscopy include patchy erythema and ulceration in the cecum, ascending, descending, and sigmoid colon. Mucosal biopsy shows colonic crypts with lymphocytic and neutrophilic infiltrates. What is the most likely diagnosis?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-817",
+  "test_id": "test-00806",
+  "mc_prompt": "Q: A 30-year-old woman presents to the physician because of ongoing diarrhea for the past 1 month. She reports that diarrhea has been intermittently present for the past month. The stool is often loose and associated with blood and lower abdominal pain. She denies any recent travel history, and she works at a nursing home as a caretaker. She is not currently on any medications. Clinical examination shows mild tenderness in the suprapubic region, and there is no organomegaly. Findings on colonoscopy include patchy erythema and ulceration in the cecum, ascending, descending, and sigmoid colon. Mucosal biopsy shows colonic crypts with lymphocytic and neutrophilic infiltrates. What is the most likely diagnosis?\nA) Crohn’s disease\nB) Acute infective colitis\nC) Pseudomembranous colitis\nD) Irritable bowel syndrome\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 4,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4953,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7367,
+        "B": 0.0218,
+        "C": 0.2414
+      },
+      "latency_ms": 2169,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9666,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0065,
+        "B": 0.0046,
+        "C": 0.9778,
+        "D": 0.0112
+      },
+      "latency_ms": 227,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3652,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3136,
+        "B": 0.0021,
+        "C": 0.6788,
+        "D": 0.0055
+      },
+      "latency_ms": 1882,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0164,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1014,
+        "C": 0.4411,
+        "D": 0.4575
+      },
+      "latency_ms": 2495,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.6279,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0826,
+        "B": 0.0949,
+        "C": 0.0973,
+        "D": 0.7252
+      },
+      "latency_ms": 832,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0879,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1249,
+        "B": 0.3936,
+        "C": 0.4815
+      },
+      "latency_ms": 827,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9208,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0327,
+        "B": 0.0116,
+        "C": 0.9535,
+        "D": 0.0023
+      },
+      "latency_ms": 347,
+      "worker_idx": 6,
+      "raw_response": "C"
+    }
+  ],
+  "total_latency_ms": 8779,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "C": 4,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 1.3983999999999999,
+    "B": 0.5286,
+    "C": 3.8714000000000004,
+    "D": 1.2017
+  }
+}

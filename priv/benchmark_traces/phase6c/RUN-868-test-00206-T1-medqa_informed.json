@@ -1,0 +1,102 @@
+{
+  "status": "ok",
+  "question": "Researchers are studying the inheritance pattern of mutations in the cystic fibrosis transmembrane regulator (CFTR) gene, the gene responsible for cystic fibrosis. It is believed that, in addition to the commonly found ΔF508 mutation, a novel mutation in this gene is found in a particular population under study. Which of the following would most likely suggest that these two loci have a high probability of being closely linked?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-868",
+  "test_id": "test-00206",
+  "mc_prompt": "Q: Researchers are studying the inheritance pattern of mutations in the cystic fibrosis transmembrane regulator (CFTR) gene, the gene responsible for cystic fibrosis. It is believed that, in addition to the commonly found ΔF508 mutation, a novel mutation in this gene is found in a particular population under study. Which of the following would most likely suggest that these two loci have a high probability of being closely linked?\nA) LOD Score < 1\nB) LOD Score < 2\nC) LOD Score > 3\nD) LOD Score = 0\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8752,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0602,
+        "B": 0.0028,
+        "C": 0.9354,
+        "D": 0.0017
+      },
+      "latency_ms": 1952,
+      "worker_idx": 0,
+      "raw_response": "C"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8416,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.015,
+        "B": 0.0634,
+        "C": 0.905,
+        "D": 0.0165
+      },
+      "latency_ms": 2099,
+      "worker_idx": 1,
+      "raw_response": "C"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9991,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0004,
+        "B": 0.0001,
+        "C": 0.9995,
+        "D": 0.0
+      },
+      "latency_ms": 308,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9892,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0054,
+        "C": 0.9946
+      },
+      "latency_ms": 2331,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9574,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9787,
+        "D": 0.0213
+      },
+      "latency_ms": 311,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7001,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "C": 4
+  },
+  "weighted_scores": {
+    "A": 1.0597,
+    "B": 0.0663,
+    "C": 3.8345000000000002,
+    "D": 0.0395
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "status": "ok",
+  "question": "A 55-year-old man comes to the physician because of a 3-month history of a progressively growing mass in his axilla. During this period, he has had recurrent episodes of low-grade fever lasting for 7 to 10 days, and an 8-kg (18-lb) weight loss. His only medication is a multivitamin. Physical examination shows nontender, right axillary, cervical, and inguinal lymphadenopathy. His serum calcium concentration is 15.1 mg/dL and parathyroid hormone (PTH) concentration is 9 pg/mL. A lymph node biopsy shows granuloma formation and large CD15-positive, CD30-positive cells with bilobed nuclei. Which of the following is the most likely explanation for this patient's laboratory findings?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-873",
+  "test_id": "test-00234",
+  "mc_prompt": "Q: A 55-year-old man comes to the physician because of a 3-month history of a progressively growing mass in his axilla. During this period, he has had recurrent episodes of low-grade fever lasting for 7 to 10 days, and an 8-kg (18-lb) weight loss. His only medication is a multivitamin. Physical examination shows nontender, right axillary, cervical, and inguinal lymphadenopathy. His serum calcium concentration is 15.1 mg/dL and parathyroid hormone (PTH) concentration is 9 pg/mL. A lymph node biopsy shows granuloma formation and large CD15-positive, CD30-positive cells with bilobed nuclei. Which of the following is the most likely explanation for this patient's laboratory findings?\nA) Excessive intake of dietary ergocalciferol\nB) Induction of focal osteolysis by tumor cells\nC) Secretion of γ-interferon by activated T-lymphocytes\nD) Production of PTH-related peptide by malignant cells\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 5,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6863,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1,
+        "B": 0.0461,
+        "C": 0.0675,
+        "D": 0.7863
+      },
+      "latency_ms": 2551,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9618,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0057,
+        "B": 0.0143,
+        "C": 0.0039,
+        "D": 0.9761
+      },
+      "latency_ms": 2470,
+      "worker_idx": 1,
+      "raw_response": "D"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9908,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0039,
+        "B": 0.0006,
+        "C": 0.0008,
+        "D": 0.9947
+      },
+      "latency_ms": 458,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1774,
+      "answer": "D",
+      "probabilities": {
+        "B": 0.2506,
+        "C": 0.286,
+        "D": 0.4634
+      },
+      "latency_ms": 2730,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.136,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.3614,
+        "B": 0.0237,
+        "C": 0.1175,
+        "D": 0.4974
+      },
+      "latency_ms": 464,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8673,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "D": 5
+  },
+  "weighted_scores": {
+    "A": 0.471,
+    "B": 0.3353,
+    "C": 0.47569999999999996,
+    "D": 3.7178999999999998
+  }
+}

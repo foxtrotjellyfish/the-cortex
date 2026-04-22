@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "question": "A 37-year-old woman presents to your office with heartburn. Following an extensive workup, you diagnose her with a duodenal ulcer secondary to H. pylori infection. You prescribe triple therapy of omeprazole, clarithromycin, and amoxicillin. Which of the following best describes the mechanism of action of omeprazole?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-722",
+  "test_id": "test-00847",
+  "mc_prompt": "Q: A 37-year-old woman presents to your office with heartburn. Following an extensive workup, you diagnose her with a duodenal ulcer secondary to H. pylori infection. You prescribe triple therapy of omeprazole, clarithromycin, and amoxicillin. Which of the following best describes the mechanism of action of omeprazole?\nA) Parasympathetic inhibition\nB) Reversible block of H2 receptors\nC) Inhibition of primary active transport\nD) Inhibition of 50S ribosomal subunit\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.1884,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0237,
+        "B": 0.3677,
+        "C": 0.0525,
+        "D": 0.5561
+      },
+      "latency_ms": 351,
+      "worker_idx": 0,
+      "raw_response": "O"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9974,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.9983,
+        "C": 0.0008,
+        "D": 0.0009
+      },
+      "latency_ms": 171,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9995,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0001,
+        "B": 0.9997,
+        "C": 0.0002,
+        "D": 0.0
+      },
+      "latency_ms": 2636,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7833,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0101,
+        "B": 0.8866,
+        "C": 0.1033
+      },
+      "latency_ms": 2862,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.6839,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.116,
+        "B": 0.0448,
+        "C": 0.0393,
+        "D": 0.7999
+      },
+      "latency_ms": 844,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2714,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2664,
+        "B": 0.1958,
+        "C": 0.5378
+      },
+      "latency_ms": 780,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 7647,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "B": 3,
+    "C": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 0.4163,
+    "B": 3.4929000000000006,
+    "C": 0.7339,
+    "D": 1.3569
+  }
+}

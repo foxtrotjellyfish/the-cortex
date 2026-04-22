@@ -1,0 +1,116 @@
+{
+  "status": "ok",
+  "question": "An 18-year-old college student presents to the student health clinic complaining of excessive sleepiness. He first noticed the daytime sleepiness about a year ago but reports that it significantly worsened once he started college. He reports that he goes to bed around 9 p.m. and wakes up for class at 8 a.m.. He naps between classes for a total of 4 hours during the day. Despite this, he wakes up feeling exhausted. He easily falls asleep during class and while studying. This has started to affect both his academics and his social life. On weekends, he can sleep up to 20 hours a day. He reports 2 recent episodes of sudden generalized body weakness along with ptosis and difficulty speaking that occurred after he became angry. Each episode lasted about 10 seconds, but he says he felt back to normal within 15 minutes without any persistent deficits. His Epworth Sleepiness Scale score is 17. Which of the following is the best next step in therapy?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-712",
+  "test_id": "test-00744",
+  "mc_prompt": "Q: An 18-year-old college student presents to the student health clinic complaining of excessive sleepiness. He first noticed the daytime sleepiness about a year ago but reports that it significantly worsened once he started college. He reports that he goes to bed around 9 p.m. and wakes up for class at 8 a.m.. He naps between classes for a total of 4 hours during the day. Despite this, he wakes up feeling exhausted. He easily falls asleep during class and while studying. This has started to affect both his academics and his social life. On weekends, he can sleep up to 20 hours a day. He reports 2 recent episodes of sudden generalized body weakness along with ptosis and difficulty speaking that occurred after he became angry. Each episode lasted about 10 seconds, but he says he felt back to normal within 15 minutes without any persistent deficits. His Epworth Sleepiness Scale score is 17. Which of the following is the best next step in therapy?\nA) Clomipramine\nB) Dextroamphetamine\nC) Modafinil\nD) Sleep deprivation\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 6,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.1484,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0049,
+        "B": 0.0309,
+        "C": 0.5563,
+        "D": 0.4079
+      },
+      "latency_ms": 601,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.7477,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0737,
+        "C": 0.837,
+        "D": 0.0893
+      },
+      "latency_ms": 249,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9795,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0076,
+        "B": 0.002,
+        "C": 0.9871,
+        "D": 0.0033
+      },
+      "latency_ms": 2177,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.941,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.0295,
+        "C": 0.9705
+      },
+      "latency_ms": 2344,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.098,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2896,
+        "B": 0.1888,
+        "C": 0.3876,
+        "D": 0.134
+      },
+      "latency_ms": 838,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2988,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.3001,
+        "C": 0.5989,
+        "D": 0.1011
+      },
+      "latency_ms": 840,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 7052,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "C": 6
+  },
+  "weighted_scores": {
+    "A": 0.3758,
+    "B": 0.5512999999999999,
+    "C": 4.3374,
+    "D": 0.7355999999999999
+  }
+}

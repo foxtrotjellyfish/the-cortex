@@ -1,0 +1,121 @@
+{
+  "status": "ok",
+  "question": "A 37-year-old woman presents to the clinic with pain and swelling of her legs. She states that she first noticed the swelling 6 weeks ago. Initially, the swelling was minimal, but now she is finding it difficult to walk and she can’t fit into any of her shoes. Her medical history is significant for systemic lupus erythematosus. She takes ibuprofen and hydroxychloroquine. Her temperature is 99°F (37.2°C), blood pressure is 153/86 mmHg, and pulse is 88 beats/min. Pitting edema to bilateral knees is noted on physical examination. Urinalysis reveals proteinuria. The patient is started on an immunosuppressant. Two days later the patient returns to clinic complaining of blood in her urine. A urinalysis reveals moderate erythrocytes but is negative for leukocyte esterase, nitrites, or crystals. Diffuse oozing of the bladder mucosa with neovascularization is seen on cystoscopy. Which of the following could have prevented the patient’s condition?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-727",
+  "test_id": "test-00897",
+  "mc_prompt": "Q: A 37-year-old woman presents to the clinic with pain and swelling of her legs. She states that she first noticed the swelling 6 weeks ago. Initially, the swelling was minimal, but now she is finding it difficult to walk and she can’t fit into any of her shoes. Her medical history is significant for systemic lupus erythematosus. She takes ibuprofen and hydroxychloroquine. Her temperature is 99°F (37.2°C), blood pressure is 153/86 mmHg, and pulse is 88 beats/min. Pitting edema to bilateral knees is noted on physical examination. Urinalysis reveals proteinuria. The patient is started on an immunosuppressant. Two days later the patient returns to clinic complaining of blood in her urine. A urinalysis reveals moderate erythrocytes but is negative for leukocyte esterase, nitrites, or crystals. Diffuse oozing of the bladder mucosa with neovascularization is seen on cystoscopy. Which of the following could have prevented the patient’s condition?\nA) Ifosfamide\nB) Mesna\nC) Methotrexate\nD) Nitrofurantoin\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "B",
+  "majority_votes": 2,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9091,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0426,
+        "B": 0.9517,
+        "C": 0.0031,
+        "D": 0.0025
+      },
+      "latency_ms": 678,
+      "worker_idx": 0,
+      "raw_response": "B"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.0761,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2763,
+        "B": 0.1736,
+        "C": 0.1977,
+        "D": 0.3524
+      },
+      "latency_ms": 294,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5722,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0484,
+        "B": 0.0606,
+        "C": 0.7316,
+        "D": 0.1594
+      },
+      "latency_ms": 2474,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3472,
+      "answer": "D",
+      "probabilities": {
+        "B": 0.3264,
+        "D": 0.6736
+      },
+      "latency_ms": 2588,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1267,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.376,
+        "B": 0.2493,
+        "C": 0.2371,
+        "D": 0.1375
+      },
+      "latency_ms": 850,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2589,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0663,
+        "B": 0.256,
+        "C": 0.5149,
+        "D": 0.1628
+      },
+      "latency_ms": 880,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 7765,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "B": 1,
+    "C": 2,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 0.8096,
+    "B": 2.0176,
+    "C": 1.6844000000000001,
+    "D": 1.4882
+  }
+}

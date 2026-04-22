@@ -1,0 +1,134 @@
+{
+  "status": "ok",
+  "question": "A 3-year-old girl is brought to the cardiologist because of sweating and respiratory distress while eating. She is at the 30th percentile for height and 15th percentile for weight. Echocardiography shows a defect in the membranous portion of the interventricular septum and a moderately decreased left ventricular ejection fraction. Physical examination is most likely to show which of the following findings?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-804",
+  "test_id": "test-00661",
+  "mc_prompt": "Q: A 3-year-old girl is brought to the cardiologist because of sweating and respiratory distress while eating. She is at the 30th percentile for height and 15th percentile for weight. Echocardiography shows a defect in the membranous portion of the interventricular septum and a moderately decreased left ventricular ejection fraction. Physical examination is most likely to show which of the following findings?\nA) Systolic murmur that increases with hand clenching\nB) Systolic murmur that increases with forced exhalation against a closed glottis\nC) Diastolic murmur preceded by opening snap\nD) Continuous murmur that is loudest at the second heart sound\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "C",
+  "majority_votes": 2,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.0338,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.4398,
+        "B": 0.4736,
+        "C": 0.0218,
+        "D": 0.0649
+      },
+      "latency_ms": 2306,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.4839,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1805,
+        "C": 0.1552,
+        "D": 0.6644
+      },
+      "latency_ms": 215,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0431,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1273,
+        "B": 0.3946,
+        "C": 0.1266,
+        "D": 0.3515
+      },
+      "latency_ms": 1884,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1458,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5729,
+        "C": 0.4271
+      },
+      "latency_ms": 2400,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.3211,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.051,
+        "B": 0.0315,
+        "C": 0.6193,
+        "D": 0.2982
+      },
+      "latency_ms": 778,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.3054,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1374,
+        "B": 0.2786,
+        "C": 0.584
+      },
+      "latency_ms": 793,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.164,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5384,
+        "B": 0.0359,
+        "C": 0.3744,
+        "D": 0.0513
+      },
+      "latency_ms": 318,
+      "worker_idx": 6,
+      "raw_response": "A"
+    }
+  ],
+  "total_latency_ms": 8694,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 2.0473,
+    "B": 1.2142000000000002,
+    "C": 2.3084,
+    "D": 1.4303
+  }
+}

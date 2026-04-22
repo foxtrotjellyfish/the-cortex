@@ -1,0 +1,137 @@
+{
+  "status": "ok",
+  "question": "A 63-year-old man is aiming to improve his health by eating a well balanced diet, walking daily, and quitting smoking following a 45-year smoking history. While on his daily walks he notices a strong cramping pain in his calves that consistently appears after a mile of walking. He sees his physician and a diagnosis of peripheral artery disease with intermittent claudication is made. To improve his symptoms, cilostazol is prescribed. What is the mechanism of action of this medication?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-785",
+  "test_id": "test-00451",
+  "mc_prompt": "Q: A 63-year-old man is aiming to improve his health by eating a well balanced diet, walking daily, and quitting smoking following a 45-year smoking history. While on his daily walks he notices a strong cramping pain in his calves that consistently appears after a mile of walking. He sees his physician and a diagnosis of peripheral artery disease with intermittent claudication is made. To improve his symptoms, cilostazol is prescribed. What is the mechanism of action of this medication?\nA) Irreversible cyclooxygenase inhibitor\nB) Thromboxane synthase inhibitor\nC) Adenosine diphosphate receptor inhibitor\nD) Phosphodiesterase inhibitor\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9115,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0347,
+        "B": 0.0034,
+        "C": 0.0157,
+        "D": 0.9462
+      },
+      "latency_ms": 2099,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.8806,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0002,
+        "B": 0.0132,
+        "C": 0.053,
+        "D": 0.9336
+      },
+      "latency_ms": 200,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8434,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0004,
+        "B": 0.0005,
+        "C": 0.0779,
+        "D": 0.9213
+      },
+      "latency_ms": 2124,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9962,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0008,
+        "B": 0.9974,
+        "C": 0.0012,
+        "D": 0.0006
+      },
+      "latency_ms": 2431,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0054,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2874,
+        "B": 0.3029,
+        "C": 0.3083,
+        "D": 0.1014
+      },
+      "latency_ms": 791,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.3074,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1689,
+        "B": 0.2619,
+        "C": 0.5693
+      },
+      "latency_ms": 800,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7598,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8249,
+        "B": 0.0496,
+        "C": 0.0651,
+        "D": 0.0604
+      },
+      "latency_ms": 324,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 8769,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "D",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "B": 1,
+    "C": 2,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 1.3173,
+    "B": 1.6289,
+    "C": 1.0905,
+    "D": 2.9635
+  }
+}

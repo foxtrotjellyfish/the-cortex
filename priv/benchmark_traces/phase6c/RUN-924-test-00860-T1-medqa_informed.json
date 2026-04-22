@@ -1,0 +1,105 @@
+{
+  "status": "ok",
+  "question": "A 24-year-old woman delivers a baby at term. The Apgar counts are 9 and 10 at 1 and 5 minutes, respectively. Thirty minutes after delivery, the mother’s blood pressure drops to 80/60 mm Hg and her pulse is 124/min. On physical examination, her distal extremities are clammy and cold, and the uterus is boggy. Aggressive fluid resuscitation is initiated. After administering 4 units of IV fluids and 4 units of whole blood, her vitals stabilize. The next morning, she says she is unable to lactate when she tries to breastfeed her child. Which of the following is the most likely cause of the failure of lactation in this patient?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-924",
+  "test_id": "test-00860",
+  "mc_prompt": "Q: A 24-year-old woman delivers a baby at term. The Apgar counts are 9 and 10 at 1 and 5 minutes, respectively. Thirty minutes after delivery, the mother’s blood pressure drops to 80/60 mm Hg and her pulse is 124/min. On physical examination, her distal extremities are clammy and cold, and the uterus is boggy. Aggressive fluid resuscitation is initiated. After administering 4 units of IV fluids and 4 units of whole blood, her vitals stabilize. The next morning, she says she is unable to lactate when she tries to breastfeed her child. Which of the following is the most likely cause of the failure of lactation in this patient?\nA) Pituitary tumor\nB) Remains of placenta in uterus\nC) Pituitary infarction\nD) Pituitary hemorrhage\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "D",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.1999,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0568,
+        "B": 0.112,
+        "C": 0.3157,
+        "D": 0.5156
+      },
+      "latency_ms": 2366,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0997,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2191,
+        "B": 0.2746,
+        "C": 0.3743,
+        "D": 0.132
+      },
+      "latency_ms": 2168,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1628,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0003,
+        "B": 0.0001,
+        "C": 0.5812,
+        "D": 0.4184
+      },
+      "latency_ms": 375,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.687,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0203,
+        "B": 0.1464,
+        "D": 0.8334
+      },
+      "latency_ms": 2466,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1626,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4725,
+        "C": 0.2176,
+        "D": 0.3099
+      },
+      "latency_ms": 444,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7819,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "C": 2,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 0.7689999999999999,
+    "B": 0.5331,
+    "C": 1.4888,
+    "D": 2.2093
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "question": "A 25-year-old female presents to urgent care with complaints of one day of burning and pain with urination, urgency, and frequency. She denies having a fever but has experienced intermittent chills. She is sexually active and inconsistently uses condoms. The patient has no past medical history. She is allergic to sulfa drugs. Physical examination of the genitalia is normal. Urinalysis shows positive leukocyte esterase and nitrites. The urine culture demonstrates gram-negative rods that form pink colonies on MacConkey agar. She is treated with an antibiotic and her symptoms quickly improve. The mechanism of the antibiotic she was most likely treated with is which of the following?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-691",
+  "test_id": "test-00538",
+  "mc_prompt": "Q: A 25-year-old female presents to urgent care with complaints of one day of burning and pain with urination, urgency, and frequency. She denies having a fever but has experienced intermittent chills. She is sexually active and inconsistently uses condoms. The patient has no past medical history. She is allergic to sulfa drugs. Physical examination of the genitalia is normal. Urinalysis shows positive leukocyte esterase and nitrites. The urine culture demonstrates gram-negative rods that form pink colonies on MacConkey agar. She is treated with an antibiotic and her symptoms quickly improve. The mechanism of the antibiotic she was most likely treated with is which of the following?\nA) Inhibits cell wall synthesis\nB) Binds D-ala D-ala in the cell wall\nC) Inhibits initiation complex\nD) Inhibits sterol synthesis\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 5,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8906,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9212,
+        "B": 0.0306,
+        "C": 0.0269,
+        "D": 0.0213
+      },
+      "latency_ms": 476,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.8826,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.939,
+        "C": 0.0046,
+        "D": 0.0564
+      },
+      "latency_ms": 203,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8408,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8901,
+        "B": 0.0469,
+        "C": 0.0493,
+        "D": 0.0136
+      },
+      "latency_ms": 1870,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1134,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4954,
+        "C": 0.1225,
+        "D": 0.382
+      },
+      "latency_ms": 2208,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1464,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4346,
+        "B": 0.1804,
+        "C": 0.2882,
+        "D": 0.0968
+      },
+      "latency_ms": 810,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1373,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1353,
+        "B": 0.3399,
+        "C": 0.4772,
+        "D": 0.0476
+      },
+      "latency_ms": 808,
+      "worker_idx": 5,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 6376,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 5,
+    "C": 1
+  },
+  "weighted_scores": {
+    "A": 3.8156,
+    "B": 0.5978,
+    "C": 0.9687,
+    "D": 0.6177
+  }
+}

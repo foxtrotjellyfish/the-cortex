@@ -1,0 +1,117 @@
+{
+  "status": "ok",
+  "question": "An 11-year-old boy presents to your office with pitting edema and proteinuria exceeding 3.5g in 24 hours. You suspect that this patient has experienced a loss of polyanions in his glomerular basement membranes. Which of the following findings would confirm your diagnosis?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-695",
+  "test_id": "test-00574",
+  "mc_prompt": "Q: An 11-year-old boy presents to your office with pitting edema and proteinuria exceeding 3.5g in 24 hours. You suspect that this patient has experienced a loss of polyanions in his glomerular basement membranes. Which of the following findings would confirm your diagnosis?\nA) WBC casts in the urine\nB) Selective albuminuria\nC) Negatively birefringent crystals in the urine\nD) Bence-Jones proteinuria\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "B",
+  "majority_votes": 2,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4687,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7001,
+        "B": 0.0685,
+        "D": 0.2314
+      },
+      "latency_ms": 281,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9028,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0486,
+        "D": 0.9514
+      },
+      "latency_ms": 169,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7319,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0554,
+        "B": 0.8101,
+        "C": 0.0782,
+        "D": 0.0563
+      },
+      "latency_ms": 2094,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9898,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.9949,
+        "C": 0.0051
+      },
+      "latency_ms": 2435,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.4118,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5814,
+        "B": 0.1696,
+        "C": 0.166,
+        "D": 0.083
+      },
+      "latency_ms": 770,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0867,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0966,
+        "B": 0.4083,
+        "C": 0.495
+      },
+      "latency_ms": 768,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6518,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 2,
+    "C": 1,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 1.4821,
+    "B": 2.4514,
+    "C": 0.7443,
+    "D": 1.3221
+  }
+}

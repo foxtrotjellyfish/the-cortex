@@ -1,0 +1,135 @@
+{
+  "status": "ok",
+  "question": "A 72-year-old man develops reduced urine output and a serum creatinine concentration of 2.9 mg/dL three days after being hospitalized for acute diverticulitis. On admission, a complete blood count showed a hemoglobin concentration of 15.5 g/dL and a leukocyte count of 14,000/mm3. Urinalysis showed 2+ proteinuria, and serum studies showed a blood glucose of 145 mg/dL and a creatinine concentration of 1.2 mg/dL. A CT scan of the abdomen confirmed the diagnosis. Therapy with intravenous ketoprofen, piperacillin, and tazobactam was begun, and the patient was placed on bowel rest. He has a history of hypertension, chronic constipation, and type 2 diabetes mellitus. Prior to admission, his medications were insulin, metoprolol, and losartan. Today, his temperature is 37.7°C (99.9°F), pulse is 97/min, respirations are 12/min, and blood pressure is 135/87 mm Hg. The abdomen is soft on physical examination, and there is tenderness to palpation of the left lower quadrant. The remainder of the examination shows no abnormalities. Which of the following is the most likely cause of this patient's current renal findings?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-825",
+  "test_id": "test-00882",
+  "mc_prompt": "Q: A 72-year-old man develops reduced urine output and a serum creatinine concentration of 2.9 mg/dL three days after being hospitalized for acute diverticulitis. On admission, a complete blood count showed a hemoglobin concentration of 15.5 g/dL and a leukocyte count of 14,000/mm3. Urinalysis showed 2+ proteinuria, and serum studies showed a blood glucose of 145 mg/dL and a creatinine concentration of 1.2 mg/dL. A CT scan of the abdomen confirmed the diagnosis. Therapy with intravenous ketoprofen, piperacillin, and tazobactam was begun, and the patient was placed on bowel rest. He has a history of hypertension, chronic constipation, and type 2 diabetes mellitus. Prior to admission, his medications were insulin, metoprolol, and losartan. Today, his temperature is 37.7°C (99.9°F), pulse is 97/min, respirations are 12/min, and blood pressure is 135/87 mm Hg. The abdomen is soft on physical examination, and there is tenderness to palpation of the left lower quadrant. The remainder of the examination shows no abnormalities. Which of the following is the most likely cause of this patient's current renal findings?\nA) Gastrointestinal blood loss\nB) Adverse drug reaction\nC) Dehydration\nD) Contrast administration\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 4,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4519,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.1069,
+        "B": 0.6712,
+        "C": 0.0027,
+        "D": 0.2193
+      },
+      "latency_ms": 2488,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9701,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0148,
+        "B": 0.9849,
+        "C": 0.0004
+      },
+      "latency_ms": 312,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9347,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0241,
+        "B": 0.0142,
+        "C": 0.9588,
+        "D": 0.0029
+      },
+      "latency_ms": 2239,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2211,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.2149,
+        "C": 0.5031,
+        "D": 0.282
+      },
+      "latency_ms": 2417,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0737,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2037,
+        "B": 0.3624,
+        "C": 0.2887,
+        "D": 0.1453
+      },
+      "latency_ms": 915,
+      "worker_idx": 4,
+      "raw_response": "D"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.01,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0826,
+        "B": 0.3793,
+        "C": 0.3693,
+        "D": 0.1688
+      },
+      "latency_ms": 954,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6696,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0298,
+        "B": 0.1379,
+        "C": 0.0248,
+        "D": 0.8075
+      },
+      "latency_ms": 529,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 9855,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "D",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "B": 4,
+    "C": 2,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 0.46190000000000003,
+    "B": 2.7648,
+    "C": 2.1477999999999997,
+    "D": 1.6258
+  }
+}

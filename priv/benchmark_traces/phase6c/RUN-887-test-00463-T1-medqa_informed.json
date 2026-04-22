@@ -1,0 +1,103 @@
+{
+  "status": "ok",
+  "question": "A 65-year-old man, known to have chronic obstructive lung disease for the last 3 years, presents to the emergency department with a cough, breathing difficulty, and increased expectoration for a day. There is no history of fever. His regular medications include inhaled salmeterol and inhaled fluticasone propionate. He was a chronic smoker but quit smoking 2 years ago. His temperature is 37.1°C (98.8°F), the pulse rate is 88/min, the blood pressure is 128/86 mm Hg, and the respirations are 30/min. On physical examination, the use of the accessory muscles of respiration is evident and the arterial saturation of oxygen is 87%. Auscultation of the chest reveals the presence of bilateral rhonchi with diminished breath sounds in both lungs. Which of the following medications, if administered for the next 2 weeks, is most likely to reduce the risk of subsequent exacerbations over the next 6 months?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-887",
+  "test_id": "test-00463",
+  "mc_prompt": "Q: A 65-year-old man, known to have chronic obstructive lung disease for the last 3 years, presents to the emergency department with a cough, breathing difficulty, and increased expectoration for a day. There is no history of fever. His regular medications include inhaled salmeterol and inhaled fluticasone propionate. He was a chronic smoker but quit smoking 2 years ago. His temperature is 37.1°C (98.8°F), the pulse rate is 88/min, the blood pressure is 128/86 mm Hg, and the respirations are 30/min. On physical examination, the use of the accessory muscles of respiration is evident and the arterial saturation of oxygen is 87%. Auscultation of the chest reveals the presence of bilateral rhonchi with diminished breath sounds in both lungs. Which of the following medications, if administered for the next 2 weeks, is most likely to reduce the risk of subsequent exacerbations over the next 6 months?\nA) Oral prednisone\nB) Supplemental oxygen\nC) Montelukast\nD) Nebulized N-acetylcysteine\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6355,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7957,
+        "B": 0.1602,
+        "C": 0.0087,
+        "D": 0.0354
+      },
+      "latency_ms": 2004,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2709,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3015,
+        "B": 0.0216,
+        "C": 0.5724,
+        "D": 0.1044
+      },
+      "latency_ms": 1977,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9268,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0117,
+        "B": 0.0135,
+        "C": 0.024,
+        "D": 0.9508
+      },
+      "latency_ms": 461,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0408,
+      "answer": "D",
+      "probabilities": {
+        "C": 0.4796,
+        "D": 0.5204
+      },
+      "latency_ms": 2554,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8076,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9038,
+        "B": 0.0962
+      },
+      "latency_ms": 500,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7500,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "C": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 2.0127,
+    "B": 0.29150000000000004,
+    "C": 1.0847000000000002,
+    "D": 1.611
+  }
+}

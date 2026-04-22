@@ -1,0 +1,104 @@
+{
+  "status": "ok",
+  "question": "A 22-year-old woman comes to the physician for the evaluation of irregular menstrual bleeding. Menses have occurred at 45- to 90-day intervals since menarche at the age of 15 years. Her last menstrual period was 5 weeks ago. The patient reports that she was too embarrassed to discuss this issue with anyone until now. Over the past two years, she was unable to become pregnant despite having unprotected sexual intercourse with her husband on a regular basis. There is no personal or family history of serious illness. She is 170 cm (5 ft 7 in) tall and weighs 85 kg (187 lb); BMI is 29.4 kg/m2. Her vital signs are within normal limits. Examination shows oily skin and severe facial acne. There is abnormal pigmented hair on the upper lip and around both nipples. The patient wishes to have children. In addition to recommending lifestyle modifications, which of the following is the most appropriate step in management?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-947",
+  "test_id": "test-01196",
+  "mc_prompt": "Q: A 22-year-old woman comes to the physician for the evaluation of irregular menstrual bleeding. Menses have occurred at 45- to 90-day intervals since menarche at the age of 15 years. Her last menstrual period was 5 weeks ago. The patient reports that she was too embarrassed to discuss this issue with anyone until now. Over the past two years, she was unable to become pregnant despite having unprotected sexual intercourse with her husband on a regular basis. There is no personal or family history of serious illness. She is 170 cm (5 ft 7 in) tall and weighs 85 kg (187 lb); BMI is 29.4 kg/m2. Her vital signs are within normal limits. Examination shows oily skin and severe facial acne. There is abnormal pigmented hair on the upper lip and around both nipples. The patient wishes to have children. In addition to recommending lifestyle modifications, which of the following is the most appropriate step in management?\nA) In vitro fertilization with patient's egg\nB) Progesterone therapy\nC) Clomiphene therapy\nD) Leuprolide therapy\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7545,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0388,
+        "B": 0.0053,
+        "C": 0.8552,
+        "D": 0.1007
+      },
+      "latency_ms": 2512,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3651,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1078,
+        "B": 0.247,
+        "C": 0.6121,
+        "D": 0.033
+      },
+      "latency_ms": 2146,
+      "worker_idx": 1,
+      "raw_response": "C"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5912,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0012,
+        "B": 0.0399,
+        "C": 0.7751,
+        "D": 0.1839
+      },
+      "latency_ms": 427,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1963,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.3202,
+        "C": 0.5165,
+        "D": 0.1633
+      },
+      "latency_ms": 2505,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7144,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8228,
+        "C": 0.1084,
+        "D": 0.0688
+      },
+      "latency_ms": 510,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8103,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "C": 4
+  },
+  "weighted_scores": {
+    "A": 0.9706,
+    "B": 0.6124,
+    "C": 2.8672999999999997,
+    "D": 0.5497
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "question": "A 40-year-old woman presents to the emergency department with severe left upper quadrant pain (duration 3 hours, stabbing quality, 10/10 on the pain scale). Past medical history is significant for sickle cell anemia. Physical examination is significant for severe tenderness to palpation in the left upper quadrant. Significant splenomegaly is also noted. The patient is admitted to the hospital for close observation and placed on deep vein thrombosis (DVT) prophylaxis as part of a routine protocol. Laboratory findings drawn sometime after admission demonstrate a normal prothrombin time (PT) and elevated partial thromboplastin time (PTT). Which of the following factors is most directly affected by the DVT prophylaxis?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-718",
+  "test_id": "test-00823",
+  "mc_prompt": "Q: A 40-year-old woman presents to the emergency department with severe left upper quadrant pain (duration 3 hours, stabbing quality, 10/10 on the pain scale). Past medical history is significant for sickle cell anemia. Physical examination is significant for severe tenderness to palpation in the left upper quadrant. Significant splenomegaly is also noted. The patient is admitted to the hospital for close observation and placed on deep vein thrombosis (DVT) prophylaxis as part of a routine protocol. Laboratory findings drawn sometime after admission demonstrate a normal prothrombin time (PT) and elevated partial thromboplastin time (PTT). Which of the following factors is most directly affected by the DVT prophylaxis?\nA) VII\nB) VIIa\nC) X\nD) XII\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 4,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8915,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0296,
+        "B": 0.0267,
+        "C": 0.9211,
+        "D": 0.0226
+      },
+      "latency_ms": 463,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.8523,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0048,
+        "B": 0.021,
+        "C": 0.061,
+        "D": 0.9133
+      },
+      "latency_ms": 214,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3018,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1267,
+        "B": 0.1512,
+        "C": 0.2101,
+        "D": 0.5119
+      },
+      "latency_ms": 2128,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.894,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.053,
+        "D": 0.947
+      },
+      "latency_ms": 2538,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.7677,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0632,
+        "B": 0.043,
+        "C": 0.0629,
+        "D": 0.8309
+      },
+      "latency_ms": 816,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.4966,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1182,
+        "B": 0.1736,
+        "C": 0.6702,
+        "D": 0.0379
+      },
+      "latency_ms": 821,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6980,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "C": 2,
+    "D": 4
+  },
+  "weighted_scores": {
+    "A": 0.39549999999999996,
+    "B": 0.4155,
+    "C": 1.9253,
+    "D": 3.2636
+  }
+}

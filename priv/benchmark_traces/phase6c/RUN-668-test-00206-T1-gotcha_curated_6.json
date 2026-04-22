@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "question": "Researchers are studying the inheritance pattern of mutations in the cystic fibrosis transmembrane regulator (CFTR) gene, the gene responsible for cystic fibrosis. It is believed that, in addition to the commonly found ΔF508 mutation, a novel mutation in this gene is found in a particular population under study. Which of the following would most likely suggest that these two loci have a high probability of being closely linked?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-668",
+  "test_id": "test-00206",
+  "mc_prompt": "Q: Researchers are studying the inheritance pattern of mutations in the cystic fibrosis transmembrane regulator (CFTR) gene, the gene responsible for cystic fibrosis. It is believed that, in addition to the commonly found ΔF508 mutation, a novel mutation in this gene is found in a particular population under study. Which of the following would most likely suggest that these two loci have a high probability of being closely linked?\nA) LOD Score < 1\nB) LOD Score < 2\nC) LOD Score > 3\nD) LOD Score = 0\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 4,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.8752,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0602,
+        "B": 0.0028,
+        "C": 0.9354,
+        "D": 0.0017
+      },
+      "latency_ms": 366,
+      "worker_idx": 0,
+      "raw_response": "C"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9895,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.005,
+        "B": 0.0002,
+        "C": 0.9945,
+        "D": 0.0003
+      },
+      "latency_ms": 186,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8416,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.015,
+        "B": 0.0634,
+        "C": 0.905,
+        "D": 0.0165
+      },
+      "latency_ms": 1844,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9892,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0054,
+        "C": 0.9946
+      },
+      "latency_ms": 1921,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.3408,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1305,
+        "B": 0.1934,
+        "C": 0.1419,
+        "D": 0.5342
+      },
+      "latency_ms": 771,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.0765,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.218,
+        "B": 0.4293,
+        "C": 0.3528
+      },
+      "latency_ms": 790,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 5879,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "B": 1,
+    "C": 4,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 0.43410000000000004,
+    "B": 0.6891,
+    "C": 4.3242,
+    "D": 0.5527
+  }
+}

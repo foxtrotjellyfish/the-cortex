@@ -1,0 +1,120 @@
+{
+  "status": "ok",
+  "question": "A 69-year-old right-handed man comes to the physician for a routine health maintenance examination. On questioning, he has had some difficulty speaking for 3 months. During a conversation, he often has difficulty repeating what his interlocutor has said. He has hypertension and takes hydrochlorothiazide. His vital signs are within normal limits. The patient speaks fluently in full sentences and demonstrates normal comprehension. When asked to say the word “kindergarten,” he replies with, “Sintelmarvin… no, that's wrong…kinterflargin, no that isn't it either...kantolargen...no? How about, kindergarten?” The most likely cause of the patient's symptoms is occlusion of a branch of which of the following arteries?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-736",
+  "test_id": "test-01045",
+  "mc_prompt": "Q: A 69-year-old right-handed man comes to the physician for a routine health maintenance examination. On questioning, he has had some difficulty speaking for 3 months. During a conversation, he often has difficulty repeating what his interlocutor has said. He has hypertension and takes hydrochlorothiazide. His vital signs are within normal limits. The patient speaks fluently in full sentences and demonstrates normal comprehension. When asked to say the word “kindergarten,” he replies with, “Sintelmarvin… no, that's wrong…kinterflargin, no that isn't it either...kantolargen...no? How about, kindergarten?” The most likely cause of the patient's symptoms is occlusion of a branch of which of the following arteries?\nA) Left middle cerebral\nB) Right vertebral\nC) Left posterior inferior cerebellar\nD) Left penetrating\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 2,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6705,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8258,
+        "B": 0.018,
+        "C": 0.0009,
+        "D": 0.1553
+      },
+      "latency_ms": 474,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.367,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.3002,
+        "B": 0.0051,
+        "C": 0.0275,
+        "D": 0.6672
+      },
+      "latency_ms": 247,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5364,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6638,
+        "B": 0.1274,
+        "C": 0.1103,
+        "D": 0.0985
+      },
+      "latency_ms": 1916,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2301,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1759,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2494,
+        "B": 0.4253,
+        "C": 0.1952,
+        "D": 0.1301
+      },
+      "latency_ms": 807,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.3143,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1618,
+        "B": 0.1923,
+        "C": 0.5066,
+        "D": 0.1393
+      },
+      "latency_ms": 814,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6561,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 2,
+    "B": 1,
+    "C": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 2.2009999999999996,
+    "B": 0.7681000000000001,
+    "C": 0.8405,
+    "D": 2.1904
+  }
+}

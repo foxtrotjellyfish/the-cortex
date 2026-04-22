@@ -1,0 +1,135 @@
+{
+  "status": "ok",
+  "question": "A 75-year-old man becomes pulseless in the cardiac intensive care unit 48 hours after admission for ST-elevation myocardial infarction. His blood pressure is 50/20 mm Hg. The ECG monitor shows a tachycardic irregular rhythm with erratic undulations, but no discernible P waves or QRS complexes. During immediate advanced cardiac life support, two attempts at defibrillation are made, after which the patient is given 1 mg of IV epinephrine. After another attempt at defibrillation, the patient remains pulseless and his blood pressure is 60/35 mm Hg. The ECG monitor shows no changes. Administration of which of the following is the most appropriate next step in management?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-841",
+  "test_id": "test-01078",
+  "mc_prompt": "Q: A 75-year-old man becomes pulseless in the cardiac intensive care unit 48 hours after admission for ST-elevation myocardial infarction. His blood pressure is 50/20 mm Hg. The ECG monitor shows a tachycardic irregular rhythm with erratic undulations, but no discernible P waves or QRS complexes. During immediate advanced cardiac life support, two attempts at defibrillation are made, after which the patient is given 1 mg of IV epinephrine. After another attempt at defibrillation, the patient remains pulseless and his blood pressure is 60/35 mm Hg. The ECG monitor shows no changes. Administration of which of the following is the most appropriate next step in management?\nA) Amiodarone\nB) Epinephrine\nC) Dopamine\nD) Atropine\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 5,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.1426,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2846,
+        "B": 0.1717,
+        "C": 0.4272,
+        "D": 0.1165
+      },
+      "latency_ms": 2129,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.5593,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.007,
+        "B": 0.7762,
+        "D": 0.2169
+      },
+      "latency_ms": 221,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2881,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5124,
+        "B": 0.2046,
+        "C": 0.2243,
+        "D": 0.0587
+      },
+      "latency_ms": 2145,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4106,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.11,
+        "C": 0.6503,
+        "D": 0.2397
+      },
+      "latency_ms": 2493,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0003,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3065,
+        "B": 0.2888,
+        "C": 0.3068,
+        "D": 0.0979
+      },
+      "latency_ms": 803,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.4808,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0265,
+        "B": 0.2132,
+        "C": 0.694,
+        "D": 0.0664
+      },
+      "latency_ms": 808,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.6723,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.01,
+        "B": 0.0091,
+        "C": 0.8266,
+        "D": 0.1543
+      },
+      "latency_ms": 372,
+      "worker_idx": 6,
+      "raw_response": "C"
+    }
+  ],
+  "total_latency_ms": 8971,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "B": 1,
+    "C": 5
+  },
+  "weighted_scores": {
+    "A": 1.147,
+    "B": 1.7736,
+    "C": 3.1292,
+    "D": 0.9504
+  }
+}

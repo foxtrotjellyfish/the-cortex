@@ -1,0 +1,103 @@
+{
+  "status": "ok",
+  "question": "A 69-year-old male with a longstanding history of hypertension and high cholesterol presents with abdominal pain and ‘bruising on his feet’. The patient states that his symptoms started about a week ago and have steadily worsened. He describes the abdominal pain as mild to moderate, dull, and deeply localized to the umbilical region. Past medical history is significant for 2 transient ischemic attacks 6 months prior, characterized by a sudden right-sided weakness and trouble speaking but recovered fully within 30 minutes. Current medications are sildenafil 100 mg orally as needed. Patient reports a 30-pack-year smoking history and heavy alcohol use on the weekends. Review of systems is significant for decreased appetite and feeling easily full. Vitals are temperature 37°C (98.6°F), blood pressure 155/89 mm Hg, pulse 89/min, respirations 16/min, and oxygen saturation 98% on room air. On physical examination, the patient is alert and cooperative. The cardiac exam is normal. Lungs are clear to auscultation. Carotid bruit present on the right. The abdomen is soft and nontender. Bowel sounds present. A pulsatile abdominal mass is felt in the lower umbilical region. Patient’s feet have the following appearance seen in the picture. Abdominal ultrasound reveals the presence of an abdominal aortic aneurysm (AAA). Contrast CT reveals a small, unruptured AAA (diameter 4.1 cm). High flow supplemental oxygen and fluid resuscitation are initiated. Morphine sulfate and metoprolol are administered. Which of the following is the best course of treatment for this patient?\n ",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-884",
+  "test_id": "test-00448",
+  "mc_prompt": "Q: A 69-year-old male with a longstanding history of hypertension and high cholesterol presents with abdominal pain and ‘bruising on his feet’. The patient states that his symptoms started about a week ago and have steadily worsened. He describes the abdominal pain as mild to moderate, dull, and deeply localized to the umbilical region. Past medical history is significant for 2 transient ischemic attacks 6 months prior, characterized by a sudden right-sided weakness and trouble speaking but recovered fully within 30 minutes. Current medications are sildenafil 100 mg orally as needed. Patient reports a 30-pack-year smoking history and heavy alcohol use on the weekends. Review of systems is significant for decreased appetite and feeling easily full. Vitals are temperature 37°C (98.6°F), blood pressure 155/89 mm Hg, pulse 89/min, respirations 16/min, and oxygen saturation 98% on room air. On physical examination, the patient is alert and cooperative. The cardiac exam is normal. Lungs are clear to auscultation. Carotid bruit present on the right. The abdomen is soft and nontender. Bowel sounds present. A pulsatile abdominal mass is felt in the lower umbilical region. Patient’s feet have the following appearance seen in the picture. Abdominal ultrasound reveals the presence of an abdominal aortic aneurysm (AAA). Contrast CT reveals a small, unruptured AAA (diameter 4.1 cm). High flow supplemental oxygen and fluid resuscitation are initiated. Morphine sulfate and metoprolol are administered. Which of the following is the best course of treatment for this patient?\n \nA) Discharge with clinical surveillance and ultrasound every 6 months\nB) Elective endovascular repair\nC) Elective open surgical repair\nD) Emergency open surgical repair\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "D",
+  "majority_votes": 2,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.0857,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0099,
+        "B": 0.4092,
+        "C": 0.0859,
+        "D": 0.4949
+      },
+      "latency_ms": 2876,
+      "worker_idx": 0,
+      "raw_response": "E"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3499,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0015,
+        "B": 0.2407,
+        "C": 0.5906,
+        "D": 0.1672
+      },
+      "latency_ms": 1815,
+      "worker_idx": 1,
+      "raw_response": "C"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.907,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0089,
+        "B": 0.0256,
+        "C": 0.0293,
+        "D": 0.9363
+      },
+      "latency_ms": 665,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2486,
+      "answer": "C",
+      "probabilities": {
+        "C": 0.6243,
+        "D": 0.3757
+      },
+      "latency_ms": 2732,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.7498,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8749,
+        "D": 0.1251
+      },
+      "latency_ms": 702,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8792,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "D",
+  "majority_correct": "false",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "C": 2,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 0.8952,
+    "B": 0.6755,
+    "C": 1.3300999999999998,
+    "D": 2.0991999999999997
+  }
+}

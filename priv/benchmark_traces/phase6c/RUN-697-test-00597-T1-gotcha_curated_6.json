@@ -1,0 +1,120 @@
+{
+  "status": "ok",
+  "question": "A study is conducted to determine the most effective ways to prevent transmission of various infective agents. One of the agents studied is a picornavirus that preferentially infects hepatocytes. The investigator determines that inactivating this virus can prevent its spread. Which of the following disinfectants is most likely to inactivate this virus?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-697",
+  "test_id": "test-00597",
+  "mc_prompt": "Q: A study is conducted to determine the most effective ways to prevent transmission of various infective agents. One of the agents studied is a picornavirus that preferentially infects hepatocytes. The investigator determines that inactivating this virus can prevent its spread. Which of the following disinfectants is most likely to inactivate this virus?\nA) Chlorhexidine\nB) Sodium hypochlorite\nC) Sulfuric acid\nD) Ethyl alcohol\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4405,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0706,
+        "B": 0.6849,
+        "D": 0.2444
+      },
+      "latency_ms": 278,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.0205,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2439,
+        "B": 0.006,
+        "C": 0.3853,
+        "D": 0.3648
+      },
+      "latency_ms": 157,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8731,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0477,
+        "B": 0.9208,
+        "C": 0.0042,
+        "D": 0.0274
+      },
+      "latency_ms": 1811,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9121,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0008,
+        "B": 0.9537,
+        "C": 0.0039,
+        "D": 0.0416
+      },
+      "latency_ms": 2116,
+      "worker_idx": 3,
+      "raw_response": "To"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.5818,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1306,
+        "B": 0.0616,
+        "C": 0.0954,
+        "D": 0.7124
+      },
+      "latency_ms": 747,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1156,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0814,
+        "B": 0.4015,
+        "C": 0.5171
+      },
+      "latency_ms": 766,
+      "worker_idx": 5,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 5876,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "B": 3,
+    "C": 2,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 0.5750000000000001,
+    "B": 3.0284999999999997,
+    "C": 1.0059,
+    "D": 1.3906
+  }
+}

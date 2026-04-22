@@ -1,0 +1,134 @@
+{
+  "status": "ok",
+  "question": "A 40-year-old man presents to his primary-care doctor for a follow-up of his hypertension. He is asymptomatic at his office visit and denies any new complaints. He has a 10-year history of hypertension that remains poorly controlled on maximum doses of lisinopril, hydrochlorothiazide, and amlodipine. His past medical history is otherwise unremarkable. He has no smoking history, drinks alcohol occasionally, and denies any illicit drug use. His father required a kidney transplant in his forties. The physical exam is notable for palpable flank masses bilaterally. Laboratory studies show a creatinine of 2.5. The physician orders a renal ultrasound, and the results are shown. Which of the following is the most appropriate test to screen for additional complications of this patient's condition?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-758",
+  "test_id": "test-00095",
+  "mc_prompt": "Q: A 40-year-old man presents to his primary-care doctor for a follow-up of his hypertension. He is asymptomatic at his office visit and denies any new complaints. He has a 10-year history of hypertension that remains poorly controlled on maximum doses of lisinopril, hydrochlorothiazide, and amlodipine. His past medical history is otherwise unremarkable. He has no smoking history, drinks alcohol occasionally, and denies any illicit drug use. His father required a kidney transplant in his forties. The physical exam is notable for palpable flank masses bilaterally. Laboratory studies show a creatinine of 2.5. The physician orders a renal ultrasound, and the results are shown. Which of the following is the most appropriate test to screen for additional complications of this patient's condition?\nA) Colonoscopy\nB) Esophagogastroduodenoscopy\nC) Liver function tests\nD) MR angiography of the brain\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 5,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6637,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1267,
+        "B": 0.0729,
+        "C": 0.01,
+        "D": 0.7904
+      },
+      "latency_ms": 2429,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.4065,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1189,
+        "C": 0.6438,
+        "D": 0.2373
+      },
+      "latency_ms": 244,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0755,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.1246,
+        "B": 0.3525,
+        "C": 0.428,
+        "D": 0.0948
+      },
+      "latency_ms": 1894,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9528,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0236,
+        "C": 0.9764
+      },
+      "latency_ms": 2513,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0185,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3582,
+        "B": 0.3767,
+        "C": 0.1782,
+        "D": 0.0869
+      },
+      "latency_ms": 816,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.4084,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0315,
+        "B": 0.2406,
+        "C": 0.649,
+        "D": 0.0789
+      },
+      "latency_ms": 837,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.982,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0033,
+        "B": 0.0005,
+        "C": 0.9891,
+        "D": 0.0071
+      },
+      "latency_ms": 398,
+      "worker_idx": 6,
+      "raw_response": "C"
+    }
+  ],
+  "total_latency_ms": 9132,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "D",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "B": 1,
+    "C": 5,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 0.7867999999999999,
+    "B": 1.0432,
+    "C": 3.8745000000000003,
+    "D": 1.2954
+  }
+}

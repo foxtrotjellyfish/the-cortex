@@ -1,0 +1,117 @@
+{
+  "status": "ok",
+  "question": "A 47-year-old female presents to her primary physician for follow up after an ED visit for nephrolithiasis 1 week prior. CT scan in the ED revealed a 4-mm stone occluding the right ureter. She was able to pass the stone without assistance over the course of 5 hours. Pathology report on the stone states it was composed of calcium oxalate. She says that the pain of passing the stone was excruciating and asks how she can prevent kidney stones in the future. Which of the following interventions is most likely to prevent renal calculi formation in the future for this patient?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-749",
+  "test_id": "test-01212",
+  "mc_prompt": "Q: A 47-year-old female presents to her primary physician for follow up after an ED visit for nephrolithiasis 1 week prior. CT scan in the ED revealed a 4-mm stone occluding the right ureter. She was able to pass the stone without assistance over the course of 5 hours. Pathology report on the stone states it was composed of calcium oxalate. She says that the pain of passing the stone was excruciating and asks how she can prevent kidney stones in the future. Which of the following interventions is most likely to prevent renal calculi formation in the future for this patient?\nA) Decreasing calcium intake\nB) Decreasing sodium intake\nC) Increasing consumption of nuts and seeds\nD) Urine acidification with cranberry juice\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "D",
+  "majority_votes": 2,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9264,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0368,
+        "B": 0.9632
+      },
+      "latency_ms": 466,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.8063,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0826,
+        "C": 0.0285,
+        "D": 0.8889
+      },
+      "latency_ms": 206,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4176,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6505,
+        "B": 0.0805,
+        "C": 0.036,
+        "D": 0.2329
+      },
+      "latency_ms": 1865,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4427,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.0525,
+        "C": 0.6951,
+        "D": 0.2524
+      },
+      "latency_ms": 2249,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.5746,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1313,
+        "B": 0.0851,
+        "C": 0.0778,
+        "D": 0.7059
+      },
+      "latency_ms": 790,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.4264,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.7132,
+        "C": 0.2868
+      },
+      "latency_ms": 792,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6369,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "B": 2,
+    "C": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 0.9012,
+    "B": 1.8944999999999999,
+    "C": 1.1242,
+    "D": 2.0801
+  }
+}

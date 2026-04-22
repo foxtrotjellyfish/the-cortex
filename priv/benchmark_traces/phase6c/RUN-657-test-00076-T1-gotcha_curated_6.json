@@ -1,0 +1,117 @@
+{
+  "status": "ok",
+  "question": "A 62-year old female comes to the physician because of vaginal spotting and urinary urgency for the past 4 days. She has had no fever, abdominal pain, or diarrhea. Menopause occurred at 52 years of age. Her last Pap smear 1 year ago was normal. She has hypertension, hypercholesterolemia, and diabetes. Medications include atorvastatin, hydrochlorothiazide, metformin, and aspirin. She is sexually active with her husband. Her temperature is 37°C (98.6°F), pulse is 95/min, respirations are 12/min, and blood pressure is 155/65 mm Hg. Pelvic exam demonstrates a 4 x 3 cm firm, immobile erythematous mass on the right inner vaginal wall. Which of the following is the most appropriate next step in management?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-657",
+  "test_id": "test-00076",
+  "mc_prompt": "Q: A 62-year old female comes to the physician because of vaginal spotting and urinary urgency for the past 4 days. She has had no fever, abdominal pain, or diarrhea. Menopause occurred at 52 years of age. Her last Pap smear 1 year ago was normal. She has hypertension, hypercholesterolemia, and diabetes. Medications include atorvastatin, hydrochlorothiazide, metformin, and aspirin. She is sexually active with her husband. Her temperature is 37°C (98.6°F), pulse is 95/min, respirations are 12/min, and blood pressure is 155/65 mm Hg. Pelvic exam demonstrates a 4 x 3 cm firm, immobile erythematous mass on the right inner vaginal wall. Which of the following is the most appropriate next step in management?\nA) Pap smear\nB) Biopsy of the mass\nC) Incision and drainage\nD) Urine gonorrhea and chlamydia testing\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 5,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7765,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0227,
+        "B": 0.8759,
+        "C": 0.0019,
+        "D": 0.0994
+      },
+      "latency_ms": 645,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9881,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0016,
+        "B": 0.9932,
+        "C": 0.0051
+      },
+      "latency_ms": 260,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9565,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0011,
+        "B": 0.9774,
+        "C": 0.0209,
+        "D": 0.0006
+      },
+      "latency_ms": 1912,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9934,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.9967,
+        "C": 0.0033
+      },
+      "latency_ms": 2281,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.0282,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2993,
+        "B": 0.3275,
+        "C": 0.2259,
+        "D": 0.1473
+      },
+      "latency_ms": 847,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1362,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.367,
+        "C": 0.5032,
+        "D": 0.1299
+      },
+      "latency_ms": 858,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6804,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "B": 5,
+    "C": 1
+  },
+  "weighted_scores": {
+    "A": 0.3247,
+    "B": 4.5377,
+    "C": 0.7603,
+    "D": 0.3772
+  }
+}

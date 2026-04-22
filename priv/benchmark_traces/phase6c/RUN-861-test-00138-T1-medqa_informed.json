@@ -1,0 +1,99 @@
+{
+  "status": "ok",
+  "question": "A 7-year-old boy is brought to a pediatrician by his parents for evaluation of frequent bed wetting during the night. A detailed history reveals that there has been no history of urinary incontinence during the day since the boy was 4 years of age, but that he has never been dry at night continuously for 1 week. There is no history of urinary tract infections, urgency, frequency, or hesitancy. On physical examination, the boy’s vital signs are stable. His neurologic and abdominal examinations are completely normal. His laboratory investigations are as follows:\nUrine-specific gravity (first-morning sample) 1.035\nUrine red blood cells Absent\nUrine pus cells Absent\nUrine culture Negative\nWhich of the following is the next step in the management of this patient?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-861",
+  "test_id": "test-00138",
+  "mc_prompt": "Q: A 7-year-old boy is brought to a pediatrician by his parents for evaluation of frequent bed wetting during the night. A detailed history reveals that there has been no history of urinary incontinence during the day since the boy was 4 years of age, but that he has never been dry at night continuously for 1 week. There is no history of urinary tract infections, urgency, frequency, or hesitancy. On physical examination, the boy’s vital signs are stable. His neurologic and abdominal examinations are completely normal. His laboratory investigations are as follows:\nUrine-specific gravity (first-morning sample) 1.035\nUrine red blood cells Absent\nUrine pus cells Absent\nUrine culture Negative\nWhich of the following is the next step in the management of this patient?\nA) Magnetic resonance imaging (MRI) of the spine\nB) Reassuring the parents and use of an enuresis alarm\nC) Treatment with oral oxybutynin\nD) Treatment with oral imipramine\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "B",
+  "majority_votes": 5,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.9057,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0434,
+        "B": 0.9491,
+        "D": 0.0075
+      },
+      "latency_ms": 2444,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9708,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0015,
+        "B": 0.9842,
+        "C": 0.0134,
+        "D": 0.001
+      },
+      "latency_ms": 1874,
+      "worker_idx": 1,
+      "raw_response": "B"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9817,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.0007,
+        "B": 0.9888,
+        "C": 0.0071,
+        "D": 0.0034
+      },
+      "latency_ms": 387,
+      "worker_idx": 2,
+      "raw_response": "B"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "B",
+      "probabilities": {
+        "B": 1.0
+      },
+      "latency_ms": 2711,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3358,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.3321,
+        "B": 0.6679
+      },
+      "latency_ms": 456,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7872,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "B": 5
+  },
+  "weighted_scores": {
+    "A": 0.37770000000000004,
+    "B": 4.59,
+    "C": 0.0205,
+    "D": 0.0119
+  }
+}

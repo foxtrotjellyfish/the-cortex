@@ -1,0 +1,131 @@
+{
+  "status": "ok",
+  "question": "A 33-year-old woman presents to the clinic for follow-up of her AIDS treatment with highly active anti-retroviral therapy (HAART). She is in good spirits and has been fully compliant with her medications and clinic visits. Other medications include prophylactic co-trimoxazole. Recent blood studies show the following:\nHemoglobin (Hb%)  11 g/dL\nMean corpuscular volume (MCV)  80 fl\nReticulocyte count 0.5%\nErythrocyte count 2 x 106/mm3\nLeucocyte count 700/mm3\nNeutrophils 40%\nPlatelet count 20,000/mm3\nAssays also show a decreased viral DNA and mRNA burden, as well as a significantly diminished viral load. To avoid modifying the effective anti-retroviral therapy, she is started on a ‘blood improving’ medication. Thirty minutes after the first dose, the patient develops difficulty breathing, severe muscle pain, and vomiting. Her pulse rate is 120/min and the blood pressure is 80/50 mm Hg. Which of the following medications was most likely administered to the patient?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-813",
+  "test_id": "test-00759",
+  "mc_prompt": "Q: A 33-year-old woman presents to the clinic for follow-up of her AIDS treatment with highly active anti-retroviral therapy (HAART). She is in good spirits and has been fully compliant with her medications and clinic visits. Other medications include prophylactic co-trimoxazole. Recent blood studies show the following:\nHemoglobin (Hb%)  11 g/dL\nMean corpuscular volume (MCV)  80 fl\nReticulocyte count 0.5%\nErythrocyte count 2 x 106/mm3\nLeucocyte count 700/mm3\nNeutrophils 40%\nPlatelet count 20,000/mm3\nAssays also show a decreased viral DNA and mRNA burden, as well as a significantly diminished viral load. To avoid modifying the effective anti-retroviral therapy, she is started on a ‘blood improving’ medication. Thirty minutes after the first dose, the patient develops difficulty breathing, severe muscle pain, and vomiting. Her pulse rate is 120/min and the blood pressure is 80/50 mm Hg. Which of the following medications was most likely administered to the patient?\nA) Interleukin 3\nB) Platelet-derived growth factor\nC) Sargramostim\nD) Thrombopoietin\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 4,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.4916,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.225,
+        "B": 0.0387,
+        "C": 0.7166,
+        "D": 0.0197
+      },
+      "latency_ms": 2436,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9994,
+      "answer": "C",
+      "probabilities": {
+        "C": 0.9997,
+        "D": 0.0003
+      },
+      "latency_ms": 310,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.4052,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.034,
+        "B": 0.0214,
+        "C": 0.6749,
+        "D": 0.2697
+      },
+      "latency_ms": 1951,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2662,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.4386,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1268,
+        "B": 0.1394,
+        "C": 0.1476,
+        "D": 0.5862
+      },
+      "latency_ms": 877,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.1953,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.161,
+        "B": 0.2769,
+        "C": 0.4722,
+        "D": 0.0899
+      },
+      "latency_ms": 883,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9939,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0001,
+        "B": 0.0,
+        "C": 0.003,
+        "D": 0.9969
+      },
+      "latency_ms": 523,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 9642,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "C": 4,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 0.5469,
+    "B": 0.4764,
+    "C": 3.0140000000000002,
+    "D": 2.9627000000000003
+  }
+}

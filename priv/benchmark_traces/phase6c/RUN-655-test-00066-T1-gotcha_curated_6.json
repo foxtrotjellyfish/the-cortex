@@ -1,0 +1,116 @@
+{
+  "status": "ok",
+  "question": "A 4-year-old boy is brought to the emergency department because of severe abdominal pain and bilious vomiting for 6 hours. He has not had bowel movements in the past 24 hours. He appears ill. His temperature is 37.8°C (100°F) and pulse is 122/min. Examination shows a distended abdomen. There is tenderness to palpation in the lower abdomen; guarding and rebound tenderness are present. Bowel sounds are decreased. An x-ray of the abdomen shows dilated loops of bowel. He has been accompanied by his 14-year-old brother. The surgeon recommends an emergency laparotomy. The parents are away visiting friends and cannot be reached. Which of the following is the most appropriate next best step in management?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-655",
+  "test_id": "test-00066",
+  "mc_prompt": "Q: A 4-year-old boy is brought to the emergency department because of severe abdominal pain and bilious vomiting for 6 hours. He has not had bowel movements in the past 24 hours. He appears ill. His temperature is 37.8°C (100°F) and pulse is 122/min. Examination shows a distended abdomen. There is tenderness to palpation in the lower abdomen; guarding and rebound tenderness are present. Bowel sounds are decreased. An x-ray of the abdomen shows dilated loops of bowel. He has been accompanied by his 14-year-old brother. The surgeon recommends an emergency laparotomy. The parents are away visiting friends and cannot be reached. Which of the following is the most appropriate next best step in management?\nA) Get consent from the patient's brother\nB) Get consent from the patient\nC) Perform emergency laparotomy\nD) Delay surgery until parental consent\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 4,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.3346,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3106,
+        "B": 0.0301,
+        "C": 0.6452,
+        "D": 0.0141
+      },
+      "latency_ms": 575,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9998,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0001,
+        "C": 0.9999
+      },
+      "latency_ms": 233,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9825,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.001,
+        "B": 0.0073,
+        "C": 0.9898,
+        "D": 0.0019
+      },
+      "latency_ms": 2445,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "C",
+      "probabilities": {
+        "C": 1.0
+      },
+      "latency_ms": 2606,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.5791,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0863,
+        "B": 0.0944,
+        "C": 0.1201,
+        "D": 0.6992
+      },
+      "latency_ms": 833,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2451,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.5303,
+        "C": 0.2852,
+        "D": 0.1845
+      },
+      "latency_ms": 838,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 7531,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "B": 1,
+    "C": 4,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 0.39799999999999996,
+    "B": 0.6621,
+    "C": 4.0402,
+    "D": 0.8997
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "status": "ok",
+  "question": "A 37-year-old woman with an HIV infection comes to the physician for a follow-up examination. Six months ago, combined antiretroviral therapy consisting of dolutegravir, tenofovir, and emtricitabine was initiated. Laboratory studies show a decrease in the CD4 count and an increase in the viral load despite ongoing treatment. The patient is switched to a new treatment regimen, including a drug that acts by preventing viral DNA synthesis without undergoing intracellular phosphorylation. Which of the following is the most likely drug?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-951",
+  "test_id": "test-01250",
+  "mc_prompt": "Q: A 37-year-old woman with an HIV infection comes to the physician for a follow-up examination. Six months ago, combined antiretroviral therapy consisting of dolutegravir, tenofovir, and emtricitabine was initiated. Laboratory studies show a decrease in the CD4 count and an increase in the viral load despite ongoing treatment. The patient is switched to a new treatment regimen, including a drug that acts by preventing viral DNA synthesis without undergoing intracellular phosphorylation. Which of the following is the most likely drug?\nA) Efavirenz\nB) Ritonavir\nC) Raltegravir\nD) Lamivudine\n\"\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.0456,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.504,
+        "B": 0.0143,
+        "C": 0.4584,
+        "D": 0.0233
+      },
+      "latency_ms": 2317,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8945,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0451,
+        "B": 0.0058,
+        "C": 0.9396,
+        "D": 0.0096
+      },
+      "latency_ms": 2131,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.994,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0024,
+        "B": 0.0001,
+        "C": 0.9964,
+        "D": 0.0011
+      },
+      "latency_ms": 302,
+      "worker_idx": 2,
+      "raw_response": "C"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.994,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.003,
+        "C": 0.997
+      },
+      "latency_ms": 2380,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.251,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3745,
+        "C": 0.6255
+      },
+      "latency_ms": 360,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7492,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "C": 4
+  },
+  "weighted_scores": {
+    "A": 0.9259999999999999,
+    "B": 0.0232,
+    "C": 4.0169,
+    "D": 0.033999999999999996
+  }
+}

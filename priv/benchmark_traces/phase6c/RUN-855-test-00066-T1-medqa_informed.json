@@ -1,0 +1,102 @@
+{
+  "status": "ok",
+  "question": "A 4-year-old boy is brought to the emergency department because of severe abdominal pain and bilious vomiting for 6 hours. He has not had bowel movements in the past 24 hours. He appears ill. His temperature is 37.8°C (100°F) and pulse is 122/min. Examination shows a distended abdomen. There is tenderness to palpation in the lower abdomen; guarding and rebound tenderness are present. Bowel sounds are decreased. An x-ray of the abdomen shows dilated loops of bowel. He has been accompanied by his 14-year-old brother. The surgeon recommends an emergency laparotomy. The parents are away visiting friends and cannot be reached. Which of the following is the most appropriate next best step in management?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-855",
+  "test_id": "test-00066",
+  "mc_prompt": "Q: A 4-year-old boy is brought to the emergency department because of severe abdominal pain and bilious vomiting for 6 hours. He has not had bowel movements in the past 24 hours. He appears ill. His temperature is 37.8°C (100°F) and pulse is 122/min. Examination shows a distended abdomen. There is tenderness to palpation in the lower abdomen; guarding and rebound tenderness are present. Bowel sounds are decreased. An x-ray of the abdomen shows dilated loops of bowel. He has been accompanied by his 14-year-old brother. The surgeon recommends an emergency laparotomy. The parents are away visiting friends and cannot be reached. Which of the following is the most appropriate next best step in management?\nA) Get consent from the patient's brother\nB) Get consent from the patient\nC) Perform emergency laparotomy\nD) Delay surgery until parental consent\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "C",
+  "majority_votes": 3,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.3346,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.3106,
+        "B": 0.0301,
+        "C": 0.6452,
+        "D": 0.0141
+      },
+      "latency_ms": 2404,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9825,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.001,
+        "B": 0.0073,
+        "C": 0.9898,
+        "D": 0.0019
+      },
+      "latency_ms": 2462,
+      "worker_idx": 1,
+      "raw_response": "C"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3588,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0018,
+        "B": 0.0012,
+        "C": 0.3191,
+        "D": 0.6779
+      },
+      "latency_ms": 407,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "C",
+      "probabilities": {
+        "C": 1.0
+      },
+      "latency_ms": 2734,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.3646,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6823,
+        "B": 0.3177
+      },
+      "latency_ms": 453,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8461,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 1,
+    "C": 3,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 0.9957,
+    "B": 0.35629999999999995,
+    "C": 2.9541,
+    "D": 0.6939
+  }
+}

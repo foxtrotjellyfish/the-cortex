@@ -1,0 +1,135 @@
+{
+  "status": "ok",
+  "question": "A 4-week-old female newborn is brought to the physician because of increasing yellowing of her eyes and skin for 2 weeks. The mother has noticed that the girl's stools have become pale over the past week. She was breastfed since birth but her parents switched her to formula feeds recently after reading on the internet that breastfeeding could be the cause of her current symptoms. The patient was delivered vaginally at 38 weeks' gestation. Pregnancy and delivery were uncomplicated. She appears healthy. Vital signs are within normal limits. She is at the 50th percentile for length and at the 60th percentile for weight. Examination shows scleral icterus and jaundice. The liver is palpated 2 cm below the right costal margin. Cardiopulmonary examination shows no abnormalities. Neurologic examination shows no focal findings. Serum studies show:\nBilirubin\nTotal 15 mg/dL\nDirect 12.3 mg/dL\nAlkaline phosphatase 2007 U/L\nAST 53 U/L\nALT 45 U/L\nγ-glutamyl transferase 154 U/L\nBlood group A positive\nWhich of the following is the most likely diagnosis?\"",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-760",
+  "test_id": "test-00130",
+  "mc_prompt": "Q: A 4-week-old female newborn is brought to the physician because of increasing yellowing of her eyes and skin for 2 weeks. The mother has noticed that the girl's stools have become pale over the past week. She was breastfed since birth but her parents switched her to formula feeds recently after reading on the internet that breastfeeding could be the cause of her current symptoms. The patient was delivered vaginally at 38 weeks' gestation. Pregnancy and delivery were uncomplicated. She appears healthy. Vital signs are within normal limits. She is at the 50th percentile for length and at the 60th percentile for weight. Examination shows scleral icterus and jaundice. The liver is palpated 2 cm below the right costal margin. Cardiopulmonary examination shows no abnormalities. Neurologic examination shows no focal findings. Serum studies show:\nBilirubin\nTotal 15 mg/dL\nDirect 12.3 mg/dL\nAlkaline phosphatase 2007 U/L\nAST 53 U/L\nALT 45 U/L\nγ-glutamyl transferase 154 U/L\nBlood group A positive\nWhich of the following is the most likely diagnosis?\"\nA) Galactosemia\nB) Biliary atresia\nC) Crigler–Najjar syndrome\nD) Breast milk jaundice\nAnswer:",
+  "majority_answer": "B",
+  "weighted_answer": "C",
+  "majority_votes": 3,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6829,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0154,
+        "B": 0.1493,
+        "C": 0.0031,
+        "D": 0.8322
+      },
+      "latency_ms": 2420,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.9793,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0019,
+        "B": 0.0052,
+        "C": 0.9861,
+        "D": 0.0068
+      },
+      "latency_ms": 336,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8608,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0173,
+        "B": 0.0158,
+        "C": 0.9138,
+        "D": 0.053
+      },
+      "latency_ms": 1952,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8216,
+      "answer": "B",
+      "probabilities": {
+        "B": 0.9108,
+        "C": 0.0892
+      },
+      "latency_ms": 2685,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1922,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.246,
+        "B": 0.4382,
+        "C": 0.1986,
+        "D": 0.1172
+      },
+      "latency_ms": 884,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.2166,
+      "answer": "B",
+      "probabilities": {
+        "A": 0.2552,
+        "B": 0.4718,
+        "C": 0.1466,
+        "D": 0.1264
+      },
+      "latency_ms": 897,
+      "worker_idx": 5,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.976,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0117,
+        "B": 0.0002,
+        "C": 0.0004,
+        "D": 0.9877
+      },
+      "latency_ms": 557,
+      "worker_idx": 6,
+      "raw_response": "D"
+    }
+  ],
+  "total_latency_ms": 9731,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "B",
+  "majority_correct": "true",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "B": 3,
+    "C": 2,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 0.5475000000000001,
+    "B": 1.9913,
+    "C": 2.3377999999999997,
+    "D": 2.1233000000000004
+  }
+}

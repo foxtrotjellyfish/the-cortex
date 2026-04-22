@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "question": "A 69-year-old right-handed man comes to the physician for a routine health maintenance examination. On questioning, he has had some difficulty speaking for 3 months. During a conversation, he often has difficulty repeating what his interlocutor has said. He has hypertension and takes hydrochlorothiazide. His vital signs are within normal limits. The patient speaks fluently in full sentences and demonstrates normal comprehension. When asked to say the word “kindergarten,” he replies with, “Sintelmarvin… no, that's wrong…kinterflargin, no that isn't it either...kantolargen...no? How about, kindergarten?” The most likely cause of the patient's symptoms is occlusion of a branch of which of the following arteries?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-936",
+  "test_id": "test-01045",
+  "mc_prompt": "Q: A 69-year-old right-handed man comes to the physician for a routine health maintenance examination. On questioning, he has had some difficulty speaking for 3 months. During a conversation, he often has difficulty repeating what his interlocutor has said. He has hypertension and takes hydrochlorothiazide. His vital signs are within normal limits. The patient speaks fluently in full sentences and demonstrates normal comprehension. When asked to say the word “kindergarten,” he replies with, “Sintelmarvin… no, that's wrong…kinterflargin, no that isn't it either...kantolargen...no? How about, kindergarten?” The most likely cause of the patient's symptoms is occlusion of a branch of which of the following arteries?\nA) Left middle cerebral\nB) Right vertebral\nC) Left posterior inferior cerebellar\nD) Left penetrating\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6705,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8258,
+        "B": 0.018,
+        "C": 0.0009,
+        "D": 0.1553
+      },
+      "latency_ms": 2417,
+      "worker_idx": 0,
+      "raw_response": "A"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.5364,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6638,
+        "B": 0.1274,
+        "C": 0.1103,
+        "D": 0.0985
+      },
+      "latency_ms": 2120,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8818,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9327,
+        "B": 0.0039,
+        "C": 0.0509,
+        "D": 0.0125
+      },
+      "latency_ms": 346,
+      "worker_idx": 2,
+      "raw_response": "A"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "D",
+      "probabilities": {
+        "D": 1.0
+      },
+      "latency_ms": 2723,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 1.0,
+      "answer": "A",
+      "probabilities": {
+        "A": 1.0
+      },
+      "latency_ms": 409,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8015,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 4,
+    "D": 1
+  },
+  "weighted_scores": {
+    "A": 3.4223,
+    "B": 0.1493,
+    "C": 0.1621,
+    "D": 1.2663
+  }
+}

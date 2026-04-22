@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "question": "A 32-year-old woman presents to the physician because she feels depressed, has difficulty sleeping, has a poor appetite, and has had a problem concentrating for the past 3 months. During this time, she has also has had low energy and has lost interest in playing the guitar. During high school, the patient went through similar episodes of low mood and poor sleep. At that time, she would repeatedly engage in binge eating and purging behavior, for which she was referred to therapy. There is no evidence of suicidal ideation. Her physician offers to prescribe a medication for her current symptoms. Treatment with which of the following drugs should be avoided in this patient?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-677",
+  "test_id": "test-00316",
+  "mc_prompt": "Q: A 32-year-old woman presents to the physician because she feels depressed, has difficulty sleeping, has a poor appetite, and has had a problem concentrating for the past 3 months. During this time, she has also has had low energy and has lost interest in playing the guitar. During high school, the patient went through similar episodes of low mood and poor sleep. At that time, she would repeatedly engage in binge eating and purging behavior, for which she was referred to therapy. There is no evidence of suicidal ideation. Her physician offers to prescribe a medication for her current symptoms. Treatment with which of the following drugs should be avoided in this patient?\nA) Bupropion\nB) Citalopram\nC) Fluoxetine\nD) Trazodone\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "D",
+  "majority_votes": 2,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6042,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.7427,
+        "B": 0.1385,
+        "C": 0.0392,
+        "D": 0.0795
+      },
+      "latency_ms": 416,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.4714,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.2619,
+        "B": 0.0034,
+        "C": 0.0014,
+        "D": 0.7333
+      },
+      "latency_ms": 213,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.1374,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2607,
+        "B": 0.0534,
+        "C": 0.4117,
+        "D": 0.2743
+      },
+      "latency_ms": 1862,
+      "worker_idx": 2,
+      "raw_response": "In"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.692,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.154,
+        "D": 0.846
+      },
+      "latency_ms": 2244,
+      "worker_idx": 3,
+      "raw_response": "Given"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.1413,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.4132,
+        "B": 0.2379,
+        "C": 0.2719,
+        "D": 0.0769
+      },
+      "latency_ms": 789,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.4032,
+      "answer": "C",
+      "probabilities": {
+        "B": 0.2984,
+        "C": 0.7016
+      },
+      "latency_ms": 790,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 6314,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 2,
+    "C": 2,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 1.8324999999999998,
+    "B": 0.7316,
+    "C": 1.4258,
+    "D": 2.0100000000000002
+  }
+}

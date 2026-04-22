@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "question": "A 1-year-old boy is brought to the clinic by his parents for a regular check-up. His weight, height, and head size were found to be in the lower percentile ranges on standard growth curves. His hair is tangled and has a dry, brittle texture. Genetic testing reveals that the patient has a connective tissue disorder caused by impaired copper absorption and transport. The patient’s disorder is caused by a mutation in which of the following genes?",
+  "worker_count": 7,
+  "trial": 1,
+  "run_id": "RUN-803",
+  "test_id": "test-00648",
+  "mc_prompt": "Q: A 1-year-old boy is brought to the clinic by his parents for a regular check-up. His weight, height, and head size were found to be in the lower percentile ranges on standard growth curves. His hair is tangled and has a dry, brittle texture. Genetic testing reveals that the patient has a connective tissue disorder caused by impaired copper absorption and transport. The patient’s disorder is caused by a mutation in which of the following genes?\nA) ATP7A\nB) COL5A1\nC) FBN1\nD) ATP7B\nAnswer:",
+  "majority_answer": "A",
+  "weighted_answer": "A",
+  "majority_votes": 4,
+  "majority_total": 7,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.7699,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.8825,
+        "B": 0.0049,
+        "D": 0.1126
+      },
+      "latency_ms": 2250,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.7343,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1321,
+        "C": 0.0015,
+        "D": 0.8664
+      },
+      "latency_ms": 206,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.638,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.783,
+        "B": 0.0247,
+        "C": 0.0472,
+        "D": 0.145
+      },
+      "latency_ms": 1850,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9996,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0002,
+        "D": 0.9998
+      },
+      "latency_ms": 2420,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.3885,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.5623,
+        "B": 0.1577,
+        "C": 0.1738,
+        "D": 0.1062
+      },
+      "latency_ms": 791,
+      "worker_idx": 4,
+      "raw_response": "A"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.3348,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0926,
+        "B": 0.2416,
+        "C": 0.5764,
+        "D": 0.0895
+      },
+      "latency_ms": 775,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.2939,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.6175,
+        "B": 0.0246,
+        "C": 0.0343,
+        "D": 0.3236
+      },
+      "latency_ms": 281,
+      "worker_idx": 6,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 8575,
+  "config_name": "power_7",
+  "config_label": "5L power panel (curated 6 + falcon3)",
+  "correct_answer": "A",
+  "majority_correct": "true",
+  "weighted_correct": "true",
+  "majority_distribution": {
+    "A": 4,
+    "C": 1,
+    "D": 2
+  },
+  "weighted_scores": {
+    "A": 3.0702000000000003,
+    "B": 0.45350000000000007,
+    "C": 0.8332,
+    "D": 2.6431
+  }
+}

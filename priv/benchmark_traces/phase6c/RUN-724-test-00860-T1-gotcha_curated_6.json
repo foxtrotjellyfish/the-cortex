@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "question": "A 24-year-old woman delivers a baby at term. The Apgar counts are 9 and 10 at 1 and 5 minutes, respectively. Thirty minutes after delivery, the mother’s blood pressure drops to 80/60 mm Hg and her pulse is 124/min. On physical examination, her distal extremities are clammy and cold, and the uterus is boggy. Aggressive fluid resuscitation is initiated. After administering 4 units of IV fluids and 4 units of whole blood, her vitals stabilize. The next morning, she says she is unable to lactate when she tries to breastfeed her child. Which of the following is the most likely cause of the failure of lactation in this patient?",
+  "worker_count": 6,
+  "trial": 1,
+  "run_id": "RUN-724",
+  "test_id": "test-00860",
+  "mc_prompt": "Q: A 24-year-old woman delivers a baby at term. The Apgar counts are 9 and 10 at 1 and 5 minutes, respectively. Thirty minutes after delivery, the mother’s blood pressure drops to 80/60 mm Hg and her pulse is 124/min. On physical examination, her distal extremities are clammy and cold, and the uterus is boggy. Aggressive fluid resuscitation is initiated. After administering 4 units of IV fluids and 4 units of whole blood, her vitals stabilize. The next morning, she says she is unable to lactate when she tries to breastfeed her child. Which of the following is the most likely cause of the failure of lactation in this patient?\nA) Pituitary tumor\nB) Remains of placenta in uterus\nC) Pituitary infarction\nD) Pituitary hemorrhage\nAnswer:",
+  "majority_answer": "C",
+  "weighted_answer": "D",
+  "majority_votes": 3,
+  "majority_total": 6,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.1999,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0568,
+        "B": 0.112,
+        "C": 0.3157,
+        "D": 0.5156
+      },
+      "latency_ms": 537,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "stablelm2:1.6b",
+      "viewpoint": "NONE",
+      "confidence": 0.3461,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0719,
+        "C": 0.6371,
+        "D": 0.291
+      },
+      "latency_ms": 232,
+      "worker_idx": 1,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.0997,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.2191,
+        "B": 0.2746,
+        "C": 0.3743,
+        "D": 0.132
+      },
+      "latency_ms": 2417,
+      "worker_idx": 2,
+      "raw_response": "The"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.687,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0203,
+        "B": 0.1464,
+        "D": 0.8334
+      },
+      "latency_ms": 2824,
+      "worker_idx": 3,
+      "raw_response": "Based"
+    },
+    {
+      "model": "tinydolphin",
+      "viewpoint": "NONE",
+      "confidence": 0.75,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0681,
+        "B": 0.0628,
+        "C": 0.051,
+        "D": 0.8181
+      },
+      "latency_ms": 826,
+      "worker_idx": 4,
+      "raw_response": "C"
+    },
+    {
+      "model": "tinyllama",
+      "viewpoint": "NONE",
+      "confidence": 0.39,
+      "answer": "C",
+      "probabilities": {
+        "A": 0.0918,
+        "B": 0.2033,
+        "C": 0.5933,
+        "D": 0.1117
+      },
+      "latency_ms": 815,
+      "worker_idx": 5,
+      "raw_response": "Option"
+    }
+  ],
+  "total_latency_ms": 7651,
+  "config_name": "gotcha_curated_6",
+  "config_label": "5L gotcha panel (phi3/stablelm2/granite/qwen2.5/td/tinyllama)",
+  "correct_answer": "C",
+  "majority_correct": "true",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "C": 3,
+    "D": 3
+  },
+  "weighted_scores": {
+    "A": 0.528,
+    "B": 0.7991,
+    "C": 1.9714,
+    "D": 2.7018
+  }
+}

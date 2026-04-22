@@ -1,0 +1,104 @@
+{
+  "status": "ok",
+  "question": "A mother brings her 6-year-old daughter to the pediatrician to discuss her child's sleeping troubles. Three times now in the last month the child has begun screaming and crying in the middle of the night. When the parents rush to the child's room, they find her crying inconsolably. They try to ask her what is wrong, but she does not respond and persists crying for approximately 20 minutes, after which she goes back to sleeping comfortably. Upon awaking the following morning, she has no recollection of the night's events. Which of the following is true about these episodes?",
+  "worker_count": 5,
+  "trial": 1,
+  "run_id": "RUN-909",
+  "test_id": "test-00715",
+  "mc_prompt": "Q: A mother brings her 6-year-old daughter to the pediatrician to discuss her child's sleeping troubles. Three times now in the last month the child has begun screaming and crying in the middle of the night. When the parents rush to the child's room, they find her crying inconsolably. They try to ask her what is wrong, but she does not respond and persists crying for approximately 20 minutes, after which she goes back to sleeping comfortably. Upon awaking the following morning, she has no recollection of the night's events. Which of the following is true about these episodes?\nA) They will be persistent into adulthood\nB) They occur only during non-REM sleep\nC) They are associated with child abuse\nD) They are associated with later development of a mood disorder\nAnswer:",
+  "majority_answer": "D",
+  "weighted_answer": "D",
+  "majority_votes": 4,
+  "majority_total": 5,
+  "per_worker": [
+    {
+      "model": "phi3:mini",
+      "viewpoint": "NONE",
+      "confidence": 0.6482,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.1066,
+        "B": 0.1019,
+        "C": 0.0366,
+        "D": 0.7548
+      },
+      "latency_ms": 2066,
+      "worker_idx": 0,
+      "raw_response": "The"
+    },
+    {
+      "model": "granite3.1-moe:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8244,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.0241,
+        "B": 0.061,
+        "C": 0.0294,
+        "D": 0.8854
+      },
+      "latency_ms": 1868,
+      "worker_idx": 1,
+      "raw_response": "D"
+    },
+    {
+      "model": "falcon3:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.9866,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.005,
+        "B": 0.0025,
+        "C": 0.0009,
+        "D": 0.9916
+      },
+      "latency_ms": 337,
+      "worker_idx": 2,
+      "raw_response": "D"
+    },
+    {
+      "model": "qwen2.5:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.967,
+      "answer": "D",
+      "probabilities": {
+        "A": 0.008,
+        "C": 0.0125,
+        "D": 0.9795
+      },
+      "latency_ms": 2714,
+      "worker_idx": 3,
+      "raw_response": "The"
+    },
+    {
+      "model": "llama3.2:3b",
+      "viewpoint": "NONE",
+      "confidence": 0.8729,
+      "answer": "A",
+      "probabilities": {
+        "A": 0.9271,
+        "B": 0.0187,
+        "D": 0.0542
+      },
+      "latency_ms": 419,
+      "worker_idx": 4,
+      "raw_response": "The"
+    }
+  ],
+  "total_latency_ms": 7405,
+  "config_name": "medqa_informed",
+  "config_label": "MedQA-informed (phi3/granite/falcon3/qwen2.5/llama3.2)",
+  "correct_answer": "B",
+  "majority_correct": "false",
+  "weighted_correct": "false",
+  "majority_distribution": {
+    "A": 1,
+    "D": 4
+  },
+  "weighted_scores": {
+    "A": 1.0708,
+    "B": 0.18409999999999999,
+    "C": 0.0794,
+    "D": 3.6654999999999998
+  }
+}
