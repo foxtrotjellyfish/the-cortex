@@ -1,0 +1,3208 @@
+{
+  "description": "Remove clinical vignettes, keep only final question sentence + options",
+  "phase": "6E",
+  "elapsed_ms": 37938,
+  "questions": 100,
+  "experiment": "stripped_context",
+  "results": [
+    {
+      "id": "test-00054",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "A",
+      "confidence": 0.3083,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2142,
+        "B": 0.5448,
+        "C": 0.2365,
+        "D": 0.0045
+      },
+      "stripped_question": "Which of the following accurately describes his symptoms?"
+    },
+    {
+      "id": "test-00061",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "A",
+      "confidence": 0.2201,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2161,
+        "B": 0.502,
+        "C": 0.2819
+      },
+      "stripped_question": "A 22-year-old female college student is treated with metronidazole after presenting to student health services with itching, discharge, and pain in her vagina. At a party shortly afterward she experiences facial flushing, nausea, tachycardia, dyspnea, headache, and abdominal cramps after consuming alcohol. Serum levels of which of the following are likely elevated in this patient following alcohol consumption:"
+    },
+    {
+      "id": "test-00064",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "A",
+      "confidence": 0.5138,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2177,
+        "B": 0.0508,
+        "C": 0.7315
+      },
+      "stripped_question": "A medication with which of the following mechanisms of action is most appropriate in this patient?"
+    },
+    {
+      "id": "test-00066",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "C",
+      "confidence": 0.5268,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.7455,
+        "B": 0.0357,
+        "C": 0.2187
+      },
+      "stripped_question": "Which of the following is the most appropriate next best step in management?"
+    },
+    {
+      "id": "test-00074",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.1464,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1402,
+        "B": 0.0193,
+        "C": 0.4934,
+        "D": 0.347
+      },
+      "stripped_question": "Which of the following is most likely to confirm the diagnosis?"
+    },
+    {
+      "id": "test-00076",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.8301,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0795,
+        "B": 0.9096,
+        "C": 0.0027,
+        "D": 0.0082
+      },
+      "stripped_question": "Which of the following is the most appropriate next step in management?"
+    },
+    {
+      "id": "test-00095",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "D",
+      "confidence": 0.2013,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.5807,
+        "B": 0.3794,
+        "C": 0.019,
+        "D": 0.0208
+      },
+      "stripped_question": "Which of the following is the most appropriate test to screen for additional complications of this patient's condition?"
+    },
+    {
+      "id": "test-00121",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "A",
+      "confidence": 0.5817,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1313,
+        "B": 0.1118,
+        "C": 0.713,
+        "D": 0.0439
+      },
+      "stripped_question": "Which of the following viral infections is most likely to have played a role in the pathogenesis of this patient’s malignancy?"
+    },
+    {
+      "id": "test-00130",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.5893,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0618,
+        "B": 0.7355,
+        "C": 0.1462,
+        "D": 0.0564
+      },
+      "stripped_question": "Serum studies show: Bilirubin Total 15 mg/dL Direct 12.3 mg/dL Alkaline phosphatase 2007 U/L AST 53 U/L ALT 45 U/L γ-glutamyl transferase 154 U/L Blood group A positive Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00138",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.3499,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1279,
+        "B": 0.5631,
+        "C": 0.0958,
+        "D": 0.2132
+      },
+      "stripped_question": "His laboratory investigations are as follows: Urine-specific gravity (first-morning sample) 1.035 Urine red blood cells Absent Urine pus cells Absent Urine culture Negative Which of the following is the next step in the management of this patient?"
+    },
+    {
+      "id": "test-00140",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.6446,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.099,
+        "B": 0.0733,
+        "C": 0.7436,
+        "D": 0.0841
+      },
+      "stripped_question": "What is the next best step for this patient?"
+    },
+    {
+      "id": "test-00146",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "C",
+      "confidence": 0.1621,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.4129,
+        "B": 0.575,
+        "C": 0.0122
+      },
+      "stripped_question": "Which of the following is the most accurate description of this condition?"
+    },
+    {
+      "id": "test-00168",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.1397,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.3333,
+        "B": 0.473,
+        "C": 0.1853,
+        "D": 0.0085
+      },
+      "stripped_question": "Which of the following is the most appropriate next step in his management?"
+    },
+    {
+      "id": "test-00172",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.2405,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.2781,
+        "B": 0.2033,
+        "C": 0.5186
+      },
+      "stripped_question": "Which of the following is the most appropriate next step in management?"
+    },
+    {
+      "id": "test-00198",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "D",
+      "confidence": 0.0594,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1135,
+        "B": 0.4118,
+        "C": 0.3524,
+        "D": 0.1223
+      },
+      "stripped_question": "If the most likely drug prescribed in this case was administered in a different manner, which of the following conditions may also be treated by this drug?"
+    },
+    {
+      "id": "test-00204",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.2586,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.2832,
+        "B": 0.5418,
+        "C": 0.0264,
+        "D": 0.1486
+      },
+      "stripped_question": "Normal ascension of kidney during embryological development would be prevented by which of the following anatomical structures?"
+    },
+    {
+      "id": "test-00206",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.6929,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.152,
+        "B": 0.0015,
+        "C": 0.8449,
+        "D": 0.0015
+      },
+      "stripped_question": "Which of the following would most likely suggest that these two loci have a high probability of being closely linked?"
+    },
+    {
+      "id": "test-00208",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.1356,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.4867,
+        "B": 0.0756,
+        "C": 0.3511,
+        "D": 0.0865
+      },
+      "stripped_question": "Which of the following is the mechanism of action of DN501?"
+    },
+    {
+      "id": "test-00213",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "A",
+      "confidence": 0.6868,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1483,
+        "B": 0.8351,
+        "C": 0.0117,
+        "D": 0.0049
+      },
+      "stripped_question": "Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00214",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.0291,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.3743,
+        "B": 0.3452,
+        "C": 0.0688,
+        "D": 0.2117
+      },
+      "stripped_question": "What is the likely cause of this patient's condition?"
+    },
+    {
+      "id": "test-00227",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "C",
+      "confidence": 0.6547,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.7985,
+        "B": 0.0541,
+        "C": 0.1438,
+        "D": 0.0036
+      },
+      "stripped_question": "Prolonged treatment with which of the following drugs would best explain this patient's findings?"
+    },
+    {
+      "id": "test-00234",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "C",
+      "confidence": 0.2624,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2461,
+        "B": 0.1297,
+        "C": 0.1157,
+        "D": 0.5085
+      },
+      "stripped_question": "Which of the following is the most likely explanation for this patient's laboratory findings?"
+    },
+    {
+      "id": "test-00271",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.1413,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.5262,
+        "B": 0.0266,
+        "C": 0.3849,
+        "D": 0.0623
+      },
+      "stripped_question": "The laboratory tests show the following results: Fasting glucose 97 mg/L ALT 12 IU/L AST 14 IU/L Total bilirubin 0.8 mg/dL(15 µmol/L) Plasma creatinine 0.7 mg/dL (61.9 µmol/L) Which of the following tests are indicated to determine the cause of the abnormal dipstick test results?"
+    },
+    {
+      "id": "test-00300",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "D",
+      "confidence": 0.1694,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.4522,
+        "B": 0.2828,
+        "C": 0.1782,
+        "D": 0.0868
+      },
+      "stripped_question": "This patient's symptoms are most likely due to the injection of the vaccine into which of the following locations?"
+    },
+    {
+      "id": "test-00311",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "C",
+      "confidence": 0.0391,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1888,
+        "B": 0.3626,
+        "C": 0.1251,
+        "D": 0.3235
+      },
+      "stripped_question": "Which of the following processes is most likely to be involved in the pathogenesis of this patient's condition?"
+    },
+    {
+      "id": "test-00316",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "A",
+      "confidence": 0.4859,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1316,
+        "B": 0.6584,
+        "C": 0.0374,
+        "D": 0.1725
+      },
+      "stripped_question": "Treatment with which of the following drugs should be avoided in this patient?"
+    },
+    {
+      "id": "test-00327",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "A",
+      "confidence": 0.6764,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1618,
+        "B": 0.8382
+      },
+      "stripped_question": "Which of the following is characteristic of the most likely diagnosis?"
+    },
+    {
+      "id": "test-00335",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.0151,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.406,
+        "B": 0.2031,
+        "C": 0.3909
+      },
+      "stripped_question": "What is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00387",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "B",
+      "confidence": 0.0686,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1174,
+        "B": 0.3688,
+        "C": 0.4374,
+        "D": 0.0764
+      },
+      "stripped_question": "Which of the following pathogens will most likely infect this patient in adulthood?"
+    },
+    {
+      "id": "test-00411",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.0681,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.3422,
+        "B": 0.2741,
+        "C": 0.231,
+        "D": 0.1527
+      },
+      "stripped_question": "Which of the following is the most likely cause of this patient's condition?"
+    },
+    {
+      "id": "test-00416",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "C",
+      "confidence": 0.3395,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2709,
+        "B": 0.6104,
+        "C": 0.0119,
+        "D": 0.1068
+      },
+      "stripped_question": "Which of the following best describes the component that is likely deficient in this patient?"
+    },
+    {
+      "id": "test-00435",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "C",
+      "confidence": 0.3101,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2772,
+        "B": 0.1152,
+        "C": 0.0203,
+        "D": 0.5873
+      },
+      "stripped_question": "What is the best treatment for his condition?"
+    },
+    {
+      "id": "test-00448",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "D",
+      "confidence": 0.1669,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.4963,
+        "B": 0.3294,
+        "C": 0.0274,
+        "D": 0.1469
+      },
+      "stripped_question": "Which of the following is the best course of treatment for this patient?"
+    },
+    {
+      "id": "test-00451",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "D",
+      "confidence": 0.4893,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.721,
+        "B": 0.0389,
+        "C": 0.2317,
+        "D": 0.0084
+      },
+      "stripped_question": "What is the mechanism of action of this medication?"
+    },
+    {
+      "id": "test-00461",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.4057,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.2078,
+        "B": 0.0675,
+        "C": 0.6135,
+        "D": 0.1112
+      },
+      "stripped_question": "Which of the following is the most appropriate next step in management?"
+    },
+    {
+      "id": "test-00463",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.5374,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.7625,
+        "B": 0.0124,
+        "C": 0.2251
+      },
+      "stripped_question": "Which of the following medications, if administered for the next 2 weeks, is most likely to reduce the risk of subsequent exacerbations over the next 6 months?"
+    },
+    {
+      "id": "test-00479",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "C",
+      "confidence": 0.3027,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1586,
+        "B": 0.5448,
+        "C": 0.2421,
+        "D": 0.0545
+      },
+      "stripped_question": "Which of the following is the most common cause of this patient's condition?"
+    },
+    {
+      "id": "test-00484",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "C",
+      "confidence": 0.2146,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.3754,
+        "B": 0.023,
+        "C": 0.0116,
+        "D": 0.59
+      },
+      "stripped_question": "Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00486",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.0027,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.4649,
+        "B": 0.4622,
+        "C": 0.0086,
+        "D": 0.0643
+      },
+      "stripped_question": "Which of the following choices is the proper management for this patient?"
+    },
+    {
+      "id": "test-00538",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.3264,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.6574,
+        "B": 0.331,
+        "C": 0.0091,
+        "D": 0.0026
+      },
+      "stripped_question": "The mechanism of the antibiotic she was most likely treated with is which of the following?"
+    },
+    {
+      "id": "test-00542",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "B",
+      "confidence": 0.106,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.4409,
+        "B": 0.0122,
+        "D": 0.5469
+      },
+      "stripped_question": "Which of the following is most likely to account for these findings?"
+    },
+    {
+      "id": "test-00548",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "D",
+      "confidence": 0.3148,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.6168,
+        "B": 0.0482,
+        "C": 0.033,
+        "D": 0.302
+      },
+      "stripped_question": "What is the most appropriate initial step in treatment?"
+    },
+    {
+      "id": "test-00558",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.2549,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.2155,
+        "B": 0.4975,
+        "C": 0.0444,
+        "D": 0.2426
+      },
+      "stripped_question": "Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00574",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.8724,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.9214,
+        "B": 0.007,
+        "C": 0.0227,
+        "D": 0.049
+      },
+      "stripped_question": "Which of the following findings would confirm your diagnosis?"
+    },
+    {
+      "id": "test-00581",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "C",
+      "confidence": 0.57,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1646,
+        "B": 0.7346,
+        "D": 0.1008
+      },
+      "stripped_question": "Which of the following has a strong positive correlation with this patient’s heart rhythm?"
+    },
+    {
+      "id": "test-00597",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.6979,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1358,
+        "B": 0.8337,
+        "D": 0.0304
+      },
+      "stripped_question": "Which of the following disinfectants is most likely to inactivate this virus?"
+    },
+    {
+      "id": "test-00604",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "A",
+      "confidence": 0.4871,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1248,
+        "B": 0.6391,
+        "C": 0.0841,
+        "D": 0.152
+      },
+      "stripped_question": "Which of the following is the most common complication of this patient's condition?"
+    },
+    {
+      "id": "test-00618",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "C",
+      "confidence": 0.5511,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0904,
+        "B": 0.724,
+        "C": 0.0126,
+        "D": 0.1729
+      },
+      "stripped_question": "Which of the following the most appropriate initial course of treatment of this patient?"
+    },
+    {
+      "id": "test-00628",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "C",
+      "confidence": 0.6981,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0698,
+        "B": 0.1137,
+        "C": 0.0047,
+        "D": 0.8118
+      },
+      "stripped_question": "Which of the following is the most likely underlying cause of these liver abnormalities?"
+    },
+    {
+      "id": "test-00639",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "A",
+      "confidence": 0.715,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0875,
+        "B": 0.0349,
+        "C": 0.0751,
+        "D": 0.8025
+      },
+      "stripped_question": "Which of the following allosterically inhibits this enzyme?"
+    },
+    {
+      "id": "test-00642",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "A",
+      "confidence": 0.3399,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2728,
+        "B": 0.0578,
+        "C": 0.0568,
+        "D": 0.6127
+      },
+      "stripped_question": "Which of the following most likely accounts for this patient’s symptoms?"
+    },
+    {
+      "id": "test-00648",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "A",
+      "confidence": 0.3805,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2361,
+        "B": 0.0598,
+        "C": 0.0876,
+        "D": 0.6166
+      },
+      "stripped_question": "The patient’s disorder is caused by a mutation in which of the following genes?"
+    },
+    {
+      "id": "test-00661",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.1598,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.5452,
+        "B": 0.0655,
+        "C": 0.3854,
+        "D": 0.0039
+      },
+      "stripped_question": "Physical examination is most likely to show which of the following findings?"
+    },
+    {
+      "id": "test-00671",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.5366,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1374,
+        "B": 0.6826,
+        "C": 0.146,
+        "D": 0.034
+      },
+      "stripped_question": "Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00680",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "D",
+      "confidence": 0.6276,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1812,
+        "B": 0.01,
+        "D": 0.8088
+      },
+      "stripped_question": "A hepatitis viral panel is ordered which shows: Anti-HAV IgM negative HBsAg positive Anti-HBs negative IgM anti-HBc positive Anti-HCV negative Anti-HDV negative What is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00687",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "A",
+      "confidence": 0.0726,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.3228,
+        "B": 0.2487,
+        "C": 0.0331,
+        "D": 0.3954
+      },
+      "stripped_question": "This adnexal mass is most likely derived from which of the following cell types?"
+    },
+    {
+      "id": "test-00698",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "A",
+      "confidence": 0.5757,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1397,
+        "B": 0.1023,
+        "C": 0.0427,
+        "D": 0.7154
+      },
+      "stripped_question": "Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00715",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "B",
+      "confidence": 0.0198,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.3968,
+        "B": 0.0237,
+        "C": 0.1629,
+        "D": 0.4166
+      },
+      "stripped_question": "Which of the following is true about these episodes?"
+    },
+    {
+      "id": "test-00729",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "C",
+      "confidence": 0.1603,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2972,
+        "B": 0.4575,
+        "C": 0.1202,
+        "D": 0.1252
+      },
+      "stripped_question": "Further diagnostic evaluation of the patient is most likely to show which of the following?"
+    },
+    {
+      "id": "test-00739",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.1691,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.485,
+        "B": 0.3159,
+        "C": 0.1194,
+        "D": 0.0798
+      },
+      "stripped_question": "Which of the following is the most likely etiology of this patient’s condition?"
+    },
+    {
+      "id": "test-00744",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "C",
+      "confidence": 0.1594,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.5584,
+        "B": 0.0274,
+        "C": 0.399,
+        "D": 0.0153
+      },
+      "stripped_question": "Which of the following is the best next step in therapy?"
+    },
+    {
+      "id": "test-00759",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.291,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.3455,
+        "B": 0.0179,
+        "C": 0.6365
+      },
+      "stripped_question": "Which of the following medications was most likely administered to the patient?"
+    },
+    {
+      "id": "test-00765",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "C",
+      "confidence": 0.9499,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0171,
+        "B": 0.967,
+        "D": 0.016
+      },
+      "stripped_question": "Which of the following types of drugs would be an effective treatment in this patient?"
+    },
+    {
+      "id": "test-00799",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.8012,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0994,
+        "B": 0.9006
+      },
+      "stripped_question": "A medication that primarily stimulates which of the following receptors would be most appropriate to improve the hemodynamic status of this patient?"
+    },
+    {
+      "id": "test-00800",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.1875,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.5461,
+        "B": 0.0865,
+        "C": 0.0088,
+        "D": 0.3586
+      },
+      "stripped_question": "Which of the following medications is the treatment for this patient's intoxication?"
+    },
+    {
+      "id": "test-00806",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "A",
+      "confidence": 0.253,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2887,
+        "B": 0.1695,
+        "C": 0.5417
+      },
+      "stripped_question": "What is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00823",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "C",
+      "confidence": 0.129,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1517,
+        "B": 0.4785,
+        "C": 0.3495,
+        "D": 0.0202
+      },
+      "stripped_question": "Which of the following factors is most directly affected by the DVT prophylaxis?"
+    },
+    {
+      "id": "test-00827",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.3687,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.6036,
+        "B": 0.2349,
+        "C": 0.0427,
+        "D": 0.1188
+      },
+      "stripped_question": "Which of the following mechanisms is most likely responsible for this patient's amenorrhea?"
+    },
+    {
+      "id": "test-00839",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.7506,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1247,
+        "B": 0.8753
+      },
+      "stripped_question": "Which of the following mechanisms is most likely responsible for the beneficial effect of this drug in sickle cell disease?"
+    },
+    {
+      "id": "test-00844",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "A",
+      "confidence": 0.5432,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.186,
+        "B": 0.0849,
+        "C": 0.7292
+      },
+      "stripped_question": "Which of the following statements about this patient's fertility is most accurate?"
+    },
+    {
+      "id": "test-00847",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "C",
+      "confidence": 0.3616,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1232,
+        "B": 0.5437,
+        "C": 0.151,
+        "D": 0.1821
+      },
+      "stripped_question": "Which of the following best describes the mechanism of action of omeprazole?"
+    },
+    {
+      "id": "test-00849",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "D",
+      "confidence": 0.7939,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0884,
+        "B": 0.0252,
+        "C": 0.0041,
+        "D": 0.8823
+      },
+      "stripped_question": "This patient's symptoms were most likely due to the effect of chemotherapy on which of the following structures?"
+    },
+    {
+      "id": "test-00860",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.1561,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.3347,
+        "B": 0.0722,
+        "C": 0.4908,
+        "D": 0.1023
+      },
+      "stripped_question": "Which of the following is the most likely cause of the failure of lactation in this patient?"
+    },
+    {
+      "id": "test-00882",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "D",
+      "confidence": 0.1626,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.2643,
+        "B": 0.2803,
+        "C": 0.0125,
+        "D": 0.4429
+      },
+      "stripped_question": "Which of the following is the most likely cause of this patient's current renal findings?"
+    },
+    {
+      "id": "test-00896",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "D",
+      "confidence": 0.4418,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.093,
+        "B": 0.6744,
+        "D": 0.2326
+      },
+      "stripped_question": "Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00897",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.927,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0365,
+        "B": 0.9635
+      },
+      "stripped_question": "Which of the following could have prevented the patient’s condition?"
+    },
+    {
+      "id": "test-00904",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.4971,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.673,
+        "B": 0.0657,
+        "C": 0.1759,
+        "D": 0.0853
+      },
+      "stripped_question": "Which of the following is most likely to be found on urinalysis?"
+    },
+    {
+      "id": "test-00916",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "A",
+      "confidence": 0.4673,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2573,
+        "B": 0.0129,
+        "C": 0.7246,
+        "D": 0.0051
+      },
+      "stripped_question": "Which of the following is the most likely underlying mechanism of this patient’s chest pain?"
+    },
+    {
+      "id": "test-00926",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.6871,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.8335,
+        "B": 0.1464,
+        "C": 0.0201
+      },
+      "stripped_question": "What is the next best step in management?"
+    },
+    {
+      "id": "test-00953",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.7591,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0982,
+        "B": 0.0433,
+        "C": 0.8573,
+        "D": 0.0012
+      },
+      "stripped_question": "Which of the following test would be more useful to differentiate between prerenal and intrinsic kidney disease?"
+    },
+    {
+      "id": "test-00980",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.6559,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1465,
+        "B": 0.8024,
+        "C": 0.0018,
+        "D": 0.0492
+      },
+      "stripped_question": "Hemoglobin: 9.0 g/dL Hematocrit: 30% Leukocyte count: 6,800/mm^3 with normal differential Platelet count: 199,000/mm^3 Serum: Na+: 139 mEq/L Cl-: 100 mEq/L K+: 4.3 mEq/L HCO3-: 25 mEq/L BUN: 20 mg/dL Glucose: 99 mg/dL Creatinine: 1.1 mg/dL Which of the following tests is most likely to elucidate the cause of this patient's pregnancy losses?"
+    },
+    {
+      "id": "test-00987",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.3797,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.6651,
+        "B": 0.2854,
+        "C": 0.003,
+        "D": 0.0464
+      },
+      "stripped_question": "Which of the following would have most likely prevented the patient's symptoms?"
+    },
+    {
+      "id": "test-01017",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "D",
+      "confidence": 0.4507,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.6193,
+        "B": 0.0731,
+        "C": 0.139,
+        "D": 0.1686
+      },
+      "stripped_question": "Which of the following organisms is the most likely causative agent?"
+    },
+    {
+      "id": "test-01027",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.5295,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.6725,
+        "B": 0.1017,
+        "C": 0.143,
+        "D": 0.0827
+      },
+      "stripped_question": "If the volume of distribution of heparin is equivalent to 60 mL/kg and the target peak plasma concentration is 0.5 units/mL, which of the following is the most appropriate loading dose for this patient?"
+    },
+    {
+      "id": "test-01045",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.1174,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.5418,
+        "B": 0.0209,
+        "C": 0.4244,
+        "D": 0.0129
+      },
+      "stripped_question": "” The most likely cause of the patient's symptoms is occlusion of a branch of which of the following arteries?"
+    },
+    {
+      "id": "test-01056",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "D",
+      "confidence": 0.149,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.3531,
+        "B": 0.0429,
+        "C": 0.1019,
+        "D": 0.5021
+      },
+      "stripped_question": "If this patient’s current medication is to be continued, which of the following laboratory tests should be ordered at this time?"
+    },
+    {
+      "id": "test-01062",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "A",
+      "confidence": 0.4367,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2718,
+        "B": 0.7085,
+        "C": 0.0168,
+        "D": 0.0028
+      },
+      "stripped_question": "Which of the following effects would the drug most likely also have on the nephron?"
+    },
+    {
+      "id": "test-01063",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "D",
+      "confidence": 0.9031,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.001,
+        "B": 0.9493,
+        "C": 0.0035,
+        "D": 0.0462
+      },
+      "stripped_question": "Which of the following best describes the role of atracurium in this patient’s anesthesia?"
+    },
+    {
+      "id": "test-01070",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "D",
+      "confidence": 0.7171,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1376,
+        "B": 0.0077,
+        "D": 0.8547
+      },
+      "stripped_question": "If this patient is also found to have cricopharyngeal muscle dysfunction, which of the following is the most likely cause of his presenting symptoms?"
+    },
+    {
+      "id": "test-01078",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "A",
+      "confidence": 0.6817,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1288,
+        "B": 0.8105,
+        "C": 0.0236,
+        "D": 0.0371
+      },
+      "stripped_question": "Administration of which of the following is the most appropriate next step in management?"
+    },
+    {
+      "id": "test-01125",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.6612,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1613,
+        "B": 0.0162,
+        "C": 0.8225
+      },
+      "stripped_question": "Which of the following is the best next step for this patient’s menstrual cramps?"
+    },
+    {
+      "id": "test-01128",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.0634,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.5019,
+        "B": 0.4385,
+        "C": 0.0572,
+        "D": 0.0025
+      },
+      "stripped_question": "Which microscopic finding would you expect to see in this patient on autopsy?"
+    },
+    {
+      "id": "test-01133",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.3522,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.6592,
+        "B": 0.307,
+        "C": 0.0259,
+        "D": 0.0079
+      },
+      "stripped_question": "In addition to an influenza vaccine, which vaccine should be administered to this patient during this visit?"
+    },
+    {
+      "id": "test-01139",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "A",
+      "confidence": 0.5602,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1945,
+        "B": 0.0384,
+        "C": 0.0125,
+        "D": 0.7547
+      },
+      "stripped_question": "Which of the following is true of the most likely cause of this patient's symptoms?"
+    },
+    {
+      "id": "test-01176",
+      "model": "phi3:mini",
+      "answer": "D",
+      "correct": "D",
+      "confidence": 0.0235,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.2423,
+        "B": 0.0674,
+        "C": 0.3334,
+        "D": 0.3569
+      },
+      "stripped_question": "Which of the following is the most likely cause of this patient's findings?"
+    },
+    {
+      "id": "test-01196",
+      "model": "phi3:mini",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.6654,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0837,
+        "B": 0.0865,
+        "C": 0.7519,
+        "D": 0.0779
+      },
+      "stripped_question": "In addition to recommending lifestyle modifications, which of the following is the most appropriate step in management?"
+    },
+    {
+      "id": "test-01208",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "D",
+      "confidence": 0.0362,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.5125,
+        "B": 0.0112,
+        "D": 0.4763
+      },
+      "stripped_question": "Which of the following patient presentations seen in a pediatric immunology clinic is most consistent with a diagnosis of Bruton's agammaglobulinemia?"
+    },
+    {
+      "id": "test-01212",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.7277,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1171,
+        "B": 0.8448,
+        "C": 0.0284,
+        "D": 0.0097
+      },
+      "stripped_question": "Which of the following interventions is most likely to prevent renal calculi formation in the future for this patient?"
+    },
+    {
+      "id": "test-01247",
+      "model": "phi3:mini",
+      "answer": "B",
+      "correct": "A",
+      "confidence": 0.1022,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.222,
+        "B": 0.3726,
+        "C": 0.135,
+        "D": 0.2704
+      },
+      "stripped_question": "The following represent the parameters for this patient's respiratory anatomy and function: Vital capacity (VC): 5,000 mL Inspiratory reserve volume (IRV): 2,500 mL Functional reserve capacity (FRC): 2,700 mL Residual volume (RV): 1,000 mL Upper airway volume: 100 mL Conducting airway volume: 125 mL Inspired CO2 pressure (PiCO2): 1 mmHg Arterial CO2 pressure (PaCO2): 50 mmHg Expired CO2 pressure (PeCO2): 20 mmHg Which of the following best represents the total volume of gas in this patient's airways and lungs that does not participate in gas exchange?"
+    },
+    {
+      "id": "test-01250",
+      "model": "phi3:mini",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.2938,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.5471,
+        "B": 0.2533,
+        "C": 0.1572,
+        "D": 0.0424
+      },
+      "stripped_question": "Which of the following is the most likely drug?"
+    },
+    {
+      "id": "test-00054",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "A",
+      "confidence": 0.0219,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.3746,
+        "B": 0.1937,
+        "C": 0.3965,
+        "D": 0.0352
+      },
+      "stripped_question": "Which of the following accurately describes his symptoms?"
+    },
+    {
+      "id": "test-00061",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.9805,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.9887,
+        "B": 0.0013,
+        "C": 0.0082,
+        "D": 0.0019
+      },
+      "stripped_question": "A 22-year-old female college student is treated with metronidazole after presenting to student health services with itching, discharge, and pain in her vagina. At a party shortly afterward she experiences facial flushing, nausea, tachycardia, dyspnea, headache, and abdominal cramps after consuming alcohol. Serum levels of which of the following are likely elevated in this patient following alcohol consumption:"
+    },
+    {
+      "id": "test-00064",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "A",
+      "confidence": 0.7916,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0744,
+        "B": 0.0152,
+        "C": 0.866,
+        "D": 0.0443
+      },
+      "stripped_question": "A medication with which of the following mechanisms of action is most appropriate in this patient?"
+    },
+    {
+      "id": "test-00066",
+      "model": "granite3.1-moe:3b",
+      "answer": "B",
+      "correct": "C",
+      "confidence": 0.9957,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0013,
+        "B": 0.997,
+        "C": 0.0011,
+        "D": 0.0007
+      },
+      "stripped_question": "Which of the following is the most appropriate next best step in management?"
+    },
+    {
+      "id": "test-00074",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "C",
+      "confidence": 0.9978,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0008,
+        "B": 0.0001,
+        "C": 0.0005,
+        "D": 0.9986
+      },
+      "stripped_question": "Which of the following is most likely to confirm the diagnosis?"
+    },
+    {
+      "id": "test-00076",
+      "model": "granite3.1-moe:3b",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.9933,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.002,
+        "B": 0.9955,
+        "C": 0.0022,
+        "D": 0.0004
+      },
+      "stripped_question": "Which of the following is the most appropriate next step in management?"
+    },
+    {
+      "id": "test-00095",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "D",
+      "confidence": 0.8935,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.932,
+        "B": 0.0245,
+        "C": 0.0385,
+        "D": 0.0049
+      },
+      "stripped_question": "Which of the following is the most appropriate test to screen for additional complications of this patient's condition?"
+    },
+    {
+      "id": "test-00121",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.9813,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.988,
+        "B": 0.0018,
+        "C": 0.0067,
+        "D": 0.0035
+      },
+      "stripped_question": "Which of the following viral infections is most likely to have played a role in the pathogenesis of this patient’s malignancy?"
+    },
+    {
+      "id": "test-00130",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "B",
+      "confidence": 0.9326,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0311,
+        "B": 0.0041,
+        "C": 0.9637,
+        "D": 0.0011
+      },
+      "stripped_question": "Serum studies show: Bilirubin Total 15 mg/dL Direct 12.3 mg/dL Alkaline phosphatase 2007 U/L AST 53 U/L ALT 45 U/L γ-glutamyl transferase 154 U/L Blood group A positive Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00138",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "B",
+      "confidence": 0.5772,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1152,
+        "B": 0.1334,
+        "C": 0.7106,
+        "D": 0.0408
+      },
+      "stripped_question": "His laboratory investigations are as follows: Urine-specific gravity (first-morning sample) 1.035 Urine red blood cells Absent Urine pus cells Absent Urine culture Negative Which of the following is the next step in the management of this patient?"
+    },
+    {
+      "id": "test-00140",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "C",
+      "confidence": 0.1188,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0744,
+        "B": 0.0316,
+        "C": 0.3876,
+        "D": 0.5064
+      },
+      "stripped_question": "What is the next best step for this patient?"
+    },
+    {
+      "id": "test-00146",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "C",
+      "confidence": 0.7128,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.8083,
+        "B": 0.0684,
+        "C": 0.0278,
+        "D": 0.0955
+      },
+      "stripped_question": "Which of the following is the most accurate description of this condition?"
+    },
+    {
+      "id": "test-00168",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "B",
+      "confidence": 0.6487,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0184,
+        "B": 0.1353,
+        "C": 0.784,
+        "D": 0.0624
+      },
+      "stripped_question": "Which of the following is the most appropriate next step in his management?"
+    },
+    {
+      "id": "test-00172",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "C",
+      "confidence": 0.2041,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0376,
+        "B": 0.0333,
+        "C": 0.3625,
+        "D": 0.5666
+      },
+      "stripped_question": "Which of the following is the most appropriate next step in management?"
+    },
+    {
+      "id": "test-00198",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "D",
+      "confidence": 0.1141,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.4644,
+        "B": 0.0525,
+        "C": 0.1328,
+        "D": 0.3503
+      },
+      "stripped_question": "If the most likely drug prescribed in this case was administered in a different manner, which of the following conditions may also be treated by this drug?"
+    },
+    {
+      "id": "test-00204",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.0052,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.3284,
+        "B": 0.3232,
+        "C": 0.2789,
+        "D": 0.0695
+      },
+      "stripped_question": "Normal ascension of kidney during embryological development would be prevented by which of the following anatomical structures?"
+    },
+    {
+      "id": "test-00206",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.7676,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0171,
+        "B": 0.1028,
+        "C": 0.8704,
+        "D": 0.0097
+      },
+      "stripped_question": "Which of the following would most likely suggest that these two loci have a high probability of being closely linked?"
+    },
+    {
+      "id": "test-00208",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.7412,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.8501,
+        "B": 0.0319,
+        "C": 0.1089,
+        "D": 0.009
+      },
+      "stripped_question": "Which of the following is the mechanism of action of DN501?"
+    },
+    {
+      "id": "test-00213",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "A",
+      "confidence": 0.2118,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.3038,
+        "B": 0.0954,
+        "C": 0.5156,
+        "D": 0.0852
+      },
+      "stripped_question": "Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00214",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.7271,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.8546,
+        "B": 0.0058,
+        "C": 0.1275,
+        "D": 0.0122
+      },
+      "stripped_question": "What is the likely cause of this patient's condition?"
+    },
+    {
+      "id": "test-00227",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "C",
+      "confidence": 0.9896,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.9932,
+        "B": 0.0021,
+        "C": 0.0036,
+        "D": 0.0011
+      },
+      "stripped_question": "Prolonged treatment with which of the following drugs would best explain this patient's findings?"
+    },
+    {
+      "id": "test-00234",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "C",
+      "confidence": 0.7143,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.043,
+        "B": 0.0852,
+        "C": 0.0723,
+        "D": 0.7995
+      },
+      "stripped_question": "Which of the following is the most likely explanation for this patient's laboratory findings?"
+    },
+    {
+      "id": "test-00271",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "B",
+      "confidence": 0.0216,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0505,
+        "B": 0.0065,
+        "C": 0.4823,
+        "D": 0.4607
+      },
+      "stripped_question": "The laboratory tests show the following results: Fasting glucose 97 mg/L ALT 12 IU/L AST 14 IU/L Total bilirubin 0.8 mg/dL(15 µmol/L) Plasma creatinine 0.7 mg/dL (61.9 µmol/L) Which of the following tests are indicated to determine the cause of the abnormal dipstick test results?"
+    },
+    {
+      "id": "test-00300",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "D",
+      "confidence": 0.1378,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.4788,
+        "B": 0.1458,
+        "C": 0.0344,
+        "D": 0.341
+      },
+      "stripped_question": "This patient's symptoms are most likely due to the injection of the vaccine into which of the following locations?"
+    },
+    {
+      "id": "test-00311",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.5626,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1268,
+        "B": 0.0808,
+        "C": 0.6894,
+        "D": 0.103
+      },
+      "stripped_question": "Which of the following processes is most likely to be involved in the pathogenesis of this patient's condition?"
+    },
+    {
+      "id": "test-00316",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "A",
+      "confidence": 0.4451,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1352,
+        "B": 0.0452,
+        "C": 0.1873,
+        "D": 0.6324
+      },
+      "stripped_question": "Treatment with which of the following drugs should be avoided in this patient?"
+    },
+    {
+      "id": "test-00327",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "A",
+      "confidence": 0.3934,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0876,
+        "B": 0.0929,
+        "C": 0.2131,
+        "D": 0.6065
+      },
+      "stripped_question": "Which of the following is characteristic of the most likely diagnosis?"
+    },
+    {
+      "id": "test-00335",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "A",
+      "confidence": 0.1563,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.3582,
+        "B": 0.0422,
+        "C": 0.0852,
+        "D": 0.5145
+      },
+      "stripped_question": "What is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00387",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.4515,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.6323,
+        "B": 0.0475,
+        "C": 0.1394,
+        "D": 0.1808
+      },
+      "stripped_question": "Which of the following pathogens will most likely infect this patient in adulthood?"
+    },
+    {
+      "id": "test-00411",
+      "model": "granite3.1-moe:3b",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.1165,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1515,
+        "B": 0.3947,
+        "C": 0.2782,
+        "D": 0.1755
+      },
+      "stripped_question": "Which of the following is the most likely cause of this patient's condition?"
+    },
+    {
+      "id": "test-00416",
+      "model": "granite3.1-moe:3b",
+      "answer": "B",
+      "correct": "C",
+      "confidence": 0.0225,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1306,
+        "B": 0.3607,
+        "C": 0.3382,
+        "D": 0.1705
+      },
+      "stripped_question": "Which of the following best describes the component that is likely deficient in this patient?"
+    },
+    {
+      "id": "test-00435",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.7174,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0098,
+        "B": 0.018,
+        "C": 0.8448,
+        "D": 0.1274
+      },
+      "stripped_question": "What is the best treatment for his condition?"
+    },
+    {
+      "id": "test-00448",
+      "model": "granite3.1-moe:3b",
+      "answer": "B",
+      "correct": "D",
+      "confidence": 0.2277,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.039,
+        "B": 0.5,
+        "C": 0.1887,
+        "D": 0.2723
+      },
+      "stripped_question": "Which of the following is the best course of treatment for this patient?"
+    },
+    {
+      "id": "test-00451",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "D",
+      "confidence": 0.1979,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.5315,
+        "B": 0.1142,
+        "C": 0.0207,
+        "D": 0.3336
+      },
+      "stripped_question": "What is the mechanism of action of this medication?"
+    },
+    {
+      "id": "test-00461",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "C",
+      "confidence": 0.2392,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.016,
+        "B": 0.37,
+        "C": 0.0048,
+        "D": 0.6092
+      },
+      "stripped_question": "Which of the following is the most appropriate next step in management?"
+    },
+    {
+      "id": "test-00463",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "A",
+      "confidence": 0.4922,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2232,
+        "B": 0.0092,
+        "C": 0.7154,
+        "D": 0.0522
+      },
+      "stripped_question": "Which of the following medications, if administered for the next 2 weeks, is most likely to reduce the risk of subsequent exacerbations over the next 6 months?"
+    },
+    {
+      "id": "test-00479",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.1406,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.3109,
+        "B": 0.216,
+        "C": 0.4515,
+        "D": 0.0215
+      },
+      "stripped_question": "Which of the following is the most common cause of this patient's condition?"
+    },
+    {
+      "id": "test-00484",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "C",
+      "confidence": 0.7968,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0812,
+        "B": 0.0095,
+        "C": 0.0313,
+        "D": 0.878
+      },
+      "stripped_question": "Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00486",
+      "model": "granite3.1-moe:3b",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.3418,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0572,
+        "B": 0.5978,
+        "C": 0.256,
+        "D": 0.089
+      },
+      "stripped_question": "Which of the following choices is the proper management for this patient?"
+    },
+    {
+      "id": "test-00538",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.9923,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.9953,
+        "B": 0.003,
+        "C": 0.0012,
+        "D": 0.0005
+      },
+      "stripped_question": "The mechanism of the antibiotic she was most likely treated with is which of the following?"
+    },
+    {
+      "id": "test-00542",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.0341,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.3477,
+        "B": 0.1638,
+        "C": 0.1749,
+        "D": 0.3136
+      },
+      "stripped_question": "Which of the following is most likely to account for these findings?"
+    },
+    {
+      "id": "test-00548",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "D",
+      "confidence": 0.3012,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0503,
+        "B": 0.058,
+        "C": 0.2952,
+        "D": 0.5964
+      },
+      "stripped_question": "What is the most appropriate initial step in treatment?"
+    },
+    {
+      "id": "test-00558",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "B",
+      "confidence": 0.6197,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0257,
+        "B": 0.156,
+        "C": 0.0426,
+        "D": 0.7757
+      },
+      "stripped_question": "Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00574",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "B",
+      "confidence": 0.1703,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0964,
+        "B": 0.354,
+        "C": 0.0254,
+        "D": 0.5243
+      },
+      "stripped_question": "Which of the following findings would confirm your diagnosis?"
+    },
+    {
+      "id": "test-00581",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "C",
+      "confidence": 0.9722,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.9819,
+        "B": 0.0047,
+        "C": 0.0036,
+        "D": 0.0097
+      },
+      "stripped_question": "Which of the following has a strong positive correlation with this patient’s heart rhythm?"
+    },
+    {
+      "id": "test-00597",
+      "model": "granite3.1-moe:3b",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.6062,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.182,
+        "B": 0.7882,
+        "C": 0.0043,
+        "D": 0.0256
+      },
+      "stripped_question": "Which of the following disinfectants is most likely to inactivate this virus?"
+    },
+    {
+      "id": "test-00604",
+      "model": "granite3.1-moe:3b",
+      "answer": "B",
+      "correct": "A",
+      "confidence": 0.6416,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0384,
+        "B": 0.7867,
+        "C": 0.0298,
+        "D": 0.1451
+      },
+      "stripped_question": "Which of the following is the most common complication of this patient's condition?"
+    },
+    {
+      "id": "test-00618",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.3664,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.059,
+        "B": 0.1257,
+        "C": 0.5909,
+        "D": 0.2245
+      },
+      "stripped_question": "Which of the following the most appropriate initial course of treatment of this patient?"
+    },
+    {
+      "id": "test-00628",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "C",
+      "confidence": 0.4013,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.6003,
+        "B": 0.0984,
+        "C": 0.1023,
+        "D": 0.199
+      },
+      "stripped_question": "Which of the following is the most likely underlying cause of these liver abnormalities?"
+    },
+    {
+      "id": "test-00639",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "A",
+      "confidence": 0.2704,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0404,
+        "B": 0.01,
+        "C": 0.61,
+        "D": 0.3396
+      },
+      "stripped_question": "Which of the following allosterically inhibits this enzyme?"
+    },
+    {
+      "id": "test-00642",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.6115,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.7574,
+        "B": 0.0269,
+        "C": 0.0699,
+        "D": 0.1459
+      },
+      "stripped_question": "Which of the following most likely accounts for this patient’s symptoms?"
+    },
+    {
+      "id": "test-00648",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "A",
+      "confidence": 0.6314,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1166,
+        "B": 0.0323,
+        "C": 0.748,
+        "D": 0.1031
+      },
+      "stripped_question": "The patient’s disorder is caused by a mutation in which of the following genes?"
+    },
+    {
+      "id": "test-00661",
+      "model": "granite3.1-moe:3b",
+      "answer": "B",
+      "correct": "A",
+      "confidence": 0.7184,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1121,
+        "B": 0.8305,
+        "C": 0.0115,
+        "D": 0.0459
+      },
+      "stripped_question": "Physical examination is most likely to show which of the following findings?"
+    },
+    {
+      "id": "test-00671",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "B",
+      "confidence": 0.0147,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.3311,
+        "B": 0.282,
+        "C": 0.3458,
+        "D": 0.0411
+      },
+      "stripped_question": "Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00680",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "D",
+      "confidence": 0.5351,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.7096,
+        "B": 0.069,
+        "C": 0.0469,
+        "D": 0.1745
+      },
+      "stripped_question": "A hepatitis viral panel is ordered which shows: Anti-HAV IgM negative HBsAg positive Anti-HBs negative IgM anti-HBc positive Anti-HCV negative Anti-HDV negative What is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00687",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.7179,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.8238,
+        "B": 0.006,
+        "C": 0.0643,
+        "D": 0.1059
+      },
+      "stripped_question": "This adnexal mass is most likely derived from which of the following cell types?"
+    },
+    {
+      "id": "test-00698",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "A",
+      "confidence": 0.7734,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1093,
+        "B": 0.0017,
+        "C": 0.0063,
+        "D": 0.8827
+      },
+      "stripped_question": "Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00715",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "B",
+      "confidence": 0.6145,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1111,
+        "B": 0.0984,
+        "C": 0.0649,
+        "D": 0.7256
+      },
+      "stripped_question": "Which of the following is true about these episodes?"
+    },
+    {
+      "id": "test-00729",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.0981,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1483,
+        "B": 0.3431,
+        "C": 0.4412,
+        "D": 0.0673
+      },
+      "stripped_question": "Further diagnostic evaluation of the patient is most likely to show which of the following?"
+    },
+    {
+      "id": "test-00739",
+      "model": "granite3.1-moe:3b",
+      "answer": "B",
+      "correct": "A",
+      "confidence": 0.1913,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2269,
+        "B": 0.456,
+        "C": 0.0524,
+        "D": 0.2647
+      },
+      "stripped_question": "Which of the following is the most likely etiology of this patient’s condition?"
+    },
+    {
+      "id": "test-00744",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.4437,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.09,
+        "B": 0.0029,
+        "C": 0.6754,
+        "D": 0.2317
+      },
+      "stripped_question": "Which of the following is the best next step in therapy?"
+    },
+    {
+      "id": "test-00759",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "C",
+      "confidence": 0.1281,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0224,
+        "B": 0.0775,
+        "C": 0.386,
+        "D": 0.5141
+      },
+      "stripped_question": "Which of the following medications was most likely administered to the patient?"
+    },
+    {
+      "id": "test-00765",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.3509,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.2812,
+        "B": 0.0438,
+        "C": 0.6321,
+        "D": 0.043
+      },
+      "stripped_question": "Which of the following types of drugs would be an effective treatment in this patient?"
+    },
+    {
+      "id": "test-00799",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "B",
+      "confidence": 0.6396,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1577,
+        "B": 0.0433,
+        "C": 0.7973,
+        "D": 0.0017
+      },
+      "stripped_question": "A medication that primarily stimulates which of the following receptors would be most appropriate to improve the hemodynamic status of this patient?"
+    },
+    {
+      "id": "test-00800",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "B",
+      "confidence": 0.9361,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.027,
+        "B": 0.0047,
+        "C": 0.0052,
+        "D": 0.9631
+      },
+      "stripped_question": "Which of the following medications is the treatment for this patient's intoxication?"
+    },
+    {
+      "id": "test-00806",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "A",
+      "confidence": 0.4203,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0697,
+        "B": 0.237,
+        "C": 0.6573,
+        "D": 0.0361
+      },
+      "stripped_question": "What is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00823",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.2691,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.2016,
+        "B": 0.1711,
+        "C": 0.4707,
+        "D": 0.1566
+      },
+      "stripped_question": "Which of the following factors is most directly affected by the DVT prophylaxis?"
+    },
+    {
+      "id": "test-00827",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.9846,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.9896,
+        "B": 0.005,
+        "C": 0.0048,
+        "D": 0.0006
+      },
+      "stripped_question": "Which of the following mechanisms is most likely responsible for this patient's amenorrhea?"
+    },
+    {
+      "id": "test-00839",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.4895,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.7445,
+        "B": 0.255,
+        "C": 0.0003,
+        "D": 0.0002
+      },
+      "stripped_question": "Which of the following mechanisms is most likely responsible for the beneficial effect of this drug in sickle cell disease?"
+    },
+    {
+      "id": "test-00844",
+      "model": "granite3.1-moe:3b",
+      "answer": "B",
+      "correct": "A",
+      "confidence": 0.4342,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2277,
+        "B": 0.6619,
+        "C": 0.0896,
+        "D": 0.0209
+      },
+      "stripped_question": "Which of the following statements about this patient's fertility is most accurate?"
+    },
+    {
+      "id": "test-00847",
+      "model": "granite3.1-moe:3b",
+      "answer": "B",
+      "correct": "C",
+      "confidence": 0.9999,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0,
+        "B": 0.9999,
+        "C": 0.0,
+        "D": 0.0
+      },
+      "stripped_question": "Which of the following best describes the mechanism of action of omeprazole?"
+    },
+    {
+      "id": "test-00849",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "D",
+      "confidence": 0.5556,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.1468,
+        "B": 0.0999,
+        "C": 0.0509,
+        "D": 0.7024
+      },
+      "stripped_question": "This patient's symptoms were most likely due to the effect of chemotherapy on which of the following structures?"
+    },
+    {
+      "id": "test-00860",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "C",
+      "confidence": 0.3883,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.6641,
+        "B": 0.2758,
+        "C": 0.0373,
+        "D": 0.0228
+      },
+      "stripped_question": "Which of the following is the most likely cause of the failure of lactation in this patient?"
+    },
+    {
+      "id": "test-00882",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "D",
+      "confidence": 0.7284,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0994,
+        "B": 0.0076,
+        "C": 0.0651,
+        "D": 0.8278
+      },
+      "stripped_question": "Which of the following is the most likely cause of this patient's current renal findings?"
+    },
+    {
+      "id": "test-00896",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "D",
+      "confidence": 0.8616,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0061,
+        "B": 0.0655,
+        "C": 0.0014,
+        "D": 0.9271
+      },
+      "stripped_question": "Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "test-00897",
+      "model": "granite3.1-moe:3b",
+      "answer": "B",
+      "correct": "B",
+      "confidence": 0.4711,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.218,
+        "B": 0.6891,
+        "C": 0.0851,
+        "D": 0.0079
+      },
+      "stripped_question": "Which of the following could have prevented the patient’s condition?"
+    },
+    {
+      "id": "test-00904",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "B",
+      "confidence": 0.3066,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.642,
+        "B": 0.0077,
+        "C": 0.0148,
+        "D": 0.3354
+      },
+      "stripped_question": "Which of the following is most likely to be found on urinalysis?"
+    },
+    {
+      "id": "test-00916",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.9542,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.9756,
+        "B": 0.0012,
+        "C": 0.0214,
+        "D": 0.0018
+      },
+      "stripped_question": "Which of the following is the most likely underlying mechanism of this patient’s chest pain?"
+    },
+    {
+      "id": "test-00926",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "B",
+      "confidence": 0.6444,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0177,
+        "B": 0.1675,
+        "C": 0.8119,
+        "D": 0.003
+      },
+      "stripped_question": "What is the next best step in management?"
+    },
+    {
+      "id": "test-00953",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.9456,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0198,
+        "B": 0.014,
+        "C": 0.9654,
+        "D": 0.0008
+      },
+      "stripped_question": "Which of the following test would be more useful to differentiate between prerenal and intrinsic kidney disease?"
+    },
+    {
+      "id": "test-00980",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "B",
+      "confidence": 0.0252,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2633,
+        "B": 0.3238,
+        "C": 0.349,
+        "D": 0.0639
+      },
+      "stripped_question": "Hemoglobin: 9.0 g/dL Hematocrit: 30% Leukocyte count: 6,800/mm^3 with normal differential Platelet count: 199,000/mm^3 Serum: Na+: 139 mEq/L Cl-: 100 mEq/L K+: 4.3 mEq/L HCO3-: 25 mEq/L BUN: 20 mg/dL Glucose: 99 mg/dL Creatinine: 1.1 mg/dL Which of the following tests is most likely to elucidate the cause of this patient's pregnancy losses?"
+    },
+    {
+      "id": "test-00987",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "B",
+      "confidence": 0.1688,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0921,
+        "B": 0.3277,
+        "C": 0.0837,
+        "D": 0.4965
+      },
+      "stripped_question": "Which of the following would have most likely prevented the patient's symptoms?"
+    },
+    {
+      "id": "test-01017",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "D",
+      "confidence": 0.2203,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.366,
+        "B": 0.0063,
+        "C": 0.0414,
+        "D": 0.5863
+      },
+      "stripped_question": "Which of the following organisms is the most likely causative agent?"
+    },
+    {
+      "id": "test-01027",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "B",
+      "confidence": 0.067,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0442,
+        "B": 0.057,
+        "C": 0.4829,
+        "D": 0.4159
+      },
+      "stripped_question": "If the volume of distribution of heparin is equivalent to 60 mL/kg and the target peak plasma concentration is 0.5 units/mL, which of the following is the most appropriate loading dose for this patient?"
+    },
+    {
+      "id": "test-01045",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "A",
+      "confidence": 0.0621,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2278,
+        "B": 0.3293,
+        "C": 0.0515,
+        "D": 0.3914
+      },
+      "stripped_question": "” The most likely cause of the patient's symptoms is occlusion of a branch of which of the following arteries?"
+    },
+    {
+      "id": "test-01056",
+      "model": "granite3.1-moe:3b",
+      "answer": "B",
+      "correct": "D",
+      "confidence": 0.4317,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0161,
+        "B": 0.6932,
+        "C": 0.2615,
+        "D": 0.0292
+      },
+      "stripped_question": "If this patient’s current medication is to be continued, which of the following laboratory tests should be ordered at this time?"
+    },
+    {
+      "id": "test-01062",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.1554,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.4519,
+        "B": 0.1206,
+        "C": 0.131,
+        "D": 0.2965
+      },
+      "stripped_question": "Which of the following effects would the drug most likely also have on the nephron?"
+    },
+    {
+      "id": "test-01063",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "D",
+      "confidence": 0.9767,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0108,
+        "B": 0.0016,
+        "C": 0.0001,
+        "D": 0.9875
+      },
+      "stripped_question": "Which of the following best describes the role of atracurium in this patient’s anesthesia?"
+    },
+    {
+      "id": "test-01070",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "D",
+      "confidence": 0.925,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.953,
+        "B": 0.0088,
+        "C": 0.028,
+        "D": 0.0102
+      },
+      "stripped_question": "If this patient is also found to have cricopharyngeal muscle dysfunction, which of the following is the most likely cause of his presenting symptoms?"
+    },
+    {
+      "id": "test-01078",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "A",
+      "confidence": 0.1379,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.2721,
+        "B": 0.1195,
+        "C": 0.41,
+        "D": 0.1984
+      },
+      "stripped_question": "Administration of which of the following is the most appropriate next step in management?"
+    },
+    {
+      "id": "test-01125",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.9975,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.0009,
+        "B": 0.0005,
+        "C": 0.9984,
+        "D": 0.0001
+      },
+      "stripped_question": "Which of the following is the best next step for this patient’s menstrual cramps?"
+    },
+    {
+      "id": "test-01128",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.4246,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.656,
+        "B": 0.2314,
+        "C": 0.112,
+        "D": 0.0006
+      },
+      "stripped_question": "Which microscopic finding would you expect to see in this patient on autopsy?"
+    },
+    {
+      "id": "test-01133",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "B",
+      "confidence": 0.0253,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.4101,
+        "B": 0.1494,
+        "C": 0.4354,
+        "D": 0.0052
+      },
+      "stripped_question": "In addition to an influenza vaccine, which vaccine should be administered to this patient during this visit?"
+    },
+    {
+      "id": "test-01139",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "A",
+      "confidence": 0.7374,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.0214,
+        "B": 0.1037,
+        "C": 0.0338,
+        "D": 0.8411
+      },
+      "stripped_question": "Which of the following is true of the most likely cause of this patient's symptoms?"
+    },
+    {
+      "id": "test-01176",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "D",
+      "confidence": 0.3693,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.015,
+        "B": 0.1691,
+        "C": 0.2233,
+        "D": 0.5926
+      },
+      "stripped_question": "Which of the following is the most likely cause of this patient's findings?"
+    },
+    {
+      "id": "test-01196",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "C",
+      "confidence": 0.3331,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.2786,
+        "B": 0.0804,
+        "C": 0.6117,
+        "D": 0.0293
+      },
+      "stripped_question": "In addition to recommending lifestyle modifications, which of the following is the most appropriate step in management?"
+    },
+    {
+      "id": "test-01208",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "D",
+      "confidence": 0.2435,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.5767,
+        "B": 0.3332,
+        "C": 0.0176,
+        "D": 0.0725
+      },
+      "stripped_question": "Which of the following patient presentations seen in a pediatric immunology clinic is most consistent with a diagnosis of Bruton's agammaglobulinemia?"
+    },
+    {
+      "id": "test-01212",
+      "model": "granite3.1-moe:3b",
+      "answer": "D",
+      "correct": "B",
+      "confidence": 0.5857,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1874,
+        "B": 0.0288,
+        "C": 0.0106,
+        "D": 0.7731
+      },
+      "stripped_question": "Which of the following interventions is most likely to prevent renal calculi formation in the future for this patient?"
+    },
+    {
+      "id": "test-01247",
+      "model": "granite3.1-moe:3b",
+      "answer": "C",
+      "correct": "A",
+      "confidence": 0.4299,
+      "experiment": "stripped_context",
+      "is_correct": false,
+      "probabilities": {
+        "A": 0.1856,
+        "B": 0.0523,
+        "C": 0.6155,
+        "D": 0.1467
+      },
+      "stripped_question": "The following represent the parameters for this patient's respiratory anatomy and function: Vital capacity (VC): 5,000 mL Inspiratory reserve volume (IRV): 2,500 mL Functional reserve capacity (FRC): 2,700 mL Residual volume (RV): 1,000 mL Upper airway volume: 100 mL Conducting airway volume: 125 mL Inspired CO2 pressure (PiCO2): 1 mmHg Arterial CO2 pressure (PaCO2): 50 mmHg Expired CO2 pressure (PeCO2): 20 mmHg Which of the following best represents the total volume of gas in this patient's airways and lungs that does not participate in gas exchange?"
+    },
+    {
+      "id": "test-01250",
+      "model": "granite3.1-moe:3b",
+      "answer": "A",
+      "correct": "A",
+      "confidence": 0.6923,
+      "experiment": "stripped_context",
+      "is_correct": true,
+      "probabilities": {
+        "A": 0.8119,
+        "B": 0.0521,
+        "C": 0.1196,
+        "D": 0.0163
+      },
+      "stripped_question": "Which of the following is the most likely drug?"
+    }
+  ],
+  "models": [
+    "phi3:mini",
+    "granite3.1-moe:3b"
+  ],
+  "avg_char_reduction_pct": 82.9,
+  "summaries": [
+    {
+      "total": 100,
+      "model": "phi3:mini",
+      "stripped": 38.0,
+      "hits": 38,
+      "delta": -15.0,
+      "baseline": 53
+    },
+    {
+      "total": 100,
+      "model": "granite3.1-moe:3b",
+      "stripped": 34.0,
+      "hits": 34,
+      "delta": -16.0,
+      "baseline": 50
+    }
+  ],
+  "per_question_flips": {
+    "gained": 11,
+    "lost": 26
+  }
+}

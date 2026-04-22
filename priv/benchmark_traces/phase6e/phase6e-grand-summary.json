@@ -1,0 +1,95 @@
+{
+  "description": "Prompt experiments: stripped context, viewpoints, medical persona",
+  "phase": "6E",
+  "total_calls": 700,
+  "total_elapsed_ms": 240953,
+  "experiments": {
+    "viewpoints": {
+      "calls": 400,
+      "elapsed_ms": 152241,
+      "summaries": [
+        {
+          "total": 100,
+          "model": "phi3:mini",
+          "viewpoint": "CHECK_ASSUMPTIONS",
+          "hits": 18,
+          "delta": -35.0,
+          "baseline": 53,
+          "accuracy": 18.0
+        },
+        {
+          "total": 100,
+          "model": "phi3:mini",
+          "viewpoint": "ARGUE_AGAINST",
+          "hits": 16,
+          "delta": -37.0,
+          "baseline": 53,
+          "accuracy": 16.0
+        },
+        {
+          "total": 100,
+          "model": "granite3.1-moe:3b",
+          "viewpoint": "CHECK_ASSUMPTIONS",
+          "hits": 43,
+          "delta": -7.0,
+          "baseline": 50,
+          "accuracy": 43.0
+        },
+        {
+          "total": 100,
+          "model": "granite3.1-moe:3b",
+          "viewpoint": "ARGUE_AGAINST",
+          "hits": 36,
+          "delta": -14.0,
+          "baseline": 50,
+          "accuracy": 36.0
+        }
+      ]
+    },
+    "stripped_context": {
+      "calls": 200,
+      "elapsed_ms": 37938,
+      "summaries": [
+        {
+          "total": 100,
+          "model": "phi3:mini",
+          "stripped": 38.0,
+          "hits": 38,
+          "delta": -15.0,
+          "baseline": 53
+        },
+        {
+          "total": 100,
+          "model": "granite3.1-moe:3b",
+          "stripped": 34.0,
+          "hits": 34,
+          "delta": -16.0,
+          "baseline": 50
+        }
+      ]
+    },
+    "medical_persona": {
+      "calls": 100,
+      "elapsed_ms": 50774,
+      "summaries": [
+        {
+          "total": 100,
+          "model": "phi3:mini",
+          "hits": 15,
+          "delta": -38.0,
+          "baseline": 53,
+          "persona": 15.0
+        }
+      ]
+    }
+  },
+  "best": {
+    "label": "CHECK_ASSUMPTIONS/granite3.1-moe:3b",
+    "delta": -7.0
+  },
+  "worst": {
+    "label": "Persona/phi3:mini",
+    "delta": -38.0
+  },
+  "gate_6f": false
+}
